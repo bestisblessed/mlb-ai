@@ -3,14 +3,25 @@
 # 1 0 * * * /home/trinity/mlb-ai/Scrapers/run_scraper.sh
 
 cd /home/trinity/mlb-ai/Scrapers
-echo "$(date): Starting script execution" >> /home/trinity/mlb-ai/Scrapers/scraper.log 2>&1
-# source .env
+
+# # Check if the last run had an error (looking for specific error messages)
+# if grep -q "AttributeError: 'NoneType' object has no attribute 'find_all'" "scraper.log"; then
+#     echo "$(date): Found login error in previous run, running signin script first" >> /home/trinity/mlb-ai/Scrapers/scraper.log 2>&1
+#     # Run the signin script
+#     xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_signin_auto.py >> scraper.log 2>&1
+#     # Wait a bit after signin
+#     sleep 5
+# fi
+
+# Run the main scraper
+echo "$(date): Starting script execution" >> scraper.log 2>&1
 xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_headless.py >> scraper.log 2>&1
-echo "$(date): Script execution completed" >> /home/trinity/mlb-ai/Scrapers/scraper.log 2>&1
-echo "$(date): Removing data/raw directory" >> /home/trinity/mlb-ai/Scrapers/scraper.log 2>&1
+echo "$(date): Script execution completed" >> scraper.log 2>&1
+echo "$(date): Removing data/raw directory" >> scraper.log 2>&1
 rm -rf data/raw
+git pull >> scraper.log 2>&1
 git add data/
-git commit -q -m "Data update $(date +%Y-%m-%d)" >> scraper.log 2>&1
+git commit -m "Data update $(date +%Y-%m-%d)"
 git push >> scraper.log 2>&1
 echo "$(date): Git push completed" >> scraper.log 2>&1
 
