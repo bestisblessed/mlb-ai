@@ -8,10 +8,10 @@ from datetime import datetime
 import glob
 from io import StringIO
 
-# Create data directories
+# Create base directories
 today = datetime.now().strftime('%Y-%m-%d')
-os.makedirs(f"data/{today}/", exist_ok=True)
-os.makedirs(f"data/raw/{today}/", exist_ok=True)
+os.makedirs(f"data/{today}", exist_ok=True)  # For processed data
+os.makedirs(f"data/raw/{today}", exist_ok=True)  # For raw HTML files
 
 
 ### Scrape Game Simulations Home Page ###
@@ -19,7 +19,7 @@ async def main():
     async with async_playwright() as p:
         context = await p.chromium.launch_persistent_context(
             user_data_dir="playwright_user_data",
-            headless=False
+            headless=True
         )
         page = await context.new_page()
         await page.goto('https://www.ballparkpal.com/Game-Simulations.php')
@@ -133,7 +133,7 @@ print(f"Wrote {len(df)} game records to {OUTPUT_CSV!r}")
 async def main():
     async with async_playwright() as p:
         ctx = await p.chromium.launch_persistent_context(
-            user_data_dir="playwright_user_data", headless=False
+            user_data_dir="playwright_user_data", headless=True
         )
         page = await ctx.new_page()
         os.makedirs(f"data/raw/{today}", exist_ok=True)
@@ -156,10 +156,14 @@ today = datetime.now().strftime('%Y-%m-%d')
 RAW_DIR = f"data/raw/{today}"
 OUTPUT_BASE = f"data/{today}"
 os.makedirs(OUTPUT_BASE, exist_ok=True)
+
 def find_p(soup, substring):
     return soup.find('p', string=lambda s: s and substring in s)
+
+# Use a more specific pattern to only find game HTML files (files that start with numbers)
 game_files = glob.glob(os.path.join(RAW_DIR, '[0-9]*.html'))
 print(f"Found {len(game_files)} game files to process")
+
 for html_path in game_files:
     game_id = os.path.splitext(os.path.basename(html_path))[0]
     output_dir = os.path.join(OUTPUT_BASE, game_id)
