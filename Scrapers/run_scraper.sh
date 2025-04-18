@@ -14,17 +14,18 @@ cd /home/trinity/mlb-ai/Scrapers
 # fi
 
 # Run the main scraper
-echo "$(date): Starting script execution" >> scraper.log 2>&1
+echo "---------------------------------------" >> scraper.log 2>&1
+#echo "$(date): Starting script execution" >> scraper.log 2>&1
 xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_headless.py >> scraper.log 2>&1
-echo "$(date): Script execution completed" >> scraper.log 2>&1
-echo "$(date): Removing data/raw directory" >> scraper.log 2>&1
+#echo "$(date): Script execution completed" >> scraper.log 2>&1
+#echo "$(date): Removing data/raw directory" >> scraper.log 2>&1
 rm -rf data/raw
 git pull >> scraper.log 2>&1
 git add data/
-git commit -m "Data update $(date +%Y-%m-%d)"
-git push >> scraper.log 2>&1
-echo "$(date): Git push completed" >> scraper.log 2>&1
-
+git commit -m "Data update $(date +%Y-%m-%d)" >> /dev/null 2>&1
+git push >> /dev/null 2>&1
+echo "$(date): Data updated" >> scraper.log 2>&1
+echo "---------------------------------------" >> scraper.log 2>&1
 
 # source /home/trinity/.bashrc  # or .bashrc depending on your setup
 # cd /home/trinity/mlb-ai/Scrapers
