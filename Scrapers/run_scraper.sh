@@ -10,7 +10,7 @@ echo "$(date): Script execution completed" >> /home/trinity/mlb-ai/Scrapers/scra
 echo "$(date): Removing data/raw directory" >> /home/trinity/mlb-ai/Scrapers/scraper.log 2>&1
 rm -rf data/raw
 git add data/
-git commit -m "Data update $(date +%Y-%m-%d)" >> scraper.log 2>&1
+git commit -q -m "Data update $(date +%Y-%m-%d)" >> scraper.log 2>&1
 git push >> scraper.log 2>&1
 echo "$(date): Git push completed" >> scraper.log 2>&1
 
