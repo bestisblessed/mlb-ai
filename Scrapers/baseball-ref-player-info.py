@@ -48,8 +48,14 @@ class PlayerDataScraper:
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:124.0) Gecko/20100101 Firefox/124.0'
         }
+        # Directory for player info
         self.player_info_dir = Path("data/baseball-ref/player-info")
         self.player_info_dir.mkdir(parents=True, exist_ok=True)
+        
+        # New separate directory for player stats
+        self.player_stats_dir = Path("data/baseball-ref/player-general-stats")
+        self.player_stats_dir.mkdir(parents=True, exist_ok=True)
+        
         self.max_workers = max_workers
         # use rate-limited session for robust requests
         self.session = RateLimitedSession(self.headers, max_per_minute=30, max_retries=5, base_delay=3)
@@ -80,9 +86,11 @@ class PlayerDataScraper:
                         # Check if years field ends with 2024 or 2025
                         years = row.get('years', '').strip()
                         if years.endswith('2024') or years.endswith('2025'):
-                            # Check if player already has info file
+                            # Check if both player info and stats files already exist
                             info_file = self.player_info_dir / f"{row['player_id']}.json"
-                            if not info_file.exists():
+                            stats_file = self.player_stats_dir / f"{row['player_id']}.json"
+                            
+                            if not (info_file.exists() and stats_file.exists()):
                                 active_players.append({
                                     'id': row['player_id'],
                                     'name': row['name'],
@@ -139,8 +147,55 @@ class PlayerDataScraper:
         text = re.sub(r'([A-Za-z])\(', r'\1 (', text)
         return text
 
-    def scrape_player_info(self, player_id: str, name: str) -> dict:
-        """Scrape player info with robust session, caching, and parsing."""
+    def extract_summary_stats(self, soup):
+        """Extract the summary stats table as shown in the screenshot."""
+        stats = {
+            "2025": {},
+            "career": {}
+        }
+        
+        try:
+            # Find the stats pullout section
+            stats_section = soup.select_one("div.stats_pullout")
+            if not stats_section:
+                return stats
+            
+            # Get all p tags
+            p_tags = stats_section.select("p")
+            
+            # The pattern of p tags should be:
+            # [0,1]: Year headers (2025, Career)
+            # [2,3]: WAR values
+            # [4,5]: AB values
+            # And so on...
+            
+            # Define the stat order and the indices where they start
+            stat_order = ["WAR", "AB", "H", "HR", "BA", "R", "RBI", "SB", "OBP", "SLG", "OPS", "OPS+"]
+            
+            # Make sure we have enough p tags (at least 2 per stat + 2 for headers)
+            if len(p_tags) >= (len(stat_order) * 2 + 2):
+                # Process each stat
+                for i, stat_name in enumerate(stat_order):
+                    # Current year stat is at index (i*2 + 2)
+                    # Career stat is at index (i*2 + 3)
+                    current_idx = i*2 + 2
+                    career_idx = i*2 + 3
+                    
+                    if current_idx < len(p_tags):
+                        stats["2025"][stat_name] = p_tags[current_idx].text.strip()
+                    
+                    if career_idx < len(p_tags):
+                        stats["career"][stat_name] = p_tags[career_idx].text.strip()
+            
+            return stats
+            
+        except Exception as e:
+            print(f"Error extracting summary stats: {str(e)}")
+            return stats
+
+    def scrape_player_info(self, player_id: str, name: str) -> tuple:
+        """Scrape player info with robust session, caching, and parsing.
+        Returns a tuple: (player_info, player_stats)"""
         player_url = self.get_player_url(player_id)
         print(f"Accessing URL: {player_url}")
         # HTML cache
@@ -151,7 +206,7 @@ class PlayerDataScraper:
             resp = self.session.get(player_url)
             if resp.status_code != 200:
                 print(f"Failed to retrieve page for {name}. Status code: {resp.status_code}")
-                return None
+                return None, None
             html = resp.text
             raw_file.write_text(html, encoding='utf-8')
         # Parse the HTML with lxml for speed
@@ -161,7 +216,7 @@ class PlayerDataScraper:
         not_found = soup.select_one(".page_not_found")
         if not_found:
             print(f"Player page not found for {name}")
-            return None
+            return None, None
         
         # Extract player data
         player_data = {
@@ -226,7 +281,16 @@ class PlayerDataScraper:
                         player_data['country_code'] = flag_img['alt']
                     break
         
-        return player_data
+        # Extract player statistics (but don't include in player_data)
+        stats_data = self.extract_summary_stats(soup)
+        
+        # Add player identification to stats_data
+        if stats_data:
+            stats_data['player_id'] = player_id
+            stats_data['name'] = name
+            stats_data['scrape_date'] = time.strftime("%Y-%m-%d %H:%M:%S")
+        
+        return player_data, stats_data
 
     def process_player(self, player, i, total):
         """Process a single player - for threading."""
@@ -236,13 +300,22 @@ class PlayerDataScraper:
         print(f"Scraping {name} ({i+1}/{total})...")
         
         try:
-            info_data = self.scrape_player_info(player_id, name)
-            if info_data:
-                # Save to JSON file
+            player_data, stats_data = self.scrape_player_info(player_id, name)
+            
+            if player_data:
+                # Save player info to JSON file
                 info_file = self.player_info_dir / f"{player_id}.json"
                 with open(info_file, 'w', encoding='utf-8') as f:
-                    json.dump(info_data, f, indent=2)
-                print(f"Saved info for {name}")
+                    json.dump(player_data, f, indent=2)
+                print(f"Saved player info for {name}")
+            
+            if stats_data:
+                # Save player stats to separate JSON file
+                stats_file = self.player_stats_dir / f"{player_id}.json"
+                with open(stats_file, 'w', encoding='utf-8') as f:
+                    json.dump(stats_data, f, indent=2)
+                print(f"Saved player stats for {name}")
+                
         except Exception as e:
             print(f"Error scraping {name}: {str(e)}")
     
@@ -286,12 +359,13 @@ class PlayerDataScraper:
 def test_single_player(player_id, name):
     """Test the scraper with a single player."""
     scraper = PlayerDataScraper()
-    player_data = scraper.scrape_player_info(player_id, name)
+    player_data, stats_data = scraper.scrape_player_info(player_id, name)
+    
     if player_data:
-        print("\nExtracted Player Data:")
+        print("\nExtracted Player Info:")
         print(json.dumps(player_data, indent=2))
         
-        print("\nData Verification:")
+        print("\nPlayer Info Verification:")
         print(f"1. Photo URL: {'✓' if 'photo_url' in player_data else '✗'}")
         print(f"2. Name: {player_data['name']}")
         print(f"3. Positions: {'✓' if 'positions' in player_data else '✗'} {player_data.get('positions', 'Not found')}")
@@ -299,6 +373,44 @@ def test_single_player(player_id, name):
         print(f"5. Height/Weight: {'✓' if 'height_weight' in player_data else '✗'} {player_data.get('height_weight', 'Not found')}")
         print(f"6. Team: {'✓' if 'team' in player_data else '✗'} {player_data.get('team', 'Not found')}")
         print(f"7. Born: {'✓' if 'born' in player_data else '✗'} {player_data.get('born', 'Not found')}")
+    
+    if stats_data:
+        print("\nExtracted Player Stats:")
+        print(json.dumps(stats_data, indent=2))
+        
+        print("\nStats Verification:")
+        # Get the current year stats
+        print("\n2025 Stats:")
+        for stat, value in stats_data['2025'].items():
+            print(f"  {stat}: {value}")
+        
+        # Career stats
+        print("\nCareer Stats:")
+        for stat, value in stats_data['career'].items():
+            print(f"  {stat}: {value}")
+            
+        # Save to files for testing
+        print("\nSaving files for testing...")
+        # Create the directories if they don't exist
+        scraper.player_info_dir.mkdir(parents=True, exist_ok=True)
+        scraper.player_stats_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Save player info
+        info_file = scraper.player_info_dir / f"{player_id}.json"
+        with open(info_file, 'w', encoding='utf-8') as f:
+            json.dump(player_data, f, indent=2)
+        print(f"Saved player info to {info_file}")
+        
+        # Save player stats
+        stats_file = scraper.player_stats_dir / f"{player_id}.json"
+        with open(stats_file, 'w', encoding='utf-8') as f:
+            json.dump(stats_data, f, indent=2)
+        print(f"Saved player stats to {stats_file}")
+        
+        return player_data, stats_data
+    else:
+        print("Failed to extract data")
+        return None, None
 
 def test_multiple_players():
     """Test the scraper with multiple players."""
@@ -309,19 +421,20 @@ def test_multiple_players():
     ]
     
     scraper = PlayerDataScraper()
-    results = {}
+    player_results = {}
+    stats_results = {}
     
     for player in test_cases:
         print(f"\nTesting with {player['name']}...")
-        player_data = scraper.scrape_player_info(player['id'], player['name'])
+        player_data, stats_data = scraper.scrape_player_info(player['id'], player['name'])
         
         if player_data:
-            results[player['id']] = player_data
+            player_results[player['id']] = player_data
             
-            print("\nExtracted Player Data:")
+            print("\nExtracted Player Info:")
             print(json.dumps(player_data, indent=2))
             
-            print("\nData Verification:")
+            print("\nPlayer Info Verification:")
             print(f"1. Photo URL: {'✓' if 'photo_url' in player_data else '✗'}")
             print(f"2. Name: {player_data['name']}")
             print(f"3. Positions: {'✓' if 'positions' in player_data else '✗'} {player_data.get('positions', 'Not found')}")
@@ -330,61 +443,71 @@ def test_multiple_players():
             print(f"6. Team: {'✓' if 'team' in player_data else '✗'} {player_data.get('team', 'Not found')}")
             print(f"7. Born: {'✓' if 'born' in player_data else '✗'} {player_data.get('born', 'Not found')}")
         
+        if stats_data:
+            stats_results[player['id']] = stats_data
+            
+            print("\nExtracted Player Stats:")
+            print(json.dumps(stats_data, indent=2))
+            
+            print("\nStats Verification:")
+            # Get the current year stats
+            print("\n2025 Stats:")
+            for stat, value in stats_data['2025'].items():
+                print(f"  {stat}: {value}")
+            
+            # Career stats
+            print("\nCareer Stats:")
+            for stat, value in stats_data['career'].items():
+                print(f"  {stat}: {value}")
+                
+            # Save to files
+            # Player info
+            info_file = scraper.player_info_dir / f"{player['id']}.json"
+            with open(info_file, 'w', encoding='utf-8') as f:
+                json.dump(player_data, f, indent=2)
+            
+            # Player stats
+            stats_file = scraper.player_stats_dir / f"{player['id']}.json"
+            with open(stats_file, 'w', encoding='utf-8') as f:
+                json.dump(stats_data, f, indent=2)
+            
+            print(f"Saved files for {player['name']}")
+        
         # Add a delay between requests
         if player != test_cases[-1]:  # Skip delay after last player
             delay = random.uniform(1, 2)
             print(f"Waiting {delay:.1f} seconds...")
             time.sleep(delay)
     
-    return results
+    return player_results, stats_results
 
 def convert_jsons_to_csv():
-    """Convert all player-info JSON files to a single CSV."""
+    """Convert player-info and player-general-stats JSONs into CSVs."""
     from pathlib import Path
     import json, csv
-    files = list(Path("data/baseball-ref/player-info").glob("*.json"))
-    if not files:
-        print("No JSON files to convert.")
-        return
-    records = [json.load(open(str(f), encoding='utf-8')) for f in files]
-    keys = sorted({k for rec in records for k in rec})
-    out = Path("data/baseball-ref/player-info.csv")
-    with open(out, 'w', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, keys)
-        writer.writeheader()
-        writer.writerows(records)
-    print(f"Converted {len(records)} JSON files to CSV: {out}")
+    dirs = {
+        'info': ("data/baseball-ref/player-info", "data/baseball-ref/player-info.csv"),
+        'stats': ("data/baseball-ref/player-general-stats", "data/baseball-ref/player-general-stats.csv")
+    }
+    for label, (dir_path, csv_path) in dirs.items():
+        files = list(Path(dir_path).glob("*.json"))
+        if not files:
+            print(f"No JSON files to convert in {dir_path}.")
+            continue
+        records = [json.load(open(str(f), encoding='utf-8')) for f in files]
+        keys = sorted({k for rec in records for k in rec})
+        out = Path(csv_path)
+        with open(out, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, keys)
+            writer.writeheader()
+            writer.writerows(records)
+        print(f"Converted {len(records)} JSON files from {dir_path} to: {out}")
 
 def main():
-    """Main function to run the scraper."""
-    print("Baseball Reference Player Data Scraper")
-    print("-------------------------------------")
-    print("1. Test with Shohei Ohtani")
-    print("2. Test with Jake Irvin")
-    print("3. Test with multiple players")
-    print("4. Run full scraper for all active players")
-    print("5. Test with custom player ID")
-    print("6. Convert all JSONs to CSV")
-    choice = input("Enter your choice (1-6): ")
-    
-    scraper = PlayerDataScraper(max_workers=5)  # Adjust number of workers as needed
-    
-    if choice == '1':
-        test_single_player("ohtansh01", "Shohei Ohtani")
-    elif choice == '2':
-        test_single_player("irvinja01", "Jake Irvin")
-    elif choice == '3':
-        test_multiple_players()
-    elif choice == '4':
-        scraper.scrape_all_active_players()
-    elif choice == '5':
-        player_id = input("Enter player ID (e.g., 'ohtansh01'): ")
-        name = input("Enter player name: ")
-        test_single_player(player_id, name)
-    elif choice == '6':
-        convert_jsons_to_csv()
-    else:
-        print("Invalid choice!")
+    # Always run full scrape and then export CSVs
+    scraper = PlayerDataScraper(max_workers=5)
+    scraper.scrape_all_active_players()
+    convert_jsons_to_csv()
 
 if __name__ == "__main__":
     main()
