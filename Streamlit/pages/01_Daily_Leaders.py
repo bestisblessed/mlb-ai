@@ -109,7 +109,7 @@ if date:
         st.error(f"Simulation data not found for {date}")
 else:
     st.info("Please select a date from the sidebar to view daily leaders")
-st.sidebar.markdown("---")
+st.sidebar.markdown("")
 if date and 'batters_df' in locals() and 'pitchers_df' in locals():
     html_content = f"""
     <html>

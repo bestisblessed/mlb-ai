@@ -12,15 +12,13 @@ import os
 import re
 import openai
 
-# Set up data directory path
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Streamlit", "data")
 if not os.path.exists(DATA_DIR):
-    # Fallback to local data directory
     DATA_DIR = "data"
-
 # openai_api_key = st.secrets["openai"]["openai_api_key"]
 # openai.api_key = openai_api_key
 st.set_page_config(page_title="MLB Game Analysis Dashboard", page_icon="⚾", layout="wide")
+st.title("MLB Game Analysis Dashboard")
 dates = sorted((d for d in os.listdir(DATA_DIR) if re.match(r"\d{4}-\d{2}-\d{2}", d)), reverse=True)
 date = st.sidebar.selectbox("Select Date", dates)
 if date:
@@ -38,8 +36,9 @@ if date:
             home_team = selected_game["home_team"]
             game_time = selected_game["time"]
             detailed_row = sim_detailed[sim_detailed["game_id"] == int(game_id)].iloc[0]
-            st.title(f"{away_team} @ {home_team} - {game_time}")
+            st.subheader(f"{away_team} @ {home_team} - {game_time}")
             st.caption(f"MLB Analysis · Game ID: {game_id} · {date} · {game_time}")
+            st.divider()
             col1, col2, col3, col4 = st.columns(4)
             with col1:
                 st.metric("Projected Runs (Away)", f"{selected_game['away_score']:.2f}")
@@ -69,6 +68,7 @@ if date:
                         st.metric("Win Probability (Home)", home_win_prob)
                 else:
                     st.metric("Win Probability (Home)", home_win_prob)
+        st.write("")
         away_col, home_col = st.columns(2)
         with away_col:
                 st.subheader(f"{away_team}")
