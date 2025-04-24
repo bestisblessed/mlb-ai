@@ -1,3 +1,6 @@
 !data/
 !data/**/
 playwright_user_data/
+data/baseball-ref/raw-players-game-logs/
+data/baseball-ref/raw*
+*DS_*
