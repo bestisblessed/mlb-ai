@@ -1,14 +1,19 @@
 on: [push]
 
 jobs:
-  build-node:
+  Notion_Hook_job:
     runs-on: ubuntu-latest
-    name: Sync commits to Notion
+    name: Sync your commits to Notion
     steps:
-      - name: Sync Github Commit to Notion
-        id: notion-sync-commit
-        uses: marlisumarli/sync-github-to-notion@1.0.2
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Connect to Notion step
+        id: notion
+        uses: alessandrobelli/NotionHook@1.1
         with:
           notion_secret: ${{ secrets.NOTION_SECRET }}
           notion_database: ${{ secrets.NOTION_DATABASE }}
-          branch: ${{ github.ref_name }}
+          files_format: 'text-list'
+          token: ${{ github.token }}
