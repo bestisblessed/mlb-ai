@@ -11,9 +11,7 @@ import time
 import os
 import re
 st.set_page_config(page_title="MLB Game Analysis Dashboard", page_icon="⚾", layout="wide")
-st.sidebar.title("MLB Game Analysis")
-st.sidebar.markdown("---")
-dates = sorted(d for d in os.listdir("data") if re.match(r"\d{4}-\d{2}-\d{2}", d))
+dates = sorted((d for d in os.listdir("data") if re.match(r"\d{4}-\d{2}-\d{2}", d)), reverse=True)
 date = st.sidebar.selectbox("Select Date", dates)
 if date:
     sim_path = f"data/{date}/game_simulations.csv"
@@ -59,10 +57,10 @@ if date:
                         st.metric("Win Probability (Home)", formatted_text)
                     else:
                         st.metric("Win Probability (Home)", home_win_prob)
-                else:
+        else:
                     st.metric("Win Probability (Home)", home_win_prob)
-            away_col, home_col = st.columns(2)
-            with away_col:
+        away_col, home_col = st.columns(2)
+        with away_col:
                 st.subheader(f"{away_team}")
                 pitcher_path = f"data/{date}/{game_id}/proj_box_pitchers_1.csv"
                 if os.path.exists(pitcher_path):
@@ -93,7 +91,7 @@ if date:
                         numeric_cols = formatted_df.select_dtypes(include=[np.number]).columns
                         formatted_df[numeric_cols] = formatted_df[numeric_cols].round(2)
                         st.dataframe(formatted_df, hide_index=True)
-            with home_col:
+        with home_col:
                 st.subheader(f"{home_team}")
                 pitcher_path = f"data/{date}/{game_id}/proj_box_pitchers_2.csv"
                 if os.path.exists(pitcher_path):
