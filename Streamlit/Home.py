@@ -10,6 +10,9 @@ from openai import OpenAI
 import time
 import os
 import re
+import openai
+openai_api_key = st.secrets["openai"]["openai_api_key"]
+openai.api_key = openai_api_key
 st.set_page_config(page_title="MLB Game Analysis Dashboard", page_icon="⚾", layout="wide")
 dates = sorted((d for d in os.listdir("data") if re.match(r"\d{4}-\d{2}-\d{2}", d)), reverse=True)
 date = st.sidebar.selectbox("Select Date", dates)
