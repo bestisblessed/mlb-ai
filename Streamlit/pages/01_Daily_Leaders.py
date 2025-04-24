@@ -5,30 +5,38 @@ import os
 import re
 import io
 from streamlit.components.v1 import html
+
+# Set up data directory path
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Streamlit", "data")
+if not os.path.exists(DATA_DIR):
+    # Fallback to local data directory
+    DATA_DIR = "data"
+
 st.set_page_config(page_title="MLB Daily Leaders", page_icon="⚾", layout="wide")
 st.title("MLB Daily Leaders")
-dates = sorted((d for d in os.listdir("data") if re.match(r"\d{4}-\d{2}-\d{2}", d)), reverse=True)
+dates = sorted((d for d in os.listdir(DATA_DIR) if re.match(r"\d{4}-\d{2}-\d{2}", d)), reverse=True)
 date = st.sidebar.selectbox("Select Date", dates)
 if date:
-    sim_path = f"data/{date}/game_simulations.csv"
+    sim_path = os.path.join(DATA_DIR, date, "game_simulations.csv")
     if os.path.exists(sim_path):
         sim = pd.read_csv(sim_path)
         all_batters = []
         all_pitchers = []
         for game_id in sim['game_id']:
+            game_id = str(game_id)  # Convert to string for path construction
             for team_num in [1, 2]:
-                batter_path = f"data/{date}/{game_id}/proj_box_batters_{team_num}.csv"
+                batter_path = os.path.join(DATA_DIR, date, game_id, f"proj_box_batters_{team_num}.csv")
                 if os.path.exists(batter_path):
                     df = pd.read_csv(batter_path)
-                    game_info = sim[sim['game_id'] == game_id].iloc[0]
+                    game_info = sim[sim['game_id'] == int(game_id)].iloc[0]  # Convert back to int for comparison
                     df['Game'] = f"{game_info['away_team']} @ {game_info['home_team']}"
                     df['Team'] = game_info['away_team'] if team_num == 1 else game_info['home_team']
                     all_batters.append(df)
             for team_num in [1, 2]:
-                pitcher_path = f"data/{date}/{game_id}/proj_box_pitchers_{team_num}.csv"
+                pitcher_path = os.path.join(DATA_DIR, date, game_id, f"proj_box_pitchers_{team_num}.csv")
                 if os.path.exists(pitcher_path):
                     df = pd.read_csv(pitcher_path)
-                    game_info = sim[sim['game_id'] == game_id].iloc[0]
+                    game_info = sim[sim['game_id'] == int(game_id)].iloc[0]  # Convert back to int for comparison
                     df['Game'] = f"{game_info['away_team']} @ {game_info['home_team']}"
                     df['Team'] = game_info['away_team'] if team_num == 1 else game_info['home_team']
                     all_pitchers.append(df)
@@ -43,7 +51,7 @@ if date:
                 col1, col2, col3 = st.columns(3)
                 with col1:
                     st.caption("Projected Home Run Leaders")
-                    hr_leaders = batters_df.nlargest(20, 'HR')[['Batter', 'HR', 'Game']]
+                    hr_leaders = batters_df.nlargest(30, 'HR')[['Batter', 'HR', 'Game']]
                     hr_leaders = hr_leaders.reset_index(drop=True)
                     hr_leaders.index = hr_leaders.index + 1  # Start numbering at 1
                     numeric_cols = hr_leaders.select_dtypes(include=[np.number]).columns
@@ -51,7 +59,7 @@ if date:
                     st.dataframe(hr_leaders, height=600)  # Removed hide_index=True
                 with col2:
                     st.caption("Projected Hits Leaders")
-                    hits_leaders = batters_df.nlargest(20, 'H')[['Batter', 'H', '1B', '2B', '3B', 'Team']]
+                    hits_leaders = batters_df.nlargest(30, 'H')[['Batter', 'H', '1B', '2B', '3B', 'Team']]
                     hits_leaders = hits_leaders.reset_index(drop=True)
                     hits_leaders.index = hits_leaders.index + 1
                     numeric_cols = hits_leaders.select_dtypes(include=[np.number]).columns
@@ -59,7 +67,7 @@ if date:
                     st.dataframe(hits_leaders, height=600)
                 with col3:
                     st.caption("Projected RBI Leaders")
-                    rbi_leaders = batters_df.nlargest(20, 'RBI')[['Batter', 'RBI', 'Team']]
+                    rbi_leaders = batters_df.nlargest(30, 'RBI')[['Batter', 'RBI', 'Team']]
                     rbi_leaders = rbi_leaders.reset_index(drop=True)
                     rbi_leaders.index = rbi_leaders.index + 1
                     numeric_cols = rbi_leaders.select_dtypes(include=[np.number]).columns
@@ -161,21 +169,6 @@ if date and 'batters_df' in locals() and 'pitchers_df' in locals():
         <body>
             <h1>MLB Daily Leaders Report</h1>
             <p class="date">Date: {date}</p>
-            <h2 class="section-title">Hitter Projections</h2>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <h3>Home Run Leaders</h3>
-                    {hr_leaders.to_html(index=True)}
-                </div>
-                <div class="grid-item">
-                    <h3>Hits Leaders</h3>
-                    {hits_leaders.to_html(index=True)}
-                </div>
-                <div class="grid-item">
-                    <h3>RBI Leaders</h3>
-                    {rbi_leaders.to_html(index=True)}
-                </div>
-            </div>
             <h2 class="section-title">Pitcher Projections</h2>
             <div class="grid-container">
                 <div class="grid-item">
@@ -189,6 +182,21 @@ if date and 'batters_df' in locals() and 'pitchers_df' in locals():
                 <div class="grid-item">
                     <h3>Win Probability Leaders</h3>
                     {win_leaders.to_html(index=True)}
+                </div>
+            </div>
+            <h2 class="section-title">Hitter Projections</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Home Run Leaders</h3>
+                    {hr_leaders.to_html(index=True)}
+                </div>
+                <div class="grid-item">
+                    <h3>Hits Leaders</h3>
+                    {hits_leaders.to_html(index=True)}
+                </div>
+                <div class="grid-item">
+                    <h3>RBI Leaders</h3>
+                    {rbi_leaders.to_html(index=True)}
                 </div>
             </div>
             <p style="text-align: center; margin-top: 40px; color: #666;">

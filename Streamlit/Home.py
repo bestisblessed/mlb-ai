@@ -11,14 +11,21 @@ import time
 import os
 import re
 import openai
+
+# Set up data directory path
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Streamlit", "data")
+if not os.path.exists(DATA_DIR):
+    # Fallback to local data directory
+    DATA_DIR = "data"
+
 # openai_api_key = st.secrets["openai"]["openai_api_key"]
 # openai.api_key = openai_api_key
 st.set_page_config(page_title="MLB Game Analysis Dashboard", page_icon="⚾", layout="wide")
-dates = sorted((d for d in os.listdir("data") if re.match(r"\d{4}-\d{2}-\d{2}", d)), reverse=True)
+dates = sorted((d for d in os.listdir(DATA_DIR) if re.match(r"\d{4}-\d{2}-\d{2}", d)), reverse=True)
 date = st.sidebar.selectbox("Select Date", dates)
 if date:
-    sim_path = f"data/{date}/game_simulations.csv"
-    detail_path = f"data/{date}/game_simulations_per_game_tables.csv"
+    sim_path = os.path.join(DATA_DIR, date, "game_simulations.csv")
+    detail_path = os.path.join(DATA_DIR, date, "game_simulations_per_game_tables.csv")
     if os.path.exists(sim_path) and os.path.exists(detail_path):
         sim = pd.read_csv(sim_path)
         sim_detailed = pd.read_csv(detail_path)
@@ -26,11 +33,11 @@ if date:
         game_idx = st.sidebar.selectbox("Select Game", range(len(games)), format_func=lambda i: games[i])
         if game_idx is not None:
             selected_game = sim.iloc[game_idx]
-            game_id = selected_game["game_id"]
+            game_id = str(selected_game["game_id"])
             away_team = selected_game["away_team"]
             home_team = selected_game["home_team"]
             game_time = selected_game["time"]
-            detailed_row = sim_detailed[sim_detailed["game_id"] == game_id].iloc[0]
+            detailed_row = sim_detailed[sim_detailed["game_id"] == int(game_id)].iloc[0]
             st.title(f"{away_team} @ {home_team} - {game_time}")
             st.caption(f"MLB Analysis · Game ID: {game_id} · {date} · {game_time}")
             col1, col2, col3, col4 = st.columns(4)
@@ -60,12 +67,12 @@ if date:
                         st.metric("Win Probability (Home)", formatted_text)
                     else:
                         st.metric("Win Probability (Home)", home_win_prob)
-        else:
+                else:
                     st.metric("Win Probability (Home)", home_win_prob)
         away_col, home_col = st.columns(2)
         with away_col:
                 st.subheader(f"{away_team}")
-                pitcher_path = f"data/{date}/{game_id}/proj_box_pitchers_1.csv"
+                pitcher_path = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_1.csv")
                 if os.path.exists(pitcher_path):
                     pitcher_df = pd.read_csv(pitcher_path)
                     if not pitcher_df.empty:
@@ -84,7 +91,7 @@ if date:
                             "QS%": f"{pitcher['QS']*100:.0f}%"
                         }
                         st.table(pd.DataFrame([stats]))
-                batters_path = f"data/{date}/{game_id}/proj_box_batters_1.csv"
+                batters_path = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_1.csv")
                 if os.path.exists(batters_path):
                     batters_df = pd.read_csv(batters_path)
                     if not batters_df.empty:
@@ -96,7 +103,7 @@ if date:
                         st.dataframe(formatted_df, hide_index=True)
         with home_col:
                 st.subheader(f"{home_team}")
-                pitcher_path = f"data/{date}/{game_id}/proj_box_pitchers_2.csv"
+                pitcher_path = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_2.csv")
                 if os.path.exists(pitcher_path):
                     pitcher_df = pd.read_csv(pitcher_path)
                     if not pitcher_df.empty:
@@ -115,7 +122,7 @@ if date:
                             "QS%": f"{pitcher['QS']*100:.0f}%"
                         }
                         st.table(pd.DataFrame([stats]))
-                batters_path = f"data/{date}/{game_id}/proj_box_batters_2.csv"
+                batters_path = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_2.csv")
                 if os.path.exists(batters_path):
                     batters_df = pd.read_csv(batters_path)
                     if not batters_df.empty:
