@@ -9,7 +9,6 @@ from streamlit.components.v1 import html
 # Set up data directory path
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 if not os.path.exists(DATA_DIR):
-    # Fallback to local data directory
     DATA_DIR = "data"
 
 st.set_page_config(page_title="MLB Daily Leaders", page_icon="⚾", layout="wide")
