@@ -84,11 +84,11 @@ if user_input:
         message_placeholder.markdown(full_response)
     st.session_state.messages.append({"role": "user", "content": user_input})
     st.session_state.messages.append({"role": "assistant", "content": full_response})
-if games_df is not None:
-    st.sidebar.subheader(f"Today's Games ({latest_date})")
-    for _, game in games_df.iterrows():
-        st.sidebar.markdown(f"- **{game['away_team']} @ {game['home_team']}** ({game['time']})")
-    st.sidebar.markdown("---")
+# if games_df is not None:
+    # st.sidebar.subheader(f"Today's Games ({latest_date})")
+    # for _, game in games_df.iterrows():
+    #     st.sidebar.markdown(f"- **{game['away_team']} @ {game['home_team']}** ({game['time']})")
+    # st.sidebar.markdown("---")
 st.sidebar.markdown("**Example Questions:**")
 example_container = st.sidebar.container()
 for example in examples:
