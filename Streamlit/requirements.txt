@@ -1,0 +1,5 @@
+matplotlib>=3.10.0
+plotly>=5.24.1
+openai>=1.66.2
+datetime
+python-dateutil>=2.9.0 
