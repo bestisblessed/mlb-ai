@@ -11,7 +11,8 @@ jobs:
           fetch-depth: 0        # keep full history
 
       - name: Send commit info to Notion
-        uses: alessandrobelli/NotionHook@1.1
+        # uses: alessandrobelli/NotionHook@1.1
+        uses: bestisblessed/NotionHook
         with:
           notion_secret:   ${{ secrets.NOTION_SECRET }}   # integration token
           notion_database: ${{ secrets.NOTION_DATABASE }} # database ID
