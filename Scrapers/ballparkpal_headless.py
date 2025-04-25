@@ -7,6 +7,7 @@ import pandas as pd
 from datetime import datetime
 import glob
 from io import StringIO
+from urllib.parse import urljoin
 
 # Create base directories
 today = datetime.now().strftime('%Y-%m-%d')
@@ -174,12 +175,40 @@ for html_path in game_files:
             df.to_csv(os.path.join(output_dir, f"wins_by_{team_key}.csv"), index=False)
     box_tables = soup.find_all('table', class_='boxScoreTable')
     for idx, tbl in enumerate(box_tables[:4], start=1):
-        df = pd.read_html(StringIO(str(tbl)))[0]
-        if idx <= 2:
-            name = f"proj_box_pitchers_{idx}.csv"
+        headers = [th.get_text(strip=True) for th in tbl.find_all('th')]
+        headers.append('Player URL')
+        table_data = []
+        tbody = tbl.find('tbody')
+        if not tbody:
+            print(f"Warning: No tbody found in table {idx} for game {game_id}. Skipping table.")
+            continue
+        for row in tbody.find_all('tr'):
+            cells = row.find_all('td')
+            if not cells:
+                continue
+            row_data = [cell.get_text(strip=True) for cell in cells]
+            player_url = None
+            player_link = row.find('a', href=lambda href: href and 'PlayerId=' in href)
+            if player_link:
+                href = player_link['href']
+                base_url = "https://www.ballparkpal.com/"
+                player_url = urljoin(base_url, href)
+            row_data.append(player_url)
+            if len(row_data) == len(headers):
+                 table_data.append(dict(zip(headers, row_data)))
+            else:
+                print(f"Warning: Skipping row in table {idx} for game {game_id} due to header/data mismatch.")
+                print(f"Headers ({len(headers)}): {headers}")
+                print(f"Row Data ({len(row_data)}): {row_data}")
+        if table_data:
+            df = pd.DataFrame(table_data)
+            if idx <= 2:
+                name = f"proj_box_pitchers_{idx}.csv"
+            else:
+                name = f"proj_box_batters_{idx-2}.csv"
+            df.to_csv(os.path.join(output_dir, name), index=False)
         else:
-            name = f"proj_box_batters_{idx-2}.csv"
-        df.to_csv(os.path.join(output_dir, name), index=False)
+             print(f"Info: No data extracted from table {idx} for game {game_id}.")
     p_total = find_p(soup, 'Total Runs Scored')
     if p_total:
         tbl = p_total.find_next('table', class_='totalRunsTable')
