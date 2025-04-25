@@ -15,4 +15,8 @@ jobs:
           commit_url: "Url"                   # Column for the commit URL (Notion property type: URL)&#8203;:contentReference[oaicite:7]{index=7}
           commit_id: "Id"                     # Column for the commit SHA (Notion property type: text)&#8203;:contentReference[oaicite:8]{index=8}
           commit_project: "Project"           # Column for project tag (Notion property type: multi-select)&#8203;:contentReference[oaicite:9]{index=9}
+          
           # No 'token' or 'files_format' provided – this skips listing changed files (avoids 2k char limit issues)
+          # files_format:      'none'
+          token:             ${{ github.token }}
+
