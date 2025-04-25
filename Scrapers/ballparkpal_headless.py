@@ -7,7 +7,7 @@ import pandas as pd
 from datetime import datetime
 import glob
 from io import StringIO
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse, parse_qs
 
 # Create base directories
 today = datetime.now().strftime('%Y-%m-%d')
@@ -177,6 +177,7 @@ for html_path in game_files:
     for idx, tbl in enumerate(box_tables[:4], start=1):
         headers = [th.get_text(strip=True) for th in tbl.find_all('th')]
         headers.append('Player URL')
+        headers.append('Player ID')
         table_data = []
         tbody = tbl.find('tbody')
         if not tbody:
@@ -188,12 +189,19 @@ for html_path in game_files:
                 continue
             row_data = [cell.get_text(strip=True) for cell in cells]
             player_url = None
+            player_id = None
             player_link = row.find('a', href=lambda href: href and 'PlayerId=' in href)
             if player_link:
                 href = player_link['href']
                 base_url = "https://www.ballparkpal.com/"
                 player_url = urljoin(base_url, href)
+                
+                if 'PlayerId=' in href:
+                    player_id = href.split('PlayerId=')[1]
+                
             row_data.append(player_url)
+            row_data.append(player_id)
+            
             if len(row_data) == len(headers):
                  table_data.append(dict(zip(headers, row_data)))
             else:
