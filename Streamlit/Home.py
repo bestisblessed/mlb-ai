@@ -90,7 +90,7 @@ if date:
                             "Win%": f"{pitcher['W']*100:.0f}%",
                             "QS%": f"{pitcher['QS']*100:.0f}%"
                         }
-                        st.table(pd.DataFrame([stats]))
+                        st.dataframe(pd.DataFrame([stats]), hide_index=True)
                 batters_path = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_1.csv")
                 if os.path.exists(batters_path):
                     batters_df = pd.read_csv(batters_path)
@@ -121,7 +121,7 @@ if date:
                             "Win%": f"{pitcher['W']*100:.0f}%",
                             "QS%": f"{pitcher['QS']*100:.0f}%"
                         }
-                        st.table(pd.DataFrame([stats]))
+                        st.dataframe(pd.DataFrame([stats]), hide_index=True)
                 batters_path = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_2.csv")
                 if os.path.exists(batters_path):
                     batters_df = pd.read_csv(batters_path)
