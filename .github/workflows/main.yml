@@ -1,29 +1,31 @@
 name: Sync commits to Notion
-
-on: [push]
+on:
+  push:
 
 jobs:
   notion_hook_job:
     runs-on: ubuntu-latest
     steps:
+      # 1) Check out full history so we can diff commits
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0        # keep full history
+          fetch-depth: 0
 
+      # 2) Send each commit to Notion (no file list)
       - name: Send commit info to Notion
-        # uses: alessandrobelli/NotionHook@1.1
-        uses: bestisblessed/NotionHook@1.1
+        uses: bestisblessed/NotionHook@main   # ← replace with your fork
         with:
-          notion_secret:   ${{ secrets.NOTION_SECRET }}   # integration token
-          notion_database: ${{ secrets.NOTION_DATABASE }} # database ID
+          notion_secret:   ${{ secrets.NOTION_SECRET }}
+          notion_database: ${{ secrets.NOTION_DATABASE }}
 
-          # --- map GitHub fields → your Notion columns ---
-          commit_description: "Description"   # rich-text
-          commit_url:        "Url"            # URL
-          commit_id:         "Id"             # plain text
-          commit_project:    "Project"        # multi-select
+          # map your GitHub fields → Notion columns
+          commit_description: "Description"   # rich-text column name
+          commit_url:        "Url"            # URL column name
+          commit_id:         "Id"             # plain-text column name
+          commit_project:    "Project"        # multi-select column name
 
-          # optional helpers
-          files_format: 'text-list'
-          # files_format:      'none'
-          token:        ${{ github.token }}
+          # turn off the file‐list block entirely
+          files_format:      "none"
+
+          # GitHub token to fetch diffs (unused when `files_format: none`)
+          token:             ${{ secrets.GITHUB_TOKEN }}
