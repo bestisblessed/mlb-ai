@@ -24,4 +24,5 @@ jobs:
 
           # optional helpers
           # files_format: 'text-list'
-          token:        ${{ github.token }}
+          files_format: ""        # empty string → skip diff → token not needed
+          # token:        ${{ github.token }}
