@@ -11,7 +11,7 @@ jobs:
 
       - name: Send commit info to Notion
         # ⬇️  Pin to the last 1.0 tag — no token, no file list, no toggles
-        uses: alessandrobelli/NotionHook@v1.0
+        uses: alessandrobelli/NotionHook@v1
         with:
           notion_secret:   ${{ secrets.NOTION_SECRET }}
           notion_database: ${{ secrets.NOTION_DATABASE }}
