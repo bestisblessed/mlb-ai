@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.8,J. Smith,9.9,7.7,1.05,0.55,.35,.54,.81,.75,.23,.01,.07,.14,https://BallparkPal.com/Batter.php?PlayerId=669701
-2,4.7,W. Langford,11.0,8.4,0.94,0.55,.45,.59,.85,.63,.17,.01,.13,.22,https://BallparkPal.com/Batter.php?PlayerId=694671
-3,4.6,J. Pederson,9.3,7.1,0.89,0.46,.49,.49,.79,.57,.21,.01,.10,.06,https://BallparkPal.com/Batter.php?PlayerId=592626
-4,4.5,A. Garcia,10.2,7.8,0.97,0.49,.54,.39,.93,.61,.22,.01,.13,.14,https://BallparkPal.com/Batter.php?PlayerId=666969
-5,4.4,M. Semien,9.6,7.3,0.86,0.46,.51,.46,.60,.58,.14,.01,.13,.11,https://BallparkPal.com/Batter.php?PlayerId=543760
-6,4.3,J. Jung,8.3,6.4,0.92,0.41,.43,.31,.89,.65,.16,.02,.10,.06,https://BallparkPal.com/Batter.php?PlayerId=673962
-7,4.2,J. Heim,8.0,6.2,0.90,0.40,.38,.41,.66,.64,.18,.00,.07,.05,https://BallparkPal.com/Batter.php?PlayerId=641680
-8,4.0,J. Burger,7.8,6.1,0.90,0.39,.43,.21,.95,.62,.17,.01,.10,.05,https://BallparkPal.com/Batter.php?PlayerId=669394
-9,3.9,L. Taveras,7.7,6.0,0.78,0.36,.32,.29,.83,.55,.16,.02,.05,.18,https://BallparkPal.com/Batter.php?PlayerId=665750
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.8,J. Smith,9.9,7.7,1.05,0.55,.35,.54,.81,.75,.23,.01,.07,.14,https://BallparkPal.com/Batter.php?PlayerId=669701,669701
+2,4.7,W. Langford,11.0,8.4,0.94,0.55,.45,.59,.85,.63,.17,.01,.13,.22,https://BallparkPal.com/Batter.php?PlayerId=694671,694671
+3,4.6,J. Pederson,9.3,7.1,0.89,0.46,.49,.49,.79,.57,.21,.01,.10,.06,https://BallparkPal.com/Batter.php?PlayerId=592626,592626
+4,4.5,A. Garcia,10.2,7.8,0.97,0.49,.54,.39,.93,.61,.22,.01,.13,.14,https://BallparkPal.com/Batter.php?PlayerId=666969,666969
+5,4.4,M. Semien,9.6,7.3,0.86,0.46,.51,.46,.60,.58,.14,.01,.13,.11,https://BallparkPal.com/Batter.php?PlayerId=543760,543760
+6,4.3,J. Jung,8.3,6.4,0.92,0.41,.43,.31,.89,.65,.16,.02,.10,.06,https://BallparkPal.com/Batter.php?PlayerId=673962,673962
+7,4.2,J. Heim,8.0,6.2,0.90,0.40,.38,.41,.66,.64,.18,.00,.07,.05,https://BallparkPal.com/Batter.php?PlayerId=641680,641680
+8,4.0,J. Burger,7.8,6.1,0.90,0.39,.43,.21,.95,.62,.17,.01,.10,.05,https://BallparkPal.com/Batter.php?PlayerId=669394,669394
+9,3.9,L. Taveras,7.7,6.0,0.78,0.36,.32,.29,.83,.55,.16,.02,.05,.18,https://BallparkPal.com/Batter.php?PlayerId=665750,665750

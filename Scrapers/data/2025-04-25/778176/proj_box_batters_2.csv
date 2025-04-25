@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.5,S. Ohtani,12.9,9.8,0.98,0.67,.61,.44,1.28,.49,.15,.04,.31,.16,https://BallparkPal.com/Batter.php?PlayerId=660271
-2,4.4,M. Betts,9.9,7.6,0.97,0.49,.39,.54,.62,.69,.15,.01,.12,.15,https://BallparkPal.com/Batter.php?PlayerId=605141
-3,4.3,F. Freeman,8.7,6.7,0.93,0.43,.42,.40,.89,.65,.16,.02,.10,.07,https://BallparkPal.com/Batter.php?PlayerId=518692
-4,4.2,T. Hernandez,9.0,7.0,0.92,0.42,.51,.26,1.19,.60,.17,.01,.15,.09,https://BallparkPal.com/Batter.php?PlayerId=606192
-5,4.1,T. Edman,8.1,6.3,0.85,0.36,.39,.30,.81,.63,.11,.02,.09,.15,https://BallparkPal.com/Batter.php?PlayerId=669242
-6,4.0,M. Conforto,7.2,5.5,0.65,0.35,.37,.41,1.26,.40,.13,.00,.12,.03,https://BallparkPal.com/Batter.php?PlayerId=624424
-7,3.8,W. Smith,7.5,5.6,0.68,0.37,.37,.43,.96,.42,.12,.01,.12,.02,https://BallparkPal.com/Batter.php?PlayerId=669257
-8,3.7,M. Muncy,6.6,4.9,0.50,0.35,.30,.50,1.36,.29,.11,.00,.10,.03,https://BallparkPal.com/Batter.php?PlayerId=571970
-9,3.6,A. Pages,6.5,5.0,0.65,0.36,.31,.31,1.01,.42,.14,.00,.09,.03,https://BallparkPal.com/Batter.php?PlayerId=681624
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.5,S. Ohtani,12.9,9.8,0.98,0.67,.61,.44,1.28,.49,.15,.04,.31,.16,https://BallparkPal.com/Batter.php?PlayerId=660271,660271
+2,4.4,M. Betts,9.9,7.6,0.97,0.49,.39,.54,.62,.69,.15,.01,.12,.15,https://BallparkPal.com/Batter.php?PlayerId=605141,605141
+3,4.3,F. Freeman,8.7,6.7,0.93,0.43,.42,.40,.89,.65,.16,.02,.10,.07,https://BallparkPal.com/Batter.php?PlayerId=518692,518692
+4,4.2,T. Hernandez,9.0,7.0,0.92,0.42,.51,.26,1.19,.60,.17,.01,.15,.09,https://BallparkPal.com/Batter.php?PlayerId=606192,606192
+5,4.1,T. Edman,8.1,6.3,0.85,0.36,.39,.30,.81,.63,.11,.02,.09,.15,https://BallparkPal.com/Batter.php?PlayerId=669242,669242
+6,4.0,M. Conforto,7.2,5.5,0.65,0.35,.37,.41,1.26,.40,.13,.00,.12,.03,https://BallparkPal.com/Batter.php?PlayerId=624424,624424
+7,3.8,W. Smith,7.5,5.6,0.68,0.37,.37,.43,.96,.42,.12,.01,.12,.02,https://BallparkPal.com/Batter.php?PlayerId=669257,669257
+8,3.7,M. Muncy,6.6,4.9,0.50,0.35,.30,.50,1.36,.29,.11,.00,.10,.03,https://BallparkPal.com/Batter.php?PlayerId=571970,571970
+9,3.6,A. Pages,6.5,5.0,0.65,0.36,.31,.31,1.01,.42,.14,.00,.09,.03,https://BallparkPal.com/Batter.php?PlayerId=681624,681624

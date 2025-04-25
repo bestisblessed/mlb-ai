@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.6,L. Nootbaar,11.7,8.8,1.01,0.67,.49,.71,.81,.65,.17,.02,.17,.09,https://BallparkPal.com/Batter.php?PlayerId=663457
-2,4.5,W. Contreras,10.7,8.0,0.95,0.58,.51,.54,1.09,.57,.20,.01,.17,.07,https://BallparkPal.com/Batter.php?PlayerId=575929
-3,4.4,B. Donovan,9.7,7.5,1.09,0.50,.51,.33,.47,.76,.19,.02,.12,.06,https://BallparkPal.com/Batter.php?PlayerId=680977
-4,4.3,N. Arenado,9.1,7.0,1.00,0.48,.49,.38,.52,.73,.16,.02,.09,.04,https://BallparkPal.com/Batter.php?PlayerId=571448
-5,4.2,A. Burleson,8.6,6.7,0.99,0.46,.45,.30,.54,.71,.23,.00,.06,.08,https://BallparkPal.com/Batter.php?PlayerId=676475
-6,4.1,J. Walker,9.2,7.0,0.93,0.48,.51,.31,1.00,.63,.16,.02,.13,.07,https://BallparkPal.com/Batter.php?PlayerId=691023
-7,4.0,N. Gorman,10.3,7.7,0.88,0.51,.55,.48,1.16,.52,.18,.00,.18,.07,https://BallparkPal.com/Batter.php?PlayerId=669357
-8,3.9,P. Pages,8.6,6.6,0.85,0.44,.48,.26,.94,.53,.17,.01,.13,.07,https://BallparkPal.com/Batter.php?PlayerId=686780
-9,3.8,V. Scott II,9.1,7.0,0.80,0.45,.42,.30,.93,.53,.15,.01,.12,.22,https://BallparkPal.com/Batter.php?PlayerId=687363
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.6,L. Nootbaar,11.7,8.8,1.01,0.67,.49,.71,.81,.65,.17,.02,.17,.09,https://BallparkPal.com/Batter.php?PlayerId=663457,663457
+2,4.5,W. Contreras,10.7,8.0,0.95,0.58,.51,.54,1.09,.57,.20,.01,.17,.07,https://BallparkPal.com/Batter.php?PlayerId=575929,575929
+3,4.4,B. Donovan,9.7,7.5,1.09,0.50,.51,.33,.47,.76,.19,.02,.12,.06,https://BallparkPal.com/Batter.php?PlayerId=680977,680977
+4,4.3,N. Arenado,9.1,7.0,1.00,0.48,.49,.38,.52,.73,.16,.02,.09,.04,https://BallparkPal.com/Batter.php?PlayerId=571448,571448
+5,4.2,A. Burleson,8.6,6.7,0.99,0.46,.45,.30,.54,.71,.23,.00,.06,.08,https://BallparkPal.com/Batter.php?PlayerId=676475,676475
+6,4.1,J. Walker,9.2,7.0,0.93,0.48,.51,.31,1.00,.63,.16,.02,.13,.07,https://BallparkPal.com/Batter.php?PlayerId=691023,691023
+7,4.0,N. Gorman,10.3,7.7,0.88,0.51,.55,.48,1.16,.52,.18,.00,.18,.07,https://BallparkPal.com/Batter.php?PlayerId=669357,669357
+8,3.9,P. Pages,8.6,6.6,0.85,0.44,.48,.26,.94,.53,.17,.01,.13,.07,https://BallparkPal.com/Batter.php?PlayerId=686780,686780
+9,3.8,V. Scott II,9.1,7.0,0.80,0.45,.42,.30,.93,.53,.15,.01,.12,.22,https://BallparkPal.com/Batter.php?PlayerId=687363,687363

@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.8,J. Duran,12.0,9.3,1.11,0.65,.44,.44,.91,.69,.23,.05,.15,.23,https://BallparkPal.com/Batter.php?PlayerId=680776
-2,4.7,R. Devers,10.5,7.9,0.94,0.59,.49,.51,1.18,.53,.23,.01,.17,.05,https://BallparkPal.com/Batter.php?PlayerId=646240
-3,4.6,A. Bregman,11.1,8.5,1.09,0.55,.57,.41,.63,.66,.25,.01,.17,.07,https://BallparkPal.com/Batter.php?PlayerId=608324
-4,4.5,T. Story,9.7,7.4,0.90,0.48,.50,.33,1.19,.55,.19,.02,.14,.14,https://BallparkPal.com/Batter.php?PlayerId=596115
-5,4.3,W. Abreu,10.5,7.9,0.92,0.53,.57,.42,1.03,.54,.19,.01,.19,.09,https://BallparkPal.com/Batter.php?PlayerId=677800
-6,4.2,K. Campbell,9.1,6.9,0.83,0.48,.45,.43,1.05,.50,.18,.00,.14,.07,https://BallparkPal.com/Batter.php?PlayerId=692225
-7,4.1,T. Casas,9.9,7.4,0.84,0.54,.54,.51,1.06,.50,.15,.01,.19,.03,https://BallparkPal.com/Batter.php?PlayerId=671213
-8,4.0,C. Narvaez,9.4,7.1,0.82,0.49,.55,.28,1.07,.46,.16,.00,.21,.04,https://BallparkPal.com/Batter.php?PlayerId=665966
-9,3.9,C. Rafaela,9.5,7.4,0.94,0.46,.50,.18,.84,.58,.17,.03,.16,.14,https://BallparkPal.com/Batter.php?PlayerId=678882
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.8,J. Duran,12.5,9.7,1.20,0.69,.45,.44,.90,.74,.25,.04,.16,.23,https://BallparkPal.com/Batter.php?PlayerId=680776,680776
+2,4.7,R. Devers,10.7,8.1,0.97,0.60,.51,.50,1.21,.54,.25,.01,.17,.05,https://BallparkPal.com/Batter.php?PlayerId=646240,646240
+3,4.6,A. Bregman,11.4,8.7,1.15,0.59,.59,.42,.61,.68,.28,.01,.18,.06,https://BallparkPal.com/Batter.php?PlayerId=608324,608324
+4,4.5,T. Story,10.6,8.1,0.98,0.50,.57,.32,1.20,.58,.22,.02,.16,.16,https://BallparkPal.com/Batter.php?PlayerId=596115,596115
+5,4.4,W. Abreu,10.6,8.0,0.94,0.53,.58,.41,1.03,.57,.18,.00,.19,.09,https://BallparkPal.com/Batter.php?PlayerId=677800,677800
+6,4.3,K. Campbell,9.3,7.0,0.86,0.50,.45,.43,1.06,.51,.21,.00,.14,.07,https://BallparkPal.com/Batter.php?PlayerId=692225,692225
+7,4.2,T. Casas,10.3,7.7,0.88,0.53,.52,.51,1.06,.51,.17,.01,.19,.05,https://BallparkPal.com/Batter.php?PlayerId=671213,671213
+8,4.1,C. Rafaela,10.1,7.8,1.00,0.50,.53,.19,.88,.61,.19,.04,.16,.13,https://BallparkPal.com/Batter.php?PlayerId=678882,678882
+9,4.0,C. Narvaez,9.3,7.0,0.81,0.48,.54,.28,1.04,.43,.18,.00,.20,.04,https://BallparkPal.com/Batter.php?PlayerId=665966,665966

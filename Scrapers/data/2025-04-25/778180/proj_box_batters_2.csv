@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.8,G. Torres,12.0,9.0,1.11,0.79,.49,.76,.57,.73,.27,.00,.12,.05,https://BallparkPal.com/Batter.php?PlayerId=650402
-2,4.7,K. Carpenter,13.2,10.0,1.25,0.74,.73,.41,.95,.69,.32,.04,.21,.04,https://BallparkPal.com/Batter.php?PlayerId=681481
-3,4.5,R. Greene,11.5,8.6,1.07,0.62,.62,.62,1.03,.68,.23,.03,.14,.03,https://BallparkPal.com/Batter.php?PlayerId=682985
-4,4.4,S. Torkelson,10.9,8.0,0.87,0.56,.62,.70,1.17,.49,.22,.01,.15,.03,https://BallparkPal.com/Batter.php?PlayerId=679529
-5,4.3,C. Keith,10.0,7.6,1.01,0.52,.57,.50,.82,.63,.27,.02,.09,.03,https://BallparkPal.com/Batter.php?PlayerId=690993
-6,4.2,J. Jung,8.6,6.4,0.81,0.48,.47,.51,1.09,.53,.20,.00,.08,.03,https://BallparkPal.com/Batter.php?PlayerId=690291
-7,4.1,D. Dingler,9.0,6.8,0.88,0.49,.51,.36,1.05,.53,.23,.02,.11,.02,https://BallparkPal.com/Batter.php?PlayerId=693307
-8,4.0,T. Sweeney,9.1,7.0,0.95,0.51,.47,.37,.79,.64,.21,.01,.09,.07,https://BallparkPal.com/Batter.php?PlayerId=700242
-9,3.9,J. Baez,9.0,7.0,0.96,0.50,.48,.28,.75,.63,.21,.03,.08,.08,https://BallparkPal.com/Batter.php?PlayerId=595879
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.8,G. Torres,12.0,9.0,1.11,0.79,.49,.76,.57,.73,.27,.00,.12,.05,https://BallparkPal.com/Batter.php?PlayerId=650402,650402
+2,4.7,K. Carpenter,13.2,10.0,1.25,0.74,.73,.41,.95,.69,.32,.04,.21,.04,https://BallparkPal.com/Batter.php?PlayerId=681481,681481
+3,4.5,R. Greene,11.5,8.6,1.07,0.62,.62,.62,1.03,.68,.23,.03,.14,.03,https://BallparkPal.com/Batter.php?PlayerId=682985,682985
+4,4.4,S. Torkelson,10.9,8.0,0.87,0.56,.62,.70,1.17,.49,.22,.01,.15,.03,https://BallparkPal.com/Batter.php?PlayerId=679529,679529
+5,4.3,C. Keith,10.0,7.6,1.01,0.52,.57,.50,.82,.63,.27,.02,.09,.03,https://BallparkPal.com/Batter.php?PlayerId=690993,690993
+6,4.2,J. Jung,8.6,6.4,0.81,0.48,.47,.51,1.09,.53,.20,.00,.08,.03,https://BallparkPal.com/Batter.php?PlayerId=690291,690291
+7,4.1,D. Dingler,9.0,6.8,0.88,0.49,.51,.36,1.05,.53,.23,.02,.11,.02,https://BallparkPal.com/Batter.php?PlayerId=693307,693307
+8,4.0,T. Sweeney,9.1,7.0,0.95,0.51,.47,.37,.79,.64,.21,.01,.09,.07,https://BallparkPal.com/Batter.php?PlayerId=700242,700242
+9,3.9,J. Baez,9.0,7.0,0.96,0.50,.48,.28,.75,.63,.21,.03,.08,.08,https://BallparkPal.com/Batter.php?PlayerId=595879,595879

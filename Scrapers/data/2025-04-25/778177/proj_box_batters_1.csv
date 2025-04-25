@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.9,A. Verdugo,11.0,8.5,1.18,0.68,.46,.49,.88,.81,.21,.01,.14,.04,https://BallparkPal.com/Batter.php?PlayerId=657077
-2,4.8,A. Riley,12.1,9.1,1.08,0.70,.60,.54,1.23,.63,.22,.02,.22,.02,https://BallparkPal.com/Batter.php?PlayerId=663586
-3,4.7,M. Ozuna,12.1,9.0,0.96,0.64,.62,.80,1.16,.55,.20,.01,.20,.03,https://BallparkPal.com/Batter.php?PlayerId=542303
-4,4.6,M. Olson,11.2,8.4,0.94,0.57,.61,.66,1.10,.56,.20,.00,.18,.04,https://BallparkPal.com/Batter.php?PlayerId=621566
-5,4.5,O. Albies,10.9,8.3,0.99,0.51,.63,.40,.80,.62,.19,.03,.16,.12,https://BallparkPal.com/Batter.php?PlayerId=645277
-6,4.3,M. Harris II,9.3,7.2,0.95,0.45,.52,.24,.90,.64,.17,.02,.12,.13,https://BallparkPal.com/Batter.php?PlayerId=671739
-7,4.2,S. Murphy,9.8,7.3,0.83,0.51,.52,.51,1.21,.47,.19,.01,.17,.03,https://BallparkPal.com/Batter.php?PlayerId=669221
-8,4.1,J. Kelenic,9.0,6.9,0.82,0.45,.45,.38,1.39,.50,.17,.01,.14,.09,https://BallparkPal.com/Batter.php?PlayerId=672284
-9,4.0,N. Allen,7.7,6.0,0.85,0.43,.35,.29,.88,.64,.15,.00,.07,.09,https://BallparkPal.com/Batter.php?PlayerId=669397
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.9,A. Verdugo,11.0,8.5,1.18,0.68,.46,.49,.88,.81,.21,.01,.14,.04,https://BallparkPal.com/Batter.php?PlayerId=657077,657077
+2,4.8,A. Riley,12.1,9.1,1.08,0.70,.60,.54,1.23,.63,.22,.02,.22,.02,https://BallparkPal.com/Batter.php?PlayerId=663586,663586
+3,4.7,M. Ozuna,12.1,9.0,0.96,0.64,.62,.80,1.16,.55,.20,.01,.20,.03,https://BallparkPal.com/Batter.php?PlayerId=542303,542303
+4,4.6,M. Olson,11.2,8.4,0.94,0.57,.61,.66,1.10,.56,.20,.00,.18,.04,https://BallparkPal.com/Batter.php?PlayerId=621566,621566
+5,4.5,O. Albies,10.9,8.3,0.99,0.51,.63,.40,.80,.62,.19,.03,.16,.12,https://BallparkPal.com/Batter.php?PlayerId=645277,645277
+6,4.3,M. Harris II,9.3,7.2,0.95,0.45,.52,.24,.90,.64,.17,.02,.12,.13,https://BallparkPal.com/Batter.php?PlayerId=671739,671739
+7,4.2,S. Murphy,9.8,7.3,0.83,0.51,.52,.51,1.21,.47,.19,.01,.17,.03,https://BallparkPal.com/Batter.php?PlayerId=669221,669221
+8,4.1,J. Kelenic,9.0,6.9,0.82,0.45,.45,.38,1.39,.50,.17,.01,.14,.09,https://BallparkPal.com/Batter.php?PlayerId=672284,672284
+9,4.0,N. Allen,7.7,6.0,0.85,0.43,.35,.29,.88,.64,.15,.00,.07,.09,https://BallparkPal.com/Batter.php?PlayerId=669397,669397
