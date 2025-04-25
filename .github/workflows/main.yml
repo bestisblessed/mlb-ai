@@ -48,4 +48,4 @@ jobs:
           commit_project:    "Project"        # multi-select
 
           # — turn **off** diff listing so token is NOT required —
-          files_format: ""       # empty string ⇒ skip file list
+          files_format: " "       # empty string ⇒ skip file list
