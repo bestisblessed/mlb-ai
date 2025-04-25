@@ -12,7 +12,7 @@ jobs:
 
       - name: Send commit info to Notion
         # uses: alessandrobelli/NotionHook@1.1
-        uses: bestisblessed/NotionHook
+        uses: bestisblessed/NotionHook@1.1
         with:
           notion_secret:   ${{ secrets.NOTION_SECRET }}   # integration token
           notion_database: ${{ secrets.NOTION_DATABASE }} # database ID
