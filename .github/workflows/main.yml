@@ -1,4 +1,3 @@
-# .github/workflows/notion-sync.yml
 name: Sync commits to Notion
 on: [push]
 
@@ -10,14 +9,13 @@ jobs:
         with: { fetch-depth: 0 }
 
       - name: Send commit info to Notion
-        # ⬇️  Pin to the last 1.0 tag — no token, no file list, no toggles
-        uses: alessandrobelli/NotionHook@v1
+        uses: alessandrobelli/NotionHook@1.0   # ← plain 1.0 tag
         with:
           notion_secret:   ${{ secrets.NOTION_SECRET }}
           notion_database: ${{ secrets.NOTION_DATABASE }}
 
-          # Map GitHub → Notion columns (case-sensitive):
-          commit_description: "Description"   # rich-text or title
-          commit_url:        "Url"            # URL property
-          commit_id:         "Id"             # text
-          commit_project:    "Project"        # multi-select
+          # map GitHub → your Notion columns
+          commit_description: "Description"
+          commit_url:        "Url"
+          commit_id:         "Id"
+          commit_project:    "Project"
