@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.7,S. Kwan,11.0,8.4,1.04,0.62,.41,.71,.47,.78,.14,.02,.10,.15,https://BallparkPal.com/Batter.php?PlayerId=680757
-2,4.6,N. Jones,10.1,7.6,0.86,0.56,.43,.66,1.09,.60,.15,.02,.10,.14,https://BallparkPal.com/Batter.php?PlayerId=666134
-3,4.4,J. Ramirez,11.8,9.1,1.09,0.54,.61,.46,.58,.75,.18,.02,.14,.23,https://BallparkPal.com/Batter.php?PlayerId=608070
-4,4.3,K. Manzardo,9.5,7.1,0.86,0.50,.57,.50,1.11,.55,.17,.01,.14,.02,https://BallparkPal.com/Batter.php?PlayerId=700932
-5,4.2,C. Santana,10.1,7.6,0.93,0.50,.54,.61,.71,.62,.16,.01,.14,.03,https://BallparkPal.com/Batter.php?PlayerId=467793
-6,4.1,G. Arias,8.0,6.1,0.85,0.39,.45,.25,1.12,.58,.17,.00,.10,.07,https://BallparkPal.com/Batter.php?PlayerId=672356
-7,4.0,A. Martinez,7.9,6.1,0.86,0.42,.41,.31,.83,.62,.15,.00,.08,.07,https://BallparkPal.com/Batter.php?PlayerId=682657
-8,3.9,B. Naylor,8.6,6.5,0.77,0.45,.41,.46,.97,.48,.16,.00,.12,.09,https://BallparkPal.com/Batter.php?PlayerId=666310
-9,3.8,B. Rocchio,7.7,5.9,0.84,0.40,.36,.35,.84,.63,.14,.01,.06,.09,https://BallparkPal.com/Batter.php?PlayerId=677587
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.7,S. Kwan,11.6,8.8,1.07,0.68,.44,.73,.49,.79,.15,.03,.10,.15,https://BallparkPal.com/Batter.php?PlayerId=680757,680757
+2,4.6,N. Jones,10.6,8.0,0.88,0.60,.44,.70,1.08,.60,.15,.02,.10,.15,https://BallparkPal.com/Batter.php?PlayerId=666134,666134
+3,4.5,J. Ramirez,12.3,9.4,1.12,0.59,.65,.44,.60,.76,.19,.02,.16,.22,https://BallparkPal.com/Batter.php?PlayerId=608070,608070
+4,4.4,K. Manzardo,10.1,7.5,0.87,0.51,.60,.56,1.07,.53,.19,.00,.15,.02,https://BallparkPal.com/Batter.php?PlayerId=700932,700932
+5,4.3,C. Santana,10.2,7.6,0.93,0.51,.56,.61,.72,.62,.17,.01,.13,.03,https://BallparkPal.com/Batter.php?PlayerId=467793,467793
+6,4.2,B. Naylor,9.2,6.9,0.82,0.44,.50,.50,1.06,.53,.17,.00,.12,.09,https://BallparkPal.com/Batter.php?PlayerId=666310,666310
+7,4.1,G. Arias,7.8,5.9,0.82,0.40,.45,.26,1.15,.55,.16,.01,.10,.05,https://BallparkPal.com/Batter.php?PlayerId=672356,672356
+8,3.9,D. Schneemann,8.0,6.0,0.77,0.44,.38,.46,1.20,.52,.15,.01,.09,.04,https://BallparkPal.com/Batter.php?PlayerId=682177,682177
+9,3.8,A. Martinez,8.0,6.2,0.85,0.44,.40,.29,.78,.59,.16,.01,.09,.08,https://BallparkPal.com/Batter.php?PlayerId=682657,682657

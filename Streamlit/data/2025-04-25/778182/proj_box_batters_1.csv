@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.8,B. Stott,10.8,8.5,1.09,0.56,.37,.45,.70,.82,.19,.02,.06,.33,https://BallparkPal.com/Batter.php?PlayerId=681082
-2,4.7,T. Turner,11.3,8.8,1.05,0.56,.44,.42,.79,.76,.15,.02,.11,.32,https://BallparkPal.com/Batter.php?PlayerId=607208
-3,4.6,B. Harper,11.5,8.7,0.98,0.58,.57,.62,.98,.62,.19,.01,.15,.14,https://BallparkPal.com/Batter.php?PlayerId=547180
-4,4.5,K. Schwarber,10.3,7.6,0.81,0.55,.53,.72,1.03,.50,.16,.02,.14,.03,https://BallparkPal.com/Batter.php?PlayerId=656941
-5,4.4,N. Castellanos,9.6,7.4,1.09,0.48,.54,.28,.74,.74,.23,.02,.10,.05,https://BallparkPal.com/Batter.php?PlayerId=592206
-6,4.3,M. Kepler,8.3,6.4,0.92,0.42,.43,.37,.72,.66,.19,.02,.06,.06,https://BallparkPal.com/Batter.php?PlayerId=596146
-7,4.2,J. Realmuto,9.3,7.2,0.96,0.46,.48,.35,.85,.66,.18,.02,.10,.11,https://BallparkPal.com/Batter.php?PlayerId=592663
-8,4.1,A. Bohm,7.8,6.1,0.93,0.38,.40,.29,.51,.70,.15,.01,.06,.07,https://BallparkPal.com/Batter.php?PlayerId=664761
-9,4.0,J. Rojas,8.1,6.5,0.93,0.35,.35,.17,.68,.72,.15,.02,.04,.26,https://BallparkPal.com/Batter.php?PlayerId=679032
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.8,B. Stott,10.8,8.5,1.09,0.56,.37,.45,.70,.82,.19,.02,.06,.33,https://BallparkPal.com/Batter.php?PlayerId=681082,681082
+2,4.7,T. Turner,11.3,8.8,1.05,0.56,.44,.42,.79,.76,.15,.02,.11,.32,https://BallparkPal.com/Batter.php?PlayerId=607208,607208
+3,4.6,B. Harper,11.5,8.7,0.98,0.58,.57,.62,.98,.62,.19,.01,.15,.14,https://BallparkPal.com/Batter.php?PlayerId=547180,547180
+4,4.5,K. Schwarber,10.3,7.6,0.81,0.55,.53,.72,1.03,.50,.16,.02,.14,.03,https://BallparkPal.com/Batter.php?PlayerId=656941,656941
+5,4.4,N. Castellanos,9.6,7.4,1.09,0.48,.54,.28,.74,.74,.23,.02,.10,.05,https://BallparkPal.com/Batter.php?PlayerId=592206,592206
+6,4.3,M. Kepler,8.3,6.4,0.92,0.42,.43,.37,.72,.66,.19,.02,.06,.06,https://BallparkPal.com/Batter.php?PlayerId=596146,596146
+7,4.2,J. Realmuto,9.3,7.2,0.96,0.46,.48,.35,.85,.66,.18,.02,.10,.11,https://BallparkPal.com/Batter.php?PlayerId=592663,592663
+8,4.1,A. Bohm,7.8,6.1,0.93,0.38,.40,.29,.51,.70,.15,.01,.06,.07,https://BallparkPal.com/Batter.php?PlayerId=664761,664761
+9,4.0,J. Rojas,8.1,6.5,0.93,0.35,.35,.17,.68,.72,.15,.02,.04,.26,https://BallparkPal.com/Batter.php?PlayerId=679032,679032

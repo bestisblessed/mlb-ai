@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.7,G. Perdomo,11.2,8.6,1.07,0.68,.44,.53,.81,.72,.21,.03,.11,.14,https://BallparkPal.com/Batter.php?PlayerId=672695
-2,4.6,C. Carroll,12.5,9.5,0.94,0.66,.57,.56,1.27,.51,.19,.06,.19,.21,https://BallparkPal.com/Batter.php?PlayerId=682998
-3,4.5,R. Grichuk,11.6,8.8,1.12,0.61,.63,.42,.88,.62,.30,.02,.17,.04,https://BallparkPal.com/Batter.php?PlayerId=545341
-4,4.4,L. Gurriel Jr.,10.5,8.1,1.13,0.55,.62,.31,.75,.72,.26,.02,.13,.05,https://BallparkPal.com/Batter.php?PlayerId=666971
-5,4.2,J. Naylor,10.1,7.7,1.08,0.56,.54,.39,.74,.75,.21,.00,.12,.06,https://BallparkPal.com/Batter.php?PlayerId=647304
-6,4.1,E. Suarez,10.4,7.8,0.86,0.55,.59,.45,1.40,.44,.21,.01,.20,.03,https://BallparkPal.com/Batter.php?PlayerId=553993
-7,4.0,G. Moreno,9.3,7.1,0.93,0.48,.46,.48,.76,.61,.21,.01,.10,.05,https://BallparkPal.com/Batter.php?PlayerId=672515
-8,3.9,A. Thomas,8.9,6.9,0.98,0.44,.50,.24,.91,.68,.17,.03,.10,.08,https://BallparkPal.com/Batter.php?PlayerId=677950
-9,3.8,G. Hampson,8.1,6.1,0.75,0.41,.39,.38,1.17,.48,.16,.03,.08,.10,https://BallparkPal.com/Batter.php?PlayerId=641658
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.7,G. Perdomo,11.2,8.6,1.07,0.68,.44,.53,.81,.72,.21,.03,.11,.14,https://BallparkPal.com/Batter.php?PlayerId=672695,672695
+2,4.6,C. Carroll,12.5,9.5,0.94,0.66,.57,.56,1.27,.51,.19,.06,.19,.21,https://BallparkPal.com/Batter.php?PlayerId=682998,682998
+3,4.5,R. Grichuk,11.6,8.8,1.12,0.61,.63,.42,.88,.62,.30,.02,.17,.04,https://BallparkPal.com/Batter.php?PlayerId=545341,545341
+4,4.4,L. Gurriel Jr.,10.5,8.1,1.13,0.55,.62,.31,.75,.72,.26,.02,.13,.05,https://BallparkPal.com/Batter.php?PlayerId=666971,666971
+5,4.2,J. Naylor,10.1,7.7,1.08,0.56,.54,.39,.74,.75,.21,.00,.12,.06,https://BallparkPal.com/Batter.php?PlayerId=647304,647304
+6,4.1,E. Suarez,10.4,7.8,0.86,0.55,.59,.45,1.40,.44,.21,.01,.20,.03,https://BallparkPal.com/Batter.php?PlayerId=553993,553993
+7,4.0,G. Moreno,9.3,7.1,0.93,0.48,.46,.48,.76,.61,.21,.01,.10,.05,https://BallparkPal.com/Batter.php?PlayerId=672515,672515
+8,3.9,A. Thomas,8.9,6.9,0.98,0.44,.50,.24,.91,.68,.17,.03,.10,.08,https://BallparkPal.com/Batter.php?PlayerId=677950,677950
+9,3.8,G. Hampson,8.1,6.1,0.75,0.41,.39,.38,1.17,.48,.16,.03,.08,.10,https://BallparkPal.com/Batter.php?PlayerId=641658,641658

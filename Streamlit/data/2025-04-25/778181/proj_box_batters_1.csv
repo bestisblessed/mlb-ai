@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.8,M. McLain,10.5,8.2,1.08,0.60,.42,.35,1.03,.70,.23,.04,.12,.14,https://BallparkPal.com/Batter.php?PlayerId=680574
-2,4.6,S. Espinal,10.6,8.4,1.29,0.56,.46,.29,.38,.97,.23,.01,.08,.17,https://BallparkPal.com/Batter.php?PlayerId=669289
-3,4.5,E. De La Cruz,12.7,9.9,1.07,0.57,.54,.39,.98,.69,.19,.06,.13,.42,https://BallparkPal.com/Batter.php?PlayerId=682829
-4,4.4,A. Hays,10.3,7.9,1.09,0.54,.62,.26,.86,.67,.28,.01,.13,.06,https://BallparkPal.com/Batter.php?PlayerId=669720
-5,4.3,S. Steer,9.9,7.5,0.93,0.51,.52,.34,.71,.59,.20,.01,.13,.13,https://BallparkPal.com/Batter.php?PlayerId=668715
-6,4.2,J. Candelario,9.7,7.5,1.07,0.48,.51,.27,.82,.67,.25,.03,.13,.05,https://BallparkPal.com/Batter.php?PlayerId=600869
-7,4.1,N. Marte,8.7,6.8,0.97,0.41,.43,.20,.75,.66,.23,.00,.08,.16,https://BallparkPal.com/Batter.php?PlayerId=682622
-8,4.0,J. Trevino,8.0,6.2,1.00,0.43,.42,.23,.41,.74,.19,.01,.07,.04,https://BallparkPal.com/Batter.php?PlayerId=624431
-9,3.9,B. Dunn,7.9,6.0,0.77,0.42,.37,.28,.82,.51,.17,.00,.10,.12,https://BallparkPal.com/Batter.php?PlayerId=694362
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.8,M. McLain,10.5,8.2,1.08,0.60,.42,.35,1.03,.70,.23,.04,.12,.14,https://BallparkPal.com/Batter.php?PlayerId=680574,680574
+2,4.6,S. Espinal,10.6,8.4,1.29,0.56,.46,.29,.38,.97,.23,.01,.08,.17,https://BallparkPal.com/Batter.php?PlayerId=669289,669289
+3,4.5,E. De La Cruz,12.7,9.9,1.07,0.57,.54,.39,.98,.69,.19,.06,.13,.42,https://BallparkPal.com/Batter.php?PlayerId=682829,682829
+4,4.4,A. Hays,10.3,7.9,1.09,0.54,.62,.26,.86,.67,.28,.01,.13,.06,https://BallparkPal.com/Batter.php?PlayerId=669720,669720
+5,4.3,S. Steer,9.9,7.5,0.93,0.51,.52,.34,.71,.59,.20,.01,.13,.13,https://BallparkPal.com/Batter.php?PlayerId=668715,668715
+6,4.2,J. Candelario,9.7,7.5,1.07,0.48,.51,.27,.82,.67,.25,.03,.13,.05,https://BallparkPal.com/Batter.php?PlayerId=600869,600869
+7,4.1,N. Marte,8.7,6.8,0.97,0.41,.43,.20,.75,.66,.23,.00,.08,.16,https://BallparkPal.com/Batter.php?PlayerId=682622,682622
+8,4.0,J. Trevino,8.0,6.2,1.00,0.43,.42,.23,.41,.74,.19,.01,.07,.04,https://BallparkPal.com/Batter.php?PlayerId=624431,624431
+9,3.9,B. Dunn,7.9,6.0,0.77,0.42,.37,.28,.82,.51,.17,.00,.10,.12,https://BallparkPal.com/Batter.php?PlayerId=694362,694362

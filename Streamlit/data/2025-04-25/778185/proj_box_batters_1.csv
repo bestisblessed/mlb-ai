@@ -1,10 +1,10 @@
-,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL
-1,4.9,B. Bichette,11.1,8.6,1.18,0.66,.50,.33,.90,.79,.22,.01,.16,.09,https://BallparkPal.com/Batter.php?PlayerId=666182
-2,4.8,V. Guerrero Jr.,12.2,9.3,1.23,0.70,.58,.57,.64,.81,.24,.01,.19,.03,https://BallparkPal.com/Batter.php?PlayerId=665489
-3,4.7,A. Santander,11.4,8.6,0.96,0.60,.62,.54,1.04,.53,.21,.01,.21,.05,https://BallparkPal.com/Batter.php?PlayerId=623993
-4,4.6,A. Gimenez,10.7,8.2,1.02,0.53,.58,.31,.86,.66,.22,.02,.13,.18,https://BallparkPal.com/Batter.php?PlayerId=665926
-5,4.4,G. Springer,11.1,8.3,0.93,0.55,.60,.57,.99,.54,.19,.02,.18,.07,https://BallparkPal.com/Batter.php?PlayerId=543807
-6,4.4,A. Kirk,9.2,7.1,1.04,0.48,.46,.44,.59,.74,.20,.00,.11,.01,https://BallparkPal.com/Batter.php?PlayerId=672386
-7,4.2,A. Roden,8.1,6.2,0.85,0.42,.47,.31,.95,.57,.17,.00,.11,.02,https://BallparkPal.com/Batter.php?PlayerId=702176
-8,4.1,W. Wagner,8.4,6.4,0.87,0.43,.45,.35,.89,.59,.15,.00,.12,.04,https://BallparkPal.com/Batter.php?PlayerId=695238
-9,4.0,M. Straw,8.2,6.4,0.84,0.43,.34,.39,.73,.62,.15,.02,.05,.16,https://BallparkPal.com/Batter.php?PlayerId=664702
+,PA,Batter,FD,DK,H,R,RBI,BB,K,1B,2B,3B,HR,SB,Player URL,Player ID
+1,4.9,B. Bichette,11.1,8.6,1.18,0.66,.50,.33,.90,.79,.22,.01,.16,.09,https://BallparkPal.com/Batter.php?PlayerId=666182,666182
+2,4.8,V. Guerrero Jr.,12.2,9.3,1.23,0.70,.58,.57,.64,.81,.24,.01,.19,.03,https://BallparkPal.com/Batter.php?PlayerId=665489,665489
+3,4.7,A. Santander,11.4,8.6,0.96,0.60,.62,.54,1.04,.53,.21,.01,.21,.05,https://BallparkPal.com/Batter.php?PlayerId=623993,623993
+4,4.6,A. Gimenez,10.7,8.2,1.02,0.53,.58,.31,.86,.66,.22,.02,.13,.18,https://BallparkPal.com/Batter.php?PlayerId=665926,665926
+5,4.4,G. Springer,11.1,8.3,0.93,0.55,.60,.57,.99,.54,.19,.02,.18,.07,https://BallparkPal.com/Batter.php?PlayerId=543807,543807
+6,4.4,A. Kirk,9.2,7.1,1.04,0.48,.46,.44,.59,.74,.20,.00,.11,.01,https://BallparkPal.com/Batter.php?PlayerId=672386,672386
+7,4.2,A. Roden,8.1,6.2,0.85,0.42,.47,.31,.95,.57,.17,.00,.11,.02,https://BallparkPal.com/Batter.php?PlayerId=702176,702176
+8,4.1,W. Wagner,8.4,6.4,0.87,0.43,.45,.35,.89,.59,.15,.00,.12,.04,https://BallparkPal.com/Batter.php?PlayerId=695238,695238
+9,4.0,M. Straw,8.2,6.4,0.84,0.43,.34,.39,.73,.62,.15,.02,.05,.16,https://BallparkPal.com/Batter.php?PlayerId=664702,664702

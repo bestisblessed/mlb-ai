@@ -30,6 +30,7 @@ CHC,Michael Busch,683737,9,Walker,592836,21,-13,-6,2,35,-38
 HOU,Cam Smith,701358,-4,Lugo,607625,20,-28,28,11,-7,-20
 DET,Gleyber Torres,650402,10,Young,687064,20,-11,16,10,26,-25
 HOU,Yainer Diaz,673237,8,Lugo,607625,20,-30,23,19,-10,-33
+NYM,Francisco Alvarez,682626,3,Irvin,663623,19,55,-6,1,-24,-7
 NYM,Pete Alonso,624413,10,Irvin,663623,19,37,-2,1,-14,-16
 ATH,Tyler Soderstrom,691016,10,Burke,680732,19,22,38,-10,13,-14
 CIN,Elly De La Cruz,682829,3,Freeland,607536,18,16,59,18,-57,-30
@@ -37,7 +38,6 @@ ATH,Gio Urshela,570482,10,Burke,680732,18,11,15,2,44,-16
 HOU,Jake Meyers,676694,6,Lugo,607625,18,-29,17,15,-12,-32
 NYM,Jesse Winker,608385,7,Irvin,663623,18,70,-8,-2,-24,-11
 CHC,Jon Berti,542932,9,Walker,592836,18,-16,-29,13,38,-44
-NYM,Luis Torrens,620443,3,Irvin,663623,18,51,7,-3,-18,-10
 ATH,Shea Langeliers,669127,10,Burke,680732,18,34,27,-13,22,-11
 DET,Trey Sweeney,700242,6,Young,687064,18,-9,16,18,13,-12
 CHC,Carson Kelly,608348,10,Walker,592836,17,-7,-3,5,29,-38
@@ -71,6 +71,7 @@ BOS,Triston Casas,671213,9,Lively,594902,13,41,8,7,-4,-19
 BOS,Wilyer Abreu,677800,8,Lively,594902,13,33,5,7,-1,-26
 CIN,Blake Dunn,694362,-4,Freeland,607536,12,2,33,19,-60,-35
 ATL,Jarred Kelenic,672284,-5,Gallen,668678,12,20,-14,-5,21,4
+NYM,Jeff McNeil,643446,7,Irvin,663623,12,18,4,2,-24,-14
 BOS,Alex Bregman,608324,10,Lively,594902,11,19,22,8,-6,-22
 PHI,Max Kepler,596146,8,Rea,607067,11,-30,6,24,-24,-23
 PHI,Nick Castellanos,592206,10,Rea,607067,11,-23,6,16,-24,-24
@@ -110,6 +111,7 @@ TEX,Jonah Heim,641680,8,Verlander,434378,3,-25,15,8,-6,-26
 COL,Kyle Farmer,571657,1,Abbott,671096,3,-5,21,-18,-1,-14
 ATL,Matt Olson,621566,6,Gallen,668678,3,13,0,-18,9,16
 CIN,Spencer Steer,668715,2,Freeland,607536,3,13,15,8,-52,-29
+CLE,Daniel Schneemann,682177,-4,Houck,656557,2,-19,-6,14,28,-9
 ARI,Geraldo Perdomo,672695,5,Sale,519242,2,-3,19,4,-16,26
 MIN,Harrison Bader,664056,2,Hendricks,543294,2,-37,-22,31,-4,-37
 ARI,Josh Naylor,647304,5,Sale,519242,2,-3,2,0,3,30
@@ -197,7 +199,6 @@ MIL,Sal Frelick,686217,6,Liberatore,669461,-10,3,9,6,-49,-4
 TOR,Will Wagner,695238,4,Carrasco,471911,-10,-2,6,7,-19,-8
 CHW,Andrew Benintendi,643217,4,Severino,622663,-11,-33,0,6,-29,-16
 KC,Bobby Witt Jr.,677951,3,Wesneski,669713,-11,-16,0,-16,-25,18
-CLE,Brayan Rocchio,677587,-3,Houck,656557,-11,-16,-19,7,-2,-3
 KC,Jonathan India,663697,-1,Wesneski,669713,-11,-35,-2,-7,-25,12
 SF,LaMonte Wade Jr,664774,2,Eovaldi,543135,-11,-41,33,10,-28,11
 CHW,Matt Thaiss,642136,-5,Severino,622663,-11,-31,-10,-3,-13,-17
