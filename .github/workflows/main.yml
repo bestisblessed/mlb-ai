@@ -1,4 +1,3 @@
-# .github/workflows/notion-sync.yml
 name: Sync commits to Notion
 on: [push]
 
@@ -26,4 +25,4 @@ jobs:
 
           # --- turn OFF file listing ---
           files_format: ""        # empty string → skip diff → token not needed
-          # (token line removed)
+          token:        ${{ github.token }}
