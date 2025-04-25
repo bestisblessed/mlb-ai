@@ -7,8 +7,6 @@ jobs:
     steps:
       - name: Send commit info to Notion
         uses: alessandrobelli/NotionHook@1.1
-        env:
-          NOTION_VERSION: '2022-06-28'   # Ensure toggle blocks are supported by using latest Notion API version
         with:
           notion_secret: ${{ secrets.NOTION_SECRET }}
           notion_database: ${{ secrets.NOTION_DATABASE }}
