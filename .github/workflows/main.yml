@@ -1,51 +1,23 @@
-# name: Sync Commits to Notion
-# on: [push]
-
-# jobs:
-#   notion_sync:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Send commit info to Notion
-#         uses: alessandrobelli/NotionHook@1.1
-#         with:
-#           notion_secret: ${{ secrets.NOTION_SECRET }}
-#           notion_database: ${{ secrets.NOTION_DATABASE }}
-#           # Map commit metadata to your Notion DB properties (adjust names if needed):
-#           commit_description: "description"   # Column for commit message body (after the first line)&#8203;:contentReference[oaicite:6]{index=6}
-#           commit_url: "Url"                   # Column for the commit URL (Notion property type: URL)&#8203;:contentReference[oaicite:7]{index=7}
-#           commit_id: "Id"                     # Column for the commit SHA (Notion property type: text)&#8203;:contentReference[oaicite:8]{index=8}
-#           commit_project: "Project"           # Column for project tag (Notion property type: multi-select)&#8203;:contentReference[oaicite:9]{index=9}
-          
-#           # No 'token' or 'files_format' provided – this skips listing changed files (avoids 2k char limit issues)
-#           # files_format:      'none'
-#           token:             ${{ github.token }}
-
-
+# .github/workflows/notion-sync.yml
 name: Sync commits to Notion
 on: [push]
 
 jobs:
   notion_sync:
     runs-on: ubuntu-latest
-    env:
-      NOTION_VERSION: "2022-06-28"   # v ≥ 2022-02-22 needed for toggle blocks
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        with: { fetch-depth: 0 }
 
       - name: Send commit info to Notion
-        uses: alessandrobelli/NotionHook@1.1
+        # ⬇️  Pin to the last 1.0 tag — no token, no file list, no toggles
+        uses: alessandrobelli/NotionHook@v1.0.3
         with:
-          # — required secrets —
           notion_secret:   ${{ secrets.NOTION_SECRET }}
           notion_database: ${{ secrets.NOTION_DATABASE }}
 
-          # — map GitHub → Notion columns (case-sensitive) —
+          # Map GitHub → Notion columns (case-sensitive):
           commit_description: "Description"   # rich-text or title
-          commit_url:        "Url"            # URL
+          commit_url:        "Url"            # URL property
           commit_id:         "Id"             # text
           commit_project:    "Project"        # multi-select
-
-          # — turn **off** diff listing so token is NOT required —
-          files_format: " "       # empty string ⇒ skip file list
