@@ -23,6 +23,6 @@ jobs:
           commit_project:    "Project"        # multi-select
 
           # optional helpers
-          # files_format: 'text-list'
-          files_format:      'none'
+          files_format: 'text-list'
+          # files_format:      'none'
           token:        ${{ github.token }}
