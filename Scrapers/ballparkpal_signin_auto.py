@@ -104,7 +104,7 @@ async def main():
             html_content = await page.content()
             if "verification" in html_content.lower() or "security code" in html_content.lower():
                 print("Verification page detected. Waiting 30 seconds for email to arrive...")
-                time.sleep(20)
+                time.sleep(40)
                 
                 print("Checking email for verification code...")
                 verification_code = await get_verification_code()
