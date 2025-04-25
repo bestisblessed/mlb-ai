@@ -1,28 +1,29 @@
+# .github/workflows/notion-sync.yml
 name: Sync commits to Notion
-
 on: [push]
 
 jobs:
   notion_hook_job:
     runs-on: ubuntu-latest
+    env:
+      NOTION_VERSION: "2022-06-28"     # lets the action send toggle blocks
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0        # keep full history
+          fetch-depth: 0               # keep history
 
       - name: Send commit info to Notion
         uses: alessandrobelli/NotionHook@1.1
         with:
-          notion_secret:   ${{ secrets.NOTION_SECRET }}   # integration token
-          notion_database: ${{ secrets.NOTION_DATABASE }} # database ID
+          notion_secret:   ${{ secrets.NOTION_SECRET }}
+          notion_database: ${{ secrets.NOTION_DATABASE }}
 
-          # --- map GitHub fields → your Notion columns ---
-          commit_description: "Description"   # rich-text
-          commit_url:        "Url"            # URL
-          commit_id:         "Id"             # plain text
-          commit_project:    "Project"        # multi-select
+          # map GitHub fields → your column names
+          commit_description: "Description"   # or "Title"
+          commit_url:        "Url"
+          commit_id:         "Id"             # or "Commit SHA"
+          commit_project:    "Project"
 
-          # optional helpers
-          # files_format: 'text-list'
+          # --- turn OFF file listing ---
           files_format: ""        # empty string → skip diff → token not needed
-          token:        ${{ github.token }}
+          # (token line removed)
