@@ -1,20 +1,62 @@
-name: Sync Commits to Notion
-on: [push]
+# .github/workflows/sync-to-notion.yml
+name: Sync commits to Notion
+
+on:
+  push:
 
 jobs:
-  notion_sync:
+  notion:
     runs-on: ubuntu-latest
     steps:
-      - name: Send commit info to Notion
-        uses: alessandrobelli/NotionHook@1.1
-        # env:
-          # NOTION_VERSION: '2022-06-28'   # Ensure toggle blocks are supported by using latest Notion API version
+      # 1) Check out full history so we can read all commits' payload
+      - uses: actions/checkout@v3
         with:
-          notion_secret: ${{ secrets.NOTION_SECRET }}
-          notion_database: ${{ secrets.NOTION_DATABASE }}
-          # Map commit metadata to your Notion DB properties (adjust names if needed):
-          commit_description: "description"   # Column for commit message body (after the first line)&#8203;:contentReference[oaicite:6]{index=6}
-          commit_url: "Url"                   # Column for the commit URL (Notion property type: URL)&#8203;:contentReference[oaicite:7]{index=7}
-          commit_id: "Id"                     # Column for the commit SHA (Notion property type: text)&#8203;:contentReference[oaicite:8]{index=8}
-          commit_project: "Project"           # Column for project tag (Notion property type: multi-select)&#8203;:contentReference[oaicite:9]{index=9}
-          # No 'token' or 'files_format' provided – this skips listing changed files (avoids 2k char limit issues)
+          fetch-depth: 0
+
+      # 2) For each commit, create a Notion page (no file list)
+      - name: Send commits to Notion
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { Client } = require("@notionhq/client");
+            const notion = new Client({ auth: process.env.NOTION_SECRET });
+            const commits = context.payload.commits || [];
+
+            for (const c of commits) {
+              // split message into title + body
+              const [ title, ...bodyLines ] = c.message.split(/\r?\n/);
+              const description = bodyLines.join(" ");
+
+              await notion.pages.create({
+                parent: { database_id: process.env.NOTION_DATABASE },
+                properties: {
+                  Title: {
+                    title: [{ text: { content: title } }]
+                  },
+                  Url: {
+                    url: c.url
+                  },
+                  Id: {
+                    rich_text: [{ text: { content: c.id } }]
+                  },
+                  Project: {
+                    multi_select: [{ name: context.repo.repo }]
+                  }
+                },
+                children: [
+                  {
+                    object: "block",
+                    type: "paragraph",
+                    paragraph: {
+                      text: [
+                        { type: "text", text: { content: description } }
+                      ]
+                    }
+                  }
+                ]
+              });
+            }
+        env:
+          NOTION_SECRET:   ${{ secrets.NOTION_SECRET }}
+          NOTION_DATABASE: ${{ secrets.NOTION_DATABASE }}
