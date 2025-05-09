@@ -61,8 +61,9 @@ for k in range(2, 11):
     
 # Calculate Money Line (no-vig)
 for k in range(2, 11):
+    # Calculate no-vig odds, guard against division by zero for p=0 or p=1
     df[f"{k}plus_odds"] = df[f"{k}plus"].apply(
-        lambda p: None if p == 0 else -round(p/(1-p)*100) if p >= 0.5 else round((1-p)/p*100)
+        lambda p: None if p in (0, 1) else (-round(p/(1-p)*100) if p >= 0.5 else round((1-p)/p*100))
     )
     
 # View/Save
