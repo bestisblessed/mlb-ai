@@ -18,8 +18,10 @@ xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_pitching_alt_lines.py >> 
 # ===========================
 # Run the bovada alt lines scraper
 # ===========================
-xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_game_urls.py >> scraper.log 2>&1
-xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props.py >> scraper.log 2>&1
+#xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_game_urls.py >> scraper.log 2>&1
+#xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props.py >> scraper.log 2>&1
+xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_game_urls_playwright.py >> scraper.log 2>&1
+xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props_playwright.py >> scraper.log 2>&1
 
 
 # ===========================
