@@ -19,10 +19,16 @@ try:
     driver.get("https://www.bovada.lv/sports/baseball/mlb")
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='/mlb/']")))
     time.sleep(2)
-    links = {l.get_attribute('href') for l in driver.find_elements(By.CSS_SELECTOR, "a[href*='/mlb/']") 
-            if not l.get_attribute('href').endswith('/mlb')}
+    
+    links = {
+        l.get_attribute('href') 
+        for l in driver.find_elements(By.CSS_SELECTOR, "a[href*='/mlb/']")
+        if l.get_attribute('href').split('-')[-1].isdigit()
+    }
+    
     with open(f'data/{today}/bovada_game_links.csv', 'w') as f:
         f.writelines([f'{url}\n' for url in links])
+    
     print(f"Saved {len(links)} game links to data/{today}/bovada_game_links.csv")
 finally:
-    driver.quit() 
+    driver.quit()
