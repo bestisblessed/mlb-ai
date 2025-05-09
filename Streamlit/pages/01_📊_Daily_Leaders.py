@@ -116,7 +116,7 @@ if date:
                     st.dataframe(win_leaders, height=600)
                 with col3:
                     st.caption("I'm coming...")
-                    st.image("data/jiri.jpg", use_container_width=True)
+                    st.image("../data/jiri.jpg", use_container_width=True)
             else:
                 st.info("No pitcher projections available for this date")
     else:
