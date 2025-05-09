@@ -1,4 +1,4 @@
-data/
+#data/
 bak/
 .ipynb_checkpoints/
 playwright_user_data/
