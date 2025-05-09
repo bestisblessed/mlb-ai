@@ -16,6 +16,13 @@ xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_pitching_alt_lines.py >> 
 
 
 # ===========================
+# Run the bovada alt lines scraper
+# ===========================
+xvfb-run /home/trinity/.pyenv/shims/python final_bovada_scrape_game_urls.py >> scraper.log 2>&1
+xvfb-run /home/trinity/.pyenv/shims/python final_bovada_scrape_pitcher_props.py >> scraper.log 2>&1
+
+
+# ===========================
 # Update the data repository
 # ===========================
 rm -rf data/raw
