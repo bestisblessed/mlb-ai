@@ -15,13 +15,16 @@ xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_headless.py >> scraper.lo
 xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_pitching_alt_lines.py >> scraper.log 2>&1
 
 
-# ===========================
-# Run the bovada alt lines scraper
-# ===========================
+###########################
+# Run the bovada alt lines scraper via Playwright only
+###########################
+# Commented out old selenium-based Bovada scrapers to avoid driver errors
 #xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_game_urls.py >> scraper.log 2>&1
 #xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props.py >> scraper.log 2>&1
-xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_game_urls_playwright.py >> scraper.log 2>&1
-xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props_playwright.py >> scraper.log 2>&1
+XVBFRUN=$(which xvfb-run)
+PYTHON3=$(which python3)
+$XVBFRUN $PYTHON3 /home/trinity/mlb-ai/Scrapers/bovada_scrape_game_urls_playwright.py >> scraper.log 2>&1
+$XVBFRUN $PYTHON3 /home/trinity/mlb-ai/Scrapers/bovada_scrape_pitcher_props_playwright.py >> scraper.log 2>&1
 
 
 # ===========================
