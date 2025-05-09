@@ -26,6 +26,6 @@ try:
     }
     with open(f'data/{today}/bovada_game_links.csv', 'w') as f:
         f.writelines([f'{url}\n' for url in links])
-    print(f"Saved {len(links)} game links to data/{today}/bovada_game_links.csv")
+    print(f"Saved game links to data/{today}/bovada_game_links.csv")
 finally:
     driver.quit()
