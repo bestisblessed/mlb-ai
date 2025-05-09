@@ -38,46 +38,11 @@ if date:
                     df['Game'] = f"{game_info['away_team']} @ {game_info['home_team']}"
                     df['Team'] = game_info['away_team'] if team_num == 1 else game_info['home_team']
                     all_pitchers.append(df)
-        #leader_tabs = st.tabs([
-        #    "Hitters",
-        #    "Pitchers"
-        #])
         leader_tabs = st.tabs([
             "Pitchers",
             "Hitters"
         ])
         with leader_tabs[0]:
-            if all_batters:
-                batters_df = pd.concat(all_batters, ignore_index=True)
-                st.subheader("Top Hitter Projections")
-                col1, col2, col3 = st.columns(3)
-                with col1:
-                    st.caption("Projected Home Run Leaders")
-                    hr_leaders = batters_df.nlargest(30, 'HR')[['Batter', 'HR', 'Game']]
-                    hr_leaders = hr_leaders.reset_index(drop=True)
-                    hr_leaders.index = hr_leaders.index + 1
-                    numeric_cols = hr_leaders.select_dtypes(include=[np.number]).columns
-                    hr_leaders[numeric_cols] = hr_leaders[numeric_cols].round(2)
-                    st.dataframe(hr_leaders, height=600)
-                with col2:
-                    st.caption("Projected Hits Leaders")
-                    hits_leaders = batters_df.nlargest(30, 'H')[['Batter', 'H', '1B', '2B', '3B', 'Team']]
-                    hits_leaders = hits_leaders.reset_index(drop=True)
-                    hits_leaders.index = hits_leaders.index + 1
-                    numeric_cols = hits_leaders.select_dtypes(include=[np.number]).columns
-                    hits_leaders[numeric_cols] = hits_leaders[numeric_cols].round(2)
-                    st.dataframe(hits_leaders, height=600)
-                with col3:
-                    st.caption("Projected RBI Leaders")
-                    rbi_leaders = batters_df.nlargest(30, 'RBI')[['Batter', 'RBI', 'Team']]
-                    rbi_leaders = rbi_leaders.reset_index(drop=True)
-                    rbi_leaders.index = rbi_leaders.index + 1
-                    numeric_cols = rbi_leaders.select_dtypes(include=[np.number]).columns
-                    rbi_leaders[numeric_cols] = rbi_leaders[numeric_cols].round(2)
-                    st.dataframe(rbi_leaders, height=600)
-            else:
-                st.info("No batter projections available for this date")
-        with leader_tabs[1]:
             if all_pitchers:
                 pitchers_df = pd.concat(all_pitchers, ignore_index=True)
                 st.subheader("Top Pitcher Projections")
@@ -93,16 +58,15 @@ if date:
                     k_leaders.index = k_leaders.index + 1
                     numeric_cols = k_leaders.select_dtypes(include=[np.number]).columns
                     k_leaders[numeric_cols] = k_leaders[numeric_cols].round(2)
-                    st.dataframe(k_leaders, height=700)
+                    st.dataframe(k_leaders, height=650, width=600)
                 with col2:
                     if alt_df is not None:
                         st.caption("Alt Strikeout Odds")
-                        st.dataframe(alt_df, height=700, width=900)
+                        st.dataframe(alt_df, height=650, width=900)
                     else:
                         st.info("No alt strikeout odds available for this date")
-                        
                 st.write("")
-                st.write("")
+                
                 col1, col2, col3 = st.columns(3)
                 with col1:
                     st.caption("QS Probability Leaders")
@@ -125,6 +89,37 @@ if date:
                     st.image(img_path, use_container_width=True)
             else:
                 st.info("No pitcher projections available for this date")
+        with leader_tabs[1]:
+            if all_batters:
+                batters_df = pd.concat(all_batters, ignore_index=True)
+                st.subheader("Top Hitter Projections")
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    st.caption("Home Run Leaders")
+                    hr_leaders = batters_df.nlargest(30, 'HR')[['Batter', 'HR', 'Game']]
+                    hr_leaders = hr_leaders.reset_index(drop=True)
+                    hr_leaders.index = hr_leaders.index + 1
+                    numeric_cols = hr_leaders.select_dtypes(include=[np.number]).columns
+                    hr_leaders[numeric_cols] = hr_leaders[numeric_cols].round(2)
+                    st.dataframe(hr_leaders, height=600, use_container_width=True)
+                with col2:
+                    st.caption("Hits Leaders")
+                    hits_leaders = batters_df.nlargest(30, 'H')[['Batter', 'H', '1B', '2B', '3B', 'Team']]
+                    hits_leaders = hits_leaders.reset_index(drop=True)
+                    hits_leaders.index = hits_leaders.index + 1
+                    numeric_cols = hits_leaders.select_dtypes(include=[np.number]).columns
+                    hits_leaders[numeric_cols] = hits_leaders[numeric_cols].round(2)
+                    st.dataframe(hits_leaders, height=600, use_container_width=True)
+                with col3:
+                    st.caption("RBI Leaders")
+                    rbi_leaders = batters_df.nlargest(30, 'RBI')[['Batter', 'RBI', 'Team']]
+                    rbi_leaders = rbi_leaders.reset_index(drop=True)
+                    rbi_leaders.index = rbi_leaders.index + 1
+                    numeric_cols = rbi_leaders.select_dtypes(include=[np.number]).columns
+                    rbi_leaders[numeric_cols] = rbi_leaders[numeric_cols].round(2)
+                    st.dataframe(rbi_leaders, height=600, use_container_width=True)
+            else:
+                st.info("No batter projections available for this date")
     else:
         st.error(f"Simulation data not found for {date}")
 else:
@@ -138,9 +133,15 @@ if date and 'batters_df' in locals() and 'pitchers_df' in locals():
                 body {{ font-family: Arial, sans-serif; margin: 40px; }}
                 h1 {{ color: #1f77b4; text-align: center; }}
                 h2 {{ color: #2c3e50; margin-top: 30px; }}
+                .pitcher-grid-container {{
+                    display: grid;
+                    grid-template-columns: 1.2fr 2.8fr;
+                    gap: 20px;
+                    margin: 20px 0;
+                }}
                 .grid-container {{
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: repeat(3, 1fr);
                     gap: 20px;
                     margin: 20px 0;
                 }}
@@ -189,7 +190,7 @@ if date and 'batters_df' in locals() and 'pitchers_df' in locals():
             <h1>MLB Daily Leaders Report</h1>
             <p class="date">Date: {date}</p>
             <h2 class="section-title">Pitcher Projections</h2>
-            <div class="grid-container">
+            <div class="pitcher-grid-container">
                 <div class="grid-item">
                     <h3>Strikeout Leaders</h3>
                     {k_leaders.to_html(index=True)}
