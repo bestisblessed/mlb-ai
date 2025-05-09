@@ -29,7 +29,7 @@ with sync_playwright() as p:
             # Ensure we have an absolute URL
             full_url = url if url.startswith('http') else f"https://www.bovada.lv{url}"
             page.goto(full_url, timeout=60000)
-            time.sleep(1) 
+            time.sleep(2) 
             print("Looking for Pitcher Props tab...")
             tab_found = False
             try:
@@ -59,7 +59,7 @@ with sync_playwright() as p:
                 print("Could not find or click Pitcher Props tab, skipping this game.")
                 continue
             print("Waiting for content to load after tab click...")
-            time.sleep(3) 
+            time.sleep(4) 
             content = page.content()
             if "Alternate Strikeouts" in content:
                 print("Found 'Alternate Strikeouts' in page content.")
@@ -108,7 +108,7 @@ with sync_playwright() as p:
                         print(f"  No lines ultimately recorded for {pitcher_name} ({team}).")
             else:
                 print("No Alternate Strikeouts section found for this game.")
-            time.sleep(1) 
+            time.sleep(2) 
         except Exception as e:
             print(f"Error processing {url}: {e}")
     browser.close()
