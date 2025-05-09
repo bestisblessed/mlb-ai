@@ -38,9 +38,13 @@ if date:
                     df['Game'] = f"{game_info['away_team']} @ {game_info['home_team']}"
                     df['Team'] = game_info['away_team'] if team_num == 1 else game_info['home_team']
                     all_pitchers.append(df)
+        #leader_tabs = st.tabs([
+        #    "Hitters",
+        #    "Pitchers"
+        #])
         leader_tabs = st.tabs([
-            "Hitters",
-            "Pitchers"
+            "Pitchers",
+            "Hitters"
         ])
         with leader_tabs[0]:
             if all_batters:
@@ -92,7 +96,7 @@ if date:
                     st.dataframe(k_leaders, height=700)
                 with col2:
                     if alt_df is not None:
-                        st.caption("Alt Strikeout Odds (American Odds)")
+                        st.caption("Alt Strikeout Odds")
                         st.dataframe(alt_df, height=700, width=900)
                     else:
                         st.info("No alt strikeout odds available for this date")
