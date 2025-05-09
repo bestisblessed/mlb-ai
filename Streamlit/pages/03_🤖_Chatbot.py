@@ -17,6 +17,8 @@ if not api_key:
     api_key = st.sidebar.text_input("Enter your OpenAI API key:", type="password")
     if api_key:
         st.session_state.OPENAI_API_KEY = api_key
+#API_KEY = st.secrets["MY_FINAL_OPENAI_API_KEY_MORPHEUS"]
+API_KEY = st.secrets["openai"]["openai_api_key"]
 if "messages" not in st.session_state:
     st.session_state.messages = [
         {"role": "assistant", "content": "Hi! I'm your MLB AI Assistant. Ask me anything about baseball stats, players, or predictions!"}
@@ -39,11 +41,13 @@ def load_game_data():
     if os.path.exists(sim_path):
         return pd.read_csv(sim_path), latest_date
     return None, latest_date
+
 def generate_response(prompt, games_df=None, game_date=None):
-    if not st.session_state.OPENAI_API_KEY:
-        return "Please add your OpenAI API key in the sidebar to continue."
+    #if not st.session_state.OPENAI_API_KEY:
+    #    return "Please add your OpenAI API key in the sidebar to continue."
     try:
-        client = OpenAI(api_key=st.session_state.OPENAI_API_KEY)
+        #client = OpenAI(api_key=st.session_state.OPENAI_API_KEY)
+        client = OpenAI(api_key=API_KEY)
         system_message = "You are MLB AI, a helpful assistant that provides information about baseball. Be concise and informative."
         if games_df is not None:
             games_context = f"Today's games ({game_date}):\n"
@@ -84,11 +88,7 @@ if user_input:
         message_placeholder.markdown(full_response)
     st.session_state.messages.append({"role": "user", "content": user_input})
     st.session_state.messages.append({"role": "assistant", "content": full_response})
-# if games_df is not None:
-    # st.sidebar.subheader(f"Today's Games ({latest_date})")
-    # for _, game in games_df.iterrows():
-    #     st.sidebar.markdown(f"- **{game['away_team']} @ {game['home_team']}** ({game['time']})")
-    # st.sidebar.markdown("---")
+
 st.sidebar.markdown("**Example Questions:**")
 example_container = st.sidebar.container()
 for example in examples:
