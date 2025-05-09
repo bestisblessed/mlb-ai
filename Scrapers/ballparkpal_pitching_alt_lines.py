@@ -56,19 +56,18 @@ df = df.copy()
     
 # Get Ladder Probs
 prob_cols = [str(i) for i in range(10)] + ["10+"]
-for k in range(4, 11):
+for k in range(2, 11):
     df[f"{k}plus"] = df[[c for c in prob_cols if int(c.rstrip('+')) >= k]].sum(axis=1)
     
 # Calculate Money Line (no-vig)
-for k in range(4, 11):
+for k in range(2, 11):
     df[f"{k}plus_odds"] = df[f"{k}plus"].apply(
         lambda p: None if p == 0 else -round(p/(1-p)*100) if p >= 0.5 else round((1-p)/p*100)
     )
     
 # View/Save
-cols = ["Pitcher"] + [f"{k}plus_odds" for k in range(4, 11)]
-rename_dict = {f"{k}plus_odds": f"{k}k" for k in range(4, 11)}
+cols = ["Pitcher"] + [f"{k}plus_odds" for k in range(2, 11)]
+rename_dict = {f"{k}plus_odds": f"{k}K" for k in range(2, 11)}
 df_out = df[cols].rename(columns=rename_dict)
 print(df_out)
-df_out.sort_values(by="Pitcher").to_csv("fair_ladder_odds_strikeouts.csv", index=False)
-
+df_out.sort_values(by="Pitcher").to_csv(f"{output_dir}/pitcher_alt_strikeouts.csv", index=False)
