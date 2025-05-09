@@ -6,7 +6,6 @@ import re
 import io
 from streamlit.components.v1 import html
 
-# Set up data directory path
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 if not os.path.exists(DATA_DIR):
     DATA_DIR = "data"
@@ -22,12 +21,12 @@ if date:
         all_batters = []
         all_pitchers = []
         for game_id in sim['game_id']:
-            game_id = str(game_id)  # Convert to string for path construction
+            game_id = str(game_id)
             for team_num in [1, 2]:
                 batter_path = os.path.join(DATA_DIR, date, game_id, f"proj_box_batters_{team_num}.csv")
                 if os.path.exists(batter_path):
                     df = pd.read_csv(batter_path)
-                    game_info = sim[sim['game_id'] == int(game_id)].iloc[0]  # Convert back to int for comparison
+                    game_info = sim[sim['game_id'] == int(game_id)].iloc[0]
                     df['Game'] = f"{game_info['away_team']} @ {game_info['home_team']}"
                     df['Team'] = game_info['away_team'] if team_num == 1 else game_info['home_team']
                     all_batters.append(df)
@@ -35,7 +34,7 @@ if date:
                 pitcher_path = os.path.join(DATA_DIR, date, game_id, f"proj_box_pitchers_{team_num}.csv")
                 if os.path.exists(pitcher_path):
                     df = pd.read_csv(pitcher_path)
-                    game_info = sim[sim['game_id'] == int(game_id)].iloc[0]  # Convert back to int for comparison
+                    game_info = sim[sim['game_id'] == int(game_id)].iloc[0]
                     df['Game'] = f"{game_info['away_team']} @ {game_info['home_team']}"
                     df['Team'] = game_info['away_team'] if team_num == 1 else game_info['home_team']
                     all_pitchers.append(df)
@@ -52,10 +51,10 @@ if date:
                     st.caption("Projected Home Run Leaders")
                     hr_leaders = batters_df.nlargest(30, 'HR')[['Batter', 'HR', 'Game']]
                     hr_leaders = hr_leaders.reset_index(drop=True)
-                    hr_leaders.index = hr_leaders.index + 1  # Start numbering at 1
+                    hr_leaders.index = hr_leaders.index + 1
                     numeric_cols = hr_leaders.select_dtypes(include=[np.number]).columns
                     hr_leaders[numeric_cols] = hr_leaders[numeric_cols].round(2)
-                    st.dataframe(hr_leaders, height=600)  # Removed hide_index=True
+                    st.dataframe(hr_leaders, height=600)
                 with col2:
                     st.caption("Projected Hits Leaders")
                     hits_leaders = batters_df.nlargest(30, 'H')[['Batter', 'H', '1B', '2B', '3B', 'Team']]
@@ -78,7 +77,11 @@ if date:
             if all_pitchers:
                 pitchers_df = pd.concat(all_pitchers, ignore_index=True)
                 st.subheader("Top Pitcher Projections")
-                col1, col2, col3 = st.columns(3)
+                alt_path = os.path.join(DATA_DIR, date, "pitcher_alt_strikeouts.csv")
+                alt_df = None
+                if os.path.exists(alt_path):
+                    alt_df = pd.read_csv(alt_path)
+                col1, col2 = st.columns([2, 3])
                 with col1:
                     st.caption("Strikeout Leaders")
                     k_leaders = pitchers_df.nlargest(20, 'K')[['Pitcher', 'K', 'Game']]
@@ -86,23 +89,34 @@ if date:
                     k_leaders.index = k_leaders.index + 1
                     numeric_cols = k_leaders.select_dtypes(include=[np.number]).columns
                     k_leaders[numeric_cols] = k_leaders[numeric_cols].round(2)
-                    st.dataframe(k_leaders, height=600)
+                    st.dataframe(k_leaders, height=700)
                 with col2:
+                    if alt_df is not None:
+                        st.caption("Alt Strikeout Odds (American Odds)")
+                        st.dataframe(alt_df, height=700, width=900)
+                    else:
+                        st.info("No alt strikeout odds available for this date")
+                        
+                st.write("")
+                st.write("")
+                col1, col2, col3 = st.columns(3)
+                with col1:
                     st.caption("QS Probability Leaders")
-                    qs_leaders = pitchers_df.nlargest(20, 'QS')[['Pitcher', 'QS', 'R', 'Team']]
-                    qs_leaders = qs_leaders.reset_index(drop=True)
-                    qs_leaders.index = qs_leaders.index + 1
+                    qs_leaders = pitchers_df.nlargest(20, 'QS')[['Pitcher', 'QS', 'R', 'Team']].reset_index(drop=True)
+                    qs_leaders.index += 1
                     qs_leaders['QS'] = (qs_leaders['QS'] * 100).round(1).astype(str) + '%'
                     qs_leaders[['R']] = qs_leaders[['R']].round(2)
                     st.dataframe(qs_leaders, height=600)
-                with col3:
+                with col2:
                     st.caption("Win Probability Leaders")
-                    win_leaders = pitchers_df.nlargest(20, 'W')[['Pitcher', 'W', 'Inn', 'Team']]
-                    win_leaders = win_leaders.reset_index(drop=True)
-                    win_leaders.index = win_leaders.index + 1
+                    win_leaders = pitchers_df.nlargest(20, 'W')[['Pitcher', 'W', 'Inn', 'Team']].reset_index(drop=True)
+                    win_leaders.index += 1
                     win_leaders['W'] = (win_leaders['W'] * 100).round(1).astype(str) + '%'
                     win_leaders[['Inn']] = win_leaders[['Inn']].round(2)
                     st.dataframe(win_leaders, height=600)
+                with col3:
+                    st.caption("I'm coming...")
+                    st.image("data/jiri.jpg", use_container_width=True)
             else:
                 st.info("No pitcher projections available for this date")
     else:
@@ -120,7 +134,7 @@ if date and 'batters_df' in locals() and 'pitchers_df' in locals():
                 h2 {{ color: #2c3e50; margin-top: 30px; }}
                 .grid-container {{
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(2, 1fr);
                     gap: 20px;
                     margin: 20px 0;
                 }}
@@ -175,12 +189,8 @@ if date and 'batters_df' in locals() and 'pitchers_df' in locals():
                     {k_leaders.to_html(index=True)}
                 </div>
                 <div class="grid-item">
-                    <h3>QS Probability Leaders</h3>
-                    {qs_leaders.to_html(index=True)}
-                </div>
-                <div class="grid-item">
-                    <h3>Win Probability Leaders</h3>
-                    {win_leaders.to_html(index=True)}
+                    <h3>Alt Strikeout Odds</h3>
+                    {alt_df.to_html(index=True) if 'alt_df' in locals() and alt_df is not None else '<p>No alt strikeout odds available for this date</p>'}
                 </div>
             </div>
             <h2 class="section-title">Hitter Projections</h2>
