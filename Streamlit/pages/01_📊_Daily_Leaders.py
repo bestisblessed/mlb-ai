@@ -50,6 +50,12 @@ if date:
                 alt_df = None
                 if os.path.exists(alt_path):
                     alt_df = pd.read_csv(alt_path)
+                    if alt_df is not None:
+                        for col in alt_df.columns:
+                            if col != "Pitcher":
+                                alt_df[col] = alt_df[col].apply(
+                                    lambda x: f"+{int(x)}" if pd.notnull(x) and isinstance(x, (int, float)) and x > 0 else (f"{int(x)}" if pd.notnull(x) and isinstance(x, (int, float)) else x)
+                                )
                 col1, col2 = st.columns([2, 3])
                 with col1:
                     st.caption("Strikeout Leaders")
