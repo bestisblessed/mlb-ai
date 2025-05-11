@@ -13,7 +13,7 @@ def get_mlb_games():
     url = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds"
     params = {
         'apiKey': api_key,
-        'regions': 'us,us2',
+        'regions': 'us,us2,eu',
         'markets': 'h2h',
         'oddsFormat': 'american'
     }
@@ -39,12 +39,13 @@ def get_pitcher_props(event_id):
     url = f"https://api.the-odds-api.com/v4/sports/baseball_mlb/events/{event_id}/odds"
     params = {
         'apiKey': api_key,
-        'regions': 'us,us2',
+        'regions': 'us,us2,eu',
         #'markets': 'pitcher_strikeouts,pitcher_strikeouts_alternate',
         'markets': 'pitcher_strikeouts_alternate',
         'oddsFormat': 'american',
         #'bookmakers': 'fanduel'
-        'bookmakers': 'fanduel,draftkings,bet365,caesars,fanatics,pinnacle,hardrockbet,bovada,fliff'
+        'bookmakers': 'betonlineag,fanduel,draftkings,bovada,hardrockbet,fliff,pinnacle,mybookieag'
+        #'bookmakers': 'williamhill_us,fanatics'
     }
     with requests.Session() as session:
         response = session.get(url, params=params, timeout=(3.05, 27))
