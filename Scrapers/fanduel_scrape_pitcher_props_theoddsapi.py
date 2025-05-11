@@ -29,7 +29,7 @@ def get_mlb_games():
         os.makedirs(f"data/{date_str}", exist_ok=True)
         game_filename = f"data/{date_str}/theoddsapi_game_links.csv"
         game_df.to_csv(game_filename, index=False)
-        print(f"Saved game list to {game_filename}")
+        print(f"Saved game list to {game_filename}\n")
     else:
         print("No games found")
     return games
