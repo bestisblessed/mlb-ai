@@ -13,7 +13,7 @@ def get_mlb_games():
     url = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds"
     params = {
         'apiKey': api_key,
-        'regions': 'us',
+        'regions': 'us,us2',
         'markets': 'h2h',
         'oddsFormat': 'american'
     }
