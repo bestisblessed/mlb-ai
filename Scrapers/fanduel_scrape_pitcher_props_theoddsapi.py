@@ -26,10 +26,14 @@ def get_mlb_games():
     games = response.json()
     if games:
         game_df = pd.DataFrame(games)
-        game_filename = f"mlb_games_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+        date_str = datetime.now().strftime('%Y-%m-%d')
+        os.makedirs(f"data/{date_str}", exist_ok=True)
+        #game_filename = f"data/{date_str}/mlb_games_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+        game_filename = f"data/{date_str}/theoddsapi_game_links.csv"
         game_df.to_csv(game_filename, index=False)
         print(f"Saved game list to {game_filename}")
-    
+    else:
+        print("No games found")
     return games
 
 def get_pitcher_props(event_id):
@@ -38,8 +42,8 @@ def get_pitcher_props(event_id):
     params = {
         'apiKey': api_key,
         'regions': 'us',
-        #'markets': 'pitcher_strikeouts,pitcher_strikeouts_alternate',
-        'markets': 'pitcher_strikeouts_alternate',
+        'markets': 'pitcher_strikeouts,pitcher_strikeouts_alternate',
+        #'markets': 'pitcher_strikeouts_alternate',
         'oddsFormat': 'american',
         'bookmakers': 'fanduel'
     }
@@ -86,7 +90,10 @@ def main():
         time.sleep(1.2)  
     if all_props:
         df = pd.DataFrame(all_props)
-        filename = f"mlb_pitcher_props_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+        date_str = datetime.now().strftime('%Y-%m-%d')
+        os.makedirs(f"data/{date_str}", exist_ok=True)
+        #filename = f"data/{date_str}/mlb_pitcher_props_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+        filename = f"data/{date_str}/theoddsapi_all_pitcher_props_{date_str}.csv"
         df.to_csv(filename, index=False)
         print(f"Saved props to {filename}")
     else:

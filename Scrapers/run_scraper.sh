@@ -25,6 +25,13 @@ xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props_playwrigh
 
 
 # ===========================
+# Run the fanduel alt lines scraper
+# ===========================
+#xvfb-run /home/trinity/.pyenv/shims/python fanduel_scrape_pitcher_props_theoddsapi_working.py >> scraper.log 2>&1
+
+
+
+# ===========================
 # Update the data repository
 # ===========================
 rm -rf data/raw
