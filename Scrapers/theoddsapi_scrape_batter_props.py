@@ -149,7 +149,7 @@ def main():
         BLUE = "\033[94m"
         RESET = "\033[0m"
 
-        print(f"{GREEN}Saved home run props to {hr_filename}{RESET}")
+        print(f"\n{GREEN}Saved home run props to {hr_filename}{RESET}")
         print(f"{CYAN}Saved stolen base props to {sb_filename}{RESET}")
         print(f"{YELLOW}Saved hits props to {hits_filename}{RESET}")
         print(f"{MAGENTA}Saved total bases props to {tb_filename}{RESET}")

@@ -122,7 +122,7 @@ def main():
         # ANSI color code for orange (use 33 for yellow/orange-like)
         ORANGE = "\033[33m"
         RESET = "\033[0m"
-        print(f"{ORANGE}Saved pitcher props to {filename}{RESET}")
+        print(f"\n{ORANGE}Saved pitcher props to {filename}{RESET}\n")
     else:
         print("No props data found")
         
