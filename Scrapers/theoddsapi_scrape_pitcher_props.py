@@ -4,6 +4,7 @@ from datetime import datetime
 import time
 from dotenv import load_dotenv
 import os
+from zoneinfo import ZoneInfo
 
 load_dotenv()  
 api_key = os.getenv('THEODDSAPI_KEY')  
@@ -22,17 +23,32 @@ def get_mlb_games():
     if response.status_code != 200:
         print(f"Error getting games: {response.status_code}")
         return []
-    games = response.json()
-    if games:
-        game_df = pd.DataFrame(games)
-        date_str = datetime.now().strftime('%Y-%m-%d')
+    
+    all_games = response.json()
+    if not all_games:
+        print("No games found")
+        return []
+    
+    # Filter games for today (in Eastern Time)
+    eastern = ZoneInfo("America/New_York")
+    today_eastern = datetime.now(eastern).date()
+    today_games = [
+        g for g in all_games
+        if datetime.fromisoformat(g['commence_time'].replace('Z', '+00:00')).astimezone(eastern).date() == today_eastern
+    ]
+    
+    # Save only today's games to CSV
+    if today_games:
+        date_str = today_eastern.strftime('%Y-%m-%d')
         os.makedirs(f"data/{date_str}", exist_ok=True)
+        game_df = pd.DataFrame(today_games)
         game_filename = f"data/{date_str}/theoddsapi_game_links.csv"
         game_df.to_csv(game_filename, index=False)
-        print(f"Saved game list to {game_filename}\n")
+        print(f"Saved {len(today_games)} games for today ({today_eastern}) to {game_filename}")
     else:
-        print("No games found")
-    return games
+        print(f"No games found for today ({today_eastern})")
+    
+    return today_games  # Return only today's games
 
 def get_pitcher_props(event_id):
     """Get pitcher props for specific game"""
@@ -85,28 +101,28 @@ def extract_props(game_data, props_data):
 
 def main():
     all_props = []
-    games = get_mlb_games()
-    # Only process the first 2 games to save API calls
-    #for game in games[:2]:
+    games = get_mlb_games()  # Already filtered for today in Eastern Time
+    
     for game in games:
         print(f"Processing game: {game['home_team']} vs {game['away_team']} ({game['id']})")
         props = get_pitcher_props(game['id'])
         if props:
             props_data = extract_props(game, props)
-            #if not props_data:
-            #    print(f"No props extracted for {game['id']}")
             all_props.extend(props_data)
         else:
             print(f"Skipped game {game['id']} due to error or no data")
         time.sleep(3)
-        print()
     if all_props:
         df = pd.DataFrame(all_props)
         date_str = datetime.now().strftime('%Y-%m-%d')
         os.makedirs(f"data/{date_str}", exist_ok=True)
         filename = f"data/{date_str}/theoddsapi_all_pitcher_props_{date_str}.csv"
         df.to_csv(filename, index=False)
-        print(f"Saved props to {filename}")
+
+        # ANSI color code for orange (use 33 for yellow/orange-like)
+        ORANGE = "\033[33m"
+        RESET = "\033[0m"
+        print(f"{ORANGE}Saved pitcher props to {filename}{RESET}")
     else:
         print("No props data found")
         
