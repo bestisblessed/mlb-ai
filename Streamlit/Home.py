@@ -253,7 +253,7 @@ if date:
         if matchups_df is not None and starter_home_last:
             vs_df = matchups_df[matchups_df["Pitcher"] == starter_home_last]
             if not vs_df.empty:
-                st.caption(f"Matchups vs {starter_home}")
+                st.caption(f"Matchups vs {starter_home} (BETA)")
                 # Display columns (drop the misleading 'AtBats' and rename batting side)
                 disp_cols = ["Batter", "Side", "RC", "HR", "XB", "1B", "BB", "K"]
                 vs_disp = vs_df[disp_cols].copy()
@@ -328,7 +328,7 @@ if date:
         if matchups_df is not None and starter_away_last:
             vs_df = matchups_df[matchups_df["Pitcher"] == starter_away_last]
             if not vs_df.empty:
-                st.caption(f"Matchups vs {starter_away}")
+                st.caption(f"Matchups vs {starter_away} (BETA)")
                 # Display columns (drop the misleading 'AtBats' and rename batting side)
                 disp_cols = ["Batter", "Side", "RC", "HR", "XB", "1B", "BB", "K"]
                 vs_disp = vs_df[disp_cols].copy()
