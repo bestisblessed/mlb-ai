@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+777547,Coors Field8:40SF  @ COL,"FromLeft.svg,OutLeftMiddle.svg,OutLeft.svg,LightWind.png,From76to82.png,LowP.png","FromLeft.svg,OutLeftMiddle.svg,OutLeft.svg,Light Breeze,76–82°F,Low Pressure"
+777561,Fenway Park7:10TB  @ BOS,"OutRight.svg,OutRight.svg,OutRightCenter.svg,LightWind.png","OutRight.svg,OutRight.svg,OutRightCenter.svg,Light Breeze"
+777549,Progressive Field1:10CIN @ CLE,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,From76to82.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,76–82°F"
+777562,Oriole Park6:35DET @ BAL,"OutRightMiddle.svg,OutRight.svg,OutLeft.svg,From83to89.png","OutRightMiddle.svg,OutRight.svg,OutLeft.svg,83–89°F"
+777553,Citizens Bank Park1:05CHC @ PHI,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,From83to89.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,83–89°F"
+777551,Kauffman Stadium7:40NYY @ KC,"OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,LightWind.png,Over90.png","OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,Light Breeze,≥90°F"
+777548,Chase Field3:40SEA @ ARI,RoofClosed.png,Roof Closed
+777542,Angel Stadium4:07ATH @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+777552,PNC Park12:35MIA @ PIT,"OutLeft.svg,OutLeft.svg,OutLeft.svg,LightWind.png,From76to82.png,HighP.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Light Breeze,76–82°F,High Pressure"
+777554,American Family Fld2:10ATL @ MIL,"OutLeft.svg,OutLeft.svg,OutLeft.svg,HeavyWind.png,From83to89.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Heavy Wind,83–89°F"
+777556,Target Field7:40TEX @ MIN,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg"
+777555,Citi Field7:10WAS @ NYM,"OutRight.svg,OutRight.svg,OutRight.svg,ModerateWind.png,From76to82.png","OutRight.svg,OutRight.svg,OutRight.svg,Moderate Wind,76–82°F"
+777545,Busch Stadium2:15TOR @ STL,"OutLeftMiddle.svg,FromRight.svg,FromRight.svg,LightWind.png,From83to89.png","OutLeftMiddle.svg,FromRight.svg,FromRight.svg,Light Breeze,83–89°F"
+777543,Petco Park4:10LAD @ SD,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,HighH.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,High Humidity"
+777550,Daikin Park8:10CHW @ HOU,RoofClosed.png,Roof Closed
