@@ -1,149 +1,61 @@
-#import streamlit as st
-#import pandas as pd
-#import numpy as np
-#import matplotlib.pyplot as plt
-#import plotly.express as px
-#import plotly.graph_objects as go
-#from plotly.subplots import make_subplots
-#from datetime import datetime
-#from openai import OpenAI
-#import time
-#import os
-#import re
-#import openai
-#
-#DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "Streamlit", "data")
-#if not os.path.exists(DATA_DIR):
-#    DATA_DIR = "data"
-## openai_api_key = st.secrets["openai"]["openai_api_key"]
-## openai.api_key = openai_api_key
-#st.set_page_config(page_title="MLB Game Analysis Dashboard", page_icon="⚾", layout="wide")
-#st.title("MLB Game Analysis Dashboard")
-#dates = sorted((d for d in os.listdir(DATA_DIR) if re.match(r"\d{4}-\d{2}-\d{2}", d)), reverse=True)
-#date = st.sidebar.selectbox("Select Date", dates)
-#if date:
-#    sim_path = os.path.join(DATA_DIR, date, "game_simulations.csv")
-#    detail_path = os.path.join(DATA_DIR, date, "game_simulations_per_game_tables.csv")
-#    if os.path.exists(sim_path) and os.path.exists(detail_path):
-#        sim = pd.read_csv(sim_path)
-#        sim_detailed = pd.read_csv(detail_path)
-#        games = sim.apply(lambda r: f"{r['time']}pm - {r['away_team']} @ {r['home_team']}", axis=1).tolist()
-#        game_idx = st.sidebar.selectbox("Select Game", range(len(games)), format_func=lambda i: games[i])
-#        if game_idx is not None:
-#            selected_game = sim.iloc[game_idx]
-#            game_id = str(selected_game["game_id"])
-#            away_team = selected_game["away_team"]
-#            home_team = selected_game["home_team"]
-#            game_time = selected_game["time"]
-#            detailed_row = sim_detailed[sim_detailed["game_id"] == int(game_id)].iloc[0]
-#            st.subheader(f"{away_team} @ {home_team} - {game_time}")
-#            st.caption(f"MLB Analysis · Game ID: {game_id} · {date} · {game_time}")
-#            st.divider()
-#            col1, col2, col3, col4 = st.columns(4)
-#            with col1:
-#                st.metric("Projected Runs (Away)", f"{selected_game['away_score']:.2f}")
-#            with col2:
-#                st.metric("Projected Runs (Home)", f"{selected_game['home_score']:.2f}")
-#            with col3:
-#                away_win_prob = detailed_row.get("win_away", "")
-#                if isinstance(away_win_prob, str) and "%" in away_win_prob:
-#                    win_pct = re.search(r"(\d+\.\d+)%", away_win_prob)
-#                    odds = re.search(r"\(([+-]\d+)\)", away_win_prob)
-#                    if win_pct and odds:
-#                        formatted_text = f"({odds.group(1)}) {win_pct.group(1)}%"
-#                        st.metric("Win Probability (Away)", formatted_text)
-#                    else:
-#                        st.metric("Win Probability (Away)", away_win_prob)
-#                else:
-#                    st.metric("Win Probability (Away)", away_win_prob)
-#            with col4:
-#                home_win_prob = detailed_row.get("win_home", "")
-#                if isinstance(home_win_prob, str) and "%" in home_win_prob:
-#                    win_pct = re.search(r"(\d+\.\d+)%", home_win_prob)
-#                    odds = re.search(r"\(([+-]\d+)\)", home_win_prob)
-#                    if win_pct and odds:
-#                        formatted_text = f"{win_pct.group(1)}% ({odds.group(1)})"
-#                        st.metric("Win Probability (Home)", formatted_text)
-#                    else:
-#                        st.metric("Win Probability (Home)", home_win_prob)
-#                else:
-#                    st.metric("Win Probability (Home)", home_win_prob)
-#        st.write("")
-#        away_col, home_col = st.columns(2)
-#        with away_col:
-#                st.subheader(f"{away_team}")
-#                pitcher_path = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_1.csv")
-#                if os.path.exists(pitcher_path):
-#                    pitcher_df = pd.read_csv(pitcher_path)
-#                    if not pitcher_df.empty:
-#                        st.caption("Starting Pitcher Projection")
-#                        pitcher = pitcher_df.iloc[0]
-#                        stats = {
-#                            "Pitcher": pitcher["Pitcher"],
-#                            "DK": f"{pitcher['DK']:.1f}",
-#                            "FD": f"{pitcher['FD']:.1f}",
-#                            "IP": f"{pitcher['Inn']:.1f}",
-#                            "K": f"{pitcher['K']:.1f}",
-#                            "BB": f"{pitcher['BB']:.1f}",
-#                            "H": f"{pitcher['H']:.1f}",
-#                            "R": f"{pitcher['R']:.2f}",
-#                            "Win%": f"{pitcher['W']*100:.0f}%",
-#                            "QS%": f"{pitcher['QS']*100:.0f}%"
-#                        }
-#                        st.dataframe(pd.DataFrame([stats]), hide_index=True)
-#                batters_path = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_1.csv")
-#                if os.path.exists(batters_path):
-#                    batters_df = pd.read_csv(batters_path)
-#                    if not batters_df.empty:
-#                        st.caption("Batting Order Projections")
-#                        display_cols = ['Batter', 'PA', 'FD', 'DK', 'H', 'R', 'RBI', 'BB', 'K', '1B', '2B', '3B', 'HR', 'SB']
-#                        formatted_df = batters_df[display_cols].copy()
-#                        numeric_cols = formatted_df.select_dtypes(include=[np.number]).columns
-#                        formatted_df[numeric_cols] = formatted_df[numeric_cols].round(2)
-#                        st.dataframe(formatted_df, hide_index=True)
-#        with home_col:
-#                st.subheader(f"{home_team}")
-#                pitcher_path = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_2.csv")
-#                if os.path.exists(pitcher_path):
-#                    pitcher_df = pd.read_csv(pitcher_path)
-#                    if not pitcher_df.empty:
-#                        st.caption("Starting Pitcher Projection")
-#                        pitcher = pitcher_df.iloc[0]
-#                        stats = {
-#                            "Pitcher": pitcher["Pitcher"],
-#                            "DK": f"{pitcher['DK']:.1f}",
-#                            "FD": f"{pitcher['FD']:.1f}",
-#                            "IP": f"{pitcher['Inn']:.1f}",
-#                            "K": f"{pitcher['K']:.1f}",
-#                            "BB": f"{pitcher['BB']:.1f}",
-#                            "H": f"{pitcher['H']:.1f}",
-#                            "R": f"{pitcher['R']:.2f}",
-#                            "Win%": f"{pitcher['W']*100:.0f}%",
-#                            "QS%": f"{pitcher['QS']*100:.0f}%"
-#                        }
-#                        st.dataframe(pd.DataFrame([stats]), hide_index=True)
-#                batters_path = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_2.csv")
-#                if os.path.exists(batters_path):
-#                    batters_df = pd.read_csv(batters_path)
-#                    if not batters_df.empty:
-#                        st.caption("Batting Order Projections")
-#                        display_cols = ['Batter', 'PA', 'FD', 'DK', 'H', 'R', 'RBI', 'BB', 'K', '1B', '2B', '3B', 'HR', 'SB']
-#                        formatted_df = batters_df[display_cols].copy()
-#                        numeric_cols = formatted_df.select_dtypes(include=[np.number]).columns
-#                        formatted_df[numeric_cols] = formatted_df[numeric_cols].round(2)
-#                        st.dataframe(formatted_df, hide_index=True)
-#    else:
-#        st.error(f"Simulation data not found for {date}")
-#else:
-#    st.title("MLB Game Analysis Dashboard")
-#    st.info("Please select a date and game from the sidebar to view projections.")
-#st.sidebar.markdown("---")
-#st.sidebar.markdown("MLB AI © 2025 | [GitHub](https://github.com/bestisblessed) | By Tyler Durette")
 import streamlit as st
 import pandas as pd
 import numpy as np
 import os
 import re
+
+# ---------------------------------------------------------------------------
+# Helper : parse BallparkPal matchups.csv into a dict
+# ---------------------------------------------------------------------------
+def _parse_matchup_row(raw: str):
+    """Parse a single raw line from matchups.csv into a dict."""
+    parts = [p.strip() for p in raw.split(',')]
+    if not parts or parts[0] in ("Team", ""):
+        return {}
+
+    side = parts[0]
+    # Drop empty placeholders at the start
+    rest = [p for p in parts[1:] if p]
+    if len(rest) < 5:
+        return {}
+
+    # First non-empty is Batter name
+    batter = rest[0]
+    # Next numeric is BatterID, then AtBats
+    numeric_idx = next((i for i, p in enumerate(rest[1:], 1) if p.lstrip('-').isdigit()), None)
+    if numeric_idx is None or numeric_idx + 1 >= len(rest):
+        return {}
+
+    batter_id = rest[numeric_idx]
+    at_bats = rest[numeric_idx + 1]
+
+    # Everything after that until next numeric is pitcher name
+    pitcher_tokens = []
+    stats_start_idx = None
+    for i in range(numeric_idx + 2, len(rest)):
+        token = rest[i]
+        if token.lstrip('-').isdigit():
+            stats_start_idx = i
+            break
+        pitcher_tokens.append(token)
+
+    if stats_start_idx is None or not pitcher_tokens:
+        return {}
+
+    pitcher = ' '.join(pitcher_tokens)
+    # Remaining tokens are stats: RC, HR, XB, 1B, BB, K (may be fewer)
+    stats = rest[stats_start_idx:]
+    stat_keys = ["RC", "HR", "XB", "1B", "BB", "K"]
+    stat_map = {k: (stats[i] if i < len(stats) else '') for i, k in enumerate(stat_keys)}
+
+    return {
+        "Side": side,
+        "Batter": batter,
+        "BatterID": batter_id,
+        "AtBats": at_bats,
+        "Pitcher": pitcher,
+        **stat_map
+    }
 
 # -- DATA_DIR setup (unchanged) --
 DATA_DIR = os.path.join(
@@ -154,9 +66,9 @@ if not os.path.exists(DATA_DIR):
     DATA_DIR = "data"
 
 # -- Page config & title --
-st.set_page_config(page_title="MLB Game Analysis Dashboard",
+st.set_page_config(page_title="MLB AI",
                    page_icon="⚾", layout="wide")
-st.title("MLB Game Analysis Dashboard")
+st.title("MLB AI")
 
 # -- Sidebar: date & game selectors --
 dates = sorted(
@@ -200,9 +112,38 @@ if date:
 
             # Header & metrics
             st.subheader(f"{away_team} @ {home_team} - {game_time}")
-            st.caption(f"MLB Analysis · Game ID: {game_id} · {date} · {game_time}")
+            st.caption(f"Game ID: {game_id} · {date} · {game_time}")
+            # ── Weather Summary (emojis) under header ─────────────────────────
+            pf_path = os.path.join(DATA_DIR, date, "park_factors_icons.csv")
+            if os.path.exists(pf_path):
+                pf_df = pd.read_csv(pf_path, dtype={"game_id": int})
+                pf_row = pf_df[pf_df["game_id"] == int(game_id)]
+                if not pf_row.empty:
+                    labels = [lbl.strip() for lbl in pf_row.iloc[0]["icon_labels"].split(",")]
+                    emoji_map = {
+                        "<60°F": "🥶",
+                        "60–75°F": "🌤️",
+                        "76–82°F": "🌞",
+                        "83–89°F": "🥵",
+                        "≥90°F": "🔥",
+                        "Light Breeze": "🌬️",
+                        "Moderate Wind": "💨",
+                        "Heavy Wind": "🌪️",
+                        "Roof Closed": "🏟️",
+                        "Low Pressure": "🔽",
+                        "High Pressure": "🔼",
+                        "Low Humidity": "🏜️",
+                        "High Humidity": "💦"
+                    }
+                    sorted_labels = sorted(
+                        [lbl for lbl in labels if emoji_map.get(lbl)],
+                        key=lambda lbl: 0 if lbl in {"<60°F", "60–75°F", "76–82°F", "83–89°F", "≥90°F"}
+                                    else 1 if lbl in {"Light Breeze", "Moderate Wind", "Heavy Wind"}
+                                    else 2
+                    )
+                    weather_summary = " - ".join(f"{emoji_map[lbl]} _{lbl}_" for lbl in sorted_labels)
+                    st.markdown(weather_summary)
             st.divider()
-
             c1, c2, c3, c4 = st.columns(4)
             c1.metric("Projected Runs (Away)", f"{selected_game['away_score']:.2f}")
             c2.metric("Projected Runs (Home)", f"{selected_game['home_score']:.2f}")
@@ -222,6 +163,23 @@ if date:
                          "Win Probability (Away)", c3)
             fmt_win_prob(detailed_row.get("win_home", ""),
                          "Win Probability (Home)", c4)
+
+            # -------------------- NEW: load & prepare matchups --------------------
+            matchups_df = None
+            matchups_path = os.path.join(DATA_DIR, date, "matchups.csv")
+            if os.path.exists(matchups_path):
+                with open(matchups_path, "r", encoding="utf-8") as f:
+                    lines = f.readlines()[1:]  # skip header
+                recs = [_parse_matchup_row(l) for l in lines]
+                recs = [r for r in recs if r]
+                if recs:
+                    matchups_df = pd.DataFrame(recs)
+            # grab starter names for filtering
+            starter_away = detailed_row.get("starter_away", "")  # away pitcher full name
+            starter_home = detailed_row.get("starter_home", "")  # home pitcher full name
+            # extract last names for matchup filtering
+            starter_away_last = starter_away.split()[-1] if isinstance(starter_away, str) and starter_away else ""
+            starter_home_last = starter_home.split()[-1] if isinstance(starter_home, str) and starter_home else ""
 
     else:
         st.error(f"Simulation data not found for {date}")
@@ -291,6 +249,18 @@ if date:
                     }
                 )
 
+        # -------------------- Matchups vs Home Starter --------------------
+        if matchups_df is not None and starter_home_last:
+            vs_df = matchups_df[matchups_df["Pitcher"] == starter_home_last]
+            if not vs_df.empty:
+                st.caption(f"Matchups vs {starter_home}")
+                disp_cols = ["Batter", "Side", "AtBats", "RC", "HR", "XB", "1B", "BB", "K"]
+                vs_disp = vs_df[disp_cols].copy()
+                num_cols = vs_disp.select_dtypes(include=[object]).columns.difference(["Batter", "Side"])
+                vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
+                vs_disp[num_cols] = vs_disp[num_cols].round(2)
+                st.dataframe(vs_disp, hide_index=True)
+
     # -- HOME PROJECTIONS --
     with home_col:
         st.subheader(home_team)
@@ -351,6 +321,18 @@ if date:
                         )
                     }
                 )
+
+        # -------------------- Matchups vs Away Starter --------------------
+        if matchups_df is not None and starter_away_last:
+            vs_df = matchups_df[matchups_df["Pitcher"] == starter_away_last]
+            if not vs_df.empty:
+                st.caption(f"Matchups vs {starter_away}")
+                disp_cols = ["Batter", "Side", "AtBats", "RC", "HR", "XB", "1B", "BB", "K"]
+                vs_disp = vs_df[disp_cols].copy()
+                num_cols = vs_disp.select_dtypes(include=[object]).columns.difference(["Batter", "Side"])
+                vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
+                vs_disp[num_cols] = vs_disp[num_cols].round(2)
+                st.dataframe(vs_disp, hide_index=True)
 
 else:
     st.info("Please select a date and game from the sidebar to view projections.")
