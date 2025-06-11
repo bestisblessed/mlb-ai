@@ -21,6 +21,8 @@ def _slug_prefix(name: str) -> str:
 
 st.title("🧢 Player Dashboard")
 
+st.divider()
+
 DATA_DIR = _get_data_dir()
 info_path = os.path.join(DATA_DIR, "player_general_info.csv")
 stats_path = os.path.join(DATA_DIR, "player_batting_stats.csv")
