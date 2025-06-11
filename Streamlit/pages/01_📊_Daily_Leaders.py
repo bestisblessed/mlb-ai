@@ -12,7 +12,7 @@ if not os.path.exists(DATA_DIR):
     DATA_DIR = "data"
 
 st.set_page_config(page_title="MLB Daily Leaders", page_icon="⚾", layout="wide")
-st.title("MLB Daily Leaders")
+st.title("📊 MLB Daily Leaders")
 dates = sorted((d for d in os.listdir(DATA_DIR) if re.match(r"\d{4}-\d{2}-\d{2}", d)), reverse=True)
 date = st.sidebar.selectbox("Select Date", dates)
 if date:
