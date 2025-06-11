@@ -9,9 +9,8 @@ from typing import List, Dict
 def _get_data_dir() -> str:
     """Return absolute path to data directory (works in dev & prod)."""
     base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    d = os.path.join(base, "Streamlit", "data")
+    d = os.path.join(base, "data")
     return d if os.path.exists(d) else "data"
-
 
 def _parse_matchup_row(raw: str) -> Dict[str, str]:
     """Parse a single raw line from matchups.csv into a dict.
