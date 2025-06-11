@@ -241,11 +241,10 @@ if date:
             if not pdf.empty:
                 st.caption("Starting Pitcher Projection")
 
-                # expose URL and reorder
                 pdf_display = pdf.copy()
                 pdf_display["Player_Link"] = pdf_display["Player URL"]
                 cols = [
-                    "Player_Link", "Pitcher", "DK", "FD",
+                    "Pitcher", "Player_Link", "DK", "FD",
                     "Inn", "K", "BB", "H", "R", "W", "QS"
                 ]
                 pdf_display = pdf_display[cols]
@@ -254,10 +253,10 @@ if date:
                     pdf_display,
                     hide_index=True,
                     column_config={
-                        # LinkColumn takes a list of display_text values (one per row) :contentReference[oaicite:0]{index=0}
                         "Player_Link": st.column_config.LinkColumn(
-                            label="Pitcher",
-                            display_text=pdf["Pitcher"].tolist()
+                            label="",
+                            display_text="🔗",
+                            width=30
                         )
                     }
                 )
@@ -272,9 +271,9 @@ if date:
                 bdf_display = bdf.copy()
                 bdf_display["Player_Link"] = bdf_display["Player URL"]
                 cols = [
-                    "Batter", "PA", "FD", "DK",
+                    "Batter", "Player_Link", "PA", "FD", "DK",
                     "H", "R", "RBI", "BB", "K", "1B", "2B",
-                    "3B", "HR", "SB", "Player_Link"
+                    "3B", "HR", "SB"
                 ]
                 bdf_display = bdf_display[cols]
                 nums = bdf_display.select_dtypes(include=[np.number]).columns
@@ -286,7 +285,7 @@ if date:
                     column_config={
                     "Player_Link": st.column_config.LinkColumn(
                         label="",
-                        display_text="📍",
+                        display_text="🔗",
                         width=30  # Set column width to tiny
                         )
                     }
@@ -306,8 +305,8 @@ if date:
                 pdf_display = pdf.copy()
                 pdf_display["Player_Link"] = pdf_display["Player URL"]
                 cols = [
-                    "Pitcher", "DK", "FD",
-                    "Inn", "K", "BB", "H", "R", "W", "QS", "Player_Link"
+                    "Pitcher", "Player_Link", "DK", "FD",
+                    "Inn", "K", "BB", "H", "R", "W", "QS"
                 ]
                 pdf_display = pdf_display[cols]
 
@@ -316,8 +315,9 @@ if date:
                     hide_index=True,
                     column_config={
                         "Player_Link": st.column_config.LinkColumn(
-                            label="Pitcher",
-                            display_text=pdf["Pitcher"].tolist()
+                            label="",
+                            display_text="🔗",
+                            width=30
                         )
                     }
                 )
@@ -332,9 +332,9 @@ if date:
                 bdf_display = bdf.copy()
                 bdf_display["Player_Link"] = bdf_display["Player URL"]
                 cols = [
-                    "Batter", "PA", "FD", "DK",
+                    "Batter", "Player_Link", "PA", "FD", "DK",
                     "H", "R", "RBI", "BB", "K", "1B", "2B",
-                    "3B", "HR", "SB", "Player_Link"
+                    "3B", "HR", "SB"
                 ]
                 bdf_display = bdf_display[cols]
                 nums = bdf_display.select_dtypes(include=[np.number]).columns
@@ -346,7 +346,7 @@ if date:
                     column_config={
                     "Player_Link": st.column_config.LinkColumn(
                         label="",
-                        display_text="📍",
+                        display_text="🔗",
                         width=30  # Set column width to tiny
                         )
                     }
