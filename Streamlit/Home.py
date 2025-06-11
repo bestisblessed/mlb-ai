@@ -112,7 +112,11 @@ if date:
 
             # Header & metrics
             st.subheader(f"{away_team} @ {home_team} - {game_time}")
-            st.caption(f"Game ID: {game_id} · {date} · {game_time}")
+            st.markdown(
+                f"<p style='margin-top:-10px; color:#8e8e8e; font-size:0.9rem;'>"
+                f"Game ID: {game_id} · {date} · {game_time}</p>",
+                unsafe_allow_html=True,
+            )
             # ── Weather Summary (emojis) under header ─────────────────────────
             pf_path = os.path.join(DATA_DIR, date, "park_factors_icons.csv")
             if os.path.exists(pf_path):
@@ -141,8 +145,48 @@ if date:
                                     else 1 if lbl in {"Light Breeze", "Moderate Wind", "Heavy Wind"}
                                     else 2
                     )
-                    weather_summary = " - ".join(f"{emoji_map[lbl]} _{lbl}_" for lbl in sorted_labels)
-                    st.markdown(weather_summary)
+                    # use wider padding around the dash separator
+                    separator = " &nbsp;&nbsp;-&nbsp;&nbsp; "  # two non-breaking spaces on each side
+                    weather_summary = separator.join(
+                        f"{emoji_map[lbl]} _{lbl}_" for lbl in sorted_labels
+                    )
+
+                    # ── Build additional directional details inline ──
+                    def _describe_direction_icon(icon_label: str):
+                        """Convert direction SVG filenames into human-readable text."""
+                        base = icon_label.rsplit(".", 1)[0]
+                        m = re.match(r"(Out|In|From)(.+)", base)
+                        if not m:
+                            return None
+                        prefix, tail = m.groups()
+                        tail_words = re.sub(r"([a-z])([A-Z])", r"\1 \2", tail)
+                        tail_words = tail_words.replace(" Center", "-center").replace(" Middle", "-middle")
+                        direction_text = tail_words.lower()
+                        if prefix == "Out":
+                            return f"wind out to {direction_text}"
+                        if prefix == "In":
+                            return f"wind in from {direction_text}"
+                        if prefix == "From":
+                            return f"wind from {direction_text}"
+                        return None
+
+                    extra_details = [
+                        _describe_direction_icon(lbl) for lbl in labels if lbl not in emoji_map
+                    ]
+                    extra_details = [d for d in extra_details if d]
+
+                    combined_line = weather_summary
+                    if extra_details:
+                        extra_text = " • ".join(extra_details)
+                        # add extra padding before the details block
+                        combined_line += (
+                            " &nbsp;&nbsp;&nbsp;&nbsp;"  # four NBSPs as gap
+                            "<span style='color:#b8b8b8; font-size:0.85rem;'>"
+                            + extra_text + "</span>"
+                        )
+
+                    # Use unsafe HTML to keep everything on one line
+                    st.markdown(combined_line, unsafe_allow_html=True)
             st.divider()
             c1, c2, c3, c4 = st.columns(4)
             c1.metric("Projected Runs (Away)", f"{selected_game['away_score']:.2f}")
