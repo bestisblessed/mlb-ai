@@ -326,7 +326,7 @@ if date and 'batters_df' in locals() and 'pitchers_df' in locals():
     light_bytes = html_content.encode()
     dark_bytes = html_dark_content.encode()
     st.sidebar.download_button(
-        label="Download Report (Light",
+        label="Download Report (Light)",
         data=light_bytes,
         file_name=f'mlb_daily_leaders_{date}_light.html',
         mime='text/html',
