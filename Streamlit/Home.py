@@ -254,11 +254,13 @@ if date:
             vs_df = matchups_df[matchups_df["Pitcher"] == starter_home_last]
             if not vs_df.empty:
                 st.caption(f"Matchups vs {starter_home}")
-                disp_cols = ["Batter", "Side", "AtBats", "RC", "HR", "XB", "1B", "BB", "K"]
+                # Display columns (drop the misleading 'AtBats' and rename batting side)
+                disp_cols = ["Batter", "Side", "RC", "HR", "XB", "1B", "BB", "K"]
                 vs_disp = vs_df[disp_cols].copy()
                 num_cols = vs_disp.select_dtypes(include=[object]).columns.difference(["Batter", "Side"])
                 vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
                 vs_disp[num_cols] = vs_disp[num_cols].round(2)
+                vs_disp = vs_disp.rename(columns={"Side": "L/R"})
                 st.dataframe(vs_disp, hide_index=True)
 
     # -- HOME PROJECTIONS --
@@ -327,11 +329,13 @@ if date:
             vs_df = matchups_df[matchups_df["Pitcher"] == starter_away_last]
             if not vs_df.empty:
                 st.caption(f"Matchups vs {starter_away}")
-                disp_cols = ["Batter", "Side", "AtBats", "RC", "HR", "XB", "1B", "BB", "K"]
+                # Display columns (drop the misleading 'AtBats' and rename batting side)
+                disp_cols = ["Batter", "Side", "RC", "HR", "XB", "1B", "BB", "K"]
                 vs_disp = vs_df[disp_cols].copy()
                 num_cols = vs_disp.select_dtypes(include=[object]).columns.difference(["Batter", "Side"])
                 vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
                 vs_disp[num_cols] = vs_disp[num_cols].round(2)
+                vs_disp = vs_disp.rename(columns={"Side": "L/R"})
                 st.dataframe(vs_disp, hide_index=True)
 
 else:
