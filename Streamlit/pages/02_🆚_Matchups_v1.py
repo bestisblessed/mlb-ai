@@ -72,8 +72,8 @@ def _parse_matchup_row(raw: str) -> Dict[str, str]:
 
 # ------------------ Streamlit UI ------------------ #
 
-st.set_page_config(page_title="Batter vs Pitcher", page_icon="⚔️", layout="wide")
-st.title("🔍 Batter vs Pitcher Lookup")
+st.set_page_config(page_title="Matchups v1", page_icon="⚔️", layout="wide")
+st.title("🆚 Matchups v1")
 st.divider()
 
 DATA_DIR = _get_data_dir()

@@ -13,12 +13,14 @@ import ast
 import os
 import pathlib
 from typing import Tuple, Dict
-
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 from plotly.express.colors import qualitative
+
+st.set_page_config(page_title="Matchups v2", page_icon="⚔️", layout="wide")
+st.title("🆚 Matchups v2")
 
 # --------------------------------------------------------------------
 # 1  DATA DIRECTORY  (aligns with other pages)
@@ -34,7 +36,7 @@ SEASONS = (2023, 2024, 2025)
 # --------------------------------------------------------------------
 @st.cache_data(show_spinner="📥 Loading StatsAPI CSVs…")
 def _load_csv(year: int, name: str) -> pd.DataFrame:
-    return pd.read_csv(os.path.join(DATA_DIR, str(year), name))
+    return pd.read_csv(os.path.join(DATA_DIR, str(year), name), low_memory=False)
 
 
 def load_season(year: int) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -120,7 +122,8 @@ edges = build_edges()
 # --------------------------------------------------------------------
 # 4  VISUAL HELPERS
 # --------------------------------------------------------------------
-L_COLOR, R_COLOR = qualitative.Plotly[2], qualitative.Plotly[1]
+# Match the React demo colors (purple for vs LHP, green for vs RHP)
+L_COLOR, R_COLOR = "#8884d8", "#82ca9d"
 
 
 def card_bar(df: pd.DataFrame, metric: str, title: str):
@@ -183,9 +186,7 @@ CSS = """
 </style>
 """
 
-st.set_page_config(page_title="Matchups", page_icon="⚾", layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
-st.title("📊 Batter‑vs‑Pitcher Split Dashboard (2023‑25)")
 
 card_bar = card_bar  # alias
 
