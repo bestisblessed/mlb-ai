@@ -68,7 +68,7 @@ if not os.path.exists(DATA_DIR):
 # -- Page config & title --
 st.set_page_config(page_title="MLB AI",
                    page_icon="⚾", layout="wide")
-#st.title("MLB AI")
+st.title("MLB AI")
 
 # -- Sidebar: date & game selectors --
 st.sidebar.title("⚾️ MLB AI")
