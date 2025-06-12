@@ -1,0 +1,9 @@
+game_id,game,icons,icon_labels
+777534,Coors Field3:10SF  @ COL,"InRightMiddle.svg,OutLeftCenter.svg,OutRightMiddle.svg,LightWind.png,Over90.png,LowH.png,LowP.png","InRightMiddle.svg,OutLeftCenter.svg,OutRightMiddle.svg,Light Breeze,≥90°F,Low Humidity,Low Pressure"
+777536,Kauffman Stadium7:40NYY @ KC,"OutLeftMiddle.svg,FromRight.svg,OutLeftMiddle.svg,LightWind.png,HighH.png","OutLeftMiddle.svg,FromRight.svg,OutLeftMiddle.svg,Light Breeze,High Humidity"
+777540,Oriole Park6:35DET @ BAL,"InLeftMiddle.svg,InLeft.svg,FromRight.svg,Over90.png","InLeftMiddle.svg,InLeft.svg,FromRight.svg,≥90°F"
+777533,Target Field1:10TEX @ MIN,"InRightCenter.svg,InRightCenter.svg,InCenter.svg,LightWind.png,HighH.png","InRightCenter.svg,InRightCenter.svg,InCenter.svg,Light Breeze,High Humidity"
+777546,Daikin Park8:10CHW @ HOU,RoofClosed.png,Roof Closed
+777532,American Family Fld7:40STL @ MIL,"InLeftMiddle.svg,InLeftMiddle.svg,FromLeft.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,FromLeft.svg,Light Breeze"
+777544,Citi Field1:10WAS @ NYM,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,Over90.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,≥90°F"
+777541,Wrigley Field8:05PIT @ CHC,"InCenter.svg,InCenter.svg,InLeftCenter.svg,LightWind.png","InCenter.svg,InCenter.svg,InLeftCenter.svg,Light Breeze"
