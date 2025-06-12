@@ -1,6 +1,3 @@
-#!data/
-#!data/**/
-#data/
 bak*
 playwright_user_data/
 data/baseball-ref/raw-players-game-logs/
