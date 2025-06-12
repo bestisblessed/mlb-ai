@@ -1,6 +1,6 @@
 [theme]
 base="dark"  # Keep the dark theme
 primaryColor="#FF0000"  # Bright red for primary elements
-secondaryBackgroundColor="#2C2C2C"  # Slightly lighter gray for secondary elements
+secondaryBackgroundColor="#D3D3D3"  # Light gray for sidebar
 textColor="#FFFFFF"  # White text for contrast
 font="sans serif"  # Change to a different font, e.g., "serif", "monospace", or "sans serif"
