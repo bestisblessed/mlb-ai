@@ -97,8 +97,8 @@ def fetch_all_pitchers_gamelogs(season):
     df_pitcher_details = pd.DataFrame(pitcher_details)
     
     os.makedirs(f"data/{YEAR}", exist_ok=True)
-    df_pitchers.to_csv(f"data/{YEAR}/pitchers_gamelogs_{YEAR}.csv", index=False)
-    df_pitcher_details.to_csv(f"data/{YEAR}/pitchers_details_{YEAR}.csv", index=False)
+    df_pitchers.to_csv(f"data/{YEAR}/pitchers_gamelogs_{YEAR}_statsapi.csv", index=False)
+    df_pitcher_details.to_csv(f"data/{YEAR}/pitchers_details_{YEAR}_statsapi.csv", index=False)
     
     return df_pitchers, df_pitcher_details
 

@@ -97,8 +97,8 @@ def fetch_all_batters_gamelogs(season):
     df_batter_details = pd.DataFrame(batter_details)
     
     os.makedirs(f"data/{YEAR}", exist_ok=True)
-    df_batters.to_csv(f"data/{YEAR}/batters_gamelogs_{YEAR}.csv", index=False)
-    df_batter_details.to_csv(f"data/{YEAR}/batters_details_{YEAR}.csv", index=False)
+    df_batters.to_csv(f"data/{YEAR}/batters_gamelogs_{YEAR}_statsapi.csv", index=False)
+    df_batter_details.to_csv(f"data/{YEAR}/batters_details_{YEAR}_statsapi.csv", index=False)
     
     return df_batters, df_batter_details
 
