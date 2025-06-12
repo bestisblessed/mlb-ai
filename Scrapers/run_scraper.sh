@@ -10,6 +10,11 @@ cd /home/trinity/mlb-ai/Scrapers
 xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_headless.py >> scraper.log 2>&1
 
 # ===========================
+# Run the BallparkPal park factors icons scraper
+# ===========================
+xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_park_factors.py >> scraper.log 2>&1
+
+# ===========================
 # Run the pitching alt lines scraper
 # ===========================
 xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_pitching_alt_lines.py >> scraper.log 2>&1
