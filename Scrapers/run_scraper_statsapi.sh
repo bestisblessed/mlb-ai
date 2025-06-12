@@ -2,10 +2,13 @@
 
 set -e
 
+echo "Fetching team game logs..."
+python statsapi_team_game_logs.py
+
 echo "Fetching pitcher game logs …"
-python3 statsapi_pitcher_game_logs.py
+python statsapi_pitcher_game_logs.py
 
 echo "Fetching batter game logs …"
-python3 statsapi_batter_game_logs.py
+python statsapi_batter_game_logs.py
 
-echo "All done." 
+echo "Done."
