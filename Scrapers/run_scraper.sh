@@ -41,7 +41,7 @@ xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props_playwrigh
 # ===========================
 rm -rf data/raw
 git pull >> scraper.log 2>&1
-git add -f data/202*
+git add -f data/20*
 git commit -m "Data update $(date +%Y-%m-%d)" >> /dev/null 2>&1
 git push >> /dev/null 2>&1
 echo "$(date): Data updated" >> scraper.log 2>&1
@@ -50,8 +50,8 @@ echo "$(date): Data updated" >> scraper.log 2>&1
 # ===========================
 # Sync data to Streamlit app
 # ===========================
-cp -r data/202* ../Streamlit/data/
-git add -f ../Streamlit/data/202*
+cp -r data/20* ../Streamlit/data/
+git add -f ../Streamlit/data/20*
 git commit -m "Data update streamlit $(date +%Y-%m-%d)" >> /dev/null 2>&1
 git push >> /dev/null 2>&1
 echo "$(date): Data updated streamlit" >> scraper.log 2>&1
