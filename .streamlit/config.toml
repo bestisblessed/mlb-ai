@@ -1,7 +1,6 @@
 [theme]
 base="dark"  # Keep the dark theme
 primaryColor="#FF0000"  # Bright red for primary elements
-backgroundColor="#1E1E1E"  # Dark gray for the background
 secondaryBackgroundColor="#2C2C2C"  # Slightly lighter gray for secondary elements
 textColor="#FFFFFF"  # White text for contrast
 font="sans serif"  # Change to a different font, e.g., "serif", "monospace", or "sans serif"
