@@ -143,7 +143,7 @@ def card_bar(df: pd.DataFrame, metric: str, title: str):
 
 def _card(title: str, fig: go.Figure, table: pd.DataFrame):
     st.markdown(f"<h3>{title}</h3>", unsafe_allow_html=True)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True, key=title)  # Added unique key for plotly_chart
     num_cols = table.select_dtypes("number").columns
     fmt = {c: "{:.3f}" for c in num_cols}
     st.dataframe(table.style.format(fmt), use_container_width=True, hide_index=True)
@@ -200,17 +200,3 @@ card_bar(edges["Kpct"].assign(Diff=lambda d: d["vs_R"] - d["vs_L"]).sort_values(
 
 # scatter
 scatter_hr_ops()
-scatter_hr_ops()
-## OPS cards
-#card_bar(edges["OPS"], "OPS", "OPS Advantage vs RHP (Top 10)")
-#card_bar(edges["OPS"].assign(Diff=lambda d: d["vs_R"] - d["vs_L"]).sort_values("Diff").head(10), "OPS", "OPS Advantage vs LHP (Top 10)")
-#
-## HR cards
-#card_bar(edges["HR100"], "HR/100 PA", "HR/100 PA Edge vs RHP (Top 10)")
-#card_bar(edges["HR100"].assign(Diff=lambda d: d["vs_R"] - d["vs_L"]).sort_values("Diff").head(10), "HR/100 PA", "HR/100 PA Edge vs LHP (Top 10)")
-#
-## K rate card
-#card_bar(edges["Kpct"].assign(Diff=lambda d: d["vs_R"] - d["vs_L"]).sort_values("Diff", ascending=False).head(10), "K%", "Highest Strike‑out Rate vs RHP")
-#
-## scatter
-#scatter_hr_ops()
