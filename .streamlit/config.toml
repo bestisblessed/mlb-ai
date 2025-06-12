@@ -1,3 +1,7 @@
 [theme]
-base="dark"
-font="serif"
+base="dark"  # Keep the dark theme
+primaryColor="#F39C12"  # Example primary color
+backgroundColor="#1E1E1E"  # Slightly lighter dark background
+secondaryBackgroundColor="#2A2A2A"  # Lighter secondary background
+textColor="#FFFFFF"  # White text for contrast
+font="sans serif"  # Change to a different font, e.g., "serif", "monospace", or "sans serif"
