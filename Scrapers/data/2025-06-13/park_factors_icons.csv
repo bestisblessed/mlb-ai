@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+777530,Nationals Park6:45MIA @ WAS,"OutLeft.svg,OutLeftCenter.svg,OutLeft.svg,LightWind.png,From76to82.png,HighH.png","OutLeft.svg,OutLeftCenter.svg,OutLeft.svg,Light Breeze,76–82°F,High Humidity"
+777529,Kauffman Stadium8:10ATH @ KC,"OutLeft.svg,OutLeft.svg,OutLeft.svg,LightWind.png,From83to89.png,LowP.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Light Breeze,83–89°F,Low Pressure"
+777539,Oriole Park7:08LAA @ BAL,"InRightMiddle.svg,OutLeftMiddle.svg,FromRight.svg,From76to82.png,HighH.png","InRightMiddle.svg,OutLeftMiddle.svg,FromRight.svg,76–82°F,High Humidity"
+777537,Fenway Park7:10NYY @ BOS,"FromRight.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,HighP.png","FromRight.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,High Pressure"
+777521,Chase Field9:40SD  @ ARI,RoofClosed.png,Roof Closed
+777531,Citizens Bank Park6:45TOR @ PHI,"OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,From76to82.png","OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,76–82°F"
+777535,Truist Park7:15COL @ ATL,"InRightMiddle.svg,InRight.svg,InRight.svg,LightWind.png,From76to82.png","InRightMiddle.svg,InRight.svg,InRight.svg,Light Breeze,76–82°F"
+777526,Wrigley Field2:20PIT @ CHC,"OutLeft.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png","OutLeft.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze"
+777538,Comerica Park7:10CIN @ DET,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,HighH.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,High Humidity"
+777524,Globe Life Field8:05CHW @ TEX,RoofClosed.png,Roof Closed
+777522,Dodger Stadium10:10SF  @ LAD,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze"
+777525,American Family Fld8:10STL @ MIL,"InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,HighH.png","InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,High Humidity"
+777527,Daikin Park8:10MIN @ HOU,RoofClosed.png,Roof Closed
+777520,T-Mobile Park10:10CLE @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg"
+777528,Citi Field7:10TB  @ NYM,"OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,HighP.png","OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,High Pressure"
