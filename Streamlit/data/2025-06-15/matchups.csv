@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 DET,Spencer Torkelson,679529,10,Miley,489119,33,-12,10,37,29,-41
 HOU,Cam Smith,701358,7,Woods Rich.,680573,28,72,32,0,15,-10
 PIT,Oneil Cruz,665833,10,Rea,607067,28,6,25,16,1,-22

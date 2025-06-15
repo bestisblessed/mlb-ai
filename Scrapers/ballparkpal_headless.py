@@ -288,7 +288,7 @@ os.makedirs(data_dir, exist_ok=True)
 with open(f"{data_dir}/matchups.csv", "w", newline="", encoding="utf-8") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow([
-        "Team", "Batter", "BatterID", "AtBats", "Pitcher", "PitcherID", 
+        "Team", "Batter", "BatterID", "vs", "Pitcher", "PitcherID", 
         "RC", "HR", "XB", "1B", "BB", "K"
     ])
     for row in rows:
@@ -301,7 +301,7 @@ with open(f"{data_dir}/matchups.csv", "w", newline="", encoding="utf-8") as csvf
         batter_id = ""
         if batter_link and "PlayerId=" in batter_link["href"]:
             batter_id = batter_link["href"].split("PlayerId=")[1]
-        at_bats = cells[4].get_text(strip=True)
+        vs = cells[4].get_text(strip=True)
         pitcher_link = cells[5].find("a")
         pitcher = pitcher_link.get_text(strip=True) if pitcher_link else ""
         pitcher_id = ""
@@ -309,7 +309,7 @@ with open(f"{data_dir}/matchups.csv", "w", newline="", encoding="utf-8") as csvf
             pitcher_id = pitcher_link["href"].split("PlayerId=")[1]
         values = [cells[i].get_text(strip=True) for i in range(6, 12)]
         writer.writerow([
-            team, batter, batter_id, at_bats, pitcher, pitcher_id,
+            team, batter, batter_id, vs, pitcher, pitcher_id,
             *values
         ])
 print(f"Parsed matchups table to {data_dir}/matchups.csv") 
