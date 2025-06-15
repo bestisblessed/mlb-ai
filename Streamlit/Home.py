@@ -18,6 +18,68 @@ def load_pitcher_logs(year: int) -> pd.DataFrame:
     path = os.path.join(DATA_DIR, str(year), f"pitchers_gamelogs_{year}_statsapi.csv")
     return pd.read_csv(path) if os.path.exists(path) else pd.DataFrame()
 
+
+@st.cache_data(show_spinner="Loading all batter logs...")
+def load_all_batter_logs() -> pd.DataFrame:
+    """Concatenate batter game logs across all seasons."""
+    frames = []
+    for yr in range(2010, 2026):
+        p = os.path.join(DATA_DIR, str(yr), f"batters_gamelogs_{yr}_statsapi.csv")
+        if os.path.exists(p):
+            frames.append(pd.read_csv(p))
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
+
+
+@st.cache_data(show_spinner="Loading all pitcher logs...")
+def load_all_pitcher_logs() -> pd.DataFrame:
+    """Concatenate pitcher game logs across all seasons."""
+    frames = []
+    for yr in range(2010, 2026):
+        p = os.path.join(DATA_DIR, str(yr), f"pitchers_gamelogs_{yr}_statsapi.csv")
+        if os.path.exists(p):
+            frames.append(pd.read_csv(p))
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
+
+
+@st.cache_data(show_spinner="Finding career matchups...")
+def get_batter_vs_pitcher_history(batter_id: int, pitcher_id: int) -> pd.DataFrame:
+    """Return all batter game logs from games where this pitcher appeared."""
+    bdf = load_all_batter_logs()
+    pdf = load_all_pitcher_logs()
+
+    bdf = bdf[bdf["player_id"] == batter_id]
+    pdf = pdf[pdf["player_id"] == pitcher_id]
+
+    if bdf.empty or pdf.empty:
+        return pd.DataFrame()
+
+    merged = pdf.merge(
+        bdf,
+        left_on=["date", "opponent"],
+        right_on=["date", "team"],
+        suffixes=("_pit", "_bat"),
+    )
+    merged = merged[merged["team_pit"] == merged["opponent_bat"]]
+
+    if merged.empty:
+        return pd.DataFrame()
+
+    cols = [
+        "date",
+        "atBats",
+        "hits",
+        "doubles",
+        "triples",
+        "homeRuns",
+        "rbi",
+        "runs",
+        "strikeOuts",
+        "baseOnBalls",
+    ]
+    merged = merged[cols].copy()
+    merged[cols[1:]] = merged[cols[1:]].apply(pd.to_numeric, errors="coerce")
+    return merged
+
 # -- DATA_DIR setup (unchanged) --
 DATA_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
@@ -204,6 +266,19 @@ if date:
             starter_away_last = starter_away.split()[-1] if isinstance(starter_away, str) and starter_away else ""
             starter_home_last = starter_home.split()[-1] if isinstance(starter_home, str) and starter_home else ""
 
+            # lookup starting pitcher IDs
+            starter_away_id = starter_home_id = None
+            p1_path = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_1.csv")
+            if os.path.exists(p1_path):
+                tmp = pd.read_csv(p1_path)
+                if not tmp.empty:
+                    starter_away_id = int(tmp.iloc[0].get("Player ID", 0))
+            p2_path = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_2.csv")
+            if os.path.exists(p2_path):
+                tmp = pd.read_csv(p2_path)
+                if not tmp.empty:
+                    starter_home_id = int(tmp.iloc[0].get("Player ID", 0))
+
     else:
         st.error(f"Simulation data not found for {date}")
         st.stop()
@@ -323,6 +398,32 @@ if date:
                         )
                     else:
                         st.write("No game logs found.")
+                # -- Career vs starter home --
+                if starter_home_id:
+                    with st.expander(brow["Batter"] + f" Career vs {starter_home}"):
+                        vs_logs = get_batter_vs_pitcher_history(pid, starter_home_id)
+                        if vs_logs.empty:
+                            st.write("No history vs this pitcher.")
+                        else:
+                            totals = vs_logs.sum(numeric_only=True)
+                            ab = int(totals.get("atBats", 0))
+                            hits = int(totals.get("hits", 0))
+                            avg = hits / ab if ab else 0
+                            st.markdown(
+                                f"**Games:** {len(vs_logs)} | **AB:** {ab} | **H:** {hits} "
+                                f"| **AVG:** {avg:.3f} | **HR:** {int(totals.get('homeRuns', 0))} "
+                                f"| **BB:** {int(totals.get('baseOnBalls', 0))} "
+                                f"| **K:** {int(totals.get('strikeOuts', 0))}"
+                            )
+                            disp_cols_vs = [
+                                'date', 'atBats', 'hits', 'doubles', 'triples',
+                                'homeRuns', 'rbi', 'runs', 'strikeOuts', 'baseOnBalls'
+                            ]
+                            disp_cols_vs = [c for c in disp_cols_vs if c in vs_logs.columns]
+                            st.dataframe(
+                                vs_logs.sort_values('date', ascending=False)[disp_cols_vs],
+                                hide_index=True
+                            )
 
     # -- HOME PROJECTIONS --
     with home_col:
@@ -436,6 +537,32 @@ if date:
                         )
                     else:
                         st.write("No game logs found.")
+                # -- Career vs starter away --
+                if starter_away_id:
+                    with st.expander(brow["Batter"] + f" Career vs {starter_away}"):
+                        vs_logs = get_batter_vs_pitcher_history(pid, starter_away_id)
+                        if vs_logs.empty:
+                            st.write("No history vs this pitcher.")
+                        else:
+                            totals = vs_logs.sum(numeric_only=True)
+                            ab = int(totals.get("atBats", 0))
+                            hits = int(totals.get("hits", 0))
+                            avg = hits / ab if ab else 0
+                            st.markdown(
+                                f"**Games:** {len(vs_logs)} | **AB:** {ab} | **H:** {hits} "
+                                f"| **AVG:** {avg:.3f} | **HR:** {int(totals.get('homeRuns', 0))} "
+                                f"| **BB:** {int(totals.get('baseOnBalls', 0))} "
+                                f"| **K:** {int(totals.get('strikeOuts', 0))}"
+                            )
+                            disp_cols_vs = [
+                                'date', 'atBats', 'hits', 'doubles', 'triples',
+                                'homeRuns', 'rbi', 'runs', 'strikeOuts', 'baseOnBalls'
+                            ]
+                            disp_cols_vs = [c for c in disp_cols_vs if c in vs_logs.columns]
+                            st.dataframe(
+                                vs_logs.sort_values('date', ascending=False)[disp_cols_vs],
+                                hide_index=True
+                            )
 
 else:
     st.info("Please select a date and game from the sidebar to view projections.")
