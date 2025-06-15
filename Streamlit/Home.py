@@ -5,6 +5,20 @@ import os
 import re
 
 # ---------------------------------------------------------------------------
+# Helpers to load season game logs
+# ---------------------------------------------------------------------------
+@st.cache_data(show_spinner="Loading batter logs...")
+def load_batter_logs(year: int) -> pd.DataFrame:
+    path = os.path.join(DATA_DIR, str(year), f"batters_gamelogs_{year}_statsapi.csv")
+    return pd.read_csv(path) if os.path.exists(path) else pd.DataFrame()
+
+
+@st.cache_data(show_spinner="Loading pitcher logs...")
+def load_pitcher_logs(year: int) -> pd.DataFrame:
+    path = os.path.join(DATA_DIR, str(year), f"pitchers_gamelogs_{year}_statsapi.csv")
+    return pd.read_csv(path) if os.path.exists(path) else pd.DataFrame()
+
+# ---------------------------------------------------------------------------
 # Helper : parse BallparkPal matchups.csv into a dict
 # ---------------------------------------------------------------------------
 def _parse_matchup_row(raw: str):
@@ -89,6 +103,10 @@ if date:
     if os.path.exists(sim_path) and os.path.exists(detail_path):
         sim = pd.read_csv(sim_path)
         sim_detailed = pd.read_csv(detail_path)
+
+        year = int(date.split('-')[0])
+        bat_logs = load_batter_logs(year)
+        pit_logs = load_pitcher_logs(year)
 
         # build list of game labels
         games = sim.apply(
@@ -265,6 +283,44 @@ if date:
                     }
                 )
 
+                for _, prow in pdf.iterrows():
+                    pid = int(prow.get("Player ID", 0))
+                    with st.expander(f"{prow['Pitcher']} - Last 10 Games"):
+                        logs = pit_logs[pit_logs['player_id'] == pid]
+                        if not logs.empty:
+                            disp_cols = [
+                                "date", "opponent", "summary", "inningsPitched",
+                                "strikeOuts", "runs", "hits"
+                            ]
+                            disp_cols = [c for c in disp_cols if c in logs.columns]
+                            st.dataframe(
+                                logs.sort_values('date', ascending=False)
+                                    .head(10)[disp_cols],
+                                hide_index=True
+                            )
+                        else:
+                            st.write("No game logs found.")
+
+
+                for _, prow in pdf.iterrows():
+                    pid = int(prow.get("Player ID", 0))
+                    with st.expander(f"{prow['Pitcher']} - Last 10 Games"):
+                        logs = pit_logs[pit_logs['player_id'] == pid]
+                        if not logs.empty:
+                            disp_cols = [
+                                "date", "opponent", "summary", "inningsPitched",
+                                "strikeOuts", "runs", "hits"
+                            ]
+                            disp_cols = [c for c in disp_cols if c in logs.columns]
+                            st.dataframe(
+                                logs.sort_values('date', ascending=False)
+                                    .head(10)[disp_cols],
+                                hide_index=True
+                            )
+                        else:
+                            st.write("No game logs found.")
+
+
         # Batting Order
         b1 = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_1.csv")
         if os.path.exists(b1):
@@ -294,6 +350,46 @@ if date:
                         )
                     }
                 )
+
+                for _, brow in bdf.iterrows():
+                    pid = int(brow.get("Player ID", 0))
+                    with st.expander(brow["Batter"]):
+                        logs = bat_logs[bat_logs['player_id'] == pid]
+                        if not logs.empty:
+                            disp_cols = [
+                                "date", "opponent", "summary", "atBats", "hits",
+                                "homeRuns", "rbi", "runs", "strikeOuts"
+                            ]
+                            disp_cols = [c for c in disp_cols if c in logs.columns]
+                            st.dataframe(
+                                logs.sort_values('date', ascending=False)
+                                    .head(10)[disp_cols],
+                                hide_index=True
+                            )
+                        else:
+                            st.write("No game logs found.")
+
+
+
+
+
+                for _, brow in bdf.iterrows():
+                    pid = int(brow.get("Player ID", 0))
+                    with st.expander(brow["Batter"]):
+                        logs = bat_logs[bat_logs['player_id'] == pid]
+                        if not logs.empty:
+                            disp_cols = [
+                                "date", "opponent", "summary", "atBats", "hits",
+                                "homeRuns", "rbi", "runs", "strikeOuts"
+                            ]
+                            disp_cols = [c for c in disp_cols if c in logs.columns]
+                            st.dataframe(
+                                logs.sort_values('date', ascending=False)
+                                    .head(10)[disp_cols],
+                                hide_index=True
+                            )
+                        else:
+                            st.write("No game logs found.")
 
         # -------------------- Matchups vs Home Starter --------------------
         if matchups_df is not None and starter_home_last:
