@@ -40,10 +40,41 @@ if date:
                     df['Team'] = game_info['away_team'] if team_num == 1 else game_info['home_team']
                     all_pitchers.append(df)
         leader_tabs = st.tabs([
-            "Pitchers",
-            "Hitters"
+            "Hitters",
+            "Pitchers"
         ])
         with leader_tabs[0]:
+            if all_batters:
+                batters_df = pd.concat(all_batters, ignore_index=True)
+                st.subheader("Top Hitter Projections")
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    st.caption("Home Run Leaders")
+                    hr_leaders = batters_df.nlargest(30, 'HR')[['Batter', 'HR', 'Game']]
+                    hr_leaders = hr_leaders.reset_index(drop=True)
+                    hr_leaders.index = hr_leaders.index + 1
+                    numeric_cols = hr_leaders.select_dtypes(include=[np.number]).columns
+                    hr_leaders[numeric_cols] = hr_leaders[numeric_cols].round(2)
+                    st.dataframe(hr_leaders, height=600, use_container_width=True)
+                with col2:
+                    st.caption("Hits Leaders")
+                    hits_leaders = batters_df.nlargest(30, 'H')[['Batter', 'H', '1B', '2B', '3B', 'Team']]
+                    hits_leaders = hits_leaders.reset_index(drop=True)
+                    hits_leaders.index = hits_leaders.index + 1
+                    numeric_cols = hits_leaders.select_dtypes(include=[np.number]).columns
+                    hits_leaders[numeric_cols] = hits_leaders[numeric_cols].round(2)
+                    st.dataframe(hits_leaders, height=600, use_container_width=True)
+                with col3:
+                    st.caption("RBI Leaders")
+                    rbi_leaders = batters_df.nlargest(30, 'RBI')[['Batter', 'RBI', 'Team']]
+                    rbi_leaders = rbi_leaders.reset_index(drop=True)
+                    rbi_leaders.index = rbi_leaders.index + 1
+                    numeric_cols = rbi_leaders.select_dtypes(include=[np.number]).columns
+                    rbi_leaders[numeric_cols] = rbi_leaders[numeric_cols].round(2)
+                    st.dataframe(rbi_leaders, height=600, use_container_width=True)
+            else:
+                st.info("No batter projections available for this date")
+        with leader_tabs[1]:
             if all_pitchers:
                 pitchers_df = pd.concat(all_pitchers, ignore_index=True)
                 st.subheader("Top Pitcher Projections")
@@ -91,42 +122,10 @@ if date:
                     st.dataframe(win_leaders, height=600)
                 with col3:
                     st.caption("I'm coming...")
-                    #st.image("../data/jiri.jpg", use_container_width=True)
                     img_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "jiri.jpg")
                     st.image(img_path, use_container_width=True)
             else:
                 st.info("No pitcher projections available for this date")
-        with leader_tabs[1]:
-            if all_batters:
-                batters_df = pd.concat(all_batters, ignore_index=True)
-                st.subheader("Top Hitter Projections")
-                col1, col2, col3 = st.columns(3)
-                with col1:
-                    st.caption("Home Run Leaders")
-                    hr_leaders = batters_df.nlargest(30, 'HR')[['Batter', 'HR', 'Game']]
-                    hr_leaders = hr_leaders.reset_index(drop=True)
-                    hr_leaders.index = hr_leaders.index + 1
-                    numeric_cols = hr_leaders.select_dtypes(include=[np.number]).columns
-                    hr_leaders[numeric_cols] = hr_leaders[numeric_cols].round(2)
-                    st.dataframe(hr_leaders, height=600, use_container_width=True)
-                with col2:
-                    st.caption("Hits Leaders")
-                    hits_leaders = batters_df.nlargest(30, 'H')[['Batter', 'H', '1B', '2B', '3B', 'Team']]
-                    hits_leaders = hits_leaders.reset_index(drop=True)
-                    hits_leaders.index = hits_leaders.index + 1
-                    numeric_cols = hits_leaders.select_dtypes(include=[np.number]).columns
-                    hits_leaders[numeric_cols] = hits_leaders[numeric_cols].round(2)
-                    st.dataframe(hits_leaders, height=600, use_container_width=True)
-                with col3:
-                    st.caption("RBI Leaders")
-                    rbi_leaders = batters_df.nlargest(30, 'RBI')[['Batter', 'RBI', 'Team']]
-                    rbi_leaders = rbi_leaders.reset_index(drop=True)
-                    rbi_leaders.index = rbi_leaders.index + 1
-                    numeric_cols = rbi_leaders.select_dtypes(include=[np.number]).columns
-                    rbi_leaders[numeric_cols] = rbi_leaders[numeric_cols].round(2)
-                    st.dataframe(rbi_leaders, height=600, use_container_width=True)
-            else:
-                st.info("No batter projections available for this date")
     else:
         st.error(f"Simulation data not found for {date}")
 else:

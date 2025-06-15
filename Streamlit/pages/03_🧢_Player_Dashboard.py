@@ -26,6 +26,8 @@ st.divider()
 DATA_DIR = _get_data_dir()
 info_path = os.path.join(DATA_DIR, "player_general_info.csv")
 stats_path = os.path.join(DATA_DIR, "player_batting_stats.csv")
+bat_log_path = os.path.join(DATA_DIR, "2025", "batters_gamelogs_2025_statsapi.csv")
+pitch_log_path = os.path.join(DATA_DIR, "2025", "pitchers_gamelogs_2025_statsapi.csv")
 
 if not os.path.exists(info_path) or not os.path.exists(stats_path):
     st.error("Player info data files not found")
@@ -33,13 +35,17 @@ if not os.path.exists(info_path) or not os.path.exists(stats_path):
 
 info_df = pd.read_csv(info_path)
 stats_df = pd.read_csv(stats_path)
+bat_log_df = pd.read_csv(bat_log_path) if os.path.exists(bat_log_path) else pd.DataFrame()
+pitch_log_df = pd.read_csv(pitch_log_path) if os.path.exists(pitch_log_path) else pd.DataFrame()
 
 # Limit selectable players to those that have batting stats available
 # Build a set of slug prefixes present in the batting stats (strip numerical id suffix)
 stats_slug_prefixes = set(stats_df["Player Slug"].str.replace(r"-\d+$", "", regex=True))
 players = sorted([name for name in info_df["Player Name"].unique() if _slug_prefix(name) in stats_slug_prefixes])
 
-player = st.selectbox("Select Player", players)
+# Set Kyle Tucker as the default player
+default_player = "Kyle Tucker"
+player = st.selectbox("Select Player", players, index=players.index(default_player) if default_player in players else 0)
 
 if player:
     slug_pref = _slug_prefix(player)
@@ -48,12 +54,48 @@ if player:
         st.warning("No batting stats found for this player")
     else:
         info_row = info_df[info_df["Player Name"] == player].iloc[0]
-        st.subheader(f"{player} - {info_row['Position']}")
-        col1, col2, col3, col4 = st.columns(4)
-        col1.metric("Bats/Throws", info_row["Bats/Throws"])
-        col2.metric("Height", info_row["Height"])
-        col3.metric("Weight", info_row["Weight"])
-        col4.metric("Age", str(info_row["Age"]))
+        st.markdown(
+            f"### {player} - {info_row['Position']}\n"
+            f"**Bats/Throws:** {info_row['Bats/Throws']}  \n"
+            f"**Height:** {info_row['Height']}  \n"
+            f"**Weight:** {info_row['Weight']}  \n"
+            f"**Age:** {info_row['Age']}"
+        )
+
+        # ----- Current Season Stats ----- #
+        player_slug = player_stats.iloc[0]["Player Slug"]
+        m = re.search(r"-(\d+)$", player_slug)
+        player_id = int(m.group(1)) if m else None
+        logs_df = pd.DataFrame()
+        if player_id:
+            if info_row["Position"] == "P" and not pitch_log_df.empty:
+                logs_df = pitch_log_df[pitch_log_df["player_id"] == player_id]
+            elif not bat_log_df.empty:
+                logs_df = bat_log_df[bat_log_df["player_id"] == player_id]
+
+        if not logs_df.empty:
+            logs_df = logs_df.sort_values("date")
+            st.subheader("2025 Season Stats")
+            games_played = len(logs_df)
+            if info_row["Position"] == "P":
+                totals = logs_df[["inningsPitched", "strikeOuts", "wins", "losses", "saves"]].sum()
+                era = logs_df.iloc[-1]["era"]
+                whip = logs_df.iloc[-1]["whip"]
+                st.markdown(
+                    f"**Games:** {games_played} | **IP:** {totals['inningsPitched']:.1f} | "
+                    f"**K:** {int(totals['strikeOuts'])} | **W-L:** {int(totals['wins'])}-{int(totals['losses'])} | "
+                    f"**Saves:** {int(totals['saves'])} | **ERA:** {era} | **WHIP:** {whip}"
+                )
+            else:
+                totals = logs_df[["hits", "homeRuns", "rbi", "runs", "stolenBases"]].sum()
+                last = logs_df.iloc[-1]
+                st.markdown(
+                    f"**Games:** {games_played} | **AVG:** {last['avg']} | **OBP:** {last['obp']} | "
+                    f"**SLG:** {last['slg']} | **OPS:** {last['ops']} | "
+                    f"**Runs:** {int(totals['runs'])} | **HR:** {int(totals['homeRuns'])} | "
+                    f"**RBI:** {int(totals['rbi'])} | **SB:** {int(totals['stolenBases'])}"
+                )
+            st.dataframe(logs_df.reset_index(drop=True), use_container_width=True)
 
         numeric_cols = [
             "ExitVelocity",
