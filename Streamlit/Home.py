@@ -312,7 +312,8 @@ if date:
                     if not logs.empty:
                         disp_cols = [
                             "date", "opponent", "atBats", "hits",
-                            "homeRuns", "rbi", "runs", "strikeOuts"
+                            "doubles", "triples",
+                            "homeRuns", "rbi", "runs", "strikeOuts", "stolenBases", "caughtStealing",
                         ]
                         disp_cols = [c for c in disp_cols if c in logs.columns]
                         st.dataframe(
@@ -424,7 +425,8 @@ if date:
                     if not logs.empty:
                         disp_cols = [
                             "date", "opponent", "atBats", "hits",
-                            "homeRuns", "rbi", "runs", "strikeOuts"
+                            "doubles", "triples",
+                            "homeRuns", "rbi", "runs", "strikeOuts", "stolenBases", "caughtStealing",
                         ]
                         disp_cols = [c for c in disp_cols if c in logs.columns]
                         st.dataframe(
