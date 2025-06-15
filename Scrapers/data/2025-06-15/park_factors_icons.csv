@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+777496,Kauffman Stadium2:10ATH @ KC,"OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,LightWind.png,From76to82.png","OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,Light Breeze,76–82°F"
+777491,Chase Field4:10SD  @ ARI,RoofClosed.png,Roof Closed
+777505,Comerica Park12:05CIN @ DET,"FromLeft.svg,FromLeft.svg,InLeftMiddle.svg,LightWind.png","FromLeft.svg,FromLeft.svg,InLeftMiddle.svg,Light Breeze"
+777503,Nationals Park1:35MIA @ WAS,"InRightMiddle.svg,InRightMiddle.svg,InRight.svg,LightWind.png,HighH.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,InRight.svg,Light Breeze,High Humidity,High Pressure"
+777501,Oriole Park1:35LAA @ BAL,"InRightMiddle.svg,InRightMiddle.svg,InRight.svg,LightWind.png,HighH.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,InRight.svg,Light Breeze,High Humidity,High Pressure"
+777498,Dodger Stadium7:10SF  @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,ModerateWind.png,From83to89.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Moderate Wind,83–89°F"
+777499,Citizens Bank Park1:35TOR @ PHI,"InRight.svg,InRightMiddle.svg,InRightMiddle.svg,LightWind.png,HighH.png,HighP.png","InRight.svg,InRightMiddle.svg,InRightMiddle.svg,Light Breeze,High Humidity,High Pressure"
+777500,Fenway Park1:35NYY @ BOS,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,HighP.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,High Pressure"
+777504,Truist Park1:35COL @ ATL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,HighH.png,HighP.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,High Humidity,High Pressure"
+777493,Globe Life Field2:35CHW @ TEX,RoofClosed.png,Roof Closed
+777492,American Family Fld2:10STL @ MIL,RoofClosed.png,Roof Closed
+777494,Daikin Park2:10MIN @ HOU,RoofClosed.png,Roof Closed
+777495,T-Mobile Park4:10CLE @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,High Pressure"
+777502,Citi Field1:40TB  @ NYM,"InRightMiddle.svg,FromRight.svg,OutLeftMiddle.svg,HighP.png","InRightMiddle.svg,FromRight.svg,OutLeftMiddle.svg,High Pressure"
+777497,Wrigley Field2:20PIT @ CHC,"InRightCenter.svg,InCenter.svg,InCenter.svg,LightWind.png","InRightCenter.svg,InCenter.svg,InCenter.svg,Light Breeze"
