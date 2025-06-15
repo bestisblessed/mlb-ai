@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 R,,,,Austin Hays,669720,10,Heaney,51,18,74,-2
 L,,,,Mickey Moniak,666160,8,Walker,51,23,61,19
 R,,,,Brenton Doyle,686668,10,Walker,45,25,42,24

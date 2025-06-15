@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 ATL,Eli White,642201,9,Marquez,608566,61,10,75,24,22,-39
 CIN,Noelvi Marte,682622,9,Mikolas,571945,58,130,34,21,-28,-34
 CIN,Gavin Lux,666158,9,Mikolas,571945,52,185,29,31,-42,-30

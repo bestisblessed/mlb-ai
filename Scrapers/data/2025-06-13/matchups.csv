@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 L,,,,Kyle Stowers,669065,5,Parker,44,52,-2,29
 R,,,,Connor Norby,681393,9,Parker,41,33,20,21
 R,,,,Eric Wagaman,676572,10,Parker,39,47,40,23

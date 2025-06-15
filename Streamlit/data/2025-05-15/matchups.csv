@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 L,,,,Will Benson,666181,8,Wilson,72,95,50,35
 R,,,,Tyler Stephenson,663886,10,Wilson,61,110,34,29
 S,,,,Elly De La Cruz,682829,10,Wilson,56,88,43,34

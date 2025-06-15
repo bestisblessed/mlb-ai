@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 R,,,,Brenton Doyle,686668,8,Harrison,49,75,65,3
 L,,,,Oneil Cruz,665833,10,Alcantara,48,-19,1,5
 R,,,,Tyler Fitzgerald,666149,7,Palmquist,43,43,79,-8

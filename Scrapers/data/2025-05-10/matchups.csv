@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 R,,,,Matt Gorski,685301,-7,Smith-Shawver,48,2,12,7
 R,,,,Alexander Canario,672744,-3,Smith-Shawver,44,13,17,5
 L,,,,Jake Cronenworth,630105,10,Blalock,42,29,50,3

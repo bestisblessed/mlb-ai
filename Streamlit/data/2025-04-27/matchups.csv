@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 CIN,Gavin Lux,666158,7,Feltner,663372,38,44,40,0,11,-36
 TB,Christopher Morel,666624,9,Vasquez,681190,37,-6,24,36,54,-45
 COL,Kyle Farmer,571657,5,Lodolo,666157,36,28,48,4,5,-30

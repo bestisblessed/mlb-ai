@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 L,,,,Kyle Schwarber,656941,10,Lord,39,21,50,17
 S,,,,Brooks Lee,686797,9,Lively,34,106,53,-1
 R,,,,Dylan Crews,686611,10,Walker,34,14,23,22

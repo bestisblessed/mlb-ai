@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 R,,,,Tyler Fitzgerald,666149,10,Freeland,60,77,87,17
 R,,,,Casey Schmitt,669477,9,Freeland,53,61,41,28
 R,,,,Jerar Encarnacion,666464,8,Freeland,48,52,44,27

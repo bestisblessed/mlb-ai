@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 R,,,,Johan Rojas,679032,5,Marquez,53,48,20,32
 L,,,,Jake Bauers,641343,3,Burrows,52,-14,27,-12
 L,,,,Kyle Schwarber,656941,10,Marquez,52,22,33,29

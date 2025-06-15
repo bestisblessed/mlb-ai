@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 R,,,,Trevor Story,596115,7,Lawrence,43,31,34,20
 R,,,,Noelvi Marte,682622,10,Mikolas,42,73,29,28
 R,,,,Ceddanne Rafaela,678882,10,Lawrence,37,33,36,10

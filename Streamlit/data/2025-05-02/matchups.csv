@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 L,,,,Tirso Ornelas,672359,-6,Keller,56,15,19,23
 L,,,,Daulton Varsho,662139,10,Allen,53,48,61,-4
 R,,,,Martin Maldonado,455117,1,Keller,48,16,15,27

@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 R,,,,Martin Maldonado,455117,10,Senzatela,84,69,87,42
 L,,,,Ryan McMahon,641857,10,Vasquez,71,20,52,25
 R,,,,Jordan Beck,687597,7,Vasquez,63,32,45,14

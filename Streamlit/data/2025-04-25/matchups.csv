@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 BOS,Carlos Narvaez,665966,9,Lively,594902,44,124,29,3,-5,-24
 SEA,Randy Arozarena,668227,10,Quantrill,615698,30,0,18,12,39,-31
 SEA,Cal Raleigh,663728,10,Quantrill,615698,28,12,7,9,47,-24

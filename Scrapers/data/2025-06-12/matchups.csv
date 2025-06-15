@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 L,,,,Daniel Johnson,669288,7,Senzatela,88,29,90,52
 R,,,,Willy Adames,642715,10,Senzatela,68,71,56,39
 R,,,,Andrew Knizner,668800,8,Senzatela,61,19,49,42

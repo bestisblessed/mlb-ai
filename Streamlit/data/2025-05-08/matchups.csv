@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 L,,,,Trey Sweeney,700242,10,Gordon,75,104,101,21
 R,,,,Dillon Dingler,693307,7,Gordon,70,69,91,15
 L,,,,Jace Jung,690291,4,Gordon,69,114,82,26

@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 L,,,,Will Benson,666181,5,Martin,56,53,23,26
 R,,,,Matt McLain,680574,3,Martin,44,45,15,19
 S,,,,Elly De La Cruz,682829,8,Martin,37,27,23,15

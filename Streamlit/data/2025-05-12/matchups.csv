@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 R,,,,Sean Murphy,669221,10,Irvin,30,30,12,24
 L,,,,Jake Bauers,641343,6,Lively,28,82,28,-1
 R,,,,Seiya Suzuki,673548,10,Quantrill,28,-9,18,4

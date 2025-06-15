@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 L,,,,Jason Heyward,518792,9,Marquez,57,14,74,27
 R,,,,Fernando Tatis Jr.,665487,10,Marquez,55,21,85,15
 L,,,,Gavin Sheets,657757,9,Marquez,54,12,60,30

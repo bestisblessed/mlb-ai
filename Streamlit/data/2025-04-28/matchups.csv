@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 COL,Jordan Beck,687597,-5,Elder,693821,40,3,56,17,-4,-28
 COL,Adael Amador,691182,-2,Elder,693821,37,-16,61,19,-18,-38
 COL,Jacob Stallings,607732,4,Elder,693821,33,-18,67,15,-10,-32

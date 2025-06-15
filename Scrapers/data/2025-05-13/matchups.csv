@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 L,,,,Will Benson,666181,2,Cannon,48,51,10,11
 S,,,,Isaac Collins,686555,8,Allen,41,56,62,-4
 R,,,,Matt McLain,680574,2,Cannon,41,41,23,11

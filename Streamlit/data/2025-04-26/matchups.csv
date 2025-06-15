@@ -1,4 +1,4 @@
-Team,Batter,BatterID,AtBats,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
 CIN,Matt McLain,680574,10,Senzatela,622608,77,57,91,38,-1,-51
 CIN,Elly De La Cruz,682829,10,Senzatela,622608,64,19,77,38,5,-51
 CIN,Austin Hays,669720,10,Senzatela,622608,62,46,51,30,0,-53
