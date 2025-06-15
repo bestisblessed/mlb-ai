@@ -34,6 +34,20 @@ xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props_playwrigh
 # ===========================
 #xvfb-run /home/trinity/.pyenv/shims/python fanduel_scrape_pitcher_props_theoddsapi_working.py >> scraper.log 2>&1
 
+# ===========================
+# Run the MLB StatsAPI scrapers
+# ===========================
+echo "Fetching team game logs..." >> scraper.log 2>&1
+python statsapi_team_game_logs.py >> scraper.log 2>&1
+echo "Fetching pitcher game logs …" >> scraper.log 2>&1
+python statsapi_pitcher_game_logs.py >> scraper.log 2>&1
+echo "Fetching batter game logs …" >> scraper.log 2>&1
+python statsapi_batter_game_logs.py >> scraper.log 2>&1
+echo "Fetching all player season stats …" >> scraper.log 2>&1
+python statsapi_player_season_stats.py >> scraper.log 2>&1
+echo "Fetching bvp matchup stats …" >> scraper.log 2>&1
+python statsapi_bvp_matchup_stats.py >> scraper.log 2>&1
+echo "Done." >> scraper.log 2>&1
 
 
 # ===========================
