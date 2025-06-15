@@ -58,6 +58,40 @@ dates = sorted(
 )
 date = st.sidebar.selectbox("Select Date", dates)
 
+# Add this mapping near the top of the file
+TEAM_ABBR = {
+    'arizona diamondbacks': 'ari',
+    'atlanta braves': 'atl',
+    'baltimore orioles': 'bal',
+    'boston red sox': 'bos',
+    'chicago cubs': 'chc',
+    'chicago white sox': 'chw',
+    'cincinnati reds': 'cin',
+    'cleveland guardians': 'cle',
+    'colorado rockies': 'col',
+    'detroit tigers': 'det',
+    'houston astros': 'hou',
+    'kansas city royals': 'kc',
+    'los angeles angels': 'laa',
+    'los angeles dodgers': 'lad',
+    'miami marlins': 'mia',
+    'milwaukee brewers': 'mil',
+    'minnesota twins': 'min',
+    'new york mets': 'nym',
+    'new york yankees': 'nyy',
+    'oakland athletics': 'oak',
+    'philadelphia phillies': 'phi',
+    'pittsburgh pirates': 'pit',
+    'san diego padres': 'sd',
+    'san francisco giants': 'sf',
+    'seattle mariners': 'sea',
+    'st. louis cardinals': 'stl',
+    'tampa bay rays': 'tb',
+    'texas rangers': 'tex',
+    'toronto blue jays': 'tor',
+    'washington nationals': 'was',
+}
+
 if date:
     sim_path = os.path.join(DATA_DIR, date, "game_simulations.csv")
     detail_path = os.path.join(
@@ -303,26 +337,52 @@ if date:
                 vs_disp = vs_disp.rename(columns={"Team": "L/R"})
                 st.dataframe(vs_disp, hide_index=True, use_container_width=True)
 
-        # -- Batter Game Log Expanders (moved to end) --
-        if os.path.exists(b1) and not bdf.empty:
-            for _, brow in bdf.iterrows():
-                pid = int(brow.get("Player ID", 0))
-                with st.expander(brow["Batter"] + " Last 10 Games"):
-                    logs = bat_logs[bat_logs['player_id'] == pid]
-                    if not logs.empty:
-                        disp_cols = [
-                            "date", "opponent", "atBats", "hits",
-                            "doubles", "triples",
-                            "homeRuns", "rbi", "runs", "strikeOuts", "stolenBases", "caughtStealing",
-                        ]
-                        disp_cols = [c for c in disp_cols if c in logs.columns]
-                        st.dataframe(
-                            logs.sort_values('date', ascending=False)
-                                .head(10)[disp_cols],
-                            hide_index=True
-                        )
-                    else:
-                        st.write("No game logs found.")
+        # -------------------- Career BvP vs Home Starter (moved here) --------------------
+        away_abbr = TEAM_ABBR.get(away_team.lower(), away_team.lower())
+        bvp_file = os.path.join(DATA_DIR, date, f"bvp_{away_abbr}_vs_{starter_home_last.lower()}.csv")
+        bvp_df = pd.read_csv(bvp_file) if os.path.exists(bvp_file) else None
+        if os.path.exists(b1):
+            bdf = pd.read_csv(b1)
+            if not bdf.empty:
+                for _, brow in bdf.iterrows():
+                    batter = brow["Batter"]
+                    batter_id = int(brow["Player ID"])
+                    with st.expander(f"**{batter}** - Career BvP vs {starter_home} & Last 10 Games"):
+                        # Career BvP first
+                        st.markdown(f"**Career BvP vs {starter_home}**")
+                        if bvp_df is not None:
+                            batter_bvp = bvp_df[bvp_df["batter_id"] == batter_id]
+                            if not batter_bvp.empty:
+                                display_cols = [
+                                    'atbats', 'avg', 'hits', 'homeruns', 'doubles', 'strikeouts', 'year'
+                                ]
+                                display_cols = [c for c in display_cols if c in batter_bvp.columns]
+                                bvp_display = batter_bvp[display_cols].copy()
+                                bvp_display = bvp_display.fillna(0).replace({None: 0})
+                                if 'year' in bvp_display.columns:
+                                    bvp_display['year'] = bvp_display['year'].astype(str)
+                                st.dataframe(bvp_display, hide_index=True, use_container_width=True)
+                            else:
+                                st.write("No career BvP data for this batter vs pitcher.")
+                        else:
+                            st.write("No career BvP data for this matchup.")
+
+                        # Last 10 Games second
+                        st.markdown("**Last 10 Games**")
+                        logs = bat_logs[bat_logs['player_id'] == batter_id]
+                        if not logs.empty:
+                            disp_cols = [
+                                "date", "opponent", "atBats", "hits",
+                                "doubles", "triples", "homeRuns", "rbi", "runs",
+                                "strikeOuts", "stolenBases", "caughtStealing",
+                            ]
+                            disp_cols = [c for c in disp_cols if c in logs.columns]
+                            st.dataframe(
+                                logs.sort_values('date', ascending=False).head(10)[disp_cols],
+                                hide_index=True
+                            )
+                        else:
+                            st.write("No game logs found.")
 
     # -- HOME PROJECTIONS --
     with home_col:
@@ -416,26 +476,52 @@ if date:
                 vs_disp = vs_disp.rename(columns={"Team": "L/R"})
                 st.dataframe(vs_disp, hide_index=True, use_container_width=True)
 
-        # -- Batter Game Log Expanders (moved to end) --
-        if os.path.exists(b2) and not bdf.empty:
-            for _, brow in bdf.iterrows():
-                pid = int(brow.get("Player ID", 0))
-                with st.expander(brow["Batter"] + " Last 10 Games"):
-                    logs = bat_logs[bat_logs['player_id'] == pid]
-                    if not logs.empty:
-                        disp_cols = [
-                            "date", "opponent", "atBats", "hits",
-                            "doubles", "triples",
-                            "homeRuns", "rbi", "runs", "strikeOuts", "stolenBases", "caughtStealing",
-                        ]
-                        disp_cols = [c for c in disp_cols if c in logs.columns]
-                        st.dataframe(
-                            logs.sort_values('date', ascending=False)
-                                .head(10)[disp_cols],
-                            hide_index=True
-                        )
-                    else:
-                        st.write("No game logs found.")
+        # -------------------- Career BvP vs Away Starter (moved here) --------------------
+        home_abbr = TEAM_ABBR.get(home_team.lower(), home_team.lower())
+        bvp_file = os.path.join(DATA_DIR, date, f"bvp_{home_abbr}_vs_{starter_away_last.lower()}.csv")
+        bvp_df = pd.read_csv(bvp_file) if os.path.exists(bvp_file) else None
+        if os.path.exists(b2):
+            bdf = pd.read_csv(b2)
+            if not bdf.empty:
+                for _, brow in bdf.iterrows():
+                    batter = brow["Batter"]
+                    batter_id = int(brow["Player ID"])
+                    with st.expander(f"**{batter}** - Career BvP vs {starter_away} & Last 10 Games"):
+                        # Career BvP first
+                        st.markdown(f"**Career BvP vs {starter_away}**")
+                        if bvp_df is not None:
+                            batter_bvp = bvp_df[bvp_df["batter_id"] == batter_id]
+                            if not batter_bvp.empty:
+                                display_cols = [
+                                    'atbats', 'avg', 'hits', 'homeruns', 'doubles', 'strikeouts', 'year'
+                                ]
+                                display_cols = [c for c in display_cols if c in batter_bvp.columns]
+                                bvp_display = batter_bvp[display_cols].copy()
+                                bvp_display = bvp_display.fillna(0).replace({None: 0})
+                                if 'year' in bvp_display.columns:
+                                    bvp_display['year'] = bvp_display['year'].astype(str)
+                                st.dataframe(bvp_display, hide_index=True, use_container_width=True)
+                            else:
+                                st.write("No career BvP data for this batter vs pitcher.")
+                        else:
+                            st.write("No career BvP data for this matchup.")
+
+                        # Last 10 Games second
+                        st.markdown("**Last 10 Games**")
+                        logs = bat_logs[bat_logs['player_id'] == batter_id]
+                        if not logs.empty:
+                            disp_cols = [
+                                "date", "opponent", "atBats", "hits",
+                                "doubles", "triples", "homeRuns", "rbi", "runs",
+                                "strikeOuts", "stolenBases", "caughtStealing",
+                            ]
+                            disp_cols = [c for c in disp_cols if c in logs.columns]
+                            st.dataframe(
+                                logs.sort_values('date', ascending=False).head(10)[disp_cols],
+                                hide_index=True
+                            )
+                        else:
+                            st.write("No game logs found.")
 
 else:
     st.info("Please select a date and game from the sidebar to view projections.")
