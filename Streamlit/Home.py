@@ -354,13 +354,15 @@ if date:
                             batter_bvp = bvp_df[bvp_df["batter_id"] == batter_id]
                             if not batter_bvp.empty:
                                 display_cols = [
-                                    'atbats', 'avg', 'hits', 'homeruns', 'doubles', 'strikeouts', 'year'
+                                    'atbats', 'avg', 'hits', 'homeruns', 'doubles', 'baseonballs', 'strikeouts', 'year'
                                 ]
                                 display_cols = [c for c in display_cols if c in batter_bvp.columns]
                                 bvp_display = batter_bvp[display_cols].copy()
                                 bvp_display = bvp_display.fillna(0).replace({None: 0})
                                 if 'year' in bvp_display.columns:
-                                    bvp_display['year'] = bvp_display['year'].astype(str)
+                                    bvp_display['year'] = pd.to_numeric(bvp_display['year'], errors='coerce')
+                                    bvp_display = bvp_display.sort_values(by='year', ascending=False)
+                                    bvp_display['year'] = bvp_display['year'].astype('Int64').astype(str)
                                 st.dataframe(bvp_display, hide_index=True, use_container_width=True)
                             else:
                                 st.write("No career BvP data for this batter vs pitcher.")
@@ -493,13 +495,15 @@ if date:
                             batter_bvp = bvp_df[bvp_df["batter_id"] == batter_id]
                             if not batter_bvp.empty:
                                 display_cols = [
-                                    'atbats', 'avg', 'hits', 'homeruns', 'doubles', 'strikeouts', 'year'
+                                    'atbats', 'avg', 'hits', 'homeruns', 'doubles', 'baseonballs', 'strikeouts', 'year'
                                 ]
                                 display_cols = [c for c in display_cols if c in batter_bvp.columns]
                                 bvp_display = batter_bvp[display_cols].copy()
                                 bvp_display = bvp_display.fillna(0).replace({None: 0})
                                 if 'year' in bvp_display.columns:
-                                    bvp_display['year'] = bvp_display['year'].astype(str)
+                                    bvp_display['year'] = pd.to_numeric(bvp_display['year'], errors='coerce')
+                                    bvp_display = bvp_display.sort_values(by='year', ascending=False)
+                                    bvp_display['year'] = bvp_display['year'].astype('Int64').astype(str)
                                 st.dataframe(bvp_display, hide_index=True, use_container_width=True)
                             else:
                                 st.write("No career BvP data for this batter vs pitcher.")
