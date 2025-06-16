@@ -264,7 +264,7 @@ if date:
                 pdf_display = pdf.copy()
                 pdf_display["Player_Link"] = pdf_display["Player URL"]
                 cols = [
-                    "Pitcher", "Player_Link", "Inn", "K", "BB", "H", "R", "W", "QS"
+                    "Pitcher", "Inn", "K", "BB", "H", "R", "W", "QS", "Player_Link"
                 ]
                 pdf_display = pdf_display[cols]
 
@@ -275,7 +275,7 @@ if date:
                         "Player_Link": st.column_config.LinkColumn(
                             label="",
                             display_text="🔗",
-                            width=30
+                            width=9  # Make the link column very small,
                         )
                     },
                     use_container_width=True
@@ -311,8 +311,8 @@ if date:
                 bdf_display = bdf.copy()
                 bdf_display["Player_Link"] = bdf_display["Player URL"]
                 cols = [
-                    "Batter", "Player_Link", "PA", "H", "RBI", "BB", "K", "1B", "2B",
-                    "3B", "HR", "SB"
+                    "Batter", "PA", "H", "RBI", "BB", "K", "1B", "2B",
+                    "3B", "HR", "SB", "Player_Link"
                 ]
                 bdf_display = bdf_display[cols]
                 nums = bdf_display.select_dtypes(include=[np.number]).columns
@@ -322,10 +322,10 @@ if date:
                     bdf_display,
                     hide_index=True,
                     column_config={
-                    "Player_Link": st.column_config.LinkColumn(
-                        label="",
-                        display_text="🔗",
-                        width=30  # Set column width to tiny
+                        "Player_Link": st.column_config.LinkColumn(
+                            label="",
+                            display_text="🔗",
+                            width=9  # Make the link column very small,
                         )
                     },
                     use_container_width=True
@@ -419,7 +419,7 @@ if date:
                 pdf_display = pdf.copy()
                 pdf_display["Player_Link"] = pdf_display["Player URL"]
                 cols = [
-                    "Pitcher", "Player_Link", "Inn", "K", "BB", "H", "R", "W", "QS"
+                    "Pitcher", "Inn", "K", "BB", "H", "R", "W", "QS", "Player_Link"
                 ]
                 pdf_display = pdf_display[cols]
 
@@ -430,7 +430,7 @@ if date:
                         "Player_Link": st.column_config.LinkColumn(
                             label="",
                             display_text="🔗",
-                            width=30
+                            width=9  # Make the link column very small,
                         )
                     },
                     use_container_width=True
@@ -466,8 +466,8 @@ if date:
                 bdf_display = bdf.copy()
                 bdf_display["Player_Link"] = bdf_display["Player URL"]
                 cols = [
-                    "Batter", "Player_Link", "PA", "H", "RBI", "BB", "K", "1B", "2B",
-                    "3B", "HR", "SB"
+                    "Batter", "PA", "H", "RBI", "BB", "K", "1B", "2B",
+                    "3B", "HR", "SB", "Player_Link"
                 ]
                 bdf_display = bdf_display[cols]
                 nums = bdf_display.select_dtypes(include=[np.number]).columns
@@ -477,10 +477,10 @@ if date:
                     bdf_display,
                     hide_index=True,
                     column_config={
-                    "Player_Link": st.column_config.LinkColumn(
-                        label="",
-                        display_text="🔗",
-                        width=30  # Set column width to tiny
+                        "Player_Link": st.column_config.LinkColumn(
+                            label="",
+                            display_text="🔗",
+                            width=9  # Make the link column very small,
                         )
                     },
                     use_container_width=True
