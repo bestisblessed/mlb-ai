@@ -1,0 +1,8 @@
+game_id,game,icons,icon_labels
+777485,Sutter Health Park10:05HOU @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F"
+777484,Steinbrenner Field7:35BAL @ TB,"OutRightCenter.svg,OutRight.svg,OutRightMiddle.svg,LightWind.png,From83to89.png","OutRightCenter.svg,OutRight.svg,OutRightMiddle.svg,Light Breeze,83–89°F"
+777488,Nationals Park6:45COL @ WAS,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,HighH.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,High Humidity"
+777490,Dodger Stadium10:10SD  @ LAD,"OutRightCenter.svg,OutCenter.svg,OutLeftCenter.svg,LightWind.png","OutRightCenter.svg,OutCenter.svg,OutLeftCenter.svg,Light Breeze"
+777483,LoanDepot Park6:40PHI @ MIA,RoofClosed.png,Roof Closed
+777487,Yankee Stadium7:05LAA @ NYY,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,HighH.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,High Humidity"
+777486,T-Mobile Park9:40BOS @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze"
