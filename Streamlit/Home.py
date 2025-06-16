@@ -485,6 +485,7 @@ if date:
                     },
                     use_container_width=True
                 )
+                st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
 
         # -------------------- Matchups vs Away Starter --------------------
         if matchups_df is not None and starter_away_last:
