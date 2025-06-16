@@ -193,6 +193,8 @@ if date:
             #st.write("")
 
             # --- Compact Scoreboard Style for Projected Runs and Win Probability ---
+            away_abbr = TEAM_ABBR.get(away_team.lower(), away_team).upper()
+            home_abbr = TEAM_ABBR.get(home_team.lower(), home_team).upper()
             away_runs = selected_game['away_score']
             home_runs = selected_game['home_score']
             win_away = detailed_row.get('win_away', '')
@@ -203,25 +205,28 @@ if date:
             st.markdown(f"""
             <div style='display:flex; justify-content:center; align-items:center; margin-bottom:8px;'>
                 <div style='flex:1; text-align:center;'>
-                    <div style='font-size:1.5rem; font-weight:600;'>{away_team}</div>
-                    <div style='font-size:1.8rem; font-weight:bold; margin:2px 0 0 0;'>{away_runs:.2f}</div>
-                    <div style='font-size:1rem; color:#888; margin-top:0px;'>Projected Runs</div>
+                    <div style='font-size:3rem; font-weight:600;'>{away_abbr}</div>
+                    <div style='height:10px;'></div>
+                    <div style='font-family: "Roboto Mono", "Oswald", monospace, sans-serif; font-size:1.4em; font-weight:600; color:#222;'>{away_runs:.2f}</div>
+                    <div style='font-family: "Roboto Mono", "Oswald", monospace, sans-serif; font-size:0.9rem; color:#3a3a3a;'>Projected Runs</div>
                 </div>
                 <div style='width:40px;'></div>
                 <div style='flex:1; text-align:center;'>
-                    <div style='font-size:1.5rem; font-weight:600;'>{home_team}</div>
-                    <div style='font-size:1.8rem; font-weight:bold; margin:2px 0 0 0;'>{home_runs:.2f}</div>
-                    <div style='font-size:1rem; color:#888; margin-top:0px;'>Projected Runs</div>
+                    <div style='font-size:3rem; font-weight:600;'>{home_abbr}</div>
+                    <div style='height:10px;'></div>
+                    <div style='font-family: "Roboto Mono", "Oswald", monospace, sans-serif; font-size:1.4em; font-weight:600; color:#222;'>{home_runs:.2f}</div>
+                    <div style='font-family: "Roboto Mono", "Oswald", monospace, sans-serif; font-size:0.9rem; color:#3a3a3a;'>Projected Runs</div>
+                    <br>
                 </div>
             </div>
             <div style='display:flex; justify-content:center; align-items:center; margin-bottom:8px;'>
                 <div style='flex:1; text-align:center;'>
-                    <span style='font-size:1rem; color:#333;'>{win_away}</span>
+                    <span style='font-family: "Roboto Mono", "Oswald", monospace, sans-serif; font-size:1.1rem; color:#3a3a3a;'>{win_away}</span>
                     <div style='height:7px; margin:2px 0 0 0;'><progress value='{away_pct}' max='100' style='width:80%; height:7px; background-color:green;'></progress></div>
                 </div>
                 <div style='width:40px;'></div>
                 <div style='flex:1; text-align:center;'>
-                    <span style='font-size:1rem; color:#333;'>{win_home}</span>
+                    <span style='font-family: "Roboto Mono", "Oswald", monospace, sans-serif; font-size:1.1rem; color:#3a3a3a;'>{win_home}</span>
                     <div style='height:7px; margin:2px 0 0 0;'><progress value='{home_pct}' max='100' style='width:80%; height:7px; background-color:green;'></progress></div>
                 </div>
             </div>
@@ -352,7 +357,7 @@ if date:
                 #st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
 
         # -------------------- Career BvP vs Home Starter (moved here) --------------------
-        away_abbr = TEAM_ABBR.get(away_team.lower(), away_team.lower())
+        away_abbr = TEAM_ABBR.get(away_team.lower(), away_team).upper()
         bvp_file = os.path.join(DATA_DIR, date, f"bvp_{away_abbr}_vs_{starter_home_last.lower()}.csv")
         bvp_df = pd.read_csv(bvp_file) if os.path.exists(bvp_file) else None
         if os.path.exists(b1):
@@ -502,7 +507,7 @@ if date:
                 st.dataframe(vs_disp, hide_index=True, use_container_width=True)
 
         # -------------------- Career BvP vs Away Starter (moved here) --------------------
-        home_abbr = TEAM_ABBR.get(home_team.lower(), home_team.lower())
+        home_abbr = TEAM_ABBR.get(home_team.lower(), home_team).upper()
         bvp_file = os.path.join(DATA_DIR, date, f"bvp_{home_abbr}_vs_{starter_away_last.lower()}.csv")
         bvp_df = pd.read_csv(bvp_file) if os.path.exists(bvp_file) else None
         if os.path.exists(b2):
