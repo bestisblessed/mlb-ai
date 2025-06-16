@@ -12,40 +12,20 @@ def load_batter_logs(year: int) -> pd.DataFrame:
     path = os.path.join(DATA_DIR, str(year), f"batters_gamelogs_{year}_statsapi.csv")
     return pd.read_csv(path) if os.path.exists(path) else pd.DataFrame()
 
-
 @st.cache_data(show_spinner="Loading pitcher logs...")
 def load_pitcher_logs(year: int) -> pd.DataFrame:
     path = os.path.join(DATA_DIR, str(year), f"pitchers_gamelogs_{year}_statsapi.csv")
     return pd.read_csv(path) if os.path.exists(path) else pd.DataFrame()
 
-# -- DATA_DIR setup (unchanged) --
 DATA_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
     "Streamlit", "data"
 )
 if not os.path.exists(DATA_DIR):
     DATA_DIR = "data"
-
-# -- Page config & title --
+    
 st.set_page_config(page_title="MLB AI",
                    page_icon="⚾", layout="wide")
-
-# -- Make expanders smaller and less prominent --
-#st.markdown(
-#    """
-#    <style>
-#    .streamlit-expanderHeader {
-#        font-size: 0.85rem !important;
-#        padding: 2px 0 !important;
-#    }
-#    .streamlit-expanderContent {
-#        padding-top: 0.25rem !important;
-#        padding-bottom: 0.25rem !important;
-#    }
-#    </style>
-#    """,
-#    unsafe_allow_html=True,
-#)
 st.title("MLB AI")
 
 # -- Sidebar: date & game selectors --
@@ -128,14 +108,8 @@ if date:
                 sim_detailed["game_id"] == int(game_id)
             ].iloc[0]
 
-            # Header & metrics
-            st.subheader(f"{away_team} @ {home_team} - {game_time}")
-            st.markdown(
-                f"<p style='margin-top:-10px; color:#8e8e8e; font-size:0.9rem;'>"
-                f"Game ID: {game_id} · {date} · {game_time}</p>",
-                unsafe_allow_html=True,
-            )
-            # ── Weather Summary (emojis) under header ─────────────────────────
+            # Build weather summary HTML before rendering the card
+            weather_html = ''
             pf_path = os.path.join(DATA_DIR, date, "park_factors_icons.csv")
             if os.path.exists(pf_path):
                 pf_df = pd.read_csv(pf_path, dtype={"game_id": int})
@@ -163,15 +137,12 @@ if date:
                                     else 1 if lbl in {"Light Breeze", "Moderate Wind", "Heavy Wind"}
                                     else 2
                     )
-                    # use wider padding around the dash separator
-                    separator = " &nbsp;&nbsp;-&nbsp;&nbsp; "  # two non-breaking spaces on each side
+                    #separator = " &nbsp;&middot;&nbsp; "  # middle dot with spaces
+                    separator = " &nbsp;&nbsp;-&nbsp;&nbsp; "
                     weather_summary = separator.join(
-                        f"{emoji_map[lbl]} _{lbl}_" for lbl in sorted_labels
+                        f"{emoji_map[lbl]} {lbl}" for lbl in sorted_labels
                     )
-
-                    # ── Build additional directional details inline ──
                     def _describe_direction_icon(icon_label: str):
-                        """Convert direction SVG filenames into human-readable text."""
                         base = icon_label.rsplit(".", 1)[0]
                         m = re.match(r"(Out|In|From)(.+)", base)
                         if not m:
@@ -187,24 +158,22 @@ if date:
                         if prefix == "From":
                             return f"wind from {direction_text}"
                         return None
-
-                    extra_details = [
-                        _describe_direction_icon(lbl) for lbl in labels if lbl not in emoji_map
-                    ]
-                    extra_details = [d for d in extra_details if d]
-
-                    combined_line = weather_summary
+                    extra_details = list(dict.fromkeys([
+                        _describe_direction_icon(lbl) for lbl in labels if _describe_direction_icon(lbl) and lbl not in emoji_map
+                    ]))
+                    combined_line = f"<span style='font-size:0.85rem; color:black;'>{weather_summary}</span>"
                     if extra_details:
                         extra_text = " • ".join(extra_details)
-                        # add extra padding before the details block
-                        combined_line += (
-                            " &nbsp;&nbsp;&nbsp;&nbsp;"  # four NBSPs as gap
-                            "<span style='color:#b8b8b8; font-size:0.85rem;'>"
-                            + extra_text + "</span>"
-                        )
-
-                    # Use unsafe HTML to keep everything on one line
-                    st.markdown(combined_line, unsafe_allow_html=True)
+                        combined_line += "<br>" + f"<span style='color:#b8b8b8; font-size:0.85rem;'>" + extra_text + "</span>"
+                    weather_html = f"<div style='text-align:center; margin-top:8px;'>{combined_line}</div>"
+            # Now render the card with weather_html included
+            st.markdown(f"""
+            <div style='background-color:#f0f2f6; padding:15px; border-radius:10px; margin-bottom:20px;'>
+                <h2 style='text-align:center; margin:0 0 0px 0; line-height:1.1;'>{away_team} @ {home_team}</h2>
+                <p style='text-align:center; color:#666; margin:0; font-size:0.85rem; line-height:1.1;'>{date} · {game_time} · Game ID: {game_id}</p>
+                {weather_html}
+            </div>
+            """, unsafe_allow_html=True)
             st.divider()
             c1, c2, c3, c4 = st.columns(4)
             c1.metric("Projected Runs (Away)", f"{selected_game['away_score']:.2f}")
