@@ -3,12 +3,12 @@ COL,Keston Hiura,669374,8,Irvin,663623,55,57,32,8,-7,-38
 COL,Ryan Ritter,690022,-4,Irvin,663623,54,31,31,14,-13,-37
 COL,Hunter Goodman,696100,9,Irvin,663623,47,53,17,10,2,-46
 COL,Jordan Beck,687597,9,Irvin,663623,42,47,17,9,-8,-39
-COL,Ryan McMahon,641857,10,Irvin,663623,41,42,37,16,-14,-40
+COL,Ryan McMahon,641857,10,Irvin,663623,42,42,37,16,-14,-40
 COL,Brenton Doyle,686668,9,Irvin,663623,36,30,24,9,-8,-44
-WAS,Andres Chaparro,665953,8,Palmquist,687223,34,23,21,-6,39,-27
+WAS,Andres Chaparro,665953,8,Palmquist,687223,35,23,21,-6,39,-27
 COL,Orlando Arcia,606115,9,Irvin,663623,34,43,20,13,-13,-46
 WAS,Jacob Young,696285,7,Palmquist,687223,31,-6,17,3,43,-23
-WAS,James Wood,695578,10,Palmquist,687223,30,-5,-3,13,26,-22
+WAS,James Wood,695578,10,Palmquist,687223,30,-5,-3,13,27,-22
 COL,Thairo Estrada,642731,6,Irvin,663623,30,10,35,6,-13,-47
 WAS,Amed Rosario,642708,7,Palmquist,687223,26,5,22,0,37,-22
 WAS,Nathaniel Lowe,663993,7,Palmquist,687223,26,16,-5,-8,36,-16
@@ -32,11 +32,11 @@ TB,Josh Lowe,666139,6,Eflin,621107,11,54,18,5,-55,-21
 SEA,J.P. Crawford,641487,10,Giolito,608337,10,14,-12,18,7,-7
 TB,Junior Caminero,691406,5,Eflin,621107,10,20,28,10,-49,-28
 TB,Kameron Misner,670224,-6,Eflin,621107,10,66,11,0,-56,-19
-TB,Danny Jansen,643376,5,Eflin,621107,9,45,14,21,-52,-20
+TB,Danny Jansen,643376,5,Eflin,621107,9,45,14,21,-51,-20
 HOU,Jose Altuve,514888,9,Sears,676664,9,23,30,-9,-23,-31
 PHI,Nick Castellanos,592206,9,Alcantara,645261,9,-3,11,10,5,-25
+HOU,Victor Caratini,605170,6,Sears,676664,9,20,39,-3,-31,-27
 SEA,Cole Young,702284,1,Giolito,608337,8,17,-2,12,-18,-4
-HOU,Victor Caratini,605170,6,Sears,676664,8,20,39,-3,-31,-27
 BAL,Adley Rutschman,668939,7,Pepiot,686752,7,50,2,-8,-10,-11
 HOU,Brendan Rodgers,663898,-3,Sears,676664,7,5,33,-5,-28,-15
 SEA,Julio Rodriguez,677594,9,Giolito,608337,7,7,-8,18,-6,-5
@@ -50,8 +50,8 @@ PHI,Edmundo Sosa,624641,7,Alcantara,645261,5,-7,9,11,0,-17
 ATH,Jacob Wilson,805779,8,McCullers Jr.,621121,5,9,-20,6,49,24
 BAL,Ramon Laureano,657656,2,Pepiot,686752,5,41,-1,-6,-20,-1
 MIA,Agustin Ramirez,682663,6,Abel,690953,4,-18,29,13,0,-7
+PHI,Alec Bohm,664761,8,Alcantara,645261,4,-7,9,5,18,-15
 SEA,Dominic Canzone,686527,-1,Giolito,608337,4,2,-10,10,-3,-1
-PHI,Alec Bohm,664761,8,Alcantara,645261,3,-7,9,5,18,-15
 BAL,Jackson Holliday,702616,-2,Pepiot,686752,3,50,-22,-12,-16,-5
 BAL,Jordan Westburg,676059,3,Pepiot,686752,3,45,-13,-9,-13,2
 ATH,Luis Urias,649966,7,McCullers Jr.,621121,3,33,-12,-21,32,19
@@ -67,7 +67,7 @@ PHI,Kyle Schwarber,656941,7,Alcantara,645261,1,-6,3,14,0,-14
 ATH,Lawrence Butler,671732,5,McCullers Jr.,621121,1,24,-20,-18,45,20
 MIA,Connor Norby,681393,1,Abel,690953,0,-8,27,-2,-12,2
 MIA,Liam Hicks,689414,5,Abel,690953,-1,-10,20,3,-6,-7
-MIA,Eric Wagaman,676572,4,Abel,690953,-2,-10,17,-1,1,1
+MIA,Eric Wagaman,676572,4,Abel,690953,-2,-10,18,-1,1,1
 BAL,Ryan O'Hearn,656811,5,Pepiot,686752,-2,31,0,-12,-14,-3
 TB,Yandy Diaz,650490,1,Eflin,621107,-2,62,-20,-4,-45,-22
 NYY,Cody Bellinger,641355,9,Soriano,667755,-3,-31,-31,20,54,-14
@@ -92,7 +92,7 @@ LAA,Luis Rengifo,650859,1,Schmidt,657376,-17,-14,-16,-3,31,17
 LAD,Tommy Edman,669242,2,Cease,656302,-17,22,-1,-13,0,40
 NYY,Trent Grisham,663757,4,Soriano,667755,-17,-51,-28,4,29,-17
 LAD,Freddie Freeman,518692,3,Cease,656302,-18,20,-7,-16,1,33
-LAD,Will Smith,669257,6,Cease,656302,-18,16,-23,-13,2,39
+LAD,Will Smith,669257,6,Cease,656302,-18,16,-23,-13,2,38
 LAD,Andy Pages,681624,6,Cease,656302,-19,10,-12,-15,4,43
 LAA,Nolan Schanuel,694384,5,Schmidt,657376,-19,2,-19,-4,0,25
 ATH,Willie MacIver,680862,-9,McCullers Jr.,621121,-19,11,-23,-26,38,34
@@ -116,7 +116,7 @@ LAA,Jo Adell,666176,-4,Schmidt,657376,-33,-17,-33,-2,0,27
 LAA,Zach Neto,687263,-5,Schmidt,657376,-33,-10,-30,-11,1,26
 BOS,Carlos Narvaez,665966,-9,Gilbert,669302,-35,1,-38,-19,-40,69
 SD,Martin Maldonado,455117,-9,Ohtani,660271,-36,10,-23,-21,-10,13
-BOS,Abraham Toro,647351,-9,Gilbert,669302,-39,-20,-38,-23,-33,90
+BOS,Abraham Toro,647351,-9,Gilbert,669302,-39,-20,-38,-23,-33,89
 LAA,Scott Kingery,664068,-9,Schmidt,657376,-39,-12,-15,-6,3,14
 LAA,Logan O'Hoppe,681351,-7,Schmidt,657376,-40,-32,-18,-7,0,20
 BOS,Kristian Campbell,692225,-10,Gilbert,669302,-41,0,-38,-21,-48,72
