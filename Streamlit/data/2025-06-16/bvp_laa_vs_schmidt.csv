@@ -1,0 +1,14 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hitbypitch,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,1.000,1.000,,Luis Rengifo,650859,,1,,,,,1,,4,1.000,2.000,Schmidt,657376,1,1,1.000,,1,2022
+1,2,.000,.000,,Luis Rengifo,650859,,1,,1,1.00,,,2,11,.000,.000,Schmidt,657376,2,,.000,,,2025
+2,3,.000,.000,,Nolan Schanuel,694384,,1,1,1,0.50,,,1,18,.000,.000,Schmidt,657376,3,,.000,,,2025
+,2,1.000,1.000,,Jorge Soler,624585,,1,,,,,2,,7,1.000,2.000,Schmidt,657376,2,,1.000,,2,2025
+,1,1.000,1.000,,Taylor Ward,621493,,1,,,,,1,,2,1.000,2.000,Schmidt,657376,1,,1.000,,1,2022
+,2,.500,1.000,,Taylor Ward,621493,1,1,,,,,1,,10,.500,1.500,Schmidt,657376,2,,1.000,1,2,2023
+1,3,.000,.000,,Taylor Ward,621493,,1,,1,1.00,,,1,11,.000,.000,Schmidt,657376,3,,.000,1,,2025
+,1,.000,.---,,Mike Trout,545361,,1,,,,,,1,3,.000,.000,Schmidt,657376,1,,.000,1,,2022
+,2,1.000,1.000,,Mike Trout,545361,1,1,,,,,2,,8,1.000,2.500,Schmidt,657376,2,,1.500,,3,2023
+1,1,.000,.000,,Zach Neto,687263,,1,,,0.00,1,,,7,.500,.500,Schmidt,657376,2,,.000,,,2023
+,3,.333,.500,,Zach Neto,687263,,1,,1,1.00,,1,,14,.333,.666,Schmidt,657376,3,,.333,1,1,2025
+1,1,.000,.000,,Logan O'Hoppe,681351,,1,,,0.00,,,,1,.000,.000,Schmidt,657376,1,,.000,,,2023
+,1,.000,.000,1,Logan O'Hoppe,681351,,1,,1,1.00,,,1,11,.500,.500,Schmidt,657376,2,,.000,,,2025
