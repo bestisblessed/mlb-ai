@@ -27,8 +27,24 @@ if not os.path.exists(DATA_DIR):
 st.set_page_config(page_title="MLB AI",
                    page_icon="⚾", layout="wide")
 #st.title("MLB AI")
-st.markdown("<h1 style='text-align: center;'>MLB AI</h1>", unsafe_allow_html=True)  # Centering the title using HTML
-#st.markdown("<h2 style='text-align: center;'>Your go-to source for MLB insights!</h2>", unsafe_allow_html=True)  # Subtitle
+st.markdown("""
+<div style="text-align:center; margin-top:0.05em; margin-bottom:0.05em;">
+    <span style="
+        font-size:3.2rem;
+        font-weight:900;
+        letter-spacing:0.07em;
+        background: linear-gradient(90deg, #002D5C 60%, #C0111F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #002D5C;
+        ">
+        MLB <span style="color:#C0111F; -webkit-text-fill-color: #C0111F; background: none;">AI</span>
+    </span>
+</div>
+<div style="text-align:center; color:#002D5C; font-size:1.2rem; margin-bottom:0.2em; font-weight:600;">
+    Major League Baseball Insights &amp; Projections
+</div>
+""", unsafe_allow_html=True)
 st.markdown("<hr>", unsafe_allow_html=True)  # Horizontal line for separation
 
 # Add this CSS block once, before the scoreboard section (ideally near the top of your file, after st.set_page_config):
