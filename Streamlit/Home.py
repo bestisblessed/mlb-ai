@@ -1,3 +1,6 @@
+#
+
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -27,24 +30,8 @@ if not os.path.exists(DATA_DIR):
 st.set_page_config(page_title="MLB AI",
                    page_icon="⚾", layout="wide")
 #st.title("MLB AI")
-st.markdown("""
-<div style="text-align:center; margin-top:0.05em; margin-bottom:0.05em;">
-    <span style="
-        font-size:3.2rem;
-        font-weight:900;
-        letter-spacing:0.07em;
-        background: linear-gradient(90deg, #002D5C 60%, #C0111F 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: #002D5C;
-        ">
-        MLB <span style="color:#C0111F; -webkit-text-fill-color: #C0111F; background: none;">AI</span>
-    </span>
-</div>
-<div style="text-align:center; color:#002D5C; font-size:1.2rem; margin-bottom:0.2em; font-weight:600;">
-    Major League Baseball Insights &amp; Projections
-</div>
-""", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>MLB AI</h1>", unsafe_allow_html=True)  # Centering the title using HTML
+#st.markdown("<h2 style='text-align: center;'>Your go-to source for MLB insights!</h2>", unsafe_allow_html=True)  # Subtitle
 st.markdown("<hr>", unsafe_allow_html=True)  # Horizontal line for separation
 
 # Add this CSS block once, before the scoreboard section (ideally near the top of your file, after st.set_page_config):
@@ -101,10 +88,6 @@ TEAM_ABBR = {
     'toronto blue jays': 'tor',
     'washington nationals': 'was',
 }
-
-st.write("DATA_DIR:", DATA_DIR)
-st.write("Current working directory:", os.getcwd())
-st.write("Files in DATA_DIR:", os.listdir(DATA_DIR))
 
 if date:
     sim_path = os.path.join(DATA_DIR, date, "game_simulations.csv")
@@ -213,8 +196,6 @@ if date:
             #st.write("")
 
             # --- Compact Scoreboard Style for Projected Runs and Win Probability ---
-            away_abbr = TEAM_ABBR.get(away_team.lower(), away_team).lower()
-            home_abbr = TEAM_ABBR.get(home_team.lower(), home_team).lower()
             away_runs = selected_game['away_score']
             home_runs = selected_game['home_score']
             win_away = detailed_row.get('win_away', '')
@@ -225,28 +206,25 @@ if date:
             st.markdown(f"""
             <div style='display:flex; justify-content:center; align-items:center; margin-bottom:8px;'>
                 <div style='flex:1; text-align:center;'>
-                    <div style='font-size:3rem; font-weight:600;'>{away_abbr.upper()}</div>
-                    <div style='height:10px;'></div>
-                    <div style='font-family: \"Roboto Mono\", \"Oswald\", monospace, sans-serif; font-size:1.4em; font-weight:600; color:#222;'>{away_runs:.2f}</div>
-                    <div style='font-family: \"Roboto Mono\", \"Oswald\", monospace, sans-serif; font-size:0.9rem; color:#3a3a3a;'>Projected Runs</div>
+                    <div style='font-size:1.5rem; font-weight:600;'>{away_team}</div>
+                    <div style='font-size:1.8rem; font-weight:bold; margin:2px 0 0 0;'>{away_runs:.2f}</div>
+                    <div style='font-size:1rem; color:#888; margin-top:0px;'>Projected Runs</div>
                 </div>
                 <div style='width:40px;'></div>
                 <div style='flex:1; text-align:center;'>
-                    <div style='font-size:3rem; font-weight:600;'>{home_abbr.upper()}</div>
-                    <div style='height:10px;'></div>
-                    <div style='font-family: \"Roboto Mono\", \"Oswald\", monospace, sans-serif; font-size:1.4em; font-weight:600; color:#222;'>{home_runs:.2f}</div>
-                    <div style='font-family: \"Roboto Mono\", \"Oswald\", monospace, sans-serif; font-size:0.9rem; color:#3a3a3a;'>Projected Runs</div>
-                    <br>
+                    <div style='font-size:1.5rem; font-weight:600;'>{home_team}</div>
+                    <div style='font-size:1.8rem; font-weight:bold; margin:2px 0 0 0;'>{home_runs:.2f}</div>
+                    <div style='font-size:1rem; color:#888; margin-top:0px;'>Projected Runs</div>
                 </div>
             </div>
             <div style='display:flex; justify-content:center; align-items:center; margin-bottom:8px;'>
                 <div style='flex:1; text-align:center;'>
-                    <span style='font-family: \"Roboto Mono\", \"Oswald\", monospace, sans-serif; font-size:1.1rem; color:#3a3a3a;'>{win_away}</span>
+                    <span style='font-size:1rem; color:#333;'>{win_away}</span>
                     <div style='height:7px; margin:2px 0 0 0;'><progress value='{away_pct}' max='100' style='width:80%; height:7px; background-color:green;'></progress></div>
                 </div>
                 <div style='width:40px;'></div>
                 <div style='flex:1; text-align:center;'>
-                    <span style='font-family: \"Roboto Mono\", \"Oswald\", monospace, sans-serif; font-size:1.1rem; color:#3a3a3a;'>{win_home}</span>
+                    <span style='font-size:1rem; color:#333;'>{win_home}</span>
                     <div style='height:7px; margin:2px 0 0 0;'><progress value='{home_pct}' max='100' style='width:80%; height:7px; background-color:green;'></progress></div>
                 </div>
             </div>
@@ -377,13 +355,12 @@ if date:
                 #st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
 
         # -------------------- Career BvP vs Home Starter (moved here) --------------------
-        away_abbr = TEAM_ABBR.get(away_team.lower(), away_team).lower()
+        away_abbr = TEAM_ABBR.get(away_team.lower(), away_team.lower())
         bvp_file = os.path.join(DATA_DIR, date, f"bvp_{away_abbr}_vs_{starter_home_last.lower()}.csv")
-        if not os.path.exists(bvp_file):
-            st.warning(f"BvP file not found: {bvp_file}")
-        else:
-            bvp_df = pd.read_csv(bvp_file)
-            if not bvp_df.empty:
+        bvp_df = pd.read_csv(bvp_file) if os.path.exists(bvp_file) else None
+        if os.path.exists(b1):
+            bdf = pd.read_csv(b1)
+            if not bdf.empty:
                 for _, brow in bdf.iterrows():
                     batter = brow["Batter"]
                     batter_id = int(brow["Player ID"])
@@ -528,13 +505,12 @@ if date:
                 st.dataframe(vs_disp, hide_index=True, use_container_width=True)
 
         # -------------------- Career BvP vs Away Starter (moved here) --------------------
-        home_abbr = TEAM_ABBR.get(home_team.lower(), home_team).lower()
+        home_abbr = TEAM_ABBR.get(home_team.lower(), home_team.lower())
         bvp_file = os.path.join(DATA_DIR, date, f"bvp_{home_abbr}_vs_{starter_away_last.lower()}.csv")
-        if not os.path.exists(bvp_file):
-            st.warning(f"BvP file not found: {bvp_file}")
-        else:
-            bvp_df = pd.read_csv(bvp_file)
-            if not bvp_df.empty:
+        bvp_df = pd.read_csv(bvp_file) if os.path.exists(bvp_file) else None
+        if os.path.exists(b2):
+            bdf = pd.read_csv(b2)
+            if not bdf.empty:
                 for _, brow in bdf.iterrows():
                     batter = brow["Batter"]
                     batter_id = int(brow["Player ID"])
