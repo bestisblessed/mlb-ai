@@ -248,7 +248,7 @@ if date:
         st.stop()
 
     # -- Main columns: Away vs Home projections --
-    away_col, home_col = st.columns(2)
+    away_col, spacer, home_col = st.columns([1, 0.05, 1])  # 0.08 is a small spacer, adjust as needed
 
     # -- AWAY PROJECTIONS --
     with away_col:
