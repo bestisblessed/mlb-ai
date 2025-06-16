@@ -26,7 +26,21 @@ if not os.path.exists(DATA_DIR):
     
 st.set_page_config(page_title="MLB AI",
                    page_icon="⚾", layout="wide")
-st.title("MLB AI")
+#st.title("MLB AI")
+st.markdown("<h1 style='text-align: center;'>MLB AI</h1>", unsafe_allow_html=True)  # Centering the title using HTML
+#st.markdown("<h2 style='text-align: center;'>Your go-to source for MLB insights!</h2>", unsafe_allow_html=True)  # Subtitle
+st.markdown("<hr>", unsafe_allow_html=True)  # Horizontal line for separation
+
+# Add this CSS block once, before the scoreboard section (ideally near the top of your file, after st.set_page_config):
+#st.markdown("""
+#<style>
+#/* Red progress bars for win probability */
+#progress[value]::-webkit-progress-bar { background-color: #eee; border-radius: 5px; }
+#progress[value]::-webkit-progress-value { background-color: #e53935; border-radius: 5px; }
+#progress[value] { color: #e53935; }
+#progress[value]::-moz-progress-bar { background-color: #e53935; }
+#</style>
+#""", unsafe_allow_html=True)
 
 # -- Sidebar: date & game selectors --
 st.sidebar.title("⚾️ MLB AI")
@@ -174,26 +188,48 @@ if date:
                 {weather_html}
             </div>
             """, unsafe_allow_html=True)
-            st.divider()
-            c1, c2, c3, c4 = st.columns(4)
-            c1.metric("Projected Runs (Away)", f"{selected_game['away_score']:.2f}")
-            c2.metric("Projected Runs (Home)", f"{selected_game['home_score']:.2f}")
+            #st.divider()
+            st.write("")
+            #st.write("")
 
-            # Win probabilities with formatting
-            def fmt_win_prob(raw, label, col):
-                if isinstance(raw, str) and "%" in raw:
-                    pct  = re.search(r"(\d+\.\d+)%", raw)
-                    odds = re.search(r"\(([+-]\d+)\)", raw)
-                    text = (f"{pct.group(1)}% ({odds.group(1)})"
-                            if pct and odds else raw)
-                else:
-                    text = raw
-                col.metric(label, text)
-
-            fmt_win_prob(detailed_row.get("win_away", ""),
-                         "Win Probability (Away)", c3)
-            fmt_win_prob(detailed_row.get("win_home", ""),
-                         "Win Probability (Home)", c4)
+            # --- Compact Scoreboard Style for Projected Runs and Win Probability ---
+            away_runs = selected_game['away_score']
+            home_runs = selected_game['home_score']
+            win_away = detailed_row.get('win_away', '')
+            win_home = detailed_row.get('win_home', '')
+            # Extract win percentage values
+            away_pct = float(re.search(r"(\d+\.\d+)%", win_away).group(1)) if re.search(r"(\d+\.\d+)%", win_away) else 50
+            home_pct = float(re.search(r"(\d+\.\d+)%", win_home).group(1)) if re.search(r"(\d+\.\d+)%", win_home) else 50
+            st.markdown(f"""
+            <div style='display:flex; justify-content:center; align-items:center; margin-bottom:8px;'>
+                <div style='flex:1; text-align:center;'>
+                    <div style='font-size:1.5rem; font-weight:600;'>{away_team}</div>
+                    <div style='font-size:1.8rem; font-weight:bold; margin:2px 0 0 0;'>{away_runs:.2f}</div>
+                    <div style='font-size:1rem; color:#888; margin-top:0px;'>Projected Runs</div>
+                </div>
+                <div style='width:40px;'></div>
+                <div style='flex:1; text-align:center;'>
+                    <div style='font-size:1.5rem; font-weight:600;'>{home_team}</div>
+                    <div style='font-size:1.8rem; font-weight:bold; margin:2px 0 0 0;'>{home_runs:.2f}</div>
+                    <div style='font-size:1rem; color:#888; margin-top:0px;'>Projected Runs</div>
+                </div>
+            </div>
+            <div style='display:flex; justify-content:center; align-items:center; margin-bottom:8px;'>
+                <div style='flex:1; text-align:center;'>
+                    <span style='font-size:1rem; color:#333;'>{win_away}</span>
+                    <div style='height:7px; margin:2px 0 0 0;'><progress value='{away_pct}' max='100' style='width:80%; height:7px; background-color:green;'></progress></div>
+                </div>
+                <div style='width:40px;'></div>
+                <div style='flex:1; text-align:center;'>
+                    <span style='font-size:1rem; color:#333;'>{win_home}</span>
+                    <div style='height:7px; margin:2px 0 0 0;'><progress value='{home_pct}' max='100' style='width:80%; height:7px; background-color:green;'></progress></div>
+                </div>
+            </div>
+            <div style='height:28px;'></div>
+            <br>
+            <hr style='border: none; border-top: 1.5px solid #e0e0e0; margin: 0 0 18px 0;'>
+            """, unsafe_allow_html=True)
+            st.write("")
 
             # -------------------- NEW: load & prepare matchups --------------------
             matchups_df = None
@@ -216,14 +252,14 @@ if date:
 
     # -- AWAY PROJECTIONS --
     with away_col:
-        st.subheader(away_team)
+        #st.subheader(away_team)
 
         # Starting Pitcher
         p1 = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_1.csv")
         if os.path.exists(p1):
             pdf = pd.read_csv(p1)
             if not pdf.empty:
-                st.caption("Starting Pitcher Projection")
+                st.markdown("<h5 style='text-align:center;'>Starting Pitcher Projections</h5>", unsafe_allow_html=True)
 
                 pdf_display = pdf.copy()
                 pdf_display["Player_Link"] = pdf_display["Player URL"]
@@ -251,24 +287,26 @@ if date:
                         logs = pit_logs[pit_logs['player_id'] == pid]
                         if not logs.empty:
                             disp_cols = [
-                                "date", "opponent", "summary", "inningsPitched",
+                                "date", "opponent", "inningsPitched",
                                 "strikeOuts", "runs", "hits"
                             ]
                             disp_cols = [c for c in disp_cols if c in logs.columns]
                             st.dataframe(
                                 logs.sort_values('date', ascending=False)
                                     .head(10)[disp_cols],
-                                hide_index=True
+                                hide_index=True,
+                                use_container_width=True
                             )
                         else:
                             st.write("No game logs found.")
+                    st.markdown("<br>", unsafe_allow_html=True)  # Ensure this is only after the dropdown
 
         # Batting Order
         b1 = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_1.csv")
         if os.path.exists(b1):
             bdf = pd.read_csv(b1)
             if not bdf.empty:
-                st.caption("Batting Order Projections")
+                st.markdown("<h5 style='text-align:center;'>Batting Projections</h5>", unsafe_allow_html=True)
 
                 bdf_display = bdf.copy()
                 bdf_display["Player_Link"] = bdf_display["Player URL"]
@@ -289,14 +327,16 @@ if date:
                         display_text="🔗",
                         width=30  # Set column width to tiny
                         )
-                    }
+                    },
+                    use_container_width=True
                 )
+                st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
 
         # -------------------- Matchups vs Home Starter --------------------
         if matchups_df is not None and starter_home_last:
             vs_df = matchups_df[matchups_df["Pitcher"] == starter_home_last]
             if not vs_df.empty:
-                st.caption(f"Batter Matchup Projections vs {starter_home}")
+                st.markdown("<h5 style='text-align:center;'>Batter Matchup Projections vs Starting Pitcher</h5>", unsafe_allow_html=True)
                 # Display all relevant columns from matchups.csv
                 disp_cols = ["Batter", "Team", "vs", "RC", "HR", "XB", "1B", "BB", "K"]
                 vs_disp = vs_df[disp_cols].copy()
@@ -304,7 +344,12 @@ if date:
                 vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
                 vs_disp[num_cols] = vs_disp[num_cols].round(2)
                 vs_disp = vs_disp.rename(columns={"Team": "L/R"})
-                st.dataframe(vs_disp, hide_index=True, use_container_width=True)
+                st.dataframe(
+                    vs_disp,
+                    hide_index=True,
+                    use_container_width=True
+                )
+                #st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
 
         # -------------------- Career BvP vs Home Starter (moved here) --------------------
         away_abbr = TEAM_ABBR.get(away_team.lower(), away_team.lower())
@@ -332,7 +377,12 @@ if date:
                                     bvp_display['year'] = pd.to_numeric(bvp_display['year'], errors='coerce')
                                     bvp_display = bvp_display.sort_values(by='year', ascending=False)
                                     bvp_display['year'] = bvp_display['year'].astype('Int64').astype(str)
-                                st.dataframe(bvp_display, hide_index=True, use_container_width=True)
+                                st.dataframe(
+                                    bvp_display,
+                                    hide_index=True,
+                                    use_container_width=True
+                                )
+                                st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
                             else:
                                 st.write("No career BvP data for this batter vs pitcher.")
                         else:
@@ -357,14 +407,14 @@ if date:
 
     # -- HOME PROJECTIONS --
     with home_col:
-        st.subheader(home_team)
+        #st.subheader(home_team)
 
         # Starting Pitcher
         p2 = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_2.csv")
         if os.path.exists(p2):
             pdf = pd.read_csv(p2)
             if not pdf.empty:
-                st.caption("Starting Pitcher Projection")
+                st.markdown("<h5 style='text-align:center;'>Starting Pitcher Projections</h5>", unsafe_allow_html=True)
 
                 pdf_display = pdf.copy()
                 pdf_display["Player_Link"] = pdf_display["Player URL"]
@@ -392,24 +442,26 @@ if date:
                         logs = pit_logs[pit_logs['player_id'] == pid]
                         if not logs.empty:
                             disp_cols = [
-                                "date", "opponent", "summary", "inningsPitched",
+                                "date", "opponent", "inningsPitched",
                                 "strikeOuts", "runs", "hits"
                             ]
                             disp_cols = [c for c in disp_cols if c in logs.columns]
                             st.dataframe(
                                 logs.sort_values('date', ascending=False)
                                     .head(10)[disp_cols],
-                                hide_index=True
+                                hide_index=True,
+                                use_container_width=True
                             )
                         else:
                             st.write("No game logs found.")
+                    st.markdown("<br>", unsafe_allow_html=True)  # Ensure this is only after the dropdown
 
         # Batting Order
         b2 = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_2.csv")
         if os.path.exists(b2):
             bdf = pd.read_csv(b2)
             if not bdf.empty:
-                st.caption("Batting Order Projections")
+                st.markdown("<h5 style='text-align:center;'>Batting Projections</h5>", unsafe_allow_html=True)
 
                 bdf_display = bdf.copy()
                 bdf_display["Player_Link"] = bdf_display["Player URL"]
@@ -430,14 +482,15 @@ if date:
                         display_text="🔗",
                         width=30  # Set column width to tiny
                         )
-                    }
+                    },
+                    use_container_width=True
                 )
 
         # -------------------- Matchups vs Away Starter --------------------
         if matchups_df is not None and starter_away_last:
             vs_df = matchups_df[matchups_df["Pitcher"] == starter_away_last]
             if not vs_df.empty:
-                st.caption(f"Batter Matchup Projections vs {starter_away}")
+                st.markdown("<h5 style='text-align:center;'>Batter Matchup Projections vs Starting Pitcher</h5>", unsafe_allow_html=True)
                 # Display all relevant columns from matchups.csv
                 disp_cols = ["Batter", "Team", "vs", "RC", "HR", "XB", "1B", "BB", "K"]
                 vs_disp = vs_df[disp_cols].copy()
