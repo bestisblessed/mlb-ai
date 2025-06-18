@@ -1,0 +1,11 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,catchersinterference,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacbunts,slg,strikeouts,totalbases,year
+1,2,.500,.500,,Connor Norby,681393,,,1,,0.00,1,,9,.500,1.000,Suarez,624133,2,,,.500,,1,2024
+,6,.500,.600,,Dane Myers,667472,,1,2,2,2.00,3,1,20,.500,1.167,Suarez,624133,6,2,,.667,1,4,2023
+1,6,.333,.500,,Dane Myers,667472,,2,2,1,1.00,2,,21,.333,1.000,Suarez,624133,6,1,,.667,2,4,2024
+1,4,.000,.000,,Otto Lopez,672640,1,,2,3,3.00,,3,20,.000,.000,Suarez,624133,5,,,.000,,,2024
+1,1,.000,.000,,Nick Fortes,663743,,,1,,0.00,,,1,.000,.000,Suarez,624133,1,,,.000,,,2021
+2,5,.000,.000,,Nick Fortes,663743,,,2,3,1.50,,1,13,.000,.000,Suarez,624133,5,,,.000,,,2023
+,1,1.000,1.000,1,Nick Fortes,663743,,,1,,,1,,10,1.000,2.000,Suarez,624133,2,,,1.000,,1,2024
+,2,.000,.000,,Kyle Stowers,669065,,,1,1,1.00,,1,7,.000,.000,Suarez,624133,2,,,.000,1,,2024
+,2,.000,.---,,Jesus Sanchez,660821,,,1,,,,2,10,.000,.000,Suarez,624133,2,,,.000,2,,2021
+,2,.500,1.000,,Jesus Sanchez,660821,,,1,1,1.00,1,2,6,.500,1.000,Suarez,624133,3,,1,.500,1,1,2023

@@ -1,0 +1,13 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,7,,.143,.200,,Myles Straw,664702,,3,1,3,3.00,1,,2,38,.143,.286,Rodriguez,593958,7,,.143,2,1,2021
+3,6,,.167,.200,,Myles Straw,664702,,2,,1,0.33,1,,1,23,.167,.334,Rodriguez,593958,6,,.167,1,1,2023
+,7,7.00,.429,1.000,1,Bo Bichette,666182,1,3,,,,3,1,2,34,.500,1.500,Rodriguez,593958,8,2,1.000,4,7,2021
+1,3,,.000,.000,,Bo Bichette,666182,,1,1,2,2.00,,,1,13,.000,.000,Rodriguez,593958,3,,.000,,,2023
+,1,,1.000,1.000,1,George Springer,543807,,1,,,,1,,,12,1.000,2.000,Rodriguez,593958,2,,1.000,,1,2017
+1,2,,.000,.000,1,George Springer,543807,,1,,,0.00,,,2,13,.333,.333,Rodriguez,593958,3,,.000,1,,2018
+,2,,.500,1.000,1,George Springer,543807,,1,,,,1,,,14,.667,1.167,Rodriguez,593958,3,1,.500,1,1,2021
+1,3,,.333,.500,,George Springer,543807,,1,,,0.00,1,,,12,.333,.666,Rodriguez,593958,3,,.333,1,1,2023
+2,6,,.333,.333,,Vladimir Guerrero Jr.,665489,,2,,2,1.00,2,,2,15,.333,.666,Rodriguez,593958,6,,.333,,2,2019
+2,7,,.286,.333,2,Vladimir Guerrero Jr.,665489,,3,,2,1.00,2,,4,40,.444,.730,Rodriguez,593958,9,,.286,1,2,2021
+1,2,,.500,.500,1,Vladimir Guerrero Jr.,665489,,1,,,0.00,1,,,12,.667,1.167,Rodriguez,593958,3,,.500,,1,2023
+1,2,,.000,.000,,Alejandro Kirk,672386,,1,,,0.00,,,,10,.000,.000,Rodriguez,593958,2,,.000,1,,2021

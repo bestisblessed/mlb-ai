@@ -1,0 +1,12 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,4,,.500,.500,2,Nathaniel Lowe,663993,1,2,2,2.00,,2,,,22,.667,1.417,Marquez,608566,6,,.750,,3,2021
+1,3,3.00,.333,.000,,Nathaniel Lowe,663993,,1,1,1.00,,1,1,1,10,.333,1.666,Marquez,608566,3,3,1.333,,4,2022
+2,5,5.00,.200,.000,,Josh Bell,605137,,2,1,0.50,,1,1,2,18,.200,1.000,Marquez,608566,5,1,.800,1,4,2017
+,6,,.000,.000,,Josh Bell,605137,,2,3,3.00,,,,6,24,.000,.000,Marquez,608566,6,1,.000,3,,2018
+,3,,.000,.000,,Josh Bell,605137,,1,2,2.00,,,,2,10,.000,.000,Marquez,608566,3,,.000,1,,2019
+,4,,.000,.000,1,Josh Bell,605137,,2,3,3.00,1,,,4,28,.333,.333,Marquez,608566,6,,.000,1,,2021
+1,6,6.00,.333,.333,,Josh Bell,605137,1,2,1,1.00,,2,1,1,21,.333,1.333,Marquez,608566,6,4,1.000,2,6,2022
+,2,,.000,.000,,Josh Bell,605137,,1,1,1.00,,,,,7,.000,.000,Marquez,608566,2,,.000,1,,2023
+,4,,.500,.667,,Luis Garcia,671277,,2,1,1.00,,2,,,12,.500,1.000,Marquez,608566,4,3,.500,1,2,2021
+,3,,.667,.667,1,Keibert Ruiz,660688,1,2,1,1.00,,2,,,15,.750,1.750,Marquez,608566,4,2,1.000,,3,2021
+1,5,,.600,.600,1,Keibert Ruiz,660688,1,2,1,1.00,,3,,1,17,.667,1.467,Marquez,608566,6,2,.800,,4,2022
