@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+,1,.000,.000,Amed Rosario,642708,,1,1,1,1.00,,2,1,.000,.000,Kershaw,477132,1,.000,,,2018
+,6,.333,.400,Amed Rosario,642708,2,2,,3,3.00,2,1,12,.333,1.000,Kershaw,477132,6,.667,1,4,2019
+,3,.333,.333,Amed Rosario,642708,1,1,1,2,2.00,1,1,6,.333,1.000,Kershaw,477132,3,.667,,2,2022
+1,3,.000,.000,Nathaniel Lowe,663993,,1,,2,2.00,,2,7,.000,.000,Kershaw,477132,3,.000,,,2021

@@ -1,0 +1,5 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,2,2.00,.500,.000,1,Carlos Santana,467793,1,1,1.00,1,1,,11,.667,2.667,Springs,605488,3,1,2.000,,4,2024
+4,6,6.00,.167,.000,,Jose Ramirez,608070,2,1,0.25,1,1,4,19,.167,.834,Springs,605488,6,2,.667,,4,2022
+,2,,.000,.000,,Gabriel Arias,672356,1,2,2.00,,,2,10,.000,.000,Springs,605488,2,,.000,,,2022
+2,6,,.333,.500,,Steven Kwan,680757,2,,0.00,2,,1,28,.333,.666,Springs,605488,6,,.333,2,2,2022

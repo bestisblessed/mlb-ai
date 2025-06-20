@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,2,.500,.500,Andrew Benintendi,643217,1,,0.00,1,1,1,14,.667,1.167,Turnbull,605513,3,.500,,1,2019
+,5,.600,.750,Andrew Benintendi,643217,2,1,1.00,,3,1,12,.600,1.200,Turnbull,605513,5,.600,1,3,2021
+2,3,.000,.000,Andrew Benintendi,643217,1,1,0.50,,,2,7,.000,.000,Turnbull,605513,3,.000,,,2024
