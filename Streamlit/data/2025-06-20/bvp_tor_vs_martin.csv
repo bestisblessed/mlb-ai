@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,3,.333,.333,,Andres Gimenez,665926,1,1,1,1.00,1,1,8,.333,.666,Martin,663436,3,,.333,,1,2022
+,2,.500,1.000,,Andres Gimenez,665926,1,,,,1,1,9,.500,1.000,Martin,663436,2,,.500,1,1,2024
+,1,1.000,1.000,,Bo Bichette,666182,1,,,,1,,3,1.000,2.000,Martin,663436,1,1,1.000,,1,2022
+,,.000,.---,1,Vladimir Guerrero Jr.,665489,1,,,,,,7,1.000,1.000,Martin,663436,1,,.000,,,2022
