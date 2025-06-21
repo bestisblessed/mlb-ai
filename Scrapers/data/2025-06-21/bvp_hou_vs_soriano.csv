@@ -1,0 +1,6 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+1,3,3.00,.667,.500,,Christian Walker,572233,1,,0.00,2,1,,9,.667,2.334,Soriano,667755,3,1,,1.667,,5,2024
+,2,,.500,.500,,Mauricio Dubon,643289,2,1,1.00,1,,,4,.500,1.000,Soriano,667755,2,,,.500,,1,2023
+2,2,,.000,.000,,Isaac Paredes,670623,2,,0.00,,,2,9,.000,.000,Soriano,667755,2,,,.000,,,2023
+2,2,,.000,.000,1,Isaac Paredes,670623,2,,0.00,,,2,18,.250,.250,Soriano,667755,4,1,1,.000,1,,2024
+,1,,.000,.000,,Jeremy Pena,665161,1,1,1.00,,,3,3,.000,.000,Soriano,667755,1,,,.000,,,2023
