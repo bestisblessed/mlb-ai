@@ -1,0 +1,9 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+,2,,.500,.500,,Andrew Knizner,668800,1,1,1.00,1,,1,11,.500,1.000,Giolito,608337,2,1,,.500,,1,2020
+,2,,.000,.000,,Mike Yastrzemski,573262,1,1,1.00,,,3,9,.000,.000,Giolito,608337,2,,,.000,1,,2022
+,3,,.333,1.000,,Willy Adames,642715,1,,,1,,1,13,.333,.666,Giolito,608337,3,,,.333,2,1,2019
+,2,,.000,.---,1,Willy Adames,642715,1,,,,,2,17,.333,.333,Giolito,608337,3,,,.000,2,,2021
+1,4,,.000,.000,1,Rafael Devers,646240,2,2,2.00,,,4,25,.167,.167,Giolito,608337,6,2,1,.000,2,,2019
+,1,,1.000,1.000,1,Rafael Devers,646240,1,,,1,,,11,1.000,2.000,Giolito,608337,2,1,,1.000,,1,2021
+2,3,,.000,.000,,Rafael Devers,646240,1,,0.00,,,4,10,.000,.000,Giolito,608337,3,,,.000,1,,2022
+1,3,3.00,.333,.000,,Rafael Devers,646240,1,,0.00,1,1,1,19,.333,1.666,Giolito,608337,3,2,,1.333,1,4,2023
