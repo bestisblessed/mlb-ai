@@ -1,0 +1,12 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+4,10,,.200,.222,2,LaMonte Wade Jr,664774,2,5,1,3,0.75,2,,2,47,.333,.733,Buehler,621111,12,,.400,1,4,2021
+,1,1.00,1.000,.---,1,Logan O'Hoppe,681351,,1,,,,1,1,,10,1.000,5.000,Buehler,621111,2,1,4.000,,4,2024
+1,2,,.000,.000,,Taylor Ward,621493,,1,,,0.00,,,,6,.000,.000,Buehler,621111,2,,.000,1,,2020
+1,3,3.00,.333,.000,,Taylor Ward,621493,,1,,,0.00,1,1,1,10,.333,1.666,Buehler,621111,3,1,1.333,1,4,2024
+1,3,,.333,.333,,Jo Adell,666176,1,1,,1,1.00,1,,,5,.333,1.000,Buehler,621111,3,,.667,,2,2021
+1,2,,.000,.000,,Jo Adell,666176,,1,,,0.00,,,1,5,.000,.000,Buehler,621111,2,,.000,1,,2024
+,3,,.667,.667,,Zach Neto,687263,,1,,1,1.00,2,,,13,.667,1.334,Buehler,621111,3,,.667,,2,2024
+1,3,,.000,.000,,Nolan Schanuel,694384,,1,,1,1.00,,,2,16,.000,.000,Buehler,621111,3,,.000,1,,2024
+1,3,,.333,.500,,Mike Trout,545361,,1,,,0.00,1,,1,12,.333,.666,Buehler,621111,3,,.333,1,1,2018
+,2,2.00,.500,.000,1,Mike Trout,545361,,1,,1,1.00,1,1,1,18,.667,2.667,Buehler,621111,3,3,2.000,,4,2020
+,2,,.500,1.000,,Luis Rengifo,650859,,1,,,,1,,,8,.500,1.000,Buehler,621111,2,,.500,1,1,2020
