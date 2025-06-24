@@ -1,0 +1,11 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,triples,year
+,1,,1.000,1.000,,Victor Caratini,605170,,1,,,,1,,,2,1.000,2.000,Suarez,624133,1,,1.000,,1,,2019
+,1,,.000,.---,,Victor Caratini,605170,,1,,,,,,1,5,.000,.000,Suarez,624133,1,,.000,1,,,2021
+1,4,,.000,.000,1,Victor Caratini,605170,,2,1,3,3.00,,,2,16,.200,.200,Suarez,624133,5,,.000,,,,2022
+,2,,.500,1.000,,Victor Caratini,605170,,1,,,,1,,3,5,.500,1.000,Suarez,624133,2,,.500,1,1,,2023
+,2,,1.000,1.000,,Jose Altuve,514888,1,1,,,,2,,,6,1.000,2.500,Suarez,624133,2,,1.500,,3,,2022
+,2,2.00,.500,.000,,Jeremy Pena,665161,,1,,1,1.00,1,1,1,8,.500,2.500,Suarez,624133,2,2,2.000,,4,,2022
+1,3,,.333,.500,,Christian Walker,572233,,2,,,0.00,1,,1,9,.333,.666,Suarez,624133,3,,.333,1,1,,2019
+1,4,,.250,.333,2,Christian Walker,572233,1,2,,1,1.00,1,,1,28,.500,1.000,Suarez,624133,6,,.500,1,2,,2021
+1,4,,.750,.750,1,Christian Walker,572233,1,2,,,0.00,3,,3,16,.800,2.300,Suarez,624133,5,1,1.500,,6,1,2022
+2,4,,.000,.000,1,Christian Walker,572233,,2,,1,0.50,,,3,22,.200,.200,Suarez,624133,5,,.000,1,,,2023
