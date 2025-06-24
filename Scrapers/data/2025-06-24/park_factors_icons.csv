@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+777379,Coors Field8:40LAD @ COL,"OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png","OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind"
+777385,Great American BP7:10NYY @ CIN,"OutCenter.svg,OutCenter.svg,OutRightCenter.svg,Over90.png,HighP.png","OutCenter.svg,OutCenter.svg,OutRightCenter.svg,≥90°F,High Pressure"
+777378,Kauffman Stadium7:40TB  @ KC,"OutLeft.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png,Over90.png,HighP.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Moderate Wind,≥90°F,High Pressure"
+777384,Progressive Field6:40TOR @ CLE,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,From83to89.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,83–89°F,High Pressure"
+777380,Oriole Park6:35TEX @ BAL,"InLeftMiddle.svg,InLeft.svg,InRightCenter.svg,Over90.png","InLeftMiddle.svg,InLeft.svg,InRightCenter.svg,≥90°F"
+777383,Rate Field7:40ARI @ CHW,"OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,LightWind.png,From83to89.png","OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,Light Breeze,83–89°F"
+777375,Target Field7:40SEA @ MIN,"InLeftCenter.svg,InRightCenter.svg,InCenter.svg,From76to82.png,HighP.png","InLeftCenter.svg,InRightCenter.svg,InCenter.svg,76–82°F,High Pressure"
+777386,Comerica Park6:40ATH @ DET,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutCenter.svg,LightWind.png,Over90.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutCenter.svg,Light Breeze,≥90°F"
+777376,Angel Stadium9:38BOS @ LAA,"OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png","OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze"
+777372,Petco Park9:40WAS @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,HighH.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,High Humidity"
+777377,Daikin Park8:10PHI @ HOU,RoofClosed.png,Roof Closed
+777387,Citi Field7:10ATL @ NYM,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,Over90.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,≥90°F"
+777373,Busch Stadium7:45CHC @ STL,"InLeft.svg,InLeftCenter.svg,InRightCenter.svg,LightWind.png,Over90.png,HighP.png","InLeft.svg,InLeftCenter.svg,InRightCenter.svg,Light Breeze,≥90°F,High Pressure"
+777364,Oracle Park9:45MIA @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,Under55.png,HighH.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,Under55.png,High Humidity"
+777374,American Family Fld7:40PIT @ MIL,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,HighH.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,High Humidity,High Pressure"
