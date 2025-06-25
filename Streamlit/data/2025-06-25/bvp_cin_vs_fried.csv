@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+2,1,.000,.000,,Tyler Stephenson,663886,1,,0.00,1,,,5,.333,.333,Fried,608331,3,1,1,.000,,,2022
+,3,.333,.500,,Connor Joe,656582,1,1,1.00,,1,1,18,.333,.666,Fried,608331,3,,,.333,1,1,2022
+2,2,.000,.000,,Connor Joe,656582,1,,0.00,,,,7,.000,.000,Fried,608331,2,,,.000,,,2023
+,2,.500,.500,1,Connor Joe,656582,1,1,1.00,,1,,17,.667,1.167,Fried,608331,3,,,.500,,1,2024
