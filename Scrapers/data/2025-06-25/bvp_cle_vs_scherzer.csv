@@ -1,0 +1,17 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hitbypitch,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,3,.000,.000,,Nolan Jones,666134,,1,,,0.00,,,1,15,.000,.000,Scherzer,453286,3,,.000,2,,2023
+1,3,.333,.500,,Steven Kwan,680757,,1,,,0.00,,1,1,20,.333,.666,Scherzer,453286,3,,.333,1,1,2023
+,3,.000,.000,,Jose Ramirez,608070,,1,,1,1.00,,,2,15,.000,.000,Scherzer,453286,3,,.000,2,,2014
+,3,.333,.333,,Jose Ramirez,608070,1,1,,2,2.00,,1,,10,.333,1.000,Scherzer,453286,3,1,.667,,2,2016
+2,2,.000,.000,1,Jose Ramirez,608070,,1,,,0.00,,,1,12,.333,.333,Scherzer,453286,3,,.000,,,2023
+1,2,.000,.000,,Gabriel Arias,672356,,1,,,0.00,,,,10,.000,.000,Scherzer,453286,2,,.000,1,,2023
+1,1,.000,.000,2,Carlos Santana,467793,,1,,,0.00,,,1,14,.667,.667,Scherzer,453286,3,,.000,,,2010
+4,11,.091,.125,1,Carlos Santana,467793,,4,1,3,0.75,,1,6,48,.167,.258,Scherzer,453286,12,,.091,3,1,2011
+4,8,.125,.125,1,Carlos Santana,467793,,3,,3,0.75,,1,5,31,.222,.347,Scherzer,453286,9,1,.125,,1,2012
+4,7,.143,.143,2,Carlos Santana,467793,1,3,,2,0.50,,1,1,45,.333,.619,Scherzer,453286,9,1,.286,,2,2013
+6,12,.000,.000,1,Carlos Santana,467793,,4,,1,0.17,,,11,54,.077,.077,Scherzer,453286,13,,.000,5,,2014
+1,3,.000,.000,,Carlos Santana,467793,,1,,,0.00,,,,14,.000,.000,Scherzer,453286,3,,.000,2,,2016
+4,8,.125,.200,,Carlos Santana,467793,1,3,,,0.00,,1,2,35,.125,.375,Scherzer,453286,8,,.250,3,2,2018
+1,2,.000,.000,,Carlos Santana,467793,,1,,,0.00,,,3,7,.000,.000,Scherzer,453286,2,,.000,1,,2023
+,1,.000,.---,1,Lane Thomas,657041,,1,,,,,,,10,.500,.500,Scherzer,453286,2,,.000,1,,2022
+,5,.000,.000,,Lane Thomas,657041,,2,,1,1.00,1,,,30,.167,.167,Scherzer,453286,6,,.000,4,,2023

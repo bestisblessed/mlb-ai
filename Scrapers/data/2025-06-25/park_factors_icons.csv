@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+777358,Coors Field8:40LAD @ COL,"OutLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","OutLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+777367,Great American BP7:10NYY @ CIN,"OutLeftCenter.svg,OutRight.svg,OutRightCenter.svg,From83to89.png","OutLeftCenter.svg,OutRight.svg,OutRightCenter.svg,83–89°F"
+777359,Kauffman Stadium7:40TB  @ KC,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeft.svg,ModerateWind.png,Over90.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeft.svg,Moderate Wind,≥90°F"
+777365,Oriole Park6:35TEX @ BAL,"InRightCenter.svg,OutLeftMiddle.svg,OutLeft.svg,Over90.png","InRightCenter.svg,OutLeftMiddle.svg,OutLeft.svg,≥90°F"
+777363,Target Field7:40SEA @ MIN,"InRightCenter.svg,InCenter.svg,InCenter.svg,LightWind.png,From76to82.png,HighH.png","InRightCenter.svg,InCenter.svg,InCenter.svg,Light Breeze,76–82°F,High Humidity"
+777368,Progressive Field6:40TOR @ CLE,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,HighH.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,High Humidity"
+777371,Comerica Park6:40ATH @ DET,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,From76to82.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,76–82°F"
+777370,Rate Field2:10ARI @ CHW,"FromLeft.svg,FromLeft.svg,FromLeft.svg,From76to82.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,76–82°F"
+777362,Angel Stadium4:07BOS @ LAA,"OutCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+777357,Busch Stadium7:45CHC @ STL,"InRight.svg,InRight.svg,FromRight.svg,LightWind.png,From83to89.png","InRight.svg,InRight.svg,FromRight.svg,Light Breeze,83–89°F"
+777361,American Family Fld2:10PIT @ MIL,RoofClosed.png,Roof Closed
+777360,Petco Park4:10WAS @ SD,"OutRightMiddle.svg,FromLeft.svg,FromLeft.svg,LightWind.png","OutRightMiddle.svg,FromLeft.svg,FromLeft.svg,Light Breeze"
+777366,Daikin Park8:10PHI @ HOU,RoofClosed.png,Roof Closed
+777369,Citi Field7:10ATL @ NYM,"InLeft.svg,InCenter.svg,InRightCenter.svg,LightWind.png,Over90.png","InLeft.svg,InCenter.svg,InRightCenter.svg,Light Breeze,≥90°F"
+777355,Oracle Park9:45MIA @ SF,"OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,ModerateWind.png,Under55.png,HighH.png","OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,Moderate Wind,Under55.png,High Humidity"
