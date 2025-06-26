@@ -1,0 +1,10 @@
+game_id,game,icons,icon_labels
+777344,Coors Field3:10LAD @ COL,"FromRight.svg,FromRight.svg,FromRight.svg,LightWind.png,From76to82.png","FromRight.svg,FromRight.svg,FromRight.svg,Light Breeze,76–82°F"
+777353,Kauffman Stadium2:10TB  @ KC,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,Over90.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,≥90°F"
+777354,Progressive Field1:10TOR @ CLE,"InCenter.svg,InCenter.svg,InCenter.svg,LightWind.png,HighH.png","InCenter.svg,InCenter.svg,InCenter.svg,Light Breeze,High Humidity"
+777351,Comerica Park1:10ATH @ DET,"InLeft.svg,InLeftCenter.svg,InCenter.svg,LightWind.png,From76to82.png","InLeft.svg,InLeftCenter.svg,InCenter.svg,Light Breeze,76–82°F"
+777356,Target Field1:10SEA @ MIN,"FromLeft.svg,FromLeft.svg,OutRightMiddle.svg,HighH.png","FromLeft.svg,FromLeft.svg,OutRightMiddle.svg,High Humidity"
+777348,Busch Stadium2:15CHC @ STL,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png,Over90.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze,≥90°F"
+777350,Daikin Park2:10PHI @ HOU,RoofClosed.png,Roof Closed
+777347,Oracle Park3:45MIA @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,Under55.png,HighH.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,Under55.png,High Humidity"
+777352,Citi Field7:10ATL @ NYM,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,HighH.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,High Humidity,High Pressure"
