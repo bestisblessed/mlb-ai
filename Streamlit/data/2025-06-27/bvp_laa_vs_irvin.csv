@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,6,.333,.667,,LaMonte Wade Jr,664774,2,,0.00,2,1,23,.333,.666,Irvin,663623,6,.333,3,2,2023
+1,2,.500,.500,1,LaMonte Wade Jr,664774,1,,0.00,1,,15,.667,1.167,Irvin,663623,3,.500,,1,2024
+2,3,.000,.000,,LaMonte Wade Jr,664774,1,1,0.50,,1,9,.000,.000,Irvin,663623,3,.000,,,2025

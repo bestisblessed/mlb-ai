@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+777349,Progressive Field7:10STL @ CLE,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,From76to82.png,HighH.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,76–82°F,High Humidity"
+777346,Great American BP7:10SD  @ CIN,"OutLeft.svg,OutLeft.svg,OutLeft.svg,LightWind.png,Over90.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Light Breeze,≥90°F"
+777334,Comerica Park7:10MIN @ DET,"FromRight.svg,FromRight.svg,OutLeftMiddle.svg,LightWind.png,From76to82.png,HighH.png","FromRight.svg,FromRight.svg,OutLeftMiddle.svg,Light Breeze,76–82°F,High Humidity"
+777335,Kauffman Stadium8:10LAD @ KC,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeft.svg,LightWind.png,From83to89.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeft.svg,Light Breeze,83–89°F"
+777341,PNC Park6:40NYM @ PIT,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,From76to82.png,HighH.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,76–82°F,High Humidity"
+777332,Chase Field9:40MIA @ ARI,RoofClosed.png,Roof Closed
+777345,Fenway Park7:10TOR @ BOS,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,HighP.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,High Pressure"
+777343,Oriole Park7:05TB  @ BAL,"InRight.svg,InRight.svg,InRightMiddle.svg,LightWind.png,HighH.png,HighP.png","InRight.svg,InRight.svg,InRightMiddle.svg,Light Breeze,High Humidity,High Pressure"
+777331,Angel Stadium9:38WAS @ LAA,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,76–82°F"
+777342,Truist Park7:15PHI @ ATL,"OutLeft.svg,OutLeft.svg,OutCenter.svg,LightWind.png,Over90.png","OutLeft.svg,OutLeft.svg,OutCenter.svg,Light Breeze,≥90°F"
+777338,Rate Field7:40SF  @ CHW,"OutRight.svg,FromLeft.svg,InLeftMiddle.svg,HighH.png","OutRight.svg,FromLeft.svg,InLeftMiddle.svg,High Humidity"
+777340,Globe Life Field8:05SEA @ TEX,RoofClosed.png,Roof Closed
+777339,American Family Fld8:10COL @ MIL,"OutRightCenter.svg,OutRight.svg,FromLeft.svg,HighH.png","OutRightCenter.svg,OutRight.svg,FromLeft.svg,High Humidity"
+777337,Yankee Stadium7:05ATH @ NYY,"InRight.svg,InRight.svg,InRight.svg,LightWind.png,HighP.png","InRight.svg,InRight.svg,InRight.svg,Light Breeze,High Pressure"
+777336,Daikin Park8:10CHC @ HOU,RoofClosed.png,Roof Closed
