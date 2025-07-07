@@ -1,0 +1,11 @@
+game_id,game,icons,icon_labels
+777209,Fenway Park7:10COL @ BOS,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F"
+777208,Great American BP7:10MIA @ CIN,"OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,From76to82.png","OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,76–82°F"
+777204,Kauffman Stadium7:40PIT @ KC,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,LightWind.png,From83to89.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,Light Breeze,83–89°F"
+777211,Comerica Park6:40TB  @ DET,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,HighH.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,High Humidity"
+777200,Angel Stadium9:38TEX @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+777212,Rate Field7:40TOR @ CHW,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze"
+777202,Daikin Park8:10CLE @ HOU,RoofClosed.png,Roof Closed
+777203,Petco Park9:40ARI @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+777201,American Family Fld7:40LAD @ MIL,"InLeft.svg,InLeft.svg,InLeft.svg,LightWind.png","InLeft.svg,InLeft.svg,InLeft.svg,Light Breeze"
+777199,Oracle Park9:45PHI @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,HighH.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,High Humidity"
