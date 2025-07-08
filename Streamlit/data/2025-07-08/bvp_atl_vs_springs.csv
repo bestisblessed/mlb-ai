@@ -1,0 +1,14 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,intentionalwalks,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,1.000,1.000,,Ozzie Albies,645277,,1,,,,1,,,2,1.000,2.000,Springs,605488,1,1,1.000,,1,2020
+1,2,.000,.000,1,Austin Riley,663586,,3,1,1,1.00,,1,1,6,.333,.333,Springs,605488,3,,.000,,,2020
+1,1,.000,.000,,Austin Riley,663586,,1,,,0.00,,,,5,.000,.000,Springs,605488,1,,.000,,,2021
+,2,.000,.000,,Nick Allen,669397,,1,,1,1.00,,,,5,.000,.000,Springs,605488,2,,.000,1,,2023
+2,2,.000,.000,,Matt Olson,621566,,2,,,0.00,,,3,11,.000,.000,Springs,605488,2,,.000,,,2018
+1,2,.000,.000,,Matt Olson,621566,,2,,,0.00,,,3,6,.000,.000,Springs,605488,2,,.000,1,,2019
+1,3,.333,.500,,Matt Olson,621566,1,3,,,0.00,1,,,9,.333,1.000,Springs,605488,3,,.667,1,2,2021
+1,2,.500,.500,1,Jurickson Profar,595777,,3,,,0.00,1,,1,9,.667,1.167,Springs,605488,3,,.500,,1,2019
+,1,.000,.---,,Marcell Ozuna,542303,,1,,,,,,,6,.000,.000,Springs,605488,1,,.000,1,,2019
+1,2,.000,.000,,Marcell Ozuna,542303,,2,,,0.00,,,1,16,.000,.000,Springs,605488,2,,.000,1,,2020
+,1,1.000,1.000,,Sean Murphy,669221,1,1,,,,1,,,6,1.000,3.000,Springs,605488,1,,2.000,,2,2019
+1,1,.000,.000,,Sean Murphy,669221,,1,,,0.00,,,,3,.000,.000,Springs,605488,1,,.000,,,2021
+1,3,.333,.500,,Sean Murphy,669221,,3,,,0.00,1,,2,7,.333,.666,Springs,605488,3,,.333,1,1,2022
