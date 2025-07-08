@@ -2,6 +2,11 @@
 # To run the script at 12:01 AM every day, add this line to your crontab:
 # 1 0 * * * /home/trinity/mlb-ai/Scrapers/run_scraper.sh
 
+set -e
+DD_METRIC_SUCCESS="mlb_scraper.success:1|g"
+DD_METRIC_FAILURE="mlb_scraper.failure:1|g"
+trap 'echo "$DD_METRIC_SUCCESS" | nc -u -w0 127.0.0.1 8125' EXIT
+
 cd /home/trinity/mlb-ai/Scrapers
 
 # ===========================
@@ -75,7 +80,6 @@ echo "---------------------------------------" >> scraper.log 2>&1
 echo "---------------------------------------" >> scraper.log 2>&1
 
 
-
 # # Check if the last run had an error (looking for specific error messages)
 # if grep -q "AttributeError: 'NoneType' object has no attribute 'find_all'" "scraper.log"; then
 #     echo "$(date): Found login error in previous run, running signin script first" >> /home/trinity/mlb-ai/Scrapers/scraper.log 2>&1
@@ -84,3 +88,9 @@ echo "---------------------------------------" >> scraper.log 2>&1
 #     # Wait a bit after signin
 #     sleep 5
 # fi
+#
+#
+
+trap 'echo "$DD_METRIC_FAILURE" | nc -u -w0 127.0.0.1 8125' ERR
+
+
