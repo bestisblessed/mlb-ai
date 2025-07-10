@@ -1,0 +1,12 @@
+game_id,game,icons,icon_labels
+777168,Great American BP5:10MIA @ CIN,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,From83to89.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,83–89°F"
+777181,Oriole Park5:05NYM @ BAL,"OutRight.svg,OutRightCenter.svg,InLeftMiddle.svg,From83to89.png","OutRight.svg,OutRightCenter.svg,InLeftMiddle.svg,83–89°F"
+777165,Oriole Park12:05NYM @ BAL,"OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,From83to89.png","OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,83–89°F"
+777156,Sutter Health Park9:05ATL @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,Over90.png,LowH.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,≥90°F,Low Humidity,Low Pressure"
+777166,Target Field1:10CHC @ MIN,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,From76to82.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,76–82°F"
+777169,Yankee Stadium7:05SEA @ NYY,"FromRight.svg,FromRight.svg,OutLeftMiddle.svg,From76to82.png","FromRight.svg,FromRight.svg,OutLeftMiddle.svg,76–82°F"
+777159,Angel Stadium9:38TEX @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+777164,Rate Field7:40CLE @ CHW,"InLeft.svg,InLeft.svg,InLeft.svg,LightWind.png,HighH.png","InLeft.svg,InLeft.svg,InLeft.svg,Light Breeze,High Humidity"
+777170,Fenway Park7:10TB  @ BOS,"InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,LightWind.png,HighH.png","InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,Light Breeze,High Humidity"
+777167,Busch Stadium7:45WAS @ STL,"FromRight.svg,FromRight.svg,FromRight.svg,LightWind.png,From83to89.png","FromRight.svg,FromRight.svg,FromRight.svg,Light Breeze,83–89°F"
+777158,Petco Park9:40ARI @ SD,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze"
