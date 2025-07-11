@@ -1,0 +1,15 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+,2,.500,1.000,,Matt Olson,621566,,1,,,1,1,8,.500,1.000,Liberatore,669461,2,.500,1,1,2022
+1,2,.000,.000,,Matt Olson,621566,,1,,0.00,,,10,.000,.000,Liberatore,669461,2,.000,1,,2024
+2,3,.000,.000,,Ozzie Albies,645277,,1,,0.00,,1,13,.000,.000,Liberatore,669461,3,.000,1,,2024
+,3,.000,.000,,Jurickson Profar,595777,,3,1,1.00,,,12,.000,.000,Liberatore,669461,3,.000,2,,2024
+2,2,.000,.000,,Ronald Acuna Jr.,660670,,1,,0.00,,,5,.000,.000,Liberatore,669461,2,.000,,,2022
+,1,.000,.000,,Ronald Acuna Jr.,660670,,1,1,1.00,,,4,.000,.000,Liberatore,669461,1,.000,,,2023
+,2,.000,.000,,Michael Harris II,671739,,1,2,2.00,,3,9,.000,.000,Liberatore,669461,2,.000,,,2022
+,1,.000,.000,,Michael Harris II,671739,,1,1,1.00,,,2,.000,.000,Liberatore,669461,1,.000,,,2023
+,2,.500,1.000,,Nick Allen,669397,,1,,,1,2,9,.500,1.000,Liberatore,669461,2,.500,1,1,2023
+,,.000,.---,1,Nick Allen,669397,,1,,,,,4,1.000,1.000,Liberatore,669461,1,.000,,,2024
+,1,.000,.---,1,Austin Riley,663586,,1,,,,1,10,.500,.500,Liberatore,669461,2,.000,1,,2022
+,1,.000,.000,1,Austin Riley,663586,,1,1,1.00,,,12,.500,.500,Liberatore,669461,2,.000,,,2024
+1,2,.500,.500,,Marcell Ozuna,542303,1,1,,0.00,1,,9,.500,1.500,Liberatore,669461,2,1.000,,2,2022
+1,2,.000,.000,,Marcell Ozuna,542303,,1,,0.00,,,8,.000,.000,Liberatore,669461,2,.000,1,,2024
