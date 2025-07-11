@@ -1,0 +1,6 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,2,.000,.000,,Miguel Vargas,678246,,1,0.00,,1,9,.000,.000,Williams,668909,2,,.000,1,,2025
+1,2,.500,.500,,Lenyn Sosa,672820,1,1,0.00,1,2,5,.500,1.500,Williams,668909,2,,1.000,,2,2024
+1,2,.500,.500,,Lenyn Sosa,672820,,1,0.00,1,,10,.500,1.000,Williams,668909,2,,.500,,1,2025
+2,3,.333,.333,,Andrew Benintendi,643217,1,1,0.00,1,,9,.333,1.000,Williams,668909,3,2,.667,,2,2024
+,2,.500,1.000,1,Luis Robert,673357,,1,,1,1,12,.667,1.167,Williams,668909,3,,.500,1,1,2024

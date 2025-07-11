@@ -1,0 +1,14 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,8,,.375,.429,,Cody Bellinger,641355,,3,1,3,3.00,3,,6,31,.375,.750,Flexen,623167,8,,.375,1,3,2023
+1,2,,.000,.000,2,Cody Bellinger,641355,,2,,,0.00,,,,19,.500,.500,Flexen,623167,4,,.000,1,,2024
+1,3,,.000,.000,2,Giancarlo Stanton,519317,,3,,1,1.00,,,1,24,.400,.400,Flexen,623167,5,,.000,1,,2017
+1,3,,.667,.667,,Giancarlo Stanton,519317,,1,,,0.00,2,,,11,.667,1.334,Flexen,623167,3,,.667,,2,2021
+2,2,,.000,.000,,Giancarlo Stanton,519317,,1,,,0.00,,,,3,.000,.000,Flexen,623167,2,,.000,,,2024
+,3,3.00,.667,.500,,Aaron Judge,592450,1,1,,1,1.00,2,1,,17,.667,2.667,Flexen,623167,3,1,2.000,,6,2021
+,,,.000,.---,1,Aaron Judge,592450,,1,,,,,,,6,1.000,1.000,Flexen,623167,1,,.000,,,2023
+,3,3.00,.333,.---,,Aaron Judge,592450,,1,,,,1,1,1,12,.333,1.666,Flexen,623167,3,2,1.333,2,4,2024
+,1,,1.000,1.000,,Anthony Volpe,683011,,1,,,,1,,,3,1.000,2.000,Flexen,623167,1,,1.000,,1,2023
+2,3,,.333,.333,,Anthony Volpe,683011,1,1,,,0.00,1,,1,12,.333,1.000,Flexen,623167,3,,.667,,2,2024
+,3,,.333,.500,,Paul Goldschmidt,502671,,1,,1,1.00,1,,4,8,.333,.666,Flexen,623167,3,,.333,1,1,2017
+2,4,,.000,.000,,Paul Goldschmidt,502671,,2,,1,0.50,,,3,14,.000,.000,Flexen,623167,4,,.000,1,,2019
+1,5,,.600,.600,1,Paul Goldschmidt,502671,,2,1,1,1.00,3,,3,23,.667,1.267,Flexen,623167,6,1,.600,,3,2023

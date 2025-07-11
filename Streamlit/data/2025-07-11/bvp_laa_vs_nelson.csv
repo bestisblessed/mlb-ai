@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,3,.333,.500,,Luis Rengifo,650859,1,1,,0.00,,1,,11,.333,1.000,Nelson,669194,3,.667,1,2,2023
+1,2,.500,.500,,Taylor Ward,621493,1,1,,0.00,1,1,1,8,.667,1.667,Nelson,669194,3,1.000,,2,2023
+,2,.000,.---,1,Mike Trout,545361,,1,,,,,,12,.333,.333,Nelson,669194,3,.000,2,,2023
+2,4,.250,.250,,Jorge Soler,624585,,2,1,0.50,,1,,8,.250,.500,Nelson,669194,4,.250,,1,2024
