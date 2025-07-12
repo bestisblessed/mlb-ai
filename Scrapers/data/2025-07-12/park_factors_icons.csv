@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+777140,Great American BP4:10COL @ CIN,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,Over90.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,≥90°F"
+777132,Sutter Health Park10:05TOR @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,Over90.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,≥90°F,Low Pressure"
+777144,Fenway Park4:10TB  @ BOS,"InRight.svg,InRightMiddle.svg,InRightMiddle.svg,LightWind.png,HighH.png,HighP.png","InRight.svg,InRightMiddle.svg,InRightMiddle.svg,Light Breeze,High Humidity,High Pressure"
+777138,Rate Field4:10CLE @ CHW,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,ModerateWind.png,From83to89.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Moderate Wind,83–89°F"
+777141,Oriole Park4:05MIA @ BAL,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,LightWind.png,Over90.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Light Breeze,≥90°F"
+777136,Kauffman Stadium4:10NYM @ KC,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,From76to82.png,HighH.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,76–82°F,High Humidity"
+777134,Target Field2:10PIT @ MIN,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,ModerateWind.png,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Moderate Wind,76–82°F"
+777142,Yankee Stadium1:05CHC @ NYY,"FromRight.svg,FromRight.svg,FromRight.svg,ModerateWind.png,From76to82.png","FromRight.svg,FromRight.svg,FromRight.svg,Moderate Wind,76–82°F"
+777131,Angel Stadium9:38ARI @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze"
+777133,Busch Stadium2:15ATL @ STL,"OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,ModerateWind.png,Over90.png","OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,Moderate Wind,≥90°F"
+777135,American Family Fld4:10WAS @ MIL,RoofClosed.png,Roof Closed
+777145,Comerica Park1:10SEA @ DET,"InRight.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,Over90.png","InRight.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,≥90°F"
+777126,Petco Park7:35PHI @ SD,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze"
+777137,Daikin Park7:35TEX @ HOU,RoofClosed.png,Roof Closed
+777127,Oracle Park4:05LAD @ SF,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,HighH.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,High Humidity"
