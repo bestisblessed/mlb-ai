@@ -1,0 +1,8 @@
+game_id,game,icons,icon_labels
+777112,Nationals Park6:45SD  @ WAS,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From83to89.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,83–89°F"
+777106,Citizens Bank Park6:45LAA @ PHI,"FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,Over90.png","FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,≥90°F"
+777107,PNC Park6:40CHW @ PIT,"OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png,HighH.png","OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F,High Humidity"
+777110,Steinbrenner Field7:35BAL @ TB,"OutRightMiddle.svg,FromLeft.svg,FromLeft.svg,LightWind.png,From83to89.png,HighP.png","OutRightMiddle.svg,FromLeft.svg,FromLeft.svg,Light Breeze,83–89°F,High Pressure"
+777108,Rogers Centre7:07SF  @ TOR,"OutLeftCenter.svg,OutLeft.svg,OutRightCenter.svg","OutLeftCenter.svg,OutLeft.svg,OutRightCenter.svg"
+777098,Globe Life Field8:05DET @ TEX,RoofClosed.png,Roof Closed
+777101,Wrigley Field2:20BOS @ CHC,"InRightMiddle.svg,InRight.svg,InRight.svg,From76to82.png,HighP.png","InRightMiddle.svg,InRight.svg,InRight.svg,76–82°F,High Pressure"
