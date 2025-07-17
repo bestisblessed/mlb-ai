@@ -1,0 +1,16 @@
+game_id,time,away_team,home_team,starter_away,starter_home,runs_away,runs_home,win_away,win_home,ml_away,ml_home,f5_runs_away,f5_runs_home,f5_lead_away,f5_lead_home,total_5_5,total_6_5,total_7_5,total_8_5,total_9_5,total_10_5,total_11_5,total_12_5,under,over,YRFI,lineups_final
+777101,2:20,Boston Red Sox,Chicago Cubs,Lucas Giolito,Colin Rea,4.11,4.25,(+112) 47.2%,52.8% (-112),+105                            (ESPN BET),-120                           (FanDuel),2.45,2.50,(+138) 42.1%,41.8% (+139),-286,-195,-116,+122,+193,+276,+405,+567,"Under 8.5, -115 (ESPN BET)","Over 8.5, -105 (ESPN BET)",YRFI: 50.0% (-100),No
+777107,6:40,Chicago White Sox,Pittsburgh Pirates,,,,,(+) %,% (+),(),(),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777106,6:45,Los Angeles Angels,Philadelphia Phillies,,Jesus Luzardo,,,(+) %,% (+),(),(),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777112,6:45,San Diego Padres,Washington Nationals,,,,,(+) %,% (+),(),(),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777108,7:07,San Francisco Giants,Toronto Blue Jays,,Chris Bassitt,,,(+) %,% (+),(),(),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777109,7:10,Kansas City Royals,Miami Marlins,,,,,(+) %,% (+),-126                           (FanDuel),+108                            (FanDuel),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777111,7:10,Cincinnati Reds,New York Mets,Nick Lodolo,,,,(+) %,% (+),+144                            (FanDuel),-172                           (FanDuel),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777105,7:10,Oakland Athletics,Cleveland Guardians,,Slade Cecconi,,,(+) %,% (+),(),(),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777114,7:15,New York Yankees,Atlanta Braves,,,,,(+) %,% (+),(),(),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777110,7:35,Baltimore Orioles,Tampa Bay Rays,Charlie Morton,Taj Bradley,4.42,4.13,(+100) 49.9%,50.1% (-100),+110                            (ESPN BET),-126                           (FanDuel),2.52,2.45,(+134) 42.8%,41.9% (+139),-286,-196,-121,+113,+175,+246,+359,+513,"Under 7.5, -115 (ESPN BET)","Over 7.5, -105 (ESPN BET)",YRFI: 47.5% (+111),No
+777098,8:05,Detroit Tigers,Texas Rangers,Reese Olson,,,,(+) %,% (+),-126                           (FanDuel),+108                            (FanDuel),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777102,8:40,Minnesota Twins,Colorado Rockies,,Kyle Freeland,,,(+) %,% (+),-162                           (FanDuel),+136                            (FanDuel),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777100,9:40,St. Louis Cardinals,Arizona Diamondbacks,,,,,(+) %,% (+),(),(),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777103,10:10,Milwaukee Brewers,Los Angeles Dodgers,,,,,(+) %,% (+),(),(),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
+777099,10:10,Houston Astros,Seattle Mariners,,,,,(+) %,% (+),(),(),,,(+) %,% (+),+,+,+,+,+,+,+,+,"Under ,  ()","Over ,  ()",YRFI: % (+),No
