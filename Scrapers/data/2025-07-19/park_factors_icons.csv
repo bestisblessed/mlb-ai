@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+777080,Coors Field8:10MIN @ COL,"InRightMiddle.svg,InRight.svg,FromRight.svg,From83to89.png,LowH.png,LowP.png","InRightMiddle.svg,InRight.svg,FromRight.svg,83–89°F,Low Humidity,Low Pressure"
+777104,Progressive Field7:10ATH @ CLE,"OutRight.svg,OutRightCenter.svg,OutRightCenter.svg,ModerateWind.png,From76to82.png","OutRight.svg,OutRightCenter.svg,OutRightCenter.svg,Moderate Wind,76–82°F"
+777091,Nationals Park6:45SD  @ WAS,"InRightMiddle.svg,FromRight.svg,OutLeft.svg,From83to89.png","InRightMiddle.svg,FromRight.svg,OutLeft.svg,83–89°F"
+777089,Citizens Bank Park6:05LAA @ PHI,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png,From76to82.png,HighH.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze,76–82°F,High Humidity"
+777095,Steinbrenner Field7:05BAL @ TB,"OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,ModerateWind.png,Over90.png,HighP.png","OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,Moderate Wind,≥90°F,High Pressure"
+777096,Wrigley Field7:15BOS @ CHC,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,From83to89.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,83–89°F,Low Pressure"
+777081,Chase Field7:15STL @ ARI,RoofClosed.png,Roof Closed
+777090,PNC Park6:40CHW @ PIT,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,From76to82.png,HighH.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,76–82°F,High Humidity"
+777097,Truist Park7:15NYY @ ATL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,Over90.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,≥90°F"
+777094,Rogers Centre3:07SF  @ TOR,"OutCenter.svg,OutCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F"
+777085,Dodger Stadium9:10MIL @ LAD,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+777088,Globe Life Field7:05DET @ TEX,RoofClosed.png,Roof Closed
+777093,LoanDepot Park4:10KC  @ MIA,RoofClosed.png,Roof Closed
+777092,Citi Field4:10CIN @ NYM,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,76–82°F"
+777086,T-Mobile Park9:40HOU @ SEA,"OutRight.svg,OutRightMiddle.svg,OutRightMiddle.svg","OutRight.svg,OutRightMiddle.svg,OutRightMiddle.svg"
