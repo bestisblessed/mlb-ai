@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+777072,Coors Field3:10MIN @ COL,"FromRight.svg,InLeftMiddle.svg,FromLeft.svg,LightWind.png,Over90.png,LowH.png","FromRight.svg,InLeftMiddle.svg,FromLeft.svg,Light Breeze,≥90°F,Low Humidity"
+777078,Citizens Bank Park1:35LAA @ PHI,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,Over90.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,≥90°F,Low Pressure"
+777074,PNC Park1:35CHW @ PIT,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,LightWind.png,From83to89.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,Light Breeze,83–89°F"
+777077,Nationals Park1:35SD  @ WAS,"FromLeft.svg,OutRightMiddle.svg,FromLeft.svg,LightWind.png,Over90.png,LowP.png","FromLeft.svg,OutRightMiddle.svg,FromLeft.svg,Light Breeze,≥90°F,Low Pressure"
+777084,Progressive Field1:40ATH @ CLE,"InLeftCenter.svg,InCenter.svg,InCenter.svg,LightWind.png,HighH.png","InLeftCenter.svg,InCenter.svg,InCenter.svg,Light Breeze,High Humidity"
+777071,Chase Field4:10STL @ ARI,RoofClosed.png,Roof Closed
+777076,Steinbrenner Field12:10BAL @ TB,"OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Over90.png,HighP.png","OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,≥90°F,High Pressure"
+777070,Dodger Stadium4:10MIL @ LAD,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,76–82°F"
+777079,Rogers Centre12:05SF  @ TOR,"InCenter.svg,InLeftCenter.svg,InCenter.svg,LightWind.png","InCenter.svg,InLeftCenter.svg,InCenter.svg,Light Breeze"
+777083,Truist Park1:35NYY @ ATL,"OutLeft.svg,OutLeftCenter.svg,OutLeft.svg,ModerateWind.png,Over90.png","OutLeft.svg,OutLeftCenter.svg,OutLeft.svg,Moderate Wind,≥90°F"
+777073,Globe Life Field7:10DET @ TEX,RoofClosed.png,Roof Closed
+777082,LoanDepot Park1:40KC  @ MIA,RoofClosed.png,Roof Closed
+777067,T-Mobile Park4:10HOU @ SEA,"OutCenter.svg,OutCenter.svg,OutRightCenter.svg","OutCenter.svg,OutCenter.svg,OutRightCenter.svg"
+777087,Citi Field1:40CIN @ NYM,"OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,ModerateWind.png,From76to82.png,HighH.png,LowP.png","OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,Moderate Wind,76–82°F,High Humidity,Low Pressure"
+777075,Wrigley Field2:20BOS @ CHC,"InLeft.svg,InLeft.svg,InLeft.svg,LightWind.png,HighH.png","InLeft.svg,InLeft.svg,InLeft.svg,Light Breeze,High Humidity"
