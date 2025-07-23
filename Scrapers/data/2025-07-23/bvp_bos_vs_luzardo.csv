@@ -1,0 +1,10 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,intentionalwalks,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,,.000,.000,,Alex Bregman,608324,1,,1,1.00,,,,,2,.000,.000,Luzardo,666200,1,,.000,,,2019
+,2,,.000,.000,1,Alex Bregman,608324,1,1,2,2.00,,,,1,17,.333,.333,Luzardo,666200,3,,.000,,,2020
+1,3,3.00,.333,.000,,Alex Bregman,608324,1,,,0.00,1,1,,2,8,.333,1.666,Luzardo,666200,3,3,1.333,1,4,2021
+1,3,3.00,.333,.000,,Alex Bregman,608324,1,,,0.00,1,1,,1,6,.333,1.666,Luzardo,666200,3,1,1.333,1,4,2023
+,1,,.000,.000,1,Rob Refsnyder,608701,1,,1,1.00,,,,1,11,.500,.500,Luzardo,666200,2,,.000,,,2020
+1,3,,.000,.000,,Rob Refsnyder,608701,1,,,0.00,,,,1,9,.000,.000,Luzardo,666200,3,,.000,2,,2023
+2,3,,.000,.000,,Abraham Toro,647351,1,,1,0.50,,,,,12,.000,.000,Luzardo,666200,3,,.000,,,2022
+,1,,1.000,1.000,1,Trevor Story,596115,1,,,,1,,1,,4,1.000,2.000,Luzardo,666200,2,,1.000,,1,2020
+,3,,.667,.667,,Trevor Story,596115,1,,1,1.00,2,,,,10,.667,1.334,Luzardo,666200,3,,.667,,2,2021
