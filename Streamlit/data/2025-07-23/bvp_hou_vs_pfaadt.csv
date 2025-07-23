@@ -1,0 +1,4 @@
+atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,totalbases,year
+2,1.000,1.000,,Mauricio Dubon,643289,,1,,,2,,4,1.000,2.000,Pfaadt,694297,2,1,1.000,2,2024
+3,.667,.667,,Jose Altuve,514888,1,1,1,1.00,2,1,9,.667,1.667,Pfaadt,694297,3,,1.000,3,2024
+2,.500,.500,1,Yainer Diaz,673237,1,1,1,1.00,1,1,9,.667,1.667,Pfaadt,694297,3,,1.000,2,2024
