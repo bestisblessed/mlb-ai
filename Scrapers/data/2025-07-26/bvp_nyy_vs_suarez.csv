@@ -1,0 +1,13 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,3,.333,.500,Paul Goldschmidt,502671,1,1,,1,1.00,1,,15,.333,1.000,Suarez,624133,3,1,.667,1,2,2023
+,1,.000,.---,Paul Goldschmidt,502671,,1,,,,,,5,.000,.000,Suarez,624133,1,,.000,1,,2024
+,1,.000,.000,Cody Bellinger,641355,,1,1,1,1.00,,1,1,.000,.000,Suarez,624133,1,,.000,,,2019
+,2,.000,.---,Cody Bellinger,641355,,1,,,,,,12,.000,.000,Suarez,624133,2,,.000,2,,2021
+,4,.250,.333,Cody Bellinger,641355,1,2,,2,2.00,1,,29,.250,.750,Suarez,624133,4,2,.500,1,2,2022
+,3,.667,1.000,Cody Bellinger,641355,1,1,,,,2,,10,.667,1.667,Suarez,624133,3,,1.000,1,3,2023
+,1,1.000,1.000,Aaron Judge,592450,,1,,,,1,,6,1.000,2.000,Suarez,624133,1,,1.000,,1,2021
+,1,1.000,1.000,Jazz Chisholm,665862,,1,,,,1,,4,1.000,2.000,Suarez,624133,1,,1.000,,1,2020
+,6,.000,.000,Jazz Chisholm,665862,,3,,3,3.00,,4,18,.000,.000,Suarez,624133,6,,.000,3,,2021
+1,2,.000,.000,Jazz Chisholm,665862,,1,,,0.00,,1,5,.000,.000,Suarez,624133,2,,.000,1,,2023
+,6,.500,.600,Jazz Chisholm,665862,1,2,,2,2.00,3,1,29,.500,1.167,Suarez,624133,6,1,.667,1,4,2024
+,1,.000,.000,Giancarlo Stanton,519317,,1,,1,1.00,,1,2,.000,.000,Suarez,624133,1,,.000,,,2021

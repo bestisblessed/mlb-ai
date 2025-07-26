@@ -1,0 +1,8 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,12,,.250,.429,,Trevor Story,596115,3,5,3,3.00,3,,8,48,.250,.750,Kershaw,477132,12,,.500,5,6,2017
+,3,,.333,1.000,,Trevor Story,596115,,1,,,1,,1,12,.333,.666,Kershaw,477132,3,,.333,2,1,2018
+,2,,.500,1.000,1,Trevor Story,596115,,1,,,1,,,18,.667,1.167,Kershaw,477132,3,,.500,1,1,2019
+1,3,,.333,.500,,Trevor Story,596115,,1,,0.00,1,,1,10,.333,.666,Kershaw,477132,3,,.333,1,1,2020
+,3,,.667,.667,,Trevor Story,596115,,1,1,1.00,2,,1,10,.667,1.334,Kershaw,477132,3,,.667,,2,2021
+,2,,.000,.000,,Rob Refsnyder,608701,,1,1,1.00,,,2,7,.000,.000,Kershaw,477132,2,,.000,1,,2016
+,3,3.00,.333,.000,,Alex Bregman,608324,,1,2,2.00,1,1,1,10,.333,1.666,Kershaw,477132,3,1,1.333,,4,2021

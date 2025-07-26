@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+777012,Fenway Park7:10LAD @ BOS,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From83to89.png,LowP.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,83–89°F,Low Pressure"
+777013,Great American BP7:10TB  @ CIN,"OutCenter.svg,OutCenter.svg,OutLeft.svg,From76to82.png,HighH.png","OutCenter.svg,OutCenter.svg,OutLeft.svg,76–82°F,High Humidity"
+777015,Yankee Stadium7:05PHI @ NYY,"OutRight.svg,FromLeft.svg,OutCenter.svg,LightWind.png,From83to89.png","OutRight.svg,FromLeft.svg,OutCenter.svg,Light Breeze,83–89°F"
+777020,Oriole Park7:05COL @ BAL,"OutRight.svg,OutRightMiddle.svg,FromLeft.svg,Over90.png","OutRight.svg,OutRightMiddle.svg,FromLeft.svg,≥90°F"
+777014,PNC Park6:40ARI @ PIT,"OutRightMiddle.svg,OutRightMiddle.svg,OutLeftCenter.svg,From83to89.png","OutRightMiddle.svg,OutRightMiddle.svg,OutLeftCenter.svg,83–89°F"
+777010,Kauffman Stadium8:10CLE @ KC,"OutLeft.svg,OutLeft.svg,OutLeft.svg,LightWind.png,HighH.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Light Breeze,High Humidity"
+777011,Target Field8:10WAS @ MIN,"OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,From83to89.png","OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,83–89°F"
+777016,Comerica Park7:10TOR @ DET,"FromLeft.svg,FromLeft.svg,OutRightMiddle.svg,LightWind.png,From83to89.png","FromLeft.svg,FromLeft.svg,OutRightMiddle.svg,Light Breeze,83–89°F"
+777017,Rate Field7:40CHC @ CHW,"InLeft.svg,InLeftCenter.svg,InLeft.svg,LightWind.png,From76to82.png,HighH.png","InLeft.svg,InLeftCenter.svg,InLeft.svg,Light Breeze,76–82°F,High Humidity"
+777006,Angel Stadium9:38SEA @ LAA,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze"
+777005,Busch Stadium7:15SD  @ STL,"FromRight.svg,FromRight.svg,FromRight.svg,LightWind.png,Over90.png","FromRight.svg,FromRight.svg,FromRight.svg,Light Breeze,≥90°F"
+777008,American Family Fld4:10MIA @ MIL,"InLeft.svg,InLeftCenter.svg,InLeftCenter.svg,LightWind.png,From83to89.png","InLeft.svg,InLeftCenter.svg,InLeftCenter.svg,Light Breeze,83–89°F"
+777009,Globe Life Field8:05ATL @ TEX,RoofClosed.png,Roof Closed
+777004,Oracle Park10:15NYM @ SF,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,ModerateWind.png,HighH.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Moderate Wind,High Humidity"
+777007,Daikin Park8:10ATH @ HOU,RoofClosed.png,Roof Closed
