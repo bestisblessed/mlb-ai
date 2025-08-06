@@ -1,0 +1,11 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,3,3.00,.333,.000,,Randy Arozarena,668227,1,1,1.00,1,1,1,12,.333,1.666,Martin,663436,3,2,1.333,,4,2022
+,1,,.000,.---,1,Randy Arozarena,668227,1,,,,,1,10,.500,.500,Martin,663436,2,,.000,1,,2024
+1,3,,.000,.000,,Randy Arozarena,668227,1,2,2.00,,,,8,.000,.000,Martin,663436,3,,.000,,,2025
+,3,,.333,.500,,J.P. Crawford,641487,1,1,1.00,1,,,12,.333,.666,Martin,663436,3,,.333,1,1,2025
+1,1,,.000,.000,1,Cal Raleigh,663728,1,,0.00,,,1,11,.500,.500,Martin,663436,2,,.000,,,2024
+2,3,,.000,.000,,Cal Raleigh,663728,1,1,0.50,,,,8,.000,.000,Martin,663436,3,,.000,,,2025
+2,2,,.000,.000,,Josh Naylor,647304,1,,0.00,,,4,10,.000,.000,Martin,663436,2,,.000,,,2024
+,2,,.500,1.000,,Jorge Polanco,593871,1,,,1,,1,9,.500,1.000,Martin,663436,2,1,.500,1,1,2024
+,3,,.333,.333,,Jorge Polanco,593871,1,2,2.00,1,,,7,.333,.666,Martin,663436,3,1,.333,,1,2025
+,4,,.250,.250,,Julio Rodriguez,677594,2,3,3.00,1,,2,12,.250,.500,Martin,663436,4,,.250,,1,2025

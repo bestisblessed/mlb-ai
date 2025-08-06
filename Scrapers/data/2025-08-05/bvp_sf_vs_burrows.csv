@@ -1,0 +1,8 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,2,.000,.000,,Patrick Bailey,672275,1,1,1.00,,,6,.000,.000,Burrows,681347,2,,.000,,,2025
+,2,.500,.500,,Dominic Smith,642086,1,1,1.00,1,,8,.500,1.000,Burrows,681347,2,1,.500,,1,2025
+1,2,.000,.000,,Jung Hoo Lee,808982,1,1,1.00,,2,6,.000,.000,Burrows,681347,2,,.000,,,2025
+1,3,.000,.000,,Matt Chapman,656305,1,,0.00,,3,12,.000,.000,Burrows,681347,3,,.000,2,,2025
+,3,.333,.500,,Heliot Ramos,671218,1,1,1.00,1,,12,.333,.666,Burrows,681347,3,,.333,1,1,2025
+,2,.000,.---,1,Rafael Devers,646240,1,,,,1,17,.333,.333,Burrows,681347,3,,.000,2,,2025
+1,3,.333,.500,,Willy Adames,642715,1,,0.00,1,1,11,.333,.666,Burrows,681347,3,,.333,1,1,2025
