@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+776983,Fenway Park1:35LAD @ BOS,"OutCenter.svg,OutLeft.svg,OutLeft.svg,LightWind.png","OutCenter.svg,OutLeft.svg,OutLeft.svg,Light Breeze"
+776982,Great American BP1:40TB  @ CIN,"OutLeft.svg,OutLeft.svg,OutLeft.svg,LightWind.png,Over90.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Light Breeze,≥90°F"
+776986,Oriole Park1:35COL @ BAL,"OutRight.svg,OutRight.svg,OutRightMiddle.svg,From83to89.png","OutRight.svg,OutRight.svg,OutRightMiddle.svg,83–89°F"
+776988,Yankee Stadium1:35PHI @ NYY,"OutLeft.svg,OutLeft.svg,OutLeft.svg,LightWind.png,From76to82.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Light Breeze,76–82°F"
+776984,PNC Park1:35ARI @ PIT,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,Over90.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,≥90°F"
+776975,Kauffman Stadium2:10CLE @ KC,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,Over90.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,≥90°F"
+776987,Comerica Park1:40TOR @ DET,"OutRightCenter.svg,OutRightCenter.svg,OutRightMiddle.svg,Over90.png","OutRightCenter.svg,OutRightCenter.svg,OutRightMiddle.svg,≥90°F"
+776979,Target Field2:10WAS @ MIN,"InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,ModerateWind.png,Over90.png","InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,Moderate Wind,≥90°F"
+776989,Rate Field2:10CHC @ CHW,"InLeftMiddle.svg,InLeft.svg,InLeft.svg,LightWind.png,From76to82.png,HighH.png","InLeftMiddle.svg,InLeft.svg,InLeft.svg,Light Breeze,76–82°F,High Humidity"
+776977,Angel Stadium4:07SEA @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind"
+776980,Busch Stadium2:15SD  @ STL,"OutRightCenter.svg,OutRightCenter.svg,OutLeft.svg,Over90.png","OutRightCenter.svg,OutRightCenter.svg,OutLeft.svg,≥90°F"
+776981,Globe Life Field2:35ATL @ TEX,RoofClosed.png,Roof Closed
+776978,American Family Fld2:10MIA @ MIL,RoofClosed.png,Roof Closed
+776976,Daikin Park2:10ATH @ HOU,RoofClosed.png,Roof Closed
+776974,Oracle Park7:10NYM @ SF,"OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,ModerateWind.png,HighH.png","OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Moderate Wind,High Humidity"
