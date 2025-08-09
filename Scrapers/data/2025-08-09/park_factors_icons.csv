@@ -1,0 +1,17 @@
+game_id,game,icons,icon_labels
+776811,Oriole Park7:05ATH @ BAL,"FromRight.svg,OutLeftMiddle.svg,OutLeft.svg,From76to82.png,HighP.png","FromRight.svg,OutLeftMiddle.svg,OutLeft.svg,76–82°F,High Pressure"
+776809,Chase Field8:10COL @ ARI,RoofClosed.png,Roof Closed
+776814,Rate Field7:10CLE @ CHW,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,Over90.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,≥90°F"
+776816,Target Field7:10KC  @ MIN,"OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,LightWind.png,From83to89.png,LowP.png","OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,Light Breeze,83–89°F,Low Pressure"
+776808,Dodger Stadium9:10TOR @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F"
+776813,Comerica Park6:10LAA @ DET,"InRight.svg,InRight.svg,InRight.svg,ModerateWind.png,From83to89.png","InRight.svg,InRight.svg,InRight.svg,Moderate Wind,83–89°F"
+776818,Busch Stadium7:15CHC @ STL,"OutLeftMiddle.svg,FromRight.svg,FromRight.svg,ModerateWind.png,Over90.png","OutLeftMiddle.svg,FromRight.svg,FromRight.svg,Moderate Wind,≥90°F"
+776812,PNC Park6:40CIN @ PIT,"InCenter.svg,InCenter.svg,InRightCenter.svg,LightWind.png,From83to89.png,HighP.png","InCenter.svg,InCenter.svg,InRightCenter.svg,Light Breeze,83–89°F,High Pressure"
+776815,Yankee Stadium2:05HOU @ NYY,"InRight.svg,InRightMiddle.svg,InRightMiddle.svg,LightWind.png,From83to89.png,HighP.png","InRight.svg,InRightMiddle.svg,InRightMiddle.svg,Light Breeze,83–89°F,High Pressure"
+776817,American Family Fld7:10NYM @ MIL,"FromRight.svg,FromRight.svg,InRightMiddle.svg,ModerateWind.png,From83to89.png","FromRight.svg,FromRight.svg,InRightMiddle.svg,Moderate Wind,83–89°F"
+776819,Truist Park7:15MIA @ ATL,"InLeft.svg,InLeft.svg,InLeftMiddle.svg,LightWind.png,From83to89.png","InLeft.svg,InLeft.svg,InLeftMiddle.svg,Light Breeze,83–89°F"
+778431,Truist Park1:15MIA @ ATL,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,From83to89.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,83–89°F,High Pressure"
+776802,Oracle Park4:05WAS @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,HighH.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,High Humidity"
+776807,Petco Park8:40BOS @ SD,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze"
+776810,Globe Life Field7:15PHI @ TEX,RoofClosed.png,Roof Closed
+776805,T-Mobile Park9:40TB  @ SEA,"InLeftMiddle.svg,InLeft.svg,InLeftMiddle.svg,LightWind.png,HighP.png","InLeftMiddle.svg,InLeft.svg,InLeftMiddle.svg,Light Breeze,High Pressure"

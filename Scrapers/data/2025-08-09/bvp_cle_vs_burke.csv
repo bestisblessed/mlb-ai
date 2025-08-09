@@ -1,0 +1,14 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+2,1,,.000,.000,,Angel Martinez,682657,,1,,0.00,,,,11,.000,.000,Burke,680732,2,1,1,.000,,,2025
+1,2,,.000,.000,,Bo Naylor,666310,,1,,0.00,,,,10,.000,.000,Burke,680732,2,,,.000,1,,2024
+1,4,4.00,.750,.667,,Carlos Santana,467793,,2,,0.00,3,1,2,17,.750,2.250,Burke,680732,4,2,,1.500,,6,2025
+1,2,,.000,.000,,Jose Ramirez,608070,,1,,0.00,,,3,5,.000,.000,Burke,680732,2,,,.000,1,,2024
+1,2,,.000,.000,2,Jose Ramirez,608070,,2,,0.00,,,,23,.500,.500,Burke,680732,4,,,.000,1,,2025
+1,1,,.000,.000,,Kyle Manzardo,700932,,1,,0.00,,,1,5,.000,.000,Burke,680732,1,,,.000,,,2024
+2,2,,.000,.000,2,Kyle Manzardo,700932,,2,,0.00,,,2,21,.500,.500,Burke,680732,4,,,.000,,,2025
+,1,,1.000,1.000,1,Steven Kwan,680757,,1,,,1,,,6,1.000,2.000,Burke,680732,2,,,1.000,,1,2024
+2,4,,.000,.000,1,Steven Kwan,680757,,2,2,1.00,,,,23,.200,.200,Burke,680732,5,,,.000,,,2025
+,3,,.333,1.000,,Daniel Schneemann,682177,1,2,,,1,,2,14,.333,1.000,Burke,680732,3,,,.667,2,2,2025
+1,2,,.000,.000,,Gabriel Arias,672356,,1,,0.00,,,3,7,.000,.000,Burke,680732,2,,,.000,1,,2025
+2,2,,.000,.000,,Brayan Rocchio,677587,,1,,0.00,,,,12,.000,.000,Burke,680732,2,,,.000,,,2024
+2,2,,.000,.000,,Brayan Rocchio,677587,,1,,0.00,,,,8,.000,.000,Burke,680732,2,,,.000,,,2025
