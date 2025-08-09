@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,2,.000,.000,Blake Perkins,663368,,1,,0.00,,,10,.000,.000,Senga,673540,2,.000,1,,2023
+,3,.333,.500,William Contreras,661388,,1,1,1.00,1,2,12,.333,.666,Senga,673540,3,.333,1,1,2023
+,3,.667,.667,Christian Yelich,592885,1,1,1,1.00,2,1,12,.667,1.667,Senga,673540,3,1.000,,3,2023

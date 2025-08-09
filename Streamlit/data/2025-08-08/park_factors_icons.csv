@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+776827,Target Field8:10KC  @ MIN,"FromRight.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,Over90.png,LowP.png","FromRight.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,≥90°F,Low Pressure"
+776831,Oriole Park7:05ATH @ BAL,"FromRight.svg,FromRight.svg,FromRight.svg,LightWind.png,From76to82.png,HighP.png","FromRight.svg,FromRight.svg,FromRight.svg,Light Breeze,76–82°F,High Pressure"
+776825,Chase Field9:40COL @ ARI,RoofClosed.png,Roof Closed
+776833,Rate Field7:40CLE @ CHW,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,From83to89.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,83–89°F"
+776832,Comerica Park7:10LAA @ DET,"InRightCenter.svg,InRightCenter.svg,InCenter.svg,LightWind.png,From83to89.png","InRightCenter.svg,InRightCenter.svg,InCenter.svg,Light Breeze,83–89°F"
+776828,American Family Fld8:10NYM @ MIL,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,LightWind.png,From76to82.png,HighH.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Light Breeze,76–82°F,High Humidity"
+776823,Dodger Stadium10:10TOR @ LAD,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+776829,PNC Park6:40CIN @ PIT,"InLeftCenter.svg,InCenter.svg,InCenter.svg,LightWind.png,From83to89.png,HighP.png","InLeftCenter.svg,InCenter.svg,InCenter.svg,Light Breeze,83–89°F,High Pressure"
+776826,Busch Stadium8:15CHC @ STL,"FromRight.svg,FromRight.svg,FromRight.svg,ModerateWind.png,From83to89.png","FromRight.svg,FromRight.svg,FromRight.svg,Moderate Wind,83–89°F"
+776822,Oracle Park10:15WAS @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,HighH.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,High Humidity"
+776834,Truist Park7:15MIA @ ATL,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png,From76to82.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze,76–82°F"
+776835,Yankee Stadium7:05HOU @ NYY,"FromRight.svg,FromRight.svg,InRightMiddle.svg,LightWind.png,HighP.png","FromRight.svg,FromRight.svg,InRightMiddle.svg,Light Breeze,High Pressure"
+776824,T-Mobile Park9:40TB  @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze,High Pressure"
+776821,Globe Life Field8:05PHI @ TEX,RoofClosed.png,Roof Closed
+776820,Petco Park9:40BOS @ SD,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze"
