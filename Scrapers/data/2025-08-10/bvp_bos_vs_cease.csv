@@ -1,0 +1,10 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,3,,.667,.667,,Alex Bregman,608324,2,1,,0.00,,2,,1,15,.667,2.000,Cease,656302,3,1,1.333,,4,2022
+3,6,,.167,.250,,Alex Bregman,608324,,2,,0.00,,1,,2,19,.167,.334,Cease,656302,6,,.167,2,1,2023
+1,3,,.000,.000,,Alex Bregman,608324,,1,1,1.00,,,,,15,.000,.000,Cease,656302,3,,.000,1,,2024
+,3,,1.000,1.000,,Masataka Yoshida,807799,1,1,,,,3,,,9,1.000,2.333,Cease,656302,3,,1.333,,4,2023
+2,5,,.200,.250,,Abraham Toro,647351,,2,1,0.50,,1,,2,20,.200,.400,Cease,656302,5,2,.200,1,1,2021
+1,3,,.000,.000,,Abraham Toro,647351,,1,2,2.00,1,,,4,13,.250,.250,Cease,656302,4,,.000,,,2024
+2,3,,.333,.333,,Ceddanne Rafaela,678882,1,1,,0.00,,1,,2,8,.333,1.000,Cease,656302,3,,.667,,2,2023
+,4,4.00,.250,.---,1,Trevor Story,596115,,2,,,,1,1,,27,.400,1.400,Cease,656302,5,3,1.000,3,4,2022
+1,3,,.000,.000,,Trevor Story,596115,,1,,0.00,,,,3,13,.000,.000,Cease,656302,3,,.000,2,,2023
