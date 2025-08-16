@@ -1,0 +1,6 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacbunts,sacflies,slg,strikeouts,totalbases,year
+1,2,.500,.500,,Marcell Ozuna,542303,1,,0.00,1,1,10,.500,1.000,Cecconi,677944,2,,,,.500,,1,2024
+2,1,.000,.000,,Matt Olson,621566,1,,0.00,,1,4,.000,.000,Cecconi,677944,2,1,,1,.000,,,2024
+1,1,.000,.000,1,Ozzie Albies,645277,1,,0.00,,1,8,.500,.500,Cecconi,677944,2,,,,.000,,,2024
+1,2,.000,.000,,Jurickson Profar,595777,1,1,1.00,,1,5,.000,.000,Cecconi,677944,2,,,,.000,,,2023
+3,7,.000,.000,1,Jurickson Profar,595777,3,2,0.67,,5,46,.125,.125,Cecconi,677944,9,,1,,.000,3,,2024
