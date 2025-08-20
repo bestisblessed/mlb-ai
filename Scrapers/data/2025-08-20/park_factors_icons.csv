@@ -1,0 +1,15 @@
+game_id,game,icons,icon_labels
+776660,Coors Field8:40LAD @ COL,"OutLeftMiddle.svg,OutLeft.svg,InLeftMiddle.svg,HeavyWind.png,Over90.png,LowH.png","OutLeftMiddle.svg,OutLeft.svg,InLeftMiddle.svg,Heavy Wind,≥90°F,Low Humidity"
+776659,Nationals Park6:45NYM @ WAS,"InRight.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,From83to89.png,LowP.png","InRight.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,83–89°F,Low Pressure"
+776664,Steinbrenner Field7:35NYY @ TB,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,From83to89.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,83–89°F,Low Pressure"
+776673,Comerica Park1:10HOU @ DET,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze"
+776658,Chase Field3:40CLE @ ARI,RoofClosed.png,Roof Closed
+776662,Citizens Bank Park1:05SEA @ PHI,"FromRight.svg,FromRight.svg,FromRight.svg,LightWind.png,From83to89.png","FromRight.svg,FromRight.svg,FromRight.svg,Light Breeze,83–89°F"
+776661,PNC Park12:35TOR @ PIT,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,From76to82.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,76–82°F"
+776666,Kauffman Stadium7:40TEX @ KC,"InCenter.svg,InCenter.svg,InLeftCenter.svg,LightWind.png,From83to89.png","InCenter.svg,InCenter.svg,InLeftCenter.svg,Light Breeze,83–89°F"
+776665,Target Field7:40ATH @ MIN,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,From76to82.png,HighP.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,76–82°F,High Pressure"
+776669,Truist Park7:15CHW @ ATL,"OutLeft.svg,OutLeftMiddle.svg,OutCenter.svg,LightWind.png,From83to89.png,LowP.png","OutLeft.svg,OutLeftMiddle.svg,OutCenter.svg,Light Breeze,83–89°F,Low Pressure"
+776652,Angel Stadium9:38CIN @ LAA,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+776670,LoanDepot Park6:40STL @ MIA,RoofClosed.png,Roof Closed
+776656,Petco Park9:40SF  @ SD,"FromLeft.svg,FromLeft.svg,InLeftMiddle.svg,LightWind.png","FromLeft.svg,FromLeft.svg,InLeftMiddle.svg,Light Breeze"
+776663,Wrigley Field8:05MIL @ CHC,"InLeft.svg,InLeftCenter.svg,InLeftCenter.svg,ModerateWind.png,HighH.png,HighP.png","InLeft.svg,InLeftCenter.svg,InLeftCenter.svg,Moderate Wind,High Humidity,High Pressure"
