@@ -1,0 +1,14 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,1,.000,.000,1,Luis Arraez,650333,1,,0.00,,,13,.500,.500,Roupp,694738,2,,.000,,,2024
+4,6,.167,.167,,Luis Arraez,650333,2,1,0.25,1,3,17,.167,.334,Roupp,694738,6,,.167,,1,2025
+,1,1.000,1.000,1,Jake Cronenworth,630105,1,,,1,,15,1.000,2.000,Roupp,694738,2,,1.000,,1,2024
+1,2,.000,.000,,Jake Cronenworth,630105,1,,0.00,,3,8,.000,.000,Roupp,694738,2,,.000,1,,2025
+1,6,.667,.667,,Fernando Tatis Jr.,665487,2,1,1.00,4,,20,.667,1.334,Roupp,694738,6,,.667,,4,2025
+1,3,.000,.000,,Manny Machado,592518,2,,0.00,,1,13,.000,.000,Roupp,694738,3,,.000,2,,2024
+,5,.600,1.000,1,Manny Machado,592518,2,,,3,2,24,.667,1.267,Roupp,694738,6,1,.600,2,3,2025
+1,2,.000,.000,,Xander Bogaerts,593428,1,1,1.00,,,8,.000,.000,Roupp,694738,2,,.000,,,2024
+2,5,.200,.333,,Xander Bogaerts,593428,2,,0.00,1,3,18,.200,.400,Roupp,694738,5,,.200,2,1,2025
+2,3,.000,.000,,Jackson Merrill,701538,2,1,0.50,,1,10,.000,.000,Roupp,694738,3,,.000,,,2024
+1,3,.000,.000,,Jackson Merrill,701538,1,,0.00,,3,15,.000,.000,Roupp,694738,3,,.000,2,,2025
+1,2,.000,.000,,Freddy Fermin,666023,1,,0.00,,2,6,.000,.000,Roupp,694738,2,,.000,1,,2024
+,1,.000,.---,,Ramon Laureano,657656,1,,,,,4,.000,.000,Roupp,694738,1,,.000,1,,2024
