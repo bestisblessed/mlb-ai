@@ -1,0 +1,10 @@
+game_id,game,icons,icon_labels
+776644,Coors Field3:10LAD @ COL,"InRight.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,Over90.png,LowH.png","InRight.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,≥90°F,Low Humidity"
+776631,Steinbrenner Field7:35STL @ TB,"OutRightCenter.svg,OutCenter.svg,OutRightCenter.svg,ModerateWind.png,From83to89.png","OutRightCenter.svg,OutCenter.svg,OutRightCenter.svg,Moderate Wind,83–89°F"
+776650,Nationals Park4:05NYM @ WAS,"InCenter.svg,InCenter.svg,InCenter.svg,ModerateWind.png","InCenter.svg,InCenter.svg,InCenter.svg,Moderate Wind"
+776657,Kauffman Stadium2:10TEX @ KC,"InCenter.svg,InRightCenter.svg,InRight.svg,LightWind.png,From83to89.png","InCenter.svg,InRightCenter.svg,InRight.svg,Light Breeze,83–89°F"
+776653,Target Field1:10ATH @ MIN,"InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,LightWind.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,Light Breeze,High Pressure"
+776655,Oriole Park7:15HOU @ BAL,"InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,ModerateWind.png","InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,Moderate Wind"
+776642,Petco Park4:10SF  @ SD,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,From76to82.png,LowP.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,76–82°F,Low Pressure"
+776654,Yankee Stadium7:15BOS @ NYY,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,ModerateWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Moderate Wind"
+776651,Wrigley Field2:20MIL @ CHC,"InCenter.svg,InCenter.svg,InCenter.svg,ModerateWind.png,HighH.png","InCenter.svg,InCenter.svg,InCenter.svg,Moderate Wind,High Humidity"
