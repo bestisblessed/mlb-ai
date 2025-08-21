@@ -1,0 +1,8 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+2,3,.000,.000,,Alex Bregman,608324,1,,0.00,,3,12,.000,.000,Gil,661563,3,.000,1,,2024
+,4,.000,.000,1,Masataka Yoshida,807799,2,3,3.00,,2,19,.200,.200,Gil,661563,5,.000,1,,2024
+3,3,.000,.000,,Abraham Toro,647351,1,,0.00,,,12,.000,.000,Gil,661563,3,.000,,,2021
+2,4,.250,.333,,Ceddanne Rafaela,678882,2,,0.00,1,4,16,.250,.500,Gil,661563,4,.250,1,1,2024
+,2,.000,.---,,Wilyer Abreu,677800,1,,,,,11,.000,.000,Gil,661563,2,.000,2,,2024
+,2,.500,1.000,,Jarren Duran,680776,1,,,1,2,4,.500,1.000,Gil,661563,2,.500,1,1,2021
+2,5,.200,.333,1,Jarren Duran,680776,2,,0.00,1,2,29,.333,.533,Gil,661563,6,.200,2,1,2024
