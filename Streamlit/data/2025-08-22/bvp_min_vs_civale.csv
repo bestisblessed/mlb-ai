@@ -1,0 +1,13 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+3,6,6.00,.333,.250,,Trevor Larnach,663616,1,2,,0.00,2,1,6,23,.333,1.333,Civale,650644,6,3,1.000,1,6,2024
+1,2,,.500,.500,,Royce Lewis,668904,1,1,,0.00,1,,,6,.500,1.500,Civale,650644,2,,1.000,,2,2022
+,3,,.000,.000,,Royce Lewis,668904,,1,3,3.00,,,,10,.000,.000,Civale,650644,3,,.000,,,2023
+1,2,,.000,.000,,Royce Lewis,668904,,1,,0.00,,,3,15,.000,.000,Civale,650644,2,,.000,1,,2024
+2,2,,.000,.000,,Brooks Lee,686797,,1,,0.00,,,2,8,.000,.000,Civale,650644,2,,.000,,,2024
+1,4,,.250,.333,,Ryan Jeffers,680777,,2,1,1.00,1,,,24,.250,.500,Civale,650644,4,,.250,1,1,2022
+,1,,.000,.---,1,Ryan Jeffers,680777,,1,,,,,3,10,.500,.500,Civale,650644,2,,.000,1,,2023
+1,2,,.500,.500,,Ryan Jeffers,680777,,1,,0.00,1,,1,14,.500,1.000,Civale,650644,2,,.500,,1,2024
+,2,,.000,.---,,Byron Buxton,621439,,1,,,,,,10,.000,.000,Civale,650644,2,,.000,2,,2020
+1,6,6.00,.333,.250,,Byron Buxton,621439,,2,2,2.00,2,1,,16,.333,1.166,Civale,650644,6,1,.833,1,5,2021
+2,5,5.00,.200,.000,1,Byron Buxton,621439,,2,,0.00,1,1,1,25,.333,1.133,Civale,650644,6,1,.800,2,4,2022
+1,5,5.00,.200,.000,,Byron Buxton,621439,,2,1,1.00,1,1,2,15,.200,1.000,Civale,650644,5,1,.800,2,4,2024
