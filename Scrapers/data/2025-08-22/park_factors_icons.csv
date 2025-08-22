@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+776633,Steinbrenner Field7:35STL @ TB,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,From83to89.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,83–89°F"
+776643,Oriole Park7:05HOU @ BAL,"OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,LightWind.png,From76to82.png","OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,Light Breeze,76–82°F"
+776635,Chase Field9:40CIN @ ARI,RoofClosed.png,Roof Closed
+776649,Comerica Park7:10KC  @ DET,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,From76to82.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,76–82°F"
+776648,Citizens Bank Park6:45WAS @ PHI,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,76–82°F"
+776640,Angel Stadium9:38CHC @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From83to89.png,LowP.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,83–89°F,Low Pressure"
+776637,PNC Park6:40COL @ PIT,"InCenter.svg,InRightCenter.svg,InLeftCenter.svg,From76to82.png","InCenter.svg,InRightCenter.svg,InLeftCenter.svg,76–82°F"
+776639,Rate Field7:40MIN @ CHW,"InLeftMiddle.svg,InLeft.svg,InLeft.svg,From76to82.png,HighH.png","InLeftMiddle.svg,InLeft.svg,InLeft.svg,76–82°F,High Humidity"
+776645,Truist Park7:15NYM @ ATL,"InLeft.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png,From76to82.png","InLeft.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze,76–82°F"
+776634,American Family Fld8:10SF  @ MIL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze"
+776638,T-Mobile Park10:10ATH @ SEA,"InLeftMiddle.svg,InLeft.svg,InLeft.svg,LightWind.png,From76to82.png","InLeftMiddle.svg,InLeft.svg,InLeft.svg,Light Breeze,76–82°F"
+776646,LoanDepot Park7:10TOR @ MIA,RoofClosed.png,Roof Closed
+776647,Yankee Stadium7:05BOS @ NYY,"FromRight.svg,FromRight.svg,OutLeftMiddle.svg,LightWind.png,From76to82.png","FromRight.svg,FromRight.svg,OutLeftMiddle.svg,Light Breeze,76–82°F"
+776641,Globe Life Field8:05CLE @ TEX,RoofClosed.png,Roof Closed
+776636,Petco Park9:40LAD @ SD,"OutRightMiddle.svg,FromLeft.svg,OutRightMiddle.svg,LightWind.png,From76to82.png,LowP.png","OutRightMiddle.svg,FromLeft.svg,OutRightMiddle.svg,Light Breeze,76–82°F,Low Pressure"
