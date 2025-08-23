@@ -1,0 +1,15 @@
+game_id,game,icons,icon_labels
+776629,Oriole Park7:05HOU @ BAL,"OutLeft.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png,From76to82.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Moderate Wind,76–82°F"
+776628,Citizens Bank Park6:05WAS @ PHI,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F"
+776625,Comerica Park6:10KC  @ DET,"FromRight.svg,FromRight.svg,OutLeftMiddle.svg,LightWind.png,From76to82.png","FromRight.svg,FromRight.svg,OutLeftMiddle.svg,Light Breeze,76–82°F"
+776622,Chase Field8:10CIN @ ARI,RoofClosed.png,Roof Closed
+776632,PNC Park6:40COL @ PIT,"OutLeft.svg,OutLeftCenter.svg,OutRightCenter.svg,From83to89.png","OutLeft.svg,OutLeftCenter.svg,OutRightCenter.svg,83–89°F"
+776619,Rate Field7:10MIN @ CHW,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,ModerateWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,Moderate Wind,76–82°F"
+776618,Angel Stadium9:38CHC @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+776621,American Family Fld7:10SF  @ MIL,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,76–82°F"
+776626,Truist Park7:15NYM @ ATL,"InLeftCenter.svg,InLeft.svg,InLeft.svg,LightWind.png,From76to82.png,HighH.png","InLeftCenter.svg,InLeft.svg,InLeft.svg,Light Breeze,76–82°F,High Humidity"
+776620,T-Mobile Park9:40ATH @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png,From76to82.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze,76–82°F"
+776630,LoanDepot Park4:10TOR @ MIA,RoofClosed.png,Roof Closed
+776623,Globe Life Field7:05CLE @ TEX,RoofClosed.png,Roof Closed
+776617,Petco Park8:40LAD @ SD,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,From76to82.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,76–82°F"
+776627,Yankee Stadium1:05BOS @ NYY,"OutLeftMiddle.svg,FromRight.svg,FromRight.svg,ModerateWind.png,From83to89.png,HighP.png","OutLeftMiddle.svg,FromRight.svg,FromRight.svg,Moderate Wind,83–89°F,High Pressure"
