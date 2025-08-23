@@ -1,0 +1,10 @@
+airouts,atbats,atbatsperhomerun,avg,babip,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,3,3.00,.667,.500,JJ Bleday,668709,,1,1,1.00,2,1,1,6,.667,2.334,Kirby,669923,3,1,1.667,,5,2023
+,6,,.500,1.000,JJ Bleday,668709,1,2,,,3,,1,21,.500,1.167,Kirby,669923,6,1,.667,3,4,2024
+2,3,,.333,.333,Lawrence Butler,671732,,1,,0.00,1,,1,6,.333,.666,Kirby,669923,3,,.333,,1,2023
+,3,,.333,.500,Lawrence Butler,671732,1,1,1,1.00,1,,,12,.333,1.000,Kirby,669923,3,,.667,1,2,2024
+,3,,.333,.333,Tyler Soderstrom,691016,,1,2,2.00,1,,,6,.333,.666,Kirby,669923,3,,.333,,1,2023
+,2,,1.000,1.000,Shea Langeliers,669127,1,1,,,2,,,8,1.000,2.500,Kirby,669923,2,1,1.500,,3,2022
+1,5,,.000,.000,Shea Langeliers,669127,,2,1,1.00,,,3,25,.000,.000,Kirby,669923,5,,.000,3,,2024
+2,6,6.00,.333,.250,Brent Rooker,667670,,2,1,0.50,2,1,1,31,.333,1.166,Kirby,669923,6,2,.833,1,5,2023
+1,6,,.500,.600,Brent Rooker,667670,1,2,1,1.00,3,,1,16,.500,1.167,Kirby,669923,6,1,.667,1,4,2024
