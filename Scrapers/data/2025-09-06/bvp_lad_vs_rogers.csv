@@ -1,9 +1,9 @@
 airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
 ,1,.000,.000,,Alex Call,669743,,1,1,1.00,,,1,.000,.000,Rogers,669432,1,,.000,,,2022
 1,5,.200,.333,,Alex Call,669743,1,2,1,1.00,1,2,19,.200,.600,Rogers,669432,5,,.400,2,2,2024
-,3,.333,.500,,Teoscar Hernandez,606192,1,1,1,1.00,1,1,7,.333,1.000,Rogers,669432,3,1,.667,1,2,2021
 1,2,.000,.000,1,Freddie Freeman,518692,,1,,0.00,,1,10,.333,.333,Rogers,669432,3,,.000,1,,2020
 3,6,.333,.400,1,Freddie Freeman,518692,1,3,,0.00,2,1,39,.429,.929,Rogers,669432,7,1,.500,1,3,2021
-3,3,.000,.000,,Enrique Hernandez,571771,,1,,0.00,,,8,.000,.000,Rogers,669432,3,,.000,,,2021
-,3,.333,.500,,Shohei Ohtani,660271,,1,1,1.00,1,,14,.333,.666,Rogers,669432,3,2,.333,1,1,2022
 ,2,.500,.500,,Will Smith,669257,,1,1,1.00,1,1,6,.500,1.000,Rogers,669432,2,,.500,,1,2021
+3,3,.000,.000,,Enrique Hernandez,571771,,1,,0.00,,,8,.000,.000,Rogers,669432,3,,.000,,,2021
+,3,.333,.500,,Teoscar Hernandez,606192,1,1,1,1.00,1,1,7,.333,1.000,Rogers,669432,3,1,.667,1,2,2021
+,3,.333,.500,,Shohei Ohtani,660271,,1,1,1.00,1,,14,.333,.666,Rogers,669432,3,2,.333,1,1,2022
