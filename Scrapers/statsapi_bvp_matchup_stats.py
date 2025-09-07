@@ -25,7 +25,7 @@ with open(matchups_file, newline='') as f:
 summary = []
 for (team, pitcher, pitcher_id), matchups in games.items():
     all_rows = []
-    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
         results = list(executor.map(
             lambda row: (
                 row,
