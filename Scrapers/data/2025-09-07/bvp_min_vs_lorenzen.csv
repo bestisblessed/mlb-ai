@@ -1,0 +1,8 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,3,.667,.667,Edouard Julien,666397,1,1,,0.00,2,1,3,.667,1.667,Lorenzen,547179,3,1.000,,3,2023
+1,3,.000,.000,Edouard Julien,666397,,1,1,1.00,,1,13,.000,.000,Lorenzen,547179,3,.000,1,,2024
+,3,.667,1.000,Matt Wallner,670242,1,1,,,2,,13,.667,1.667,Lorenzen,547179,3,1.000,1,3,2025
+1,2,.000,.000,Byron Buxton,621439,,1,,0.00,,2,7,.000,.000,Lorenzen,547179,2,.000,1,,2020
+2,3,.333,.333,Byron Buxton,621439,,1,,0.00,1,,8,.333,.666,Lorenzen,547179,3,.333,,1,2024
+1,3,.000,.000,Byron Buxton,621439,,1,1,1.00,,1,12,.000,.000,Lorenzen,547179,3,.000,1,,2025
+,2,.500,.500,Royce Lewis,668904,,1,1,1.00,1,,6,.500,1.000,Lorenzen,547179,2,.500,,1,2023
