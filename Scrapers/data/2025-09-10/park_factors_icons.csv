@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+776379,Sutter Health Park3:35BOS @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze"
+776376,Angel Stadium4:07MIN @ LAA,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind"
+776382,Progressive Field6:40KC  @ CLE,"InCenter.svg,InRightCenter.svg,InRightMiddle.svg,LightWind.png,HighP.png","InCenter.svg,InRightCenter.svg,InRightMiddle.svg,Light Breeze,High Pressure"
+776378,Rate Field7:40TB  @ CHW,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,From76to82.png,HighP.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,76–82°F,High Pressure"
+776381,Truist Park7:15CHC @ ATL,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+776387,Oriole Park6:35PIT @ BAL,"InCenter.svg,InCenter.svg,InCenter.svg,LightWind.png,HighH.png,HighP.png","InCenter.svg,InCenter.svg,InCenter.svg,Light Breeze,High Humidity,High Pressure"
+776383,Yankee Stadium7:05DET @ NYY,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,HighH.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,High Humidity"
+776380,Dodger Stadium10:10COL @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze"
+776385,Rogers Centre7:07HOU @ TOR,"OutLeftCenter.svg,OutCenter.svg,OutRight.svg,HighP.png","OutLeftCenter.svg,OutCenter.svg,OutRight.svg,High Pressure"
+776374,Oracle Park3:45ARI @ SF,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,HighH.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,High Humidity"
+776386,LoanDepot Park6:40WAS @ MIA,RoofClosed.png,Roof Closed
+776384,Citizens Bank Park6:45NYM @ PHI,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,HighH.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,High Humidity"
+776377,Petco Park8:40CIN @ SD,"FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+776373,T-Mobile Park9:40STL @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg"
+776375,Globe Life Field2:35MIL @ TEX,RoofClosed.png,Roof Closed
