@@ -1,0 +1,6 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,1,.000,.000,,Andrew McCutchen,457705,1,,0.00,,,1,.000,.000,Wells,669330,1,.000,,,2021
+3,3,.000,.000,,Bryan Reynolds,668804,1,,0.00,,,12,.000,.000,Wells,669330,3,.000,,,2023
+1,2,.000,.000,1,Bryan Reynolds,668804,1,1,1.00,,,13,.333,.333,Wells,669330,3,.000,,,2024
+,3,.333,.500,,Jared Triolo,669707,1,1,1.00,1,2,10,.333,.666,Wells,669330,3,.333,1,1,2024
+1,3,.333,.333,,Oneil Cruz,665833,1,1,1.00,1,2,9,.333,.666,Wells,669330,3,.333,,1,2024
