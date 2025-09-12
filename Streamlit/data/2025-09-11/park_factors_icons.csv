@@ -1,0 +1,10 @@
+game_id,game,icons,icon_labels
+776372,Oriole Park1:05PIT @ BAL,"InCenter.svg,InCenter.svg,InLeftCenter.svg,From76to82.png,HighP.png","InCenter.svg,InCenter.svg,InLeftCenter.svg,76–82°F,High Pressure"
+776371,Citizens Bank Park7:15NYM @ PHI,"InLeft.svg,InCenter.svg,OutLeft.svg,From76to82.png,HighP.png","InLeft.svg,InCenter.svg,OutLeft.svg,76–82°F,High Pressure"
+776364,Rate Field2:10TB  @ CHW,"InLeftMiddle.svg,InLeftMiddle.svg,FromLeft.svg,LightWind.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,FromLeft.svg,Light Breeze,High Pressure"
+776369,Rogers Centre3:07HOU @ TOR,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,From76to82.png,HighP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,76–82°F,High Pressure"
+776367,LoanDepot Park6:40WAS @ MIA,RoofClosed.png,Roof Closed
+776370,Progressive Field7:15KC  @ CLE,"InLeft.svg,InLeftCenter.svg,InRightCenter.svg,HighH.png,HighP.png","InLeft.svg,InLeftCenter.svg,InRightCenter.svg,High Humidity,High Pressure"
+776362,T-Mobile Park9:40LAA @ SEA,"InLeft.svg,InLeft.svg,InLeftMiddle.svg","InLeft.svg,InLeft.svg,InLeftMiddle.svg"
+776368,Yankee Stadium7:05DET @ NYY,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,From76to82.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,76–82°F,High Pressure"
+776365,Petco Park9:40COL @ SD,"FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,HighH.png","FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,High Humidity"
