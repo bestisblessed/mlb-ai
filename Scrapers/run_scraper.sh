@@ -3,11 +3,12 @@
 # 1 0 * * * /home/trinity/mlb-ai/Scrapers/run_scraper.sh
 
 set -e
-DD_METRIC_SUCCESS="mlb_scraper.success:1|g"
-DD_METRIC_FAILURE="mlb_scraper.failure:1|g"
-trap 'echo "$DD_METRIC_SUCCESS" | nc -u -w0 127.0.0.1 8125' EXIT
+#DD_METRIC_SUCCESS="mlb_scraper.success:1|g"
+#DD_METRIC_FAILURE="mlb_scraper.failure:1|g"
+#trap 'echo "$DD_METRIC_SUCCESS" | nc -u -w0 127.0.0.1 8125' EXIT
 
 cd /home/trinity/mlb-ai/Scrapers
+export DISPLAY=:0
 
 # ===========================
 # Run the main BallparkPal scraper
