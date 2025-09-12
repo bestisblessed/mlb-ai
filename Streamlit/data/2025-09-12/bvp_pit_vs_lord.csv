@@ -1,0 +1,6 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,2,.500,.500,,Henry Davis,680779,,1,,,0.00,1,,3,.500,1.000,Lord,695418,2,,.500,,1,2025
+,2,.500,1.000,,Andrew McCutchen,457705,,1,,,,1,1,8,.500,1.000,Lord,695418,2,,.500,1,1,2025
+1,2,.500,.500,,Bryan Reynolds,668804,,1,,,0.00,1,,7,.500,1.000,Lord,695418,2,1,.500,,1,2025
+1,2,.500,.500,,Oneil Cruz,665833,1,1,,,0.00,1,,6,.500,1.500,Lord,695418,2,,1.000,,2,2025
+,1,.000,.000,1,Tommy Pham,502054,,1,1,1,1.00,,1,6,.500,.500,Lord,695418,2,,.000,,,2025
