@@ -1,0 +1,9 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,3,,.333,.500,,Tyler Soderstrom,691016,1,1,1,1.00,1,,,5,.333,1.000,Singer,663903,3,1,.667,1,2,2024
+1,3,,.333,.500,,Brent Rooker,667670,1,1,,0.00,1,,4,12,.333,1.000,Singer,663903,3,1,.667,1,2,2023
+1,3,,.333,.333,,Brent Rooker,667670,,1,1,1.00,1,,3,11,.333,.666,Singer,663903,3,,.333,,1,2024
+,3,,.333,.500,,Zack Gelof,680869,,1,1,1.00,1,,1,11,.333,.666,Singer,663903,3,,.333,1,1,2024
+1,1,,.000,.000,1,Shea Langeliers,669127,,1,,0.00,,,,6,.500,.500,Singer,663903,2,,.000,,,2023
+,3,,.000,.000,,Shea Langeliers,669127,,1,1,1.00,,,1,12,.000,.000,Singer,663903,3,,.000,2,,2024
+,3,3.00,.667,1.000,,JJ Bleday,668709,1,1,,,2,1,1,15,.667,2.667,Singer,663903,3,1,2.000,1,6,2023
+1,2,,.000,.000,1,JJ Bleday,668709,,1,1,1.00,,,,11,.333,.333,Singer,663903,3,,.000,,,2024

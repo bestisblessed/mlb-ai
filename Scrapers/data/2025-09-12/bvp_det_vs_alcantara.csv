@@ -1,0 +1,8 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,2,.500,1.000,Javier Baez,595879,,2,,,,1,,7,.500,1.000,Alcantara,645261,2,,.500,1,1,2017
+,6,.333,.667,Javier Baez,595879,1,2,,1,1.00,2,2,21,.333,.833,Alcantara,645261,6,1,.500,3,3,2019
+1,6,.167,.333,Javier Baez,595879,,2,,1,1.00,1,,19,.167,.334,Alcantara,645261,6,,.167,3,1,2021
+,2,.000,.000,Zach McKinstry,656716,,1,,1,1.00,,2,13,.000,.000,Alcantara,645261,2,,.000,1,,2021
+,3,.000,.000,Gleyber Torres,650402,,1,1,3,3.00,,1,9,.000,.000,Alcantara,645261,3,,.000,,,2020
+,3,.000,.000,Gleyber Torres,650402,,1,,2,2.00,,1,12,.000,.000,Alcantara,645261,3,,.000,1,,2021
+1,4,.250,.250,Gleyber Torres,650402,,1,1,2,2.00,1,1,13,.250,.500,Alcantara,645261,4,,.250,,1,2023
