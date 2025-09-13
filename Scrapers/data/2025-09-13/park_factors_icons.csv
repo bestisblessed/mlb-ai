@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+776340,Sutter Health Park10:05CIN @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F,Low Pressure"
+776344,Fenway Park4:10NYY @ BOS,"OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,LightWind.png","OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,Light Breeze"
+776337,Target Field7:10ARI @ MIN,"InCenter.svg,InCenter.svg,InCenter.svg,LightWind.png,From83to89.png,LowP.png","InCenter.svg,InCenter.svg,InCenter.svg,Light Breeze,83–89°F,Low Pressure"
+776336,Nationals Park4:05PIT @ WAS,"OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,From83to89.png","OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,83–89°F"
+776342,Citizens Bank Park6:05KC  @ PHI,"OutCenter.svg,OutLeftCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutLeftCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+776343,Rogers Centre3:07BAL @ TOR,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg"
+776348,Progressive Field6:10CHW @ CLE,"InRightMiddle.svg,FromRight.svg,FromRight.svg,LightWind.png","InRightMiddle.svg,FromRight.svg,FromRight.svg,Light Breeze"
+776328,Oracle Park9:05LAD @ SF,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,ModerateWind.png,HighH.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Moderate Wind,High Humidity"
+776339,American Family Fld8:15STL @ MIL,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze"
+776338,Wrigley Field2:20TB  @ CHC,"OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,LightWind.png,From76to82.png","OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,Light Breeze,76–82°F"
+776346,Truist Park7:15HOU @ ATL,"FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,From76to82.png","FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,76–82°F"
+776347,LoanDepot Park4:10DET @ MIA,RoofClosed.png,Roof Closed
+776333,T-Mobile Park9:40LAA @ SEA,"OutRightCenter.svg,OutRight.svg,OutRightCenter.svg,LowP.png","OutRightCenter.svg,OutRight.svg,OutRightCenter.svg,Low Pressure"
+776349,Citi Field4:10TEX @ NYM,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind"
+776341,Petco Park8:40COL @ SD,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,HighH.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,High Humidity"
