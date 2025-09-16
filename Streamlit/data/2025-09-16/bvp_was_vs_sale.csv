@@ -1,0 +1,8 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,6,.333,.500,Jacob Young,696285,1,2,1,1.00,2,2,28,.333,.833,Sale,519242,6,,.500,2,3,2024
+1,3,.333,.333,Andres Chaparro,665953,1,1,1,1.00,1,,13,.333,1.000,Sale,519242,3,2,.667,,2,2024
+,3,.333,.500,C.J. Abrams,682928,1,1,1,1.00,1,1,14,.333,1.000,Sale,519242,3,,.667,1,2,2024
+,3,.333,.333,James Wood,695578,,1,2,2.00,1,,5,.333,.666,Sale,519242,3,,.333,,1,2024
+1,3,.000,.000,Paul DeJong,657557,,1,,0.00,,1,11,.000,.000,Sale,519242,3,,.000,2,,2023
+1,3,.000,.000,Paul DeJong,657557,,1,,0.00,,,13,.000,.000,Sale,519242,3,,.000,2,,2024
+1,2,.500,.500,Riley Adams,656180,1,1,,0.00,1,,5,.500,1.500,Sale,519242,2,,1.000,,2,2023

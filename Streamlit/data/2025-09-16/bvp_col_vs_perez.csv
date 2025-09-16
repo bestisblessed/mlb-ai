@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,totalbases,year
+1,2,.500,.500,Ezequiel Tovar,678662,1,1,,,0.00,1,1,8,.500,1.500,Perez,691587,2,1.000,2,2023
+2,3,.000,.000,Mickey Moniak,666160,,1,,1,0.50,,2,9,.000,.000,Perez,691587,3,.000,,2023
+,2,.000,.000,Brenton Doyle,686668,,1,1,2,2.00,,2,8,.000,.000,Perez,691587,2,.000,,2023

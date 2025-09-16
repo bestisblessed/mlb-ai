@@ -1,0 +1,10 @@
+game_id,game,icons,icon_labels
+776313,Target Field7:40NYY @ MIN,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,LightWind.png,From83to89.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Light Breeze,83–89°F"
+776309,Chase Field9:40SF  @ ARI,RoofClosed.png,Roof Closed
+776315,Nationals Park6:45ATL @ WAS,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,LightWind.png,From76to82.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Light Breeze,76–82°F,High Pressure"
+776311,Dodger Stadium10:10PHI @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png,LowP.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F,Low Pressure"
+776314,Rate Field7:40BAL @ CHW,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,HighP.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,High Pressure"
+776318,PNC Park6:40CHC @ PIT,"InCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,From76to82.png,HighP.png","InCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,76–82°F,High Pressure"
+776316,Steinbrenner Field7:35TOR @ TB,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,ModerateWind.png,From83to89.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Moderate Wind,83–89°F"
+776312,Busch Stadium7:45CIN @ STL,"InCenter.svg,InCenter.svg,InRightCenter.svg,LightWind.png,Over90.png","InCenter.svg,InCenter.svg,InRightCenter.svg,Light Breeze,≥90°F"
+776319,Daikin Park8:10TEX @ HOU,RoofClosed.png,Roof Closed
