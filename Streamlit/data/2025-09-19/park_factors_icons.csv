@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+776253,Coors Field8:10LAA @ COL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,LightWind.png,From76to82.png,LowH.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,Light Breeze,76–82°F,Low Humidity"
+776273,Oriole Park7:05NYY @ BAL,"InRightMiddle.svg,InRightMiddle.svg,InRightCenter.svg,From83to89.png","InRightMiddle.svg,InRightMiddle.svg,InRightCenter.svg,83–89°F"
+776255,Chase Field9:40PHI @ ARI,RoofClosed.png,Roof Closed
+776267,Great American BP6:40CHC @ CIN,"OutLeftCenter.svg,OutCenter.svg,OutRight.svg,From83to89.png","OutLeftCenter.svg,OutCenter.svg,OutRight.svg,83–89°F"
+776266,PNC Park6:40ATH @ PIT,"FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,From83to89.png","FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,83–89°F"
+776260,Kauffman Stadium7:40TOR @ KC,"OutRightMiddle.svg,OutCenter.svg,OutCenter.svg,From76to82.png","OutRightMiddle.svg,OutCenter.svg,OutCenter.svg,76–82°F"
+776256,Dodger Stadium10:10SF  @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F"
+776268,Comerica Park6:40ATL @ DET,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,HighP.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,High Pressure"
+776264,Rate Field7:40SD  @ CHW,"FromLeft.svg,FromLeft.svg,FromLeft.svg","FromLeft.svg,FromLeft.svg,FromLeft.svg"
+776263,Target Field8:10CLE @ MIN,"InRightMiddle.svg,FromRight.svg,FromRight.svg,HighH.png","InRightMiddle.svg,FromRight.svg,FromRight.svg,High Humidity"
+776261,Steinbrenner Field7:35BOS @ TB,"InLeft.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png,From83to89.png","InLeft.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze,83–89°F"
+776265,Busch Stadium8:15MIL @ STL,"OutRightMiddle.svg,InRightMiddle.svg,InRightCenter.svg,From76to82.png","OutRightMiddle.svg,InRightMiddle.svg,InRightCenter.svg,76–82°F"
+776251,Globe Life Field8:05MIA @ TEX,RoofClosed.png,Roof Closed
+776262,Daikin Park8:10SEA @ HOU,RoofClosed.png,Roof Closed
+776259,Citi Field7:10WAS @ NYM,"InLeft.svg,InLeft.svg,InLeftCenter.svg,LightWind.png,From76to82.png","InLeft.svg,InLeft.svg,InLeftCenter.svg,Light Breeze,76–82°F"

@@ -1,0 +1,10 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,catchersinterference,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,,.000,.---,,Henry Davis,680779,1,,1,,,,,,,1,7,.000,.000,Severino,622663,2,,.000,1,,2024
+2,5,,.000,.000,,Jack Suwinski,669261,,,2,,1,0.50,,,,3,21,.000,.000,Severino,622663,5,,.000,2,,2022
+3,6,6.00,.167,.000,,Jack Suwinski,669261,,,2,,2,0.67,,1,1,3,27,.167,.834,Severino,622663,6,1,.667,,4,2024
+,3,,.333,.333,1,Oneil Cruz,665833,,,2,,2,2.00,,1,,,25,.500,.833,Severino,622663,4,,.333,,1,2022
+1,6,,.500,.600,,Oneil Cruz,665833,,,2,1,1,1.00,,3,,3,19,.500,1.000,Severino,622663,6,,.500,1,3,2024
+,5,,.400,.500,,Bryan Reynolds,668804,,1,2,,2,2.00,,2,,1,16,.400,1.000,Severino,622663,5,,.600,1,3,2022
+2,5,5.00,.600,.500,1,Bryan Reynolds,668804,,,2,,,0.00,,3,1,1,18,.667,1.867,Severino,622663,6,3,1.200,,6,2024
+,2,,.000,.000,,Jared Triolo,669707,,,1,,1,1.00,,,,2,7,.000,.000,Severino,622663,2,,.000,1,,2024
+,2,,.000,.000,,Nick Gonzales,693304,,,1,,1,1.00,1,,,,8,.333,.333,Severino,622663,3,,.000,1,,2024
