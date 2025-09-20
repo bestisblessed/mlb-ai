@@ -1,0 +1,10 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,triples,year
+1,2,,.500,.500,,Miguel Vargas,678246,,1,,0.00,1,,,7,.500,2.000,Darvish,506433,2,,1.500,,3,1,2023
+,3,3.00,.667,1.000,,Miguel Vargas,678246,,1,,,2,1,,13,.667,2.334,Darvish,506433,3,1,1.667,1,5,,2024
+,3,3.00,1.000,1.000,,Andrew Benintendi,643217,1,1,,,3,1,,10,1.000,3.333,Darvish,506433,3,4,2.333,,7,,2017
+2,3,,.000,.000,,Andrew Benintendi,643217,,1,,0.00,,,,9,.000,.000,Darvish,506433,3,,.000,1,,,2024
+,2,,.000,.000,,Lenyn Sosa,672820,,1,1,1.00,,,,6,.000,.000,Darvish,506433,2,,.000,1,,,2024
+1,1,,.000,.000,1,Mike Tauchman,643565,,1,,0.00,,,,12,.500,.500,Darvish,506433,2,,.000,,,,2018
+1,3,,.333,.333,,Mike Tauchman,643565,1,1,1,1.00,1,,,9,.333,1.000,Darvish,506433,3,,.667,,2,,2021
+,3,,.000,.000,,Mike Tauchman,643565,,1,1,1.00,,,2,15,.000,.000,Darvish,506433,3,,.000,2,,,2023
+,2,,.500,.500,1,Mike Tauchman,643565,,2,1,1.00,1,,1,17,.667,1.167,Darvish,506433,3,,.500,,1,,2024
