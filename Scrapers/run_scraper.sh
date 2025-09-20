@@ -8,22 +8,22 @@ set -e
 #trap 'echo "$DD_METRIC_SUCCESS" | nc -u -w0 127.0.0.1 8125' EXIT
 
 cd /home/trinity/mlb-ai/Scrapers
-export DISPLAY=:0
+#export DISPLAY=:0
 
 # ===========================
 # Run the main BallparkPal scraper
 # ===========================
-xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_headless.py >> scraper.log 2>&1
+/usr/bin/xvfb-run -a /home/trinity/.pyenv/shims/python ballparkpal_headless.py >> scraper.log 2>&1
 
 # ===========================
 # Run the BallparkPal park factors icons scraper
 # ===========================
-xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_park_factors.py >> scraper.log 2>&1
+/usr/bin/xvfb-run -a /home/trinity/.pyenv/shims/python ballparkpal_park_factors.py >> scraper.log 2>&1
 
 # ===========================
 # Run the pitching alt lines scraper
 # ===========================
-xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_pitching_alt_lines.py >> scraper.log 2>&1
+/usr/bin/xvfb-run -a /home/trinity/.pyenv/shims/python ballparkpal_pitching_alt_lines.py >> scraper.log 2>&1
 
 
 # ===========================
@@ -31,8 +31,8 @@ xvfb-run /home/trinity/.pyenv/shims/python ballparkpal_pitching_alt_lines.py >> 
 # ===========================
 #xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_game_urls.py >> scraper.log 2>&1
 #xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props.py >> scraper.log 2>&1
-xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_game_urls_playwright.py >> scraper.log 2>&1
-xvfb-run /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props_playwright.py >> scraper.log 2>&1
+/usr/bin/xvfb-run -a /home/trinity/.pyenv/shims/python bovada_scrape_game_urls_playwright.py >> scraper.log 2>&1
+/usr/bin/xvfb-run -a /home/trinity/.pyenv/shims/python bovada_scrape_pitcher_props_playwright.py >> scraper.log 2>&1
 
 
 # ===========================
