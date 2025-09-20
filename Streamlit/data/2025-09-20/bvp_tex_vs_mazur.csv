@@ -1,0 +1,4 @@
+atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,hits,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,1.000,1.000,1,Joc Pederson,592626,,1,1,7,1.000,2.000,Mazur,800049,2,2,1.000,,1,2024
+2,.500,1.000,,Wyatt Langford,694671,,1,1,9,.500,1.000,Mazur,800049,2,,.500,1,1,2024
+2,.500,1.000,,Josh Smith,669701,1,1,1,8,.500,1.500,Mazur,800049,2,1,1.000,1,2,2024
