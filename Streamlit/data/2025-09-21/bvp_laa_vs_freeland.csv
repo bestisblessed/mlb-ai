@@ -1,0 +1,13 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,2,,.000,.000,,Taylor Ward,621493,,1,,0.00,,,1,8,.000,.000,Freeland,607536,2,,.000,1,,2018
+1,3,,.333,.333,,Taylor Ward,621493,,1,1,1.00,1,,1,10,.333,.666,Freeland,607536,3,,.333,,1,2023
+,3,,.000,.---,,Taylor Ward,621493,,1,,,,,1,14,.000,.000,Freeland,607536,3,,.000,3,,2024
+1,3,3.00,.667,.500,,Logan O'Hoppe,681351,,1,,0.00,2,1,,11,.667,2.334,Freeland,607536,3,1,1.667,,5,2024
+1,3,,.000,.000,,Jo Adell,666176,,1,,0.00,,,4,14,.000,.000,Freeland,607536,3,,.000,2,,2020
+1,2,,.000,.000,,Jo Adell,666176,,1,,0.00,,,1,6,.000,.000,Freeland,607536,2,,.000,1,,2024
+1,3,,.333,.500,,Yoan Moncada,660162,,1,,0.00,1,,2,9,.333,.666,Freeland,607536,3,,.333,1,1,2022
+,2,,.000,.---,,Yoan Moncada,660162,,1,,,,,1,8,.000,.000,Freeland,607536,2,,.000,2,,2023
+1,2,,.000,.000,1,Mike Trout,545361,,1,,0.00,,,2,15,.333,.333,Freeland,607536,3,,.000,1,,2018
+1,2,,.000,.000,1,Mike Trout,545361,,1,,0.00,,,,10,.333,.333,Freeland,607536,3,,.000,1,,2020
+,2,2.00,.500,.---,1,Mike Trout,545361,,1,,,1,1,1,16,.667,2.667,Freeland,607536,3,1,2.000,1,4,2023
+,2,,.500,1.000,,Oswald Peraza,672724,1,1,,,1,,1,5,.500,1.500,Freeland,607536,2,1,1.000,1,2,2025

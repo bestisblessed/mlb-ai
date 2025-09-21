@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+776232,Coors Field3:10LAA @ COL,"OutLeftMiddle.svg,OutLeftMiddle.svg,FromLeft.svg,LightWind.png,From76to82.png,LowH.png,LowP.png","OutLeftMiddle.svg,OutLeftMiddle.svg,FromLeft.svg,Light Breeze,76–82°F,Low Humidity,Low Pressure"
+776229,Kauffman Stadium2:10TOR @ KC,"OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png,HighH.png","OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F,High Humidity"
+776238,Comerica Park1:40ATL @ DET,"OutLeftMiddle.svg,OutCenter.svg,FromLeft.svg","OutLeftMiddle.svg,OutCenter.svg,FromLeft.svg"
+776230,Chase Field4:10PHI @ ARI,RoofClosed.png,Roof Closed
+776225,Target Field2:10CLE @ MIN,"OutLeft.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png","OutLeft.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze"
+776240,Oriole Park1:35NYY @ BAL,"InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,LightWind.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,Light Breeze,High Pressure"
+776234,PNC Park1:35ATH @ PIT,"InRight.svg,InRight.svg,InRight.svg,LightWind.png,From76to82.png,HighP.png","InRight.svg,InRight.svg,InRight.svg,Light Breeze,76–82°F,High Pressure"
+776235,Rate Field2:10SD  @ CHW,"InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,LightWind.png,From76to82.png","InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,Light Breeze,76–82°F"
+776239,Great American BP1:40CHC @ CIN,"FromRight.svg,FromRight.svg,FromRight.svg,LightWind.png,From83to89.png","FromRight.svg,FromRight.svg,FromRight.svg,Light Breeze,83–89°F"
+776227,Dodger Stadium4:10SF  @ LAD,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+776236,Steinbrenner Field7:35BOS @ TB,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,ModerateWind.png,From83to89.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Moderate Wind,83–89°F"
+776231,Busch Stadium2:15MIL @ STL,"OutLeftCenter.svg,OutCenter.svg,OutLeftCenter.svg,ModerateWind.png,From83to89.png","OutLeftCenter.svg,OutCenter.svg,OutLeftCenter.svg,Moderate Wind,83–89°F"
+776226,Globe Life Field2:35MIA @ TEX,RoofClosed.png,Roof Closed
+776228,Daikin Park7:10SEA @ HOU,RoofClosed.png,Roof Closed
+776237,Citi Field1:40WAS @ NYM,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,HighP.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,High Pressure"

@@ -1,0 +1,8 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,4,.000,.000,1,Brooks Lee,686797,,3,,,0.00,,3,24,.200,.200,Cantillo,676282,5,,.000,3,,2025
+,3,.333,1.000,,Austin Martin,668885,,1,,,,1,1,12,.333,.666,Cantillo,676282,3,,.333,2,1,2025
+,2,.000,.000,,Edouard Julien,666397,,1,,2,2.00,,1,3,.000,.000,Cantillo,676282,2,,.000,,,2025
+,4,.250,.250,1,Royce Lewis,668904,,2,1,3,3.00,1,3,22,.400,.650,Cantillo,676282,5,1,.250,,1,2024
+1,4,.250,.500,,Royce Lewis,668904,1,2,,,0.00,1,3,17,.250,.750,Cantillo,676282,4,1,.500,2,2,2025
+1,3,.333,.500,1,Trevor Larnach,663616,,2,,,0.00,1,,11,.500,.833,Cantillo,676282,4,2,.333,1,1,2025
+2,4,.250,.333,1,Byron Buxton,621439,1,2,,,0.00,1,2,20,.400,.900,Cantillo,676282,5,,.500,1,2,2024
