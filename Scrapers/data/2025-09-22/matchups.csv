@@ -1,0 +1,37 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+SF,Matt Chapman,656305,9,McGreevy,700241,10,-2,23,26,-25,-27
+SF,Patrick Bailey,672275,3,McGreevy,700241,10,-11,26,16,-32,-29
+SF,Casey Schmitt,669477,4,McGreevy,700241,8,-2,6,13,-27,-36
+SF,Heliot Ramos,671218,6,McGreevy,700241,8,-10,22,17,-34,-31
+SF,Bryce Eldridge,805811,-5,McGreevy,700241,7,-11,20,9,-35,-25
+SF,Rafael Devers,646240,9,McGreevy,700241,7,-17,37,19,-24,-28
+SF,Drew Gilbert,687551,2,McGreevy,700241,3,-24,6,16,-28,-36
+SF,Willy Adames,642715,1,McGreevy,700241,1,-3,5,15,-30,-21
+STL,Nolan Arenado,571448,7,Verlander,434378,-1,-7,-1,8,-13,-4
+STL,Ivan Herrera,671056,8,Verlander,434378,-3,2,-3,-4,-2,0
+STL,Thomas Saggese,695336,-2,Verlander,434378,-3,-21,10,-5,-8,-11
+SF,Jung Hoo Lee,808982,7,McGreevy,700241,-4,-45,23,9,-46,-30
+STL,Lars Nootbaar,663457,5,Verlander,434378,-7,-41,15,5,-14,-3
+SD,Luis Arraez,650333,9,Peralta,642547,-7,1,17,-13,24,40
+STL,Jordan Walker,691023,-7,Verlander,434378,-8,-16,-7,-7,-6,-1
+STL,Pedro Pages,686780,-7,Verlander,434378,-8,-14,-8,-3,-13,1
+STL,Alec Burleson,676475,6,Verlander,434378,-9,-27,4,-1,-12,8
+STL,Brendan Donovan,680977,8,Verlander,434378,-11,-40,-3,7,-22,0
+STL,Victor Scott II,687363,-4,Verlander,434378,-14,-50,1,-5,-7,4
+MIL,Andrew Vaughn,683734,3,Pivetta,601713,-19,16,-13,-16,-11,22
+MIL,Sal Frelick,686217,2,Pivetta,601713,-19,7,2,-20,-12,18
+MIL,Caleb Durbin,702332,-1,Pivetta,601713,-22,8,-18,-20,-17,8
+MIL,Joey Ortiz,687401,-5,Pivetta,601713,-23,28,-16,-25,2,19
+MIL,Jackson Chourio,694192,-3,Pivetta,601713,-25,32,-21,-22,-21,21
+MIL,Christian Yelich,592885,-1,Pivetta,601713,-26,7,-3,-28,-3,23
+SD,Fernando Tatis Jr.,665487,1,Peralta,642547,-26,2,5,-32,5,44
+SD,Freddy Fermin,666023,-6,Peralta,642547,-26,-13,6,-27,14,41
+MIL,Isaac Collins,686555,-4,Pivetta,601713,-26,13,-10,-20,-11,23
+MIL,William Contreras,661388,2,Pivetta,601713,-28,8,-20,-25,-14,22
+SD,Gavin Sheets,657757,-2,Peralta,642547,-30,-23,0,-30,16,47
+SD,Jake Cronenworth,630105,-6,Peralta,642547,-33,-26,-8,-25,9,51
+SD,Manny Machado,592518,-5,Peralta,642547,-33,-10,-7,-35,10,46
+MIL,Brice Turang,668930,-4,Pivetta,601713,-35,-8,-11,-29,-15,37
+SD,Jackson Merrill,701538,-6,Peralta,642547,-37,-35,5,-32,11,46
+SD,Ryan O'Hearn,656811,-6,Peralta,642547,-37,-22,-11,-31,4,51
+SD,Ramon Laureano,657656,-7,Peralta,642547,-42,-19,-10,-41,9,49
