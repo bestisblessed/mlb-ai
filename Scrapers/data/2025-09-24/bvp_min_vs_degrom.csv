@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,3,.333,.500,Christian Vazquez,543877,,1,,0.00,1,1,10,.333,.666,deGrom,594798,3,,.333,1,1,2018
+,2,.000,.000,Christian Vazquez,543877,,1,2,2.00,,1,11,.000,.000,deGrom,594798,2,,.000,,,2020
+,2,.500,1.000,Christian Vazquez,543877,1,1,,,1,1,7,.500,1.500,deGrom,594798,2,1,1.000,1,2,2021
+,2,.500,.500,Byron Buxton,621439,1,1,1,1.00,1,1,7,.500,1.500,deGrom,594798,2,,1.000,,2,2019
