@@ -1,0 +1,6 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,2,.500,.500,1,Josh Lowe,666139,1,,0.00,1,,16,.667,1.167,Bieber,669456,3,.500,,1,2022
+2,4,.250,.333,1,Brandon Lowe,664040,2,,0.00,1,1,17,.400,.650,Bieber,669456,5,.250,1,1,2018
+,3,.000,.---,,Brandon Lowe,664040,1,,,,5,16,.000,.000,Bieber,669456,3,.000,3,,2019
+,3,.000,.000,,Brandon Lowe,664040,1,1,1.00,,2,13,.000,.000,Bieber,669456,3,.000,2,,2022
+,4,.250,.333,,Yandy Diaz,650490,1,2,2.00,1,3,14,.250,.500,Bieber,669456,4,.250,1,1,2022

@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+776181,Fenway Park7:10DET @ BOS,"OutRightCenter.svg,OutRight.svg,OutRightMiddle.svg,LowP.png","OutRightCenter.svg,OutRight.svg,OutRightMiddle.svg,Low Pressure"
+776165,Nationals Park6:45CHW @ WAS,"InLeftMiddle.svg,InCenter.svg,InRight.svg,From76to82.png","InLeftMiddle.svg,InCenter.svg,InRight.svg,76–82°F"
+776172,Sutter Health Park10:05KC  @ ATH,"OutLeftCenter.svg,OutLeft.svg,OutLeftCenter.svg,LightWind.png,Over90.png,LowH.png,LowP.png","OutLeftCenter.svg,OutLeft.svg,OutLeftCenter.svg,Light Breeze,≥90°F,Low Humidity,Low Pressure"
+776176,Citizens Bank Park6:45MIN @ PHI,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,From76to82.png,LowP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,76–82°F,Low Pressure"
+776180,Truist Park7:15PIT @ ATL,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,HighH.png,LowP.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,High Humidity,Low Pressure"
+776177,Rogers Centre7:07TB  @ TOR,"OutRightMiddle.svg,InLeftMiddle.svg,InLeft.svg,HighH.png,LowP.png","OutRightMiddle.svg,InLeftMiddle.svg,InLeft.svg,High Humidity,Low Pressure"
+776174,Yankee Stadium7:05BAL @ NYY,"OutRightMiddle.svg,FromLeft.svg,FromLeft.svg,LightWind.png,From76to82.png,LowP.png","OutRightMiddle.svg,FromLeft.svg,FromLeft.svg,Light Breeze,76–82°F,Low Pressure"
+776175,Progressive Field7:10TEX @ CLE,"InLeft.svg,InLeftCenter.svg,OutLeftMiddle.svg,HighH.png,LowP.png","InLeft.svg,InLeftCenter.svg,OutLeftMiddle.svg,High Humidity,Low Pressure"
+776167,Wrigley Field2:20STL @ CHC,"OutRightMiddle.svg,OutLeftCenter.svg,InRightMiddle.svg,From76to82.png,LowP.png","OutRightMiddle.svg,OutLeftCenter.svg,InRightMiddle.svg,76–82°F,Low Pressure"
+776169,Angel Stadium9:38HOU @ LAA,"OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,LightWind.png,HighH.png,LowP.png","OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,Light Breeze,High Humidity,Low Pressure"
+776166,Oracle Park10:15COL @ SF,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,HighH.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,High Humidity,Low Pressure"
+776173,LoanDepot Park7:10NYM @ MIA,RoofClosed.png,Roof Closed
+776171,American Family Fld8:10CIN @ MIL,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png,HighH.png,LowP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze,High Humidity,Low Pressure"
+776170,Petco Park9:40ARI @ SD,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,HighH.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,High Humidity"
+776168,T-Mobile Park9:40LAD @ SEA,"FromRight.svg,InRightMiddle.svg,InRightMiddle.svg,HighP.png","FromRight.svg,InRightMiddle.svg,InRightMiddle.svg,High Pressure"
