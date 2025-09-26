@@ -1,0 +1,13 @@
+game_id,game,icons,icon_labels
+776182,Sutter Health Park3:35HOU @ ATH,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze"
+776188,Citizens Bank Park6:05MIA @ PHI,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,From76to82.png,HighH.png,LowP.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,76–82°F,High Humidity,Low Pressure"
+776190,Great American BP12:40PIT @ CIN,"OutLeft.svg,OutLeftCenter.svg,OutLeftCenter.svg,HighH.png,LowP.png","OutLeft.svg,OutLeftCenter.svg,OutLeftCenter.svg,High Humidity,Low Pressure"
+776191,Oriole Park1:05TB  @ BAL,"OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png,HighH.png,LowP.png","OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F,High Humidity,Low Pressure"
+776185,Chase Field3:40LAD @ ARI,RoofClosed.png,Roof Closed
+776184,Yankee Stadium7:05CHW @ NYY,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,HighH.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,High Humidity,Low Pressure"
+776178,Angel Stadium9:38KC  @ LAA,"OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png","OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze"
+776189,Progressive Field6:40DET @ CLE,"InLeftMiddle.svg,InLeft.svg,InLeft.svg,HighH.png,LowP.png","InLeftMiddle.svg,InLeft.svg,InLeft.svg,High Humidity,Low Pressure"
+776186,Rogers Centre7:07BOS @ TOR,RoofClosed.png,Roof Closed
+776183,Globe Life Field2:35MIN @ TEX,RoofClosed.png,Roof Closed
+776187,Wrigley Field7:40NYM @ CHC,"InLeftCenter.svg,InCenter.svg,InRightCenter.svg","InLeftCenter.svg,InCenter.svg,InRightCenter.svg"
+776179,T-Mobile Park9:40COL @ SEA,"InLeft.svg,InLeft.svg,InCenter.svg,LightWind.png,HighP.png","InLeft.svg,InLeft.svg,InCenter.svg,Light Breeze,High Pressure"
