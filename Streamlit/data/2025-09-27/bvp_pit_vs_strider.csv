@@ -1,0 +1,8 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,.000,.---,1,Jack Suwinski,669261,,1,,,,,13,.500,.500,Strider,675911,2,,.000,1,,2023
+1,2,.000,.000,,Andrew McCutchen,457705,,1,,0.00,,3,7,.000,.000,Strider,675911,2,,.000,1,,2022
+,2,.500,1.000,,Andrew McCutchen,457705,1,1,,,1,,9,.500,1.500,Strider,675911,2,1,1.000,1,2,2023
+,3,.333,.500,,Bryan Reynolds,668804,,1,1,1.00,1,,14,.333,.666,Strider,675911,3,,.333,1,1,2022
+1,1,.000,.000,1,Bryan Reynolds,668804,,1,,0.00,,,8,.500,.500,Strider,675911,2,,.000,,,2023
+,2,.500,1.000,,Henry Davis,680779,,1,,,1,,6,.500,1.000,Strider,675911,2,1,.500,1,1,2023
+1,2,.500,.500,,Jared Triolo,669707,,1,,0.00,1,1,8,.500,1.000,Strider,675911,2,2,.500,,1,2023
