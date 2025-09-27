@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+776154,Sutter Health Park10:05KC  @ ATH,"OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,HeavyWind.png,LowP.png","OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,Heavy Wind,Low Pressure"
+776160,Nationals Park4:05CHW @ WAS,"InRight.svg,InCenter.svg,InLeftCenter.svg,LightWind.png,HighH.png","InRight.svg,InCenter.svg,InLeftCenter.svg,Light Breeze,High Humidity"
+776157,Fenway Park4:10DET @ BOS,"FromRight.svg,FromRight.svg,FromRight.svg,LightWind.png","FromRight.svg,FromRight.svg,FromRight.svg,Light Breeze"
+776159,Rogers Centre3:07TB  @ TOR,"OutRight.svg,OutRight.svg,OutRightCenter.svg,LightWind.png,HighH.png,LowP.png","OutRight.svg,OutRight.svg,OutRightCenter.svg,Light Breeze,High Humidity,Low Pressure"
+776153,American Family Fld7:15CIN @ MIL,"OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,LightWind.png,From76to82.png,LowP.png","OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,Light Breeze,76–82°F,Low Pressure"
+776163,Citizens Bank Park6:05MIN @ PHI,"OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,From76to82.png","OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,76–82°F"
+776156,Truist Park7:15PIT @ ATL,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,From76to82.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,76–82°F,Low Pressure"
+776164,Wrigley Field2:20STL @ CHC,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From83to89.png,LowP.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,83–89°F,Low Pressure"
+776158,Progressive Field7:15TEX @ CLE,"InRightCenter.svg,OutLeftMiddle.svg,OutLeftCenter.svg,HighH.png,LowP.png","InRightCenter.svg,OutLeftMiddle.svg,OutLeftCenter.svg,High Humidity,Low Pressure"
+776155,Angel Stadium9:38HOU @ LAA,"OutCenter.svg,OutLeftCenter.svg,OutLeft.svg,LightWind.png","OutCenter.svg,OutLeftCenter.svg,OutLeft.svg,Light Breeze"
+776162,Yankee Stadium1:05BAL @ NYY,"InRightMiddle.svg,FromRight.svg,FromRight.svg,LightWind.png,From76to82.png","InRightMiddle.svg,FromRight.svg,FromRight.svg,Light Breeze,76–82°F"
+776161,LoanDepot Park4:10NYM @ MIA,RoofClosed.png,Roof Closed
+776146,Oracle Park4:05COL @ SF,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,HighH.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,High Humidity"
+776150,T-Mobile Park9:40LAD @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LowP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Low Pressure"
+776152,Petco Park8:40ARI @ SD,"OutRightCenter.svg,OutRight.svg,OutRight.svg,LightWind.png,HighH.png","OutRightCenter.svg,OutRight.svg,OutRight.svg,Light Breeze,High Humidity"
