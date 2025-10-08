@@ -1,0 +1,5 @@
+game_id,game,icons,icon_labels
+813041,Dodger Stadium9:08PHI @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze"
+813060,Yankee Stadium7:08TOR @ NYY,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind"
+813055,Comerica Park3:08SEA @ DET,"OutRightCenter.svg,OutRight.svg,OutRight.svg,LightWind.png,LowP.png","OutRightCenter.svg,OutRight.svg,OutRight.svg,Light Breeze,Low Pressure"
+813049,Wrigley Field5:08MIL @ CHC,"InCenter.svg,InCenter.svg,InCenter.svg,LightWind.png","InCenter.svg,InCenter.svg,InCenter.svg,Light Breeze"
