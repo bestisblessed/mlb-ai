@@ -12,13 +12,25 @@ import re
 # ---------------------------------------------------------------------------
 @st.cache_data(show_spinner="Loading batter logs...")
 def load_batter_logs(year: int) -> pd.DataFrame:
-    path = os.path.join(DATA_DIR, str(year), f"batters_gamelogs_{year}_statsapi.csv")
-    return pd.read_csv(path) if os.path.exists(path) else pd.DataFrame()
+    current_path = os.path.join(DATA_DIR, str(year), f"batters_gamelogs_{year}_statsapi.csv")
+    prev_path = os.path.join(DATA_DIR, str(year - 1), f"batters_gamelogs_{year - 1}_statsapi.csv")
+    frames = []
+    if os.path.exists(current_path):
+        frames.append(pd.read_csv(current_path, low_memory=False))
+    if os.path.exists(prev_path):
+        frames.append(pd.read_csv(prev_path, low_memory=False))
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
 @st.cache_data(show_spinner="Loading pitcher logs...")
 def load_pitcher_logs(year: int) -> pd.DataFrame:
-    path = os.path.join(DATA_DIR, str(year), f"pitchers_gamelogs_{year}_statsapi.csv")
-    return pd.read_csv(path) if os.path.exists(path) else pd.DataFrame()
+    current_path = os.path.join(DATA_DIR, str(year), f"pitchers_gamelogs_{year}_statsapi.csv")
+    prev_path = os.path.join(DATA_DIR, str(year - 1), f"pitchers_gamelogs_{year - 1}_statsapi.csv")
+    frames = []
+    if os.path.exists(current_path):
+        frames.append(pd.read_csv(current_path, low_memory=False))
+    if os.path.exists(prev_path):
+        frames.append(pd.read_csv(prev_path, low_memory=False))
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
 DATA_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
