@@ -30,7 +30,8 @@ def fetch_pitcher_gamelog(player_id, season):
     params = {
         "stats": "gameLog",
         "season": season,
-        "group": "pitching"
+        "group": "pitching",
+        "gameType": "R,F,D,L,W"
     }
     try:
         data = get_json(endpoint, params)
