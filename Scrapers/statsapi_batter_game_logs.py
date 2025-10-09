@@ -27,29 +27,58 @@ def get_json(endpoint, params=None):
 
 def fetch_batter_gamelog(player_id, season):
     endpoint = f"people/{player_id}/stats"
-    params = {
+    all_records = []
+    
+    # Fetch regular season games
+    params_regular = {
         "stats": "gameLog",
         "season": season,
-        "group": "hitting"
+        "group": "hitting",
+        "gameType": "R"
     }
+    
+    # Fetch postseason games
+    params_postseason = {
+        "stats": "gameLog",
+        "season": season,
+        "group": "hitting",
+        "gameType": "P"
+    }
+    
     try:
-        data = get_json(endpoint, params)
-        if not data.get('stats') or len(data['stats']) == 0:
-            return []
-
-        splits = data['stats'][0].get('splits', [])
-        records = []
-        for game in splits:
-            stat = game['stat']
-            record = {
-                "player_id": player_id,
-                "date": game['date'],
-                "team": game['team']['name'],
-                "opponent": game.get('opponent', {}).get('name', ''),
-                **stat  # Dynamically include all stat fields
-            }
-            records.append(record)
-        return records
+        # Get regular season games
+        data_regular = get_json(endpoint, params_regular)
+        if data_regular.get('stats') and len(data_regular['stats']) > 0:
+            splits = data_regular['stats'][0].get('splits', [])
+            for game in splits:
+                stat = game['stat']
+                record = {
+                    "player_id": player_id,
+                    "date": game['date'],
+                    "team": game['team']['name'],
+                    "opponent": game.get('opponent', {}).get('name', ''),
+                    "gameType": game.get('gameType', 'R'),
+                    **stat  # Dynamically include all stat fields
+                }
+                all_records.append(record)
+        
+        # Get postseason games
+        data_postseason = get_json(endpoint, params_postseason)
+        if data_postseason.get('stats') and len(data_postseason['stats']) > 0:
+            splits = data_postseason['stats'][0].get('splits', [])
+            for game in splits:
+                stat = game['stat']
+                record = {
+                    "player_id": player_id,
+                    "date": game['date'],
+                    "team": game['team']['name'],
+                    "opponent": game.get('opponent', {}).get('name', ''),
+                    "gameType": game.get('gameType', 'P'),
+                    **stat  # Dynamically include all stat fields
+                }
+                all_records.append(record)
+        
+        return all_records
     except Exception as e:
         print(f"Error fetching logs for player {player_id}: {e}")
         return []
