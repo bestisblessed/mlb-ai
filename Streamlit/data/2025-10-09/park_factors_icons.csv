@@ -1,3 +1,3 @@
 game_id,game,icons,icon_labels
-813042,Dodger Stadium6:08PHI @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F"
-813050,Wrigley Field9:08MIL @ CHC,"InRightMiddle.svg,InRightMiddle.svg,OutLeftMiddle.svg,LightWind.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,OutLeftMiddle.svg,Light Breeze,High Pressure"
+813042,Dodger Stadium6:08PHI @ LAD,"OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png,LowP.png","OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F,Low Pressure"
+813050,Wrigley Field9:08MIL @ CHC,"InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,LightWind.png,Under55.png,LowP.png","InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,Light Breeze,Under55.png,Low Pressure"
