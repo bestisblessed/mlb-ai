@@ -30,7 +30,10 @@ def fetch_pitcher_gamelog(player_id, season):
     params = {
         "stats": "gameLog",
         "season": season,
-        "group": "pitching"
+        "group": "pitching",
+        # Include postseason game types in addition to regular season
+        # R = Regular, F = Wild Card, D = Division, L = LCS, W = World Series
+        "gameType": "R,F,D,L,W",
     }
     try:
         data = get_json(endpoint, params)
