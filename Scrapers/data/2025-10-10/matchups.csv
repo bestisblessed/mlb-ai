@@ -1,0 +1,19 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+DET,Kerry Carpenter,681481,6,Kirby,669923,-3,9,-31,4,10,23
+DET,Zach McKinstry,656716,3,Kirby,669923,-3,28,-28,13,-17,21
+DET,Dillon Dingler,693307,2,Kirby,669923,-4,3,-26,12,-4,17
+DET,Colt Keith,690993,3,Kirby,669923,-5,15,-34,14,-10,25
+DET,Javier Baez,595879,-1,Kirby,669923,-8,8,-30,6,-4,32
+DET,Riley Greene,682985,6,Kirby,669923,-8,12,-26,8,-27,30
+DET,Gleyber Torres,650402,7,Kirby,669923,-9,3,-33,20,-23,27
+DET,Parker Meadows,678009,-4,Kirby,669923,-10,11,-38,12,-19,21
+DET,Spencer Torkelson,679529,-6,Kirby,669923,-13,-5,-46,24,-19,28
+SEA,Julio Rodriguez,677594,-5,Skubal,669373,-26,-14,-40,-13,-12,42
+SEA,Cal Raleigh,663728,-4,Skubal,669373,-28,-8,-42,-7,-36,40
+SEA,Jorge Polanco,593871,-3,Skubal,669373,-28,-10,-41,-25,-12,46
+SEA,Josh Naylor,647304,-3,Skubal,669373,-28,-8,-43,-17,-26,47
+SEA,Victor Robles,645302,-8,Skubal,669373,-28,-8,-43,-14,-23,35
+SEA,Randy Arozarena,668227,-7,Skubal,669373,-30,-10,-34,-14,-35,41
+SEA,Mitch Garver,641598,-8,Skubal,669373,-32,-20,-41,-14,-26,40
+SEA,J.P. Crawford,641487,-7,Skubal,669373,-35,-16,-50,-18,-27,61
+SEA,Eugenio Suarez,553993,-10,Skubal,669373,-48,-29,-55,-23,-35,52
