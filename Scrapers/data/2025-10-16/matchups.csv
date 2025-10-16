@@ -1,0 +1,37 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+LAD,Andy Pages,681624,8,Quintana,500779,9,4,-2,24,-2,-35
+LAD,Shohei Ohtani,660271,10,Quintana,500779,9,3,11,8,18,-29
+LAD,Will Smith,669257,10,Quintana,500779,9,-6,-12,25,28,-28
+SEA,Dominic Canzone,686527,6,Scherzer,453286,8,57,-12,-3,-25,-8
+LAD,Tommy Edman,669242,9,Quintana,500779,7,3,21,11,-4,-31
+SEA,Cal Raleigh,663728,10,Scherzer,453286,6,34,-25,-2,-7,-4
+SEA,Eugenio Suarez,553993,4,Scherzer,453286,5,25,-10,-8,-16,-5
+LAD,Teoscar Hernandez,606192,8,Quintana,500779,5,22,-2,7,4,-30
+LAD,Enrique Hernandez,571771,5,Quintana,500779,3,1,-2,13,5,-30
+LAD,Freddie Freeman,518692,9,Quintana,500779,3,24,-5,8,-9,-30
+SEA,Jorge Polanco,593871,10,Scherzer,453286,3,33,-14,1,-13,-3
+LAD,Alex Call,669743,9,Quintana,500779,2,-3,3,16,-1,-25
+SEA,Julio Rodriguez,677594,8,Scherzer,453286,1,22,-24,13,-24,-2
+TOR,Addison Barger,680718,5,Castillo,622491,-1,33,-6,-10,-19,0
+SEA,Josh Naylor,647304,10,Scherzer,453286,-1,38,-17,-4,-13,2
+SEA,Randy Arozarena,668227,-3,Scherzer,453286,-2,28,-12,-11,-13,-2
+SEA,Victor Robles,645302,2,Scherzer,453286,-2,29,-17,-2,-21,-10
+TOR,Nathan Lukes,664770,8,Castillo,622491,-3,37,-6,-3,-28,-1
+SEA,J.P. Crawford,641487,7,Scherzer,453286,-4,24,-21,2,-16,-3
+TOR,George Springer,543807,10,Castillo,622491,-6,3,-21,-3,-7,0
+TOR,Vladimir Guerrero Jr.,665489,8,Castillo,622491,-7,16,-6,-10,-18,3
+LAD,Mookie Betts,605141,8,Quintana,500779,-8,-11,-19,18,-16,-23
+TOR,Daulton Varsho,662139,0,Castillo,622491,-9,1,-2,-18,-23,5
+TOR,Ernie Clement,676391,4,Castillo,622491,-13,1,-7,-14,-26,8
+TOR,Anthony Santander,623993,-7,Castillo,622491,-14,24,-29,-18,-20,11
+MIL,Caleb Durbin,702332,4,Glasnow,607192,-14,-28,-10,-1,22,27
+TOR,Andres Gimenez,665926,-4,Castillo,622491,-15,-2,-9,-15,-25,10
+MIL,Joey Ortiz,687401,-1,Glasnow,607192,-16,-16,-13,-3,19,26
+MIL,Sal Frelick,686217,3,Glasnow,607192,-16,-30,3,-17,25,28
+MIL,Andrew Vaughn,683734,4,Glasnow,607192,-18,-26,-20,0,11,13
+TOR,Alejandro Kirk,672386,4,Castillo,622491,-19,-12,-10,-18,-18,27
+MIL,Brice Turang,668930,-1,Glasnow,607192,-26,-11,-22,-20,17,25
+MIL,Christian Yelich,592885,-2,Glasnow,607192,-26,-13,-10,-10,-5,26
+MIL,William Contreras,661388,1,Glasnow,607192,-26,-24,-16,-11,-2,24
+MIL,Blake Perkins,663368,-5,Glasnow,607192,-29,-21,-11,-14,6,27
+MIL,Jackson Chourio,694192,-5,Glasnow,607192,-30,-20,-28,-8,17,29
