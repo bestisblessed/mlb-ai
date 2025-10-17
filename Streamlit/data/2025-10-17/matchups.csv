@@ -1,0 +1,37 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+LAD,Shohei Ohtani,660271,10,Quintana,500779,9,0,5,12,23,-29
+LAD,Will Smith,669257,10,Quintana,500779,9,0,-5,12,30,-25
+TOR,Addison Barger,680718,8,Miller,682243,7,43,-24,8,-13,-17
+LAD,Tommy Edman,669242,9,Quintana,500779,7,15,15,9,-5,-31
+LAD,Andy Pages,681624,8,Quintana,500779,6,-1,-8,23,1,-36
+LAD,Enrique Hernandez,571771,5,Quintana,500779,3,8,-7,11,7,-30
+LAD,Teoscar Hernandez,606192,8,Quintana,500779,3,18,0,6,0,-30
+LAD,Alex Call,669743,9,Quintana,500779,2,-2,1,17,-1,-25
+TOR,Daulton Varsho,662139,6,Miller,682243,2,32,-25,-3,-27,-11
+LAD,Freddie Freeman,518692,8,Quintana,500779,-2,22,-13,4,-9,-26
+TOR,George Springer,543807,10,Miller,682243,-5,20,-21,-4,-21,-8
+TOR,Andres Gimenez,665926,1,Miller,682243,-6,10,-26,2,-19,-14
+TOR,Vladimir Guerrero Jr.,665489,8,Miller,682243,-6,12,-12,-1,-19,-19
+LAD,Mookie Betts,605141,8,Quintana,500779,-7,-5,-16,14,-13,-21
+SEA,Eugenio Suarez,553993,-1,Gausman,592332,-8,11,-7,-13,-30,8
+TOR,Alejandro Kirk,672386,9,Miller,682243,-10,-3,-18,0,-23,-21
+TOR,Nathan Lukes,664770,5,Miller,682243,-12,25,-28,-8,-23,-12
+SEA,Cal Raleigh,663728,3,Gausman,592332,-13,-2,0,-15,-29,8
+SEA,Josh Naylor,647304,7,Gausman,592332,-13,-11,-2,-11,-29,-6
+TOR,Isiah Kiner-Falefa,643396,-3,Miller,682243,-14,-6,-26,-5,-22,-10
+SEA,J.P. Crawford,641487,3,Gausman,592332,-14,-16,1,-4,-33,11
+SEA,Dominic Canzone,686527,-3,Gausman,592332,-15,-8,-9,-13,-29,5
+SEA,Julio Rodriguez,677594,-1,Gausman,592332,-15,-9,3,-14,-33,9
+TOR,Ernie Clement,676391,1,Miller,682243,-17,11,-29,-14,-27,-17
+SEA,Jorge Polanco,593871,3,Gausman,592332,-19,-15,-20,-6,-33,5
+SEA,Randy Arozarena,668227,-7,Gausman,592332,-19,-2,0,-9,-40,23
+SEA,Leo Rivas,660844,-8,Gausman,592332,-21,12,-19,-10,-40,12
+MIL,Sal Frelick,686217,-5,Ohtani,660271,-32,-17,-23,-2,-33,59
+MIL,Caleb Durbin,702332,-6,Ohtani,660271,-37,-20,-34,-6,-32,61
+MIL,Andrew Vaughn,683734,-5,Ohtani,660271,-38,-4,-34,-16,-28,56
+MIL,Joey Ortiz,687401,-7,Ohtani,660271,-38,-5,-34,-15,-23,60
+MIL,William Contreras,661388,-5,Ohtani,660271,-39,-11,-31,-15,-23,59
+MIL,Christian Yelich,592885,-7,Ohtani,660271,-41,-13,-26,-15,-22,44
+MIL,Jackson Chourio,694192,-9,Ohtani,660271,-48,-10,-39,-13,-34,54
+MIL,Blake Perkins,663368,-9,Ohtani,660271,-53,-16,-38,-12,-34,45
+MIL,Brice Turang,668930,-9,Ohtani,660271,-56,-14,-35,-18,-42,60
