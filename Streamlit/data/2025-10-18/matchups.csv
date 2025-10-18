@@ -1,0 +1,19 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+SEA,Julio Rodriguez,677594,4,Yesavage,702056,9,-5,29,-14,20,22
+SEA,Josh Naylor,647304,8,Yesavage,702056,5,-16,10,-1,10,17
+SEA,Victor Robles,645302,-3,Yesavage,702056,4,-4,20,-9,-2,29
+SEA,Jorge Polanco,593871,5,Yesavage,702056,3,-9,12,-21,26,31
+SEA,Dominic Canzone,686527,-1,Yesavage,702056,2,1,4,-9,1,23
+SEA,J.P. Crawford,641487,4,Yesavage,702056,2,2,-3,-3,-1,23
+SEA,Randy Arozarena,668227,-5,Yesavage,702056,2,-7,4,-10,5,21
+SEA,Eugenio Suarez,553993,-4,Yesavage,702056,-1,-11,12,-15,-1,20
+TOR,Isiah Kiner-Falefa,643396,-6,Gilbert,669302,-7,6,20,-20,-30,34
+TOR,Alejandro Kirk,672386,4,Gilbert,669302,-8,-15,6,-16,-18,18
+SEA,Cal Raleigh,663728,-2,Yesavage,702056,-9,-14,-5,-6,-14,27
+TOR,George Springer,543807,5,Gilbert,669302,-9,-3,7,-20,-28,28
+TOR,Vladimir Guerrero Jr.,665489,2,Gilbert,669302,-9,0,-1,-11,-31,25
+TOR,Addison Barger,680718,-5,Gilbert,669302,-10,3,0,-16,-32,25
+TOR,Nathan Lukes,664770,-2,Gilbert,669302,-10,-18,4,-16,-22,19
+TOR,Andres Gimenez,665926,-6,Gilbert,669302,-11,-1,-6,-15,-34,22
+TOR,Daulton Varsho,662139,-7,Gilbert,669302,-18,-15,-19,-10,-38,21
+TOR,Ernie Clement,676391,-5,Gilbert,669302,-18,-21,-16,-19,-30,17
