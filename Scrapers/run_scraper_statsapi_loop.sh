@@ -2,8 +2,10 @@
 
 set -e
 
-#for YEAR in {2010..2024}; do
-for YEAR in {2020..2025}; do
+START_YEAR="${1:-2020}"
+END_YEAR="${2:-$(date +%Y)}"
+
+for YEAR in $(seq "$START_YEAR" "$END_YEAR"); do
   echo "Fetching team game logs for $YEAR..."
   python statsapi_team_game_logs_loop.py $YEAR
 
@@ -18,4 +20,4 @@ for YEAR in {2020..2025}; do
 
 done
 
-echo "Done."
+echo "Done for seasons $START_YEAR through $END_YEAR."

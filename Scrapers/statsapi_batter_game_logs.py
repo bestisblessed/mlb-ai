@@ -5,13 +5,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 from pathlib import Path
 import os
+from datetime import datetime
 
 BASE_URL = "https://statsapi.mlb.com/api/v1"
 TIMEOUT = 20
 MAX_WORKERS = 6
 RETRY_DELAY = 5
 MAX_RETRIES = 3
-YEAR = 2025  # Single variable to control year throughout script
+YEAR = datetime.now().year  # Defaults to current season year
 
 def get_json(endpoint, params=None):
     for attempt in range(MAX_RETRIES):
