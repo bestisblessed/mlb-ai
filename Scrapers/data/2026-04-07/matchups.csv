@@ -1,391 +1,391 @@
 Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
-HOU,Christian VazquezC. Vazquez,543877,7,Freeland,607536,30,14,4,58,25,-48
-HOU,Christian WalkerC. Walker,572233,6,Freeland,607536,27,12,15,60,18,-40
-COL,Troy JohnstonT. Johnston,687859,1,Burrows,681347,27,13,16,4,10,34
-COL,Brenton DoyleB. Doyle,686668,2,Burrows,681347,26,12,17,14,11,16
-COL,Hunter GoodmanH. Goodman,696100,2,Burrows,681347,26,13,30,3,4,26
-COL,Jordan BeckJ. Beck,687597,-3,Burrows,681347,26,10,36,13,7,9
-HOU,Joey LoperfidoJ. Loperfido,694388,-5,Freeland,607536,23,4,-1,51,15,-41
-COL,Brett SullivanB. Sullivan,664954,-4,Burrows,681347,22,7,6,27,4,1
-COL,Kyle KarrosK. Karros,691720,-4,Burrows,681347,22,10,13,5,3,21
-HOU,Carlos CorreaC. Correa,621043,8,Freeland,607536,21,10,8,53,13,-48
-COL,Tyler FreemanT. Freeman,671289,5,Burrows,681347,21,11,18,6,7,9
-COL,Jake McCarthyJ. McCarthy,664983,2,Burrows,681347,20,7,16,9,12,-3
-HOU,Jose AltuveJ. Altuve,514888,8,Freeland,607536,20,10,18,30,17,-31
-COL,Willi CastroW. Castro,650489,-1,Burrows,681347,20,7,7,1,3,32
-HOU,Isaac ParedesI. Paredes,670623,7,Freeland,607536,19,9,10,55,13,-38
-COL,Mickey MoniakM. Moniak,666160,-1,Burrows,681347,18,5,16,-6,5,23
-HOU,Nick AllenN. Allen,669397,-3,Freeland,607536,18,5,13,34,9,-40
-HOU,Cam SmithC. Smith,701358,-3,Freeland,607536,17,3,16,70,-6,-37
-HOU,Jake MeyersJ. Meyers,676694,2,Freeland,607536,17,4,7,53,7,-43
-COL,Ezequiel TovarE. Tovar,678662,-4,Burrows,681347,16,2,18,-2,5,11
-HOU,Yordan AlvarezY. Alvarez,670541,10,Freeland,607536,16,5,-1,42,21,-35
-COL,Edouard JulienE. Julien,666397,-3,Burrows,681347,15,1,6,-7,9,9
-COL,TJ RumfieldT. Rumfield,681198,-5,Burrows,681347,15,0,-14,18,6,10
-ATL,Austin RileyA. Riley,663586,8,Kikuchi,579328,14,15,23,20,13,-9
-HOU,Jeremy PenaJ. Pena,665161,3,Freeland,607536,14,3,-12,39,9,-44
-WAS,Brady HouseB. House,691781,-3,Liberatore,669461,13,30,-36,-11,3,6
-TB,Ryan ViladeR. Vilade,668723,-1,Assad,665871,12,13,34,6,28,-9
-WAS,Jorbit VivasJ. Vivas,678391,4,Liberatore,669461,11,31,-46,18,6,-15
-HOU,Yainer DiazY. Diaz,673237,4,Freeland,607536,11,0,-4,24,1,-34
-WAS,James WoodJ. Wood,695578,6,Liberatore,669461,10,29,-30,2,13,-17
-STL,JJ WetherholtJ. Wetherholt,802139,-3,Cavalli,676917,10,26,-58,-29,4,27
-WAS,Jose TenaJ. Tena,677588,5,Liberatore,669461,9,34,-60,-11,12,-6
-WAS,Keibert RuizK. Ruiz,660688,9,Liberatore,669461,8,27,-45,3,13,-25
-WAS,Joey WiemerJ. Wiemer,686894,1,Liberatore,669461,7,34,-34,-13,6,-5
-CLE,Angel MartinezA. Martinez,682657,6,Cameron,702070,6,21,-25,21,11,2
-WAS,Curtis MeadC. Mead,678554,1,Liberatore,669461,6,32,-60,-12,8,-8
-WAS,Drew MillasD. Millas,686452,0,Liberatore,669461,6,23,-39,10,-1,-22
-MIA,Owen CaissieO. Caissie,683357,-4,Abbott,671096,5,8,-9,19,15,0
-ATL,Eli WhiteE. White,642201,-3,Kikuchi,579328,4,3,-13,15,7,-1
-MIA,Heriberto HernandezH. Hernandez,681715,3,Abbott,671096,4,8,18,14,9,-8
-TB,Jake FraleyJ. Fraley,641584,8,Assad,665871,3,5,14,12,16,7
-STL,Nolan GormanN. Gorman,669357,-1,Cavalli,676917,3,23,-42,-27,10,10
-WAS,Nasim NunezN. Nunez,683083,3,Liberatore,669461,2,25,-54,-6,5,-16
-LAA,Oswald PerazaO. Peraza,672724,-5,Lopez,625643,2,5,-14,4,1,17
-STL,Thomas SaggeseT. Saggese,695336,-4,Cavalli,676917,2,20,-63,-35,7,10
-MIA,Agustin RamirezA. Ramirez,682663,4,Abbott,671096,1,0,-17,30,11,-13
-ATL,Jonah HeimJ. Heim,641680,5,Kikuchi,579328,1,2,5,25,8,-21
-TB,Jonny DeLucaJ. DeLuca,676356,4,Assad,665871,1,1,30,-4,18,-1
-TB,Hunter FeducciaH. Feduccia,676439,2,Assad,665871,0,2,9,-3,24,0
-WAS,Jacob YoungJ. Young,696285,7,Liberatore,669461,0,26,-66,4,2,-22
-PHI,Kyle SchwarberK. Schwarber,656941,7,Ray,592662,0,5,-13,4,-14,12
-CHW,Munetaka MurakamiM. Murakami,808959,-7,Rogers,669432,0,10,-30,-17,6,5
-ATL,Ronald Acuna Jr.R. Acuna Jr.,660670,9,Kikuchi,579328,0,1,4,4,7,-2
-ATL,Jorge MateoJ. Mateo,622761,-3,Kikuchi,579328,-1,1,-4,17,-3,-9
-LAA,Josh LoweJ. Lowe,666139,-3,Lopez,625643,-1,-2,-10,-1,-3,20
-WAS,Luis GarciaL. Garcia,671277,9,Liberatore,669461,-1,22,-54,-8,13,-20
-STL,Nathan ChurchN. Church,701675,-8,Cavalli,676917,-1,17,-56,-19,-5,9
-LAA,Yoan MoncadaY. Moncada,660162,4,Lopez,625643,-1,-1,-7,-2,-6,21
-LAA,Bryce TeodosioB. Teodosio,669326,-8,Lopez,625643,-2,-1,-9,4,-3,10
-WAS,Daylen LileD. Lile,695734,7,Liberatore,669461,-2,18,-53,-10,6,-13
-BAL,Gunnar HendersonG. Henderson,683002,6,Smith,681343,-2,5,-29,-8,-5,10
-STL,Jordan WalkerJ. Walker,691023,-1,Cavalli,676917,-2,18,-52,-31,2,9
-STL,Masyn WinnM. Winn,691026,3,Cavalli,676917,-2,16,-67,-32,8,-1
-PHI,Rafael MarchanR. Marchan,665561,3,Ray,592662,-2,5,-15,10,-13,20
-LAA,Travis d'ArnaudT. d'Arnaud,518595,-4,Lopez,625643,-2,-1,-10,10,-5,11
-PHI,Alec BohmA. Bohm,664761,8,Ray,592662,-3,3,-19,-2,-10,22
-CHW,Derek HillD. Hill,656537,-4,Rogers,669432,-3,10,-46,-17,17,-13
-LAD,Freddie FreemanF. Freeman,518692,5,Gausman,592332,-3,0,-5,19,-7,-37
-TB,Jonathan ArandaJ. Aranda,666018,9,Assad,665871,-3,-1,8,3,21,-7
-CLE,Jose RamirezJ. Ramirez,608070,10,Cameron,702070,-3,5,-36,4,-1,10
-LAA,Logan O'HoppeL. O'Hoppe,681351,2,Lopez,625643,-3,-1,-15,2,0,15
-ATL,Michael Harris IIM. Harris II,671739,6,Kikuchi,579328,-3,-2,-6,6,0,-4
-BAL,Taylor WardT. Ward,621493,6,Smith,681343,-3,4,-46,-9,1,7
-PHI,Bryce HarperB. Harper,547180,8,Ray,592662,-4,1,-16,5,-17,22
-WAS,C.J. AbramsC. Abrams,682928,3,Liberatore,669461,-4,16,-53,-15,4,-5
-MIA,Connor NorbyC. Norby,681393,-3,Abbott,671096,-4,-2,-7,21,-3,-12
-LAA,Jeimer CandelarioJ. Candelario,600869,-1,Lopez,625643,-4,-3,-10,-4,-3,15
-PIT,Konnor GriffinK. Griffin,804606,-10,Pivetta,601713,-4,10,-58,-26,-30,1
-PIT,Marcell OzunaM. Ozuna,542303,-4,Pivetta,601713,-4,8,-26,-18,-23,-4
-ATL,Mike YastrzemskiM. Yastrzemski,573262,9,Kikuchi,579328,-4,-4,-3,14,3,-8
-ATL,Ozzie AlbiesO. Albies,645277,9,Kikuchi,579328,-4,-4,12,7,1,-19
-LAD,Santiago EspinalS. Espinal,669289,1,Gausman,592332,-4,-2,-13,37,-15,-39
-CLE,Steven KwanS. Kwan,680757,9,Cameron,702070,-4,3,-29,1,2,-10
-STL,Victor Scott IIV. Scott II,687363,-2,Cavalli,676917,-4,14,-65,-35,-1,5
-MIA,Xavier EdwardsX. Edwards,669364,8,Abbott,671096,-4,1,-20,20,10,-30
-STL,Alec BurlesonA. Burleson,676475,8,Cavalli,676917,-5,11,-57,-28,3,5
-TB,Ben WilliamsonB. Williamson,810938,5,Assad,665871,-5,-3,-19,6,12,7
-CLE,Bo NaylorB. Naylor,666310,4,Cameron,702070,-5,6,-33,12,5,0
-HOU,Brice MatthewsB. Matthews,694728,-10,Freeland,607536,-5,-24,-18,51,1,-42
-TB,Cedric MullinsC. Mullins,656775,3,Assad,665871,-5,-2,12,5,3,7
-TOR,Daulton VarshoD. Varsho,662139,-3,Yamamoto,808967,-5,-2,-11,-21,0,-17
-TB,Junior CamineroJ. Caminero,691406,10,Assad,665871,-5,-4,0,-1,17,1
-SEA,Luke RaleyL. Raley,670042,-6,Eovaldi,543135,-5,-1,10,8,-7,-39
-PHI,Otto KempO. Kemp,805249,-7,Ray,592662,-5,5,-24,-1,-22,32
-STL,Pedro PagesP. Pages,686780,-5,Cavalli,676917,-5,13,-43,-25,-7,7
-BAL,Pete AlonsoP. Alonso,624413,3,Smith,681343,-5,1,-32,-3,-9,10
-NYM,Carson BengeC. Benge,701807,-7,Gallen,668678,-6,3,-24,3,3,-14
-STL,Ivan HerreraI. Herrera,671056,9,Cavalli,676917,-6,8,-39,-36,4,-9
-TB,Nick FortesN. Fortes,663743,4,Assad,665871,-6,-5,18,-5,6,3
-MIA,Otto LopezO. Lopez,672640,6,Abbott,671096,-6,-3,-18,10,6,-22
-DET,Parker MeadowsP. Meadows,678009,3,Bradley,671737,-6,0,-40,-7,-4,24
-STL,Ramon UriasR. Urias,602104,1,Cavalli,676917,-6,17,-60,-33,9,1
-PIT,Spencer HorwitzS. Horwitz,687462,5,Pivetta,601713,-6,6,-36,-29,-13,8
-PHI,Trea TurnerT. Turner,607208,5,Ray,592662,-6,-1,-5,-3,-19,25
-BAL,Tyler O'NeillT. O'Neill,641933,1,Smith,681343,-6,1,-42,-12,-7,19
-CLE,Brayan RocchioB. Rocchio,677587,7,Cameron,702070,-7,7,-40,11,1,3
-ATL,Dominic SmithD. Smith,642086,3,Kikuchi,579328,-7,-6,-17,12,-6,-8
-BAL,Dylan BeaversD. Beavers,687637,-4,Smith,681343,-7,1,-36,-16,-12,12
-PHI,Edmundo SosaE. Sosa,624641,-1,Ray,592662,-7,-1,-18,-6,-8,11
-TOR,Ernie ClementE. Clement,676391,1,Yamamoto,808967,-7,-5,-28,-12,-7,-4
-TEX,Evan CarterE. Carter,694497,-1,Kirby,669923,-7,-4,3,-7,12,-17
-DET,Gleyber TorresG. Torres,650402,7,Bradley,671737,-7,-4,-49,0,-15,30
-MIA,Jakob MarseeJ. Marsee,805300,-1,Abbott,671096,-7,-6,-10,11,1,-11
-MIA,Javier SanojaJ. Sanoja,691594,5,Abbott,671096,-7,-3,-23,2,7,-16
-DET,Matt VierlingM. Vierling,663837,3,Bradley,671737,-7,-3,-36,-19,-11,43
-LAA,Mike TroutM. Trout,545361,3,Lopez,625643,-7,-5,-25,-8,-5,16
-PIT,Oneil CruzO. Cruz,665833,-9,Pivetta,601713,-7,0,-35,-23,-23,-8
-STL,Yohel PozoY. Pozo,650968,0,Cavalli,676917,-7,9,-48,-19,-7,3
-DET,Colt KeithC. Keith,690993,7,Bradley,671737,-8,1,-46,-13,-5,41
-MIA,Graham PauleyG. Pauley,688363,0,Abbott,671096,-8,-5,-12,-4,12,-20
-PHI,J.T. RealmutoJ. Realmuto,592663,3,Ray,592662,-8,-1,-1,-5,-17,6
-LAA,Jorge SolerJ. Soler,624585,-1,Lopez,625643,-8,-6,-20,-7,-8,12
-STL,Jose FerminJ. Fermin,665877,1,Cavalli,676917,-8,6,-71,-30,-16,13
-ATL,Mauricio DubonM. Dubon,643289,3,Kikuchi,579328,-8,-6,-15,9,-4,-9
-PIT,Bryan ReynoldsB. Reynolds,668804,-3,Pivetta,601713,-9,4,-33,-26,-22,-1
-CHW,Colson MontgomeryC. Montgomery,695657,-6,Rogers,669432,-9,-1,-37,-7,3,-11
-BAL,Jeremiah JacksonJ. Jackson,669236,-8,Smith,681343,-9,-1,-41,-10,-9,-1
-LAA,Jo AdellJ. Adell,666176,1,Lopez,625643,-9,-8,-12,-5,-3,3
-TEX,Josh SmithJ. Smith,669701,6,Kirby,669923,-9,-4,9,-8,11,-18
-ATL,Kyle FarmerK. Farmer,571657,1,Kikuchi,579328,-9,-6,-9,3,-9,-4
-LAD,Kyle TuckerK. Tucker,663656,3,Gausman,592332,-9,-5,-6,8,-7,-41
-MIA,Liam HicksL. Hicks,689414,7,Abbott,671096,-9,-7,-12,7,11,-23
-LAD,Miguel RojasM. Rojas,500743,-1,Gausman,592332,-9,-6,-6,20,-19,-41
-TB,Taylor WallsT. Walls,670764,4,Assad,665871,-9,-6,14,-13,11,-11
-TB,Yandy DiazY. Diaz,650490,10,Assad,665871,-9,-8,10,1,7,-5
-TOR,Andres GimenezA. Gimenez,665926,-6,Yamamoto,808967,-10,-8,-26,-23,-9,-7
-TB,Chandler SimpsonC. Simpson,802415,6,Assad,665871,-10,-8,-35,14,3,3
-BAL,Coby MayoC. Mayo,691723,-8,Smith,681343,-10,-1,-30,-6,-17,-3
-DET,Kevin McGonigleK. McGonigle,805808,-2,Bradley,671737,-10,-5,-50,8,-2,18
-NYM,Mark VientosM. Vientos,668901,4,Gallen,668678,-10,0,-27,0,-2,4
-ATL,Matt OlsonM. Olson,621566,4,Kikuchi,579328,-10,-8,-17,4,10,-17
-TOR,Nathan LukesN. Lukes,664770,-2,Yamamoto,808967,-10,-7,-23,-12,-8,-22
-CIN,Noelvi MarteN. Marte,682622,-4,Alcantara,645261,-10,-8,-21,6,-6,-17
-LAA,Nolan SchanuelN. Schanuel,694384,7,Lopez,625643,-10,-9,-17,-1,-7,8
-TEX,Wyatt LangfordW. Langford,694671,3,Kirby,669923,-10,-8,-14,7,8,-18
-MIA,Austin SlaterA. Slater,596103,-4,Abbott,671096,-11,-10,-6,4,4,-22
-PHI,Bryson StottB. Stott,681082,6,Ray,592662,-11,-1,-29,-11,-15,18
-CHW,Chase MeidrothC. Meidroth,805367,-1,Rogers,669432,-11,-7,-38,-26,3,-15
-BAL,Colton CowserC. Cowser,681297,-6,Smith,681343,-11,1,-35,-22,-8,5
-CLE,David FryD. Fry,681807,1,Cameron,702070,-11,7,-48,25,-3,5
-PHI,Dylan MooreD. Moore,664238,-6,Ray,592662,-11,-6,-18,-20,-22,18
-TEX,Ezequiel DuranE. Duran,677649,-5,Kirby,669923,-11,-9,-9,-9,1,-17
-TOR,George SpringerG. Springer,543807,3,Yamamoto,808967,-11,-7,-19,-23,-10,-10
-MIA,Griffin ConineG. Conine,665052,-5,Abbott,671096,-11,-9,-14,6,8,-23
-TEX,Joc PedersonJ. Pederson,592626,3,Kirby,669923,-11,-8,1,-11,6,-18
-TEX,Kyle HigashiokaK. Higashioka,543309,2,Kirby,669923,-11,-7,-16,-5,15,-24
-BAL,Leody TaverasL. Taveras,665750,-2,Smith,681343,-11,-2,-45,-12,-15,9
-TB,Richie PalaciosR. Palacios,680700,6,Assad,665871,-11,-10,-2,-17,14,-9
-LAA,Adam FrazierA. Frazier,624428,-2,Lopez,625643,-12,-10,-22,-4,-6,3
-TOR,Addison BargerA. Barger,680718,-3,Yamamoto,808967,-12,-9,-21,-25,-10,-12
-PIT,Billy CookB. Cook,695257,-10,Pivetta,601713,-12,2,-57,-22,-24,-3
-CLE,Daniel SchneemannD. Schneemann,682177,-1,Cameron,702070,-12,-1,-32,-8,-1,16
-CHW,Edgar QueroE. Quero,700337,-3,Rogers,669432,-12,-6,-53,-31,5,-8
-NYM,Francisco AlvarezF. Alvarez,682626,1,Gallen,668678,-12,-2,-18,9,-5,-17
-SEA,J.P. CrawfordJ. Crawford,641487,6,Eovaldi,543135,-12,-8,-1,14,-6,-29
-PIT,Joey BartJ. Bart,663698,-8,Pivetta,601713,-12,-2,-51,-28,-29,5
-CHW,Luisangel AcunaL. Acuna,682668,-7,Rogers,669432,-12,-9,-35,-19,-2,-18
-CIN,Nathaniel LoweN. Lowe,663993,3,Alcantara,645261,-12,-10,-19,13,3,-31
-SEA,Randy ArozarenaR. Arozarena,668227,-4,Eovaldi,543135,-12,-10,-9,8,-1,-35
-CHW,Tanner MurrayT. Murray,695020,-10,Rogers,669432,-12,-4,-32,-14,-9,-11
-BAL,Adley RutschmanA. Rutschman,668939,4,Smith,681343,-13,-7,-47,-20,-6,1
-CLE,Austin HedgesA. Hedges,595978,2,Cameron,702070,-13,0,-42,30,-16,-6
-TEX,Corey SeagerC. Seager,608369,7,Kirby,669923,-13,-8,-14,2,9,-22
-ATL,Drake BaldwinD. Baldwin,686948,5,Kikuchi,579328,-13,-13,-13,-6,0,-14
-CIN,Elly De La CruzE. De La Cruz,682829,-5,Alcantara,645261,-13,-12,-17,-13,7,-26
-PIT,Henry DavisH. Davis,680779,-8,Pivetta,601713,-13,5,-50,-23,-22,-10
-SD,Jake CronenworthJ. Cronenworth,630105,-7,Skenes,694973,-13,-6,-50,-26,-22,-5
-NYM,Luis TorrensL. Torrens,620443,7,Gallen,668678,-13,-2,-32,-2,0,-6
-TOR,Myles StrawM. Straw,664702,-6,Yamamoto,808967,-13,-9,-26,-17,-12,-14
-PIT,Nick YorkeN. Yorke,694377,-8,Pivetta,601713,-13,-2,-48,-23,-25,-5
-CLE,Rhys HoskinsR. Hoskins,656555,3,Cameron,702070,-13,-2,-40,10,-13,16
-PIT,Ryan O'HearnR. O'Hearn,656811,-2,Pivetta,601713,-13,0,-33,-35,-21,-2
-LAA,Zach NetoZ. Neto,687263,1,Lopez,625643,-13,-12,-17,-19,-9,15
-PHI,Adolis GarciaA. Garcia,666969,-3,Ray,592662,-14,-10,-20,-13,-21,26
-TEX,Andrew McCutchenA. McCutchen,457705,-2,Kirby,669923,-14,-10,-22,-1,3,-14
-PHI,Justin CrawfordJ. Crawford,702222,-8,Ray,592662,-14,-9,-19,4,-22,7
-CIN,Ke'Bryan HayesK. Hayes,663647,-2,Alcantara,645261,-14,-14,-31,9,-5,-28
-DET,Kerry CarpenterK. Carpenter,681481,1,Bradley,671737,-14,-7,-48,-8,-3,32
-ARI,Nolan ArenadoN. Arenado,571448,4,Peralta,642547,-14,-4,-6,2,-12,12
-NYM,Ronny MauricioR. Mauricio,677595,-6,Gallen,668678,-14,-7,-34,4,-8,-9
-BAL,Ryan MountcastleR. Mountcastle,663624,-6,Smith,681343,-14,-6,-47,-9,-7,-1
-LAD,Teoscar HernandezT. Hernandez,606192,-6,Gausman,592332,-14,-10,-14,11,-19,-41
-SD,Ty FranceT. France,664034,-3,Skenes,694973,-14,-2,-54,-5,-22,-20
-LAD,Will SmithW. Smith,669257,-2,Gausman,592332,-14,-10,-16,12,-8,-43
-PIT,Brandon LoweB. Lowe,664040,-7,Pivetta,601713,-15,-1,-29,-33,-25,-12
-CLE,C.J. KayfusC. Kayfus,692216,-2,Cameron,702070,-15,-3,-30,-5,9,-7
-CIN,Eugenio SuarezE. Suarez,553993,-5,Alcantara,645261,-15,-12,-32,18,12,-31
-SF,Jared OlivaJ. Oliva,666931,-10,Sanchez,650911,-15,-16,-53,-29,22,-38
-NYM,Marcus SemienM. Semien,543760,6,Gallen,668678,-15,-7,-35,-4,2,-8
-BOS,Masataka YoshidaM. Yoshida,807799,3,Misiorowski,694819,-15,-14,-40,-17,-15,32
-LAD,Max MuncyM. Muncy,571970,-2,Gausman,592332,-15,-12,-7,4,-5,-41
-CHW,Miguel VargasM. Vargas,678246,4,Rogers,669432,-15,-7,-46,-8,2,-20
-TEX,Sam HaggertyS. Haggerty,664059,-7,Kirby,669923,-15,-12,6,-19,-1,-19
-BAL,Samuel BasalloS. Basallo,694212,-9,Smith,681343,-15,-6,-37,-15,-11,-6
-CHW,Tristan PetersT. Peters,671976,-10,Rogers,669432,-15,-6,-34,-20,-6,-8
-TOR,Tyler HeinemanT. Heineman,623168,-8,Yamamoto,808967,-15,-13,-24,-22,-9,-18
-CIN,Tyler StephensonT. Stephenson,663886,-6,Alcantara,645261,-15,-12,-23,8,-1,-27
-SEA,Victor RoblesV. Robles,645302,-6,Eovaldi,543135,-15,-12,-20,2,-4,-39
-LAD,Alex CallA. Call,669743,-5,Gausman,592332,-16,-13,1,6,-11,-43
-LAD,Andy PagesA. Pages,681624,-5,Gausman,592332,-16,-13,-10,3,-15,-49
-NYM,Bo BichetteB. Bichette,666182,6,Gallen,668678,-16,-10,-27,-11,-2,-9
-TEX,Brandon NimmoB. Nimmo,607043,-2,Kirby,669923,-16,-12,-12,-19,3,-17
-CLE,Gabriel AriasG. Arias,672356,-5,Cameron,702070,-16,-7,-25,17,-10,2
-DET,Jahmai JonesJ. Jones,663330,-4,Bradley,671737,-16,-12,-45,-12,-13,27
-CHW,Lenyn SosaL. Sosa,672820,-3,Rogers,669432,-16,-8,-33,-21,-6,-1
-MIA,Leo JimenezL. Jimenez,677870,-3,Abbott,671096,-16,-12,-23,5,2,-18
-CIN,Matt McLainM. McLain,680574,-5,Alcantara,645261,-16,-13,-27,21,-4,-38
-CHC,Matt ShawM. Shaw,807713,-1,Rasmussen,656876,-16,-14,14,5,-6,-19
-SEA,Mitch GarverM. Garver,641598,-5,Eovaldi,543135,-16,-14,-15,8,-2,-36
-TOR,Vladimir Guerrero Jr.V. Guerrero Jr.,665489,3,Yamamoto,808967,-16,-12,-31,-24,-10,-21
-CIN,Dane MyersD. Myers,667472,-6,Alcantara,645261,-17,-17,-20,-6,-3,-23
-SD,Fernando Tatis Jr.F. Tatis Jr.,665487,-7,Skenes,694973,-17,-9,-45,-16,-23,-25
-SF,Heliot RamosH. Ramos,671218,-6,Sanchez,650911,-17,-16,-43,-47,32,-49
-TEX,Jake BurgerJ. Burger,669394,-7,Kirby,669923,-17,-16,-22,-13,1,-27
-MIL,Joey OrtizJ. Ortiz,687401,-5,Crochet,676979,-17,-18,-36,-3,0,-39
-NYM,Jorge PolancoJ. Polanco,593871,7,Gallen,668678,-17,-8,-21,-13,1,-14
-SEA,Josh NaylorJ. Naylor,647304,4,Eovaldi,543135,-17,-13,-16,-2,-8,-31
-SF,Luis ArraezL. Arraez,650333,1,Sanchez,650911,-17,-14,-57,-33,8,-46
-SD,Nick CastellanosN. Castellanos,592206,-8,Skenes,694973,-17,-5,-55,-16,-27,-21
-LAD,Shohei OhtaniS. Ohtani,660271,-5,Gausman,592332,-17,-14,-11,-2,-10,-43
-NYM,Tyrone TaylorT. Taylor,621438,-2,Gallen,668678,-17,-9,-39,-10,-3,-5
-CHW,Andrew BenintendiA. Benintendi,643217,-2,Rogers,669432,-18,-8,-41,-24,-5,-9
-CHW,Austin HaysA. Hays,669720,-7,Rogers,669432,-18,-10,-41,-11,-8,-14
-SEA,Brendan DonovanB. Donovan,680977,5,Eovaldi,543135,-18,-13,-16,0,-11,-27
-NYM,Brett BatyB. Baty,683146,-2,Gallen,668678,-18,-10,-29,-11,0,-20
-BOS,Caleb DurbinC. Durbin,702332,-3,Misiorowski,694819,-18,-17,-43,-16,-11,29
-SF,Casey SchmittC. Schmitt,669477,-7,Sanchez,650911,-18,-17,-36,-33,26,-47
-SF,Daniel SusacD. Susac,691740,-10,Sanchez,650911,-18,-18,-51,-31,24,-43
-NYM,Francisco LindorF. Lindor,596019,9,Gallen,668678,-18,-10,-32,2,-3,-16
-ARI,Gabriel MorenoG. Moreno,672515,6,Peralta,642547,-18,-7,-10,-11,-15,10
-NYM,Jared YoungJ. Young,676724,-7,Gallen,668678,-18,-12,-44,-10,-3,-6
-DET,Javier BaezJ. Baez,595879,-5,Bradley,671737,-18,-13,-47,6,-15,25
-TOR,Jesus SanchezJ. Sanchez,660821,-6,Yamamoto,808967,-18,-15,-31,-30,-6,-21
-TEX,Josh JungJ. Jung,673962,-7,Kirby,669923,-18,-14,-15,-23,-1,-16
-SEA,Julio RodriguezJ. Rodriguez,677594,-6,Eovaldi,543135,-18,-16,-10,-17,-8,-31
-SF,Jung Hoo LeeJ. Hoo Lee,808982,-2,Sanchez,650911,-18,-15,-67,-27,16,-48
-SD,Luis CampusanoL. Campusano,669134,-6,Skenes,694973,-18,-6,-68,-10,-27,-12
-SD,Manny MachadoM. Machado,592518,-6,Skenes,694973,-18,-7,-56,-9,-27,-18
-PIT,Nick GonzalesN. Gonzales,693304,-6,Pivetta,601713,-18,-5,-62,-32,-25,9
-DET,Riley GreeneR. Greene,682985,2,Bradley,671737,-18,-12,-38,-20,-5,22
-CIN,Spencer SteerS. Steer,668715,-2,Alcantara,645261,-18,-15,-34,1,2,-27
-DET,Spencer TorkelsonS. Torkelson,679529,1,Bradley,671737,-18,-11,-36,-15,-16,22
-CIN,TJ FriedlT. Friedl,670770,-2,Alcantara,645261,-18,-16,-31,1,-2,-26
-CIN,Will BensonW. Benson,666181,-5,Alcantara,645261,-18,-16,-20,-3,-1,-26
-SD,Xander BogaertsX. Bogaerts,593428,-4,Skenes,694973,-18,-6,-62,-12,-22,-14
-DET,Zach McKinstryZ. McKinstry,656716,1,Bradley,671737,-18,-10,-58,-11,-14,29
-NYY,Ben RiceB. Rice,700250,4,Civale,650644,-19,-14,-24,-24,4,9
-SEA,Cole YoungC. Young,702284,-5,Eovaldi,543135,-19,-15,-17,-4,-7,-34
-SD,Gavin SheetsG. Sheets,657757,-6,Skenes,694973,-19,-9,-48,-28,-25,-8
-TOR,Kazuma OkamotoK. Okamoto,672960,-10,Yamamoto,808967,-19,-16,-36,-11,-12,-22
-CLE,Kyle ManzardoK. Manzardo,700932,3,Cameron,702070,-19,-8,-36,-2,-3,0
-CHW,Reese McGuireR. McGuire,624512,-6,Rogers,669432,-19,-10,-52,-28,0,-8
-CHC,Alex BregmanA. Bregman,608324,5,Rasmussen,656876,-20,-19,5,12,-9,-29
-LAD,Alex FreelandA. Freeland,690976,-10,Gausman,592332,-20,-17,7,-2,-21,-46
-BAL,Blaze AlexanderB. Alexander,677942,-8,Smith,681343,-20,-7,-53,-7,-11,-17
-CLE,Chase DeLauterC. DeLauter,800050,-3,Cameron,702070,-20,-9,-21,-12,-3,-15
-TEX,Danny JansenD. Jansen,643376,-7,Kirby,669923,-20,-17,-20,-11,0,-22
-SD,Freddy FerminF. Fermin,666023,-9,Skenes,694973,-20,-11,-61,-24,-29,-10
-CHC,Ian HappI. Happ,664023,1,Rasmussen,656876,-20,-18,-4,17,-1,-33
-CHC,Michael BuschM. Busch,683737,7,Rasmussen,656876,-20,-17,2,6,1,-34
-SD,Miguel AndujarM. Andujar,609280,-6,Skenes,694973,-20,-8,-66,-12,-27,-13
-CHC,Pete Crow-ArmstrongP. Crow-Armstrong,691718,-4,Rasmussen,656876,-20,-16,-1,-4,-6,-30
-CHC,Scott KingeryS. Kingery,664068,-7,Rasmussen,656876,-20,-15,-4,3,1,-27
-NYY,Aaron JudgeA. Judge,592450,9,Civale,650644,-21,-16,-24,1,5,-10
-PHI,Brandon MarshB. Marsh,669016,-3,Ray,592662,-21,-14,-33,-16,-19,6
-SD,Bryce JohnsonB. Johnson,669369,-9,Skenes,694973,-21,-9,-57,-32,-20,-28
-SEA,Cal RaleighC. Raleigh,663728,-7,Eovaldi,543135,-21,-18,-11,-15,-13,-30
-CHC,Dansby SwansonD. Swanson,621020,-2,Rasmussen,656876,-21,-19,-10,1,0,-28
-TOR,Davis SchneiderD. Schneider,676914,-7,Yamamoto,808967,-21,-18,-29,-32,-9,-21
-ARI,Geraldo PerdomoG. Perdomo,672695,8,Peralta,642547,-21,-13,-18,-14,-18,10
-NYY,Jazz ChisholmJ. Chisholm,665862,3,Civale,650644,-21,-11,-17,-12,5,-10
-CIN,Jose TrevinoJ. Trevino,624431,-3,Alcantara,645261,-21,-19,-40,-4,-11,-26
-MIL,Luis MatosL. Matos,682641,-7,Crochet,676979,-21,-24,-37,8,-1,-42
-SF,Matt ChapmanM. Chapman,656305,-5,Sanchez,650911,-21,-22,-49,-40,26,-44
-SD,Ramon LaureanoR. Laureano,657656,-6,Skenes,694973,-21,-8,-47,-16,-31,-19
-SEA,Rob RefsnyderR. Refsnyder,608701,-3,Eovaldi,543135,-21,-18,-20,-6,0,-44
-CIN,Sal StewartS. Stewart,701398,-4,Alcantara,645261,-21,-20,-40,8,-4,-29
-KC,Vinnie PasquantinoV. Pasquantino,686469,6,Williams,668909,-21,-13,-51,-1,-15,25
-TOR,Brandon ValenzuelaB. Valenzuela,678218,-10,Yamamoto,808967,-22,-18,-28,-23,-17,-22
-LAD,Hyeseong KimH. Kim,808975,-10,Gausman,592332,-22,-19,-13,-11,-16,-40
-KC,Isaac CollinsI. Collins,686555,-3,Williams,668909,-22,-17,-62,-13,-22,31
-SD,Jackson MerrillJ. Merrill,701538,-5,Skenes,694973,-22,-9,-59,-27,-22,-10
-MIL,Luis RengifoL. Rengifo,650859,-5,Crochet,676979,-22,-22,-33,-3,-5,-36
-NYM,Luis RobertL. Robert,673357,-1,Gallen,668678,-22,-17,-37,-12,-5,-15
-NYY,Paul GoldschmidtP. Goldschmidt,502671,3,Civale,650644,-22,-17,-39,-12,1,-1
-ARI,Carlos SantanaC. Santana,467793,-5,Peralta,642547,-23,-16,-23,-10,-24,10
-SEA,Dominic CanzoneD. Canzone,686527,-8,Eovaldi,543135,-23,-19,-21,-14,-13,-36
-DET,Jake RogersJ. Rogers,668670,-7,Bradley,671737,-23,-18,-51,-7,-10,14
-CHC,Nico HoernerN. Hoerner,663538,1,Rasmussen,656876,-23,-23,8,-4,-6,-40
-CHC,Carson KellyC. Kelly,608348,-1,Rasmussen,656876,-24,-22,8,-6,-15,-30
-NYY,Giancarlo StantonG. Stanton,519317,3,Civale,650644,-24,-18,-12,-20,1,-5
-KC,Maikel GarciaM. Garcia,672580,3,Williams,668909,-24,-18,-64,-8,-29,25
-BOS,Andruw MonasterioA. Monasterio,655316,-7,Misiorowski,694819,-25,-24,-50,-11,-25,34
-DET,Dillon DinglerD. Dingler,693307,-6,Bradley,671737,-25,-20,-48,-9,-15,16
-ARI,Ildemaro VargasI. Vargas,545121,-3,Peralta,642547,-25,-18,-19,-8,-25,18
-NYY,J.C. EscarraJ. Escarra,641555,-4,Civale,650644,-25,-22,-33,-21,0,-12
-ARI,Ketel MarteK. Marte,606466,3,Peralta,642547,-25,-16,-3,-15,-20,-10
-CHC,Michael ConfortoM. Conforto,624424,-1,Rasmussen,656876,-25,-23,2,-2,0,-37
-BOS,Wilyer AbreuW. Abreu,677800,-3,Misiorowski,694819,-25,-21,-39,-14,-17,27
-SF,Christian KossC. Koss,683766,-9,Sanchez,650911,-26,-24,-54,-33,7,-35
-MIL,Christian YelichC. Yelich,592885,-5,Crochet,676979,-26,-23,-18,-9,-6,-41
-LAD,Dalton RushingD. Rushing,687221,-10,Gausman,592332,-26,-23,-20,-9,-21,-41
-CHC,Dylan CarlsonD. Carlson,666185,-4,Rasmussen,656876,-26,-23,-10,-4,-1,-26
-PIT,Jake MangumJ. Mangum,663968,-9,Pivetta,601713,-26,-13,-65,-39,-33,-1
-ARI,James McCannJ. McCann,543510,-6,Peralta,642547,-26,-16,-20,-19,-18,9
-KC,Jonathan IndiaJ. India,663697,-3,Williams,668909,-26,-19,-61,4,-24,16
-SEA,Leo RivasL. Rivas,660844,-10,Eovaldi,543135,-26,-23,-12,-15,-12,-40
-SF,Rafael DeversR. Devers,646240,-7,Sanchez,650911,-26,-23,-42,-37,35,-54
-MIL,William ContrerasW. Contreras,661388,-2,Crochet,676979,-26,-23,-26,3,-6,-42
-NYY,Cody BellingerC. Bellinger,641355,2,Civale,650644,-27,-20,-25,-22,-5,-18
-SF,Jerar EncarnacionJ. Encarnacion,666464,-9,Sanchez,650911,-27,-26,-49,-47,9,-40
-KC,Kyle IsbelK. Isbel,664728,-4,Williams,668909,-27,-22,-49,-14,-24,22
-SF,Willy AdamesW. Adames,642715,-7,Sanchez,650911,-27,-25,-43,-36,28,-45
-BOS,Isiah Kiner-FalefaI. Kiner-Falefa,643396,-8,Misiorowski,694819,-28,-26,-39,-34,-13,15
-NYY,Randal GrichukR. Grichuk,545341,2,Civale,650644,-28,-20,-36,-9,0,-16
-MIL,Sal FrelickS. Frelick,686217,-3,Crochet,676979,-28,-22,-38,-11,-9,-36
-NYY,Amed RosarioA. Rosario,642708,-5,Civale,650644,-29,-22,-51,-15,1,-21
-ARI,Corbin CarrollC. Carroll,682998,-3,Peralta,642547,-29,-21,-30,-21,-17,1
-BOS,Willson ContrerasW. Contreras,575929,-6,Misiorowski,694819,-29,-27,-43,-22,-20,13
-MIL,Brandon LockridgeB. Lockridge,663604,-9,Crochet,676979,-30,-30,-31,-4,-10,-37
-MIL,Brice TurangB. Turang,668930,-5,Crochet,676979,-30,-28,-31,-2,-13,-26
-ATH,Jacob WilsonJ. Wilson,805779,-5,Schlittler,693645,-30,-29,-69,-10,-9,-13
-ARI,Jorge BarrosaJ. Barrosa,678489,-9,Peralta,642547,-30,-21,-20,-20,-20,1
-KC,Salvador PerezS. Perez,521692,1,Williams,668909,-30,-23,-60,1,-19,30
-KC,Bobby Witt Jr.B. Witt Jr.,677951,-2,Williams,668909,-31,-25,-54,3,-21,-1
-BOS,Connor WongC. Wong,657136,-8,Misiorowski,694819,-31,-32,-52,-21,-20,23
-MIL,Jake BauersJ. Bauers,641343,-6,Crochet,676979,-31,-27,-30,-1,-9,-36
-ATH,Jeff McNeilJ. McNeil,643446,-2,Schlittler,693645,-31,-28,-54,-17,1,-11
-KC,Michael MasseyM. Massey,686681,-4,Williams,668909,-31,-24,-54,1,-23,12
-CHC,Miguel AmayaM. Amaya,665804,-6,Rasmussen,656876,-31,-29,-15,-1,-12,-36
-ARI,Tim TawaT. Tawa,694374,-9,Peralta,642547,-31,-22,-21,-21,-24,4
-ARI,Alek ThomasA. Thomas,677950,-8,Peralta,642547,-32,-21,-28,-22,-26,15
-BOS,Carlos NarvaezC. Narvaez,665966,-8,Misiorowski,694819,-32,-30,-47,-25,-21,22
-CHC,Moises BallesterosM. Ballesteros,694208,-7,Rasmussen,656876,-32,-28,-23,-4,-12,-30
-SF,Patrick BaileyP. Bailey,672275,-9,Sanchez,650911,-32,-29,-59,-44,9,-48
-BOS,Roman AnthonyR. Anthony,701350,-9,Misiorowski,694819,-32,-33,-46,-14,-27,16
-ATH,Andy IbanezA. Ibanez,628451,-5,Schlittler,693645,-33,-30,-62,-13,5,-14
-ATH,Darell HernaizD. Hernaiz,687231,-7,Schlittler,693645,-33,-30,-76,-18,4,-10
-KC,Starling MarteS. Marte,516782,-5,Williams,668909,-34,-26,-52,-5,-26,19
-MIN,Austin MartinA. Martin,668885,-7,Skubal,669373,-35,-27,-57,-28,-1,-33
-NYY,Austin WellsA. Wells,669224,-4,Civale,650644,-35,-25,-36,-13,-3,-18
-BOS,Jarren DuranJ. Duran,680776,-9,Misiorowski,694819,-35,-36,-46,-28,-21,8
-NYY,Trent GrishamT. Grisham,663757,-2,Civale,650644,-35,-26,-22,-8,-10,-21
-MIL,Blake PerkinsB. Perkins,663368,-9,Crochet,676979,-36,-37,-54,3,-6,-40
-MIN,Brooks LeeB. Lee,686797,-6,Skubal,669373,-36,-28,-53,-14,-6,-41
-BOS,Trevor StoryT. Story,596115,-9,Misiorowski,694819,-36,-36,-45,-30,-14,11
-BOS,Ceddanne RafaelaC. Rafaela,678882,-10,Misiorowski,694819,-37,-38,-42,-26,-22,23
-MIL,Gary SanchezG. Sanchez,596142,-9,Crochet,676979,-37,-38,-21,-5,-7,-47
-SF,Harrison BaderH. Bader,664056,-10,Sanchez,650911,-37,-36,-49,-41,3,-55
-ARI,Adrian Del CastilloA. Del Castillo,680728,-10,Peralta,642547,-38,-27,-26,-30,-31,-1
-ATH,Carlos CortesC. Cortes,666126,-6,Schlittler,693645,-38,-33,-53,-19,-3,-19
-NYY,Jose CaballeroJ. Caballero,676609,-7,Civale,650644,-38,-33,-54,-15,4,-21
-KC,Jac CaglianoneJ. Caglianone,695506,-8,Williams,668909,-39,-32,-56,1,-22,5
-MIN,Luke KeaschallL. Keaschall,807712,-8,Skubal,669373,-39,-35,-46,-28,-12,-31
-BOS,Marcelo MayerM. Mayer,691785,-10,Misiorowski,694819,-39,-41,-46,-9,-21,6
-KC,Lane ThomasL. Thomas,657041,-8,Williams,668909,-40,-35,-60,-4,-31,16
-ARI,Jose FernandezJ. Fernandez,699912,-10,Peralta,642547,-41,-29,-5,-37,-28,-15
-ATH,Shea LangeliersS. Langeliers,669127,-6,Schlittler,693645,-41,-37,-58,-11,7,-17
-MIN,Trevor LarnachT. Larnach,663616,-8,Skubal,669373,-41,-37,-46,-17,-7,-38
-MIN,Byron BuxtonB. Buxton,621439,-8,Skubal,669373,-42,-37,-43,-23,-6,-30
-MIN,Royce LewisR. Lewis,668904,-9,Skubal,669373,-42,-36,-46,-30,-8,-24
-MIN,Ryan JeffersR. Jeffers,680777,-8,Skubal,669373,-42,-39,-41,-12,-11,-43
-ATH,Austin WynnsA. Wynns,642851,-8,Schlittler,693645,-43,-38,-63,-3,-8,-14
-ATH,Tyler SoderstromT. Soderstrom,691016,-6,Schlittler,693645,-43,-38,-64,-20,-7,-18
-MIN,Victor CaratiniV. Caratini,605170,-7,Skubal,669373,-43,-37,-56,-24,-5,-41
-ATH,Lawrence ButlerL. Butler,671732,-7,Schlittler,693645,-44,-38,-57,-18,0,-11
-NYY,Ryan McMahonR. McMahon,641857,-7,Civale,650644,-44,-35,-44,-14,-7,-13
-MIN,Tristan GrayT. Gray,656484,-10,Skubal,669373,-44,-39,-61,-16,2,-26
-ATH,Brent RookerB. Rooker,667670,-7,Schlittler,693645,-47,-41,-54,-11,2,-24
-MIL,David HamiltonD. Hamilton,666152,-10,Crochet,676979,-49,-45,-40,-16,-19,-42
-MIN,Kody ClemensK. Clemens,665019,-9,Skubal,669373,-49,-44,-62,-21,-4,-39
-ATH,Nick KurtzN. Kurtz,701762,-8,Schlittler,693645,-50,-43,-60,-16,11,-25
-MIN,Josh BellJ. Bell,605137,-8,Skubal,669373,-51,-47,-59,-26,-21,-35
-KC,Carter JensenC. Jensen,695600,-9,Williams,668909,-52,-46,-55,-19,-25,-2
-ATH,Max MuncyM. Muncy,691777,-9,Schlittler,693645,-52,-46,-59,-7,-4,-20
-ATH,Denzel ClarkeD. Clarke,672016,-10,Schlittler,693645,-54,-52,-62,-14,-5,-23
-KC,Tyler TolbertT. Tolbert,686475,-10,Williams,668909,-54,-46,-61,-10,-30,6
-MIL,Garrett MitchellG. Mitchell,669003,-10,Crochet,676979,-59,-60,-57,-12,-17,-47
-MIN,Matt WallnerM. Wallner,670242,-10,Skubal,669373,-64,-61,-52,-30,-14,-43
-MIN,James OutmanJ. Outman,681546,-10,Skubal,669373,-65,-61,-55,-24,-10,-39
+HOU,Christian Vazquez,543877,7,Freeland,607536,28,14,10,35,32,-48
+COL,Troy Johnston,687859,1,Burrows,681347,27,13,20,-12,17,34
+COL,Brenton Doyle,686668,2,Burrows,681347,26,12,22,-3,17,16
+COL,Hunter Goodman,696100,2,Burrows,681347,26,13,35,-13,10,26
+HOU,Christian Walker,572233,6,Freeland,607536,25,12,20,36,25,-40
+COL,Jordan Beck,687597,-3,Burrows,681347,25,10,40,-5,13,9
+COL,Kyle Karros,691720,-4,Burrows,681347,22,10,18,-10,8,21
+COL,Brett Sullivan,664954,-4,Burrows,681347,21,7,9,8,10,1
+HOU,Joey Loperfido,694388,-5,Freeland,607536,21,4,2,29,22,-41
+COL,Tyler Freeman,671289,5,Burrows,681347,21,11,24,-9,13,9
+HOU,Carlos Correa,621043,8,Freeland,607536,20,10,12,32,19,-48
+COL,Jake McCarthy,664983,2,Burrows,681347,20,7,19,-8,19,-3
+HOU,Jose Altuve,514888,8,Freeland,607536,20,10,22,12,23,-31
+COL,Willi Castro,650489,-1,Burrows,681347,20,7,12,-13,9,32
+COL,Mickey Moniak,666160,-1,Burrows,681347,19,5,21,-19,12,23
+HOU,Isaac Paredes,670623,7,Freeland,607536,18,9,14,34,21,-38
+COL,Ezequiel Tovar,678662,-4,Burrows,681347,16,2,23,-16,11,11
+HOU,Jake Meyers,676694,2,Freeland,607536,16,4,13,32,13,-43
+HOU,Nick Allen,669397,-3,Freeland,607536,16,5,18,10,16,-40
+ATL,Austin Riley,663586,8,Kikuchi,579328,15,15,22,22,13,-9
+COL,Edouard Julien,666397,-3,Burrows,681347,15,1,11,-22,15,9
+COL,TJ Rumfield,681198,-5,Burrows,681347,15,0,-11,1,13,10
+HOU,Yordan Alvarez,670541,10,Freeland,607536,15,5,3,24,27,-35
+HOU,Cam Smith,701358,-3,Freeland,607536,14,3,19,46,0,-37
+WAS,Brady House,691781,-3,Liberatore,669461,13,30,-34,-12,3,6
+HOU,Jeremy Pena,665161,3,Freeland,607536,13,3,-7,19,15,-44
+TB,Ryan Vilade,668723,-1,Assad,665871,12,13,34,6,28,-9
+WAS,Jorbit Vivas,678391,4,Liberatore,669461,11,31,-44,17,6,-15
+WAS,James Wood,695578,6,Liberatore,669461,10,29,-29,1,13,-17
+STL,JJ Wetherholt,802139,-3,Cavalli,676917,10,26,-56,-30,4,27
+WAS,Jose Tena,677588,5,Liberatore,669461,10,34,-57,-12,12,-6
+HOU,Yainer Diaz,673237,4,Freeland,607536,10,0,0,6,7,-34
+WAS,Joey Wiemer,686894,1,Liberatore,669461,8,34,-33,-14,7,-5
+WAS,Keibert Ruiz,660688,9,Liberatore,669461,8,27,-42,2,13,-25
+WAS,Curtis Mead,678554,1,Liberatore,669461,6,32,-58,-12,9,-8
+WAS,Drew Millas,686452,0,Liberatore,669461,6,23,-38,10,-1,-22
+ATL,Eli White,642201,-3,Kikuchi,579328,5,3,-14,18,7,-1
+MIA,Owen Caissie,683357,-4,Abbott,671096,5,8,-9,19,15,0
+MIA,Heriberto Hernandez,681715,3,Abbott,671096,4,8,18,14,9,-8
+CLE,Angel Martinez,682657,6,Cameron,702070,3,21,-31,19,9,2
+TB,Jake Fraley,641584,8,Assad,665871,3,5,14,12,16,7
+STL,Nolan Gorman,669357,-1,Cavalli,676917,3,23,-40,-28,10,10
+ATL,Jonah Heim,641680,5,Kikuchi,579328,2,2,4,28,8,-21
+WAS,Nasim Nunez,683083,3,Liberatore,669461,2,25,-52,-7,6,-16
+LAA,Oswald Peraza,672724,-5,Lopez,625643,2,5,-15,7,1,17
+STL,Thomas Saggese,695336,-4,Cavalli,676917,2,20,-62,-35,7,10
+MIA,Agustin Ramirez,682663,4,Abbott,671096,1,0,-17,30,11,-13
+TB,Jonny DeLuca,676356,4,Assad,665871,1,1,30,-4,18,-1
+TB,Hunter Feduccia,676439,2,Assad,665871,0,2,9,-3,24,0
+WAS,Jacob Young,696285,7,Liberatore,669461,0,26,-64,4,2,-22
+ATL,Jorge Mateo,622761,-3,Kikuchi,579328,0,1,-5,19,-2,-9
+LAA,Josh Lowe,666139,-3,Lopez,625643,0,-2,-11,2,-3,20
+CLE,Juan Brito,682877,-10,Cameron,702070,,,,,,
+STL,Nathan Church,701675,-8,Cavalli,676917,0,17,-55,-20,-5,9
+ATL,Ronald Acuna Jr. R. Acuna Jr.,660670,9,Kikuchi,579328,0,1,4,6,7,-2
+LAA,Bryce Teodosio,669326,-8,Lopez,625643,-1,-1,-9,6,-3,10
+PHI,Kyle Schwarber,656941,7,Ray,592662,-1,5,-14,4,-14,12
+WAS,Luis Garcia,671277,9,Liberatore,669461,-1,22,-53,-9,13,-20
+STL,Masyn Winn,691026,3,Cavalli,676917,-1,16,-66,-32,9,-1
+LAA,Travis d'Arnaud,518595,-4,Lopez,625643,-1,-1,-11,12,-5,11
+LAA,Yoan Moncada,660162,4,Lopez,625643,-1,-1,-8,0,-6,21
+WAS,Daylen Lile,695734,7,Liberatore,669461,-2,18,-52,-11,6,-13
+STL,Jordan Walker,691023,-1,Cavalli,676917,-2,18,-51,-32,2,9
+LAA,Logan O'Hoppe,681351,2,Lopez,625643,-2,-1,-16,4,0,15
+ATL,Michael Harris II M. Harris II,671739,6,Kikuchi,579328,-2,-2,-7,9,0,-4
+PHI,Rafael Marchan,665561,3,Ray,592662,-2,5,-17,10,-13,20
+PHI,Alec Bohm,664761,8,Ray,592662,-3,3,-21,-2,-10,22
+LAD,Freddie Freeman,518692,5,Gausman,592332,-3,0,-5,19,-7,-37
+TB,Jonathan Aranda,666018,9,Assad,665871,-3,-1,8,3,21,-7
+CHW,Munetaka Murakami,808959,-7,Rogers,669432,-3,10,-32,-20,3,5
+DET,Parker Meadows,678009,3,Bradley,671737,-3,0,-40,-5,2,24
+PHI,Bryce Harper,547180,8,Ray,592662,-4,1,-17,5,-17,22
+WAS,C.J. Abrams,682928,3,Liberatore,669461,-4,16,-52,-16,5,-5
+MIA,Connor Norby,681393,-3,Abbott,671096,-4,-2,-7,21,-3,-12
+DET,Gleyber Torres,650402,7,Bradley,671737,-4,-4,-50,3,-10,30
+BAL,Gunnar Henderson,683002,6,Smith,681343,-4,5,-31,-10,-8,10
+LAA,Jeimer Candelario,600869,-1,Lopez,625643,-4,-3,-11,-1,-3,15
+PIT,Konnor Griffin,804606,-10,Pivetta,601713,-4,10,-58,-25,-30,1
+PIT,Marcell Ozuna,542303,-4,Pivetta,601713,-4,8,-26,-16,-23,-4
+DET,Matt Vierling,663837,3,Bradley,671737,-4,-3,-37,-17,-5,43
+ATL,Mike Yastrzemski,573262,9,Kikuchi,579328,-4,-4,-4,17,3,-8
+ATL,Ozzie Albies,645277,9,Kikuchi,579328,-4,-4,12,10,1,-19
+LAD,Santiago Espinal,669289,1,Gausman,592332,-4,-2,-13,37,-15,-39
+BAL,Taylor Ward,621493,6,Smith,681343,-4,4,-48,-12,-1,7
+STL,Victor Scott II V. Scott II,687363,-2,Cavalli,676917,-4,14,-63,-36,0,5
+MIA,Xavier Edwards,669364,8,Abbott,671096,-4,1,-20,20,10,-30
+STL,Alec Burleson,676475,8,Cavalli,676917,-5,11,-55,-29,3,5
+TB,Ben Williamson,810938,5,Assad,665871,-5,-3,-19,6,12,7
+NYM,Carson Benge,701807,-7,Gallen,668678,-5,3,-24,5,4,-14
+TB,Cedric Mullins,656775,3,Assad,665871,-5,-2,12,5,3,7
+DET,Colt Keith,690993,7,Bradley,671737,-5,1,-47,-10,1,41
+TOR,Daulton Varsho,662139,-3,Yamamoto,808967,-5,-2,-11,-21,0,-17
+CLE,Jose Ramirez,608070,10,Cameron,702070,-5,5,-39,3,-3,10
+TB,Junior Caminero,691406,10,Assad,665871,-5,-4,0,-1,17,1
+SEA,Luke Raley,670042,-6,Eovaldi,543135,-5,-1,10,8,-7,-39
+PHI,Otto Kemp,805249,-7,Ray,592662,-5,5,-25,-1,-22,32
+STL,Pedro Pages,686780,-5,Cavalli,676917,-5,13,-42,-25,-7,7
+PIT,Spencer Horwitz,687462,5,Pivetta,601713,-5,6,-36,-28,-13,8
+CHW,Derek Hill,656537,-4,Rogers,669432,-6,10,-48,-20,14,-13
+ATL,Dominic Smith,642086,3,Kikuchi,579328,-6,-6,-18,15,-6,-8
+STL,Ivan Herrera,671056,9,Cavalli,676917,-6,8,-38,-36,4,-9
+DET,Kevin McGonigle,805808,-2,Bradley,671737,-6,-5,-50,11,5,18
+LAA,Mike Trout,545361,3,Lopez,625643,-6,-5,-26,-6,-5,16
+TB,Nick Fortes,663743,4,Assad,665871,-6,-5,18,-5,6,3
+MIA,Otto Lopez,672640,6,Abbott,671096,-6,-3,-18,10,6,-22
+BAL,Pete Alonso,624413,3,Smith,681343,-6,1,-33,-5,-11,10
+STL,Ramon Urias,602104,1,Cavalli,676917,-6,17,-58,-34,10,1
+CLE,Steven Kwan,680757,9,Cameron,702070,-6,3,-34,1,0,-10
+PHI,Trea Turner,607208,5,Ray,592662,-6,-1,-6,-4,-19,25
+CLE,Bo Naylor,666310,4,Cameron,702070,-7,6,-37,11,3,0
+PHI,Edmundo Sosa,624641,-1,Ray,592662,-7,-1,-19,-6,-8,11
+TOR,Ernie Clement,676391,1,Yamamoto,808967,-7,-5,-28,-12,-7,-4
+TEX,Evan Carter,694497,-1,Kirby,669923,-7,-4,3,-7,12,-17
+MIA,Jakob Marsee,805300,-1,Abbott,671096,-7,-6,-10,11,1,-11
+MIA,Javier Sanoja,691594,5,Abbott,671096,-7,-3,-23,2,7,-16
+PIT,Oneil Cruz,665833,-9,Pivetta,601713,-7,0,-35,-22,-23,-8
+STL,Yohel Pozo,650968,0,Cavalli,676917,-7,9,-47,-19,-7,3
+HOU,Brice Matthews,694728,-10,Freeland,607536,-8,-24,-15,28,8,-42
+PIT,Bryan Reynolds,668804,-3,Pivetta,601713,-8,4,-33,-25,-22,-1
+BAL,Dylan Beavers,687637,-4,Smith,681343,-8,1,-37,-18,-14,12
+MIA,Graham Pauley,688363,0,Abbott,671096,-8,-5,-13,-4,12,-20
+PHI,J.T. Realmuto,592663,3,Ray,592662,-8,-1,-2,-5,-17,6
+LAA,Jorge Soler,624585,-1,Lopez,625643,-8,-6,-20,-5,-8,12
+STL,Jose Fermin,665877,1,Cavalli,676917,-8,6,-70,-31,-16,13
+ATL,Mauricio Dubon,643289,3,Kikuchi,579328,-8,-6,-16,11,-4,-9
+BAL,Tyler O'Neill,641933,1,Smith,681343,-8,1,-43,-15,-10,19
+CLE,Brayan Rocchio,677587,7,Cameron,702070,-9,7,-44,10,-1,3
+LAA,Jo Adell,666176,1,Lopez,625643,-9,-8,-12,-3,-3,3
+TEX,Josh Smith,669701,6,Kirby,669923,-9,-4,9,-8,11,-18
+ATL,Kyle Farmer,571657,1,Kikuchi,579328,-9,-6,-10,6,-9,-4
+LAD,Kyle Tucker,663656,3,Gausman,592332,-9,-5,-6,8,-7,-41
+MIA,Liam Hicks,689414,7,Abbott,671096,-9,-7,-13,7,11,-23
+ATL,Matt Olson,621566,4,Kikuchi,579328,-9,-8,-17,7,11,-17
+LAD,Miguel Rojas,500743,-1,Gausman,592332,-9,-6,-6,20,-19,-41
+LAA,Nolan Schanuel,694384,7,Lopez,625643,-9,-9,-18,2,-7,8
+TB,Taylor Walls,670764,4,Assad,665871,-9,-6,14,-13,11,-11
+TB,Yandy Diaz,650490,10,Assad,665871,-9,-8,10,1,7,-5
+TOR,Andres Gimenez,665926,-6,Yamamoto,808967,-10,-8,-26,-23,-9,-7
+TB,Chandler Simpson,802415,6,Assad,665871,-10,-8,-35,14,3,3
+NYM,Mark Vientos,668901,4,Gallen,668678,-10,0,-28,1,-3,4
+TOR,Nathan Lukes,664770,-2,Yamamoto,808967,-10,-7,-23,-12,-8,-22
+CIN,Noelvi Marte,682622,-4,Alcantara,645261,-10,-8,-21,6,-6,-17
+TEX,Wyatt Langford,694671,3,Kirby,669923,-10,-8,-14,7,8,-18
+LAA,Adam Frazier,624428,-2,Lopez,625643,-11,-10,-22,-1,-6,3
+MIA,Austin Slater,596103,-4,Abbott,671096,-11,-10,-6,4,4,-22
+BAL,Coby Mayo,691723,-8,Smith,681343,-11,-1,-32,-8,-19,-3
+CHW,Colson Montgomery,695657,-6,Rogers,669432,-11,-1,-38,-9,1,-11
+PHI,Dylan Moore,664238,-6,Ray,592662,-11,-6,-18,-20,-22,18
+TEX,Ezequiel Duran,677649,-5,Kirby,669923,-11,-9,-9,-9,1,-17
+NYM,Francisco Alvarez,682626,1,Gallen,668678,-11,-2,-19,12,-5,-17
+TOR,George Springer,543807,3,Yamamoto,808967,-11,-7,-19,-23,-10,-10
+MIA,Griffin Conine,665052,-5,Abbott,671096,-11,-9,-14,6,8,-23
+BAL,Jeremiah Jackson,669236,-8,Smith,681343,-11,-1,-42,-12,-11,-1
+TEX,Joc Pederson,592626,3,Kirby,669923,-11,-8,1,-11,6,-18
+PIT,Joey Bart,663698,-8,Pivetta,601713,-11,-2,-51,-27,-29,5
+DET,Kerry Carpenter,681481,1,Bradley,671737,-11,-7,-49,-5,4,32
+TEX,Kyle Higashioka,543309,2,Kirby,669923,-11,-7,-16,-5,15,-24
+TB,Richie Palacios,680700,6,Assad,665871,-11,-10,-2,-17,14,-9
+TOR,Addison Barger,680718,-3,Yamamoto,808967,-12,-9,-21,-25,-10,-12
+PIT,Billy Cook,695257,-10,Pivetta,601713,-12,2,-57,-20,-24,-3
+PHI,Bryson Stott,681082,6,Ray,592662,-12,-1,-30,-11,-15,18
+ATL,Drake Baldwin,686948,5,Kikuchi,579328,-12,-13,-14,-4,0,-14
+SEA,J.P. Crawford,641487,6,Eovaldi,543135,-12,-8,-1,14,-6,-29
+SD,Jake Cronenworth,630105,-7,Skenes,694973,-12,-6,-50,-25,-22,-5
+CIN,Nathaniel Lowe,663993,3,Alcantara,645261,-12,-10,-19,13,3,-31
+SEA,Randy Arozarena,668227,-4,Eovaldi,543135,-12,-10,-9,8,-1,-35
+PIT,Ryan O'Hearn,656811,-2,Pivetta,601713,-12,0,-33,-34,-21,-2
+CHW,Chase Meidroth,805367,-1,Rogers,669432,-13,-7,-40,-28,1,-15
+BAL,Colton Cowser,681297,-6,Smith,681343,-13,1,-36,-24,-10,5
+TEX,Corey Seager,608369,7,Kirby,669923,-13,-8,-14,2,9,-22
+CLE,Daniel Schneemann,682177,-1,Cameron,702070,-13,-1,-36,-8,-3,16
+CLE,David Fry,681807,1,Cameron,702070,-13,7,-50,24,-5,5
+CIN,Elly De La Cruz E. De La Cruz,682829,-5,Alcantara,645261,-13,-12,-17,-13,7,-26
+PIT,Henry Davis,680779,-8,Pivetta,601713,-13,5,-50,-22,-22,-10
+BAL,Leody Taveras,665750,-2,Smith,681343,-13,-2,-46,-15,-17,9
+NYM,Luis Torrens,620443,7,Gallen,668678,-13,-2,-34,0,-1,-6
+TOR,Myles Straw,664702,-6,Yamamoto,808967,-13,-9,-26,-17,-12,-14
+PIT,Nick Yorke,694377,-8,Pivetta,601713,-13,-2,-48,-22,-25,-5
+LAA,Zach Neto,687263,1,Lopez,625643,-13,-12,-18,-18,-9,15
+BAL,Adley Rutschman,668939,4,Smith,681343,-14,-7,-49,-23,-8,1
+PHI,Adolis Garcia,666969,-3,Ray,592662,-14,-10,-21,-13,-21,26
+TEX,Andrew McCutchen,457705,-2,Kirby,669923,-14,-10,-22,-1,3,-14
+PIT,Brandon Lowe,664040,-7,Pivetta,601713,-14,-1,-29,-32,-25,-12
+CHW,Edgar Quero,700337,-3,Rogers,669432,-14,-6,-55,-33,3,-8
+DET,Jahmai Jones,663330,-4,Bradley,671737,-14,-12,-46,-10,-8,27
+PHI,Justin Crawford,702222,-8,Ray,592662,-14,-9,-20,3,-22,7
+CIN,Ke'Bryan Hayes,663647,-2,Alcantara,645261,-14,-14,-31,9,-5,-28
+CHW,Luisangel Acuna,682668,-7,Rogers,669432,-14,-9,-36,-22,-4,-18
+ARI,Nolan Arenado,571448,4,Peralta,642547,-14,-4,-8,3,-12,12
+CLE,Rhys Hoskins,656555,3,Cameron,702070,-14,-2,-42,9,-14,16
+NYM,Ronny Mauricio,677595,-6,Gallen,668678,-14,-7,-34,6,-8,-9
+CHW,Tanner Murray,695020,-10,Rogers,669432,-14,-4,-33,-16,-11,-11
+LAD,Teoscar Hernandez,606192,-6,Gausman,592332,-14,-10,-14,11,-19,-41
+SD,Ty France,664034,-3,Skenes,694973,-14,-2,-54,-4,-22,-20
+LAD,Will Smith,669257,-2,Gausman,592332,-14,-10,-16,12,-8,-43
+CLE,Austin Hedges,595978,2,Cameron,702070,-15,0,-44,29,-17,-6
+CIN,Eugenio Suarez,553993,-5,Alcantara,645261,-15,-12,-32,18,12,-31
+SF,Jared Oliva,666931,-10,Sanchez,650911,-15,-16,-54,-30,22,-38
+DET,Javier Baez,595879,-5,Bradley,671737,-15,-13,-48,9,-10,25
+LAD,Max Muncy,571970,-2,Gausman,592332,-15,-12,-7,4,-5,-41
+TEX,Sam Haggerty,664059,-7,Kirby,669923,-15,-12,6,-19,-1,-19
+TOR,Tyler Heineman,623168,-8,Yamamoto,808967,-15,-13,-24,-22,-9,-18
+CIN,Tyler Stephenson,663886,-6,Alcantara,645261,-15,-12,-23,8,-1,-27
+SEA,Victor Robles,645302,-6,Eovaldi,543135,-15,-12,-20,2,-4,-39
+DET,Zach McKinstry,656716,1,Bradley,671737,-15,-10,-58,-8,-9,29
+LAD,Alex Call,669743,-5,Gausman,592332,-16,-13,1,6,-11,-43
+LAD,Andy Pages,681624,-5,Gausman,592332,-16,-13,-10,3,-15,-49
+NYM,Bo Bichette,666182,6,Gallen,668678,-16,-10,-29,-9,-2,-9
+TEX,Brandon Nimmo,607043,-2,Kirby,669923,-16,-12,-12,-19,3,-17
+NYM,Jorge Polanco,593871,7,Gallen,668678,-16,-8,-21,-12,2,-14
+MIA,Leo Jimenez,677870,-3,Abbott,671096,-16,-12,-23,5,2,-18
+NYM,Marcus Semien,543760,6,Gallen,668678,-16,-7,-36,-3,1,-8
+CIN,Matt McLain,680574,-5,Alcantara,645261,-16,-13,-27,21,-4,-38
+CHC,Matt Shaw,807713,-1,Rasmussen,656876,-16,-14,14,5,-6,-19
+SEA,Mitch Garver,641598,-5,Eovaldi,543135,-16,-14,-15,8,-2,-36
+DET,Riley Greene,682985,2,Bradley,671737,-16,-12,-39,-19,2,22
+BAL,Ryan Mountcastle,663624,-6,Smith,681343,-16,-6,-48,-12,-9,-1
+DET,Spencer Torkelson,679529,1,Bradley,671737,-16,-11,-37,-13,-11,22
+TOR,Vladimir Guerrero Jr. V. Guerrero Jr.,665489,3,Yamamoto,808967,-16,-12,-31,-24,-10,-21
+CLE,C.J. Kayfus,692216,-2,Cameron,702070,-17,-3,-33,-5,6,-7
+CIN,Dane Myers,667472,-6,Alcantara,645261,-17,-17,-20,-6,-3,-23
+SD,Fernando Tatis Jr. F. Tatis Jr.,665487,-7,Skenes,694973,-17,-9,-45,-14,-23,-25
+TEX,Jake Burger,669394,-7,Kirby,669923,-17,-16,-22,-13,1,-27
+SEA,Josh Naylor,647304,4,Eovaldi,543135,-17,-13,-16,-2,-8,-31
+SF,Luis Arraez,650333,1,Sanchez,650911,-17,-14,-58,-33,8,-46
+CHW,Miguel Vargas,678246,4,Rogers,669432,-17,-7,-47,-11,0,-20
+SD,Nick Castellanos,592206,-8,Skenes,694973,-17,-5,-55,-14,-27,-21
+BAL,Samuel Basallo,694212,-9,Smith,681343,-17,-6,-38,-18,-13,-6
+LAD,Shohei Ohtani,660271,-5,Gausman,592332,-17,-14,-11,-2,-10,-43
+CHW,Tristan Peters,671976,-10,Rogers,669432,-17,-6,-36,-22,-8,-8
+NYM,Tyrone Taylor,621438,-2,Gallen,668678,-17,-9,-41,-9,-4,-5
+SEA,Brendan Donovan,680977,5,Eovaldi,543135,-18,-13,-16,0,-11,-27
+NYM,Brett Baty,683146,-2,Gallen,668678,-18,-10,-29,-9,0,-20
+SF,Casey Schmitt,669477,-7,Sanchez,650911,-18,-17,-37,-34,26,-47
+SF,Daniel Susac,691740,-10,Sanchez,650911,-18,-18,-52,-31,24,-43
+NYM,Francisco Lindor,596019,9,Gallen,668678,-18,-10,-33,4,-3,-16
+ARI,Gabriel Moreno,672515,6,Peralta,642547,-18,-7,-11,-10,-15,10
+SF,Heliot Ramos,671218,-6,Sanchez,650911,-18,-16,-44,-47,31,-49
+NYM,Jared Young,676724,-7,Gallen,668678,-18,-12,-44,-8,-3,-6
+TOR,Jesus Sanchez,660821,-6,Yamamoto,808967,-18,-15,-31,-30,-6,-21
+TEX,Josh Jung,673962,-7,Kirby,669923,-18,-14,-15,-23,-1,-16
+SEA,Julio Rodriguez,677594,-6,Eovaldi,543135,-18,-16,-10,-17,-8,-31
+SF,Jung Hoo Lee J. Hoo Lee,808982,-2,Sanchez,650911,-18,-15,-68,-27,16,-48
+CHW,Lenyn Sosa,672820,-3,Rogers,669432,-18,-8,-34,-23,-8,-1
+SD,Luis Campusano,669134,-6,Skenes,694973,-18,-6,-67,-8,-27,-12
+SD,Manny Machado,592518,-6,Skenes,694973,-18,-7,-56,-8,-26,-18
+BOS,Masataka Yoshida,807799,3,Misiorowski,694819,-18,-14,-45,-21,-15,32
+PIT,Nick Gonzales,693304,-6,Pivetta,601713,-18,-5,-62,-30,-25,9
+CIN,Spencer Steer,668715,-2,Alcantara,645261,-18,-15,-34,1,2,-27
+CIN,TJ Friedl,670770,-2,Alcantara,645261,-18,-16,-31,1,-2,-26
+CIN,Will Benson,666181,-5,Alcantara,645261,-18,-16,-20,-3,-1,-26
+SD,Xander Bogaerts,593428,-4,Skenes,694973,-18,-6,-62,-11,-22,-14
+SEA,Cole Young,702284,-5,Eovaldi,543135,-19,-15,-17,-4,-7,-34
+CHW,Dustin Harris,687957,-10,Rogers,669432,-19,-10,-41,-28,-4,-14
+SD,Gavin Sheets,657757,-6,Skenes,694973,-19,-9,-48,-26,-25,-8
+MIL,Joey Ortiz,687401,-5,Crochet,676979,-19,-18,-41,-8,-1,-39
+TOR,Kazuma Okamoto,672960,-10,Yamamoto,808967,-19,-16,-36,-11,-12,-22
+SD,Miguel Andujar,609280,-6,Skenes,694973,-19,-8,-66,-11,-27,-13
+CHC,Alex Bregman,608324,5,Rasmussen,656876,-20,-19,5,12,-9,-29
+LAD,Alex Freeland,690976,-10,Gausman,592332,-20,-17,7,-2,-21,-46
+CHW,Andrew Benintendi,643217,-2,Rogers,669432,-20,-8,-42,-27,-7,-9
+NYY,Ben Rice,700250,4,Civale,650644,-20,-14,-22,-27,2,9
+BOS,Caleb Durbin,702332,-3,Misiorowski,694819,-20,-17,-49,-19,-11,29
+TEX,Danny Jansen,643376,-7,Kirby,669923,-20,-17,-20,-11,0,-22
+SD,Freddy Fermin,666023,-9,Skenes,694973,-20,-11,-61,-22,-28,-10
+ARI,Geraldo Perdomo,672695,8,Peralta,642547,-20,-13,-19,-13,-18,10
+CHC,Ian Happ,664023,1,Rasmussen,656876,-20,-18,-4,17,-1,-33
+DET,Jake Rogers,668670,-7,Bradley,671737,-20,-18,-53,-4,-5,14
+CHC,Michael Busch,683737,7,Rasmussen,656876,-20,-17,2,6,1,-34
+CHC,Pete Crow-Armstrong,691718,-4,Rasmussen,656876,-20,-16,-1,-4,-6,-30
+CHC,Scott Kingery,664068,-7,Rasmussen,656876,-20,-15,-4,3,1,-27
+PHI,Brandon Marsh,669016,-3,Ray,592662,-21,-14,-34,-16,-20,6
+SD,Bryce Johnson,669369,-9,Skenes,694973,-21,-9,-57,-31,-20,-28
+SEA,Cal Raleigh,663728,-7,Eovaldi,543135,-21,-18,-11,-15,-13,-30
+CHC,Dansby Swanson,621020,-2,Rasmussen,656876,-21,-19,-10,1,0,-28
+TOR,Davis Schneider,676914,-7,Yamamoto,808967,-21,-18,-29,-32,-9,-21
+CIN,Jose Trevino,624431,-3,Alcantara,645261,-21,-19,-40,-4,-11,-26
+CLE,Kyle Manzardo,700932,3,Cameron,702070,-21,-8,-40,-2,-5,0
+SD,Ramon Laureano,657656,-6,Skenes,694973,-21,-8,-47,-14,-31,-19
+CHW,Reese McGuire,624512,-6,Rogers,669432,-21,-10,-54,-30,-2,-8
+SEA,Rob Refsnyder,608701,-3,Eovaldi,543135,-21,-18,-20,-6,0,-44
+CIN,Sal Stewart,701398,-4,Alcantara,645261,-21,-20,-40,8,-4,-29
+NYY,Aaron Judge,592450,9,Civale,650644,-22,-16,-23,-2,3,-10
+BAL,Blaze Alexander,677942,-8,Smith,681343,-22,-7,-54,-10,-13,-17
+TOR,Brandon Valenzuela,678218,-10,Yamamoto,808967,-22,-18,-28,-23,-17,-22
+CLE,Chase DeLauter,800050,-3,Cameron,702070,-22,-9,-25,-13,-5,-15
+LAD,Hyeseong Kim,808975,-10,Gausman,592332,-22,-19,-13,-11,-16,-40
+SD,Jackson Merrill,701538,-5,Skenes,694973,-22,-9,-59,-26,-22,-10
+NYY,Jazz Chisholm,665862,3,Civale,650644,-22,-11,-16,-15,2,-10
+NYM,Luis Robert,673357,-1,Gallen,668678,-22,-17,-38,-10,-6,-15
+SF,Matt Chapman,656305,-5,Sanchez,650911,-22,-22,-49,-40,26,-44
+ARI,Carlos Santana,467793,-5,Peralta,642547,-23,-16,-23,-8,-24,10
+DET,Dillon Dingler,693307,-6,Bradley,671737,-23,-20,-50,-8,-10,16
+SEA,Dominic Canzone,686527,-8,Eovaldi,543135,-23,-19,-21,-14,-13,-36
+KC,Isaac Collins,686555,-3,Williams,668909,-23,-17,-65,-13,-24,31
+CHC,Nico Hoerner,663538,1,Rasmussen,656876,-23,-23,8,-4,-6,-40
+KC,Vinnie Pasquantino,686469,6,Williams,668909,-23,-13,-54,-3,-17,25
+CHC,Carson Kelly,608348,-1,Rasmussen,656876,-24,-22,8,-6,-15,-30
+ARI,Ketel Marte,606466,3,Peralta,642547,-24,-16,-4,-14,-19,-10
+MIL,Luis Matos,682641,-7,Crochet,676979,-24,-24,-43,3,-1,-42
+NYY,Paul Goldschmidt,502671,3,Civale,650644,-24,-17,-38,-16,-1,-1
+NYY,Giancarlo Stanton,519317,3,Civale,650644,-25,-18,-12,-23,-1,-5
+ARI,Ildemaro Vargas,545121,-3,Peralta,642547,-25,-18,-20,-7,-25,18
+MIL,Luis Rengifo,650859,-5,Crochet,676979,-25,-22,-39,-7,-6,-36
+KC,Maikel Garcia,672580,3,Williams,668909,-25,-18,-66,-10,-30,25
+CHC,Michael Conforto,624424,-1,Rasmussen,656876,-25,-23,2,-2,0,-37
+SF,Christian Koss,683766,-9,Sanchez,650911,-26,-24,-54,-33,7,-35
+LAD,Dalton Rushing,687221,-10,Gausman,592332,-26,-23,-20,-9,-21,-41
+CHC,Dylan Carlson,666185,-4,Rasmussen,656876,-26,-23,-10,-4,-1,-26
+NYY,J.C. Escarra,641555,-4,Civale,650644,-26,-22,-32,-23,-2,-12
+PIT,Jake Mangum,663968,-9,Pivetta,601713,-26,-13,-65,-38,-32,-1
+ARI,James McCann,543510,-6,Peralta,642547,-26,-16,-21,-17,-18,9
+SEA,Leo Rivas,660844,-10,Eovaldi,543135,-26,-23,-12,-15,-12,-40
+KC,Jonathan India,663697,-3,Williams,668909,-27,-19,-63,3,-25,16
+SF,Rafael Devers,646240,-7,Sanchez,650911,-27,-23,-43,-37,34,-54
+SF,Willy Adames,642715,-7,Sanchez,650911,-27,-25,-44,-36,28,-45
+BOS,Andruw Monasterio,655316,-7,Misiorowski,694819,-28,-24,-55,-15,-25,34
+NYY,Cody Bellinger,641355,2,Civale,650644,-28,-20,-25,-24,-7,-18
+ARI,Corbin Carroll,682998,-3,Peralta,642547,-28,-21,-30,-19,-17,1
+SF,Jerar Encarnacion,666464,-9,Sanchez,650911,-28,-26,-50,-47,9,-40
+MIL,William Contreras,661388,-2,Crochet,676979,-28,-23,-31,-1,-7,-42
+BOS,Wilyer Abreu,677800,-3,Misiorowski,694819,-28,-21,-44,-19,-18,27
+MIL,Christian Yelich,592885,-5,Crochet,676979,-29,-23,-24,-13,-7,-41
+KC,Kyle Isbel,664728,-4,Williams,668909,-29,-22,-53,-14,-25,22
+BOS,Isiah Kiner-Falefa,643396,-8,Misiorowski,694819,-30,-26,-45,-37,-14,15
+ARI,Jorge Barrosa,678489,-9,Peralta,642547,-30,-21,-22,-18,-20,1
+NYY,Randal Grichuk,545341,2,Civale,650644,-30,-20,-35,-12,-2,-16
+NYY,Amed Rosario,642708,-5,Civale,650644,-31,-22,-50,-18,-1,-21
+MIN,Austin Martin,668885,-7,Skubal,669373,-31,-27,-58,-25,5,-33
+CHC,Miguel Amaya,665804,-6,Rasmussen,656876,-31,-29,-15,-1,-12,-36
+MIL,Sal Frelick,686217,-3,Crochet,676979,-31,-22,-45,-16,-10,-36
+KC,Salvador Perez,521692,1,Williams,668909,-31,-23,-62,0,-21,30
+ARI,Tim Tawa,694374,-9,Peralta,642547,-31,-22,-22,-20,-24,4
+BOS,Willson Contreras,575929,-6,Misiorowski,694819,-31,-27,-48,-25,-20,13
+ARI,Alek Thomas,677950,-8,Peralta,642547,-32,-21,-28,-20,-26,15
+MIL,Brandon Lockridge,663604,-9,Crochet,676979,-32,-30,-38,-7,-11,-37
+MIN,Brooks Lee,686797,-6,Skubal,669373,-32,-28,-54,-10,0,-41
+ATH,Jacob Wilson,805779,-5,Schlittler,693645,-32,-29,-69,-14,-11,-13
+ATH,Jeff McNeil,643446,-2,Schlittler,693645,-32,-28,-54,-20,-1,-11
+CHC,Moises Ballesteros,694208,-7,Rasmussen,656876,-32,-28,-23,-4,-12,-30
+SF,Patrick Bailey,672275,-9,Sanchez,650911,-32,-29,-60,-44,9,-48
+KC,Bobby Witt Jr. B. Witt Jr.,677951,-2,Williams,668909,-33,-25,-56,1,-22,-1
+MIL,Brice Turang,668930,-5,Crochet,676979,-33,-28,-39,-7,-14,-26
+BOS,Carlos Narvaez,665966,-8,Misiorowski,694819,-33,-30,-51,-28,-21,22
+BOS,Connor Wong,657136,-8,Misiorowski,694819,-33,-32,-57,-24,-21,23
+KC,Michael Massey,686681,-4,Williams,668909,-33,-24,-57,0,-24,12
+ATH,Andy Ibanez,628451,-5,Schlittler,693645,-34,-30,-62,-16,2,-14
+ATH,Darell Hernaiz,687231,-7,Schlittler,693645,-35,-30,-76,-21,2,-10
+MIL,Jake Bauers,641343,-6,Crochet,676979,-35,-27,-36,-6,-11,-36
+BOS,Roman Anthony,701350,-9,Misiorowski,694819,-35,-33,-51,-18,-28,16
+KC,Starling Marte,516782,-5,Williams,668909,-35,-26,-55,-6,-27,19
+MIN,Luke Keaschall,807712,-8,Skubal,669373,-36,-35,-47,-26,-6,-31
+NYY,Trent Grisham,663757,-2,Civale,650644,-36,-26,-21,-11,-12,-21
+ARI,Adrian Del Castillo A. Del Castillo,680728,-10,Peralta,642547,-37,-27,-26,-29,-30,-1
+NYY,Austin Wells,669224,-4,Civale,650644,-37,-25,-35,-17,-5,-18
+SF,Harrison Bader,664056,-10,Sanchez,650911,-37,-36,-49,-41,3,-55
+MIN,Trevor Larnach,663616,-8,Skubal,669373,-37,-37,-47,-15,0,-38
+BOS,Jarren Duran,680776,-9,Misiorowski,694819,-38,-36,-50,-31,-22,8
+BOS,Trevor Story,596115,-9,Misiorowski,694819,-38,-36,-50,-32,-14,11
+ATH,Carlos Cortes,666126,-6,Schlittler,693645,-39,-33,-52,-22,-5,-19
+BOS,Ceddanne Rafaela,678882,-10,Misiorowski,694819,-39,-38,-47,-28,-23,23
+MIL,Gary Sanchez,596142,-9,Crochet,676979,-39,-38,-26,-8,-7,-47
+MIN,Royce Lewis,668904,-9,Skubal,669373,-39,-36,-47,-28,-2,-24
+MIN,Ryan Jeffers,680777,-8,Skubal,669373,-39,-39,-42,-10,-5,-43
+MIL,Blake Perkins,663368,-9,Crochet,676979,-40,-37,-60,-2,-8,-40
+MIN,Byron Buxton,621439,-8,Skubal,669373,-40,-37,-45,-22,0,-30
+KC,Jac Caglianone,695506,-8,Williams,668909,-40,-32,-58,0,-24,5
+NYY,Jose Caballero,676609,-7,Civale,650644,-40,-33,-53,-17,2,-21
+MIN,Tristan Gray,656484,-10,Skubal,669373,-40,-39,-61,-14,9,-26
+MIN,Victor Caratini,605170,-7,Skubal,669373,-40,-37,-56,-22,1,-41
+ARI,Jose Fernandez,699912,-10,Peralta,642547,-41,-29,-6,-36,-28,-15
+KC,Lane Thomas,657041,-8,Williams,668909,-41,-35,-61,-5,-32,16
+BOS,Marcelo Mayer,691785,-10,Misiorowski,694819,-42,-41,-51,-13,-22,6
+ATH,Shea Langeliers,669127,-6,Schlittler,693645,-42,-37,-57,-14,4,-17
+ATH,Tyler Soderstrom,691016,-6,Schlittler,693645,-44,-38,-63,-23,-10,-18
+ATH,Austin Wynns,642851,-8,Schlittler,693645,-45,-38,-62,-6,-9,-14
+ATH,Lawrence Butler,671732,-7,Schlittler,693645,-45,-38,-57,-21,-2,-11
+NYY,Ryan McMahon,641857,-7,Civale,650644,-45,-35,-43,-17,-9,-13
+MIN,Kody Clemens,665019,-9,Skubal,669373,-46,-44,-63,-19,3,-39
+ATH,Brent Rooker,667670,-7,Schlittler,693645,-48,-41,-54,-14,0,-24
+MIN,Josh Bell,605137,-8,Skubal,669373,-49,-47,-60,-24,-15,-35
+ATH,Nick Kurtz,701762,-8,Schlittler,693645,-51,-43,-60,-19,9,-25
+MIL,David Hamilton,666152,-10,Crochet,676979,-52,-45,-46,-20,-21,-42
+KC,Carter Jensen,695600,-9,Williams,668909,-53,-46,-58,-19,-26,-2
+ATH,Max Muncy,691777,-9,Schlittler,693645,-53,-46,-58,-11,-6,-20
+ATH,Denzel Clarke,672016,-10,Schlittler,693645,-56,-52,-61,-17,-7,-23
+KC,Tyler Tolbert,686475,-10,Williams,668909,-56,-46,-62,-12,-32,6
+MIL,Garrett Mitchell,669003,-10,Crochet,676979,-62,-60,-61,-16,-19,-47
+MIN,James Outman,681546,-10,Skubal,669373,-62,-61,-55,-23,-4,-39
+MIN,Matt Wallner,670242,-10,Skubal,669373,-62,-61,-53,-29,-8,-43

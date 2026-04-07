@@ -1,0 +1,568 @@
+<!DOCTYPE html><html lang="en"><head>
+<!-- Google Tag Manager -->
+<script src="https://connect.facebook.net/signals/config/1295785075807805?v=2.9.291&amp;r=stable&amp;domain=www.ballparkpal.com&amp;hme=295b1b33901e14aeab879c0b58f907ef4d5f44fdd19814310771af911c5f6ac8&amp;ex_m=102%2C198%2C147%2C22%2C70%2C71%2C139%2C66%2C65%2C11%2C155%2C88%2C16%2C132%2C124%2C37%2C73%2C76%2C130%2C152%2C157%2C8%2C4%2C5%2C7%2C6%2C3%2C89%2C99%2C158%2C163%2C212%2C60%2C179%2C180%2C53%2C267%2C30%2C72%2C224%2C223%2C222%2C23%2C32%2C101%2C59%2C10%2C61%2C95%2C96%2C97%2C103%2C127%2C31%2C29%2C129%2C126%2C125%2C148%2C74%2C151%2C149%2C150%2C48%2C58%2C120%2C15%2C154%2C43%2C254%2C255%2C253%2C26%2C27%2C28%2C46%2C140%2C75%2C110%2C18%2C20%2C42%2C38%2C40%2C39%2C81%2C90%2C94%2C108%2C138%2C141%2C44%2C109%2C24%2C21%2C116%2C67%2C35%2C143%2C142%2C144%2C135%2C133%2C25%2C34%2C57%2C107%2C153%2C68%2C17%2C145%2C112%2C79%2C64%2C19%2C83%2C84%2C113%2C82%2C33%2C284%2C205%2C194%2C195%2C193%2C287%2C279%2C50%2C206%2C105%2C128%2C78%2C118%2C52%2C45%2C47%2C111%2C117%2C123%2C56%2C62%2C51%2C54%2C98%2C156%2C1%2C121%2C14%2C119%2C12%2C2%2C55%2C91%2C63%2C115%2C87%2C86%2C159%2C160%2C92%2C93%2C9%2C122%2C100%2C49%2C136%2C85%2C77%2C69%2C114%2C104%2C41%2C137%2C0%2C80%2C131%2C134%2C146%2C36%2C106%2C13%2C161" async=""></script><script type="text/javascript" async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5VPJT5JF"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5VPJT5JF');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Log in to your Ballpark Pal account with a code">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Log In with Code | BallparkPal</title>
+    <link rel="icon" type="image/png" href="Images/MainLogo.png">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary-color: #0275d8;
+            --primary-dark: #025aa5;
+            --text-primary: #333;
+            --text-secondary: #666;
+            --bg-primary: #f8f9fa;
+            --bg-white: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --success-color: #28a745;
+            --error-color: #dc3545;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .login-wrapper {
+            width: 100%;
+            max-width: 480px;
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .logo-container {
+            margin-bottom: 10px;
+        }
+
+        .logo-container img {
+            max-width: 140px;
+            height: auto;
+        }
+
+        .login-header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .login-header p {
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        .login-container {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+        }
+
+        .login-content {
+            padding: 32px;
+        }
+
+        .message {
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            margin-bottom: 24px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .message.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .message.error {
+            background: #ffe6e6;
+            border: 1px solid #ff4d4f;
+            color: #a8071a;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px 16px;
+            font-size: 16px;
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            background: var(--bg-white);
+            color: var(--text-primary);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(2, 117, 216, 0.1);
+        }
+
+        .form-input::placeholder {
+            color: #adb5bd;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Code Input Styles */
+        .code-input-container {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 24px 0;
+        }
+
+        .code-input {
+            width: 52px;
+            height: 64px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            background: var(--bg-white);
+            color: var(--text-primary);
+            font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+        }
+
+        .code-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(2, 117, 216, 0.1);
+        }
+
+        .code-input.filled {
+            border-color: var(--primary-color);
+            background: #f0f7ff;
+        }
+
+        .code-input.error {
+            border-color: var(--error-color);
+            background: #fff5f5;
+        }
+
+        .code-separator {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            color: var(--border-color);
+            font-weight: 300;
+        }
+
+        .email-display {
+            text-align: center;
+            margin-bottom: 8px;
+            padding: 12px 16px;
+            background: #f8f9fa;
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .email-display strong {
+            color: var(--text-primary);
+        }
+
+        .resend-section {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .resend-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 14px;
+            padding: 0;
+        }
+
+        .resend-link:hover {
+            text-decoration: underline;
+        }
+
+        .resend-link:disabled {
+            color: var(--text-secondary);
+            cursor: not-allowed;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .back-link a, .back-link button {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-link a:hover, .back-link button:hover {
+            text-decoration: underline;
+        }
+
+        .back-link svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .timer {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+
+        .timer.expired {
+            color: var(--error-color);
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+
+            .login-content {
+                padding: 24px 20px;
+            }
+
+            .login-header h1 {
+                font-size: 24px;
+            }
+
+            .login-header p {
+                font-size: 14px;
+            }
+
+            .logo-container img {
+                max-width: 70px;
+            }
+
+            .code-input {
+                width: 44px;
+                height: 56px;
+                font-size: 24px;
+            }
+
+            .code-input-container {
+                gap: 6px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        *:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body><a href="https://www.ballparkpal.com/cdn-cgi/content?id=epXFSxqCISvNVPbTSx8FNytdCBKCPP0tzXt9MkmYyBk-1775568143.4181035-1.0.1.1-y5WRwXg_v2h71h.RzhWyr4orJUBjNVNC04B87A4CGXs" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+    <div class="login-wrapper">
+        <div class="login-header">
+            <div class="logo-container">
+                <img src="Images/MainLogo.png" alt="Ballpark Pal Logo">
+            </div>
+            <h1>Log In with Code</h1>
+                            <p>Enter the 6-digit code we sent you</p>
+                    </div>
+
+        <div class="login-container">
+            <div class="login-content">
+                
+                                    <!-- Step 2: Code Entry -->
+                    <div class="email-display">
+                        Code sent to <strong>tylersegn@gmail.com</strong>
+                    </div>
+
+                    <form method="post" action="" id="codeForm">
+                        <input type="hidden" name="verify_code" value="1">
+                        <input type="hidden" name="code" id="codeHidden" value="">
+                        
+                        <div class="code-input-container">
+                            <input type="text" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="0" autocomplete="one-time-code">
+                            <input type="text" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="1">
+                            <input type="text" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="2">
+                            <span class="code-separator">–</span>
+                            <input type="text" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="3">
+                            <input type="text" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="4">
+                            <input type="text" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="5">
+                        </div>
+
+                        <button type="submit" name="verify_code" class="submit-btn" id="verifyBtn" disabled="">
+                            Verify Code
+                        </button>
+                    </form>
+
+                    <div class="resend-section">
+                        <span>Didn't receive the code? </span>
+                        <form method="post" action="" style="display: inline;">
+                            <input type="hidden" name="email" value="tylersegn@gmail.com">
+                            <button type="submit" name="send_code" class="resend-link" id="resendBtn">
+                                Resend code
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="back-link">
+                        <form method="post" action="" style="display: inline;">
+                            <button type="submit" name="back_to_email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg>
+                                Use a different email
+                            </button>
+                        </form>
+                    </div>
+                
+                            </div>
+        </div>
+    </div>
+
+        <script>
+        (function() {
+            const codeInputs = document.querySelectorAll('.code-input');
+            const codeHidden = document.getElementById('codeHidden');
+            const verifyBtn = document.getElementById('verifyBtn');
+            const codeForm = document.getElementById('codeForm');
+
+            // Focus first input on load
+            codeInputs[0].focus();
+
+            function updateHiddenInput() {
+                let code = '';
+                codeInputs.forEach(input => {
+                    code += input.value;
+                });
+                codeHidden.value = code;
+                
+                // Enable/disable verify button
+                verifyBtn.disabled = code.length !== 6;
+                
+                // Update filled state
+                codeInputs.forEach(input => {
+                    input.classList.toggle('filled', input.value !== '');
+                });
+            }
+
+            function focusNext(currentIndex) {
+                if (currentIndex < codeInputs.length - 1) {
+                    codeInputs[currentIndex + 1].focus();
+                }
+            }
+
+            function focusPrev(currentIndex) {
+                if (currentIndex > 0) {
+                    codeInputs[currentIndex - 1].focus();
+                }
+            }
+
+            codeInputs.forEach((input, index) => {
+                // Handle input
+                input.addEventListener('input', (e) => {
+                    // Only allow digits
+                    input.value = input.value.replace(/[^0-9]/g, '');
+                    
+                    if (input.value.length === 1) {
+                        focusNext(index);
+                    }
+                    
+                    updateHiddenInput();
+                    
+                    // Auto-submit when all 6 digits entered
+                    if (codeHidden.value.length === 6) {
+                        // Small delay to show the last digit
+                        setTimeout(() => {
+                            codeForm.submit();
+                        }, 150);
+                    }
+                });
+
+                // Handle paste
+                input.addEventListener('paste', (e) => {
+                    e.preventDefault();
+                    const pastedData = (e.clipboardData || window.clipboardData).getData('text');
+                    const digits = pastedData.replace(/[^0-9]/g, '').slice(0, 6);
+                    
+                    if (digits.length > 0) {
+                        digits.split('').forEach((digit, i) => {
+                            if (codeInputs[i]) {
+                                codeInputs[i].value = digit;
+                            }
+                        });
+                        
+                        // Focus appropriate input
+                        const nextIndex = Math.min(digits.length, codeInputs.length - 1);
+                        codeInputs[nextIndex].focus();
+                        
+                        updateHiddenInput();
+                        
+                        // Auto-submit if all digits pasted
+                        if (digits.length === 6) {
+                            setTimeout(() => {
+                                codeForm.submit();
+                            }, 150);
+                        }
+                    }
+                });
+
+                // Handle keydown
+                input.addEventListener('keydown', (e) => {
+                    // Backspace
+                    if (e.key === 'Backspace') {
+                        if (input.value === '') {
+                            focusPrev(index);
+                        } else {
+                            input.value = '';
+                            updateHiddenInput();
+                        }
+                        e.preventDefault();
+                    }
+                    
+                    // Left arrow
+                    if (e.key === 'ArrowLeft') {
+                        focusPrev(index);
+                        e.preventDefault();
+                    }
+                    
+                    // Right arrow
+                    if (e.key === 'ArrowRight') {
+                        focusNext(index);
+                        e.preventDefault();
+                    }
+                });
+
+                // Select all on focus
+                input.addEventListener('focus', () => {
+                    input.select();
+                });
+            });
+
+            // Prevent form submit if code incomplete
+            codeForm.addEventListener('submit', (e) => {
+                if (codeHidden.value.length !== 6) {
+                    e.preventDefault();
+                }
+            });
+        })();
+    </script>
+    
+
+
+</body></html>
