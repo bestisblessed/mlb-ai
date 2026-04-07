@@ -1,9 +1,9 @@
 game_id,game,icons,icon_labels
-824375,Coors Field8:40HOU @ COL,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,LowP.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,Low Pressure"
-824051,Angel Stadium9:38ATL @ LAA,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze"
+824375,Coors Field8:40HOU @ COL,"OutRightCenter.svg,OutCenter.svg,OutLeftCenter.svg,LightWind.png,LowH.png,LowP.png","OutRightCenter.svg,OutCenter.svg,OutLeftCenter.svg,Light Breeze,Low Humidity,Low Pressure"
+824051,Angel Stadium9:38ATL @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
 823887,LoanDepot Park6:40CIN @ MIA,RoofClosed.png,Roof Closed
 822831,Rogers Centre7:07LAD @ TOR,RoofClosed.png,Roof Closed
-823235,Oracle Park9:45PHI @ SF,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,Under55.png,HighH.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,Under55.png,High Humidity"
+823235,Oracle Park9:45PHI @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind"
 822999,Tropicana Field6:40CHC @ TB,RoofClosed.png,Roof Closed
 822916,Globe Life Field8:05SEA @ TEX,RoofClosed.png,Roof Closed
 823567,Yankee Stadium7:05ATH @ NYY,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,HeavyWind.png,Under55.png,HighP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Heavy Wind,Under55.png,High Pressure"
