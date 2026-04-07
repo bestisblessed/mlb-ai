@@ -13,6 +13,8 @@ from urllib.parse import urljoin, urlparse, parse_qs
 today = datetime.now().strftime('%Y-%m-%d')
 os.makedirs(f"data/{today}", exist_ok=True)  # For processed data
 os.makedirs(f"data/raw/{today}", exist_ok=True)  # For raw HTML files
+HEADLESS = os.getenv("BALLPARKPAL_HEADLESS", "0") == "1"
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 
 
 ### Scrape Game Simulations Home Page ###
@@ -20,7 +22,8 @@ async def main():
     async with async_playwright() as p:
         context = await p.chromium.launch_persistent_context(
             user_data_dir="playwright_user_data",
-            headless=True
+            headless=HEADLESS,
+            user_agent=USER_AGENT
         )
         page = await context.new_page()
         await page.goto('https://www.ballparkpal.com/Game-Simulations.php')
@@ -38,7 +41,11 @@ OUTPUT_CSV = f"data/{today}/game_simulations.csv"
 with open(INPUT_HTML, encoding="utf-8") as f:
     soup = BeautifulSoup(f, "html.parser")
 container = soup.find("div", class_="game-summary-box")
-items = container.find_all("a", class_="game-summary-item")
+if not container:
+    container = soup.select_one("div.game-summary-box, div[class*='game-summary']")
+items = container.find_all("a", class_="game-summary-item") if container else []
+if not container:
+    print(f"⚠️ Could not find game summary container in {INPUT_HTML}. Continuing with empty game list.")
 with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=[
         "game_id", "away_team", "away_score", "time", "home_team", "home_score"
@@ -134,7 +141,9 @@ print(f"Wrote {len(df)} game records to {OUTPUT_CSV!r}")
 async def main():
     async with async_playwright() as p:
         ctx = await p.chromium.launch_persistent_context(
-            user_data_dir="playwright_user_data", headless=True
+            user_data_dir="playwright_user_data",
+            headless=HEADLESS,
+            user_agent=USER_AGENT
         )
         page = await ctx.new_page()
         os.makedirs(f"data/raw/{today}", exist_ok=True)
@@ -258,15 +267,22 @@ async def main():
     async with async_playwright() as p:
         context = await p.chromium.launch_persistent_context(
             user_data_dir="playwright_user_data",
-            headless=False
+            headless=HEADLESS,
+            user_agent=USER_AGENT
         )
         page = await context.new_page()
         await page.goto('https://www.ballparkpal.com/Matchups.php')
-        await page.wait_for_timeout(1000)
+        # The table can render asynchronously; wait a bit longer and try to
+        # detect table rows before saving HTML.
+        try:
+            await page.wait_for_selector("#table_id tbody tr", timeout=10000)
+        except Exception:
+            await page.wait_for_timeout(4000)
         content = await page.content()
         with open(f'data/{today}/matchups.html', 'w', encoding='utf-8') as f:
             f.write(content)
         print(f"Saved page HTML to data/{today}/matchups.html")
+        await context.close()
 asyncio.run(main())
 
 
@@ -284,6 +300,11 @@ with open(f"{data_dir}/matchups.html", "r", encoding="utf-8") as f:
     html_content = f.read()
 soup = BeautifulSoup(html_content, "html.parser")
 rows = soup.select("#table_id tbody tr")
+if not rows:
+    # Fallback selectors for layout changes or plugin-rendered markup.
+    rows = soup.select("#table_id tr")
+if not rows:
+    rows = soup.select("table tbody tr")
 os.makedirs(data_dir, exist_ok=True)
 with open(f"{data_dir}/matchups.csv", "w", newline="", encoding="utf-8") as csvfile:
     writer = csv.writer(csvfile)
@@ -313,4 +334,7 @@ with open(f"{data_dir}/matchups.csv", "w", newline="", encoding="utf-8") as csvf
             *values
         ])
 print(f"Parsed matchups table to {data_dir}/matchups.csv") 
-os.remove(f"{data_dir}/matchups.html")
+if rows:
+    os.remove(f"{data_dir}/matchups.html")
+else:
+    print(f"⚠️ No matchup rows parsed; keeping {data_dir}/matchups.html for debugging.")

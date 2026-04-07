@@ -110,11 +110,21 @@ async def main():
         print("Navigating to BallparkPal...")
         await page.goto('https://www.ballparkpal.com/Game-Simulations.php')
         await page.wait_for_timeout(1000)
-        
+
+        current_url = page.url.lower()
+        html_content = (await page.content()).lower()
+        on_checkout_gate = ("checkout.php" in current_url) or ("secure checkout" in html_content) or ("whop-checkout" in html_content)
+        has_login_link = await page.get_by_text("Log In").count() > 0
+
         # Check if we need to login
-        if await page.get_by_text("Log In").count() > 0:
+        if has_login_link or on_checkout_gate:
+            if on_checkout_gate:
+                print("Checkout gate detected. Navigating directly to login...")
+                await page.goto("https://www.ballparkpal.com/LoginWithCode.php")
+                await page.wait_for_timeout(1200)
             print("Login required. Clicking 'Log In' button...")
-            await page.get_by_text("Log In").click()
+            if has_login_link:
+                await page.get_by_text("Log In").click()
             await page.wait_for_timeout(1500)
 
             # Some flows keep us on Game-Simulations (or open login elsewhere).
@@ -222,7 +232,7 @@ async def main():
             
             # Get the page HTML and check for OTP indicators
             html_content = await page.content()
-            if "verification" in html_content.lower() or "security code" in html_content.lower():
+            if "verification" in html_content.lower() or "security code" in html_content.lower() or "login code" in html_content.lower():
                 print("Verification page detected. Waiting 30 seconds for email to arrive...")
                 time.sleep(40)
                 
