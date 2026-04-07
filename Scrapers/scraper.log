@@ -990,3 +990,1108 @@ Tue Apr  7 12:29:58 EDT 2026: Streamlit data copied locally; GitHub update skipp
 ---------------------------------------
 ---------------------------------------
 ---------------------------------------
+Push/update GitHub with the scraped files? [y/N] 
+Checking BallparkPal session at https://www.ballparkpal.com/Game-Simulations.php...
+BallparkPal session already authenticated.
+Saved page HTML to data/raw/2026-04-07/game_simulations.html
+Wrote 15 rows to 'data/2026-04-07/game_simulations.csv'
+Wrote 15 game records to 'data/2026-04-07/game_simulations_per_game_tables.csv'
+saved 824457
+saved 824618
+saved 823648
+saved 823402
+saved 822999
+saved 823887
+saved 824780
+saved 822754
+saved 823567
+saved 822831
+saved 823727
+saved 822916
+saved 824375
+saved 824051
+saved 823235
+Found 15 game files to process
+Processed game 823648, output in data/2026-04-07/823648
+Processed game 822999, output in data/2026-04-07/822999
+Processed game 824375, output in data/2026-04-07/824375
+Processed game 824457, output in data/2026-04-07/824457
+Processed game 824051, output in data/2026-04-07/824051
+Processed game 823887, output in data/2026-04-07/823887
+Processed game 822916, output in data/2026-04-07/822916
+Processed game 823235, output in data/2026-04-07/823235
+Processed game 823402, output in data/2026-04-07/823402
+Processed game 823567, output in data/2026-04-07/823567
+Processed game 823727, output in data/2026-04-07/823727
+Processed game 824780, output in data/2026-04-07/824780
+Processed game 822831, output in data/2026-04-07/822831
+Processed game 822754, output in data/2026-04-07/822754
+Processed game 824618, output in data/2026-04-07/824618
+All games extracted under: data/2026-04-07
+Saved page HTML to data/2026-04-07/matchups.html
+Parsed matchups table to data/2026-04-07/matchups.csv
+Downloaded HTML to data/2026-04-07/park_factors.html
+Saved park factors icons CSV to data/2026-04-07/park_factors_icons.csv
+Downloaded HTML to data/2026-04-07/Pitchers.html
+           Pitcher       2K    3K    4K  ...    7K      8K      9K     10K
+0     Aaron Civale  -4900.0 -1150  -456  ...   212   426.0   809.0  1900.0
+1    Andrew Abbott  -3233.0  -733  -270  ...   335   733.0  1900.0  4900.0
+2       C. Sanchez      NaN -2400  -733  ...   156   300.0   669.0  1567.0
+3     Cade Cavalli  -2400.0  -809  -335  ...   270   567.0  1150.0  2400.0
+4   Cam Schlittler  -9900.0 -3233 -1329  ...  -163   108.0   203.0   376.0
+5   Drew Rasmussen  -3233.0  -733  -285  ...   355   809.0  1900.0  4900.0
+6   Freddy Peralta  -9900.0 -3233 -1150  ...  -113   163.0   317.0   669.0
+7       G. Crochet  10100.0 -9900 -1900  ...  -186   104.0   194.0   376.0
+8   Gavin Williams  -4900.0 -1900  -669  ...   117   233.0   488.0  1011.0
+9     George Kirby      NaN -3233 -1150  ...  -133   150.0   285.0   567.0
+10  J. Misiorowski  -9900.0 -2400  -900  ...  -117   163.0   317.0   669.0
+11    Javier Assad   -317.0  -113   257  ...  9900     NaN     NaN     NaN
+12   Kevin Gausman  -9900.0 -3233 -1150  ...  -127   144.0   270.0   525.0
+13   Kyle Freeland   -567.0  -194   122  ...  1329  3233.0  9900.0     NaN
+14   M. Liberatore  -1329.0  -426  -170  ...   733  1900.0  4900.0  9900.0
+15    Mike Burrows  -1567.0  -525  -213  ...   488  1150.0  3233.0  9900.0
+16  Nathan Eovaldi  -9900.0 -1900  -733  ...   122   223.0   456.0   900.0
+17    Nick Pivetta  -4900.0 -2400 -1011  ...  -100   203.0   400.0   900.0
+18    Noah Cameron  -1900.0  -488  -178  ...   614  1329.0  3233.0  9900.0
+19     Paul Skenes      NaN -3233 -1011  ...   117   223.0   426.0   809.0
+20  Reynaldo Lopez  -1900.0  -669  -285  ...   317   669.0  1567.0  3233.0
+21      Robbie Ray  -4900.0 -1329  -488  ...   186   355.0   733.0  1567.0
+22    S. Alcantara  -9900.0 -1900  -669  ...   133   257.0   525.0  1150.0
+23     Shane Smith  -4900.0 -1567  -614  ...   150   285.0   567.0  1150.0
+24     Taj Bradley  -1900.0  -809  -400  ...   194   376.0   733.0  1567.0
+25    Tarik Skubal  10100.0 -9900 -2400  ...  -170   117.0   223.0   456.0
+26   Trevor Rogers  -3233.0 -1150  -488  ...   203   426.0   900.0  1900.0
+27     Y. Yamamoto  -1900.0  -669  -270  ...   376   900.0  2400.0  4900.0
+28   Yusei Kikuchi   -900.0  -300  -122  ...   900  2400.0  4900.0  9900.0
+29      Zac Gallen  -1900.0  -488  -194  ...   567  1329.0  3233.0  9900.0
+
+[30 rows x 10 columns]
+Saved game links to data/2026-04-07/bovada_game_links.csv
+Loaded 16 game URLs from data/2026-04-07/bovada_game_links.csv
+
+Processing: /sports/baseball/mlb/seattle-mariners-texas-rangers-202604072005
+Error processing /sports/baseball/mlb/seattle-mariners-texas-rangers-202604072005: Page.goto: net::ERR_ABORTED at https://www.bovada.lv/sports/baseball/mlb/seattle-mariners-texas-rangers-202604072005
+Call log:
+  - navigating to "https://www.bovada.lv/sports/baseball/mlb/seattle-mariners-texas-rangers-202604072005", waiting until "load"
+
+
+Processing: /sports/baseball/mlb/cincinnati-reds-miami-marlins-202604071840
+Error processing /sports/baseball/mlb/cincinnati-reds-miami-marlins-202604071840: Page.goto: Navigation to "https://www.bovada.lv/sports/baseball/mlb/cincinnati-reds-miami-marlins-202604071840" is interrupted by another navigation to "about:blank"
+Call log:
+  - navigating to "https://www.bovada.lv/sports/baseball/mlb/cincinnati-reds-miami-marlins-202604071840", waiting until "load"
+
+
+Processing: /sports/baseball/mlb/chicago-cubs-tampa-bay-rays-202604071840
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+No Alternate Strikeouts section found for this game.
+
+Processing: /sports/baseball/mlb/milwaukee-brewers-boston-red-sox-202604071845
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Jacob Misiorowski (MIL)
+  Lines from primary regex for Jacob Misiorowski:
+    4+ Strikeouts: -4500
+    5+ Strikeouts: -1100
+    6+ Strikeouts: -375
+    7+ Strikeouts: -165
+    8+ Strikeouts: +120
+    9+ Strikeouts: +235
+    10+ Strikeouts: +425
+    11+ Strikeouts: +825
+Found pitcher: Garrett Crochet (BOS)
+  Lines from primary regex for Garrett Crochet:
+    5+ Strikeouts: -1200
+    6+ Strikeouts: -500
+    7+ Strikeouts: -230
+    8+ Strikeouts: -120
+    9+ Strikeouts: +160
+    10+ Strikeouts: +300
+    11+ Strikeouts: +550
+
+Processing: /sports/baseball/mlb/kansas-city-royals-cleveland-guardians-202604071310
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Noah Cameron (KC)
+  Lines from primary regex for Noah Cameron:
+    3+ Strikeouts: -1100
+    4+ Strikeouts: -325
+    5+ Strikeouts: -125
+    6+ Strikeouts: +170
+    7+ Strikeouts: +375
+    8+ Strikeouts: +750
+    9+ Strikeouts: +1400
+Found pitcher: Gavin Williams (CLE)
+  Lines from primary regex for Gavin Williams:
+    3+ Strikeouts: -3000
+    4+ Strikeouts: -700
+    5+ Strikeouts: -275
+    6+ Strikeouts: -110
+    7+ Strikeouts: +190
+    8+ Strikeouts: +390
+    9+ Strikeouts: +750
+    10+ Strikeouts: +1500
+
+Processing: /sports/baseball/mlb/houston-astros-colorado-rockies-202604072040
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Mike Burrows (HOU)
+  Lines from primary regex for Mike Burrows:
+    3+ Strikeouts: -1000
+    4+ Strikeouts: -350
+    5+ Strikeouts: -150
+    6+ Strikeouts: +150
+    7+ Strikeouts: +300
+    8+ Strikeouts: +650
+    9+ Strikeouts: +1400
+Found pitcher: Kyle Freeland (COL)
+  Lines from primary regex for Kyle Freeland:
+    3+ Strikeouts: -350
+    4+ Strikeouts: -150
+    5+ Strikeouts: +150
+    6+ Strikeouts: +330
+    7+ Strikeouts: +700
+    8+ Strikeouts: +1400
+
+Processing: /sports/baseball/mlb/arizona-diamondbacks-new-york-mets-202604071610
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Zac Gallen (ARI)
+  Lines from primary regex for Zac Gallen:
+    3+ Strikeouts: -900
+    4+ Strikeouts: -330
+    5+ Strikeouts: -145
+    6+ Strikeouts: +150
+    7+ Strikeouts: +300
+    8+ Strikeouts: +600
+    9+ Strikeouts: +1200
+Found pitcher: Freddy Peralta (NYM)
+  Lines from primary regex for Freddy Peralta:
+    3+ Strikeouts: -4000
+    4+ Strikeouts: -1000
+    5+ Strikeouts: -340
+    6+ Strikeouts: -145
+    7+ Strikeouts: +135
+    8+ Strikeouts: +275
+    9+ Strikeouts: +525
+    10+ Strikeouts: +1000
+
+Processing: /sports/baseball/mlb/detroit-tigers-minnesota-twins-202604071940
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Tarik Skubal (DET)
+  Lines from primary regex for Tarik Skubal:
+    5+ Strikeouts: -1600
+    6+ Strikeouts: -650
+    7+ Strikeouts: -300
+    8+ Strikeouts: -150
+    9+ Strikeouts: +125
+    10+ Strikeouts: +230
+    11+ Strikeouts: +400
+    12+ Strikeouts: +750
+    13+ Strikeouts: +1400
+Found pitcher: Taj Bradley (MIN)
+  Lines from primary regex for Taj Bradley:
+    3+ Strikeouts: -3500
+    4+ Strikeouts: -900
+    5+ Strikeouts: -350
+    6+ Strikeouts: -160
+    7+ Strikeouts: +125
+    8+ Strikeouts: +250
+    9+ Strikeouts: +500
+    10+ Strikeouts: +1000
+
+Processing: /sports/baseball/mlb/atlanta-braves-los-angeles-angels-202604072138
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Reynaldo López (ATL)
+  Lines from primary regex for Reynaldo López:
+    3+ Strikeouts: -1400
+    4+ Strikeouts: -450
+    5+ Strikeouts: -200
+    6+ Strikeouts: +110
+    7+ Strikeouts: +225
+    8+ Strikeouts: +450
+    9+ Strikeouts: +900
+    10+ Strikeouts: +1800
+Found pitcher: Yusei Kikuchi (LAA)
+  Lines from primary regex for Yusei Kikuchi:
+    3+ Strikeouts: -1400
+    4+ Strikeouts: -450
+    5+ Strikeouts: -200
+    6+ Strikeouts: +110
+    7+ Strikeouts: +220
+    8+ Strikeouts: +450
+    9+ Strikeouts: +900
+    10+ Strikeouts: +1800
+
+Processing: /sports/baseball/mlb/philadelphia-phillies-san-francisco-giants-202604072145
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Cristopher Sánchez (PHI)
+  Lines from primary regex for Cristopher Sánchez:
+    4+ Strikeouts: -1000
+    5+ Strikeouts: -400
+    6+ Strikeouts: -180
+    7+ Strikeouts: +120
+    8+ Strikeouts: +230
+    9+ Strikeouts: +450
+    10+ Strikeouts: +900
+    11+ Strikeouts: +1800
+Found pitcher: Robbie Ray (SF)
+  Lines from primary regex for Robbie Ray:
+    4+ Strikeouts: -1000
+    5+ Strikeouts: -400
+    6+ Strikeouts: -200
+    7+ Strikeouts: +110
+    8+ Strikeouts: +200
+    9+ Strikeouts: +400
+    10+ Strikeouts: +800
+    11+ Strikeouts: +1600
+
+Processing: /sports/baseball/mlb/st-louis-cardinals-washington-nationals-202604071845
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Matthew Liberatore (STL)
+  Lines from primary regex for Matthew Liberatore:
+    3+ Strikeouts: -650
+    4+ Strikeouts: -230
+    5+ Strikeouts: -105
+    6+ Strikeouts: +200
+    7+ Strikeouts: +450
+    8+ Strikeouts: +900
+Found pitcher: Cade Cavalli (WAS)
+  Lines from primary regex for Cade Cavalli:
+    3+ Strikeouts: -700
+    4+ Strikeouts: -250
+    5+ Strikeouts: -115
+    6+ Strikeouts: +180
+    7+ Strikeouts: +400
+    8+ Strikeouts: +800
+    9+ Strikeouts: +1600
+
+Processing: /sports/baseball/mlb/los-angeles-dodgers-toronto-blue-jays-202604071907
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Yoshinobu Yamamoto (LAD)
+  Lines from primary regex for Yoshinobu Yamamoto:
+    3+ Strikeouts: -2500
+    4+ Strikeouts: -700
+    5+ Strikeouts: -300
+    6+ Strikeouts: -150
+    7+ Strikeouts: +150
+    8+ Strikeouts: +300
+    9+ Strikeouts: +600
+    10+ Strikeouts: +1100
+Found pitcher: Kevin Gausman (TOR)
+  Lines from primary regex for Kevin Gausman:
+    4+ Strikeouts: -1000
+    5+ Strikeouts: -400
+    6+ Strikeouts: -180
+    7+ Strikeouts: +110
+    8+ Strikeouts: +200
+    9+ Strikeouts: +400
+    10+ Strikeouts: +800
+    11+ Strikeouts: +1400
+
+Processing: /sports/baseball/mlb/home-total-runs-away-total-runs-202604072146
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Could not find or click Pitcher Props tab, skipping this game.
+
+Processing: /sports/baseball/mlb/baltimore-orioles-chicago-white-sox-202604071510
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Trevor Rogers (BAL)
+  Lines from primary regex for Trevor Rogers:
+    3+ Strikeouts: -1500
+    4+ Strikeouts: -400
+    6+ Strikeouts: +120
+    7+ Strikeouts: +275
+    8+ Strikeouts: +550
+    9+ Strikeouts: +1100
+Found pitcher: Shane Smith (CWS)
+  Lines from primary regex for Shane Smith:
+    3+ Strikeouts: -1000
+    4+ Strikeouts: -350
+    6+ Strikeouts: +120
+    7+ Strikeouts: +300
+    8+ Strikeouts: +600
+    9+ Strikeouts: +1200
+
+Processing: /sports/baseball/mlb/athletics-new-york-yankees-202604071905
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Aaron Civale (ATH)
+  Lines from primary regex for Aaron Civale:
+    3+ Strikeouts: -700
+    4+ Strikeouts: -270
+    5+ Strikeouts: -120
+    6+ Strikeouts: +180
+    7+ Strikeouts: +375
+    8+ Strikeouts: +800
+    9+ Strikeouts: +1600
+Found pitcher: Cam Schlittler (NYY)
+  Lines from primary regex for Cam Schlittler:
+    4+ Strikeouts: -3000
+    5+ Strikeouts: -700
+    6+ Strikeouts: -300
+    7+ Strikeouts: -125
+    8+ Strikeouts: +155
+    9+ Strikeouts: +300
+    10+ Strikeouts: +600
+    11+ Strikeouts: +1100
+
+Processing: /sports/baseball/mlb/san-diego-padres-pittsburgh-pirates-202604071840
+Looking for Pitcher Props tab...
+Tab not found by exact match, trying contains search
+Trying to click the first 'Pitcher Props' tab found by contains search as a fallback.
+Waiting for content to load after tab click...
+Found 'Alternate Strikeouts' in page content.
+Found pitcher: Nick Pivetta (SD)
+  Lines from primary regex for Nick Pivetta:
+    4+ Strikeouts: -1400
+    5+ Strikeouts: -500
+    6+ Strikeouts: -220
+    7+ Strikeouts: -110
+    8+ Strikeouts: +175
+    9+ Strikeouts: +330
+    10+ Strikeouts: +650
+    11+ Strikeouts: +1200
+Found pitcher: Paul Skenes (PIT)
+  Lines from primary regex for Paul Skenes:
+    4+ Strikeouts: -1600
+    5+ Strikeouts: -600
+    6+ Strikeouts: -250
+    7+ Strikeouts: -130
+    8+ Strikeouts: +150
+    9+ Strikeouts: +275
+    10+ Strikeouts: +650
+    11+ Strikeouts: +1000
+
+Saved all pitcher props to data/2026-04-07/bovada_all_pitcher_props_2026-04-07.csv
+
+Total unique pitchers with lines: 24
+Total individual strikeout lines recorded: 179
+Average lines per pitcher: 7.5
+Fetching team game logs...
+Fetching all MLB teams...
+Found 30 teams. Fetching game logs...
+Teams:   0%|          | 0/30 [00:00<?, ?it/s]Teams:   3%|▎         | 1/30 [00:00<00:08,  3.62it/s]Teams:  10%|█         | 3/30 [00:00<00:03,  7.52it/s]Teams:  17%|█▋        | 5/30 [00:00<00:03,  7.86it/s]Teams:  23%|██▎       | 7/30 [00:00<00:03,  7.44it/s]Teams:  27%|██▋       | 8/30 [00:01<00:02,  7.42it/s]Teams:  30%|███       | 9/30 [00:01<00:02,  7.82it/s]Teams:  40%|████      | 12/30 [00:01<00:01, 11.08it/s]Teams:  47%|████▋     | 14/30 [00:01<00:01,  8.18it/s]Teams:  50%|█████     | 15/30 [00:01<00:01,  8.30it/s]Teams:  57%|█████▋    | 17/30 [00:02<00:01,  9.81it/s]Teams:  63%|██████▎   | 19/30 [00:02<00:01,  7.41it/s]Teams:  67%|██████▋   | 20/30 [00:02<00:01,  7.51it/s]Teams:  70%|███████   | 21/30 [00:02<00:01,  6.56it/s]Teams:  83%|████████▎ | 25/30 [00:03<00:00,  7.68it/s]Teams:  87%|████████▋ | 26/30 [00:03<00:00,  7.65it/s]Teams:  90%|█████████ | 27/30 [00:03<00:00,  7.82it/s]Teams: 100%|██████████| 30/30 [00:03<00:00, 10.63it/s]Teams: 100%|██████████| 30/30 [00:03<00:00,  8.31it/s]
+Saved 5806 total team game records.
+   gamePk  ... rescheduledFromDate
+0  831544  ...                 NaN
+1  831596  ...                 NaN
+2  831484  ...                 NaN
+3  831595  ...                 NaN
+4  831534  ...                 NaN
+
+[5 rows x 67 columns]
+Fetching pitcher game logs …
+Fetching all MLB teams...
+Collecting pitcher IDs from team rosters...
+Teams:   0%|          | 0/30 [00:00<?, ?it/s]Teams:   3%|▎         | 1/30 [00:00<00:04,  6.43it/s]Teams:   7%|▋         | 2/30 [00:00<00:04,  6.75it/s]Teams:  10%|█         | 3/30 [00:00<00:04,  6.44it/s]Teams:  13%|█▎        | 4/30 [00:00<00:04,  6.15it/s]Teams:  17%|█▋        | 5/30 [00:00<00:03,  6.29it/s]Teams:  20%|██        | 6/30 [00:00<00:03,  6.20it/s]Teams:  23%|██▎       | 7/30 [00:01<00:03,  6.29it/s]Teams:  27%|██▋       | 8/30 [00:01<00:03,  6.60it/s]Teams:  30%|███       | 9/30 [00:01<00:03,  6.53it/s]Teams:  33%|███▎      | 10/30 [00:01<00:03,  6.42it/s]Teams:  37%|███▋      | 11/30 [00:01<00:03,  6.26it/s]Teams:  40%|████      | 12/30 [00:01<00:03,  5.76it/s]Teams:  43%|████▎     | 13/30 [00:02<00:02,  6.18it/s]Teams:  47%|████▋     | 14/30 [00:02<00:02,  6.55it/s]Teams:  50%|█████     | 15/30 [00:02<00:02,  6.15it/s]Teams:  53%|█████▎    | 16/30 [00:02<00:02,  6.27it/s]Teams:  57%|█████▋    | 17/30 [00:02<00:02,  6.18it/s]Teams:  60%|██████    | 18/30 [00:02<00:01,  6.50it/s]Teams:  63%|██████▎   | 19/30 [00:02<00:01,  6.66it/s]Teams:  67%|██████▋   | 20/30 [00:03<00:01,  6.63it/s]Teams:  70%|███████   | 21/30 [00:03<00:01,  6.50it/s]Teams:  73%|███████▎  | 22/30 [00:03<00:01,  6.49it/s]Teams:  77%|███████▋  | 23/30 [00:03<00:01,  6.70it/s]Teams:  80%|████████  | 24/30 [00:03<00:00,  6.90it/s]Teams:  83%|████████▎ | 25/30 [00:03<00:00,  6.73it/s]Teams:  87%|████████▋ | 26/30 [00:04<00:00,  6.83it/s]Teams:  90%|█████████ | 27/30 [00:04<00:00,  6.65it/s]Teams:  93%|█████████▎| 28/30 [00:04<00:00,  6.60it/s]Teams:  97%|█████████▋| 29/30 [00:04<00:00,  6.83it/s]Teams: 100%|██████████| 30/30 [00:04<00:00,  6.45it/s]Teams: 100%|██████████| 30/30 [00:04<00:00,  6.45it/s]
+Found 389 pitchers. Fetching details and game logs...
+Processing:   0%|          | 0/778 [00:00<?, ?it/s]Processing:   0%|          | 1/778 [00:00<02:06,  6.16it/s]Processing:   1%|          | 7/778 [00:00<00:33, 23.17it/s]Processing:   2%|▏         | 13/778 [00:00<00:26, 28.63it/s]Processing:   2%|▏         | 19/778 [00:00<00:27, 27.74it/s]Processing:   3%|▎         | 23/778 [00:00<00:25, 29.57it/s]Processing:   3%|▎         | 27/778 [00:01<00:28, 26.60it/s]Processing:   4%|▍         | 32/778 [00:01<00:27, 27.29it/s]Processing:   5%|▍         | 38/778 [00:01<00:25, 28.70it/s]Processing:   6%|▌         | 44/778 [00:01<00:25, 28.61it/s]Processing:   6%|▋         | 50/778 [00:01<00:25, 28.90it/s]Processing:   7%|▋         | 56/778 [00:02<00:24, 29.37it/s]Processing:   8%|▊         | 62/778 [00:02<00:23, 30.79it/s]Processing:   9%|▊         | 68/778 [00:02<00:20, 33.81it/s]Processing:   9%|▉         | 72/778 [00:02<00:20, 34.15it/s]Processing:  10%|▉         | 76/778 [00:02<00:20, 34.80it/s]Processing:  11%|█         | 82/778 [00:02<00:19, 36.39it/s]Processing:  11%|█         | 87/778 [00:02<00:18, 37.71it/s]Processing:  12%|█▏        | 91/778 [00:02<00:19, 35.72it/s]Processing:  12%|█▏        | 96/778 [00:03<00:19, 34.83it/s]Processing:  13%|█▎        | 101/778 [00:03<00:18, 36.82it/s]Processing:  14%|█▎        | 106/778 [00:03<00:17, 38.59it/s]Processing:  14%|█▍        | 110/778 [00:03<00:18, 36.56it/s]Processing:  15%|█▍        | 114/778 [00:03<00:19, 33.37it/s]Processing:  15%|█▌        | 119/778 [00:03<00:18, 35.76it/s]Processing:  16%|█▌        | 123/778 [00:03<00:20, 32.12it/s]Processing:  16%|█▋        | 127/778 [00:03<00:19, 33.72it/s]Processing:  17%|█▋        | 131/778 [00:04<00:22, 29.27it/s]Processing:  17%|█▋        | 135/778 [00:04<00:21, 29.33it/s]Processing:  18%|█▊        | 141/778 [00:04<00:20, 31.82it/s]Processing:  19%|█▉        | 147/778 [00:04<00:19, 32.20it/s]Processing:  20%|█▉        | 153/778 [00:04<00:18, 33.55it/s]Processing:  20%|██        | 158/778 [00:04<00:17, 36.04it/s]Processing:  21%|██        | 162/778 [00:05<00:19, 31.21it/s]Processing:  21%|██▏       | 166/778 [00:05<00:21, 28.57it/s]Processing:  22%|██▏       | 171/778 [00:05<00:20, 29.96it/s]Processing:  22%|██▏       | 175/778 [00:05<00:18, 31.89it/s]Processing:  23%|██▎       | 179/778 [00:05<00:19, 30.31it/s]Processing:  24%|██▎       | 183/778 [00:05<00:21, 28.27it/s]Processing:  24%|██▍       | 186/778 [00:05<00:21, 27.49it/s]Processing:  24%|██▍       | 190/778 [00:06<00:20, 28.17it/s]Processing:  25%|██▌       | 195/778 [00:06<00:20, 28.72it/s]Processing:  25%|██▌       | 198/778 [00:06<00:20, 28.20it/s]Processing:  26%|██▌       | 201/778 [00:06<00:20, 27.79it/s]Processing:  26%|██▌       | 204/778 [00:06<00:22, 25.33it/s]Processing:  27%|██▋       | 208/778 [00:06<00:23, 24.71it/s]Processing:  27%|██▋       | 213/778 [00:06<00:19, 28.53it/s]Processing:  28%|██▊       | 216/778 [00:07<00:20, 27.95it/s]Processing:  28%|██▊       | 220/778 [00:07<00:20, 27.76it/s]Processing:  29%|██▉       | 226/778 [00:07<00:17, 31.54it/s]Processing:  30%|██▉       | 232/778 [00:07<00:16, 33.08it/s]Processing:  31%|███       | 238/778 [00:07<00:15, 34.15it/s]Processing:  31%|███       | 243/778 [00:07<00:14, 36.20it/s]Processing:  32%|███▏      | 247/778 [00:07<00:15, 34.87it/s]Processing:  32%|███▏      | 251/778 [00:08<00:14, 35.43it/s]Processing:  33%|███▎      | 256/778 [00:08<00:15, 33.87it/s]Processing:  34%|███▎      | 261/778 [00:08<00:13, 36.97it/s]Processing:  34%|███▍      | 265/778 [00:08<00:15, 33.54it/s]Processing:  35%|███▍      | 269/778 [00:08<00:14, 35.02it/s]Processing:  35%|███▌      | 273/778 [00:08<00:15, 32.42it/s]Processing:  36%|███▌      | 277/778 [00:08<00:15, 32.55it/s]Processing:  36%|███▌      | 281/778 [00:08<00:14, 34.11it/s]Processing:  37%|███▋      | 287/778 [00:09<00:12, 38.51it/s]Processing:  37%|███▋      | 291/778 [00:09<00:13, 35.64it/s]Processing:  38%|███▊      | 295/778 [00:09<00:14, 34.09it/s]Processing:  39%|███▊      | 300/778 [00:09<00:12, 37.67it/s]Processing:  39%|███▉      | 304/778 [00:09<00:13, 34.47it/s]Processing:  40%|███▉      | 308/778 [00:09<00:14, 31.45it/s]Processing:  40%|████      | 313/778 [00:09<00:13, 34.65it/s]Processing:  41%|████      | 317/778 [00:09<00:13, 34.96it/s]Processing:  41%|████▏     | 321/778 [00:10<00:14, 32.02it/s]Processing:  42%|████▏     | 327/778 [00:10<00:13, 34.35it/s]Processing:  43%|████▎     | 331/778 [00:10<00:12, 35.48it/s]Processing:  43%|████▎     | 335/778 [00:10<00:12, 36.35it/s]Processing:  44%|████▎     | 339/778 [00:10<00:20, 21.35it/s]Processing:  44%|████▍     | 344/778 [00:10<00:17, 25.31it/s]Processing:  45%|████▍     | 348/778 [00:11<00:16, 25.69it/s]Processing:  45%|████▌     | 352/778 [00:11<00:15, 27.27it/s]Processing:  46%|████▌     | 356/778 [00:11<00:14, 29.88it/s]Processing:  46%|████▋     | 360/778 [00:11<00:14, 29.74it/s]Processing:  47%|████▋     | 365/778 [00:11<00:12, 33.58it/s]Processing:  47%|████▋     | 369/778 [00:11<00:11, 34.69it/s]Processing:  48%|████▊     | 373/778 [00:11<00:12, 32.22it/s]Processing:  48%|████▊     | 377/778 [00:11<00:12, 31.93it/s]Processing:  49%|████▉     | 383/778 [00:12<00:11, 34.40it/s]Processing:  50%|█████     | 389/778 [00:12<00:10, 36.61it/s]Processing:  51%|█████     | 394/778 [00:12<00:10, 35.66it/s]Processing:  51%|█████     | 398/778 [00:12<00:10, 35.28it/s]Processing:  52%|█████▏    | 402/778 [00:12<00:10, 35.05it/s]Processing:  52%|█████▏    | 406/778 [00:12<00:13, 28.48it/s]Processing:  53%|█████▎    | 412/778 [00:13<00:12, 29.77it/s]Processing:  54%|█████▎    | 418/778 [00:13<00:12, 29.97it/s]Processing:  54%|█████▍    | 424/778 [00:13<00:11, 30.28it/s]Processing:  55%|█████▌    | 430/778 [00:13<00:11, 29.45it/s]Processing:  56%|█████▌    | 436/778 [00:13<00:11, 30.16it/s]Processing:  57%|█████▋    | 442/778 [00:14<00:11, 29.19it/s]Processing:  58%|█████▊    | 448/778 [00:14<00:10, 30.37it/s]Processing:  58%|█████▊    | 454/778 [00:14<00:10, 30.88it/s]Processing:  59%|█████▉    | 460/778 [00:14<00:09, 32.33it/s]Processing:  60%|█████▉    | 466/778 [00:14<00:09, 32.84it/s]Processing:  60%|██████    | 470/778 [00:14<00:09, 31.81it/s]Processing:  61%|██████    | 474/778 [00:15<00:09, 32.09it/s]Processing:  61%|██████▏   | 478/778 [00:15<00:09, 31.00it/s]Processing:  62%|██████▏   | 482/778 [00:15<00:09, 32.14it/s]Processing:  62%|██████▏   | 486/778 [00:15<00:08, 32.67it/s]Processing:  63%|██████▎   | 490/778 [00:15<00:09, 29.39it/s]Processing:  64%|██████▎   | 495/778 [00:15<00:08, 33.52it/s]Processing:  64%|██████▍   | 499/778 [00:15<00:09, 28.95it/s]Processing:  65%|██████▍   | 503/778 [00:15<00:08, 30.87it/s]Processing:  65%|██████▌   | 508/778 [00:16<00:08, 31.21it/s]Processing:  66%|██████▌   | 512/778 [00:16<00:08, 30.97it/s]Processing:  66%|██████▋   | 516/778 [00:16<00:08, 31.44it/s]Processing:  67%|██████▋   | 520/778 [00:16<00:08, 31.74it/s]Processing:  67%|██████▋   | 524/778 [00:16<00:08, 30.00it/s]Processing:  68%|██████▊   | 530/778 [00:16<00:07, 31.96it/s]Processing:  69%|██████▉   | 536/778 [00:17<00:08, 29.14it/s]Processing:  70%|██████▉   | 541/778 [00:17<00:07, 32.27it/s]Processing:  70%|███████   | 545/778 [00:17<00:07, 30.22it/s]Processing:  71%|███████   | 549/778 [00:17<00:11, 20.18it/s]Processing:  71%|███████   | 553/778 [00:17<00:10, 22.02it/s]Processing:  72%|███████▏  | 559/778 [00:18<00:08, 25.50it/s]Processing:  72%|███████▏  | 562/778 [00:18<00:08, 26.20it/s]Processing:  73%|███████▎  | 566/778 [00:18<00:08, 24.52it/s]Processing:  74%|███████▎  | 572/778 [00:18<00:07, 26.27it/s]Processing:  74%|███████▍  | 575/778 [00:18<00:09, 20.33it/s]Processing:  74%|███████▍  | 578/778 [00:18<00:09, 21.68it/s]Processing:  75%|███████▍  | 582/778 [00:19<00:07, 24.65it/s]Processing:  75%|███████▌  | 585/778 [00:19<00:07, 25.57it/s]Processing:  76%|███████▌  | 589/778 [00:19<00:06, 27.69it/s]Processing:  76%|███████▌  | 592/778 [00:19<00:06, 27.03it/s]Processing:  77%|███████▋  | 596/778 [00:19<00:06, 26.07it/s]Processing:  77%|███████▋  | 602/778 [00:19<00:06, 28.50it/s]Processing:  78%|███████▊  | 606/778 [00:19<00:05, 30.75it/s]Processing:  78%|███████▊  | 610/778 [00:19<00:05, 31.08it/s]Processing:  79%|███████▉  | 614/778 [00:20<00:05, 28.49it/s]Processing:  79%|███████▉  | 618/778 [00:20<00:05, 30.45it/s]Processing:  80%|████████  | 624/778 [00:20<00:05, 28.73it/s]Processing:  81%|████████  | 630/778 [00:20<00:05, 28.57it/s]Processing:  82%|████████▏ | 635/778 [00:20<00:04, 29.42it/s]Processing:  82%|████████▏ | 639/778 [00:20<00:04, 30.90it/s]Processing:  83%|████████▎ | 643/778 [00:21<00:04, 30.17it/s]Processing:  83%|████████▎ | 647/778 [00:21<00:04, 29.46it/s]Processing:  84%|████████▍ | 652/778 [00:21<00:04, 30.53it/s]Processing:  84%|████████▍ | 656/778 [00:21<00:03, 31.27it/s]Processing:  85%|████████▍ | 660/778 [00:21<00:04, 29.07it/s]Processing:  85%|████████▌ | 664/778 [00:21<00:04, 27.60it/s]Processing:  86%|████████▌ | 670/778 [00:21<00:03, 30.35it/s]Processing:  87%|████████▋ | 674/778 [00:22<00:03, 32.05it/s]Processing:  87%|████████▋ | 678/778 [00:22<00:03, 28.38it/s]Processing:  88%|████████▊ | 684/778 [00:22<00:03, 29.76it/s]Processing:  88%|████████▊ | 688/778 [00:22<00:02, 31.86it/s]Processing:  89%|████████▉ | 692/778 [00:22<00:02, 32.30it/s]Processing:  89%|████████▉ | 696/778 [00:22<00:03, 24.70it/s]Processing:  90%|████████▉ | 699/778 [00:23<00:03, 23.78it/s]Processing:  90%|█████████ | 702/778 [00:23<00:03, 23.78it/s]Processing:  91%|█████████ | 706/778 [00:23<00:02, 25.15it/s]Processing:  91%|█████████ | 709/778 [00:23<00:02, 23.48it/s]Processing:  92%|█████████▏| 713/778 [00:23<00:02, 26.82it/s]Processing:  92%|█████████▏| 716/778 [00:23<00:02, 26.69it/s]Processing:  92%|█████████▏| 719/778 [00:23<00:02, 22.16it/s]Processing:  93%|█████████▎| 722/778 [00:24<00:02, 23.32it/s]Processing:  93%|█████████▎| 725/778 [00:24<00:02, 20.91it/s]Processing:  94%|█████████▎| 729/778 [00:24<00:02, 24.23it/s]Processing:  94%|█████████▍| 732/778 [00:24<00:01, 25.04it/s]Processing:  94%|█████████▍| 735/778 [00:24<00:01, 23.92it/s]Processing:  95%|█████████▍| 738/778 [00:24<00:01, 23.88it/s]Processing:  95%|█████████▌| 742/778 [00:24<00:01, 26.14it/s]Processing:  96%|█████████▌| 745/778 [00:25<00:01, 20.96it/s]Processing:  96%|█████████▋| 750/778 [00:25<00:01, 23.95it/s]Processing:  97%|█████████▋| 753/778 [00:25<00:01, 24.71it/s]Processing:  97%|█████████▋| 757/778 [00:25<00:00, 24.61it/s]Processing:  98%|█████████▊| 762/778 [00:25<00:00, 27.36it/s]Processing:  98%|█████████▊| 765/778 [00:25<00:00, 25.76it/s]Processing:  99%|█████████▉| 769/778 [00:25<00:00, 24.63it/s]Processing:  99%|█████████▉| 772/778 [00:26<00:00, 23.22it/s]Processing: 100%|█████████▉| 775/778 [00:26<00:00, 22.69it/s]Processing: 100%|██████████| 778/778 [00:26<00:00, 29.58it/s]
+Saved 1253 pitcher game logs.
+Saved 389 pitcher details.
+   player_id        date  ... sacBunts sacFlies
+0     663554  2026-03-31  ...        0        0
+1     663554  2026-04-06  ...        0        1
+2     663556  2026-03-31  ...        0        0
+3     663556  2026-04-06  ...        0        0
+4     808963  2026-03-30  ...        1        0
+
+[5 rows x 67 columns]
+   player_id      id            fullName  ... nameTitle nameSuffix lastPlayedDate
+0     663554  663554          Casey Mize  ...       NaN        NaN            NaN
+1     663558  663558        Jovani Morán  ...       NaN        NaN            NaN
+2     808967  808967  Yoshinobu Yamamoto  ...       NaN        NaN            NaN
+3     675848  675848          Juan Mejia  ...       NaN        NaN            NaN
+4     663556  663556    Shane McClanahan  ...       NaN        NaN            NaN
+
+[5 rows x 43 columns]
+Fetching batter game logs …
+Fetching all MLB teams...
+Collecting batter IDs from team rosters...
+Teams:   0%|          | 0/30 [00:00<?, ?it/s]Teams:   3%|▎         | 1/30 [00:00<00:04,  7.22it/s]Teams:   7%|▋         | 2/30 [00:00<00:03,  8.24it/s]Teams:  10%|█         | 3/30 [00:00<00:03,  8.43it/s]Teams:  13%|█▎        | 4/30 [00:00<00:03,  7.88it/s]Teams:  17%|█▋        | 5/30 [00:00<00:03,  8.01it/s]Teams:  20%|██        | 6/30 [00:00<00:03,  7.87it/s]Teams:  23%|██▎       | 7/30 [00:00<00:02,  8.12it/s]Teams:  27%|██▋       | 8/30 [00:01<00:02,  7.49it/s]Teams:  30%|███       | 9/30 [00:01<00:02,  7.65it/s]Teams:  33%|███▎      | 10/30 [00:01<00:02,  8.17it/s]Teams:  37%|███▋      | 11/30 [00:01<00:02,  8.07it/s]Teams:  40%|████      | 12/30 [00:01<00:02,  7.64it/s]Teams:  43%|████▎     | 13/30 [00:01<00:02,  8.07it/s]Teams:  47%|████▋     | 14/30 [00:01<00:02,  7.97it/s]Teams:  50%|█████     | 15/30 [00:01<00:01,  7.93it/s]Teams:  53%|█████▎    | 16/30 [00:02<00:01,  7.70it/s]Teams:  57%|█████▋    | 17/30 [00:02<00:01,  7.37it/s]Teams:  60%|██████    | 18/30 [00:02<00:01,  7.34it/s]Teams:  63%|██████▎   | 19/30 [00:02<00:01,  7.25it/s]Teams:  67%|██████▋   | 20/30 [00:02<00:01,  7.71it/s]Teams:  70%|███████   | 21/30 [00:02<00:01,  7.79it/s]Teams:  73%|███████▎  | 22/30 [00:02<00:01,  7.08it/s]Teams:  77%|███████▋  | 23/30 [00:02<00:00,  7.31it/s]Teams:  80%|████████  | 24/30 [00:03<00:00,  6.89it/s]Teams:  83%|████████▎ | 25/30 [00:03<00:00,  7.05it/s]Teams:  87%|████████▋ | 26/30 [00:03<00:00,  7.47it/s]Teams:  90%|█████████ | 27/30 [00:03<00:00,  7.37it/s]Teams:  93%|█████████▎| 28/30 [00:03<00:00,  7.75it/s]Teams:  97%|█████████▋| 29/30 [00:03<00:00,  7.60it/s]Teams: 100%|██████████| 30/30 [00:03<00:00,  8.10it/s]Teams: 100%|██████████| 30/30 [00:03<00:00,  7.68it/s]
+Found 390 batters. Fetching details and game logs...
+Processing:   0%|          | 0/780 [00:00<?, ?it/s]Processing:   0%|          | 1/780 [00:00<02:13,  5.84it/s]Processing:   1%|          | 7/780 [00:00<00:33, 23.38it/s]Processing:   2%|▏         | 13/780 [00:00<00:26, 28.57it/s]Processing:   2%|▏         | 18/780 [00:00<00:23, 32.28it/s]Processing:   3%|▎         | 22/780 [00:00<00:22, 33.89it/s]Processing:   3%|▎         | 26/780 [00:00<00:23, 32.58it/s]Processing:   4%|▍         | 32/780 [00:01<00:21, 34.45it/s]Processing:   5%|▍         | 37/780 [00:01<00:19, 38.18it/s]Processing:   5%|▌         | 41/780 [00:01<00:19, 38.59it/s]Processing:   6%|▌         | 45/780 [00:01<00:21, 34.75it/s]Processing:   6%|▋         | 49/780 [00:01<00:20, 35.46it/s]Processing:   7%|▋         | 54/780 [00:01<00:19, 37.68it/s]Processing:   7%|▋         | 58/780 [00:01<00:19, 36.89it/s]Processing:   8%|▊         | 62/780 [00:01<00:21, 32.76it/s]Processing:   9%|▊         | 67/780 [00:02<00:21, 33.37it/s]Processing:   9%|▉         | 73/780 [00:02<00:19, 36.15it/s]Processing:  10%|█         | 79/780 [00:02<00:20, 34.88it/s]Processing:  11%|█         | 85/780 [00:02<00:20, 34.20it/s]Processing:  12%|█▏        | 90/780 [00:02<00:18, 37.25it/s]Processing:  12%|█▏        | 94/780 [00:02<00:19, 34.69it/s]Processing:  13%|█▎        | 98/780 [00:02<00:20, 32.94it/s]Processing:  13%|█▎        | 103/780 [00:03<00:20, 33.82it/s]Processing:  14%|█▍        | 109/780 [00:03<00:18, 35.70it/s]Processing:  15%|█▍        | 114/780 [00:03<00:17, 37.56it/s]Processing:  15%|█▌        | 119/780 [00:03<00:17, 37.64it/s]Processing:  16%|█▌        | 123/780 [00:03<00:17, 36.93it/s]Processing:  16%|█▋        | 127/780 [00:03<00:17, 36.86it/s]Processing:  17%|█▋        | 131/780 [00:03<00:18, 35.85it/s]Processing:  17%|█▋        | 135/780 [00:03<00:17, 36.56it/s]Processing:  18%|█▊        | 139/780 [00:04<00:18, 35.40it/s]Processing:  18%|█▊        | 143/780 [00:04<00:19, 32.29it/s]Processing:  19%|█▉        | 148/780 [00:04<00:19, 33.10it/s]Processing:  20%|█▉        | 153/780 [00:04<00:17, 35.30it/s]Processing:  20%|██        | 158/780 [00:04<00:18, 32.89it/s]Processing:  21%|██        | 164/780 [00:04<00:18, 33.61it/s]Processing:  22%|██▏       | 170/780 [00:04<00:18, 32.29it/s]Processing:  23%|██▎       | 176/780 [00:05<00:19, 31.64it/s]Processing:  23%|██▎       | 180/780 [00:05<00:18, 33.19it/s]Processing:  24%|██▎       | 184/780 [00:05<00:19, 31.22it/s]Processing:  24%|██▍       | 188/780 [00:05<00:19, 29.61it/s]Processing:  25%|██▍       | 194/780 [00:05<00:18, 31.40it/s]Processing:  26%|██▌       | 200/780 [00:05<00:17, 33.47it/s]Processing:  26%|██▋       | 206/780 [00:06<00:15, 36.47it/s]Processing:  27%|██▋       | 210/780 [00:06<00:15, 36.52it/s]Processing:  27%|██▋       | 214/780 [00:06<00:16, 33.61it/s]Processing:  28%|██▊       | 219/780 [00:06<00:17, 32.34it/s]Processing:  29%|██▊       | 224/780 [00:06<00:16, 34.08it/s]Processing:  29%|██▉       | 228/780 [00:06<00:16, 34.13it/s]Processing:  30%|██▉       | 233/780 [00:06<00:14, 36.95it/s]Processing:  30%|███       | 237/780 [00:06<00:16, 32.42it/s]Processing:  31%|███       | 241/780 [00:07<00:18, 29.18it/s]Processing:  32%|███▏      | 247/780 [00:07<00:18, 28.78it/s]Processing:  32%|███▏      | 253/780 [00:07<00:17, 29.94it/s]Processing:  33%|███▎      | 259/780 [00:07<00:16, 32.08it/s]Processing:  34%|███▍      | 265/780 [00:07<00:15, 33.37it/s]Processing:  35%|███▍      | 271/780 [00:08<00:14, 36.05it/s]Processing:  35%|███▌      | 275/780 [00:08<00:13, 36.85it/s]Processing:  36%|███▌      | 279/780 [00:08<00:15, 32.75it/s]Processing:  37%|███▋      | 285/780 [00:08<00:15, 32.87it/s]Processing:  37%|███▋      | 291/780 [00:08<00:14, 33.49it/s]Processing:  38%|███▊      | 297/780 [00:08<00:13, 34.76it/s]Processing:  39%|███▉      | 303/780 [00:09<00:15, 30.83it/s]Processing:  40%|███▉      | 309/780 [00:09<00:15, 30.28it/s]Processing:  40%|████      | 315/780 [00:09<00:14, 32.57it/s]Processing:  41%|████      | 321/780 [00:09<00:13, 34.60it/s]Processing:  42%|████▏     | 326/780 [00:09<00:13, 34.28it/s]Processing:  43%|████▎     | 332/780 [00:09<00:13, 32.51it/s]Processing:  43%|████▎     | 338/780 [00:10<00:13, 32.59it/s]Processing:  44%|████▍     | 344/780 [00:10<00:13, 32.80it/s]Processing:  45%|████▍     | 350/780 [00:10<00:14, 30.56it/s]Processing:  46%|████▌     | 356/780 [00:10<00:14, 29.59it/s]Processing:  46%|████▋     | 362/780 [00:10<00:12, 33.74it/s]Processing:  47%|████▋     | 366/780 [00:10<00:12, 34.48it/s]Processing:  48%|████▊     | 371/780 [00:11<00:10, 37.44it/s]Processing:  48%|████▊     | 375/780 [00:11<00:11, 34.43it/s]Processing:  49%|████▊     | 380/780 [00:11<00:12, 32.51it/s]Processing:  49%|████▉     | 386/780 [00:11<00:12, 32.56it/s]Processing:  50%|█████     | 392/780 [00:11<00:12, 31.02it/s]Processing:  51%|█████     | 398/780 [00:11<00:11, 32.04it/s]Processing:  52%|█████▏    | 404/780 [00:12<00:11, 33.14it/s]Processing:  52%|█████▏    | 408/780 [00:12<00:10, 34.46it/s]Processing:  53%|█████▎    | 412/780 [00:12<00:11, 32.08it/s]Processing:  53%|█████▎    | 416/780 [00:12<00:11, 31.78it/s]Processing:  54%|█████▍    | 420/780 [00:12<00:11, 32.57it/s]Processing:  54%|█████▍    | 424/780 [00:12<00:12, 29.34it/s]Processing:  55%|█████▍    | 428/780 [00:12<00:11, 31.37it/s]Processing:  55%|█████▌    | 432/780 [00:13<00:11, 29.32it/s]Processing:  56%|█████▌    | 436/780 [00:13<00:12, 26.82it/s]Processing:  57%|█████▋    | 441/780 [00:13<00:13, 24.86it/s]Processing:  57%|█████▋    | 446/780 [00:13<00:11, 28.62it/s]Processing:  58%|█████▊    | 450/780 [00:13<00:11, 29.04it/s]Processing:  58%|█████▊    | 454/780 [00:13<00:12, 26.88it/s]Processing:  59%|█████▊    | 458/780 [00:13<00:11, 28.83it/s]Processing:  59%|█████▉    | 462/780 [00:14<00:10, 29.42it/s]Processing:  60%|█████▉    | 466/780 [00:14<00:11, 27.21it/s]Processing:  60%|██████    | 471/780 [00:14<00:09, 31.12it/s]Processing:  61%|██████    | 475/780 [00:14<00:09, 32.61it/s]Processing:  61%|██████▏   | 479/780 [00:14<00:09, 30.59it/s]Processing:  62%|██████▏   | 483/780 [00:14<00:10, 28.61it/s]Processing:  63%|██████▎   | 488/780 [00:14<00:09, 31.43it/s]Processing:  63%|██████▎   | 492/780 [00:15<00:09, 30.73it/s]Processing:  64%|██████▎   | 496/780 [00:15<00:10, 26.18it/s]Processing:  64%|██████▍   | 501/780 [00:15<00:10, 25.58it/s]Processing:  65%|██████▌   | 507/780 [00:15<00:10, 25.92it/s]Processing:  66%|██████▌   | 513/780 [00:15<00:10, 26.51it/s]Processing:  66%|██████▋   | 518/780 [00:16<00:08, 30.52it/s]Processing:  67%|██████▋   | 522/780 [00:16<00:08, 28.69it/s]Processing:  67%|██████▋   | 526/780 [00:16<00:09, 27.03it/s]Processing:  68%|██████▊   | 532/780 [00:16<00:08, 28.51it/s]Processing:  69%|██████▉   | 537/780 [00:16<00:07, 32.38it/s]Processing:  69%|██████▉   | 541/780 [00:16<00:07, 33.53it/s]Processing:  70%|██████▉   | 545/780 [00:16<00:07, 30.62it/s]Processing:  70%|███████   | 549/780 [00:17<00:07, 31.60it/s]Processing:  71%|███████   | 553/780 [00:17<00:07, 31.67it/s]Processing:  71%|███████▏  | 557/780 [00:17<00:07, 30.47it/s]Processing:  72%|███████▏  | 562/780 [00:17<00:06, 33.51it/s]Processing:  73%|███████▎  | 566/780 [00:17<00:06, 32.95it/s]Processing:  73%|███████▎  | 570/780 [00:17<00:06, 30.39it/s]Processing:  74%|███████▎  | 575/780 [00:17<00:06, 33.30it/s]Processing:  74%|███████▍  | 579/780 [00:17<00:05, 33.76it/s]Processing:  75%|███████▍  | 583/780 [00:18<00:06, 30.50it/s]Processing:  75%|███████▌  | 588/780 [00:18<00:07, 27.25it/s]Processing:  76%|███████▌  | 594/780 [00:18<00:06, 29.66it/s]Processing:  77%|███████▋  | 600/780 [00:18<00:05, 30.07it/s]Processing:  78%|███████▊  | 606/780 [00:18<00:05, 30.63it/s]Processing:  78%|███████▊  | 612/780 [00:19<00:05, 29.48it/s]Processing:  79%|███████▉  | 618/780 [00:19<00:05, 29.94it/s]Processing:  80%|████████  | 624/780 [00:19<00:05, 28.94it/s]Processing:  81%|████████  | 629/780 [00:19<00:04, 31.73it/s]Processing:  81%|████████  | 633/780 [00:19<00:05, 29.17it/s]Processing:  82%|████████▏ | 637/780 [00:19<00:04, 28.81it/s]Processing:  82%|████████▏ | 642/780 [00:20<00:04, 27.78it/s]Processing:  83%|████████▎ | 648/780 [00:20<00:04, 28.95it/s]Processing:  84%|████████▍ | 654/780 [00:20<00:04, 30.26it/s]Processing:  84%|████████▍ | 658/780 [00:20<00:03, 30.99it/s]Processing:  85%|████████▌ | 663/780 [00:20<00:03, 32.29it/s]Processing:  86%|████████▌ | 667/780 [00:20<00:03, 29.71it/s]Processing:  86%|████████▌ | 672/780 [00:21<00:03, 30.06it/s]Processing:  87%|████████▋ | 677/780 [00:21<00:03, 32.96it/s]Processing:  87%|████████▋ | 681/780 [00:21<00:03, 30.51it/s]Processing:  88%|████████▊ | 685/780 [00:21<00:02, 32.17it/s]Processing:  88%|████████▊ | 689/780 [00:21<00:02, 31.03it/s]Processing:  89%|████████▉ | 694/780 [00:21<00:02, 31.28it/s]Processing:  89%|████████▉ | 698/780 [00:21<00:02, 31.38it/s]Processing:  90%|█████████ | 702/780 [00:22<00:02, 32.45it/s]Processing:  91%|█████████ | 706/780 [00:22<00:02, 32.76it/s]Processing:  91%|█████████ | 710/780 [00:22<00:02, 33.04it/s]Processing:  92%|█████████▏| 714/780 [00:22<00:01, 33.23it/s]Processing:  92%|█████████▏| 718/780 [00:22<00:02, 29.55it/s]Processing:  93%|█████████▎| 723/780 [00:22<00:01, 33.33it/s]Processing:  93%|█████████▎| 728/780 [00:22<00:01, 33.42it/s]Processing:  94%|█████████▍| 732/780 [00:22<00:01, 33.12it/s]Processing:  94%|█████████▍| 736/780 [00:23<00:01, 30.80it/s]Processing:  95%|█████████▍| 740/780 [00:23<00:01, 32.25it/s]Processing:  95%|█████████▌| 744/780 [00:23<00:01, 32.61it/s]Processing:  96%|█████████▌| 748/780 [00:23<00:01, 30.18it/s]Processing:  96%|█████████▋| 752/780 [00:23<00:00, 31.64it/s]Processing:  97%|█████████▋| 756/780 [00:23<00:00, 33.59it/s]Processing:  97%|█████████▋| 760/780 [00:23<00:00, 31.48it/s]Processing:  98%|█████████▊| 764/780 [00:24<00:00, 29.30it/s]Processing:  99%|█████████▊| 770/780 [00:24<00:00, 29.42it/s]Processing:  99%|█████████▉| 776/780 [00:24<00:00, 31.62it/s]Processing: 100%|██████████| 780/780 [00:24<00:00, 30.80it/s]Processing: 100%|██████████| 780/780 [00:24<00:00, 31.79it/s]
+Saved 3077 batter game logs.
+Saved 390 batter details.
+   player_id        date  ... catchersInterference atBatsPerHomeRun
+0     624641  2026-03-28  ...                    0             -.--
+1     624641  2026-03-29  ...                    0             -.--
+2     624641  2026-03-30  ...                    0             -.--
+3     624641  2026-04-01  ...                    0             -.--
+4     624641  2026-04-03  ...                    0             -.--
+
+[5 rows x 40 columns]
+   player_id      id       fullName  ... nameTitle nameSuffix nameMatrilineal
+0     624641  624641   Edmundo Sosa  ...       NaN        NaN             NaN
+1     595978  595978  Austin Hedges  ...       NaN        NaN             NaN
+2     667670  667670   Brent Rooker  ...       Jr.        Jr.             NaN
+3     808982  808982   Jung Hoo Lee  ...       NaN        NaN             NaN
+4     808975  808975   Hyeseong Kim  ...       NaN        NaN             NaN
+
+[5 rows x 42 columns]
+Fetching all player season stats …
+Fetching batters' season stats for 2026 in parallel...
+Fetching batter stats:   0%|          | 0/390 [00:00<?, ?it/s]Fetching batter stats:   0%|          | 1/390 [00:00<01:21,  4.75it/s]Fetching batter stats:   2%|▏         | 7/390 [00:00<00:18, 20.61it/s]Fetching batter stats:   3%|▎         | 13/390 [00:00<00:15, 24.99it/s]Fetching batter stats:   4%|▍         | 16/390 [00:00<00:14, 25.81it/s]Fetching batter stats:   5%|▍         | 19/390 [00:00<00:14, 24.82it/s]Fetching batter stats:   6%|▌         | 24/390 [00:00<00:12, 29.89it/s]Fetching batter stats:   7%|▋         | 28/390 [00:01<00:13, 27.79it/s]Fetching batter stats:   8%|▊         | 31/390 [00:01<00:13, 25.97it/s]Fetching batter stats:   9%|▉         | 37/390 [00:01<00:12, 27.81it/s]Fetching batter stats:  11%|█         | 43/390 [00:01<00:11, 30.48it/s]Fetching batter stats:  13%|█▎        | 49/390 [00:01<00:10, 31.59it/s]Fetching batter stats:  14%|█▍        | 54/390 [00:01<00:09, 35.16it/s]Fetching batter stats:  15%|█▍        | 58/390 [00:02<00:09, 33.43it/s]Fetching batter stats:  16%|█▌        | 62/390 [00:02<00:10, 32.75it/s]Fetching batter stats:  17%|█▋        | 67/390 [00:02<00:10, 31.65it/s]Fetching batter stats:  19%|█▊        | 73/390 [00:02<00:10, 29.91it/s]Fetching batter stats:  20%|██        | 78/390 [00:02<00:09, 33.73it/s]Fetching batter stats:  21%|██        | 82/390 [00:02<00:09, 32.21it/s]Fetching batter stats:  22%|██▏       | 87/390 [00:02<00:08, 33.98it/s]Fetching batter stats:  23%|██▎       | 91/390 [00:03<00:08, 33.41it/s]Fetching batter stats:  25%|██▍       | 96/390 [00:03<00:09, 31.82it/s]Fetching batter stats:  26%|██▌       | 101/390 [00:03<00:08, 35.41it/s]Fetching batter stats:  27%|██▋       | 105/390 [00:03<00:08, 34.39it/s]Fetching batter stats:  28%|██▊       | 109/390 [00:03<00:08, 32.03it/s]Fetching batter stats:  29%|██▉       | 114/390 [00:03<00:09, 29.48it/s]Fetching batter stats:  31%|███       | 120/390 [00:03<00:08, 30.95it/s]Fetching batter stats:  32%|███▏      | 126/390 [00:04<00:08, 30.20it/s]Fetching batter stats:  34%|███▍      | 132/390 [00:04<00:08, 29.64it/s]Fetching batter stats:  35%|███▌      | 138/390 [00:04<00:08, 29.34it/s]Fetching batter stats:  37%|███▋      | 144/390 [00:04<00:08, 30.17it/s]Fetching batter stats:  38%|███▊      | 150/390 [00:04<00:07, 31.02it/s]Fetching batter stats:  40%|████      | 156/390 [00:05<00:07, 32.88it/s]Fetching batter stats:  41%|████▏     | 161/390 [00:05<00:07, 30.55it/s]Fetching batter stats:  43%|████▎     | 167/390 [00:05<00:07, 30.79it/s]Fetching batter stats:  44%|████▍     | 173/390 [00:05<00:06, 31.87it/s]Fetching batter stats:  46%|████▌     | 178/390 [00:05<00:06, 35.25it/s]Fetching batter stats:  47%|████▋     | 182/390 [00:05<00:06, 32.49it/s]Fetching batter stats:  48%|████▊     | 186/390 [00:06<00:06, 31.55it/s]Fetching batter stats:  49%|████▉     | 191/390 [00:06<00:05, 34.31it/s]Fetching batter stats:  50%|█████     | 195/390 [00:06<00:05, 34.83it/s]Fetching batter stats:  51%|█████     | 199/390 [00:06<00:05, 33.07it/s]Fetching batter stats:  52%|█████▏    | 204/390 [00:06<00:05, 32.50it/s]Fetching batter stats:  54%|█████▍    | 210/390 [00:06<00:05, 34.54it/s]Fetching batter stats:  55%|█████▌    | 215/390 [00:06<00:04, 36.23it/s]Fetching batter stats:  56%|█████▌    | 219/390 [00:07<00:04, 35.15it/s]Fetching batter stats:  57%|█████▋    | 224/390 [00:07<00:04, 34.61it/s]Fetching batter stats:  59%|█████▉    | 230/390 [00:07<00:04, 36.75it/s]Fetching batter stats:  61%|██████    | 236/390 [00:07<00:04, 34.89it/s]Fetching batter stats:  62%|██████▏   | 242/390 [00:07<00:04, 33.78it/s]Fetching batter stats:  64%|██████▎   | 248/390 [00:07<00:03, 36.62it/s]Fetching batter stats:  65%|██████▌   | 254/390 [00:07<00:03, 36.88it/s]Fetching batter stats:  66%|██████▌   | 258/390 [00:08<00:03, 36.17it/s]Fetching batter stats:  67%|██████▋   | 262/390 [00:08<00:04, 31.31it/s]Fetching batter stats:  68%|██████▊   | 267/390 [00:08<00:04, 28.15it/s]Fetching batter stats:  70%|███████   | 273/390 [00:08<00:03, 29.26it/s]Fetching batter stats:  72%|███████▏  | 279/390 [00:08<00:03, 30.38it/s]Fetching batter stats:  73%|███████▎  | 285/390 [00:09<00:03, 32.27it/s]Fetching batter stats:  75%|███████▍  | 291/390 [00:09<00:02, 33.31it/s]Fetching batter stats:  76%|███████▌  | 296/390 [00:09<00:02, 35.38it/s]Fetching batter stats:  77%|███████▋  | 300/390 [00:09<00:02, 35.83it/s]Fetching batter stats:  78%|███████▊  | 304/390 [00:09<00:02, 30.43it/s]Fetching batter stats:  79%|███████▉  | 308/390 [00:09<00:02, 31.18it/s]Fetching batter stats:  81%|████████  | 314/390 [00:09<00:02, 31.24it/s]Fetching batter stats:  82%|████████▏ | 320/390 [00:10<00:02, 32.51it/s]Fetching batter stats:  84%|████████▎ | 326/390 [00:10<00:01, 33.38it/s]Fetching batter stats:  85%|████████▍ | 330/390 [00:10<00:01, 33.35it/s]Fetching batter stats:  86%|████████▌ | 335/390 [00:10<00:01, 33.31it/s]Fetching batter stats:  87%|████████▋ | 339/390 [00:10<00:01, 32.39it/s]Fetching batter stats:  88%|████████▊ | 343/390 [00:10<00:01, 27.63it/s]Fetching batter stats:  89%|████████▉ | 348/390 [00:10<00:01, 30.91it/s]Fetching batter stats:  90%|█████████ | 352/390 [00:11<00:01, 29.70it/s]Fetching batter stats:  91%|█████████▏| 356/390 [00:11<00:01, 29.99it/s]Fetching batter stats:  93%|█████████▎| 361/390 [00:11<00:00, 29.65it/s]Fetching batter stats:  94%|█████████▍| 367/390 [00:11<00:00, 32.10it/s]Fetching batter stats:  96%|█████████▌| 373/390 [00:11<00:00, 34.58it/s]Fetching batter stats:  97%|█████████▋| 379/390 [00:11<00:00, 34.12it/s]Fetching batter stats:  99%|█████████▊| 385/390 [00:12<00:00, 33.90it/s]Fetching batter stats: 100%|██████████| 390/390 [00:12<00:00, 32.05it/s]
+Saved data/2026/batters_season_2026_stats.csv (387 batters)
+  exemptions  ... group_displayName
+0         []  ...           hitting
+1         []  ...           hitting
+2         []  ...           hitting
+3         []  ...           hitting
+4         []  ...           hitting
+
+[5 rows x 4 columns]
+Fetching pitchers' season stats for 2026 in parallel...
+Fetching pitcher stats:   0%|          | 0/389 [00:00<?, ?it/s]Fetching pitcher stats:   0%|          | 1/389 [00:00<01:13,  5.24it/s]Fetching pitcher stats:   2%|▏         | 7/389 [00:00<00:20, 18.85it/s]Fetching pitcher stats:   3%|▎         | 13/389 [00:00<00:15, 24.59it/s]Fetching pitcher stats:   5%|▍         | 19/389 [00:00<00:12, 28.46it/s]Fetching pitcher stats:   6%|▋         | 25/389 [00:00<00:12, 29.56it/s]Fetching pitcher stats:   8%|▊         | 31/389 [00:01<00:10, 33.16it/s]Fetching pitcher stats:   9%|▉         | 35/389 [00:01<00:10, 33.75it/s]Fetching pitcher stats:  10%|█         | 39/389 [00:01<00:10, 31.91it/s]Fetching pitcher stats:  11%|█▏        | 44/389 [00:01<00:11, 30.61it/s]Fetching pitcher stats:  13%|█▎        | 50/389 [00:01<00:10, 33.48it/s]Fetching pitcher stats:  14%|█▍        | 54/389 [00:01<00:09, 34.61it/s]Fetching pitcher stats:  15%|█▍        | 58/389 [00:01<00:10, 31.11it/s]Fetching pitcher stats:  16%|█▋        | 64/389 [00:02<00:09, 33.01it/s]Fetching pitcher stats:  18%|█▊        | 69/389 [00:02<00:09, 35.18it/s]Fetching pitcher stats:  19%|█▉        | 73/389 [00:02<00:09, 32.27it/s]Fetching pitcher stats:  20%|█▉        | 77/389 [00:02<00:11, 27.68it/s]Fetching pitcher stats:  21%|██        | 82/389 [00:02<00:10, 29.24it/s]Fetching pitcher stats:  22%|██▏       | 87/389 [00:02<00:09, 32.00it/s]Fetching pitcher stats:  23%|██▎       | 91/389 [00:03<00:10, 28.71it/s]Fetching pitcher stats:  24%|██▍       | 94/389 [00:03<00:11, 24.73it/s]Fetching pitcher stats:  25%|██▌       | 98/389 [00:03<00:10, 27.56it/s]Fetching pitcher stats:  26%|██▌       | 101/389 [00:03<00:10, 26.66it/s]Fetching pitcher stats:  27%|██▋       | 106/389 [00:03<00:10, 25.97it/s]Fetching pitcher stats:  29%|██▉       | 112/389 [00:03<00:10, 27.28it/s]Fetching pitcher stats:  30%|███       | 118/389 [00:04<00:09, 29.00it/s]Fetching pitcher stats:  32%|███▏      | 124/389 [00:04<00:08, 30.76it/s]Fetching pitcher stats:  33%|███▎      | 130/389 [00:04<00:07, 32.76it/s]Fetching pitcher stats:  35%|███▍      | 135/389 [00:04<00:07, 35.01it/s]Fetching pitcher stats:  36%|███▌      | 139/389 [00:04<00:07, 34.96it/s]Fetching pitcher stats:  37%|███▋      | 143/389 [00:04<00:07, 33.55it/s]Fetching pitcher stats:  38%|███▊      | 148/389 [00:04<00:07, 33.65it/s]Fetching pitcher stats:  40%|███▉      | 154/389 [00:05<00:06, 34.45it/s]Fetching pitcher stats:  41%|████      | 159/389 [00:05<00:06, 37.80it/s]Fetching pitcher stats:  42%|████▏     | 163/389 [00:05<00:06, 33.41it/s]Fetching pitcher stats:  43%|████▎     | 167/389 [00:05<00:06, 34.43it/s]Fetching pitcher stats:  44%|████▍     | 172/389 [00:05<00:06, 33.78it/s]Fetching pitcher stats:  45%|████▌     | 176/389 [00:05<00:06, 33.62it/s]Fetching pitcher stats:  46%|████▋     | 180/389 [00:05<00:06, 33.83it/s]Fetching pitcher stats:  47%|████▋     | 184/389 [00:05<00:06, 31.68it/s]Fetching pitcher stats:  49%|████▉     | 190/389 [00:06<00:05, 33.83it/s]Fetching pitcher stats:  50%|█████     | 196/389 [00:06<00:05, 35.89it/s]Fetching pitcher stats:  51%|█████▏    | 200/389 [00:06<00:05, 33.94it/s]Fetching pitcher stats:  53%|█████▎    | 205/389 [00:06<00:05, 33.05it/s]Fetching pitcher stats:  54%|█████▍    | 211/389 [00:06<00:05, 32.13it/s]Fetching pitcher stats:  56%|█████▌    | 217/389 [00:06<00:05, 32.09it/s]Fetching pitcher stats:  57%|█████▋    | 223/389 [00:07<00:05, 32.80it/s]Fetching pitcher stats:  59%|█████▉    | 229/389 [00:07<00:04, 35.02it/s]Fetching pitcher stats:  60%|█████▉    | 233/389 [00:07<00:04, 34.61it/s]Fetching pitcher stats:  61%|██████    | 237/389 [00:07<00:04, 32.60it/s]Fetching pitcher stats:  62%|██████▏   | 242/389 [00:07<00:04, 33.76it/s]Fetching pitcher stats:  63%|██████▎   | 246/389 [00:07<00:04, 34.49it/s]Fetching pitcher stats:  64%|██████▍   | 250/389 [00:07<00:05, 27.70it/s]Fetching pitcher stats:  65%|██████▌   | 254/389 [00:08<00:04, 28.73it/s]Fetching pitcher stats:  66%|██████▋   | 258/389 [00:08<00:04, 30.70it/s]Fetching pitcher stats:  67%|██████▋   | 262/389 [00:08<00:04, 28.12it/s]Fetching pitcher stats:  68%|██████▊   | 265/389 [00:08<00:04, 28.38it/s]Fetching pitcher stats:  70%|██████▉   | 271/389 [00:08<00:03, 30.93it/s]Fetching pitcher stats:  71%|███████   | 275/389 [00:08<00:03, 31.95it/s]Fetching pitcher stats:  72%|███████▏  | 280/389 [00:08<00:03, 33.09it/s]Fetching pitcher stats:  73%|███████▎  | 284/389 [00:09<00:03, 30.75it/s]Fetching pitcher stats:  74%|███████▍  | 289/389 [00:09<00:03, 29.75it/s]Fetching pitcher stats:  76%|███████▌  | 295/389 [00:09<00:03, 29.94it/s]Fetching pitcher stats:  77%|███████▋  | 301/389 [00:09<00:02, 32.69it/s]Fetching pitcher stats:  79%|███████▉  | 307/389 [00:09<00:02, 34.26it/s]Fetching pitcher stats:  80%|███████▉  | 311/389 [00:09<00:02, 34.07it/s]Fetching pitcher stats:  81%|████████  | 315/389 [00:10<00:02, 31.92it/s]Fetching pitcher stats:  82%|████████▏ | 320/389 [00:10<00:02, 30.56it/s]Fetching pitcher stats:  84%|████████▍ | 326/389 [00:10<00:01, 32.46it/s]Fetching pitcher stats:  85%|████████▍ | 330/389 [00:10<00:01, 32.67it/s]Fetching pitcher stats:  86%|████████▌ | 334/389 [00:10<00:01, 33.88it/s]Fetching pitcher stats:  87%|████████▋ | 338/389 [00:10<00:01, 29.68it/s]Fetching pitcher stats:  88%|████████▊ | 342/389 [00:10<00:01, 27.01it/s]Fetching pitcher stats:  89%|████████▉ | 347/389 [00:11<00:01, 27.60it/s]Fetching pitcher stats:  91%|█████████ | 353/389 [00:11<00:01, 29.69it/s]Fetching pitcher stats:  92%|█████████▏| 359/389 [00:11<00:00, 31.91it/s]Fetching pitcher stats:  94%|█████████▍| 365/389 [00:11<00:00, 33.66it/s]Fetching pitcher stats:  95%|█████████▍| 369/389 [00:11<00:00, 32.95it/s]Fetching pitcher stats:  96%|█████████▌| 373/389 [00:11<00:00, 27.50it/s]Fetching pitcher stats:  97%|█████████▋| 378/389 [00:12<00:00, 25.73it/s]Fetching pitcher stats:  99%|█████████▊| 384/389 [00:12<00:00, 26.51it/s]Fetching pitcher stats: 100%|██████████| 389/389 [00:12<00:00, 29.73it/s]Fetching pitcher stats: 100%|██████████| 389/389 [00:12<00:00, 31.04it/s]
+Saved data/2026/pitchers_season_2026_stats.csv (380 pitchers)
+  exemptions  ... group_displayName
+0         []  ...          pitching
+1         []  ...          pitching
+2         []  ...          pitching
+3         []  ...          pitching
+4         []  ...          pitching
+
+[5 rows x 4 columns]
+Fetching bvp matchup stats …
+https://statsapi.mlb.com/api/v1/people/543877/stats
+https://statsapi.mlb.com/api/v1/people/572233/stats
+https://statsapi.mlb.com/api/v1/people/694388/stats
+https://statsapi.mlb.com/api/v1/people/621043/stats
+https://statsapi.mlb.com/api/v1/people/514888/stats
+https://statsapi.mlb.com/api/v1/people/670623/stats
+https://statsapi.mlb.com/api/v1/people/676694/stats
+https://statsapi.mlb.com/api/v1/people/669397/stats
+https://statsapi.mlb.com/api/v1/people/670541/stats
+https://statsapi.mlb.com/api/v1/people/701358/stats
+https://statsapi.mlb.com/api/v1/people/665161/stats
+https://statsapi.mlb.com/api/v1/people/673237/stats
+https://statsapi.mlb.com/api/v1/people/694728/stats
+No stats found for batter Joey Loperfido vs pitcher Freeland
+No stats found for batter Yordan Alvarez vs pitcher Freeland
+No stats found for batter Brice Matthews vs pitcher Freeland
+Saved: data/2026-04-07/bvp_hou_vs_freeland.csv
+https://statsapi.mlb.com/api/v1/people/687859/stats
+https://statsapi.mlb.com/api/v1/people/686668/stats
+https://statsapi.mlb.com/api/v1/people/696100/stats
+https://statsapi.mlb.com/api/v1/people/687597/stats
+https://statsapi.mlb.com/api/v1/people/691720/stats
+https://statsapi.mlb.com/api/v1/people/664954/stats
+https://statsapi.mlb.com/api/v1/people/671289/stats
+https://statsapi.mlb.com/api/v1/people/664983/stats
+https://statsapi.mlb.com/api/v1/people/650489/stats
+https://statsapi.mlb.com/api/v1/people/666160/stats
+https://statsapi.mlb.com/api/v1/people/678662/stats
+https://statsapi.mlb.com/api/v1/people/666397/stats
+https://statsapi.mlb.com/api/v1/people/681198/stats
+No stats found for batter Troy Johnston vs pitcher Burrows
+No stats found for batter Brett Sullivan vs pitcher Burrows
+No stats found for batter Mickey Moniak vs pitcher Burrows
+No stats found for batter Edouard Julien vs pitcher Burrows
+No stats found for batter TJ Rumfield vs pitcher Burrows
+Saved: data/2026-04-07/bvp_col_vs_burrows.csv
+https://statsapi.mlb.com/api/v1/people/691781/stats
+https://statsapi.mlb.com/api/v1/people/678391/stats
+https://statsapi.mlb.com/api/v1/people/677588/stats
+https://statsapi.mlb.com/api/v1/people/695578/stats
+https://statsapi.mlb.com/api/v1/people/686894/stats
+https://statsapi.mlb.com/api/v1/people/660688/stats
+https://statsapi.mlb.com/api/v1/people/678554/stats
+https://statsapi.mlb.com/api/v1/people/686452/stats
+https://statsapi.mlb.com/api/v1/people/683083/stats
+https://statsapi.mlb.com/api/v1/people/696285/stats
+https://statsapi.mlb.com/api/v1/people/671277/stats
+https://statsapi.mlb.com/api/v1/people/695734/stats
+https://statsapi.mlb.com/api/v1/people/682928/stats
+No stats found for batter Brady House vs pitcher Liberatore
+No stats found for batter Jorbit Vivas vs pitcher Liberatore
+No stats found for batter Jose Tena vs pitcher Liberatore
+No stats found for batter Drew Millas vs pitcher Liberatore
+No stats found for batter Nasim Nunez vs pitcher Liberatore
+No stats found for batter Daylen Lile vs pitcher Liberatore
+Saved: data/2026-04-07/bvp_was_vs_liberatore.csv
+https://statsapi.mlb.com/api/v1/people/663586/stats
+https://statsapi.mlb.com/api/v1/people/642201/stats
+https://statsapi.mlb.com/api/v1/people/641680/stats
+https://statsapi.mlb.com/api/v1/people/622761/stats
+https://statsapi.mlb.com/api/v1/people/660670/stats
+https://statsapi.mlb.com/api/v1/people/671739/stats
+https://statsapi.mlb.com/api/v1/people/573262/stats
+https://statsapi.mlb.com/api/v1/people/645277/stats
+https://statsapi.mlb.com/api/v1/people/642086/stats
+https://statsapi.mlb.com/api/v1/people/643289/stats
+https://statsapi.mlb.com/api/v1/people/571657/stats
+https://statsapi.mlb.com/api/v1/people/621566/stats
+https://statsapi.mlb.com/api/v1/people/686948/stats
+No stats found for batter Dominic Smith vs pitcher Kikuchi
+No stats found for batter Drake Baldwin vs pitcher Kikuchi
+Saved: data/2026-04-07/bvp_atl_vs_kikuchi.csv
+https://statsapi.mlb.com/api/v1/people/802139/stats
+https://statsapi.mlb.com/api/v1/people/669357/stats
+https://statsapi.mlb.com/api/v1/people/695336/stats
+https://statsapi.mlb.com/api/v1/people/701675/stats
+https://statsapi.mlb.com/api/v1/people/691026/stats
+https://statsapi.mlb.com/api/v1/people/691023/stats
+https://statsapi.mlb.com/api/v1/people/686780/stats
+https://statsapi.mlb.com/api/v1/people/687363/stats
+https://statsapi.mlb.com/api/v1/people/676475/stats
+https://statsapi.mlb.com/api/v1/people/602104/stats
+https://statsapi.mlb.com/api/v1/people/671056/stats
+https://statsapi.mlb.com/api/v1/people/650968/stats
+https://statsapi.mlb.com/api/v1/people/665877/stats
+No stats found for batter JJ Wetherholt vs pitcher Cavalli
+No stats found for batter Nolan Gorman vs pitcher Cavalli
+No stats found for batter Thomas Saggese vs pitcher Cavalli
+No stats found for batter Nathan Church vs pitcher Cavalli
+No stats found for batter Masyn Winn vs pitcher Cavalli
+No stats found for batter Jordan Walker vs pitcher Cavalli
+No stats found for batter Pedro Pages vs pitcher Cavalli
+No stats found for batter Victor Scott II V. Scott II vs pitcher Cavalli
+No stats found for batter Alec Burleson vs pitcher Cavalli
+No stats found for batter Ramon Urias vs pitcher Cavalli
+No stats found for batter Ivan Herrera vs pitcher Cavalli
+No stats found for batter Yohel Pozo vs pitcher Cavalli
+No stats found for batter Jose Fermin vs pitcher Cavalli
+https://statsapi.mlb.com/api/v1/people/668723/stats
+https://statsapi.mlb.com/api/v1/people/641584/stats
+https://statsapi.mlb.com/api/v1/people/676356/stats
+https://statsapi.mlb.com/api/v1/people/676439/stats
+https://statsapi.mlb.com/api/v1/people/666018/stats
+https://statsapi.mlb.com/api/v1/people/810938/stats
+https://statsapi.mlb.com/api/v1/people/656775/stats
+https://statsapi.mlb.com/api/v1/people/691406/stats
+https://statsapi.mlb.com/api/v1/people/663743/stats
+https://statsapi.mlb.com/api/v1/people/670764/stats
+https://statsapi.mlb.com/api/v1/people/650490/stats
+https://statsapi.mlb.com/api/v1/people/802415/stats
+https://statsapi.mlb.com/api/v1/people/680700/stats
+No stats found for batter Ryan Vilade vs pitcher Assad
+No stats found for batter Jonny DeLuca vs pitcher Assad
+No stats found for batter Hunter Feduccia vs pitcher Assad
+No stats found for batter Jonathan Aranda vs pitcher Assad
+No stats found for batter Ben Williamson vs pitcher Assad
+No stats found for batter Cedric Mullins vs pitcher Assad
+No stats found for batter Chandler Simpson vs pitcher Assad
+Saved: data/2026-04-07/bvp_tb_vs_assad.csv
+https://statsapi.mlb.com/api/v1/people/683357/stats
+https://statsapi.mlb.com/api/v1/people/681715/stats
+https://statsapi.mlb.com/api/v1/people/682663/stats
+https://statsapi.mlb.com/api/v1/people/681393/stats
+https://statsapi.mlb.com/api/v1/people/669364/stats
+https://statsapi.mlb.com/api/v1/people/672640/stats
+https://statsapi.mlb.com/api/v1/people/805300/stats
+https://statsapi.mlb.com/api/v1/people/691594/stats
+https://statsapi.mlb.com/api/v1/people/688363/stats
+https://statsapi.mlb.com/api/v1/people/689414/stats
+https://statsapi.mlb.com/api/v1/people/596103/stats
+https://statsapi.mlb.com/api/v1/people/665052/stats
+https://statsapi.mlb.com/api/v1/people/677870/stats
+No stats found for batter Owen Caissie vs pitcher Abbott
+No stats found for batter Jakob Marsee vs pitcher Abbott
+No stats found for batter Javier Sanoja vs pitcher Abbott
+No stats found for batter Graham Pauley vs pitcher Abbott
+No stats found for batter Liam Hicks vs pitcher Abbott
+No stats found for batter Griffin Conine vs pitcher Abbott
+No stats found for batter Leo Jimenez vs pitcher Abbott
+Saved: data/2026-04-07/bvp_mia_vs_abbott.csv
+https://statsapi.mlb.com/api/v1/people/682657/stats
+https://statsapi.mlb.com/api/v1/people/682877/stats
+https://statsapi.mlb.com/api/v1/people/608070/stats
+https://statsapi.mlb.com/api/v1/people/680757/stats
+https://statsapi.mlb.com/api/v1/people/666310/stats
+https://statsapi.mlb.com/api/v1/people/677587/stats
+https://statsapi.mlb.com/api/v1/people/682177/stats
+https://statsapi.mlb.com/api/v1/people/681807/stats
+https://statsapi.mlb.com/api/v1/people/656555/stats
+https://statsapi.mlb.com/api/v1/people/595978/stats
+https://statsapi.mlb.com/api/v1/people/692216/stats
+https://statsapi.mlb.com/api/v1/people/700932/stats
+https://statsapi.mlb.com/api/v1/people/800050/stats
+No stats found for batter Juan Brito vs pitcher Cameron
+No stats found for batter Rhys Hoskins vs pitcher Cameron
+No stats found for batter C.J. Kayfus vs pitcher Cameron
+No stats found for batter Kyle Manzardo vs pitcher Cameron
+No stats found for batter Chase DeLauter vs pitcher Cameron
+Saved: data/2026-04-07/bvp_cle_vs_cameron.csv
+https://statsapi.mlb.com/api/v1/people/672724/stats
+https://statsapi.mlb.com/api/v1/people/666139/stats
+https://statsapi.mlb.com/api/v1/people/669326/stats
+https://statsapi.mlb.com/api/v1/people/518595/stats
+https://statsapi.mlb.com/api/v1/people/660162/stats
+https://statsapi.mlb.com/api/v1/people/681351/stats
+https://statsapi.mlb.com/api/v1/people/600869/stats
+https://statsapi.mlb.com/api/v1/people/545361/stats
+https://statsapi.mlb.com/api/v1/people/624585/stats
+https://statsapi.mlb.com/api/v1/people/666176/stats
+https://statsapi.mlb.com/api/v1/people/694384/stats
+https://statsapi.mlb.com/api/v1/people/624428/stats
+https://statsapi.mlb.com/api/v1/people/687263/stats
+No stats found for batter Oswald Peraza vs pitcher Lopez
+No stats found for batter Bryce Teodosio vs pitcher Lopez
+No stats found for batter Logan O'Hoppe vs pitcher Lopez
+No stats found for batter Jo Adell vs pitcher Lopez
+Saved: data/2026-04-07/bvp_laa_vs_lopez.csv
+https://statsapi.mlb.com/api/v1/people/656941/stats
+https://statsapi.mlb.com/api/v1/people/665561/stats
+https://statsapi.mlb.com/api/v1/people/664761/stats
+https://statsapi.mlb.com/api/v1/people/805249/stats
+https://statsapi.mlb.com/api/v1/people/547180/stats
+https://statsapi.mlb.com/api/v1/people/624641/stats
+https://statsapi.mlb.com/api/v1/people/607208/stats
+https://statsapi.mlb.com/api/v1/people/592663/stats
+https://statsapi.mlb.com/api/v1/people/664238/stats
+https://statsapi.mlb.com/api/v1/people/681082/stats
+https://statsapi.mlb.com/api/v1/people/666969/stats
+https://statsapi.mlb.com/api/v1/people/702222/stats
+https://statsapi.mlb.com/api/v1/people/669016/stats
+No stats found for batter Bryson Stott vs pitcher Ray
+No stats found for batter Justin Crawford vs pitcher Ray
+Saved: data/2026-04-07/bvp_phi_vs_ray.csv
+https://statsapi.mlb.com/api/v1/people/518692/stats
+https://statsapi.mlb.com/api/v1/people/669289/stats
+https://statsapi.mlb.com/api/v1/people/663656/stats
+https://statsapi.mlb.com/api/v1/people/500743/stats
+https://statsapi.mlb.com/api/v1/people/606192/stats
+https://statsapi.mlb.com/api/v1/people/669257/stats
+https://statsapi.mlb.com/api/v1/people/571970/stats
+https://statsapi.mlb.com/api/v1/people/669743/stats
+https://statsapi.mlb.com/api/v1/people/681624/stats
+https://statsapi.mlb.com/api/v1/people/660271/stats
+https://statsapi.mlb.com/api/v1/people/690976/stats
+https://statsapi.mlb.com/api/v1/people/808975/stats
+https://statsapi.mlb.com/api/v1/people/687221/stats
+No stats found for batter Alex Freeland vs pitcher Gausman
+No stats found for batter Hyeseong Kim vs pitcher Gausman
+No stats found for batter Dalton Rushing vs pitcher Gausman
+Saved: data/2026-04-07/bvp_lad_vs_gausman.csv
+https://statsapi.mlb.com/api/v1/people/804606/stats
+https://statsapi.mlb.com/api/v1/people/542303/stats
+https://statsapi.mlb.com/api/v1/people/687462/stats
+https://statsapi.mlb.com/api/v1/people/665833/stats
+https://statsapi.mlb.com/api/v1/people/668804/stats
+https://statsapi.mlb.com/api/v1/people/695257/stats
+https://statsapi.mlb.com/api/v1/people/663698/stats
+https://statsapi.mlb.com/api/v1/people/680779/stats
+https://statsapi.mlb.com/api/v1/people/694377/stats
+https://statsapi.mlb.com/api/v1/people/656811/stats
+https://statsapi.mlb.com/api/v1/people/664040/stats
+https://statsapi.mlb.com/api/v1/people/693304/stats
+https://statsapi.mlb.com/api/v1/people/663968/stats
+No stats found for batter Konnor Griffin vs pitcher Pivetta
+No stats found for batter Billy Cook vs pitcher Pivetta
+No stats found for batter Joey Bart vs pitcher Pivetta
+No stats found for batter Nick Yorke vs pitcher Pivetta
+No stats found for batter Nick Gonzales vs pitcher Pivetta
+No stats found for batter Jake Mangum vs pitcher Pivetta
+Saved: data/2026-04-07/bvp_pit_vs_pivetta.csv
+https://statsapi.mlb.com/api/v1/people/808959/stats
+https://statsapi.mlb.com/api/v1/people/656537/stats
+https://statsapi.mlb.com/api/v1/people/695657/stats
+https://statsapi.mlb.com/api/v1/people/805367/stats
+https://statsapi.mlb.com/api/v1/people/700337/stats
+https://statsapi.mlb.com/api/v1/people/682668/stats
+https://statsapi.mlb.com/api/v1/people/695020/stats
+https://statsapi.mlb.com/api/v1/people/678246/stats
+https://statsapi.mlb.com/api/v1/people/671976/stats
+https://statsapi.mlb.com/api/v1/people/672820/stats
+https://statsapi.mlb.com/api/v1/people/687957/stats
+https://statsapi.mlb.com/api/v1/people/643217/stats
+https://statsapi.mlb.com/api/v1/people/624512/stats
+No stats found for batter Munetaka Murakami vs pitcher Rogers
+No stats found for batter Colson Montgomery vs pitcher Rogers
+No stats found for batter Chase Meidroth vs pitcher Rogers
+No stats found for batter Edgar Quero vs pitcher Rogers
+No stats found for batter Luisangel Acuna vs pitcher Rogers
+No stats found for batter Tanner Murray vs pitcher Rogers
+No stats found for batter Miguel Vargas vs pitcher Rogers
+No stats found for batter Tristan Peters vs pitcher Rogers
+No stats found for batter Lenyn Sosa vs pitcher Rogers
+No stats found for batter Dustin Harris vs pitcher Rogers
+No stats found for batter Andrew Benintendi vs pitcher Rogers
+No stats found for batter Reese McGuire vs pitcher Rogers
+Saved: data/2026-04-07/bvp_chw_vs_rogers.csv
+https://statsapi.mlb.com/api/v1/people/678009/stats
+https://statsapi.mlb.com/api/v1/people/650402/stats
+https://statsapi.mlb.com/api/v1/people/663837/stats
+https://statsapi.mlb.com/api/v1/people/690993/stats
+https://statsapi.mlb.com/api/v1/people/805808/stats
+https://statsapi.mlb.com/api/v1/people/681481/stats
+https://statsapi.mlb.com/api/v1/people/663330/stats
+https://statsapi.mlb.com/api/v1/people/595879/stats
+https://statsapi.mlb.com/api/v1/people/656716/stats
+https://statsapi.mlb.com/api/v1/people/682985/stats
+https://statsapi.mlb.com/api/v1/people/679529/stats
+https://statsapi.mlb.com/api/v1/people/668670/stats
+https://statsapi.mlb.com/api/v1/people/693307/stats
+No stats found for batter Parker Meadows vs pitcher Bradley
+No stats found for batter Matt Vierling vs pitcher Bradley
+No stats found for batter Colt Keith vs pitcher Bradley
+No stats found for batter Kevin McGonigle vs pitcher Bradley
+No stats found for batter Kerry Carpenter vs pitcher Bradley
+No stats found for batter Jahmai Jones vs pitcher Bradley
+No stats found for batter Javier Baez vs pitcher Bradley
+No stats found for batter Zach McKinstry vs pitcher Bradley
+No stats found for batter Riley Greene vs pitcher Bradley
+No stats found for batter Spencer Torkelson vs pitcher Bradley
+No stats found for batter Jake Rogers vs pitcher Bradley
+No stats found for batter Dillon Dingler vs pitcher Bradley
+Saved: data/2026-04-07/bvp_det_vs_bradley.csv
+https://statsapi.mlb.com/api/v1/people/683002/stats
+https://statsapi.mlb.com/api/v1/people/621493/stats
+https://statsapi.mlb.com/api/v1/people/624413/stats
+https://statsapi.mlb.com/api/v1/people/687637/stats
+https://statsapi.mlb.com/api/v1/people/641933/stats
+https://statsapi.mlb.com/api/v1/people/691723/stats
+https://statsapi.mlb.com/api/v1/people/669236/stats
+https://statsapi.mlb.com/api/v1/people/681297/stats
+https://statsapi.mlb.com/api/v1/people/665750/stats
+https://statsapi.mlb.com/api/v1/people/668939/stats
+https://statsapi.mlb.com/api/v1/people/663624/stats
+https://statsapi.mlb.com/api/v1/people/694212/stats
+https://statsapi.mlb.com/api/v1/people/677942/stats
+No stats found for batter Tyler O'Neill vs pitcher Smith
+No stats found for batter Adley Rutschman vs pitcher Smith
+No stats found for batter Ryan Mountcastle vs pitcher Smith
+No stats found for batter Blaze Alexander vs pitcher Smith
+Saved: data/2026-04-07/bvp_bal_vs_smith.csv
+https://statsapi.mlb.com/api/v1/people/701807/stats
+https://statsapi.mlb.com/api/v1/people/668901/stats
+https://statsapi.mlb.com/api/v1/people/682626/stats
+https://statsapi.mlb.com/api/v1/people/620443/stats
+https://statsapi.mlb.com/api/v1/people/677595/stats
+https://statsapi.mlb.com/api/v1/people/666182/stats
+https://statsapi.mlb.com/api/v1/people/593871/stats
+https://statsapi.mlb.com/api/v1/people/543760/stats
+https://statsapi.mlb.com/api/v1/people/621438/stats
+https://statsapi.mlb.com/api/v1/people/683146/stats
+https://statsapi.mlb.com/api/v1/people/596019/stats
+https://statsapi.mlb.com/api/v1/people/676724/stats
+https://statsapi.mlb.com/api/v1/people/673357/stats
+No stats found for batter Carson Benge vs pitcher Gallen
+No stats found for batter Ronny Mauricio vs pitcher Gallen
+No stats found for batter Jared Young vs pitcher Gallen
+No stats found for batter Luis Robert vs pitcher Gallen
+Saved: data/2026-04-07/bvp_nym_vs_gallen.csv
+https://statsapi.mlb.com/api/v1/people/662139/stats
+https://statsapi.mlb.com/api/v1/people/676391/stats
+https://statsapi.mlb.com/api/v1/people/665926/stats
+https://statsapi.mlb.com/api/v1/people/664770/stats
+https://statsapi.mlb.com/api/v1/people/543807/stats
+https://statsapi.mlb.com/api/v1/people/680718/stats
+https://statsapi.mlb.com/api/v1/people/664702/stats
+https://statsapi.mlb.com/api/v1/people/623168/stats
+https://statsapi.mlb.com/api/v1/people/665489/stats
+https://statsapi.mlb.com/api/v1/people/660821/stats
+https://statsapi.mlb.com/api/v1/people/672960/stats
+https://statsapi.mlb.com/api/v1/people/676914/stats
+https://statsapi.mlb.com/api/v1/people/678218/stats
+No stats found for batter Daulton Varsho vs pitcher Yamamoto
+No stats found for batter Ernie Clement vs pitcher Yamamoto
+No stats found for batter Andres Gimenez vs pitcher Yamamoto
+No stats found for batter Nathan Lukes vs pitcher Yamamoto
+No stats found for batter George Springer vs pitcher Yamamoto
+No stats found for batter Addison Barger vs pitcher Yamamoto
+No stats found for batter Myles Straw vs pitcher Yamamoto
+No stats found for batter Tyler Heineman vs pitcher Yamamoto
+No stats found for batter Vladimir Guerrero Jr. V. Guerrero Jr. vs pitcher Yamamoto
+No stats found for batter Kazuma Okamoto vs pitcher Yamamoto
+No stats found for batter Davis Schneider vs pitcher Yamamoto
+No stats found for batter Brandon Valenzuela vs pitcher Yamamoto
+Saved: data/2026-04-07/bvp_tor_vs_yamamoto.csv
+https://statsapi.mlb.com/api/v1/people/670042/stats
+https://statsapi.mlb.com/api/v1/people/641487/stats
+https://statsapi.mlb.com/api/v1/people/668227/stats
+https://statsapi.mlb.com/api/v1/people/645302/stats
+https://statsapi.mlb.com/api/v1/people/641598/stats
+https://statsapi.mlb.com/api/v1/people/647304/stats
+https://statsapi.mlb.com/api/v1/people/680977/stats
+https://statsapi.mlb.com/api/v1/people/677594/stats
+https://statsapi.mlb.com/api/v1/people/702284/stats
+https://statsapi.mlb.com/api/v1/people/663728/stats
+https://statsapi.mlb.com/api/v1/people/608701/stats
+https://statsapi.mlb.com/api/v1/people/686527/stats
+https://statsapi.mlb.com/api/v1/people/660844/stats
+No stats found for batter Victor Robles vs pitcher Eovaldi
+No stats found for batter Leo Rivas vs pitcher Eovaldi
+Saved: data/2026-04-07/bvp_sea_vs_eovaldi.csv
+https://statsapi.mlb.com/api/v1/people/694497/stats
+https://statsapi.mlb.com/api/v1/people/669701/stats
+https://statsapi.mlb.com/api/v1/people/694671/stats
+https://statsapi.mlb.com/api/v1/people/677649/stats
+https://statsapi.mlb.com/api/v1/people/592626/stats
+https://statsapi.mlb.com/api/v1/people/543309/stats
+https://statsapi.mlb.com/api/v1/people/608369/stats
+https://statsapi.mlb.com/api/v1/people/457705/stats
+https://statsapi.mlb.com/api/v1/people/664059/stats
+https://statsapi.mlb.com/api/v1/people/607043/stats
+https://statsapi.mlb.com/api/v1/people/669394/stats
+https://statsapi.mlb.com/api/v1/people/673962/stats
+https://statsapi.mlb.com/api/v1/people/643376/stats
+No stats found for batter Sam Haggerty vs pitcher Kirby
+Saved: data/2026-04-07/bvp_tex_vs_kirby.csv
+https://statsapi.mlb.com/api/v1/people/682622/stats
+https://statsapi.mlb.com/api/v1/people/663993/stats
+https://statsapi.mlb.com/api/v1/people/682829/stats
+https://statsapi.mlb.com/api/v1/people/663647/stats
+https://statsapi.mlb.com/api/v1/people/553993/stats
+https://statsapi.mlb.com/api/v1/people/663886/stats
+https://statsapi.mlb.com/api/v1/people/680574/stats
+https://statsapi.mlb.com/api/v1/people/667472/stats
+https://statsapi.mlb.com/api/v1/people/668715/stats
+https://statsapi.mlb.com/api/v1/people/670770/stats
+https://statsapi.mlb.com/api/v1/people/666181/stats
+https://statsapi.mlb.com/api/v1/people/624431/stats
+https://statsapi.mlb.com/api/v1/people/701398/stats
+No stats found for batter Dane Myers vs pitcher Alcantara
+No stats found for batter Jose Trevino vs pitcher Alcantara
+No stats found for batter Sal Stewart vs pitcher Alcantara
+Saved: data/2026-04-07/bvp_cin_vs_alcantara.csv
+https://statsapi.mlb.com/api/v1/people/630105/stats
+https://statsapi.mlb.com/api/v1/people/664034/stats
+https://statsapi.mlb.com/api/v1/people/665487/stats
+https://statsapi.mlb.com/api/v1/people/592206/stats
+https://statsapi.mlb.com/api/v1/people/669134/stats
+https://statsapi.mlb.com/api/v1/people/592518/stats
+https://statsapi.mlb.com/api/v1/people/593428/stats
+https://statsapi.mlb.com/api/v1/people/657757/stats
+https://statsapi.mlb.com/api/v1/people/609280/stats
+https://statsapi.mlb.com/api/v1/people/666023/stats
+https://statsapi.mlb.com/api/v1/people/669369/stats
+https://statsapi.mlb.com/api/v1/people/657656/stats
+https://statsapi.mlb.com/api/v1/people/701538/stats
+No stats found for batter Jake Cronenworth vs pitcher Skenes
+No stats found for batter Fernando Tatis Jr. F. Tatis Jr. vs pitcher Skenes
+No stats found for batter Luis Campusano vs pitcher Skenes
+No stats found for batter Manny Machado vs pitcher Skenes
+No stats found for batter Xander Bogaerts vs pitcher Skenes
+No stats found for batter Gavin Sheets vs pitcher Skenes
+No stats found for batter Miguel Andujar vs pitcher Skenes
+No stats found for batter Freddy Fermin vs pitcher Skenes
+No stats found for batter Bryce Johnson vs pitcher Skenes
+No stats found for batter Ramon Laureano vs pitcher Skenes
+No stats found for batter Jackson Merrill vs pitcher Skenes
+Saved: data/2026-04-07/bvp_sd_vs_skenes.csv
+https://statsapi.mlb.com/api/v1/people/571448/stats
+https://statsapi.mlb.com/api/v1/people/672515/stats
+https://statsapi.mlb.com/api/v1/people/672695/stats
+https://statsapi.mlb.com/api/v1/people/467793/stats
+https://statsapi.mlb.com/api/v1/people/606466/stats
+https://statsapi.mlb.com/api/v1/people/545121/stats
+https://statsapi.mlb.com/api/v1/people/543510/stats
+https://statsapi.mlb.com/api/v1/people/682998/stats
+https://statsapi.mlb.com/api/v1/people/678489/stats
+https://statsapi.mlb.com/api/v1/people/694374/stats
+https://statsapi.mlb.com/api/v1/people/677950/stats
+https://statsapi.mlb.com/api/v1/people/680728/stats
+https://statsapi.mlb.com/api/v1/people/699912/stats
+No stats found for batter Gabriel Moreno vs pitcher Peralta
+No stats found for batter Jorge Barrosa vs pitcher Peralta
+No stats found for batter Alek Thomas vs pitcher Peralta
+No stats found for batter Adrian Del Castillo A. Del Castillo vs pitcher Peralta
+No stats found for batter Jose Fernandez vs pitcher Peralta
+Saved: data/2026-04-07/bvp_ari_vs_peralta.csv
+https://statsapi.mlb.com/api/v1/people/807713/stats
+https://statsapi.mlb.com/api/v1/people/608324/stats
+https://statsapi.mlb.com/api/v1/people/664023/stats
+https://statsapi.mlb.com/api/v1/people/683737/stats
+https://statsapi.mlb.com/api/v1/people/691718/stats
+https://statsapi.mlb.com/api/v1/people/664068/stats
+https://statsapi.mlb.com/api/v1/people/621020/stats
+https://statsapi.mlb.com/api/v1/people/663538/stats
+https://statsapi.mlb.com/api/v1/people/608348/stats
+https://statsapi.mlb.com/api/v1/people/624424/stats
+https://statsapi.mlb.com/api/v1/people/666185/stats
+https://statsapi.mlb.com/api/v1/people/665804/stats
+https://statsapi.mlb.com/api/v1/people/694208/stats
+No stats found for batter Scott Kingery vs pitcher Rasmussen
+No stats found for batter Miguel Amaya vs pitcher Rasmussen
+Saved: data/2026-04-07/bvp_chc_vs_rasmussen.csv
+https://statsapi.mlb.com/api/v1/people/700250/stats
+https://statsapi.mlb.com/api/v1/people/592450/stats
+https://statsapi.mlb.com/api/v1/people/665862/stats
+https://statsapi.mlb.com/api/v1/people/502671/stats
+https://statsapi.mlb.com/api/v1/people/519317/stats
+https://statsapi.mlb.com/api/v1/people/641555/stats
+https://statsapi.mlb.com/api/v1/people/641355/stats
+https://statsapi.mlb.com/api/v1/people/642708/stats
+https://statsapi.mlb.com/api/v1/people/545341/stats
+https://statsapi.mlb.com/api/v1/people/669224/stats
+https://statsapi.mlb.com/api/v1/people/663757/stats
+https://statsapi.mlb.com/api/v1/people/676609/stats
+https://statsapi.mlb.com/api/v1/people/641857/stats
+No stats found for batter J.C. Escarra vs pitcher Civale
+No stats found for batter Jose Caballero vs pitcher Civale
+Saved: data/2026-04-07/bvp_nyy_vs_civale.csv
+https://statsapi.mlb.com/api/v1/people/666931/stats
+https://statsapi.mlb.com/api/v1/people/669477/stats
+https://statsapi.mlb.com/api/v1/people/671218/stats
+https://statsapi.mlb.com/api/v1/people/691740/stats
+https://statsapi.mlb.com/api/v1/people/650333/stats
+https://statsapi.mlb.com/api/v1/people/808982/stats
+https://statsapi.mlb.com/api/v1/people/656305/stats
+https://statsapi.mlb.com/api/v1/people/683766/stats
+https://statsapi.mlb.com/api/v1/people/642715/stats
+https://statsapi.mlb.com/api/v1/people/666464/stats
+https://statsapi.mlb.com/api/v1/people/646240/stats
+https://statsapi.mlb.com/api/v1/people/672275/stats
+https://statsapi.mlb.com/api/v1/people/664056/stats
+No stats found for batter Jared Oliva vs pitcher Sanchez
+No stats found for batter Daniel Susac vs pitcher Sanchez
+No stats found for batter Jerar Encarnacion vs pitcher Sanchez
+Saved: data/2026-04-07/bvp_sf_vs_sanchez.csv
+https://statsapi.mlb.com/api/v1/people/807799/stats
+https://statsapi.mlb.com/api/v1/people/702332/stats
+https://statsapi.mlb.com/api/v1/people/655316/stats
+https://statsapi.mlb.com/api/v1/people/677800/stats
+https://statsapi.mlb.com/api/v1/people/643396/stats
+https://statsapi.mlb.com/api/v1/people/575929/stats
+https://statsapi.mlb.com/api/v1/people/665966/stats
+https://statsapi.mlb.com/api/v1/people/657136/stats
+https://statsapi.mlb.com/api/v1/people/701350/stats
+https://statsapi.mlb.com/api/v1/people/680776/stats
+https://statsapi.mlb.com/api/v1/people/596115/stats
+https://statsapi.mlb.com/api/v1/people/678882/stats
+https://statsapi.mlb.com/api/v1/people/691785/stats
+No stats found for batter Masataka Yoshida vs pitcher Misiorowski
+No stats found for batter Caleb Durbin vs pitcher Misiorowski
+No stats found for batter Andruw Monasterio vs pitcher Misiorowski
+No stats found for batter Wilyer Abreu vs pitcher Misiorowski
+No stats found for batter Carlos Narvaez vs pitcher Misiorowski
+No stats found for batter Connor Wong vs pitcher Misiorowski
+No stats found for batter Roman Anthony vs pitcher Misiorowski
+No stats found for batter Jarren Duran vs pitcher Misiorowski
+No stats found for batter Trevor Story vs pitcher Misiorowski
+No stats found for batter Ceddanne Rafaela vs pitcher Misiorowski
+No stats found for batter Marcelo Mayer vs pitcher Misiorowski
+Saved: data/2026-04-07/bvp_bos_vs_misiorowski.csv
+https://statsapi.mlb.com/api/v1/people/686555/stats
+https://statsapi.mlb.com/api/v1/people/686469/stats
+https://statsapi.mlb.com/api/v1/people/672580/stats
+https://statsapi.mlb.com/api/v1/people/663697/stats
+https://statsapi.mlb.com/api/v1/people/664728/stats
+https://statsapi.mlb.com/api/v1/people/521692/stats
+https://statsapi.mlb.com/api/v1/people/677951/stats
+https://statsapi.mlb.com/api/v1/people/686681/stats
+https://statsapi.mlb.com/api/v1/people/516782/stats
+https://statsapi.mlb.com/api/v1/people/695506/stats
+https://statsapi.mlb.com/api/v1/people/657041/stats
+https://statsapi.mlb.com/api/v1/people/695600/stats
+https://statsapi.mlb.com/api/v1/people/686475/stats
+No stats found for batter Isaac Collins vs pitcher Williams
+No stats found for batter Starling Marte vs pitcher Williams
+No stats found for batter Lane Thomas vs pitcher Williams
+No stats found for batter Carter Jensen vs pitcher Williams
+No stats found for batter Tyler Tolbert vs pitcher Williams
+Saved: data/2026-04-07/bvp_kc_vs_williams.csv
+https://statsapi.mlb.com/api/v1/people/687401/stats
+https://statsapi.mlb.com/api/v1/people/682641/stats
+https://statsapi.mlb.com/api/v1/people/650859/stats
+https://statsapi.mlb.com/api/v1/people/661388/stats
+https://statsapi.mlb.com/api/v1/people/592885/stats
+https://statsapi.mlb.com/api/v1/people/686217/stats
+https://statsapi.mlb.com/api/v1/people/663604/stats
+https://statsapi.mlb.com/api/v1/people/668930/stats
+https://statsapi.mlb.com/api/v1/people/641343/stats
+https://statsapi.mlb.com/api/v1/people/596142/stats
+https://statsapi.mlb.com/api/v1/people/663368/stats
+https://statsapi.mlb.com/api/v1/people/666152/stats
+https://statsapi.mlb.com/api/v1/people/669003/stats
+No stats found for batter Luis Matos vs pitcher Crochet
+No stats found for batter Sal Frelick vs pitcher Crochet
+No stats found for batter Brandon Lockridge vs pitcher Crochet
+No stats found for batter Garrett Mitchell vs pitcher Crochet
+Saved: data/2026-04-07/bvp_mil_vs_crochet.csv
+https://statsapi.mlb.com/api/v1/people/805779/stats
+https://statsapi.mlb.com/api/v1/people/643446/stats
+https://statsapi.mlb.com/api/v1/people/628451/stats
+https://statsapi.mlb.com/api/v1/people/687231/stats
+https://statsapi.mlb.com/api/v1/people/666126/stats
+https://statsapi.mlb.com/api/v1/people/669127/stats
+https://statsapi.mlb.com/api/v1/people/691016/stats
+https://statsapi.mlb.com/api/v1/people/642851/stats
+https://statsapi.mlb.com/api/v1/people/671732/stats
+https://statsapi.mlb.com/api/v1/people/667670/stats
+https://statsapi.mlb.com/api/v1/people/701762/stats
+https://statsapi.mlb.com/api/v1/people/691777/stats
+https://statsapi.mlb.com/api/v1/people/672016/stats
+No stats found for batter Jacob Wilson vs pitcher Schlittler
+No stats found for batter Jeff McNeil vs pitcher Schlittler
+No stats found for batter Andy Ibanez vs pitcher Schlittler
+No stats found for batter Darell Hernaiz vs pitcher Schlittler
+No stats found for batter Carlos Cortes vs pitcher Schlittler
+No stats found for batter Shea Langeliers vs pitcher Schlittler
+No stats found for batter Tyler Soderstrom vs pitcher Schlittler
+No stats found for batter Austin Wynns vs pitcher Schlittler
+No stats found for batter Lawrence Butler vs pitcher Schlittler
+No stats found for batter Brent Rooker vs pitcher Schlittler
+No stats found for batter Nick Kurtz vs pitcher Schlittler
+No stats found for batter Max Muncy vs pitcher Schlittler
+No stats found for batter Denzel Clarke vs pitcher Schlittler
+https://statsapi.mlb.com/api/v1/people/668885/stats
+https://statsapi.mlb.com/api/v1/people/686797/stats
+https://statsapi.mlb.com/api/v1/people/807712/stats
+https://statsapi.mlb.com/api/v1/people/663616/stats
+https://statsapi.mlb.com/api/v1/people/621439/stats
+https://statsapi.mlb.com/api/v1/people/668904/stats
+https://statsapi.mlb.com/api/v1/people/680777/stats
+https://statsapi.mlb.com/api/v1/people/656484/stats
+https://statsapi.mlb.com/api/v1/people/605170/stats
+https://statsapi.mlb.com/api/v1/people/665019/stats
+https://statsapi.mlb.com/api/v1/people/605137/stats
+https://statsapi.mlb.com/api/v1/people/681546/stats
+https://statsapi.mlb.com/api/v1/people/670242/stats
+No stats found for batter Tristan Gray vs pitcher Skubal
+No stats found for batter Kody Clemens vs pitcher Skubal
+No stats found for batter Josh Bell vs pitcher Skubal
+No stats found for batter James Outman vs pitcher Skubal
+No stats found for batter Matt Wallner vs pitcher Skubal
+Saved: data/2026-04-07/bvp_min_vs_skubal.csv
+
+Done. 28 game-level CSVs written.
+Processed 30 pitcher matchups total.
+Done.
+Tue Apr  7 13:11:41 EDT 2026: GitHub update skipped for scraper data
+Tue Apr  7 13:11:44 EDT 2026: Streamlit data copied locally; GitHub update skipped
+---------------------------------------
+---------------------------------------
+---------------------------------------
