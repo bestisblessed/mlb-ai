@@ -115,15 +115,98 @@ async def main():
         if await page.get_by_text("Log In").count() > 0:
             print("Login required. Clicking 'Log In' button...")
             await page.get_by_text("Log In").click()
+            await page.wait_for_timeout(1500)
+
+            # Some flows keep us on Game-Simulations (or open login elsewhere).
+            # Force a deterministic code-login URL in the same page context.
+            if "login" not in page.url.lower():
+                print("Did not land on login page; navigating directly to code-login URL...")
+                await page.goto("https://www.ballparkpal.com/LoginWithCode.php")
+                await page.wait_for_timeout(1200)
+
+            # New BallparkPal flow sometimes lands on password login first.
+            # Force email-code path so OTP retrieval logic still applies.
+            login_with_code_selectors = [
+                "text=Log in with a code",
+                "a:has-text('Log in with a code')",
+                "a:has-text('Login with code')",
+                "text=Log In with Code"
+            ]
+            for selector in login_with_code_selectors:
+                try:
+                    link = page.locator(selector).first
+                    if await link.count() > 0:
+                        await link.click()
+                        print(f"Switched to code-login flow using selector: {selector}")
+                        await page.wait_for_timeout(1200)
+                        break
+                except Exception:
+                    continue
             
-            # Wait for login form and enter email
+            # Wait for login form and enter email (with selector fallbacks)
             print(f"Entering email address: {email_address}")
-            await page.wait_for_selector('input[placeholder="Your email..."]')
-            await page.fill('input[placeholder="Your email..."]', email_address)
+            email_input_selectors = [
+                'input[placeholder="Your email..."]',
+                'input[placeholder*="email" i]',
+                'input[type="email"]',
+                'input[name="email"]',
+                'input[id*="email" i]',
+                'input[placeholder="Enter your email address"]'
+            ]
+
+            email_input = None
+            for selector in email_input_selectors:
+                try:
+                    await page.wait_for_selector(selector, timeout=5000)
+                    email_input = page.locator(selector).first
+                    print(f"Found email input with selector: {selector}")
+                    break
+                except Exception:
+                    continue
+
+            if not email_input:
+                # Extra fallback for pages that expose only an accessible label.
+                try:
+                    labeled_input = page.get_by_label(re.compile("email", re.IGNORECASE)).first
+                    await labeled_input.wait_for(state="visible", timeout=5000)
+                    email_input = labeled_input
+                    print("Found email input with accessible label fallback")
+                except Exception:
+                    pass
+
+            if not email_input:
+                print("❌ Could not find email input field on login page")
+                return
+
+            await email_input.fill(email_address)
             
-            # Click the Continue with Email button
-            print("Clicking 'Continue with Email' button...")
-            await page.get_by_text("Continue with Email").click()
+            # Click the send-code button (supports old and new labels)
+            print("Submitting email for login code...")
+            continue_selectors = [
+                'button:has-text("Continue with Email")',
+                'button:has-text("Send Login Code")',
+                'button:has-text("Send Code")',
+                'button:has-text("Continue")',
+                '[type="submit"]',
+                'button'
+            ]
+
+            continue_clicked = False
+            for selector in continue_selectors:
+                try:
+                    button = page.locator(selector).first
+                    await button.wait_for(state="visible", timeout=3000)
+                    await button.click()
+                    print(f"Clicked email-submit button with selector: {selector}")
+                    continue_clicked = True
+                    break
+                except Exception:
+                    continue
+
+            if not continue_clicked:
+                # Fallback: submit form by pressing Enter in the email input
+                print("Continue button not found. Submitting with Enter key...")
+                await email_input.press("Enter")
             
             # Wait for navigation with timeout and fallback
             print("Waiting for navigation after clicking continue...")
