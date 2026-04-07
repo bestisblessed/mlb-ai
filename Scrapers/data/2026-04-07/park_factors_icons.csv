@@ -6,8 +6,8 @@ game_id,game,icons,icon_labels
 823235,Oracle Park9:45PHI @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind"
 822999,Tropicana Field6:40CHC @ TB,RoofClosed.png,Roof Closed
 822916,Globe Life Field8:05SEA @ TEX,RoofClosed.png,Roof Closed
-823567,Yankee Stadium7:05ATH @ NYY,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,HeavyWind.png,Under55.png,HighP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Heavy Wind,Under55.png,High Pressure"
 823727,Target Field7:40DET @ MIN,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,Under55.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,Under55.png,High Pressure"
+823567,Yankee Stadium7:05ATH @ NYY,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,HeavyWind.png,Under55.png,HighP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Heavy Wind,Under55.png,High Pressure"
 824780,Fenway Park6:45MIL @ BOS,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,Under55.png,HighP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,Under55.png,High Pressure"
 824618,Rate Field3:10BAL @ CHW,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,Under55.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,Under55.png,High Pressure"
 823648,Citi Field4:10ARI @ NYM,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,HeavyWind.png,Under55.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Heavy Wind,Under55.png,High Pressure"
