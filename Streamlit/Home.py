@@ -254,6 +254,19 @@ if date:
             # grab starter names for filtering
             starter_away = detailed_row.get("starter_away", "")  # away pitcher full name
             starter_home = detailed_row.get("starter_home", "")  # home pitcher full name
+            # fallback: read from per-game pitcher projection files if missing from simulation data
+            if not starter_away:
+                p1_path = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_1.csv")
+                if os.path.exists(p1_path):
+                    _p1 = pd.read_csv(p1_path)
+                    if not _p1.empty:
+                        starter_away = _p1.iloc[0]["Pitcher"]
+            if not starter_home:
+                p2_path = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_2.csv")
+                if os.path.exists(p2_path):
+                    _p2 = pd.read_csv(p2_path)
+                    if not _p2.empty:
+                        starter_home = _p2.iloc[0]["Pitcher"]
             # extract last names for matchup filtering
             starter_away_last = starter_away.split()[-1] if isinstance(starter_away, str) and starter_away else ""
             starter_home_last = starter_home.split()[-1] if isinstance(starter_home, str) and starter_home else ""

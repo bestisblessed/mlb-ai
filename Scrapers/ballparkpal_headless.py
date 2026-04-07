@@ -95,7 +95,7 @@ for container in containers:
         row["away_team"] = away_divs[1]
     if len(home_divs) > 1:
         row["home_team"] = home_divs[1]
-    pitchers = container.select("a[href*='Pitcher.php']")
+    pitchers = container.select("a[href*='Pitcher-Summary.php'], a[href*='Pitcher.php']")
     if len(pitchers) >= 2:
         row["starter_away"] = pitchers[0].get_text(strip=True)
         row["starter_home"] = pitchers[1].get_text(strip=True)
