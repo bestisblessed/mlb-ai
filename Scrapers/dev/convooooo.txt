@@ -1,0 +1,253 @@
+╭─── Claude Code v2.1.85 ──────────────────────────────────────────────────────╮
+│                                                    │ Tips for getting        │
+│               Welcome back Morpheus!               │ started                 │
+│                                                    │ Run /init to create a … │
+│                       ▐▛███▜▌                      │ ─────────────────────── │
+│                      ▝▜█████▛▘                     │ Recent activity         │
+│                        ▘▘ ▝▝                       │ No recent activity      │
+│       Sonnet 4.6 · Claude Pro ·                    │                         │
+│       tyler.durette@gmail.com's Organization       │                         │
+│               ~/Code/mlb-ai/Scrapers               │                         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+! cat .env                                                                      
+  ⎿  EMAIL_ADDRESS=tylersegn@gmail.com
+     EMAIL_PASSWORD=czemgxzmvypokkoo
+     # EMAIL_ADDRESS=tyler.durette@gmail.com
+     # EMAIL_PASSWORD=ntyzayanzisjnjyl
+
+     #THEODDSAPI_KEY=1c4b51f7b3133d99d94dbcb793236565
+     #THEODDSAPI_KEY=8aabcc029890b3fd7f740a705758c2d8
+
+     #durrgames
+     THEODDSAPI_KEY=8aabcc029890b3fd7f740a705758c2d8
+
+     #tylersegn
+     #THEODDSAPI_KEY=dac2f8968b408557be6ccd32a4a36192
+
+❯ test to see how many api tokens i have left on both      #durrgames           
+     THEODDSAPI_KEY=8aabcc029890b3fd7f740a705758c2d8                            
+                                                                                
+     #tylersegn                                                                 
+     #THEODDSAPI_KEY=dac2f8968b408557be6ccd32a4a36192                           
+                                                                                
+
+⏺ Fetch(https://api.the-odds-api.com/v4/sports/?apiKey=8aabcc029890b3fd7f740a705
+       758c2d8)
+  ⎿  Received 12.8KB (200 OK)
+
+⏺ Fetch(https://api.the-odds-api.com/v4/sports/?apiKey=dac2f8968b408557be6ccd32a
+       4a36192)
+  ⎿  Received 12.8KB (200 OK)
+
+⏺ WebFetch doesn't expose response headers. Let me use curl instead.
+
+⏺ Bash(curl -s -I "https://api.the-odds-api.com/v4/sports/?apiKey=8aabcc029890b3
+      fd7f740a705758c2d8" 2>&1 | grep -i "x-requests" && echo "---durrgames
+      done---" && curl…)
+  ⎿  x-requests-used: 0
+     x-requests-remaining: 500
+     x-requests-last: 0
+     … +4 lines (ctrl+o to expand)
+
+⏺ Both keys are wide open:
+
+  ┌───────────────────────┬──────┬───────────┐
+  │        Account        │ Used │ Remaining │
+  ├───────────────────────┼──────┼───────────┤
+  │ durrgames (8aabcc...) │ 0    │ 500       │
+  ├───────────────────────┼──────┼───────────┤
+  │ tylersegn (dac2f8...) │ 0    │ 500       │
+  └───────────────────────┴──────┴───────────┘
+
+  1000 total requests available across both keys. The /sports endpoint costs 0
+  requests per call (it's free), so those zeros make sense — you haven't burned
+  any paid calls yet this billing cycle.
+
+❯ @scraper.log Did everything get through successfully last run from            
+@run_scraper_local.sh? Check all the different kind of data files saved/per     
+category and verify everything is there, and if not what is missing?            
+  ⎿  Read run_scraper_local.sh (104 lines)
+
+  Searched for 5 patterns, read 3 files (ctrl+o to expand)
+
+⏺ Bash(sed -n '43,310p' /Users/td/Code/mlb-ai/Scrapers/scraper.log)
+  ⎿  Downloaded HTML to data/2026-04-07/Pitchers.html
+                Pitcher       2K    3K    4K  ...    7K      8K      9K
+      10K
+     … +239 lines (ctrl+o to expand)
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Everything is clear now. Here's the full rundown:
+
+  ---
+  Last Run Status — 2026-04-07
+
+  All good
+
+  ┌──────────────┬───────────────────────────────────────────┬──────────────┐
+  │   Category   │                   Files                   │    Notes     │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ BallparkPal  │ —                                         │ Already auth │
+  │ session      │                                           │ enticated    │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Game         │ game_simulations.csv,                     │              │
+  │ simulations  │ game_simulations_per_game_tables.csv, +   │ 15 games     │
+  │              │ 15 game ID folders                        │              │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Matchups     │ matchups.html, matchups.csv               │              │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Park factors │ park_factors.html, park_factors_icons.csv │              │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ BallparkPal  │                                           │ 30 pitchers, │
+  │ pitcher alt  │ pitcher_alt_strikeouts.csv                │  31 rows     │
+  │ lines        │                                           │              │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Pitchers.htm │ Pitchers.html                             │              │
+  │ l            │                                           │              │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Bovada game  │                                           │ 16 games +   │
+  │ links        │ bovada_game_links.csv                     │ 15 debug     │
+  │              │                                           │ HTML files   │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Team game    │ data/2026/team_gamelogs_2026_statsapi.csv │ 5,806        │
+  │ logs         │                                           │ records      │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Pitcher game │ data/2026/pitchers_gamelogs_2026_statsapi │ 1,253 logs,  │
+  │  logs        │ .csv                                      │ 389 details  │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Batter game  │ data/2026/batters_gamelogs_2026_statsapi. │ 3,077 logs,  │
+  │ logs         │ csv                                       │ 390 details  │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │              │ data/2026/batters_season_2026_stats.csv,  │ 387 batters, │
+  │ Season stats │ pitchers_season_2026_stats.csv            │  380         │
+  │              │                                           │ pitchers     │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ BvP matchup  │                                           │ 30 matchups  │
+  │ CSVs         │ 28 × bvp_*.csv                            │ processed,   │
+  │              │                                           │ 28 saved     │
+  └──────────────┴───────────────────────────────────────────┴──────────────┘
+
+  ---
+  One failure: Bovada alt strikeout lines (Playwright)
+
+  The scraper found the "Alternate Strikeouts" section on every game page and
+  identified every pitcher, but both the primary and fallback regex patterns 
+  returned 0 lines for every single pitcher across all 16 games. Final result: 0
+   pitchers, 0 lines — no data collected, nothing saved from Bovada.
+
+  This is a Bovada page structure/regex issue — the "Alternate Strikeouts"
+  section is there but the scraper can't parse the odds out of it.
+
+  ---
+  Minor: 2 BvP matchups didn't produce a CSV
+
+  30 matchups were processed but only 28 CSVs saved. The missing two are likely
+  the ones where every batter had "No stats found" (e.g. Oakland vs Schlittler
+  where all 13 batters had zero career history vs him).
+
+✻ Cogitated for 1m 22s
+
+❯ Can you read through the relevant code and make a plan to efficiently fix     
+only the broken parts, and rescrape just those sections to test and verify      
+them? Compare to the last few games from the 2025 season if you need to know    
+how they are supposed to look, I know all of those are correct like this day    
+for example is good: td@Mac ~/Code/mlb-ai/Streamlit % ls                        
+../Scrapers/data/2025-09-10/                                                    
+776373/                               bvp_hou_vs_berrios.csv                    
+776374/                               bvp_kc_vs_allen.csv                       
+776375/                               bvp_laa_vs_bradley.csv                    
+776376/                               bvp_lad_vs_freeland.csv                   
+776377/                               bvp_mil_vs_kelly.csv                      
+776378/                               bvp_min_vs_soriano.csv                    
+776379/                               bvp_nym_vs_sanchez.csv                    
+776380/                               bvp_nyy_vs_flaherty.csv                   
+776381/                               bvp_phi_vs_holmes.csv                     
+776382/                               bvp_pit_vs_wells.csv                      
+776383/                               bvp_sd_vs_abbott.csv                      
+776384/                               bvp_sf_vs_rodriguez.csv                   
+776385/                               bvp_stl_vs_gilbert.csv                    
+776386/                               bvp_tb_vs_alexander.csv                   
+776387/                               bvp_tex_vs_peralta.csv                    
+bovada_game_links.csv                 bvp_tor_vs_alexander.csv                  
+bvp_ari_vs_seymour.csv                bvp_was_vs_perez.csv                      
+bvp_atl_vs_taillon.csv                game_simulations_per_game_tables.csv      
+bvp_chc_vs_sale.csv                   game_simulations.csv                      
+bvp_chw_vs_jax.csv                    matchups.csv                              
+bvp_cin_vs_pivetta.csv                park_factors_icons.csv                    
+bvp_cle_vs_bowlan.csv                 park_factors.html                         
+bvp_col_vs_snell.csv                  pitcher_alt_strikeouts.csv                
+bvp_det_vs_rodon.csv                  Pitchers.html                             
+td@Mac ~/Code/mlb-ai/Streamlit %                                                
+                                                                                
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Good — pitcher_alt_strikeouts.csv is the BallparkPal file (that's fine). The
+  broken piece is the Bovada playwright scraper, which should produce
+  bovada_all_pitcher_props_{date}.csv. Let me look at the actual HTML Bovada is
+  returning to understand why the regex fails.
+
+  Searched for 5 patterns, read 3 files (ctrl+o to expand)
+⏺ The debug HTMLs are from an older compiled version. Let me look at them to
+  understand the current Bovada HTML structure:
+
+  Searched for 4 patterns (ctrl+o to expand)
+
+⏺ Bash(python3 -c "
+      import re…)
+  ⎿  bet-price samples (first 10):
+
+     outcomes samples (first 10):
+
+⏺ Bash(python3 -c "
+      import re…)
+  ⎿  bet-price samples (first 5):
+     '<span class="bet-price"> (-110) <!----></span>'
+     '<span class="bet-price"> (-110) <!----></span>'
+     … +5 lines (ctrl+o to expand)
+
+⏺ Now I can see the issue. The bet-price spans contain <!----> before </span>,
+  and some negative odds use (-110) parentheses format. The current regex
+  \s*([+-]\d+)\s*</span> fails because of the <!----> comment node.
+
+  But I also need to see what the Pitcher Props tab content looks like — the
+  debug HTML is from before the tab click. Let me create a small diagnostic
+  script to dump that HTML:
+
+⏺ Write(bovada_debug_pitcher_tab.py)
+  ⎿  Wrote 72 lines to bovada_debug_pitcher_tab.py
+       1 """
+       2 Diagnostic: Navigate to one Bovada game, click Pitcher Props tab
+         ,
+       3 save the full page HTML so we can inspect the actual structure.
+       4 """
+       5 import os
+       6 import time
+       7 from datetime import datetime
+       8 from playwright.sync_api import sync_playwright
+       9 
+      10 today = datetime.now().strftime("%Y-%m-%d")
+     … +62 lines (ctrl+o to expand)
+
+⏺ Bash(/Users/td/.pyenv/shims/python bovada_debug_pitcher_tab.py)
+  ⎿  Testing URL: /sports/baseball/mlb/athletics-new-york-yankees-202604071
+     905
+     Saved pre-tab HTML (457561 bytes)
+     … +5 lines (ctrl+o to expand)
+  ⎿  (timeout 1m 30s)
+
+⏺ Bash(python3 -c "
+      import re…)
+  ⎿  === 2000 chars around first Alternate Strikeouts ===
+     'nder-c445="" class="title-container"><h3 _ngcontent-server-side-rende
+     r-c445="" class="market-name"> Alternate Strikeouts - Aaron Civale (AT
+     … +27 lines (ctrl+o to expand)
+
+⏺ Now I can see the exact structure. Let me test the current regex against the
+  actual HTML:
+
+⏺ Bash(python3 -c "
+      import re…)
+  ⎿  Waiting…
