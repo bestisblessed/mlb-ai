@@ -97,9 +97,27 @@ sim = pd.read_csv(sim_path)
 games = sim.apply(lambda r: f"{r['time']}pm - {r['away_team']} @ {r['home_team']}", axis=1).tolist()
 game_idx = st.sidebar.selectbox("Select Game", range(len(games)), format_func=lambda i: games[i])
 selected_game = sim.iloc[game_idx]
-# extract only last names to match matchups.csv format
-away_starter = selected_game["starter_away"].split()[-1]
-home_starter = selected_game["starter_home"].split()[-1]
+game_id = str(int(selected_game["game_id"])) if "game_id" in selected_game else ""
+
+def _starter_last_name(team_num: int) -> str:
+    pitcher_path = os.path.join(DATA_DIR, selected_date, game_id, f"proj_box_pitchers_{team_num}.csv")
+    if not os.path.exists(pitcher_path):
+        return ""
+    try:
+        p_df = pd.read_csv(pitcher_path)
+        if p_df.empty or "Pitcher" not in p_df.columns:
+            return ""
+        return str(p_df.iloc[0]["Pitcher"]).split()[-1].replace(".", "")
+    except Exception:
+        return ""
+
+# Prefer starters from simulation table; fallback to pitcher projection files.
+away_starter = str(selected_game.get("starter_away", "")).split()[-1] if "starter_away" in sim.columns else ""
+home_starter = str(selected_game.get("starter_home", "")).split()[-1] if "starter_home" in sim.columns else ""
+if not away_starter:
+    away_starter = _starter_last_name(1)
+if not home_starter:
+    home_starter = _starter_last_name(2)
 
 matchup_csv = os.path.join(DATA_DIR, selected_date, "matchups.csv")
 if not os.path.exists(matchup_csv):
@@ -113,21 +131,38 @@ pitcher_q = col2.text_input("Pitcher name contains", "")
 st.write(" ")
 
 records = []
-with open(matchup_csv, "r", encoding="utf-8") as f:
-    next(f)  # skip header
-    for line in f:
-        rec = _parse_matchup_row(line)
-        if not rec:
-            continue
-        # only today's starters
+raw_matchups = pd.read_csv(matchup_csv)
+
+if {"Team", "Batter", "Pitcher", "RC", "HR", "XB", "1B", "BB", "K"}.issubset(raw_matchups.columns):
+    parsed = raw_matchups.rename(columns={"vs": "AtBats"}).copy()
+    parsed["Pitcher"] = parsed["Pitcher"].astype(str).str.strip()
+    parsed["Batter"] = parsed["Batter"].astype(str).str.strip()
+    parsed["AtBats"] = parsed.get("AtBats", "")
+    for _, rec in parsed.iterrows():
         if rec["Pitcher"] not in (away_starter, home_starter):
             continue
-        # apply name filters
-        # if batter_q and batter_q.lower() not in rec["Batter"].lower():
-        #     continue
-        # if pitcher_q and pitcher_q.lower() not in rec["Pitcher"].lower():
-        #     continue
-        records.append(rec)
+        records.append({
+            "Side": "",
+            "Batter": rec["Batter"],
+            "Pitcher": rec["Pitcher"],
+            "AtBats": rec.get("AtBats", ""),
+            "RC": rec.get("RC", ""),
+            "HR": rec.get("HR", ""),
+            "XB": rec.get("XB", ""),
+            "1B": rec.get("1B", ""),
+            "BB": rec.get("BB", ""),
+            "K": rec.get("K", ""),
+        })
+else:
+    with open(matchup_csv, "r", encoding="utf-8") as f:
+        next(f)  # skip header
+        for line in f:
+            rec = _parse_matchup_row(line)
+            if not rec:
+                continue
+            if rec["Pitcher"] not in (away_starter, home_starter):
+                continue
+            records.append(rec)
 
 if not records:
     st.warning("No matchups found for the given criteria.")
