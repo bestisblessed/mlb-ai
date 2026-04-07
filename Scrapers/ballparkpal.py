@@ -8,6 +8,7 @@ from datetime import datetime
 import glob
 from io import StringIO
 from urllib.parse import urljoin, urlparse, parse_qs
+import re
 
 # Create data directories
 today = datetime.now().strftime('%Y-%m-%d')
@@ -141,7 +142,9 @@ async def main():
         with open(f"data/{today}/game_simulations.csv") as f:
             for row in csv.DictReader(f):
                 gid = row["game_id"]
-                url = f"https://www.ballparkpal.com/Game.php?GamePk={gid}"
+                # 2026 site update moved batter projection tables to the
+                # projected-box-score route.
+                url = f"https://www.ballparkpal.com/Game-Projected-Box-Score.php?GamePk={gid}"
                 await page.goto(url)
                 await page.wait_for_timeout(1000)
                 html = await page.content()
@@ -161,6 +164,16 @@ def find_p(soup, substring):
     return soup.find('p', string=lambda s: s and substring in s)
 game_files = glob.glob(os.path.join(RAW_DIR, '[0-9]*.html'))
 print(f"Found {len(game_files)} game files to process")
+def _extract_player_name(anchor):
+    """Return a stable display name from BallparkPal player links."""
+    if not anchor:
+        return ""
+    img = anchor.find("img")
+    if img and img.get("alt"):
+        return img.get("alt").strip()
+    text = " ".join(anchor.stripped_strings).strip()
+    return re.sub(r"\s+[A-Z]\.\s+[A-Za-z'.-]+$", "", text).strip()
+
 for html_path in game_files:
     game_id = os.path.splitext(os.path.basename(html_path))[0]
     output_dir = os.path.join(OUTPUT_BASE, game_id)
@@ -174,8 +187,15 @@ for html_path in game_files:
             df = pd.read_html(StringIO(str(tbl)))[0]
             df.to_csv(os.path.join(output_dir, f"wins_by_{team_key}.csv"), index=False)
     box_tables = soup.find_all('table', class_='boxScoreTable')
-    for idx, tbl in enumerate(box_tables[:4], start=1):
+    pitcher_count = 0
+    batter_count = 0
+    for idx, tbl in enumerate(box_tables, start=1):
         headers = [th.get_text(strip=True) for th in tbl.find_all('th')]
+        if not headers:
+            continue
+        first_header = headers[0].strip().lower()
+        if first_header not in ("pitcher", "batter"):
+            continue
         headers.append('Player URL')
         headers.append('Player ID')
         table_data = []
@@ -210,10 +230,12 @@ for html_path in game_files:
                 print(f"Row Data ({len(row_data)}): {row_data}")
         if table_data:
             df = pd.DataFrame(table_data)
-            if idx <= 2:
-                name = f"proj_box_pitchers_{idx}.csv"
+            if first_header == "pitcher":
+                pitcher_count += 1
+                name = f"proj_box_pitchers_{pitcher_count}.csv"
             else:
-                name = f"proj_box_batters_{idx-2}.csv"
+                batter_count += 1
+                name = f"proj_box_batters_{batter_count}.csv"
             df.to_csv(os.path.join(output_dir, name), index=False)
         else:
              print(f"Info: No data extracted from table {idx} for game {game_id}.")
@@ -262,7 +284,10 @@ async def main():
         )
         page = await context.new_page()
         await page.goto('https://www.ballparkpal.com/Matchups.php')
-        await page.wait_for_timeout(1000)
+        try:
+            await page.wait_for_selector("#table_id tbody tr", timeout=10000)
+        except Exception:
+            await page.wait_for_timeout(4000)
         content = await page.content()
         with open(f'data/{today}/matchups.html', 'w', encoding='utf-8') as f:
             f.write(content)
@@ -297,13 +322,13 @@ with open(f"{data_dir}/matchups.csv", "w", newline="", encoding="utf-8") as csvf
             continue  
         team = cells[2].get_text(strip=True)
         batter_link = cells[3].find("a")
-        batter = batter_link.get_text(strip=True) if batter_link else ""
+        batter = _extract_player_name(batter_link)
         batter_id = ""
         if batter_link and "PlayerId=" in batter_link["href"]:
             batter_id = batter_link["href"].split("PlayerId=")[1]
         vs = cells[4].get_text(strip=True)
         pitcher_link = cells[5].find("a")
-        pitcher = pitcher_link.get_text(strip=True) if pitcher_link else ""
+        pitcher = _extract_player_name(pitcher_link)
         pitcher_id = ""
         if pitcher_link and "PlayerId=" in pitcher_link["href"]:
             pitcher_id = pitcher_link["href"].split("PlayerId=")[1]
