@@ -64,7 +64,7 @@ with sync_playwright() as p:
                         "team": team,
                         "lines": []
                     }
-                    line_odds_pairs = re.findall(r'<span class="outcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">\s*([+-]\d+)\s*</span>', section, re.DOTALL)
+                    line_odds_pairs = re.findall(r'<span class="outcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">\s*([+-]\d+)\s*<!---->\s*</span>', section, re.DOTALL)
                     for line, odds in line_odds_pairs:
                         line = line.strip()
                         odds_value = odds.strip()

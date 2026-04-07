@@ -56,7 +56,7 @@ with sync_playwright() as p:
                 print("Could not find or click Pitcher Props tab, skipping this game.")
                 continue
             print("Waiting for content to load after tab click...")
-            time.sleep(3) 
+            time.sleep(6)
             content = page.content()
             if "Alternate Strikeouts" in content:
                 print("Found 'Alternate Strikeouts' in page content.")
@@ -74,7 +74,7 @@ with sync_playwright() as p:
                         "team": team
                     }
                     lines_collected_for_this_pitcher = 0
-                    primary_lines = re.findall(r'<span class="outcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">\s*([+-]\d+)\s*</span>', section_html_content, re.DOTALL)
+                    primary_lines = re.findall(r'<span class="outcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">\s*([+-]\d+)\s*<!---->\s*</span>', section_html_content, re.DOTALL)
                     if primary_lines:
                         print(f"  Lines from primary regex for {pitcher_name}:")
                         for line_str, odds_str in primary_lines:
@@ -85,7 +85,7 @@ with sync_playwright() as p:
                             lines_collected_for_this_pitcher += 1
                     if not primary_lines:
                         print(f"  Primary regex found no lines in identified section for {pitcher_name}. Trying fallback pattern on section.")
-                        alt_pattern = r'(\d+\+\s*Strikeouts)[^<>]*?</span>[^<>]*?<span[^<>]*?>([+-]\d+)'
+                        alt_pattern = r'<span class="outcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">\s*([+-]\d+)\s*<!---->\s*</span>'
                         fallback_lines_in_section = re.findall(alt_pattern, section_html_content)
                         if fallback_lines_in_section:
                             print(f"  Lines from fallback regex (on section) for {pitcher_name}:")
