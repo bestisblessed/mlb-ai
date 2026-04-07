@@ -55,7 +55,7 @@ if date:
                     hr_leaders.index = hr_leaders.index + 1
                     numeric_cols = hr_leaders.select_dtypes(include=[np.number]).columns
                     hr_leaders[numeric_cols] = hr_leaders[numeric_cols].round(2)
-                    st.dataframe(hr_leaders, height=600, use_container_width=True)
+                    st.dataframe(hr_leaders, height=600, width="stretch")
                 with col2:
                     st.caption("Hits Leaders")
                     hits_leaders = batters_df.nlargest(30, 'H')[['Batter', 'H', '1B', '2B', '3B', 'Team']]
@@ -63,7 +63,7 @@ if date:
                     hits_leaders.index = hits_leaders.index + 1
                     numeric_cols = hits_leaders.select_dtypes(include=[np.number]).columns
                     hits_leaders[numeric_cols] = hits_leaders[numeric_cols].round(2)
-                    st.dataframe(hits_leaders, height=600, use_container_width=True)
+                    st.dataframe(hits_leaders, height=600, width="stretch")
                 with col3:
                     st.caption("RBI Leaders")
                     rbi_leaders = batters_df.nlargest(30, 'RBI')[['Batter', 'RBI', 'Team']]
@@ -71,7 +71,7 @@ if date:
                     rbi_leaders.index = rbi_leaders.index + 1
                     numeric_cols = rbi_leaders.select_dtypes(include=[np.number]).columns
                     rbi_leaders[numeric_cols] = rbi_leaders[numeric_cols].round(2)
-                    st.dataframe(rbi_leaders, height=600, use_container_width=True)
+                    st.dataframe(rbi_leaders, height=600, width="stretch")
             else:
                 st.info("No batter projections available for this date")
         with leader_tabs[1]:
@@ -123,7 +123,7 @@ if date:
                 with col3:
                     st.caption("I'm coming...")
                     img_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "jiri.jpg")
-                    st.image(img_path, use_container_width=True)
+                    st.image(img_path, width="stretch")
             else:
                 st.info("No pitcher projections available for this date")
     else:

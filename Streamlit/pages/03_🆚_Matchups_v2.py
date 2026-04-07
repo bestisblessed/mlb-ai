@@ -143,10 +143,10 @@ def card_bar(df: pd.DataFrame, metric: str, title: str):
 
 def _card(title: str, fig: go.Figure, table: pd.DataFrame):
     st.markdown(f"<h3>{title}</h3>", unsafe_allow_html=True)
-    st.plotly_chart(fig, use_container_width=True, key=title)  # Added unique key for plotly_chart
+    st.plotly_chart(fig, width="stretch", key=title)  # Added unique key for plotly_chart
     num_cols = table.select_dtypes("number").columns
     fmt = {c: "{:.3f}" for c in num_cols}
-    st.dataframe(table.style.format(fmt), use_container_width=True, hide_index=True)
+    st.dataframe(table.style.format(fmt), width="stretch", hide_index=True)
 
 def scatter_hr_ops():
     hr = edges["HR100"].sort_values("Diff", ascending=False).head(10)

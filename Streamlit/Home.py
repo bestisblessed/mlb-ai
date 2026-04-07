@@ -38,6 +38,62 @@ DATA_DIR = os.path.join(
 )
 if not os.path.exists(DATA_DIR):
     DATA_DIR = "data"
+
+
+def _clean_player_name(value) -> str:
+    if pd.isna(value):
+        return ""
+    return str(value).strip()
+
+
+def _load_pitcher_details(year: int) -> pd.DataFrame:
+    details_path = os.path.join(DATA_DIR, str(year), f"pitchers_details_{year}_statsapi.csv")
+    if not os.path.exists(details_path):
+        return pd.DataFrame()
+    return pd.read_csv(details_path, low_memory=False)
+
+
+def _load_projected_starter(date_str: str, game_id: str, team_num: int, year: int) -> str:
+    pitcher_path = os.path.join(DATA_DIR, date_str, game_id, f"proj_box_pitchers_{team_num}.csv")
+    if not os.path.exists(pitcher_path):
+        return ""
+
+    pitcher_df = pd.read_csv(pitcher_path)
+    if pitcher_df.empty or "Pitcher" not in pitcher_df.columns:
+        return ""
+
+    if "Player ID" in pitcher_df.columns:
+        pitcher_id = pd.to_numeric(pitcher_df.iloc[0]["Player ID"], errors="coerce")
+        if pd.notna(pitcher_id):
+            details_df = _load_pitcher_details(year)
+            if not details_df.empty and {"player_id", "fullName"}.issubset(details_df.columns):
+                match = details_df[details_df["player_id"] == int(pitcher_id)]
+                if not match.empty:
+                    return _clean_player_name(match.iloc[0]["fullName"])
+
+    return _clean_player_name(pitcher_df.iloc[0]["Pitcher"])
+
+
+def _starter_last_name(starter_name: str) -> str:
+    return starter_name.split()[-1] if starter_name else ""
+
+
+def resolve_starting_pitchers(detailed_row, date_str: str, game_id: str):
+    starter_away = _clean_player_name(detailed_row.get("starter_away", ""))
+    starter_home = _clean_player_name(detailed_row.get("starter_home", ""))
+    year = int(date_str.split("-", 1)[0])
+
+    if not starter_away:
+        starter_away = _load_projected_starter(date_str, game_id, 1, year)
+    if not starter_home:
+        starter_home = _load_projected_starter(date_str, game_id, 2, year)
+
+    return (
+        starter_away,
+        starter_home,
+        _starter_last_name(starter_away),
+        _starter_last_name(starter_home),
+    )
     
 st.set_page_config(page_title="MLB AI",
                    page_icon="⚾", layout="wide")
@@ -251,25 +307,11 @@ if date:
             matchups_path = os.path.join(DATA_DIR, date, "matchups.csv")
             if os.path.exists(matchups_path):
                 matchups_df = pd.read_csv(matchups_path)
-            # grab starter names for filtering
-            starter_away = detailed_row.get("starter_away", "")  # away pitcher full name
-            starter_home = detailed_row.get("starter_home", "")  # home pitcher full name
-            # fallback: read from per-game pitcher projection files if missing from simulation data
-            if not starter_away:
-                p1_path = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_1.csv")
-                if os.path.exists(p1_path):
-                    _p1 = pd.read_csv(p1_path)
-                    if not _p1.empty:
-                        starter_away = _p1.iloc[0]["Pitcher"]
-            if not starter_home:
-                p2_path = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_2.csv")
-                if os.path.exists(p2_path):
-                    _p2 = pd.read_csv(p2_path)
-                    if not _p2.empty:
-                        starter_home = _p2.iloc[0]["Pitcher"]
-            # extract last names for matchup filtering
-            starter_away_last = starter_away.split()[-1] if isinstance(starter_away, str) and starter_away else ""
-            starter_home_last = starter_home.split()[-1] if isinstance(starter_home, str) and starter_home else ""
+            starter_away, starter_home, starter_away_last, starter_home_last = resolve_starting_pitchers(
+                detailed_row,
+                date,
+                game_id,
+            )
 
     else:
         st.error(f"Simulation data not found for {date}")
@@ -306,7 +348,7 @@ if date:
                             width=9  # Make the link column very small,
                         )
                     },
-                    use_container_width=True
+                    width='stretch'
                 )
 
                 for _, prow in pdf.iterrows():
@@ -323,7 +365,7 @@ if date:
                                 logs.sort_values('date', ascending=False)
                                     .head(10)[disp_cols],
                                 hide_index=True,
-                                use_container_width=True
+                                width='stretch'
                             )
                         else:
                             st.write("No game logs found.")
@@ -356,7 +398,7 @@ if date:
                             width=9  # Make the link column very small,
                         )
                     },
-                    use_container_width=True
+                    width='stretch'
                 )
                 st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
 
@@ -375,7 +417,7 @@ if date:
                 st.dataframe(
                     vs_disp,
                     hide_index=True,
-                    use_container_width=True
+                    width='stretch'
                 )
                 #st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
 
@@ -408,7 +450,7 @@ if date:
                                 st.dataframe(
                                     bvp_display,
                                     hide_index=True,
-                                    use_container_width=True
+                                    width='stretch'
                                 )
                                 st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
                             else:
@@ -461,7 +503,7 @@ if date:
                             width=9  # Make the link column very small,
                         )
                     },
-                    use_container_width=True
+                    width='stretch'
                 )
 
                 for _, prow in pdf.iterrows():
@@ -478,7 +520,7 @@ if date:
                                 logs.sort_values('date', ascending=False)
                                     .head(10)[disp_cols],
                                 hide_index=True,
-                                use_container_width=True
+                                width='stretch'
                             )
                         else:
                             st.write("No game logs found.")
@@ -511,7 +553,7 @@ if date:
                             width=9  # Make the link column very small,
                         )
                     },
-                    use_container_width=True
+                    width='stretch'
                 )
                 st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
 
@@ -527,7 +569,7 @@ if date:
                 vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
                 vs_disp[num_cols] = vs_disp[num_cols].round(2)
                 vs_disp = vs_disp.rename(columns={"Team": "L/R"})
-                st.dataframe(vs_disp, hide_index=True, use_container_width=True)
+                st.dataframe(vs_disp, hide_index=True, width='stretch')
 
         # -------------------- Career BvP vs Away Starter (moved here) --------------------
         home_abbr = TEAM_ABBR.get(home_team.lower(), home_team.lower())
@@ -555,7 +597,7 @@ if date:
                                     bvp_display['year'] = pd.to_numeric(bvp_display['year'], errors='coerce')
                                     bvp_display = bvp_display.sort_values(by='year', ascending=False)
                                     bvp_display['year'] = bvp_display['year'].astype('Int64').astype(str)
-                                st.dataframe(bvp_display, hide_index=True, use_container_width=True)
+                                st.dataframe(bvp_display, hide_index=True, width='stretch')
                             else:
                                 st.write("No career BvP data for this batter vs pitcher.")
                         else:

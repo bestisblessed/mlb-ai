@@ -95,7 +95,7 @@ if player:
                     f"**Runs:** {int(totals['runs'])} | **HR:** {int(totals['homeRuns'])} | "
                     f"**RBI:** {int(totals['rbi'])} | **SB:** {int(totals['stolenBases'])}"
                 )
-            st.dataframe(logs_df.reset_index(drop=True), use_container_width=True)
+            st.dataframe(logs_df.reset_index(drop=True), width="stretch")
 
         numeric_cols = [
             "ExitVelocity",
@@ -112,13 +112,13 @@ if player:
         ]
         display_df = player_stats[["Season"] + [c for c in numeric_cols if c in player_stats.columns]].copy()
         display_df = display_df.sort_values("Season")
-        st.dataframe(display_df.reset_index(drop=True), use_container_width=True)
+        st.dataframe(display_df.reset_index(drop=True), width="stretch")
 
         if "ExitVelocity" in display_df.columns:
             fig = px.line(display_df, x="Season", y="ExitVelocity", markers=True,
                           title="Average Exit Velocity by Season")
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
         if "Barrel %" in display_df.columns:
             fig2 = px.bar(display_df, x="Season", y="Barrel %",
                           title="Barrel Rate by Season")
-            st.plotly_chart(fig2, use_container_width=True)
+            st.plotly_chart(fig2, width="stretch")

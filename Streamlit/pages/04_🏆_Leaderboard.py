@@ -51,4 +51,4 @@ leaders["Player"] = leaders["Player Slug"].apply(lambda s: " ".join(p.title() fo
 
 st.subheader(f"Top 50 {metric} - {chosen_season}")  # Update subheader
 
-st.dataframe(leaders.drop(columns=["Player Slug"]).reset_index(drop=True), height=730, use_container_width=True)  # Increase height to display more rows without scrolling
+st.dataframe(leaders.drop(columns=["Player Slug"]).reset_index(drop=True), height=730, width="stretch")  # Increase height to display more rows without scrolling
