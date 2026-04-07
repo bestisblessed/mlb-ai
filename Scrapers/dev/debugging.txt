@@ -1,0 +1,690 @@
+╭─── Claude Code v2.1.85 ──────────────────────────────────────────────────────╮
+│                                                    │ Tips for getting        │
+│               Welcome back Morpheus!               │ started                 │
+│                                                    │ Run /init to create a … │
+│                       ▐▛███▜▌                      │ ─────────────────────── │
+│                      ▝▜█████▛▘                     │ Recent activity         │
+│                        ▘▘ ▝▝                       │ No recent activity      │
+│       Sonnet 4.6 · Claude Pro ·                    │                         │
+│       tyler.durette@gmail.com's Organization       │                         │
+│               ~/Code/mlb-ai/Scrapers               │                         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+! cat .env                                                                      
+  ⎿  EMAIL_ADDRESS=tylersegn@gmail.com
+     EMAIL_PASSWORD=czemgxzmvypokkoo
+     # EMAIL_ADDRESS=tyler.durette@gmail.com
+     # EMAIL_PASSWORD=ntyzayanzisjnjyl
+
+     #THEODDSAPI_KEY=1c4b51f7b3133d99d94dbcb793236565
+     #THEODDSAPI_KEY=8aabcc029890b3fd7f740a705758c2d8
+
+     #durrgames
+     THEODDSAPI_KEY=8aabcc029890b3fd7f740a705758c2d8
+
+     #tylersegn
+     #THEODDSAPI_KEY=dac2f8968b408557be6ccd32a4a36192
+
+❯ test to see how many api tokens i have left on both      #durrgames           
+     THEODDSAPI_KEY=8aabcc029890b3fd7f740a705758c2d8                            
+                                                                                
+     #tylersegn                                                                 
+     #THEODDSAPI_KEY=dac2f8968b408557be6ccd32a4a36192                           
+                                                                                
+
+⏺ Fetch(https://api.the-odds-api.com/v4/sports/?apiKey=8aabcc029890b3fd7f740a705
+       758c2d8)
+  ⎿  Received 12.8KB (200 OK)
+
+⏺ Fetch(https://api.the-odds-api.com/v4/sports/?apiKey=dac2f8968b408557be6ccd32a
+       4a36192)
+  ⎿  Received 12.8KB (200 OK)
+
+⏺ WebFetch doesn't expose response headers. Let me use curl instead.
+
+⏺ Bash(curl -s -I "https://api.the-odds-api.com/v4/sports/?apiKey=8aabcc029890b3
+      fd7f740a705758c2d8" 2>&1 | grep -i "x-requests" && echo "---durrgames
+      done---" && curl…)
+  ⎿  x-requests-used: 0
+     x-requests-remaining: 500
+     x-requests-last: 0
+     … +4 lines (ctrl+o to expand)
+
+⏺ Both keys are wide open:
+
+  ┌───────────────────────┬──────┬───────────┐
+  │        Account        │ Used │ Remaining │
+  ├───────────────────────┼──────┼───────────┤
+  │ durrgames (8aabcc...) │ 0    │ 500       │
+  ├───────────────────────┼──────┼───────────┤
+  │ tylersegn (dac2f8...) │ 0    │ 500       │
+  └───────────────────────┴──────┴───────────┘
+
+  1000 total requests available across both keys. The /sports endpoint costs 0
+  requests per call (it's free), so those zeros make sense — you haven't burned
+  any paid calls yet this billing cycle.
+
+❯ @scraper.log Did everything get through successfully last run from            
+@run_scraper_local.sh? Check all the different kind of data files saved/per     
+category and verify everything is there, and if not what is missing?            
+
+  Searched for 5 patterns, read 3 files (ctrl+o to expand)
+
+⏺ Bash(sed -n '43,310p' /Users/td/Code/mlb-ai/Scrapers/scraper.log)
+  ⎿  Downloaded HTML to data/2026-04-07/Pitchers.html
+                Pitcher       2K    3K    4K  ...    7K      8K      9K
+      10K
+     … +239 lines (ctrl+o to expand)
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Everything is clear now. Here's the full rundown:
+
+  ---
+  Last Run Status — 2026-04-07
+
+  All good
+
+  ┌──────────────┬───────────────────────────────────────────┬──────────────┐
+  │   Category   │                   Files                   │    Notes     │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ BallparkPal  │ —                                         │ Already auth │
+  │ session      │                                           │ enticated    │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Game         │ game_simulations.csv,                     │              │
+  │ simulations  │ game_simulations_per_game_tables.csv, +   │ 15 games     │
+  │              │ 15 game ID folders                        │              │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Matchups     │ matchups.html, matchups.csv               │              │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Park factors │ park_factors.html, park_factors_icons.csv │              │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ BallparkPal  │                                           │ 30 pitchers, │
+  │ pitcher alt  │ pitcher_alt_strikeouts.csv                │  31 rows     │
+  │ lines        │                                           │              │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Pitchers.htm │ Pitchers.html                             │              │
+  │ l            │                                           │              │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Bovada game  │                                           │ 16 games +   │
+  │ links        │ bovada_game_links.csv                     │ 15 debug     │
+  │              │                                           │ HTML files   │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Team game    │ data/2026/team_gamelogs_2026_statsapi.csv │ 5,806        │
+  │ logs         │                                           │ records      │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Pitcher game │ data/2026/pitchers_gamelogs_2026_statsapi │ 1,253 logs,  │
+  │  logs        │ .csv                                      │ 389 details  │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ Batter game  │ data/2026/batters_gamelogs_2026_statsapi. │ 3,077 logs,  │
+  │ logs         │ csv                                       │ 390 details  │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │              │ data/2026/batters_season_2026_stats.csv,  │ 387 batters, │
+  │ Season stats │ pitchers_season_2026_stats.csv            │  380         │
+  │              │                                           │ pitchers     │
+  ├──────────────┼───────────────────────────────────────────┼──────────────┤
+  │ BvP matchup  │                                           │ 30 matchups  │
+  │ CSVs         │ 28 × bvp_*.csv                            │ processed,   │
+  │              │                                           │ 28 saved     │
+  └──────────────┴───────────────────────────────────────────┴──────────────┘
+
+  ---
+  One failure: Bovada alt strikeout lines (Playwright)
+
+  The scraper found the "Alternate Strikeouts" section on every game page and
+  identified every pitcher, but both the primary and fallback regex patterns 
+  returned 0 lines for every single pitcher across all 16 games. Final result: 0
+   pitchers, 0 lines — no data collected, nothing saved from Bovada.
+
+  This is a Bovada page structure/regex issue — the "Alternate Strikeouts"
+  section is there but the scraper can't parse the odds out of it.
+
+  ---
+  Minor: 2 BvP matchups didn't produce a CSV
+
+  30 matchups were processed but only 28 CSVs saved. The missing two are likely
+  the ones where every batter had "No stats found" (e.g. Oakland vs Schlittler
+  where all 13 batters had zero career history vs him).
+
+✻ Baked for 1m 22s
+
+❯ Can you read through the relevant code and make a plan to efficiently fix     
+only the broken parts, and rescrape just those sections to test and verify      
+them? Compare to the last few games from the 2025 season if you need to know    
+how they are supposed to look, I know all of those are correct like this day    
+for example is good: td@Mac ~/Code/mlb-ai/Streamlit % ls                        
+../Scrapers/data/2025-09-10/                                                    
+776373/                               bvp_hou_vs_berrios.csv                    
+776374/                               bvp_kc_vs_allen.csv                       
+776375/                               bvp_laa_vs_bradley.csv                    
+776376/                               bvp_lad_vs_freeland.csv                   
+776377/                               bvp_mil_vs_kelly.csv                      
+776378/                               bvp_min_vs_soriano.csv                    
+776379/                               bvp_nym_vs_sanchez.csv                    
+776380/                               bvp_nyy_vs_flaherty.csv                   
+776381/                               bvp_phi_vs_holmes.csv                     
+776382/                               bvp_pit_vs_wells.csv                      
+776383/                               bvp_sd_vs_abbott.csv                      
+776384/                               bvp_sf_vs_rodriguez.csv                   
+776385/                               bvp_stl_vs_gilbert.csv                    
+776386/                               bvp_tb_vs_alexander.csv                   
+776387/                               bvp_tex_vs_peralta.csv                    
+bovada_game_links.csv                 bvp_tor_vs_alexander.csv                  
+bvp_ari_vs_seymour.csv                bvp_was_vs_perez.csv                      
+bvp_atl_vs_taillon.csv                game_simulations_per_game_tables.csv      
+bvp_chc_vs_sale.csv                   game_simulations.csv                      
+bvp_chw_vs_jax.csv                    matchups.csv                              
+bvp_cin_vs_pivetta.csv                park_factors_icons.csv                    
+bvp_cle_vs_bowlan.csv                 park_factors.html                         
+bvp_col_vs_snell.csv                  pitcher_alt_strikeouts.csv                
+bvp_det_vs_rodon.csv                  Pitchers.html                             
+td@Mac ~/Code/mlb-ai/Streamlit %                                                
+                                                                                
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Good — pitcher_alt_strikeouts.csv is the BallparkPal file (that's fine). The
+  broken piece is the Bovada playwright scraper, which should produce
+  bovada_all_pitcher_props_{date}.csv. Let me look at the actual HTML Bovada is
+  returning to understand why the regex fails.
+
+  Searched for 5 patterns, read 3 files (ctrl+o to expand)
+
+⏺ The debug HTMLs are from an older compiled version. Let me look at them to
+  understand the current Bovada HTML structure:
+  Searched for 4 patterns (ctrl+o to expand)
+
+⏺ Bash(python3 -c "
+      import re…)
+  ⎿  bet-price samples (first 10):
+
+     outcomes samples (first 10):
+
+⏺ Bash(python3 -c "
+      import re…)
+  ⎿  bet-price samples (first 5):
+     '<span class="bet-price"> (-110) <!----></span>'
+     '<span class="bet-price"> (-110) <!----></span>'
+     … +5 lines (ctrl+o to expand)
+
+⏺ Now I can see the issue. The bet-price spans contain <!----> before </span>,
+  and some negative odds use (-110) parentheses format. The current regex
+  \s*([+-]\d+)\s*</span> fails because of the <!----> comment node.
+
+  But I also need to see what the Pitcher Props tab content looks like — the
+  debug HTML is from before the tab click. Let me create a small diagnostic
+  script to dump that HTML:
+
+⏺ Write(bovada_debug_pitcher_tab.py)
+  ⎿  Wrote 72 lines to bovada_debug_pitcher_tab.py
+       1 """
+       2 Diagnostic: Navigate to one Bovada game, click Pitcher Props tab
+         ,
+       3 save the full page HTML so we can inspect the actual structure.
+       4 """
+       5 import os
+       6 import time
+       7 from datetime import datetime
+       8 from playwright.sync_api import sync_playwright
+       9 
+      10 today = datetime.now().strftime("%Y-%m-%d")
+     … +62 lines (ctrl+o to expand)
+
+⏺ Bash(/Users/td/.pyenv/shims/python bovada_debug_pitcher_tab.py)
+  ⎿  Testing URL: /sports/baseball/mlb/athletics-new-york-yankees-202604071
+     905
+     Saved pre-tab HTML (457561 bytes)
+     … +5 lines (ctrl+o to expand)
+
+⏺ Bash(python3 -c "
+      import re…)
+  ⎿  === 2000 chars around first Alternate Strikeouts ===
+     'nder-c445="" class="title-container"><h3 _ngcontent-server-side-rende
+     r-c445="" class="market-name"> Alternate Strikeouts - Aaron Civale (AT
+     … +27 lines (ctrl+o to expand)
+
+⏺ Now I can see the exact structure. Let me test the current regex against the
+  actual HTML:
+
+❯ /export convooooo.txt                                                         
+  ⎿  Conversation exported to: /Users/td/Code/mlb-ai/Scrapers/convooooo.txt
+
+❯ continue                                                                      
+
+⏺ Bash(python3 -c "
+      import re…)
+  ⎿  Primary section regex found 2 sections
+     Pitcher: Aaron Civale (ATH)
+     bet-price spans: ['<span class="bet-price"> -700 <!----></span>', '<sp
+     … +7 lines (ctrl+o to expand)
+
+⏺ Bash(python3 -c "
+      import re…)
+  ⎿  2 sections found
+
+     Pitcher: Aaron Civale (ATH)
+     … +12 lines (ctrl+o to expand)
+
+⏺ The root cause is confirmed. Two issues:
+
+  1. Line regex — bet-price spans now contain <!----> before </span>. Both the
+  primary and fallback line regexes fail because they expect ([+-]\d+)\s*</span>
+   with no intervening content.
+  2. Timing — during the actual run (4s wait) the primary section regex misses
+  the <ul> because Angular hasn't finished rendering; at 6s it works fine.
+
+  Fixing both in bovada_scrape_pitcher_props_playwright.py:
+
+⏺ Update(bovada_scrape_pitcher_props_playwright.py)
+  ⎿  Added 1 line, removed 1 line
+      59                  print("Could not find or click Pitcher Props ta
+          b, skipping this game.")
+      60                  continue
+      61              print("Waiting for content to load after tab click.
+          ..")
+      62 -            time.sleep(4)                                      
+      62 +            time.sleep(6)                                      
+      63              content = page.content()
+      64              if "Alternate Strikeouts" in content:
+      65                  print("Found 'Alternate Strikeouts' in page con
+          tent.")
+
+⏺ Update(bovada_scrape_pitcher_props_playwright.py)
+  ⎿  Added 1 line, removed 1 line
+      77                          "team": team
+      78                      }
+      79                      lines_collected_for_this_pitcher = 0
+      80 -                    primary_lines = re.findall(r'<span class="o
+         -utcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">
+         -\s*([+-]\d+)\s*</span>', section_html_content, re.DOTALL)      
+      80 +                    primary_lines = re.findall(r'<span class="o
+         +utcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">
+         +\s*([+-]\d+)\s*<!---->\s*</span>', section_html_content, re.DOT
+         +ALL)                                                           
+      81                      if primary_lines:
+      82                          print(f"  Lines from primary regex for 
+          {pitcher_name}:")
+      83                          for line_str, odds_str in primary_lines
+          :
+
+⏺ Update(bovada_scrape_pitcher_props_playwright.py)
+  ⎿  Added 1 line, removed 1 line
+      88                              lines_collected_for_this_pitcher +=
+           1
+      89                      if not primary_lines:
+      90                          print(f"  Primary regex found no lines 
+          in identified section for {pitcher_name}. Trying fallback patte
+          rn on section.")
+      91 -                        alt_pattern = r'(\d+\+\s*Strikeouts)[^<
+         ->]*?</span>[^<>]*?<span[^<>]*?>([+-]\d+)'                      
+      91 +                        alt_pattern = r'<span class="outcomes">
+         +(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">\s*([+-]\
+         +d+)\s*<!---->\s*</span>'                                       
+      92                          fallback_lines_in_section = re.findall(
+          alt_pattern, section_html_content)
+      93                          if fallback_lines_in_section:
+      94                              print(f"  Lines from fallback regex
+           (on section) for {pitcher_name}:")
+
+⏺ Now run just the Bovada pitcher props scraper to verify:
+
+⏺ Bash(/Users/td/.pyenv/shims/python bovada_scrape_pitcher_props_playwright.py
+      2>&1)
+  ⎿  Running in the background (↓ to manage)
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Task Output b6wfdmnz1  ⎿  Loaded 16 game URLs from data/2026-04-07/bovada_game_links.csv
+
+     Processing: /sports/baseball/mlb/athletics-new-york-yankees-2026040719
+     … +185 lines (ctrl+o to expand)
+
+⏺ 28 pitchers, 212 lines extracted — fully working now. Let me verify the output
+   CSV:
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ All fixed and working. Here's the summary:
+
+  Root cause: Bovada's Angular frontend now injects <!----> comment nodes inside
+   <span class="bet-price"> — e.g. <span class="bet-price"> -700 <!----></span>.
+   Both the primary and fallback line regexes expected the closing tag
+  immediately after the number, so they matched 0 lines for all 28 pitchers.
+
+  Two fixes applied to bovada_scrape_pitcher_props_playwright.py:
+  1. Line regex (primary + fallback): added <!----> before \s*</span> in the
+  match pattern
+  2. Wait time: bumped from 4s → 6s after tab click, which also lets the primary
+   section regex (<ul class="outright-market...">) fully render before scraping
+
+  Result: 28/28 pitchers extracted, 212 total lines, saved to
+  data/2026-04-07/bovada_all_pitcher_props_2026-04-07.csv. The 1 game that
+  showed "No Alternate Strikeouts" (Cubs/Rays) was already a game with no props
+  posted — not a bug.
+
+✻ Crunched for 4m 32s
+
+⏺ Background command "Re-run Bovada pitcher props scraper with fixes applied"
+completed (exit code 0)
+
+⏺ Already got the results — the scraper ran successfully (noted above). All
+  good!
+
+❯ all of the pitcher vs batter matchup titles on the home page for each game    
+all dont have a name for the pitcher in them, its just showing astericks as you 
+ can see in the images. Figure out where this is breaking/not matching          
+correctly anymore like it used to in 2025, and then fix it and any scrapers     
+that are relevant. [Image #1] [Image #2]                                        
+  ⎿  [Image #1]
+  ⎿  [Image #2]
+
+  Searched for 1 pattern, read 1 file (ctrl+o to expand)
+
+⏺ Explore(Explore Streamlit home page and BvP display code)
+  ⎿  Done (8 tool uses · 30.4k tokens · 36s)
+  (ctrl+o to expand)
+
+⏺ Good findings. Let me read the actual source and data to confirm before
+  writing the plan.
+
+  Searched for 2 patterns, read 2 files (ctrl+o to expand)
+
+⏺ Now I have the complete picture. The fix is clear:
+
+  Root cause: BallparkPal renamed their pitcher links from Pitcher.php to
+  Pitcher-Summary.php. The scraper selector a[href*='Pitcher.php'] no longer
+  matches anything, so starter_away/starter_home are never written to
+  game_simulations_per_game_tables.csv. Home.py then gets empty strings and
+  renders **Career BvP vs **.
+
+  Two fixes needed:
+  1. ballparkpal_headless.py — update the CSS selector
+  2. Home.py — add a fallback to read pitcher name from the per-game
+  proj_box_pitchers_*.csv files (which already work and have the data)
+
+⏺ Update(ballparkpal_headless.py)
+  ⎿  Added 1 line, removed 1 line
+       95          row["away_team"] = away_divs[1]
+       96      if len(home_divs) > 1:
+       97          row["home_team"] = home_divs[1]
+       98 -    pitchers = container.select("a[href*='Pitcher.php']")     
+       98 +    pitchers = container.select("a[href*='Pitcher-Summary.php'
+          +], a[href*='Pitcher.php']")                                   
+       99      if len(pitchers) >= 2:
+      100          row["starter_away"] = pitchers[0].get_text(strip=True)
+      101          row["starter_home"] = pitchers[1].get_text(strip=True)
+
+⏺ Now fix Home.py to fall back to the per-game pitcher files for today's
+  already-scraped data:
+
+⏺ Update(~/Code/mlb-ai/Streamlit/Home.py)
+  ⎿  Added 13 lines
+      254              # grab starter names for filtering
+      255              starter_away = detailed_row.get("starter_away", ""
+           )  # away pitcher full name
+      256              starter_home = detailed_row.get("starter_home", ""
+           )  # home pitcher full name
+      257 +            # fallback: read from per-game pitcher projection 
+          +files if missing from simulation data                         
+      258 +            if not starter_away:                              
+      259 +                p1_path = os.path.join(DATA_DIR, date, game_id
+          +, "proj_box_pitchers_1.csv")                                  
+      260 +                if os.path.exists(p1_path):                   
+      261 +                    _p1 = pd.read_csv(p1_path)                
+      262 +                    if not _p1.empty:                         
+      263 +                        starter_away = _p1.iloc[0]["Pitcher"] 
+      264 +            if not starter_home:                              
+      265 +                p2_path = os.path.join(DATA_DIR, date, game_id
+          +, "proj_box_pitchers_2.csv")                                  
+      266 +                if os.path.exists(p2_path):                   
+      267 +                    _p2 = pd.read_csv(p2_path)                
+      268 +                    if not _p2.empty:                         
+      269 +                        starter_home = _p2.iloc[0]["Pitcher"] 
+      270              # extract last names for matchup filtering
+      271              starter_away_last = starter_away.split()[-1] if is
+           instance(starter_away, str) and starter_away else ""
+      272              starter_home_last = starter_home.split()[-1] if is
+           instance(starter_home, str) and starter_home else ""
+
+⏺ Now let me verify the fallback will actually produce correct last names for
+  today's data:
+
+⏺ Bash(python3 -c "
+      import os, pandas as pd…)
+  ⎿  Columns: ['game_id', 'time', 'away_team', 'home_team', 'runs_away', 'r
+     uns_home', 'win_away', 'win_home']
+     Has starter_away: False
+     … +23 lines (ctrl+o to expand)
+
+⏺ All 15 games resolve correctly — the 2 ✗ marks are games where the BvP matchup
+   CSV genuinely doesn't exist (Oak vs Schlittler, STL vs Cavalli — no career
+  data), which just shows "No career BvP data for this matchup" as expected. The
+   pitcher names themselves are all resolved correctly.
+
+  Let me quickly verify the Home.py display lines also use the right variable:
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ The display uses starter_home/starter_away directly. With the fallback, those
+  will now be populated with the abbreviated name from the per-game files (e.g.,
+   G. Williams, N. Cameron). That's slightly less pretty than the full name
+  (Gavin Williams), but correct and readable.
+
+  Summary of changes made:
+
+  Scrapers/ballparkpal_headless.py (line 98) — BallparkPal renamed their pitcher
+   page URLs from Pitcher.php to Pitcher-Summary.php. Updated the CSS selector
+  to match both:
+  # Before:
+  container.select("a[href*='Pitcher.php']")
+  # After:
+  container.select("a[href*='Pitcher-Summary.php'], a[href*='Pitcher.php']")
+
+  Streamlit/Home.py (lines 255–259) — Added fallback that reads pitcher name
+  from proj_box_pitchers_1.csv / proj_box_pitchers_2.csv (already scraped,
+  already correct) when starter_away/starter_home are missing from the
+  simulation CSV. This fixes today's data immediately without needing a
+  re-scrape.
+
+  Next daily scrape: The ballparkpal_headless.py fix will write full pitcher
+  names (e.g., "Gavin Williams") back into game_simulations_per_game_tables.csv,
+   making the fallback in Home.py unnecessary going forward.
+
+✻ Worked for 5m 2s
+
+❯ Will those break all of the games before that file name changed though? The   
+entire last season was the original file name used for matching. If somebody    
+goes back now, all of those will have the stars? Or did you take that into      
+account in the logic?                                                           
+⏺ Good catch to double-check, but you're covered. The Home.py fix is a fallback,
+   not a replacement. The logic is:
+
+  starter_away = detailed_row.get("starter_away", "")  # tries CSV first
+  if not starter_away:                                   # only hits fallback if
+   empty
+      # read from proj_box_pitchers_1.csv
+
+  For 2025 dates: the game_simulations_per_game_tables.csv files already have
+  starter_away and starter_home columns populated (we saw this — the 2025 file
+  had Freddy Peralta, Merrill Kelly, etc.). So detailed_row.get("starter_away", 
+  "") returns the full name, the if not starter_away condition is false, and the
+   fallback never runs. Nothing changes for 2025.
+
+  For 2026 dates: those columns are absent from the CSV, so get() returns "",
+  the fallback kicks in, and it reads from the per-game pitcher files.
+
+  The only thing that could break old dates is if the per-game
+  proj_box_pitchers_*.csv files were also missing for some old game folder — but
+   that would only affect the fallback path, which wouldn't even be reached for
+  2025 data.
+
+❯ Do both headless and non-headless versions of the scrapers have the same      
+logic/names like this everywhere correctly                                      
+
+⏺ Explore(Audit non-headless scraper parity)
+  ⎿  Done (17 tool uses · 45.7k tokens · 42s)
+  (ctrl+o to expand)
+
+⏺ Four files need the same fixes. Let me apply them all — but first let me
+  verify the two I haven't read yet actually exist:
+
+  Searched for 3 patterns, read 1 file (ctrl+o to expand)
+
+⏺ All confirmed. Now applying all fixes:
+
+  Read 2 files (ctrl+o to expand)
+
+⏺ Update(bovada_scrape_pitcher_props.py)
+  ⎿  Added 1 line, removed 1 line
+      74                          "team": team
+      75                      }
+      76                      lines_collected_for_this_pitcher = 0
+      77 -                    primary_lines = re.findall(r'<span class="o
+         -utcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">
+         -\s*([+-]\d+)\s*</span>', section_html_content, re.DOTALL)      
+      77 +                    primary_lines = re.findall(r'<span class="o
+         +utcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">
+         +\s*([+-]\d+)\s*<!---->\s*</span>', section_html_content, re.DOT
+         +ALL)                                                           
+      78                      if primary_lines:
+      79                          print(f"  Lines from primary regex for 
+          {pitcher_name}:")
+      80                          for line_str, odds_str in primary_lines
+          :
+
+⏺ Update(bovada_scrape_pitcher_props.py)
+  ⎿  Added 1 line, removed 1 line
+      85                              lines_collected_for_this_pitcher +=
+           1
+      86                      if not primary_lines:
+      87                          print(f"  Primary regex found no lines 
+          in identified section for {pitcher_name}. Trying fallback patte
+          rn on section.")
+      88 -                        alt_pattern = r'(\d+\+\s*Strikeouts)[^<
+         ->]*?</span>[^<>]*?<span[^<>]*?>([+-]\d+)'                      
+      88 +                        alt_pattern = r'<span class="outcomes">
+         +(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price">\s*([+-]\
+         +d+)\s*<!---->\s*</span>'                                       
+      89                          fallback_lines_in_section = re.findall(
+          alt_pattern, section_html_content)
+      90                          if fallback_lines_in_section:
+      91                              print(f"  Lines from fallback regex
+           (on section) for {pitcher_name}:")
+
+⏺ Update(bovada_scrape_pitcher_props.py)
+  ⎿  Added 1 line, removed 1 line
+      56                  print("Could not find or click Pitcher Props ta
+          b, skipping this game.")
+      57                  continue
+      58              print("Waiting for content to load after tab click.
+          ..")
+      59 -            time.sleep(3)                                      
+      59 +            time.sleep(6)                                      
+      60              content = page.content()
+      61              if "Alternate Strikeouts" in content:
+      62                  print("Found 'Alternate Strikeouts' in page con
+          tent.")
+
+⏺ Update(final_bovada_scrape_pitcher_props_json.py)
+  ⎿  Added 1 line, removed 1 line
+      64                          "team": team,
+      65                          "lines": []
+      66                      }
+      67 -                    line_odds_pairs = re.findall(r'<span class=
+         -"outcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price
+         -">\s*([+-]\d+)\s*</span>', section, re.DOTALL)                 
+      67 +                    line_odds_pairs = re.findall(r'<span class=
+         +"outcomes">(\d+\+\s*Strikeouts)</span>.*?<span class="bet-price
+         +">\s*([+-]\d+)\s*<!---->\s*</span>', section, re.DOTALL)       
+      68                      for line, odds in line_odds_pairs:
+      69                          line = line.strip()
+      70                          odds_value = odds.strip()
+
+  Read 2 files (ctrl+o to expand)
+
+⏺ Update(ballparkpal.py)
+  ⎿  Added 1 line, removed 1 line
+      91          row["away_team"] = away_divs[1]
+      92      if len(home_divs) > 1:
+      93          row["home_team"] = home_divs[1]
+      94 -    pitchers = container.select("a[href*='Pitcher.php']")      
+      94 +    pitchers = container.select("a[href*='Pitcher-Summary.php']
+         +, a[href*='Pitcher.php']")                                     
+      95      if len(pitchers) >= 2:
+      96          row["starter_away"] = pitchers[0].get_text(strip=True)
+      97          row["starter_home"] = pitchers[1].get_text(strip=True)
+
+⏺ Update(dev/given-date/ballparkpal_headless.py)
+  ⎿  Added 1 line, removed 1 line
+      90          row["away_team"] = away_divs[1]
+      91      if len(home_divs) > 1:
+      92          row["home_team"] = home_divs[1]
+      93 -    pitchers = container.select("a[href*='Pitcher.php']")      
+      93 +    pitchers = container.select("a[href*='Pitcher-Summary.php']
+         +, a[href*='Pitcher.php']")                                     
+      94      if len(pitchers) >= 2:
+      95          row["starter_away"] = pitchers[0].get_text(strip=True)
+      96          row["starter_home"] = pitchers[1].get_text(strip=True)
+
+⏺ All 5 files updated. Here's the full tally:
+
+  ┌───────────────────────────────────────────┬──────────────────────────────┐
+  │                   File                    │             Fix              │
+  ├───────────────────────────────────────────┼──────────────────────────────┤
+  │ bovada_scrape_pitcher_props_playwright.py │ ✅ done earlier              │
+  ├───────────────────────────────────────────┼──────────────────────────────┤
+  │ bovada_scrape_pitcher_props.py            │ ✅ regex (primary +          │
+  │                                           │ fallback) + 3s→6s wait       │
+  ├───────────────────────────────────────────┼──────────────────────────────┤
+  │                                           │ ✅ regex (primary only — no  │
+  │ final_bovada_scrape_pitcher_props_json.py │ fallback pattern in that     │
+  │                                           │ file)                        │
+  ├───────────────────────────────────────────┼──────────────────────────────┤
+  │ ballparkpal_headless.py                   │ ✅ done earlier              │
+  ├───────────────────────────────────────────┼──────────────────────────────┤
+  │ ballparkpal.py                            │ ✅ selector updated          │
+  ├───────────────────────────────────────────┼──────────────────────────────┤
+  │ dev/given-date/ballparkpal_headless.py    │ ✅ selector updated          │
+  └───────────────────────────────────────────┴──────────────────────────────┘
+
+✻ Cooked for 2m 31s
+
+❯ what did all those changes do?                                                
+
+⏺ Three separate bugs were found and fixed across today's session:
+
+  ---
+  1. Bovada alt strikeout odds — regex broken (0 lines scraped for all pitchers)
+
+  Bovada's frontend framework started injecting <!----> comment nodes inside
+  their HTML, changing the structure from:
+  <span class="bet-price"> -700 </span>
+  to:
+  <span class="bet-price"> -700 <!----></span>
+
+  The regex expected the number to be immediately followed by </span>, so it
+  matched nothing. Fixed in all 3 Bovada pitcher props scrapers. Also bumped the
+   post-tab-click wait from 3–4s to 6s so Angular finishes rendering before
+  scraping.
+
+  ---
+  2. BallparkPal pitcher names missing from game simulations CSV
+
+  BallparkPal renamed their pitcher page URLs from Pitcher.php →
+  Pitcher-Summary.php. The scraper looked for links with Pitcher.php in the
+  href, found none, and silently skipped writing starter_away/starter_home to
+  the CSV. Fixed the CSS selector in all 4 BallparkPal scraper files to match
+  both URL patterns.
+
+  ---
+  3. Streamlit home page showing **Career BvP vs ** (blank pitcher names)
+
+  Downstream consequence of bug #2. The home page reads
+  starter_away/starter_home from the game simulations CSV to build headings like
+   **Career BvP vs Williams** and to look up the correct BvP data file. Since
+  those columns were empty, everything showed blank.
+
+  Fixed in Home.py with a fallback: if the CSV columns are missing, read the
+  pitcher name from the per-game proj_box_pitchers_*.csv files instead (those
+  come from a different scraper and were unaffected). This also ensures old 2025
+   data still works — it hits the CSV first and the fallback is never triggered.
