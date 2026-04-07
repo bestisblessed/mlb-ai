@@ -54,8 +54,8 @@ echo "Done."
 rm -rf data/raw
 git pull >> scraper.log 2>&1
 git add -f data/20*
-git commit -m "Data update $(date +%Y-%m-%d)" >> /dev/null 2>&1
-git push >> /dev/null 2>&1
+git commit -m "Data update $(date +%Y-%m-%d)" >> scraper.log 2>&1
+git push >> scraper.log 2>&1
 echo "$(date): Data updated" >> scraper.log 2>&1
 
 # ===========================
@@ -63,8 +63,8 @@ echo "$(date): Data updated" >> scraper.log 2>&1
 # ===========================
 cp -r data/20* ../Streamlit/data/
 git add -f ../Streamlit/data/20*
-git commit -m "Data update streamlit $(date +%Y-%m-%d)" >> /dev/null 2>&1
-git push >> /dev/null 2>&1
+git commit -m "Data update streamlit $(date +%Y-%m-%d)" >> scraper.log 2>&1
+git push >> scraper.log 2>&1
 echo "$(date): Data updated streamlit" >> scraper.log 2>&1
 echo "---------------------------------------" >> scraper.log 2>&1
 echo "---------------------------------------" >> scraper.log 2>&1
