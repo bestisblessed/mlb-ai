@@ -1,0 +1,24 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,intentionalwalks,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,1.00,1.000,.---,,Ben RiceB. Rice,700250,,1,,,,1,1,,,3,1.000,5.000,Civale,650644,1,1,4.000,,4,2025
+1,3,,.667,.667,,Aaron JudgeA. Judge,592450,1,1,,,0.00,2,,,,11,.667,1.667,Civale,650644,3,,1.000,,3,2019
+1,5,,.000,.000,1,Aaron JudgeA. Judge,592450,,2,2,2,2.00,,,,6,29,.167,.167,Civale,650644,6,,.000,2,,2021
+,5,,.200,.333,,Aaron JudgeA. Judge,592450,1,2,1,2,2.00,1,,,2,19,.200,.600,Civale,650644,5,,.400,2,2,2022
+,3,,.333,.500,,Aaron JudgeA. Judge,592450,,1,,1,1.00,1,,,1,12,.333,.666,Civale,650644,3,,.333,1,1,2024
+,1,1.00,1.000,.---,1,Aaron JudgeA. Judge,592450,,1,,,,1,1,1,,9,1.000,5.000,Civale,650644,2,2,4.000,,4,2025
+,3,3.00,.667,1.000,,Jazz ChisholmJ. Chisholm,665862,,1,,,,2,1,,1,11,.667,2.334,Civale,650644,3,2,1.667,1,5,2023
+,2,2.00,.500,.---,,Jazz ChisholmJ. Chisholm,665862,,1,,,,1,1,,,12,.500,2.500,Civale,650644,2,2,2.000,1,4,2025
+,3,,.333,.333,,Paul GoldschmidtP. Goldschmidt,502671,1,1,1,2,2.00,1,,,3,10,.333,1.000,Civale,650644,3,,.667,,2,2020
+,2,2.00,1.000,1.000,,Paul GoldschmidtP. Goldschmidt,502671,1,1,,,,2,1,,,8,1.000,4.000,Civale,650644,2,2,3.000,,6,2024
+,2,,.500,.500,,Paul GoldschmidtP. Goldschmidt,502671,,1,,1,1.00,1,,,,9,.500,1.000,Civale,650644,2,,.500,,1,2025
+2,2,,.000,.000,,Giancarlo StantonG. Stanton,519317,,1,,,0.00,,,,1,6,.000,.000,Civale,650644,2,,.000,,,2021
+,3,3.00,.667,.500,,Giancarlo StantonG. Stanton,519317,,1,,1,1.00,2,1,,,11,.667,2.334,Civale,650644,3,1,1.667,,5,2022
+1,1,,.000,.000,2,Giancarlo StantonG. Stanton,519317,,1,,,0.00,,,,1,12,.667,.667,Civale,650644,3,,.000,,,2024
+2,3,,.000,.000,,Cody BellingerC. Bellinger,641355,,1,,1,0.50,,,,2,13,.000,.000,Civale,650644,3,,.000,,,2023
+1,3,,.000,.000,,Cody BellingerC. Bellinger,641355,,1,,1,1.00,,,,3,12,.000,.000,Civale,650644,3,,.000,1,,2024
+2,2,,.000,.000,,Cody BellingerC. Bellinger,641355,,1,,,0.00,,,,1,15,.000,.000,Civale,650644,2,,.000,,,2025
+,3,,.333,.500,,Randal GrichukR. Grichuk,545341,1,1,,1,1.00,1,,,,10,.333,1.000,Civale,650644,3,,.667,1,2,2021
+2,3,,.000,.000,,Amed RosarioA. Rosario,642708,,1,,,0.00,,,,,10,.000,.000,Civale,650644,3,,.000,1,,2019
+,1,,.000,.---,,Austin WellsA. Wells,669224,,1,,,,,,,,5,.000,.000,Civale,650644,1,,.000,1,,2025
+,2,,.000,.---,,Trent GrishamT. Grisham,663757,,1,,,,,,,2,11,.000,.000,Civale,650644,2,,.000,2,,2022
+,2,,.000,.---,,Trent GrishamT. Grisham,663757,,1,,,,,,,1,7,.000,.000,Civale,650644,2,,.000,2,,2023
+,2,,.500,1.000,,Ryan McMahonR. McMahon,641857,,1,,,,1,,,,6,.500,1.000,Civale,650644,2,,.500,1,1,2023

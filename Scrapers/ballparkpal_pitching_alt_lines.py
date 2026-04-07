@@ -3,6 +3,9 @@ from playwright.async_api import async_playwright
 import asyncio
 import os
 from datetime import datetime
+from ballparkpal_auth import USER_AGENT, assert_authenticated_html
+
+HEADLESS = os.getenv("BALLPARKPAL_HEADLESS", "0") == "1"
 
 #####################
 ### DOWNLOAD HTML ###
@@ -11,10 +14,14 @@ async def download_html(url, filepath):
     async with async_playwright() as p:
         ctx = await p.chromium.launch_persistent_context(
             user_data_dir="playwright_user_data",
-            headless=False
+            headless=HEADLESS,
+            user_agent=USER_AGENT
         )
         page = await ctx.new_page()
-        await page.goto(url)
+        await page.goto(url, wait_until="domcontentloaded")
+        await page.wait_for_timeout(1000)
+        initial_content = await page.content()
+        assert_authenticated_html(page.url, initial_content, "Starting Pitchers")
         await page.wait_for_selector("table", timeout=5000)
         
         # Click on the Strikeouts tab

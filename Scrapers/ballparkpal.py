@@ -8,11 +8,14 @@ from datetime import datetime
 import glob
 from io import StringIO
 from urllib.parse import urljoin, urlparse, parse_qs
+import re
+from ballparkpal_auth import USER_AGENT, assert_authenticated_html
 
 # Create data directories
 today = datetime.now().strftime('%Y-%m-%d')
 os.makedirs(f"data/{today}/", exist_ok=True)
 os.makedirs(f"data/raw/{today}/", exist_ok=True)
+HEADLESS = os.getenv("BALLPARKPAL_HEADLESS", "0") == "1"
 
 
 ### Scrape Game Simulations Home Page ###
@@ -20,12 +23,14 @@ async def main():
     async with async_playwright() as p:
         context = await p.chromium.launch_persistent_context(
             user_data_dir="playwright_user_data",
-            headless=False
+            headless=HEADLESS,
+            user_agent=USER_AGENT
         )
         page = await context.new_page()
         await page.goto('https://www.ballparkpal.com/Game-Simulations.php')
         await page.wait_for_timeout(1000)
         content = await page.content()
+        assert_authenticated_html(page.url, content, "Game Simulations")
         with open(f'data/raw/{today}/game_simulations.html', 'w', encoding='utf-8') as f:
             f.write(content)
         print(f"Saved page HTML to data/raw/{today}/game_simulations.html")
@@ -134,17 +139,20 @@ print(f"Wrote {len(df)} game records to {OUTPUT_CSV!r}")
 async def main():
     async with async_playwright() as p:
         ctx = await p.chromium.launch_persistent_context(
-            user_data_dir="playwright_user_data", headless=False
+            user_data_dir="playwright_user_data",
+            headless=HEADLESS,
+            user_agent=USER_AGENT
         )
         page = await ctx.new_page()
         os.makedirs(f"data/raw/{today}", exist_ok=True)
         with open(f"data/{today}/game_simulations.csv") as f:
             for row in csv.DictReader(f):
                 gid = row["game_id"]
-                url = f"https://www.ballparkpal.com/Game.php?GamePk={gid}"
+                url = f"https://www.ballparkpal.com/Game-Projected-Box-Score.php?GamePk={gid}"
                 await page.goto(url)
                 await page.wait_for_timeout(1000)
                 html = await page.content()
+                assert_authenticated_html(page.url, html, f"Projected Box Score {gid}")
                 with open(f"data/raw/{today}/{gid}.html", "w", encoding="utf-8") as out:
                     out.write(html)
                 print("saved", gid)
@@ -161,6 +169,14 @@ def find_p(soup, substring):
     return soup.find('p', string=lambda s: s and substring in s)
 game_files = glob.glob(os.path.join(RAW_DIR, '[0-9]*.html'))
 print(f"Found {len(game_files)} game files to process")
+def _extract_player_name(anchor):
+    if not anchor:
+        return ""
+    img = anchor.find("img")
+    if img and img.get("alt"):
+        return img.get("alt").strip()
+    text = " ".join(anchor.stripped_strings).strip()
+    return re.sub(r"\s+[A-Z]\.\s+[A-Za-z'.-]+$", "", text).strip()
 for html_path in game_files:
     game_id = os.path.splitext(os.path.basename(html_path))[0]
     output_dir = os.path.join(OUTPUT_BASE, game_id)
@@ -258,12 +274,17 @@ async def main():
     async with async_playwright() as p:
         context = await p.chromium.launch_persistent_context(
             user_data_dir="playwright_user_data",
-            headless=False
+            headless=HEADLESS,
+            user_agent=USER_AGENT
         )
         page = await context.new_page()
         await page.goto('https://www.ballparkpal.com/Matchups.php')
-        await page.wait_for_timeout(1000)
+        try:
+            await page.wait_for_selector("#table_id tbody tr", timeout=10000)
+        except Exception:
+            await page.wait_for_timeout(4000)
         content = await page.content()
+        assert_authenticated_html(page.url, content, "Matchups")
         with open(f'data/{today}/matchups.html', 'w', encoding='utf-8') as f:
             f.write(content)
         print(f"Saved page HTML to data/{today}/matchups.html")
@@ -297,13 +318,13 @@ with open(f"{data_dir}/matchups.csv", "w", newline="", encoding="utf-8") as csvf
             continue  
         team = cells[2].get_text(strip=True)
         batter_link = cells[3].find("a")
-        batter = batter_link.get_text(strip=True) if batter_link else ""
+        batter = _extract_player_name(batter_link)
         batter_id = ""
         if batter_link and "PlayerId=" in batter_link["href"]:
             batter_id = batter_link["href"].split("PlayerId=")[1]
         vs = cells[4].get_text(strip=True)
         pitcher_link = cells[5].find("a")
-        pitcher = pitcher_link.get_text(strip=True) if pitcher_link else ""
+        pitcher = _extract_player_name(pitcher_link)
         pitcher_id = ""
         if pitcher_link and "PlayerId=" in pitcher_link["href"]:
             pitcher_id = pitcher_link["href"].split("PlayerId=")[1]
