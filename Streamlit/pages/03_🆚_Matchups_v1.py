@@ -70,6 +70,55 @@ def _parse_matchup_row(raw: str) -> Dict[str, str]:
         **stat_map
     }
 
+
+def _clean_name(value) -> str:
+    if pd.isna(value):
+        return ""
+    return str(value).strip()
+
+
+def _load_pitcher_details(year: int) -> pd.DataFrame:
+    details_path = os.path.join(DATA_DIR, str(year), f"pitchers_details_{year}_statsapi.csv")
+    if not os.path.exists(details_path):
+        return pd.DataFrame()
+    return pd.read_csv(details_path, low_memory=False)
+
+
+def _load_projected_starter(date_str: str, game_id: str, team_num: int, year: int) -> str:
+    pitcher_path = os.path.join(DATA_DIR, date_str, game_id, f"proj_box_pitchers_{team_num}.csv")
+    if not os.path.exists(pitcher_path):
+        return ""
+
+    pitcher_df = pd.read_csv(pitcher_path)
+    if pitcher_df.empty or "Pitcher" not in pitcher_df.columns:
+        return ""
+
+    if "Player ID" in pitcher_df.columns:
+        pitcher_id = pd.to_numeric(pitcher_df.iloc[0]["Player ID"], errors="coerce")
+        if pd.notna(pitcher_id):
+            details_df = _load_pitcher_details(year)
+            if not details_df.empty and {"player_id", "fullName"}.issubset(details_df.columns):
+                match = details_df[details_df["player_id"] == int(pitcher_id)]
+                if not match.empty:
+                    return _clean_name(match.iloc[0]["fullName"])
+
+    return _clean_name(pitcher_df.iloc[0]["Pitcher"])
+
+
+def resolve_starters(selected_game: pd.Series, selected_date: str, game_id: str):
+    year = int(selected_date.split("-", 1)[0])
+    away_starter = _clean_name(selected_game.get("starter_away", ""))
+    home_starter = _clean_name(selected_game.get("starter_home", ""))
+
+    if not away_starter:
+        away_starter = _load_projected_starter(selected_date, game_id, 1, year)
+    if not home_starter:
+        home_starter = _load_projected_starter(selected_date, game_id, 2, year)
+
+    away_last = away_starter.split()[-1] if away_starter else ""
+    home_last = home_starter.split()[-1] if home_starter else ""
+    return away_starter, home_starter, away_last, home_last
+
 # ------------------ Streamlit UI ------------------ #
 
 st.set_page_config(page_title="Matchups v1", page_icon="⚔️", layout="wide")
@@ -97,9 +146,12 @@ sim = pd.read_csv(sim_path)
 games = sim.apply(lambda r: f"{r['time']}pm - {r['away_team']} @ {r['home_team']}", axis=1).tolist()
 game_idx = st.sidebar.selectbox("Select Game", range(len(games)), format_func=lambda i: games[i])
 selected_game = sim.iloc[game_idx]
-# extract only last names to match matchups.csv format
-away_starter = selected_game["starter_away"].split()[-1]
-home_starter = selected_game["starter_home"].split()[-1]
+game_id = str(int(selected_game["game_id"]))
+away_starter, home_starter, away_starter_last, home_starter_last = resolve_starters(
+    selected_game,
+    selected_date,
+    game_id,
+)
 
 matchup_csv = os.path.join(DATA_DIR, selected_date, "matchups.csv")
 if not os.path.exists(matchup_csv):
@@ -120,7 +172,7 @@ with open(matchup_csv, "r", encoding="utf-8") as f:
         if not rec:
             continue
         # only today's starters
-        if rec["Pitcher"] not in (away_starter, home_starter):
+        if rec["Pitcher"] not in (away_starter_last, home_starter_last):
             continue
         # apply name filters
         # if batter_q and batter_q.lower() not in rec["Batter"].lower():
@@ -139,8 +191,8 @@ for col in ["AtBats", "RC", "HR", "XB", "1B", "BB", "K"]:
     df[col] = pd.to_numeric(df[col], errors="coerce")
 
 # Split by starting pitcher
-away_df = df[df["Pitcher"] == away_starter].copy()
-home_df = df[df["Pitcher"] == home_starter].copy()
+away_df = df[df["Pitcher"] == away_starter_last].copy()
+home_df = df[df["Pitcher"] == home_starter_last].copy()
 
 # Sort by run component (RC) descending
 if "RC" in away_df.columns:
