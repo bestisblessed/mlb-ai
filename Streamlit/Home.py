@@ -410,7 +410,7 @@ if date:
                 # Display all relevant columns from matchups.csv
                 disp_cols = ["Batter", "Team", "vs", "RC", "HR", "XB", "1B", "BB", "K"]
                 vs_disp = vs_df[disp_cols].copy()
-                num_cols = vs_disp.select_dtypes(include=[object]).columns.difference(["Batter", "Team", "Pitcher"])
+                num_cols = vs_disp.select_dtypes(include=["object", "string"]).columns.difference(["Batter", "Team", "Pitcher"])
                 vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
                 vs_disp[num_cols] = vs_disp[num_cols].round(2)
                 vs_disp = vs_disp.rename(columns={"Team": "L/R"})
@@ -565,7 +565,7 @@ if date:
                 # Display all relevant columns from matchups.csv
                 disp_cols = ["Batter", "Team", "vs", "RC", "HR", "XB", "1B", "BB", "K"]
                 vs_disp = vs_df[disp_cols].copy()
-                num_cols = vs_disp.select_dtypes(include=[object]).columns.difference(["Batter", "Team", "Pitcher"])
+                num_cols = vs_disp.select_dtypes(include=["object", "string"]).columns.difference(["Batter", "Team", "Pitcher"])
                 vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
                 vs_disp[num_cols] = vs_disp[num_cols].round(2)
                 vs_disp = vs_disp.rename(columns={"Team": "L/R"})

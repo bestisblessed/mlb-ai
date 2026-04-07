@@ -35,8 +35,8 @@ if not os.path.exists(info_path) or not os.path.exists(stats_path):
 
 info_df = pd.read_csv(info_path)
 stats_df = pd.read_csv(stats_path)
-bat_log_df = pd.read_csv(bat_log_path) if os.path.exists(bat_log_path) else pd.DataFrame()
-pitch_log_df = pd.read_csv(pitch_log_path) if os.path.exists(pitch_log_path) else pd.DataFrame()
+bat_log_df = pd.read_csv(bat_log_path, low_memory=False) if os.path.exists(bat_log_path) else pd.DataFrame()
+pitch_log_df = pd.read_csv(pitch_log_path, low_memory=False) if os.path.exists(pitch_log_path) else pd.DataFrame()
 
 # Limit selectable players to those that have batting stats available
 # Build a set of slug prefixes present in the batting stats (strip numerical id suffix)
