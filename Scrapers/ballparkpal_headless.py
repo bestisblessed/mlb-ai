@@ -8,6 +8,7 @@ from datetime import datetime
 import glob
 from io import StringIO
 from urllib.parse import urljoin, urlparse, parse_qs
+import re
 
 # Create base directories
 today = datetime.now().strftime('%Y-%m-%d')
@@ -150,12 +151,18 @@ async def main():
         with open(f"data/{today}/game_simulations.csv") as f:
             for row in csv.DictReader(f):
                 gid = row["game_id"]
-                url = f"https://www.ballparkpal.com/Game.php?GamePk={gid}"
-                await page.goto(url)
+                game_url = f"https://www.ballparkpal.com/Game.php?GamePk={gid}"
+                await page.goto(game_url)
                 await page.wait_for_timeout(1000)
                 html = await page.content()
                 with open(f"data/raw/{today}/{gid}.html", "w", encoding="utf-8") as out:
                     out.write(html)
+                proj_box_url = f"https://www.ballparkpal.com/Game-Projected-Box-Score.php?GamePk={gid}"
+                await page.goto(proj_box_url)
+                await page.wait_for_timeout(1000)
+                proj_html = await page.content()
+                with open(f"data/raw/{today}/{gid}_proj_box.html", "w", encoding="utf-8") as out:
+                    out.write(proj_html)
                 print("saved", gid)
         await ctx.close()
 asyncio.run(main())
@@ -176,6 +183,11 @@ for html_path in game_files:
     os.makedirs(output_dir, exist_ok=True)
     with open(html_path, encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'html.parser')
+    proj_box_path = os.path.join(RAW_DIR, f"{game_id}_proj_box.html")
+    proj_soup = None
+    if os.path.exists(proj_box_path):
+        with open(proj_box_path, encoding='utf-8') as f:
+            proj_soup = BeautifulSoup(f, 'html.parser')
     for p in soup.find_all('p', string=lambda s: s and ' win by:' in s):
         team_key = p.get_text().split(' win by:')[0].strip().lower().replace(' ', '_')
         tbl = p.find_next('table', class_='runMarginTable')
@@ -183,6 +195,10 @@ for html_path in game_files:
             df = pd.read_html(StringIO(str(tbl)))[0]
             df.to_csv(os.path.join(output_dir, f"wins_by_{team_key}.csv"), index=False)
     box_tables = soup.find_all('table', class_='boxScoreTable')
+    if len(box_tables) < 4 and proj_soup is not None:
+        proj_tables = proj_soup.find_all('table', class_='boxScoreTable')
+        if len(proj_tables) >= len(box_tables):
+            box_tables = proj_tables
     for idx, tbl in enumerate(box_tables[:4], start=1):
         headers = [th.get_text(strip=True) for th in tbl.find_all('th')]
         headers.append('Player URL')
@@ -318,13 +334,17 @@ with open(f"{data_dir}/matchups.csv", "w", newline="", encoding="utf-8") as csvf
             continue  
         team = cells[2].get_text(strip=True)
         batter_link = cells[3].find("a")
-        batter = batter_link.get_text(strip=True) if batter_link else ""
+        batter = batter_link.get_text(" ", strip=True) if batter_link else ""
+        batter = re.sub(r"\s+", " ", batter)
+        batter = re.sub(r"([A-Z][a-z]+(?: [A-Z][a-z]+)+)[A-Z]\.\s*[A-Za-z.'-]+$", r"\1", batter)
         batter_id = ""
         if batter_link and "PlayerId=" in batter_link["href"]:
             batter_id = batter_link["href"].split("PlayerId=")[1]
         vs = cells[4].get_text(strip=True)
         pitcher_link = cells[5].find("a")
-        pitcher = pitcher_link.get_text(strip=True) if pitcher_link else ""
+        pitcher = pitcher_link.get_text(" ", strip=True) if pitcher_link else ""
+        pitcher = re.sub(r"\s+", " ", pitcher)
+        pitcher = re.sub(r"([A-Z][a-z]+(?: [A-Z][a-z]+)+)[A-Z]\.\s*[A-Za-z.'-]+$", r"\1", pitcher)
         pitcher_id = ""
         if pitcher_link and "PlayerId=" in pitcher_link["href"]:
             pitcher_id = pitcher_link["href"].split("PlayerId=")[1]
