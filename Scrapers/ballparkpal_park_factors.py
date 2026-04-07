@@ -21,8 +21,14 @@ async def download_html(url, filepath):
             headless=True
         )
         page = await ctx.new_page()
-        await page.goto(url)
-        await page.wait_for_selector("table#parkFactorsTable", timeout=10000)
+        await page.goto(url, wait_until="domcontentloaded")
+        # Site can be slow / gated; wait for table attachment but don't hard-fail
+        # the entire scraper loop if visibility timing is off.
+        try:
+            await page.wait_for_selector("table#parkFactorsTable", state="attached", timeout=20000)
+        except Exception as e:
+            print(f"Warning: park factors table selector wait timed out: {e}")
+            await page.wait_for_timeout(3000)
         content = await page.content()
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(content)
@@ -74,9 +80,19 @@ legend = {
 
 table = soup.find("table", id="parkFactorsTable")
 if table is None:
-    print("Error: parkFactorsTable not found. The page may require login or a different header.")
-    exit(1)
-rows = table.find("tbody").find_all("tr")
+    print("Warning: parkFactorsTable not found. Writing empty park_factors_icons.csv and continuing.")
+    pd.DataFrame(columns=["game_id", "game", "icons", "icon_labels"]).to_csv(
+        os.path.join(output_dir, "park_factors_icons.csv"), index=False
+    )
+    raise SystemExit(0)
+tbody = table.find("tbody")
+if tbody is None:
+    print("Warning: parkFactorsTable has no tbody. Writing empty park_factors_icons.csv and continuing.")
+    pd.DataFrame(columns=["game_id", "game", "icons", "icon_labels"]).to_csv(
+        os.path.join(output_dir, "park_factors_icons.csv"), index=False
+    )
+    raise SystemExit(0)
+rows = tbody.find_all("tr")
 
 rows_data = []
 for tr in rows:
