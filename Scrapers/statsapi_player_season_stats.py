@@ -11,9 +11,9 @@ MAX_WORKERS = 6
 RETRY_DELAY = 5
 MAX_RETRIES = 3
 
-BATTERS_FILE = 'data/2025/batters_details_2025_statsapi.csv'
-PITCHERS_FILE = 'data/2025/pitchers_details_2025_statsapi.csv'
-SEASON = '2025'
+BATTERS_FILE = 'data/2026/batters_details_2026_statsapi.csv'
+PITCHERS_FILE = 'data/2026/pitchers_details_2026_statsapi.csv'
+SEASON = '2026'
 
 def get_json(url, params=None):
     for attempt in range(MAX_RETRIES):
@@ -60,7 +60,7 @@ if os.path.exists(BATTERS_FILE):
     print(f"Fetching batters' season stats for {SEASON} in parallel...")
     batters_df = pd.read_csv(BATTERS_FILE)
     batters_stats = fetch_all_stats(batters_df['id'], "batter")
-    save_stats(batters_stats, f'data/2025/batters_season_2025_stats.csv', "batter")
+    save_stats(batters_stats, f'data/2026/batters_season_2026_stats.csv', "batter")
 else:
     print(f"{BATTERS_FILE} not found, skipping batters for {SEASON}.")
 
@@ -68,6 +68,6 @@ if os.path.exists(PITCHERS_FILE):
     print(f"Fetching pitchers' season stats for {SEASON} in parallel...")
     pitchers_df = pd.read_csv(PITCHERS_FILE)
     pitchers_stats = fetch_all_stats(pitchers_df['id'], "pitcher")
-    save_stats(pitchers_stats, f'data/2025/pitchers_season_2025_stats.csv', "pitcher")
+    save_stats(pitchers_stats, f'data/2026/pitchers_season_2026_stats.csv', "pitcher")
 else:
     print(f"{PITCHERS_FILE} not found, skipping pitchers for {SEASON}.") 

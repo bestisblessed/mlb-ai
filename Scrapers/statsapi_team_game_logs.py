@@ -11,7 +11,7 @@ TIMEOUT = 10
 MAX_WORKERS = 6
 RETRY_DELAY = 5
 MAX_RETRIES = 3
-YEAR = 2025  # Single variable to control year throughout script
+YEAR = 2026  # Single variable to control year throughout script
 
 
 def get_json(endpoint: str, params: dict | None = None):
