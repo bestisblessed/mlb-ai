@@ -1,0 +1,15 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,triples,year
+,3,3.00,.333,.000,1,Riley Greene,682985,,2,1,1.00,,1,1,1,23,.500,1.833,Paddack,663978,4,1,,1.333,1,4,,2025
+,2,,.000,.000,,Parker Meadows,678009,,1,1,1.00,,,,2,8,.000,.000,Paddack,663978,2,,,.000,1,,,2025
+,2,2.00,.500,.000,,Javier Baez,595879,,1,1,1.00,,1,1,,13,.500,2.500,Paddack,663978,2,2,,2.000,,4,,2021
+,2,,.500,.500,1,Javier Baez,595879,1,1,1,1.00,,1,,1,13,.667,1.667,Paddack,663978,3,1,,1.000,,2,,2022
+2,4,,.250,.333,,Javier Baez,595879,1,2,,0.00,,1,,,22,.250,.750,Paddack,663978,4,,,.500,1,2,,2025
+1,5,5.00,.600,.500,,Kerry Carpenter,681481,,2,1,1.00,,3,1,1,21,.600,2.200,Paddack,663978,5,2,,1.600,,8,1,2025
+,2,,1.000,1.000,,Dillon Dingler,693307,,1,,,,2,,,5,1.000,2.000,Paddack,663978,2,,,1.000,,2,,2025
+1,4,,.000,.000,,Colt Keith,690993,,2,2,2.00,1,,,4,29,.200,.200,Paddack,663978,5,,,.000,1,,,2025
+,3,,.333,.500,,Gleyber Torres,650402,,1,1,1.00,,1,,,5,.333,.666,Paddack,663978,3,,,.333,1,1,,2019
+,5,,.600,.750,,Gleyber Torres,650402,1,2,1,1.00,,3,,,18,.600,1.400,Paddack,663978,5,2,,.800,1,4,,2024
+2,3,,.000,.000,,Gleyber Torres,650402,,1,,0.00,,,,2,12,.000,.000,Paddack,663978,3,,,.000,1,,,2025
+,2,,.500,.500,,Spencer Torkelson,679529,,1,1,1.00,,1,,1,10,.500,1.000,Paddack,663978,2,,,.500,,1,,2022
+3,3,,.333,.250,,Spencer Torkelson,679529,,2,,0.00,,1,,,15,.250,.583,Paddack,663978,4,1,1,.333,,1,,2025
+2,4,,.000,.000,1,Zach McKinstry,656716,,2,1,0.50,,,,,22,.200,.200,Paddack,663978,5,,,.000,1,,,2025
