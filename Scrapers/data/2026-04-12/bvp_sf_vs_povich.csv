@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+3,6,.333,.400,,Rafael Devers,646240,2,,0.00,2,2,16,.333,.666,Povich,700249,6,.333,1,2,2024
+,5,.200,.500,1,Rafael Devers,646240,2,1,1.00,1,1,35,.333,.533,Povich,700249,6,.200,3,1,2025
+,3,.333,.333,,Luis Arraez,650333,1,2,2.00,1,1,7,.333,.666,Povich,700249,3,.333,,1,2025
+1,2,.000,.000,,Harrison Bader,664056,1,1,1.00,,1,9,.000,.000,Povich,700249,2,.000,,,2025
