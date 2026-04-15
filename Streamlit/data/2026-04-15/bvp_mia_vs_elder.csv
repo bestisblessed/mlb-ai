@@ -1,0 +1,10 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacbunts,slg,strikeouts,totalbases,year
+1,3,,.333,.500,,Liam Hicks,689414,,1,,0.00,1,,2,11,.333,.666,Elder,693821,3,,,.333,1,1,2025
+,3,3.00,.667,.500,,Heriberto Hernandez,681715,,1,1,1.00,2,1,1,8,.667,2.334,Elder,693821,3,2,,1.667,,5,2025
+,2,,.000,.000,,Javier Sanoja,691594,,1,3,3.00,,,1,9,.000,.000,Elder,693821,3,,1,.000,,,2025
+1,3,,.333,.333,,Jakob Marsee,805300,1,1,1,1.00,1,,1,12,.333,1.000,Elder,693821,3,1,,.667,,2,2025
+2,3,,.000,.000,,Agustin Ramirez,682663,,1,1,0.50,,,3,12,.000,.000,Elder,693821,3,,,.000,,,2025
+,3,,.000,.000,,Graham Pauley,688363,,1,3,3.00,,,2,12,.000,.000,Elder,693821,3,,,.000,,,2025
+,6,,.500,.500,,Otto Lopez,672640,,2,3,3.00,3,,2,19,.500,1.000,Elder,693821,6,2,,.500,,3,2025
+1,2,,.500,.500,,Xavier Edwards,669364,,1,,0.00,1,,1,6,.500,1.000,Elder,693821,2,,,.500,,1,2023
+2,5,,.600,.600,1,Xavier Edwards,669364,,2,,0.00,3,,,18,.667,1.267,Elder,693821,6,1,,.600,,3,2025

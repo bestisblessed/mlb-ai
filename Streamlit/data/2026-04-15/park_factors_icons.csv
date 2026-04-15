@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+825021,Sutter Health Park9:40TEX @ ATH,"OutLeftCenter.svg,OutCenter.svg,OutLeftCenter.svg,ModerateWind.png","OutLeftCenter.svg,OutCenter.svg,OutLeftCenter.svg,Moderate Wind"
+824532,Great American BP6:40SF  @ CIN,"FromRight.svg,FromRight.svg,FromRight.svg,ModerateWind.png,From76to82.png","FromRight.svg,FromRight.svg,FromRight.svg,Moderate Wind,76–82°F"
+824855,Oriole Park12:35ARI @ BAL,"OutRight.svg,OutRight.svg,OutRight.svg,ModerateWind.png,From83to89.png","OutRight.svg,OutRight.svg,OutRight.svg,Moderate Wind,83–89°F"
+823477,Citizens Bank Park6:40CHC @ PHI,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,From83to89.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,83–89°F"
+823399,PNC Park6:40WAS @ PIT,"OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,ModerateWind.png,From76to82.png","OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,Moderate Wind,76–82°F"
+823561,Yankee Stadium7:05LAA @ NYY,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,ModerateWind.png,From76to82.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,Moderate Wind,76–82°F,Low Pressure"
+823722,Target Field1:40BOS @ MIN,"InLeft.svg,InLeftCenter.svg,InCenter.svg,LightWind.png,Under55.png,LowP.png","InLeft.svg,InLeftCenter.svg,InCenter.svg,Light Breeze,Under55.png,Low Pressure"
+824291,Comerica Park6:40KC  @ DET,"FromRight.svg,InRightMiddle.svg,InRight.svg,LightWind.png,HighH.png,LowP.png","FromRight.svg,InRightMiddle.svg,InRight.svg,Light Breeze,High Humidity,Low Pressure"
+823071,Busch Stadium1:15CLE @ STL,"OutLeft.svg,OutLeftMiddle.svg,OutLeft.svg,ModerateWind.png,LowP.png","OutLeft.svg,OutLeftMiddle.svg,OutLeft.svg,Moderate Wind,Low Pressure"
+824209,Daikin Park8:10COL @ HOU,RoofClosed.png,Roof Closed
+824615,Rate Field7:40TB  @ CHW,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,Under55.png,HighH.png,LowP.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,Under55.png,High Humidity,Low Pressure"
+823803,American Family Fld7:40TOR @ MIL,RoofClosed.png,Roof Closed
+824936,Truist Park7:15MIA @ ATL,"FromRight.svg,FromRight.svg,FromRight.svg,LightWind.png,From76to82.png","FromRight.svg,FromRight.svg,FromRight.svg,Light Breeze,76–82°F"
+823963,Dodger Stadium10:10NYM @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze"
+823314,Petco Park9:40SEA @ SD,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,HighH.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,High Humidity"
