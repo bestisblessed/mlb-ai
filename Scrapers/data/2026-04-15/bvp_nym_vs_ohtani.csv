@@ -1,0 +1,10 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,5,.400,1.000,1,Bo Bichette,666182,1,2,,,2,,25,.500,1.100,Ohtani,660271,6,2,.600,3,3,2022
+,2,.000,.---,,Luis Robert,673357,,1,,,,2,8,.000,.000,Ohtani,660271,2,,.000,2,,2021
+,3,.333,1.000,,Luis Robert,673357,,1,,,1,1,13,.333,.666,Ohtani,660271,3,,.333,2,1,2022
+1,3,.000,.000,,Luis Robert,673357,,1,,0.00,,2,14,.000,.000,Ohtani,660271,3,,.000,2,,2023
+,6,.167,.500,,Marcus Semien,543760,,2,1,1.00,1,,30,.167,.334,Ohtani,660271,6,,.167,4,1,2018
+,1,1.000,1.000,,Marcus Semien,543760,,1,,,1,,2,1.000,2.000,Ohtani,660271,1,,1.000,,1,2020
+2,2,.000,.000,1,Marcus Semien,543760,,1,,0.00,,,11,.333,.333,Ohtani,660271,3,,.000,,,2021
+5,9,.222,.286,,Marcus Semien,543760,,3,,0.00,2,4,32,.222,.444,Ohtani,660271,9,,.222,2,2,2022
+2,2,.000,.000,1,Marcus Semien,543760,,1,,0.00,,,15,.333,.333,Ohtani,660271,3,,.000,,,2023
