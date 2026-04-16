@@ -1,0 +1,11 @@
+game_id,game,icons,icon_labels
+824453,Progressive Field6:10BAL @ CLE,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,HighH.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,High Humidity,Low Pressure"
+824530,Great American BP12:40SF  @ CIN,"FromRight.svg,FromRight.svg,FromRight.svg,ModerateWind.png,From76to82.png","FromRight.svg,FromRight.svg,FromRight.svg,Moderate Wind,76–82°F"
+824289,Comerica Park1:10KC  @ DET,"FromRight.svg,FromRight.svg,FromRight.svg,ModerateWind.png,HighH.png,LowP.png","FromRight.svg,FromRight.svg,FromRight.svg,Moderate Wind,High Humidity,Low Pressure"
+824614,Rate Field2:10TB  @ CHW,"OutLeftCenter.svg,OutCenter.svg,OutRightCenter.svg,LightWind.png,LowP.png","OutLeftCenter.svg,OutCenter.svg,OutRightCenter.svg,Light Breeze,Low Pressure"
+823560,Yankee Stadium1:35LAA @ NYY,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From83to89.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,83–89°F,Low Pressure"
+823396,PNC Park12:35WAS @ PIT,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,ModerateWind.png,From76to82.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Moderate Wind,76–82°F"
+824208,Daikin Park8:10COL @ HOU,RoofClosed.png,Roof Closed
+823801,American Family Fld1:40TOR @ MIL,RoofClosed.png,Roof Closed
+825023,Sutter Health Park3:05TEX @ ATH,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,ModerateWind.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Moderate Wind,High Pressure"
+823313,Petco Park8:40SEA @ SD,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,HighH.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,High Humidity"
