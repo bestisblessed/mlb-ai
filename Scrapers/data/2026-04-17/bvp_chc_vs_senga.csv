@@ -1,0 +1,9 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,6,.333,.500,,Ian Happ,664023,,2,1,1.00,2,4,23,.333,.666,Senga,673540,6,,.333,2,2,2023
+,3,.333,.333,,Alex Bregman,608324,1,1,2,2.00,1,4,12,.333,1.000,Senga,673540,3,1,.667,,2,2025
+,2,.000,.000,1,Michael Conforto,624424,,1,1,1.00,,1,12,.333,.333,Senga,673540,3,,.000,1,,2023
+,1,.000,.---,1,Michael Conforto,624424,,1,,,,,11,.500,.500,Senga,673540,2,,.000,1,,2025
+1,2,.500,.500,1,Seiya Suzuki,673548,1,1,,0.00,1,1,15,.667,1.667,Senga,673540,3,1,1.000,,2,2023
+,3,.000,.000,,Carson Kelly,608348,,1,1,1.00,,1,14,.000,.000,Senga,673540,3,,.000,2,,2023
+1,6,.167,.250,,Dansby Swanson,621020,1,2,2,2.00,1,6,27,.167,.500,Senga,673540,6,1,.333,2,2,2023
+,5,.200,.500,1,Nico Hoerner,663538,,2,1,1.00,1,4,27,.333,.533,Senga,673540,6,,.200,3,1,2023
