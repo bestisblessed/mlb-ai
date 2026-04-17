@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824373,Coors Field8:40LAD @ COL,"InLeftMiddle.svg,InLeft.svg,InRight.svg,ModerateWind.png,Under55.png","InLeftMiddle.svg,InLeft.svg,InRight.svg,Moderate Wind,Under55.png"
+824693,Wrigley Field2:20NYM @ CHC,"OutLeft.svg,OutLeft.svg,OutLeft.svg,HeavyWind.png,LowP.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Heavy Wind,Low Pressure"
+822752,Nationals Park6:45SF  @ WAS,"InLeftMiddle.svg,InLeftCenter.svg,InRightCenter.svg,From76to82.png","InLeftMiddle.svg,InLeftCenter.svg,InRightCenter.svg,76–82°F"
+825101,Chase Field9:40TOR @ ARI,"FromLeft.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,From76to82.png,LowH.png,LowP.png","FromLeft.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,76–82°F,Low Humidity,Low Pressure"
+823476,Citizens Bank Park6:40ATL @ PHI,"InLeft.svg,InLeftCenter.svg,InCenter.svg,ModerateWind.png,From76to82.png","InLeft.svg,InLeftCenter.svg,InCenter.svg,Moderate Wind,76–82°F"
+823397,PNC Park6:40TB  @ PIT,"OutRight.svg,InLeftMiddle.svg,InLeftCenter.svg","OutRight.svg,InLeftMiddle.svg,InLeftCenter.svg"
+825019,Sutter Health Park9:40CHW @ ATH,"InRightCenter.svg,InRight.svg,FromRight.svg","InRightCenter.svg,InRight.svg,FromRight.svg"
+824207,Daikin Park8:10STL @ HOU,RoofClosed.png,Roof Closed
+823720,Target Field8:10CIN @ MIN,"OutRight.svg,OutRight.svg,OutRight.svg,HeavyWind.png,Under55.png,HighH.png,LowP.png","OutRight.svg,OutRight.svg,OutRight.svg,Heavy Wind,Under55.png,High Humidity,Low Pressure"
+823883,LoanDepot Park7:10MIL @ MIA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,ModerateWind.png,HighH.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Moderate Wind,High Humidity"
+824048,Angel Stadium9:38SD  @ LAA,"OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,ModerateWind.png,From76to82.png,LowH.png","OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,Moderate Wind,76–82°F,Low Humidity"
+823559,Yankee Stadium7:05KC  @ NYY,"InLeftMiddle.svg,InLeft.svg,InLeft.svg,ModerateWind.png","InLeftMiddle.svg,InLeft.svg,InLeft.svg,Moderate Wind"
+824454,Progressive Field6:10BAL @ CLE,"InRightCenter.svg,InRight.svg,InRightMiddle.svg,LightWind.png,Under55.png,HighH.png","InRightCenter.svg,InRight.svg,InRightMiddle.svg,Light Breeze,Under55.png,High Humidity"
+824778,Fenway Park7:10DET @ BOS,"InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,LightWind.png,Under55.png,HighH.png","InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,Light Breeze,Under55.png,High Humidity"
+823152,T-Mobile Park9:40TEX @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,Under55.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,Under55.png,High Pressure"

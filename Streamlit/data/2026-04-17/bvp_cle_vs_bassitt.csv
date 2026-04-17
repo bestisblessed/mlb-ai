@@ -1,0 +1,16 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,intentionalwalks,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,1.00,1.000,.---,1,Bo Naylor,666310,,1,,,1,1,,,9,1.000,5.000,Bassitt,605135,2,1,4.000,,4,2023
+,2,2.00,.500,.---,,Bo Naylor,666310,,1,,,1,1,,,8,.500,2.500,Bassitt,605135,2,1,2.000,1,4,2025
+2,3,,.333,.333,,Steven Kwan,680757,,1,,0.00,1,,,1,14,.333,.666,Bassitt,605135,3,,.333,,1,2023
+2,3,,.333,.333,,Steven Kwan,680757,,1,,0.00,1,,,,15,.333,.666,Bassitt,605135,3,,.333,,1,2025
+2,2,,.000,.000,,Brayan Rocchio,677587,,1,,0.00,,,,,9,.000,.000,Bassitt,605135,2,,.000,,,2025
+,1,,1.000,1.000,,Daniel Schneemann,682177,1,1,,,1,,,,4,1.000,3.000,Bassitt,605135,1,,2.000,,2,2025
+3,3,,.000,.000,,Kyle Manzardo,700932,,1,,0.00,,,,4,7,.000,.000,Bassitt,605135,3,,.000,,,2025
+1,2,,.000,.000,,Angel Martinez,682657,,1,,0.00,,,,,14,.000,.000,Bassitt,605135,2,,.000,1,,2025
+,,,.000,.---,2,Jose Ramirez,608070,,1,,,,,,,13,1.000,1.000,Bassitt,605135,2,,.000,,,2019
+2,6,,.000,.000,,Jose Ramirez,608070,,2,1,0.50,,,,2,27,.000,.000,Bassitt,605135,6,,.000,3,,2021
+1,2,,.500,.500,1,Jose Ramirez,608070,1,1,,0.00,1,,1,,8,.667,1.667,Bassitt,605135,3,,1.000,,2,2023
+,2,,1.000,1.000,,Jose Ramirez,608070,,1,,,2,,,,7,1.000,2.000,Bassitt,605135,2,,1.000,,2,2025
+,2,,.500,1.000,,Austin Hedges,595978,,1,,,1,,,,12,.500,1.000,Bassitt,605135,2,,.500,1,1,2018
+1,2,,.500,.500,,Austin Hedges,595978,,1,,0.00,1,,,,9,.500,1.000,Bassitt,605135,2,,.500,,1,2023
+2,10,,.200,.250,1,Rhys Hoskins,656555,1,4,4,2.00,2,,,6,49,.273,.573,Bassitt,605135,11,,.300,2,3,2022
