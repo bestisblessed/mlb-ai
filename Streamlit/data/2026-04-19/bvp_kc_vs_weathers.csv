@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,3,.333,.500,Lane Thomas,657041,1,1,1,1.00,,1,2,11,.333,1.000,Weathers,677960,3,1,.667,1,2,2023
+,2,.500,1.000,Jonathan India,663697,1,1,,,1,1,1,16,.667,1.667,Weathers,677960,3,1,1.000,1,2,2021
+,1,.000,.000,Starling Marte,516782,,1,1,1.00,1,,,6,.500,.500,Weathers,677960,2,,.000,,,2021
+1,2,.500,.500,Starling Marte,516782,,1,,0.00,,1,,5,.500,1.000,Weathers,677960,2,,.500,,1,2023
