@@ -1,0 +1,19 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,triples,year
+1,2,,.000,.000,,Isiah Kiner-Falefa,643396,,1,1,1,1.00,,,,1,7,.000,.000,Flaherty,656427,2,,.000,,,,2023
+1,5,5.00,.800,.750,,Isiah Kiner-Falefa,643396,1,2,,,0.00,,4,1,1,17,.800,2.800,Flaherty,656427,5,1,2.000,,10,1,2024
+1,1,,.000,.000,1,Isiah Kiner-Falefa,643396,,1,,,0.00,,,,2,9,.500,.500,Flaherty,656427,2,,.000,,,,2025
+,3,,.667,1.000,,Masataka Yoshida,807799,,2,,,,,2,,1,20,.667,1.334,Flaherty,656427,3,,.667,1,2,,2023
+,2,,.500,.500,1,Wilyer Abreu,677800,,2,,1,1.00,,1,,2,11,.667,1.167,Flaherty,656427,3,,.500,,1,,2023
+,3,,.000,.000,,Wilyer Abreu,677800,,1,,1,1.00,,,,,14,.000,.000,Flaherty,656427,3,,.000,2,,,2024
+,1,,.000,.---,,Ceddanne Rafaela,678882,,1,,,,,,,2,9,.000,.000,Flaherty,656427,1,,.000,1,,,2023
+,2,,1.000,1.000,,Connor Wong,657136,,1,,,,,2,,,5,1.000,2.000,Flaherty,656427,2,1,1.000,,2,,2023
+,2,,.000,.---,,Connor Wong,657136,,1,,,,,,,1,9,.000,.000,Flaherty,656427,2,,.000,2,,,2024
+1,3,,.000,.000,,Jarren Duran,680776,,1,,,0.00,,,,,16,.000,.000,Flaherty,656427,3,,.000,2,,,2024
+2,3,,.333,.333,,Trevor Story,596115,1,1,,,0.00,,1,,2,8,.333,1.000,Flaherty,656427,3,1,.667,,2,,2018
+,2,,.000,.---,1,Trevor Story,596115,,1,,,,,,,,17,.333,.333,Flaherty,656427,3,,.000,2,,,2021
+1,3,,.333,.500,,Trevor Story,596115,,2,,,0.00,,1,,3,13,.333,.666,Flaherty,656427,3,1,.333,1,1,,2023
+1,4,4.00,.250,.000,,Willson Contreras,575929,,3,,1,1.00,1,1,1,3,16,.400,1.400,Flaherty,656427,5,1,1.000,1,4,,2018
+1,15,,.200,.375,,Willson Contreras,575929,,6,,4,4.00,,3,,5,69,.200,.400,Flaherty,656427,15,1,.200,7,3,,2019
+,2,,1.000,1.000,1,Willson Contreras,575929,,2,,,,,2,,,20,1.000,2.000,Flaherty,656427,3,3,1.000,,2,,2020
+,1,,.000,.---,,Willson Contreras,575929,,1,,,,,,,1,4,.000,.000,Flaherty,656427,1,,.000,1,,,2022
+,3,,.000,.---,,Willson Contreras,575929,,1,,,,,,,,13,.000,.000,Flaherty,656427,3,,.000,3,,,2024
