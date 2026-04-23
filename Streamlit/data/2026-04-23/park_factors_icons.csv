@@ -1,0 +1,10 @@
+game_id,game,icons,icon_labels
+824368,Coors Field3:10SD  @ COL,"InLeftMiddle.svg,InLeft.svg,InLeftMiddle.svg,ModerateWind.png,LowH.png,LowP.png","InLeftMiddle.svg,InLeft.svg,InLeftMiddle.svg,Moderate Wind,Low Humidity,Low Pressure"
+824770,Fenway Park6:10NYY @ BOS,"InLeftMiddle.svg,FromLeft.svg,InLeftMiddle.svg,ModerateWind.png,Under55.png,LowP.png","InLeftMiddle.svg,FromLeft.svg,InLeftMiddle.svg,Moderate Wind,Under55.png,Low Pressure"
+825096,Chase Field3:40CHW @ ARI,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,From76to82.png,LowH.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,76–82°F,Low Humidity"
+824689,Wrigley Field2:20PHI @ CHC,"OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,ModerateWind.png,LowP.png","OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,Moderate Wind,Low Pressure"
+822745,Nationals Park1:05ATL @ WAS,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,From76to82.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,76–82°F"
+822912,Globe Life Field8:05PIT @ TEX,"OutLeft.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png,From76to82.png,LowP.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Moderate Wind,76–82°F,Low Pressure"
+823233,Oracle Park3:45LAD @ SF,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,HighP.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,High Pressure"
+824288,Comerica Park1:10MIL @ DET,"InLeftCenter.svg,InLeft.svg,InLeft.svg,LightWind.png","InLeftCenter.svg,InLeft.svg,InLeft.svg,Light Breeze"
+823639,Citi Field7:10MIN @ NYM,"InLeft.svg,InLeft.svg,InLeft.svg,ModerateWind.png","InLeft.svg,InLeft.svg,InLeft.svg,Moderate Wind"
