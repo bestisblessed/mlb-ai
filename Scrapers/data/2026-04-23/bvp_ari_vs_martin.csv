@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,batter,batter_id,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,2,.000,.000,Alek Thomas,677950,1,,,0.00,,5,4,.000,.000,Martin,663436,2,,.000,1,,2022
+,2,.000,.000,Ketel Marte,606466,1,1,1,1.00,,2,7,.000,.000,Martin,663436,2,,.000,1,,2022
+,1,1.000,1.000,Lourdes Gurriel Jr. L. Gurriel Jr.,666971,1,,,,1,,6,1.000,2.000,Martin,663436,1,,1.000,,1,2022
+,1,1.000,1.000,Geraldo Perdomo,672695,1,,,,1,,5,1.000,2.000,Martin,663436,1,2,1.000,,1,2022
