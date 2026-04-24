@@ -1,0 +1,15 @@
+game_id,game,icons,icon_labels
+824529,Great American BP6:40DET @ CIN,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,HighH.png,LowP.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,High Humidity,Low Pressure"
+824611,Rate Field7:40WAS @ CHW,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,LowP.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,Low Pressure"
+824854,Oriole Park7:05BOS @ BAL,"InRightMiddle.svg,FromRight.svg,FromRight.svg,LightWind.png,HighH.png,LowP.png","InRightMiddle.svg,FromRight.svg,FromRight.svg,Light Breeze,High Humidity,Low Pressure"
+824932,Truist Park7:15PHI @ ATL,"OutLeft.svg,OutLeftMiddle.svg,FromRight.svg,From76to82.png,LowP.png","OutLeft.svg,OutLeftMiddle.svg,FromRight.svg,76–82°F,Low Pressure"
+823962,Dodger Stadium10:15CHC @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,LowP.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,Low Pressure"
+823232,Oracle Park10:15MIA @ SF,"OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,ModerateWind.png,Under55.png","OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Moderate Wind,Under55.png"
+824124,Kauffman Stadium7:40LAA @ KC,"InLeft.svg,InCenter.svg,InRightCenter.svg,LightWind.png,LowP.png","InLeft.svg,InCenter.svg,InRightCenter.svg,Light Breeze,Low Pressure"
+822827,Rogers Centre7:07CLE @ TOR,RoofClosed.png,Roof Closed
+824204,Daikin Park8:10NYY @ HOU,RoofClosed.png,Roof Closed
+823800,American Family Fld7:40PIT @ MIL,RoofClosed.png,Roof Closed
+822992,Tropicana Field7:10MIN @ TB,RoofClosed.png,Roof Closed
+822909,Globe Life Field8:05ATH @ TEX,RoofClosed.png,Roof Closed
+823069,Busch Stadium8:15SEA @ STL,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,LowP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,Low Pressure"
+823638,Citi Field7:10COL @ NYM,"OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,LightWind.png,Under55.png,LowP.png","OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,Light Breeze,Under55.png,Low Pressure"

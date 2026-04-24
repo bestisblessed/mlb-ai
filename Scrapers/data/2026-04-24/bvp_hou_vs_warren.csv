@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,2,.000,.000,Jose Altuve,514888,,1,1,1,1.00,,2,9,.000,.000,Warren,701542,2,.000,,,2025
+1,2,.500,.500,Yainer Diaz,673237,1,1,,,0.00,1,,5,.500,1.500,Warren,701542,2,1.000,,2,2025
+,2,1.000,1.000,Yordan Alvarez,670541,,1,,,,2,,13,1.000,2.000,Warren,701542,2,1.000,,2,2025
+,2,.000,.---,Carlos Correa,621043,,1,,,,,1,7,.000,.000,Warren,701542,2,.000,2,,2025
