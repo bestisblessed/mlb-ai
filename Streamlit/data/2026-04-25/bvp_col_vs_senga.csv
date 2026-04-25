@@ -1,0 +1,13 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,,1.000,1.000,1,Tyler Freeman,671289,1,1,,,,1,,,11,1.000,3.000,Senga,673540,2,,2.000,,2,2025
+,2,,.000,.000,,Troy Johnston,687859,,1,1,1,1.00,,,1,5,.000,.000,Senga,673540,2,,.000,1,,2025
+,2,,.000,.000,1,Edouard Julien,666397,,1,,2,2.00,,,1,15,.333,.333,Senga,673540,3,,.000,,,2023
+,3,,.000,.---,,Mickey Moniak,666160,,1,,,,,,2,12,.000,.000,Senga,673540,3,,.000,3,,2023
+1,4,4.00,.250,.000,,Mickey Moniak,666160,,2,,2,2.00,1,1,1,10,.250,1.250,Senga,673540,4,1,1.000,,4,2025
+2,6,,.167,.250,,Hunter Goodman,696100,,2,,1,0.50,1,,1,29,.167,.334,Senga,673540,6,,.167,2,1,2025
+2,2,,.000,.000,,Ezequiel Tovar,678662,,1,,,0.00,,,,9,.000,.000,Senga,673540,2,,.000,,,2023
+1,2,2.00,.500,.000,1,Ezequiel Tovar,678662,,1,,,0.00,1,1,,15,.667,2.667,Senga,673540,3,1,2.000,,4,2025
+,3,,.333,1.000,,Jake McCarthy,664983,,1,,,,1,,,16,.333,.666,Senga,673540,3,,.333,2,1,2023
+1,5,,.000,.000,,Brenton Doyle,686668,,2,,1,1.00,,,1,27,.000,.000,Senga,673540,5,,.000,3,,2025
+,1,,.000,.---,1,Willi Castro,650489,,1,,,,,,1,11,.500,.500,Senga,673540,2,,.000,1,,2023
+2,5,,.000,.000,1,Jordan Beck,687597,,2,,1,0.50,,,2,21,.167,.167,Senga,673540,6,,.000,2,,2025
