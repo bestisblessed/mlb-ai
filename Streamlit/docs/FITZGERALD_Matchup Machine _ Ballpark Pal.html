@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://www.ballparkpal.com/MatchupMachine.php?batter=666149&pitcher=607536 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1F2K4HLD87');
+</script>
+	<link rel="stylesheet" href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/all.min.css">
+	<script type="text/javascript" charset="utf8" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/jquery.dataTables.min.js"></script>
+	<link href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/bootstrap.min.css" rel="stylesheet">
+	<script src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/jquery.min.js"></script>
+	<script src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/jquery-3.6.0.min.js"></script>
+	<script src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/jquery.easy-autocomplete.min.js"></script>
+	<script type="text/javascript" charset="utf8" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/dataTables.buttons.min.js"></script>
+	<script type="text/javascript" language="javascript" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/jszip.min.js"></script>
+	<script type="text/javascript" language="javascript" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/pdfmake.min.js"></script>
+	<script type="text/javascript" language="javascript" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/vfs_fonts.js"></script>
+	<script type="text/javascript" language="javascript" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/buttons.html5.min.js"></script>
+	<script type="text/javascript" language="javascript" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/buttons.print.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/buttons.dataTables.min.css">
+	<link href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/css2" rel="stylesheet">
+	<link href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/css2(1)" rel="stylesheet">
+	<link href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/css2(2)" rel="stylesheet">
+	<link href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/css2(3)" rel="stylesheet">
+	<link href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/css2(4)" rel="stylesheet">
+	<link href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/css2(5)" rel="stylesheet">
+	<link href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/css2(6)" rel="stylesheet">
+
+	<link rel="stylesheet" href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/easy-autocomplete.min.css">
+	<link rel="stylesheet" href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/easy-autocomplete.themes.css">
+    <link rel="stylesheet" href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/CommonStyles.css">
+	<link rel="stylesheet" href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Styles2025.css">
+	<script>
+			$(document).ready(function() {
+				var optionsBatter = {
+					url: function(phrase) {
+						return "fetchMatchupMachineAutocompleteBatter.php?searchterm=" + phrase + "&format=json";
+					},
+
+					getValue: "name",
+					placeholder: "Start typing a batter...",
+
+					list: {
+
+						onSelectItemEvent: function() {
+							var value = $("#batter").getSelectedItemData().code;
+							$batter = value
+						}
+					},
+					theme: "round",
+
+					template: {
+						type: "custom",
+						method: function(value, item) {
+							return "<p style='font-size:24px; padding:0px; margin:0px;'><img src='" + item.icon + "' style='width:50px;height:24px;' />" + value + "</p>";
+						}
+					},
+				delay: 500 // Delay in milliseconds
+				};
+
+				$("#batter").easyAutocomplete(optionsBatter);
+				var optionsPitcher = {
+					url: function(phrase) {
+						return "fetchMatchupMachineAutocompletePitcher.php?searchterm=" + phrase + "&format=json";
+					},
+
+					getValue: "name",
+					placeholder: "Start typing a pitcher...",
+
+					list: {
+
+						onSelectItemEvent: function() {
+							var value = $("#pitcher").getSelectedItemData().code;
+							$pitcher = value
+						}
+					},
+					theme: "round",
+
+					template: {
+						type: "custom",
+						method: function(value, item) {
+							return "<p style='font-size:24px; padding:0px; margin:0px;'><img src='" + item.icon + "' style='width:50px;height:24px;' />" + value + "</p>";
+						}
+					}
+
+				};
+				$("#pitcher").easyAutocomplete(optionsPitcher);
+				$('#button').click(function()
+				{
+						window.location.href = 'Matchup-Machine-Preview.php?batter=' + $batter + '&pitcher=' + $pitcher + '';
+				});
+				$('#modelPrediction').DataTable({
+					"ordering": false,
+					"paging": false,
+					"dom": '<"wrapper"t>'
+				});
+			});
+
+	</script>
+	<style>
+	body {
+	  font-family: Arial, sans-serif;
+	}
+	@media (min-width: 1024px) {
+	body {
+		zoom: 0.8;
+		}
+	}
+	html, body {
+  overflow-x: hidden;
+}
+	a:link {
+	  text-decoration: none;
+	}
+	a:visited {
+	  color: blue;
+	}
+	h1 {
+	  background-color: #f0b46c;
+	  font-size: 50px;
+	  font-family: sans-serif;
+	  font: helvetica;
+	  color: #168241;
+	  margin: 0;
+	  padding: 0;
+		text-align: center;
+	  margin-top: 40px;
+	}
+
+	h2 {
+	  font-size: 25px;
+	  font-family: sans-serif;
+	  font: helvetica;
+	  text-align: center;
+	}
+
+	img {
+	}
+
+	#modelPrediction {
+	    max-width: 1200px;
+	    margin-top: 30px;
+        margin-left: auto; 
+        margin-right: auto;
+	}
+	
+    @media (max-width: 800px) {
+        #modelPrediction {
+          }
+        }
+
+	#modelPrediction th, td {
+	  border: 1px solid black;
+	  font-size: 28px;
+	  font-family: sans-serif;
+	  font: helvetica;
+	}
+
+	th {
+	  background-color: #009933;
+	}
+	
+	.descriptionBox {
+		margin-top: 50px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.glossaryBox {
+		margin-top: 50px;
+		margin-left: 50px;
+		margin-right: 50px;
+		text-align: left;
+	}
+
+	.wrapper {
+	    width:95%;
+	    margin: auto;
+	}
+
+	.formBox {
+        margin: auto;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.insideFormBox {
+        text-align: left;
+		display: inline-block;
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-bottom:10px;
+	}
+
+	.image123 {
+        margin: auto;
+		width: 100%;
+		text-align: center;
+		border: 1px;
+	}
+
+	.img-with-text {
+        text-align: center;
+		display: inline-block;
+		margin-right: 40px;
+		margin-left: 40px;
+		margin-bottom:10px;
+	}
+
+	.img-vs {
+        text-align: center;
+		display: inline-block;
+		position: relative;
+		top: 125px;
+	}
+
+	.img-with-text img {
+        display: block;
+        margin: 0 auto;
+	}
+
+	.button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+		border-radius: 48px;
+		cursor: pointer;
+	}
+
+	.main-bar-container {
+		width: 500px;
+		display: flex;
+		border-top: 5px solid black;
+		padding-top: 15px;
+		margin-top: 15px;
+		margin-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main-bar-container div {
+		font-weight: bold;
+		color: white;
+		border: 2px solid black;
+		margin-top: -45px;
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		border-radius: 50%;
+		z-index: 99;
+		font-size: 20px;
+	}
+
+	.advantageDescContainer {
+        margin: auto;
+		margin-top: 0px;
+		margin-bottom: 40px;
+		width: 100%;
+		text-align: center;
+		font-size: 24px;
+	}
+	
+	.attributeTable {
+	    width: 95%;
+	    margin-top: 60px;
+	    margin-left: auto; 
+	    margin-right: auto;
+	    max-width: 1200px;
+	    border-collapse: collapse;
+	    border: none;
+	}
+	
+	.attributeTable th, .attributeTable td {
+	  padding: 8px;
+	  border: 2px solid black;
+	  font-size: 28px;
+	  font-family: sans-serif;
+	  font: helvetica;
+	}
+	
+    @media (max-width: 800px) {
+        .attributeTable {
+            max-width: 800px;
+          }
+        }
+        
+	.historyAggregatedTable {
+	    width: 95%;
+	    margin-top: 60px;
+	    margin-left: auto; 
+	    margin-right: auto;
+	    max-width: 1200px;
+	    border-collapse: collapse;
+	    border: none;
+	}
+	
+	.historyAggregatedTable th, .attributeTable td {
+	  padding: 8px;
+	  border: 2px solid black;
+	  font-size: 28px;
+	  font-family: sans-serif;
+	  font: helvetica;
+	}
+	
+    @media (max-width: 800px) {
+        .historyAggregatedTable {
+            max-width: 800px;
+          }
+        }        
+            
+    .aboveLink {
+        font-size:24px;
+        max-width:800px;
+    }
+    
+    @media (max-width: 1000px) {
+      .aboveLink {
+        font-size:32px;
+      }
+    }        
+    
+    .historyExplainText {
+        width: 95%; 
+        max-width:1200px; 
+        margin-top:10px;
+        font-size:18px;
+    }
+
+    @media (max-width: 1000px) {
+      .historyExplainText {
+        font-size:24px;
+      }
+    }        
+
+    .diagram {
+		position: relative;
+		margin: 40px auto;
+		width: 95%;
+		max-width: 1200px;
+		text-align: center;
+		background-color:#ffffff;
+		margin-top:40px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-radius: 18px; 
+		border: 2px solid black;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+                
+    .flex-container {
+        display: flex;
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        gap: 10px; /* Optional: Adjust space between items */
+    }
+
+	.toggle-buttons {
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+		gap: 15px; /* Adds spacing between buttons */
+	}
+
+	.toggle-btn1 {
+		padding: 15px 25px;
+		margin: 0;
+		background-color: #e0e0e0;
+		border: 2px solid #0073e6; /* Border color for a sleek look */
+		border-radius: 25px; /* Rounded corners for modern design */
+		cursor: pointer;
+		font-size: 28px;
+		font-weight: bold;
+		color: #0073e6; /* Button text color */
+		transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+	}
+
+	.toggle-btn1:hover {
+		background-color: #0073e6; /* Highlight on hover */
+		color: white; /* Text turns white on hover */
+	}
+
+	.toggle-btn1.active {
+		background-color: #0073e6; /* Active color */
+		color: white;
+		box-shadow: 0 4px 8px rgba(0, 115, 230, 0.5); /* More pronounced shadow */
+	}
+
+	.toggle-btn2 {
+		padding: 15px 25px;
+		margin: 0;
+		background-color: #e0e0e0;
+		border: 2px solid #0073e6; /* Border color for a sleek look */
+		border-radius: 25px; /* Rounded corners for modern design */
+		cursor: pointer;
+		font-size: 28px;
+		font-weight: bold;
+		color: #0073e6; /* Button text color */
+		transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+	}
+
+	.toggle-btn2:hover {
+		background-color: #0073e6; /* Highlight on hover */
+		color: white; /* Text turns white on hover */
+	}
+
+	.toggle-btn2.active {
+		background-color: #0073e6; /* Active color */
+		color: white;
+		box-shadow: 0 4px 8px rgba(0, 115, 230, 0.5); /* More pronounced shadow */
+	}
+
+	.sectionHeaderContainer {
+		text-align: center; 
+		margin-top: 60px; 
+		background-color: #f0ede6;
+		padding:1px 0px 20px 0px;
+	}
+
+	.sectionHeader {
+		font-size: 38px; 
+		font-weight: bold; 
+		color: #524424; 
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	.summaryDescriptionContainer {
+		border: 2px solid #000;
+		border-radius: 18px; 
+		max-width:1200px; 
+		width: 95%; 
+		margin: auto;
+		margin-top: 30px;
+		padding: 20px 20px 20px 40px; 
+		background-color: #ffffff;
+	}
+
+	.summaryDescription {
+		font-size: 24px; 
+		font-weight: normal;
+	}
+
+	.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.7);
+	}
+
+	.modal-content {
+	background-color: #fff;
+	margin: 15% auto;
+	padding: 20px;
+	width: 70%; /* Reduced width from 60% to 40% */
+	max-width: 500px; /* Added a max-width to prevent it from becoming too large */
+	}
+
+	@media (max-width: 1000px) {
+	.modal-content {
+		width: 80%; /* Increased width for smaller screens for better visibility */
+		font-size: 24px;
+	}
+	}
+
+	.close {
+  float: right;
+  cursor: pointer;
+}
+
+/* Question mark icon style */
+#question-icon {
+  cursor: pointer;
+}
+
+	.aboveLink {
+    font-size:18px;
+}
+
+@media (max-width: 1000px) {
+  .aboveLink {
+    font-size:24px;
+  }
+}
+
+	</style>
+<title>Matchup Machine | Ballpark Pal</title><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta name="viewport" content="user-scalable=0"><meta name="description" content="Plug in a batter and pitcher to get a prediction of the outcome."><link rel="icon" href="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/MainLogo.png"></head>
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<body style="margin-left:0px; margin-right:0px; background-color: #f2e9d0;"><div class="user-info"><div class="email-container"><span class="email">tyler.durette@gmail.com</span></div><div class="actions-container"><a href="https://dubclub.win/u//#subscriptions" class="user-action logout"><i class="fas fa-user-circle"></i> My Account</a><a href="https://www.ballparkpal.com/Support.php" class="user-action logout"><i class="fas fa-info-circle"></i> Support</a><a href="https://www.ballparkpal.com/LogOut.php" class="user-action logout"><i class="fas fa-sign-out-alt"></i> Sign out</a></div></div><a href="https://www.ballparkpal.com/index.php"><img class="mainLogo" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/MainLogo.png" ;=""></a><h1 class="loggedInHeader"><a href="https://www.ballparkpal.com/index.php" style="color:#DFDFD4">Matchup Machine</a></h1>	
+	<div class="formBox">
+		<div class="insideFormBox">
+			<div class="easy-autocomplete eac-round" style="width: 300px;"><input id="batter" placeholder="Start typing a batter..." autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-batter"><ul></ul></div></div>
+		</div>
+		<div class="insideFormBox">
+			<button id="button" class="button">GO!</button>
+		</div>
+		<div class="insideFormBox">
+			<div class="easy-autocomplete eac-round" style="width: 300px;"><input id="pitcher" placeholder="Start typing a pitcher..." autocomplete="off"><div class="easy-autocomplete-container" id="eac-container-pitcher"><ul></ul></div></div>
+		</div>
+	</div>
+
+		
+			<div style="border: 2px solid #000; padding: 10px; border-radius: 18px; max-width:1200px; width: 95%; margin: auto; padding-bottom:50px; padding-top:50px; background-color: #ffffff;">
+				<div class="image123" style="display: flex; justify-content: center; align-items: flex-start; gap: 20px;">
+				<div class="img-with-text" style="text-align: center;">
+					<p style="font-size:40px; margin-bottom:0px;">
+						<a href="https://ballparkpal.com/Batter.php?PlayerId=666149">Tyler Fitzgerald</a>
+					</p>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" alt="sometext">
+					<p style="font-size:20px; display: flex; align-items: center; justify-content: center;">
+						<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-DPlus.png" width="50" height="50" style="vertical-align:middle; margin: 0px; margin-right:10px;"> 
+						matchup for Kyle Freeland
+					</p>
+					<p style="font-size:20px; margin-top:-10px;">
+						<strong>353rd</strong> out of <strong>453</strong> (Worst 22%)
+					</p>
+				</div>
+				<div class="img-vs">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/VS.png" alt="sometext" width="50" height="50">
+				</div>
+				<div class="img-with-text" style="text-align: center;">
+					<p style="font-size:40px; margin-bottom:0px;">
+						<a href="https://ballparkpal.com/Pitcher.php?PlayerId=607536">Kyle Freeland</a>
+					</p>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" alt="sometext">
+					<p style="font-size:20px; display: flex; align-items: center; justify-content: center;">
+						<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-APlus.png" width="50" height="50" style="vertical-align:middle; margin: 0px; margin-right:10px;"> 
+						matchup for T. Fitzgerald
+					</p>
+					<p style="font-size:20px; margin-top:-10px;">
+						<strong>16th</strong> out of <strong>600</strong> (Best 3%)
+					</p>
+				</div>
+			</div><div class="advantageDescContainer">Extreme advantage for Fitzgerald</div><div class="main-bar-container">
+			<div style="background-color: #009105; font-size: 28px; margin-left: 31.71px;">9</div>
+		</div></div>
+		<div class="sectionHeaderContainer">
+			<h2 class="sectionHeader">Model Prediction</h2>
+		</div>
+		
+		<div class="summaryDescriptionContainer">
+			<p class="summaryDescription">Tyler Fitzgerald has a <strong>34.6% chance</strong> of reaching base vs Kyle Freeland, which is <span style="color: green; font-weight: bold;"> 4.5% higher</span> than Fitzgerald's typical expectations, and <span style="color: red; font-weight: bold;"> 0.7% higher</span> than batters facing Freeland.</p>
+		</div><div id="modelPrediction_wrapper" class="dataTables_wrapper no-footer"><div class="wrapper"><table id="modelPrediction" class="dataTable no-footer">
+			<thead>
+			<tr><th style="background-color: rgb(212, 212, 212); text-align: center; padding: 0px; width: 238.22px;" class="sorting_disabled" rowspan="1" colspan="1"></th><th style="background-color: rgb(212, 212, 212); text-align: center; padding: 0px; width: 140.491px;" class="sorting_disabled" rowspan="1" colspan="1">Reach</th><th style="background-color: rgb(212, 212, 212); text-align: center; padding: 0px; width: 132.764px;" class="sorting_disabled" rowspan="1" colspan="1">Hit</th><th style="background-color: rgb(212, 212, 212); text-align: center; padding: 0px; width: 125.94px;" class="sorting_disabled" rowspan="1" colspan="1">HR</th><th style="background-color: rgb(212, 212, 212); text-align: center; padding: 0px; width: 158.557px;" class="sorting_disabled" rowspan="1" colspan="1">2B / 3B</th><th style="background-color: rgb(212, 212, 212); text-align: center; padding: 0px; width: 132.764px;" class="sorting_disabled" rowspan="1" colspan="1">1B</th><th style="background-color: rgb(212, 212, 212); text-align: center; padding: 0px; width: 125.94px;" class="sorting_disabled" rowspan="1" colspan="1">BB</th><th style="background-color: rgb(212, 212, 212); text-align: center; padding: 0px; width: 132.825px;" class="sorting_disabled" rowspan="1" colspan="1">K</th></tr>
+		</thead>
+		<tbody><tr class="odd"><td style="text-align:center; background-color: #feffa8;padding:0px;">Prediction</td><td style="text-align:center; background-color: #feffa8;padding:0px;">34.6%</td><td style="text-align:center; background-color: #feffa8;padding:0px;">28.4%</td><td style="text-align:center; background-color: #feffa8;padding:0px;">4.3%</td><td style="text-align:center; background-color: #feffa8;padding:0px;">8.3%</td><td style="text-align:center; background-color: #feffa8;padding:0px;">15.9%</td><td style="text-align:center; background-color: #feffa8;padding:0px;">6.2%</td><td style="text-align:center; background-color: #feffa8;padding:0px;">22.8%</td></tr><tr class="even"><td style="text-align:center"> Fitzgerald</td><td style="text-align:center; background-color: #9cf79c">+4.5</td><td style="text-align:center; background-color: #0bb50b">+7.1</td><td style="text-align:center; background-color: #0bb50b">+1.3</td><td style="text-align:center; background-color: #0bb50b">+3.2</td><td style="text-align:center; background-color: #59de59">+2.6</td><td style="text-align:center; background-color: #f55d5d">-2.6</td><td style="text-align:center; background-color: #0bb50b">-7.1</td></tr><tr class="odd"><td style="text-align:center"> Freeland</td><td style="text-align:center; background-color: ">+0.7</td><td style="text-align:center; background-color: ">+0.4</td><td style="text-align:center; background-color: #f59d9d">+0.6</td><td style="text-align:center; background-color: #f55d5d">+1.9</td><td style="text-align:center; background-color: #9cf79c">-2.1</td><td style="text-align:center; background-color: #ffe3e3">+0.4</td><td style="text-align:center; background-color: #59de59">+3.7</td></tr></tbody></table></div></div>
+			<div class="sectionHeaderContainer">
+				<h2 class="sectionHeader">Handedness and Release Point</h2>
+				<h4 style="margin-top:15px; margin-bottom:0px; color: #524424;">Click on a grade for a detailed view</h4>
+			</div>
+		
+		<div class="summaryDescriptionContainer" ;="">
+			<p class="summaryDescription">Tyler Fitzgerald is <strong>slightly better</strong> vs left-handed pitching. Kyle Freeland is <strong>left handed</strong> with a <strong>horizontal</strong> release toward the first base side. Fitzgerald has a B+ grade vs this particular release point.</p>
+		</div>
+
+		<div class="diagram">
+			<div class="flex-container">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/VsRightHand.png" style="width:150px; margin-right:0px;">
+				<a href="https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=13&amp;AttributeId=104&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-CMinusRightHand.png" style="width:150px; margin-right:80px;">
+				</a>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" style="width:150px;">
+				<a href="https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=13&amp;AttributeId=105&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-CPlusLeftHand.png" style="width:150px; margin-left:80px;">
+				</a>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/VsLeftHand.png" style="width:150px; margin-left:0px;">
+			</div>
+			<div class="row">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/VsReleasePoint.png" alt="Left Arrow" style="width:100%;">
+			</div>
+
+			<div class="row" style="margin-bottom:20px;">
+			<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-DMinus.png" style="width:90px; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=1&amp;AttributeId=1&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-F.png" style="width:90px; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=1&amp;AttributeId=2&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-CPlus.png" style="width:90px; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=1&amp;AttributeId=3&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-CPlus.png" style="width:90px; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=1&amp;AttributeId=4&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=1&amp;AttributeId=5&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=1&amp;AttributeId=6&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=1&amp;AttributeId=7&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-BPlus.png" style="width:90px; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=1&amp;AttributeId=8&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=1&amp;AttributeId=9&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+			</div>
+
+			<div id="handednessContainer" style="margin-bottom:0px; padding-bottom:100px;">
+			<img id="originalImage" src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="position: absolute; width:100px; top: 68%; left: 80.0%;">
+					<div id="verticalReleaseSection" style="display: none;">
+						<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="position: absolute; width:100px; top: 57.30%; left: 80.0%;">
+						<div style="
+							position: absolute;
+							top: 42.5%;
+							left: 84.0%; /* Adjust to desired horizontal position */
+							height: 14.6%; /* Full height of the container */
+							width: 5px; /* Thickness of the line */
+							border-left: 5px dotted black;">
+						</div>
+					
+						<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/VerticalReleaseL.png" style="position: absolute; width:130px; top: 45%; left: 30%;">
+						<div style="
+							position: absolute;
+							top: 64.30%; /* Adjust to desired vertical position */
+							left: 55%; /* Adjust to desired horizontal start */
+							width: 24%; /* Length of the line */
+							height: 5px; /* Thickness of the line */
+							border-top: 5px dotted black;">
+						</div>
+					
+						<div><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:75px; cursor:pointer; margin-left: 0%;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=2&amp;AttributeId=10&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;"></div>
+						<div><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-APlus(1).png" style="width:75px; cursor:pointer; margin-left: 0%;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=2&amp;AttributeId=11&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;"></div>
+						<div><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-F.png" style="width:75px; cursor:pointer; margin-left: 0%;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=2&amp;AttributeId=12&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;"></div>
+						<div><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-DMinus.png" style="width:75px; cursor:pointer; margin-left: 0%;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=2&amp;AttributeId=13&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;"></div>
+						<div><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-D.png" style="width:75px; cursor:pointer; margin-left: 0%;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=2&amp;AttributeId=14&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;"></div>
+						<div><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:75px; cursor:pointer; margin-left: 0%;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=2&amp;AttributeId=15&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;"></div>
+					</div>
+					
+			</div>
+			<a href="https://www.ballparkpal.com/MatchupMachine.php?batter=666149&amp;pitcher=607536#" id="toggleVerticalRelease" style="display: block; margin-bottom: 0px;">Show Vertical Release</a>
+
+		</div>
+		<div class="sectionHeaderContainer">
+			<h2 class="sectionHeader">On the Way to the Plate</h2>
+			<h4 style="margin-top:15px; margin-bottom:0px; color: #524424;">Click on a grade for a detailed view</h4>
+		</div>
+		<div class="toggle-buttons">
+			<button id="btnPitchType" class="toggle-btn1 active">Pitch Type</button>
+			<button id="btnPitchLabel" class="toggle-btn1">Pitch Label</button>
+			<button id="btnPhysicalTraits" class="toggle-btn1">Physical</button>
+			<button id="btnLocation" class="toggle-btn1">Location</button>
+		</div><div id="pitchTypeSection" class="content-section1" style="display: block;">
+			<div class="summaryDescriptionContainer" ;="">
+				<p class="summaryDescription">Kyle Freeland throws a <strong>4-seam fastball</strong> 22% of the time. Tyler Fitzgerald has an <strong>A grade</strong> against left-handed 4-seamers </p>
+			</div><div style="
+			display: grid; 
+			grid-template-columns: repeat(4, auto); 
+			gap: 20px; 
+			font-family: Arial, sans-serif; 
+			font-size: 34px; 
+			align-items: center; 
+			text-align: center;
+			max-width: 1200px; 
+			width:95%; 
+			margin: auto;
+			text-align: center;
+			background-color: #ffffff;
+			margin-top:40px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 18px; 
+			border: 2px solid black;
+		">
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" style="width:100px;"></span>
+			<span style="font-weight: bold; text-align:center;">Pitch Type</span>
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="width:100px;"></span>
+			<span style="font-weight: bold; text-align:center;">% of Arsenal</span>
+		
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-A.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=12&amp;AttributeId=88&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="margin:0px; padding:0px; text-align:left;">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-LH4Seam.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;4-Seam (L)
+				</span>
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-C.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=pitcher&amp;Player=607536&amp;AttributeGroup=12&amp;AttributeId=88&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+					<div style="height: 100%; width: 22%; background-color: #0073e6; position: absolute;"></div>
+					<span style="position: absolute; left: calc(22% + 10px); font-size: 24px; font-weight: bold; color: #000000;">
+						22%
+					</span>
+				</span>
+			
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=12&amp;AttributeId=91&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="margin:0px; padding:0px; text-align:left;">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-LHSlider.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Slider (L)
+				</span>
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-C.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=pitcher&amp;Player=607536&amp;AttributeGroup=12&amp;AttributeId=91&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+					<div style="height: 100%; width: 22%; background-color: #0073e6; position: absolute;"></div>
+					<span style="position: absolute; left: calc(22% + 10px); font-size: 24px; font-weight: bold; color: #000000;">
+						22%
+					</span>
+				</span>
+			
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=12&amp;AttributeId=90&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="margin:0px; padding:0px; text-align:left;">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-LHSinker.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sinker (L)
+				</span>
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-F.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=pitcher&amp;Player=607536&amp;AttributeGroup=12&amp;AttributeId=90&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+					<div style="height: 100%; width: 21%; background-color: #0073e6; position: absolute;"></div>
+					<span style="position: absolute; left: calc(21% + 10px); font-size: 24px; font-weight: bold; color: #000000;">
+						21%
+					</span>
+				</span>
+			
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=12&amp;AttributeId=94&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="margin:0px; padding:0px; text-align:left;">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-LHChange.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Changeup (L)
+				</span>
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-F.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=pitcher&amp;Player=607536&amp;AttributeGroup=12&amp;AttributeId=94&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+					<div style="height: 100%; width: 14%; background-color: #0073e6; position: absolute;"></div>
+					<span style="position: absolute; left: calc(14% + 10px); font-size: 24px; font-weight: bold; color: #000000;">
+						14%
+					</span>
+				</span>
+			
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=12&amp;AttributeId=93&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="margin:0px; padding:0px; text-align:left;">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-LHCurve.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Kn-Curve (L)
+				</span>
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-B.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=pitcher&amp;Player=607536&amp;AttributeGroup=12&amp;AttributeId=93&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+					<div style="height: 100%; width: 10%; background-color: #0073e6; position: absolute;"></div>
+					<span style="position: absolute; left: calc(10% + 10px); font-size: 24px; font-weight: bold; color: #000000;">
+						10%
+					</span>
+				</span>
+			
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=12&amp;AttributeId=92&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="margin:0px; padding:0px; text-align:left;">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-LHCurve.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Curve (L)
+				</span>
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-C.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=pitcher&amp;Player=607536&amp;AttributeGroup=12&amp;AttributeId=92&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+					<div style="height: 100%; width: 9%; background-color: #0073e6; position: absolute;"></div>
+					<span style="position: absolute; left: calc(9% + 10px); font-size: 24px; font-weight: bold; color: #000000;">
+						9%
+					</span>
+				</span>
+			</div></div><div id="pitchLabelSection" class="content-section1" style="display: none;">
+			<div class="summaryDescriptionContainer">
+				<p class="summaryDescription">8% of Kyle Freeland's pitches are classified as <strong>Meatballs</strong>, which is 2% higher than the MLB average. Tyler Fitzgerald hasn't faced this type of pitch very often.</p>
+			</div><div style="text-align: center; margin-top:20px; font-size: 28px;">
+			<span id="question-icon" style="color:blue;">Show pitch label key</span>
+		</div>
+    
+		<!-- Hidden modal container -->
+		<div id="modal-container" class="modal">
+		<div class="modal-content">
+			<span class="close" id="close-modal" style="font-size:50px;">×</span>
+			<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/PitchLabelKey.png">
+		</div>
+		</div><div style="
+		display: grid; 
+		grid-template-columns: repeat(4, auto); 
+		gap: 20px; 
+		font-family: Arial, sans-serif; 
+		font-size: 34px; 
+		align-items: center; 
+		text-align: center;
+		max-width: 1200px; 
+		width:95%; 
+		margin: auto; 
+		text-align: center;
+		background-color: #ffffff;
+		margin-top:40px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-radius: 18px; 
+		border: 2px solid black;
+	">
+		<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" style="width:100px;"></span>
+		<span style="font-weight: bold; text-align:center;">Pitch Label</span>
+		<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="width:100px;"></span>
+		<span style="font-weight: bold; text-align:center;">% vs MLB</span>
+	
+			<span>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=8&amp;AttributeId=62&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+			</span>
+			<span style="margin:0px; padding:0px; text-align:left; font-size:28px;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-Meatball.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Meatball
+			</span>
+			<span>
+				8%
+			</span>
+			<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+				<div style="height: 100%; width: 50px; background-color: #0073e6; position: absolute; left: 50%;"></div>
+				<span style="position: absolute; right: 52%; font-size: 24px; font-weight: bold; color: #000000;">
+					+2%
+				</span>
+			</span>
+		
+			<span>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=8&amp;AttributeId=68&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+			</span>
+			<span style="margin:0px; padding:0px; text-align:left; font-size:28px;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-WeakChallenge.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Weak Challenge
+			</span>
+			<span>
+				11%
+			</span>
+			<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+				<div style="height: 100%; width: 50px; background-color: #0073e6; position: absolute; left: 50%;"></div>
+				<span style="position: absolute; right: 52%; font-size: 24px; font-weight: bold; color: #000000;">
+					+2%
+				</span>
+			</span>
+		
+			<span>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-F.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=8&amp;AttributeId=63&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+			</span>
+			<span style="margin:0px; padding:0px; text-align:left; font-size:28px;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-EdgePainter.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Edge Painter
+			</span>
+			<span>
+				18%
+			</span>
+			<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+				<div style="height: 100%; width: 25px; background-color: #0073e6; position: absolute; left: 50%;"></div>
+				<span style="position: absolute; right: 52%; font-size: 24px; font-weight: bold; color: #000000;">
+					+1%
+				</span>
+			</span>
+		
+			<span>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=8&amp;AttributeId=70&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+			</span>
+			<span style="margin:0px; padding:0px; text-align:left; font-size:28px;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-Chaser.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Chaser
+			</span>
+			<span>
+				7%
+			</span>
+			<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+				<div style="height: 100%; width: 25px; background-color: #0073e6; position: absolute; left: 50%;"></div>
+				<span style="position: absolute; right: 52%; font-size: 24px; font-weight: bold; color: #000000;">
+					+1%
+				</span>
+			</span>
+		
+			<span>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-DMinus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=8&amp;AttributeId=69&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+			</span>
+			<span style="margin:0px; padding:0px; text-align:left; font-size:28px;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-LikelyBall.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Likely Ball
+			</span>
+			<span>
+				20%
+			</span>
+			<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+				<div style="height: 100%; width: 25px; background-color: #0073e6; position: absolute; left: 50%;"></div>
+				<span style="position: absolute; right: 52%; font-size: 24px; font-weight: bold; color: #000000;">
+					+1%
+				</span>
+			</span>
+		
+			<span>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-F.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=8&amp;AttributeId=64&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+			</span>
+			<span style="margin:0px; padding:0px; text-align:left; font-size:28px;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-FringeMiss.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Fringe Miss
+			</span>
+			<span>
+				13%
+			</span>
+			<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+				<div style="height: 100%; width: 0px; background-color: #0073e6; position: absolute; center: 50%;"></div>
+				<span style="position: absolute; text-align: center; left: 0; right: 0; font-size: 24px; font-weight: bold; color: #000000;">
+					+0%
+				</span>
+			</span>
+		
+			<span>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-APlus(1).png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=8&amp;AttributeId=67&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+			</span>
+			<span style="margin:0px; padding:0px; text-align:left; font-size:28px;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-MidChallenge.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Mid Challenge
+			</span>
+			<span>
+				9%
+			</span>
+			<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+				<div style="height: 100%; width: 50px; background-color: #800080; position: absolute; right: 50%;"></div>
+				<span style="position: absolute; left: 52%; font-size: 24px; font-weight: bold; color: #000000;">
+					-2%
+				</span>
+			</span>
+		
+			<span>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=8&amp;AttributeId=66&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+			</span>
+			<span style="margin:0px; padding:0px; text-align:left; font-size:28px;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-StrongChallenge.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Strong Challenge
+			</span>
+			<span>
+				3%
+			</span>
+			<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+				<div style="height: 100%; width: 50px; background-color: #800080; position: absolute; right: 50%;"></div>
+				<span style="position: absolute; left: 52%; font-size: 24px; font-weight: bold; color: #000000;">
+					-2%
+				</span>
+			</span>
+		
+			<span>
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-AMinus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=8&amp;AttributeId=65&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+			</span>
+			<span style="margin:0px; padding:0px; text-align:left; font-size:28px;">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-NonCompetitive.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Non-Competitive
+			</span>
+			<span>
+				9%
+			</span>
+			<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+				<div style="height: 100%; width: 75px; background-color: #800080; position: absolute; right: 50%;"></div>
+				<span style="position: absolute; left: 52%; font-size: 24px; font-weight: bold; color: #000000;">
+					-3%
+				</span>
+			</span>
+		</div></div><div id="physicalTraitsSection" class="content-section1" style="display: none;">
+			<div class="summaryDescriptionContainer">
+				<p class="summaryDescription">29% of Kyle Freeland's pitches are classified as <strong>Just Gravity</strong>, which is 15% higher than the MLB average. Tyler Fitzgerald has a <strong>C- grade</strong> against this type of pitch.</p>
+			</div><div style="
+			display: grid; 
+			grid-template-columns: repeat(4, auto); 
+			gap: 20px; 
+			font-family: Arial, sans-serif; 
+			font-size: 34px; 
+			align-items: center; 
+			text-align: center;
+			max-width: 1200px; 
+			width:95%; 
+			margin: auto; 
+			text-align: center;
+			background-color: #ffffff;
+			margin-top:40px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 18px; 
+			border: 2px solid black;
+		">
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" style="width:100px;"></span>
+			<span style="font-weight: bold; text-align:center;">Physical Trait</span>
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="width:100px;"></span>
+			<span style="font-weight: bold; text-align:center;">% vs MLB</span>
+		
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-CMinus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=4&amp;AttributeId=30&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="margin:0px; padding:0px; text-align:left;">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-Ride.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Just Gravity
+				</span>
+				<span>
+					29%
+				</span>
+				<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+					<div style="height: 100%; width: 22.5%; background-color: #0073e6; position: absolute;"></div>
+					<span style="position: absolute; left: calc(22.5% + 10px); font-size: 24px; font-weight: bold; color: #000000;">
+						+15%
+					</span>
+				</span>
+			
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-C.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=3&amp;AttributeId=22&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="margin:0px; padding:0px; text-align:left;">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-SlowVelo.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Slow Velo
+				</span>
+				<span>
+					25%
+				</span>
+				<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+					<div style="height: 100%; width: 18%; background-color: #0073e6; position: absolute;"></div>
+					<span style="position: absolute; left: calc(18% + 10px); font-size: 24px; font-weight: bold; color: #000000;">
+						+12%
+					</span>
+				</span>
+			
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-AMinus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=5&amp;AttributeId=39&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="margin:0px; padding:0px; text-align:left;">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-HorizontalFirst.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Minimal Break
+				</span>
+				<span>
+					21%
+				</span>
+				<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+					<div style="height: 100%; width: 16.5%; background-color: #0073e6; position: absolute;"></div>
+					<span style="position: absolute; left: calc(16.5% + 10px); font-size: 24px; font-weight: bold; color: #000000;">
+						+11%
+					</span>
+				</span>
+			
+				<span>
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="width:90px; vertical-align: middle; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=10&amp;AttributeId=75&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+				</span>
+				<span style="margin:0px; padding:0px; text-align:left;">
+					<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Attribute-LHBreaking.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;Breaking (L)
+				</span>
+				<span>
+					41%
+				</span>
+				<span style="position: relative; display: flex; align-items: center; text-align: center; height: 40px; width: 300px; background-color: #e0f7ff; border: 0px solid #0073e6; margin: auto;">
+					<div style="height: 100%; width: 16.5%; background-color: #0073e6; position: absolute;"></div>
+					<span style="position: absolute; left: calc(16.5% + 10px); font-size: 24px; font-weight: bold; color: #000000;">
+						+11%
+					</span>
+				</span>
+			</div></div><div id="locationSection" class="content-section1" style="display: none;">
+		<div class="summaryDescriptionContainer">
+			<p class="summaryDescription">This chart shows location tendencies (vertical on the left, horizontal on the right). The blue bars indicate where Kyle Freeland throws <span style="color: #0073e6; font-weight: bold;">MORE OFTEN</span> than the league average while purple bars indicate areas he throws <span style="color: #800080; font-weight: bold;">LESS OFTEN</span>. Grades represent how well Tyler Fitzgerald has performed against pitches thrown in each area.</p>
+		</div><div style="text-align: center; margin: auto; margin-top: 50px; margin-bottom: 0px; max-width:1200px; width: 95%; background-color:#ffffff; padding-top:10px; height:100px; border-radius:18px 18px 0px 0px; border-top: 2px solid black; border-left: 2px solid black; border-right: 2px solid black;"><div style="position: relative; width: 100%; max-width: 1200px; text-align: center; padding: 40px 0;">
+    
+			<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" style="position: absolute; width: 100px; top: 0px; left: 0%;">
+
+			<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="position: absolute; width: 100px; top: 0px; left: 18%;">
+
+		</div></div>
+		<div class="diagram" style="margin-top:0px; border-radius:0px 0px 18px 18px; border-top: 0px;">
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" style="position: absolute; width: 100px; top: 70%; left: 47%;">
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="position: absolute; width: 100px; top: 2%; left: 67%;">
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="position: absolute; width:50px; top: 2%; left: 2.5%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=6&amp;AttributeId=44&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 3%; height: 6%; width: 5.3%; background-color: #800080; left:17.692774496510289%;"></div>
+		<span style="position: absolute; left: 24.5%; top: 3.5%; font-size: 24px; font-weight: bold; color: #000000;">-2%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="position: absolute; width:50px; top: 15%; left: 2.5%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=6&amp;AttributeId=45&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 14%; height: 6%; width: 3.8%; background-color: #800080; left:19.248765971267638%;"></div>
+		<span style="position: absolute; left: 24.5%; top: 14.5%; font-size: 24px; font-weight: bold; color: #000000;">-1%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="position: absolute; width:50px; top: 24%; left: 2.5%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=6&amp;AttributeId=46&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 25%; height: 6%; width: 2.7%; background-color: #800080; left:20.251138974782354%;"></div>
+		<span style="position: absolute; left: 24.5%; top: 25.5%; font-size: 24px; font-weight: bold; color: #000000;">-1%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-C.png" style="position: absolute; width:50px; top: 35%; left: 2.5%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=6&amp;AttributeId=47&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 36%; height: 6%; width: .7%; background-color: #0073e6; left:23.0%;"></div>
+		<span style="position: absolute; left: 17.5%; top: 36.5%; font-size: 24px; font-weight: bold; color: #000000;">+0%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-A.png" style="position: absolute; width:50px; top: 46%; left: 2.5%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=6&amp;AttributeId=48&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 47%; height: 6%; width: 3.5%; background-color: #0073e6; left:23.0%;"></div>
+		<span style="position: absolute; left: 17.5%; top: 47.5%; font-size: 24px; font-weight: bold; color: #000000;">+1%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-DMinus.png" style="position: absolute; width:50px; top: 57%; left: 2.5%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=6&amp;AttributeId=49&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 58%; height: 6%; width: 7.2%; background-color: #0073e6; left:23.0%;"></div>
+		<span style="position: absolute; left: 17.5%; top: 58.5%; font-size: 24px; font-weight: bold; color: #000000;">+2%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="position: absolute; width:50px; top: 68%; left: 2.5%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=6&amp;AttributeId=50&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 69%; height: 6%; width: 1.5%; background-color: #0073e6; left:23.0%;"></div>
+		<span style="position: absolute; left: 17.5%; top: 69.5%; font-size: 24px; font-weight: bold; color: #000000;">+1%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-F.png" style="position: absolute; width:50px; top: 79%; left: 2.5%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=6&amp;AttributeId=51&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 80%; height: 6%; width: .5%; background-color: #800080; left:22.483927679357368%;"></div>
+		<span style="position: absolute; left: 24.5%; top: 80.5%; font-size: 24px; font-weight: bold; color: #000000;">0%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="position: absolute; width:50px; top: 90%; left: 2.5%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=6&amp;AttributeId=52&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 91%; height: 6%; width: .6%; background-color: #800080; left:22.388998069727208%;"></div>
+		<span style="position: absolute; left: 24.5%; top: 91.5%; font-size: 24px; font-weight: bold; color: #000000;">0%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-D.png" style="position: absolute; width:50px; top: 56%; left: 95%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=7&amp;AttributeId=53&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 38.653405178942663%; height: 1.3%; width: 4%; background-color: #0073e6; left: 94.5%;"></div>
+		<span style="position: absolute; left: 94.5%; top: 41%; font-size: 24px; font-weight: bold; color: #000000;">+0%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="position: absolute; width:50px; top: 56%; left: 89%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=7&amp;AttributeId=54&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 38.328803894397055%; height: 1.7%; width: 4%; background-color: #0073e6; left: 88.5%;"></div>
+		<span style="position: absolute; left: 88.5%; top: 41%; font-size: 24px; font-weight: bold; color: #000000;">+1%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="position: absolute; width:50px; top: 56%; left: 83%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=7&amp;AttributeId=55&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 38.942509987605881%; height: 1.1%; width: 4%; background-color: #0073e6; left: 82.5%;"></div>
+		<span style="position: absolute; left: 82.5%; top: 41%; font-size: 24px; font-weight: bold; color: #000000;">+0%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-F.png" style="position: absolute; width:50px; top: 56%; left: 76%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=7&amp;AttributeId=56&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 40.0%; height: 1.0%; width: 4%; background-color: #800080; left: 76.5%;"></div>
+		<span style="position: absolute; left: 76.5%; top: 34%; font-size: 24px; font-weight: bold; color: #000000;">0%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-A.png" style="position: absolute; width:50px; top: 56%; left: 70%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=7&amp;AttributeId=57&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 40.0%; height: 5.9%; width: 4%; background-color: #800080; left: 70.5%;"></div>
+		<span style="position: absolute; left: 70.5%; top: 34%; font-size: 24px; font-weight: bold; color: #000000;">-2%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-A.png" style="position: absolute; width:50px; top: 56%; left: 64%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=7&amp;AttributeId=58&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 38.799152028180835%; height: 1.2%; width: 4%; background-color: #0073e6; left: 64.5%;"></div>
+		<span style="position: absolute; left: 64.5%; top: 41%; font-size: 24px; font-weight: bold; color: #000000;">+0%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="position: absolute; width:50px; top: 56%; left: 58%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=7&amp;AttributeId=59&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 38.140526052191191%; height: 1.9%; width: 4%; background-color: #0073e6; left: 58.5%;"></div>
+		<span style="position: absolute; left: 58.5%; top: 41%; font-size: 24px; font-weight: bold; color: #000000;">+1%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="position: absolute; width:50px; top: 56%; left: 52%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=7&amp;AttributeId=60&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 39.808952668738243%; height: .2%; width: 4%; background-color: #0073e6; left: 52.5%;"></div>
+		<span style="position: absolute; left: 52.5%; top: 41%; font-size: 24px; font-weight: bold; color: #000000;">+0%</span>
+		<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Grade-Minus.png" style="position: absolute; width:50px; top: 56%; left: 46%; cursor:pointer;" onclick="window.location.href=&#39;https://www.ballparkpal.com/playlog.php?playerType=batter&amp;Player=666149&amp;AttributeGroup=7&amp;AttributeId=61&amp;InPlayOnly=1&amp;LastPitchOnly=0&amp;HomersOnly=0&#39;;">
+		<div style="position: absolute; top: 40.0%; height: .4%; width: 4%; background-color: #800080; left: 46.5%;"></div>
+		<span style="position: absolute; left: 46.5%; top: 34%; font-size: 24px; font-weight: bold; color: #000000;">0%</span>
+			<div class="row">
+				<img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/LocationChart.png" style="width:100%;">
+			</div>
+		</div></div><div style="margin-bottom: 50px;"></div>
+		<div class="sectionHeaderContainer">
+			<h2 class="sectionHeader">Contact and Outcomes</h2>
+		</div>
+		<div class="toggle-buttons" style="margin-top:20px; margin-bottom:50px;">
+			<button id="btnTopLevel" class="toggle-btn2 active">Top Level</button>
+			<button id="btnContactLabel" class="toggle-btn2">Contact Label</button>
+			<button id="btnExitVelocity" class="toggle-btn2">Exit Velocity</button>
+			<button id="btnLaunchAngle" class="toggle-btn2">Launch Angle</button>
+		</div><div id="moduleTopLevel" class="content-section2" style="display: block; opacity: 1;">
+			<div class="summaryDescriptionContainer" ;="">
+				<p class="summaryDescription">18.5% of Tyler Fitzgerald's plate appearances result in a <strong>strikeout</strong>, which is <span style="background-color: #f7c588; font-weight: bold;">6.6% higher</span> than the league average. Kyle Freeland <strong>strikes out</strong> 13.8% of the batters he faces, which is <span style="background-color: #9efffa; font-weight: bold;">3.7% lower</span> than the typical MLB rate.</p>
+			</div><div style="
+			display: grid; 
+			grid-template-columns: repeat(4, auto); 
+			gap: 20px; 
+			font-family: Arial, sans-serif; 
+			font-size: 28px; 
+			align-items: center; 
+			text-align: left;
+			max-width: 1200px; 
+			width: 95%; 
+			margin: auto;
+			background-color: #ffffff;
+			margin-top:40px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 18px; 
+			border: 2px solid black;
+		">
+			<span style="font-weight: bold; text-align:center;">MLB Typical</span>
+			<span style="font-weight: bold; text-align:center;">BP Label</span>
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" style="width:100px;"></span>
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="width:100px;"></span>
+		
+				<span style="text-align:center; margin:0px; padding:0px;">11%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Strikeout.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strikeout</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+6.6%</span>
+				<span style="text-align:center; background-color: #9efffa; margin:0px; padding:0px;">-3.7%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">5%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Walk.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Walk</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.3%</span>
+				<span style="text-align:center; background-color: #9efffa; margin:0px; padding:0px;">-2.2%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">42%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/InPlay.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Play</span>
+				<span style="text-align:center; background-color: #9efffa; margin:0px; padding:0px;">-5.3%</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+6.0%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">39%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/OnBase.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On Base</span>
+				<span style="text-align:center; background-color: #9efffa; margin:0px; padding:0px;">-3.0%</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+3.1%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">31%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Hit.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hit</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.7%</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+5.3%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">14%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Single.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Single</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.1%</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+2.6%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">13%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/DoubleTriple.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2B / 3B</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.2%</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+2.8%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">3%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/HomeRun.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home Run</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.5%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">0.0%</span>
+			</div></div><div id="moduleContactLabel" class="content-section2" style="display: none; opacity: 0;">
+			<div class="summaryDescriptionContainer" ;="">
+				<p class="summaryDescription">29.7% of Tyler Fitzgerald's batted balls are classified as <strong>Standard Grounders</strong>, which is <span style="background-color: #9efffa; font-weight: bold;">4.5% lower</span> than the league average. Kyle Freeland induces <strong>Standard Grounders</strong> at a 37.1% rate, which is <span style="background-color: #f7c588; font-weight: bold;">2.8% higher</span> than the typical MLB rate.</p>
+			</div><div style="
+			display: grid; 
+			grid-template-columns: repeat(4, auto); 
+			gap: 20px; 
+			font-family: Arial, sans-serif; 
+			font-size: 28px; 
+			align-items: center; 
+			text-align: left;
+			max-width: 1200px; 
+			width: 95%; 
+			margin: auto;
+			background-color: #ffffff;
+			margin-top:40px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 18px; 
+			border: 2px solid black;
+		">
+			<span style="font-weight: bold; text-align:center;">MLB Typical</span>
+			<span style="font-weight: bold; text-align:center;">BP Label</span>
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" style="width:100px;"></span>
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="width:100px;"></span>
+		
+				<span style="text-align:center; margin:0px; padding:0px;">0%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/SquibBunt.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Squib/Bunt</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.9%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.2%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">34%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/StandardGrounder.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Grounder</span>
+				<span style="text-align:center; background-color: #9efffa; margin:0px; padding:0px;">-4.5%</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+2.8%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">7%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/HardGrounder.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hard Grounder</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.1%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.2%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">14%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/LowScreamer.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Low Screamer</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.8%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.3%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">9%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/RisingLiner.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rising Liner</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.3%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.6%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">4%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/MaybeHomer.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maybe Homer</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.2%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.1%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">3%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/LikelyHomer.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Likely Homer</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+2.2%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-0.5%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">1%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/NoDoubter.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Doubter</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.4%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-0.3%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">20%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/RoutineFlyout.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Routine Flyout</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+2.3%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-0.9%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">3%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Popup.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pop up</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+2.6%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-0.9%</span>
+			</div></div><div id="moduleExitVelocity" class="content-section2" style="display: none; opacity: 0;">
+			<div class="summaryDescriptionContainer" ;="">
+				<p class="summaryDescription">17.7% of Tyler Fitzgerald's batted balls are <strong>above 100 mph</strong> when they exit the bat, which is <span style="background-color: #9efffa; font-weight: bold;">6.7% lower</span> than the league average. 24.6% of batted balls allowed by Kyle Freeland are hit at <strong>above 100 mph</strong>, which is <span style="background-color: #f7c588; font-weight: bold;">0.2% higher</span> than the typical MLB rate.</p>
+			</div><div style="
+			display: grid; 
+			grid-template-columns: repeat(4, auto); 
+			gap: 20px; 
+			font-family: Arial, sans-serif; 
+			font-size: 28px; 
+			align-items: center; 
+			text-align: left;
+			max-width: 1200px; 
+			width: 95%; 
+			margin: auto;
+			background-color: #ffffff;
+			margin-top:40px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 18px; 
+			border: 2px solid black;
+		">
+			<span style="font-weight: bold; text-align:center;">MLB Typical</span>
+			<span style="font-weight: bold; text-align:center;">BP Label</span>
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" style="width:100px;"></span>
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="width:100px;"></span>
+		
+				<span style="text-align:center; margin:0px; padding:0px;">16%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/HitSpeed1.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Below 75 mph</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.4%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">0.0%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">21%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/HitSpeed3.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75 to 86 mph</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.3%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-0.9%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">18%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/HitSpeed5.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;87 to 93 mph</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+5.6%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+1.1%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">19%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/HitSpeed6.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;94 to 99 mph</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.5%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-0.3%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">24%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/HitSpeed7.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Above 100 mph</span>
+				<span style="text-align:center; background-color: #9efffa; margin:0px; padding:0px;">-6.7%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.2%</span>
+			</div></div><div id="moduleLaunchAngle" class="content-section2" style="display: none; opacity: 0;">
+			<div class="summaryDescriptionContainer" ;="">
+				<p class="summaryDescription">10.6% of Tyler Fitzgerald's batted balls exit the bat at a launch angle between <strong>29 and 38 degrees</strong>, which is <span style="background-color: #9efffa; font-weight: bold;">0.9% lower</span> than the league average. 10.2% of batted balls allowed by Kyle Freeland are hit at this angle, which is <span style="background-color: #9efffa; font-weight: bold;">1.2% lower</span> than the typical MLB rate.</p>
+			</div><div style="
+			display: grid; 
+			grid-template-columns: repeat(4, auto); 
+			gap: 20px; 
+			font-family: Arial, sans-serif; 
+			font-size: 28px; 
+			align-items: center; 
+			text-align: left;
+			max-width: 1200px; 
+			width: 95%; 
+			margin: auto;
+			background-color: #ffffff;
+			margin-top:40px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 18px; 
+			border: 2px solid black;
+		">
+			<span style="font-weight: bold; text-align:center;">MLB Typical</span>
+			<span style="font-weight: bold; text-align:center;">BP Label</span>
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current" style="width:100px;"></span>
+			<span style="text-align:center;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/current(1)" style="width:100px;"></span>
+		
+				<span style="text-align:center; margin:0px; padding:0px;">17%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Launch16.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Below -10°</span>
+				<span style="text-align:center; background-color: #9efffa; margin:0px; padding:0px;">-6.3%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+1.9%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">12%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Launch17.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-10 to 0°</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.7%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.4%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">8%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Launch18.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 to 6°</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.0%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.5%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">18%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Launch19.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7 to 18°</span>
+				<span style="text-align:center; background-color: #9efffa; margin:0px; padding:0px;">-2.0%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.4%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">15%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Launch20.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19 to 28°</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.5%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">+0.6%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">11%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Launch21.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;29 to 38°</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-0.9%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.2%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">7%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Launch22.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39 to 50°</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+4.1%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-1.6%</span>
+			
+				<span style="text-align:center; margin:0px; padding:0px;">8%</span>
+				<span style="margin:0px; padding:0px;"><img src="./FITZGERALD_Matchup Machine _ Ballpark Pal_files/Launch23.png" style="width:50px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Above 50°</span>
+				<span style="text-align:center; background-color: #f7c588; margin:0px; padding:0px;">+4.9%</span>
+				<span style="text-align:center; background-color: #ffffff; margin:0px; padding:0px;">-0.9%</span>
+			</div></div>
+			<div class="sectionHeaderContainer">
+				<h2 class="sectionHeader">History</h2>
+			</div>
+		
+			<div class="summaryDescriptionContainer" ;="">
+				<p class="summaryDescription">Tyler Fitzgerald has <strong>5 plate appearances</strong> against Kyle Freeland in the last 3 years. He is <strong>3 for 5</strong> with 2 home runs and a double and </p>
+			</div><div class="additional-tables" style="display: block;"><table class="historyAggregatedTable" id="historyAggregated">
+				<thead>
+				<tr>
+				<th style="background-color:#d4d4d4;text-align:center"></th>
+				<th style="background-color:#d4d4d4;text-align:center">PA</th>
+				<th style="background-color:#d4d4d4;text-align:center">AB</th>
+				<th style="background-color:#d4d4d4;text-align:center">H</th>
+				<th style="background-color:#d4d4d4;text-align:center">HR</th>
+				<th style="background-color:#d4d4d4;text-align:center">2/3B</th>
+				<th style="background-color:#d4d4d4;text-align:center">1B</th>
+				<th style="background-color:#d4d4d4;text-align:center">K</th>
+				<th style="background-color:#d4d4d4;text-align:center">BB</th>
+				<th style="background-color:#d4d4d4;text-align:center">Avg</th>
+				</tr>
+			</thead>
+			<tbody><tr><td style="text-align:center; background-color: #ffffff">Actual</td><td style="text-align:center; background-color: #ffffff">5</td><td style="text-align:center; background-color: #ffffff">5</td><td style="text-align:center; background-color: #ffffff">3</td><td style="text-align:center; background-color: #ffffff">2</td><td style="text-align:center; background-color: #ffffff">1</td><td style="text-align:center; background-color: #ffffff">0</td><td style="text-align:center; background-color: #ffffff">1</td><td style="text-align:center; background-color: #ffffff">0</td><td style="text-align:center; background-color: #ffffff">0.600</td></tr><tr><td style="text-align:center; background-color: #e0d3ed" colspan="3">Expected From Contact →</td><td style="text-align:center; background-color: #f6f0fc">2.23</td><td style="text-align:center; background-color: #f6f0fc">1.87</td><td style="text-align:center; background-color: #f6f0fc">0.24</td><td style="text-align:center; background-color: #f6f0fc">0.12</td><td style="text-align:center; background-color: #ffffff; border: none;"></td><td style="text-align:center; background-color: #ffffff; border: none;"></td><td style="text-align:center; background-color: #f6f0fc">0.445</td></tr></tbody></table><table class="historyAggregatedTable" id="historyDetails">
+				<thead>
+				<tr>
+				<th style="background-color:#ffffff;text-align:center; color:white; font-size:30px; border:none" ;="" colspan="2"></th>
+				<th style="background-color:#e0d3ed;text-align:center; color:black; font-size:30px" ;="" colspan="4">Expected From Contact</th>
+				</tr>
+				<tr>
+				<th style="background-color:#d4d4d4;text-align:center">Date</th>
+				<th style="background-color:#d4d4d4;text-align:center">Outcome</th>
+				<th style="background-color:#d4d4d4;text-align:center">HR</th>
+				<th style="background-color:#d4d4d4;text-align:center">2/3B</th>
+				<th style="background-color:#d4d4d4;text-align:center">1B</th>
+				<th style="background-color:#d4d4d4;text-align:center">Out</th>
+				</tr>
+			</thead>
+			<tbody><tr><td style="text-align:center; background-color: #ffffff">2024-07-26</td><td style="text-align:center; background-color: #ffffff"><a href="https://baseballsavant.mlb.com/sporty-videos?playId=d251f7be-a5e7-4cf6-954d-07e068f51b17" target="_blank">Strikeout</a></td><td style="text-align:center; background-color: #ffffff"></td><td style="text-align:center; background-color: #ffffff"></td><td style="text-align:center; background-color: #ffffff"></td><td style="text-align:center; background-color: #ffffff"></td></tr><tr><td style="text-align:center; background-color: #89d180">2024-07-26</td><td style="text-align:center; background-color: #89d180"><a href="https://baseballsavant.mlb.com/sporty-videos?playId=b4c5858b-5bdb-4a6e-9f24-d48973c8903f" target="_blank">Home Run</a></td><td style="text-align:center; background-color: #89d180">99%</td><td style="text-align:center; background-color: #89d180"></td><td style="text-align:center; background-color: #89d180"></td><td style="text-align:center; background-color: #89d180"></td></tr><tr><td style="text-align:center; background-color: #ffffff">2024-07-26</td><td style="text-align:center; background-color: #ffffff"><a href="https://baseballsavant.mlb.com/sporty-videos?playId=ac2fab68-d5eb-4e4b-8e8e-fcb80f1537f9" target="_blank">Groundout</a></td><td style="text-align:center; background-color: #ffffff"></td><td style="text-align:center; background-color: #ffffff">2%</td><td style="text-align:center; background-color: #ffffff">4%</td><td style="text-align:center; background-color: #ffffff">94%</td></tr><tr><td style="text-align:center; background-color: #89d180">2024-07-20</td><td style="text-align:center; background-color: #89d180"><a href="https://baseballsavant.mlb.com/sporty-videos?playId=445a624c-af2e-43f2-8fa2-dca1108ddf74" target="_blank">Home Run</a></td><td style="text-align:center; background-color: #89d180">88%</td><td style="text-align:center; background-color: #89d180">3%</td><td style="text-align:center; background-color: #89d180"></td><td style="text-align:center; background-color: #89d180">9%</td></tr><tr><td style="text-align:center; background-color: #a2e39a">2024-07-20</td><td style="text-align:center; background-color: #a2e39a"><a href="https://baseballsavant.mlb.com/sporty-videos?playId=d495e825-77cf-4587-a516-6b291f298ebc" target="_blank">Double</a></td><td style="text-align:center; background-color: #a2e39a"></td><td style="text-align:center; background-color: #a2e39a">18%</td><td style="text-align:center; background-color: #a2e39a">8%</td><td style="text-align:center; background-color: #a2e39a">74%</td></tr></tbody></table><div class="row justify-content-md-center" style="text-align: left; margin-top:50px;"><p class="historyExplainText"><b>Expected From Contact:</b> A model predicts the outcome of every ball hit in play based on how it leaves the bat (exit velocity, launch angle, direction, and batter handedness). This helps control for luck, weather, and the park the hitter was in.</p></div></div>
+
+    <div style="margin-bottom: 1000px;"></div>
+
+	    
+	
+	
+    
+    <script>
+        function toggleTables(event) {
+            event.preventDefault();
+            const additionalTables = document.querySelector(".additional-tables");
+            const linkText = document.querySelector(".toggle-tables-link");
+    
+            if (additionalTables.style.display === "none") {
+                additionalTables.style.display = "block";
+                linkText.textContent = "Collapse Batter Vs Pitcher History (-)";
+            } else {
+                additionalTables.style.display = "none";
+                linkText.textContent = "Expand Batter Vs Pitcher History (+)";
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".toggle-btn1");
+    const sections = document.querySelectorAll(".content-section1");
+
+    buttons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            // Hide all sections
+            sections.forEach(section => {
+                section.style.opacity = "0";
+                setTimeout(() => (section.style.display = "none"), 100);
+            });
+
+            // Remove active class from all buttons
+            buttons.forEach(btn => btn.classList.remove("active"));
+
+            // Show the selected section with animation
+            setTimeout(() => {
+                sections[index].style.display = "block";
+                setTimeout(() => (sections[index].style.opacity = "1"), 50);
+            }, 100);
+
+            // Add the active class to the clicked button
+            button.classList.add("active");
+        });
+    });
+});
+
+
+</script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".toggle-btn2");
+    const sections = document.querySelectorAll(".content-section2");
+
+    buttons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            // Hide all sections
+            sections.forEach(section => {
+                section.style.opacity = "0";
+                setTimeout(() => (section.style.display = "none"), 100);
+            });
+
+            // Remove active class from all buttons
+            buttons.forEach(btn => btn.classList.remove("active"));
+
+            // Show the selected section with animation
+            setTimeout(() => {
+                sections[index].style.display = "block";
+                setTimeout(() => (sections[index].style.opacity = "1"), 50);
+            }, 100);
+
+            // Add the active class to the clicked button
+            button.classList.add("active");
+        });
+    });
+});
+
+
+</script>
+
+
+
+<script>
+    document.getElementById('toggleVerticalRelease').addEventListener('click', function(event) {
+        event.preventDefault();
+        var verticalReleaseSection = document.getElementById('verticalReleaseSection');
+		var handednessContainer = document.getElementById('handednessContainer');
+		var originalImage = document.getElementById('originalImage');
+        if (verticalReleaseSection.style.display === 'none' || verticalReleaseSection.style.display === '') {
+            verticalReleaseSection.style.display = 'block';
+			originalImage.style.display = 'none';
+			handednessContainer.style.paddingBottom = '0px';
+            this.textContent = 'Hide Vertical Release';
+        } else {
+            verticalReleaseSection.style.display = 'none';
+            this.textContent = 'Show Vertical Release';
+			originalImage.style.display = 'block';
+			handednessContainer.style.paddingBottom = '100px';
+        }
+    });
+</script>
+
+<script>
+    // Get the question mark icon and modal container elements
+const questionIcon = document.getElementById('question-icon');
+const modal = document.getElementById('modal-container');
+const closeModal = document.getElementById('close-modal');
+
+// Show the modal when the question mark icon is clicked
+questionIcon.addEventListener('click', function() {
+  modal.style.display = 'block';
+});
+
+// Close the modal when the close button is clicked
+closeModal.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
+
+// Close the modal when the user clicks anywhere outside the modal content
+window.addEventListener('click', function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+</script></body><!-- JavaScript to handle toggle behavior --></html>

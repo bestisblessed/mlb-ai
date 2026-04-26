@@ -1,0 +1,17 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824852,2026-04-26T17:35:00Z,In Progress,111,Boston Red Sox,110,Baltimore Orioles,Oriole Park at Camden Yards,Connelly Early,813349.0,L,Kyle Bradish,680694,R
+824934,2026-04-26T17:35:00Z,In Progress,143,Philadelphia Phillies,144,Atlanta Braves,Truist Park,Aaron Nola,605400.0,R,Chris Sale,519242,L
+822824,2026-04-26T17:37:00Z,In Progress,114,Cleveland Guardians,141,Toronto Blue Jays,Rogers Centre,Slade Cecconi,677944.0,R,Patrick Corbin,571578,L
+824528,2026-04-26T17:40:00Z,In Progress,116,Detroit Tigers,113,Cincinnati Reds,Great American Ball Park,Keider Montero,672456.0,R,Rhett Lowder,695076,R
+823635,2026-04-26T17:40:00Z,In Progress,115,Colorado Rockies,121,New York Mets,Citi Field,Jose Quintana,500779.0,L,Nolan McLean,690997,R
+823637,2026-04-26T17:45:00Z,Scheduled,115,Colorado Rockies,121,New York Mets,Citi Field,,,,Kodai Senga,673540,R
+822991,2026-04-26T17:40:00Z,In Progress,142,Minnesota Twins,139,Tampa Bay Rays,Tropicana Field,Simeon Woods Richardson,680573.0,R,Griffin Jax,643377,R
+824612,2026-04-26T18:10:00Z,In Progress,120,Washington Nationals,145,Chicago White Sox,Rate Field,Foster Griffin,656492.0,L,Bryan Hudson,663542,L
+824202,2026-04-26T18:10:00Z,In Progress,147,New York Yankees,117,Houston Astros,Daikin Park,Luis Gil,661563.0,R,Spencer Arrighetti,681293,R
+823797,2026-04-26T18:10:00Z,In Progress,134,Pittsburgh Pirates,158,Milwaukee Brewers,American Family Field,Carmen Mlodzinski,669387.0,R,Kyle Harrison,690986,L
+823068,2026-04-26T18:15:00Z,Warmup,136,Seattle Mariners,138,St. Louis Cardinals,Busch Stadium,Emerson Hancock,676106.0,R,Michael McGreevy,700241,R
+822911,2026-04-26T18:35:00Z,Warmup,133,Athletics,140,Texas Rangers,Globe Life Field,J.T. Ginn,669372.0,R,Kumar Rocker,677958,R
+825094,2026-04-26T20:05:00Z,Pre-Game,135,San Diego Padres,109,Arizona Diamondbacks,Estadio Alfredo Harp Helu,Michael King,650633.0,R,Ryne Nelson,669194,R
+823230,2026-04-26T20:05:00Z,Pre-Game,146,Miami Marlins,137,San Francisco Giants,Oracle Park,Max Meyer,676974.0,R,Landen Roupp,694738,R
+824122,2026-04-26T20:10:00Z,Pre-Game,108,Los Angeles Angels,118,Kansas City Royals,Kauffman Stadium,Reid Detmers,672282.0,L,Seth Lugo,607625,R
+823959,2026-04-26T20:10:00Z,Pre-Game,112,Chicago Cubs,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Shota Imanaga,684007.0,L,Justin Wrobleski,680736,L
