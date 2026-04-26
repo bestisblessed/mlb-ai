@@ -281,23 +281,20 @@ def scrape(target_date: str, season_prior: int, max_workers: int = 8) -> dict:
     print(f"[scrape_bvp] BvP fetched in {time.time()-t0:.1f}s")
 
     # 4. Pull season prior for each batter (parallel)
+    # Fetch BOTH current and prior season so rank_bvp_edges.py always has
+    # _prev columns for the two-year weighted prior — matches scrape_one_game() schema.
     season_rows: list[dict] = []
 
     def _do_season(bid):
-        stat = get_season_hitting(bid, season_prior)
-        if not stat:
-            # Try the previous season as a fallback (early-April / no PA yet)
-            stat = get_season_hitting(bid, season_prior - 1)
-            tagged_season = season_prior - 1
-        else:
-            tagged_season = season_prior
-        return bid, stat, tagged_season
+        cur = get_season_hitting(bid, season_prior) or {}
+        prv = get_season_hitting(bid, season_prior - 1) or {}
+        return bid, cur, prv
 
     t0 = time.time()
     with ThreadPoolExecutor(max_workers=max_workers) as ex:
         futures = [ex.submit(_do_season, b) for b in batter_ids]
         for i, fut in enumerate(as_completed(futures), 1):
-            bid, stat, tagged_season = fut.result()
+            bid, cur, prv = fut.result()
             meta = batter_meta.get(bid, {})
             row = {
                 "batter_id": bid,
@@ -306,11 +303,13 @@ def scrape(target_date: str, season_prior: int, max_workers: int = 8) -> dict:
                 "team_name": meta.get("team_name"),
                 "batSide": meta.get("batSide"),
                 "primaryPosition": meta.get("primaryPosition"),
-                "season": tagged_season,
+                "season": season_prior,
             }
-            if stat:
-                for c in HITTING_STAT_COLS:
-                    row[c] = stat.get(c)
+            for c in HITTING_STAT_COLS:
+                row[c] = cur.get(c) if cur else None
+            for c in HITTING_STAT_COLS:
+                row[f"{c}_prev"] = prv.get(c) if prv else None
+            row["season_prev"] = season_prior - 1
             season_rows.append(row)
             if i % 50 == 0:
                 print(f"  ... {i}/{len(futures)} season ({time.time()-t0:.1f}s)")
