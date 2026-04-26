@@ -31,7 +31,7 @@ import os
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -332,7 +332,7 @@ def scrape(target_date: str, season_prior: int, max_workers: int = 8) -> dict:
     meta = {
         "target_date": target_date,
         "season_prior": season_prior,
-        "scraped_at": datetime.utcnow().isoformat() + "Z",
+        "scraped_at": datetime.now(tz=timezone.utc).isoformat(),
         "games": len(games_rows),
         "batters": len(season_rows),
         "bvp_rows": len(bvp_rows),
@@ -513,7 +513,7 @@ def scrape_one_game(target_date: str, season_prior: int, game_idx: int,
         "season_prior": season_prior,
         "game_id": g["game_id"],
         "matchup": f"{g['away_name']} @ {g['home_name']}",
-        "scraped_at": datetime.utcnow().isoformat() + "Z",
+        "scraped_at": datetime.now(tz=timezone.utc).isoformat(),
         "bvp_rows": len(bvp_rows),
         "new_batters": len(new_batters),
     }

@@ -40,7 +40,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
@@ -471,7 +471,7 @@ def render_html(qualified: pd.DataFrame, date_str: str, min_pa: int,
         min_pa=min_pa,
         prior_k=int(prior_k),
         prior_season=prior_season,
-        generated_at=datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
+        generated_at=datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         table_top=_render_table(qualified.sort_values("edge_score", ascending=False), common, 25),
         table_hits=_render_table(qualified.sort_values("score_hits", ascending=False), hits_cols, 15),
         table_hr=_render_table(qualified.sort_values("score_hr", ascending=False), hr_cols, 15),

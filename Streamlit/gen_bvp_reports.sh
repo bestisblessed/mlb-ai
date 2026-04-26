@@ -18,7 +18,7 @@ run() { "$@" 2>&1 | tee -a "$SCRAPER_LOG"; }
 git pull >> /dev/null 2>&1
 
 log "=== Generating BvP Edges for Dashboard ==="
-run "$PYTHON" "$SCRIPT_DIR/scripts/scrape_bvp_today.py" $DATE_STR
+run "$PYTHON" "$SCRIPT_DIR/scripts/scrape_bvp_today.py" --workers 4 $DATE_STR
 run "$PYTHON" "$SCRIPT_DIR/scripts/rank_bvp_edges.py" $DATE_STR
 
 if [ -t 0 ]; then
