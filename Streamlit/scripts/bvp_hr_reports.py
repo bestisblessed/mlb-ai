@@ -163,60 +163,122 @@ def bar_color(team):
     return TEAM_COLORS.get(team, '#666666')
 
 
+# ── Shared: draw a summary table on an axis ───────────────────────────────────
+def _draw_table(ax, rows, headers, col_xs, col_aligns, tiny_ab_col=None, tiny_thresh=5):
+    """Render a plain text table onto a pre-existing axis."""
+    ax.axis('off')
+    rh = 0.044
+    sy = 0.97
+    all_rows = [headers] + rows
+    for ri, row_data in enumerate(all_rows):
+        y = sy - ri * rh
+        bg = '#1E2530' if ri == 0 else ('#222222' if ri % 2 == 0 else '#181818')
+        ax.add_patch(plt.Rectangle((0, y - rh + 0.003), 1.0, rh - 0.002,
+                                    color=bg, transform=ax.transAxes, zorder=1))
+        for ci, (cell, cx, align) in enumerate(zip(row_data, col_xs, col_aligns)):
+            is_tiny = (ri > 0 and tiny_ab_col is not None
+                       and int(rows[ri - 1][tiny_ab_col] or 0) < tiny_thresh)
+            clr = '#FFD700' if ri == 0 else ('#FFAA33' if is_tiny else 'white')
+            fw  = 'bold' if ri == 0 else 'normal'
+            ax.text(cx, y - rh / 2 + 0.003, cell,
+                    transform=ax.transAxes, fontsize=7.0, color=clr,
+                    fontweight=fw, va='center', ha=align, zorder=2)
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+
+
 # ── Report 1: Top 20 raw career HR ───────────────────────────────────────────
 def report_career_hr(results, date_str, out_path):
-    top = sorted(results, key=lambda x: (-x['career_hr'], -x['career_avg'], -x['career_ab']))[:20]
-    n = len(top)
+    from matplotlib.gridspec import GridSpec
 
-    fig, ax = plt.subplots(figsize=(16, 10), facecolor=DARK_BG)
-    ax.set_facecolor(BAR_BG)
+    top = sorted(results, key=lambda x: (-x['career_hr'], -x['career_avg'], -x['career_ab']))[:20]
+    n   = len(top)
+
+    fig = plt.figure(figsize=(18, 14), facecolor=DARK_BG)
+    gs  = GridSpec(2, 2, figure=fig, height_ratios=[1.6, 1], hspace=0.38, wspace=0.32)
+
+    # ── Top: horizontal bar chart (full width) ────────────────────────────────
+    ax_bar = fig.add_subplot(gs[0, :])
+    ax_bar.set_facecolor(BAR_BG)
 
     colors = [bar_color(r['team']) for r in top]
-    bars   = ax.barh(range(n), [r['career_hr'] for r in top],
-                     color=colors, height=0.70, zorder=3,
-                     edgecolor='#1a1a1a', linewidth=0.5)
+    bars   = ax_bar.barh(range(n), [r['career_hr'] for r in top],
+                         color=colors, height=0.70, zorder=3,
+                         edgecolor='#1a1a1a', linewidth=0.5)
 
-    ax.set_yticks(range(n))
-    ax.set_yticklabels([f"#{i+1}  {top[i]['batter']}" for i in range(n)],
-                       fontsize=10.5, color='white', fontweight='bold')
-    ax.set_xlabel("Career Home Runs vs. Pitcher  (all seasons combined)", color=AXIS_CLR, fontsize=10)
-    ax.set_title(f"Top 20 BvP Home Run Matchups — All Games · {date_str}",
-                 color='white', fontsize=14, fontweight='bold', pad=14)
-    ax.tick_params(colors=AXIS_CLR)
-    ax.spines[:].set_color(GRID_CLR)
-    ax.invert_yaxis()
-    ax.set_xlim(0, max(r['career_hr'] for r in top) * 1.65)
-    ax.xaxis.set_major_locator(plt.MaxNLocator(integer=True))
-    ax.grid(axis='x', color=GRID_CLR, linestyle='--', alpha=0.5, zorder=0)
+    ax_bar.set_yticks(range(n))
+    ax_bar.set_yticklabels([f"#{i+1}  {top[i]['batter']}" for i in range(n)],
+                           fontsize=10, color='white', fontweight='bold')
+    ax_bar.set_xlabel("Career Home Runs vs. Pitcher  (all seasons combined)", color=AXIS_CLR, fontsize=10)
+    ax_bar.set_title(f"Top 20 BvP Home Run Matchups — All Games · {date_str}",
+                     color='white', fontsize=14, fontweight='bold', pad=14)
+    ax_bar.tick_params(colors=AXIS_CLR)
+    ax_bar.spines[:].set_color(GRID_CLR)
+    ax_bar.invert_yaxis()
+    ax_bar.set_xlim(0, max(r['career_hr'] for r in top) * 1.65)
+    ax_bar.xaxis.set_major_locator(plt.MaxNLocator(integer=True))
+    ax_bar.grid(axis='x', color=GRID_CLR, linestyle='--', alpha=0.5, zorder=0)
 
     for i, (bar, r) in enumerate(zip(bars, top)):
         bw = bar.get_width()
         by = bar.get_y() + bar.get_height() / 2
+        ax_bar.text(0.18, by, r['team'],
+                    va='center', ha='left', fontsize=8, color='white', fontweight='bold',
+                    bbox=dict(boxstyle='round,pad=0.20', facecolor='#00000060', edgecolor='none'),
+                    zorder=5)
+        ax_bar.text(bw + 0.12, by,
+                    f"vs {r['pitcher']}  ·  {r['career_hr']}/{r['career_ab']} AB  ·  "
+                    f"{r['career_avg']:.3f} avg  ·  {r['num_seasons']} season(s)  ·  "
+                    f"HR in: {r['hr_seasons']}",
+                    va='center', ha='left', fontsize=7.5, color=LABEL_CLR)
 
-        # Team badge inside bar
-        ax.text(0.18, by, r['team'],
-                va='center', ha='left', fontsize=8.5, color='white', fontweight='bold',
-                bbox=dict(boxstyle='round,pad=0.22', facecolor='#00000060', edgecolor='none'),
-                zorder=5)
-
-        # Stats outside bar
-        ax.text(bw + 0.12, by,
-                f"vs {r['pitcher']}  ·  {r['career_hr']}/{r['career_ab']} AB  ·  "
-                f"{r['career_avg']:.3f} avg  ·  {r['num_seasons']} season(s)  ·  "
-                f"HR in: {r['hr_seasons']}",
-                va='center', ha='left', fontsize=7.8, color=LABEL_CLR)
-
-    # Legend — unique teams present
     seen = {}
     for r in top:
         if r['team'] not in seen:
             seen[r['team']] = bar_color(r['team'])
     patches = [mpatches.Patch(color=c, label=t) for t, c in seen.items()]
-    ax.legend(handles=patches, loc='lower right', fontsize=8, facecolor='#1a1a1a',
-              edgecolor='#444', labelcolor='white', title='Team', title_fontsize=8,
-              framealpha=0.9, ncol=2)
+    ax_bar.legend(handles=patches, loc='lower right', fontsize=7.5, facecolor='#1a1a1a',
+                  edgecolor='#444', labelcolor='white', title='Team', title_fontsize=8,
+                  framealpha=0.9, ncol=2)
 
-    plt.tight_layout()
+    # ── Bottom-left: scatter (Career AVG vs AB, bubble = HR total) ───────────
+    ax_sc = fig.add_subplot(gs[1, 0])
+    ax_sc.set_facecolor(BAR_BG)
+    sc_colors = [bar_color(r['team']) for r in top]
+    ax_sc.scatter(
+        [r['career_ab']  for r in top],
+        [r['career_avg'] for r in top],
+        c=sc_colors,
+        s=[r['career_hr'] * 80 + 60 for r in top],
+        alpha=0.85, zorder=3, edgecolors='white', linewidths=0.4,
+    )
+    for r in top:
+        ax_sc.annotate(r['batter'].split()[-1],
+                       (r['career_ab'], r['career_avg']),
+                       fontsize=6.5, color='#DDDDDD', ha='center', va='bottom',
+                       xytext=(0, 5), textcoords='offset points')
+    ax_sc.set_xlabel("Career AB vs. Pitcher", color=AXIS_CLR, fontsize=9)
+    ax_sc.set_ylabel("Career AVG vs. Pitcher", color=AXIS_CLR, fontsize=9)
+    ax_sc.set_title("Career AVG vs AB  (bubble = HR total)", color='white', fontsize=10, fontweight='bold')
+    ax_sc.tick_params(colors=AXIS_CLR)
+    ax_sc.spines[:].set_color(GRID_CLR)
+    ax_sc.grid(color=GRID_CLR, linestyle='--', alpha=0.4)
+
+    # ── Bottom-right: summary table ───────────────────────────────────────────
+    ax_tbl = fig.add_subplot(gs[1, 1])
+    ax_tbl.set_facecolor(BAR_BG)
+    ax_tbl.set_title("Summary Table", color='white', fontsize=10, fontweight='bold', pad=8)
+
+    tbl_headers = ["#", "Batter", "Pitcher", "HR", "AB", "AVG"]
+    tbl_col_xs  = [0.01, 0.10, 0.48, 0.66, 0.76, 0.88]
+    tbl_aligns  = ['left', 'left', 'left', 'center', 'center', 'center']
+    tbl_rows    = [
+        [str(i + 1), r['batter'][:18], r['pitcher'],
+         str(r['career_hr']), str(r['career_ab']), f"{r['career_avg']:.3f}"]
+        for i, r in enumerate(top)
+    ]
+    _draw_table(ax_tbl, tbl_rows, tbl_headers, tbl_col_xs, tbl_aligns)
+
     plt.savefig(out_path, dpi=155, bbox_inches='tight', facecolor=DARK_BG)
     plt.close()
     print(f"  Saved: {out_path}")
@@ -226,61 +288,82 @@ def report_career_hr(results, date_str, out_path):
 def report_hr_rate(results, date_str, out_path, min_ab=5):
     eligible = [r for r in results if r['career_ab'] >= min_ab]
     top = sorted(eligible, key=lambda x: (-x['hr_rate'], -x['career_hr'], -x['career_ab']))[:20]
-    n = len(top)
+    n   = len(top)
     if n == 0:
         print(f"  No matchups with {min_ab}+ AB found — skipping HR rate report.")
         return
 
-    fig, ax = plt.subplots(figsize=(16, max(8, n * 0.52 + 1.5)), facecolor=DARK_BG)
-    ax.set_facecolor(BAR_BG)
+    fig, (ax_bar, ax_tbl) = plt.subplots(
+        1, 2, figsize=(18, max(8, n * 0.52 + 1.5)),
+        facecolor=DARK_BG,
+        gridspec_kw={'width_ratios': [1.7, 1]},
+    )
+    fig.suptitle(f"Top 20 BvP HR Rate Matchups · {min_ab}+ Career AB · All Games · {date_str}",
+                 color='white', fontsize=14, fontweight='bold', y=0.98)
 
+    # ── Left: horizontal bar chart ────────────────────────────────────────────
+    ax_bar.set_facecolor(BAR_BG)
     colors = [bar_color(r['team']) for r in top]
-    bars   = ax.barh(range(n), [r['hr_rate'] for r in top],
-                     color=colors, height=0.70, zorder=3,
-                     edgecolor='#1a1a1a', linewidth=0.5)
+    bars   = ax_bar.barh(range(n), [r['hr_rate'] for r in top],
+                         color=colors, height=0.70, zorder=3,
+                         edgecolor='#1a1a1a', linewidth=0.5)
 
-    ax.set_yticks(range(n))
-    ax.set_yticklabels([f"#{i+1}  {top[i]['batter']}" for i in range(n)],
-                       fontsize=10.5, color='white', fontweight='bold')
-    ax.set_xlabel(f"Career HR Rate  (Total HR ÷ Total AB vs Pitcher, all seasons · min {min_ab} AB)",
-                  color=AXIS_CLR, fontsize=10)
-    ax.set_title(f"Top 20 BvP HR Rate Matchups · {min_ab}+ Career AB · All Games · {date_str}",
-                 color='white', fontsize=14, fontweight='bold', pad=14)
-    ax.tick_params(colors=AXIS_CLR)
-    ax.spines[:].set_color(GRID_CLR)
-    ax.invert_yaxis()
-    ax.set_xlim(0, max(r['hr_rate'] for r in top) * 1.9)
-    ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:.2f}"))
-    ax.grid(axis='x', color=GRID_CLR, linestyle='--', alpha=0.5, zorder=0)
+    ax_bar.set_yticks(range(n))
+    ax_bar.set_yticklabels([f"#{i+1}  {top[i]['batter']}" for i in range(n)],
+                           fontsize=10, color='white', fontweight='bold')
+    ax_bar.set_xlabel(f"Career HR Rate  (Total HR ÷ Total AB vs Pitcher · min {min_ab} AB)",
+                      color=AXIS_CLR, fontsize=9)
+    ax_bar.tick_params(colors=AXIS_CLR)
+    ax_bar.spines[:].set_color(GRID_CLR)
+    ax_bar.invert_yaxis()
+    ax_bar.set_xlim(0, max(r['hr_rate'] for r in top) * 1.85)
+    ax_bar.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:.2f}"))
+    ax_bar.grid(axis='x', color=GRID_CLR, linestyle='--', alpha=0.5, zorder=0)
 
     for i, (bar, r) in enumerate(zip(bars, top)):
         bw = bar.get_width()
         by = bar.get_y() + bar.get_height() / 2
+        ax_bar.text(0.004, by, r['team'],
+                    va='center', ha='left', fontsize=8, color='white', fontweight='bold',
+                    bbox=dict(boxstyle='round,pad=0.20', facecolor='#00000060', edgecolor='none'),
+                    zorder=5)
+        tiny = r['career_ab'] < min_ab + 3   # flag near-threshold samples
+        label = (f"vs {r['pitcher']}  ·  {r['career_hr']}/{r['career_ab']} AB  ·  "
+                 f"{r['career_avg']:.3f} avg  ·  {r['num_seasons']} season(s)")
+        ax_bar.text(bw + 0.003, by, label,
+                    va='center', ha='left', fontsize=7.5,
+                    color='#FFCC44' if tiny else LABEL_CLR)
 
-        # Team badge inside bar
-        ax.text(0.004, by, r['team'],
-                va='center', ha='left', fontsize=8.5, color='white', fontweight='bold',
-                bbox=dict(boxstyle='round,pad=0.22', facecolor='#00000060', edgecolor='none'),
-                zorder=5)
-
-        # Stats outside bar
-        ax.text(bw + 0.003, by,
-                f"vs {r['pitcher']}  ·  {r['career_hr']}/{r['career_ab']} AB  ·  "
-                f"{r['career_avg']:.3f} avg  ·  {r['num_seasons']} season(s)  ·  "
-                f"HR yrs: {r['hr_seasons']}",
-                va='center', ha='left', fontsize=7.8, color=LABEL_CLR)
-
-    # Legend — unique teams
     seen = {}
     for r in top:
         if r['team'] not in seen:
             seen[r['team']] = bar_color(r['team'])
     patches = [mpatches.Patch(color=c, label=t) for t, c in seen.items()]
-    ax.legend(handles=patches, loc='lower right', fontsize=8, facecolor='#1a1a1a',
-              edgecolor='#444', labelcolor='white', title='Team', title_fontsize=8,
-              framealpha=0.9, ncol=2)
+    ax_bar.legend(handles=patches, loc='lower right', fontsize=7.5, facecolor='#1a1a1a',
+                  edgecolor='#444', labelcolor='white', title='Team', title_fontsize=8,
+                  framealpha=0.9, ncol=2)
 
-    plt.tight_layout()
+    # ── Right: summary table ──────────────────────────────────────────────────
+    ax_tbl.set_facecolor(BAR_BG)
+    ax_tbl.set_title("HR Rate Leaderboard", color='white', fontsize=10, fontweight='bold', pad=8)
+
+    tbl_headers = ["#", "Batter", "Pitcher", "HR", "AB", "Rate", "AVG"]
+    tbl_col_xs  = [0.01, 0.10, 0.44, 0.64, 0.73, 0.83, 0.93]
+    tbl_aligns  = ['left', 'left', 'left', 'center', 'center', 'center', 'center']
+    # tiny_ab_col = index of the AB column in each row (index 4) for orange highlighting
+    tbl_rows    = [
+        [str(i + 1), r['batter'][:16], r['pitcher'],
+         str(r['career_hr']), str(r['career_ab']),
+         f"{r['hr_rate']:.3f}", f"{r['career_avg']:.3f}"]
+        for i, r in enumerate(top)
+    ]
+    _draw_table(ax_tbl, tbl_rows, tbl_headers, tbl_col_xs, tbl_aligns,
+                tiny_ab_col=4, tiny_thresh=min_ab + 3)
+    ax_tbl.text(0.01, 0.005,
+                f"⚠ Orange = fewer than {min_ab + 3} career AB vs pitcher",
+                transform=ax_tbl.transAxes, fontsize=6.5, color='#FFAA33', va='bottom')
+
+    plt.tight_layout(rect=[0, 0, 1, 0.96])
     plt.savefig(out_path, dpi=155, bbox_inches='tight', facecolor=DARK_BG)
     plt.close()
     print(f"  Saved: {out_path}")
