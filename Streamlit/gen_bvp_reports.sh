@@ -18,15 +18,17 @@ echo "=== Generating BvP Edges for Dashboard ===" >> "$SCRAPER_LOG" 2>&1
 "$PYTHON" "$SCRIPT_DIR/scripts/scrape_bvp_today.py" $DATE_STR >> "$SCRAPER_LOG" 2>&1
 "$PYTHON" "$SCRIPT_DIR/scripts/rank_bvp_edges.py" $DATE_STR >> "$SCRAPER_LOG" 2>&1
 
-git add -f "data/${DATE_STR}/bvp/"
-git commit -m "BvP edge data update ${DATE_STR}" >> /dev/null 2>&1
 if [ -t 0 ]; then
-    read -p "Push to GitHub? (y/n) " -n 1 -r
+    read -p "Commit & push to GitHub? (y/n) " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
+        git add -f "data/${DATE_STR}/bvp/"
+        git commit -m "BvP edge data update ${DATE_STR}" >> /dev/null 2>&1
         git push >> /dev/null 2>&1
     fi
 else
+    git add -f "data/${DATE_STR}/bvp/"
+    git commit -m "BvP edge data update ${DATE_STR}" >> /dev/null 2>&1
     git push >> /dev/null 2>&1
 fi
 
