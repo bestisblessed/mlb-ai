@@ -12,11 +12,14 @@ else
     PYTHON=python
 fi
 
+log() { echo "$@" | tee -a "$SCRAPER_LOG"; }
+run() { "$@" 2>&1 | tee -a "$SCRAPER_LOG"; }
+
 git pull >> /dev/null 2>&1
 
-echo "=== Generating BvP Edges for Dashboard ===" >> "$SCRAPER_LOG" 2>&1
-"$PYTHON" "$SCRIPT_DIR/scripts/scrape_bvp_today.py" $DATE_STR >> "$SCRAPER_LOG" 2>&1
-"$PYTHON" "$SCRIPT_DIR/scripts/rank_bvp_edges.py" $DATE_STR >> "$SCRAPER_LOG" 2>&1
+log "=== Generating BvP Edges for Dashboard ==="
+run "$PYTHON" "$SCRIPT_DIR/scripts/scrape_bvp_today.py" $DATE_STR
+run "$PYTHON" "$SCRIPT_DIR/scripts/rank_bvp_edges.py" $DATE_STR
 
 if [ -t 0 ]; then
     read -p "Commit & push to GitHub? (y/n) " -n 1 -r
@@ -32,9 +35,9 @@ else
     git push >> /dev/null 2>&1
 fi
 
-echo "" >> "$SCRAPER_LOG" 2>&1
-echo "=== Generating BvP Home Run Reports ===" >> "$SCRAPER_LOG" 2>&1
-"$PYTHON" "$SCRIPT_DIR/scripts/bvp_hr_reports.py" $DATE_STR >> "$SCRAPER_LOG" 2>&1
+log ""
+log "=== Generating BvP Home Run Reports ==="
+run "$PYTHON" "$SCRIPT_DIR/scripts/bvp_hr_reports.py" $DATE_STR
 
 if [ "$(uname)" = "Darwin" ]; then
     open "$SCRIPT_DIR/reports/report_top20_career_hr_${DATE_STR}.png"
