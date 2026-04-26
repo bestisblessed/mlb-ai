@@ -10,7 +10,7 @@ game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away
 824202,2026-04-26T18:10:00Z,In Progress,147,New York Yankees,117,Houston Astros,Daikin Park,Luis Gil,661563.0,R,Spencer Arrighetti,681293,R
 823797,2026-04-26T18:10:00Z,In Progress,134,Pittsburgh Pirates,158,Milwaukee Brewers,American Family Field,Carmen Mlodzinski,669387.0,R,Kyle Harrison,690986,L
 823068,2026-04-26T18:15:00Z,In Progress,136,Seattle Mariners,138,St. Louis Cardinals,Busch Stadium,Emerson Hancock,676106.0,R,Michael McGreevy,700241,R
-822911,2026-04-26T18:35:00Z,Warmup,133,Athletics,140,Texas Rangers,Globe Life Field,J.T. Ginn,669372.0,R,Kumar Rocker,677958,R
+822911,2026-04-26T18:35:00Z,In Progress,133,Athletics,140,Texas Rangers,Globe Life Field,J.T. Ginn,669372.0,R,Kumar Rocker,677958,R
 825094,2026-04-26T20:05:00Z,Pre-Game,135,San Diego Padres,109,Arizona Diamondbacks,Estadio Alfredo Harp Helu,Michael King,650633.0,R,Ryne Nelson,669194,R
 823230,2026-04-26T20:05:00Z,Pre-Game,146,Miami Marlins,137,San Francisco Giants,Oracle Park,Max Meyer,676974.0,R,Landen Roupp,694738,R
 824122,2026-04-26T20:10:00Z,Pre-Game,108,Los Angeles Angels,118,Kansas City Royals,Kauffman Stadium,Reid Detmers,672282.0,L,Seth Lugo,607625,R
