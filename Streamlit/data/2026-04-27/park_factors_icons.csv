@@ -1,0 +1,9 @@
+game_id,game,icons,icon_labels
+824446,Progressive Field6:10TB  @ CLE,"OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png","OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,Moderate Wind"
+824609,Rate Field7:40LAA @ CHW,"InRight.svg,InRight.svg,InRight.svg,HeavyWind.png,HighH.png,LowP.png","InRight.svg,InRight.svg,InRight.svg,Heavy Wind,High Humidity,Low Pressure"
+823719,Target Field7:40SEA @ MIN,"OutRight.svg,OutRight.svg,OutRight.svg,HeavyWind.png,Under55.png,HighH.png,LowP.png","OutRight.svg,OutRight.svg,OutRight.svg,Heavy Wind,Under55.png,High Humidity,Low Pressure"
+823961,Dodger Stadium10:10MIA @ LAD,"OutRightCenter.svg,OutRight.svg,OutRight.svg,ModerateWind.png","OutRightCenter.svg,OutRight.svg,OutRight.svg,Moderate Wind"
+822825,Rogers Centre7:07BOS @ TOR,RoofClosed.png,Roof Closed
+822906,Globe Life Field8:05NYY @ TEX,RoofClosed.png,Roof Closed
+823395,PNC Park6:40STL @ PIT,"InCenter.svg,InCenter.svg,InCenter.svg,LightWind.png","InCenter.svg,InCenter.svg,InCenter.svg,Light Breeze"
+823311,Petco Park9:40CHC @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,ModerateWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Moderate Wind"
