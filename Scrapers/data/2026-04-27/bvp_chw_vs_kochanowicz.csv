@@ -1,0 +1,7 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,3,3.00,.667,1.000,,Colson Montgomery,695657,1,,,,2,1,,15,.667,2.334,Kochanowicz,686799,3,4,1.667,1,5,2025
+3,6,,.167,.200,,Andrew Benintendi,643217,2,,1,0.33,1,,1,23,.167,.334,Kochanowicz,686799,6,,.167,1,1,2024
+4,5,,.000,.000,1,Andrew Benintendi,643217,2,,1,0.25,,,2,16,.167,.167,Kochanowicz,686799,6,,.000,,,2025
+1,5,,.000,.000,,Miguel Vargas,678246,2,,3,3.00,,,2,16,.000,.000,Kochanowicz,686799,5,,.000,1,,2024
+1,2,,.000,.000,,Miguel Vargas,678246,1,,,0.00,,,1,5,.000,.000,Kochanowicz,686799,2,,.000,1,,2025
+,3,,.333,.333,,Edgar Quero,700337,1,1,2,2.00,1,,2,6,.333,.666,Kochanowicz,686799,3,,.333,,1,2025
