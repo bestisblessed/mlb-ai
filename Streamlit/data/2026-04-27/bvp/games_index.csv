@@ -1,0 +1,9 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824446,2026-04-27T22:10:00Z,Scheduled,139,Tampa Bay Rays,114,Cleveland Guardians,Progressive Field,Steven Matz,571927,L,Parker Messick,800048,L
+823395,2026-04-27T22:40:00Z,Scheduled,138,St. Louis Cardinals,134,Pittsburgh Pirates,PNC Park,Dustin May,669160,R,Mason Montgomery,682254,L
+822825,2026-04-27T23:07:00Z,Scheduled,111,Boston Red Sox,141,Toronto Blue Jays,Rogers Centre,Ranger Suarez,624133,L,Dylan Cease,656302,R
+823719,2026-04-27T23:40:00Z,Scheduled,136,Seattle Mariners,142,Minnesota Twins,Target Field,Luis Castillo,622491,R,Connor Prielipp,687570,L
+824609,2026-04-27T23:40:00Z,Scheduled,108,Los Angeles Angels,145,Chicago White Sox,Rate Field,Jack Kochanowicz,686799,R,Anthony Kay,641743,L
+822906,2026-04-28T00:05:00Z,Scheduled,147,New York Yankees,140,Texas Rangers,Globe Life Field,Max Fried,608331,L,Jack Leiter,683004,R
+823311,2026-04-28T01:40:00Z,Scheduled,112,Chicago Cubs,135,San Diego Padres,Petco Park,Matthew Boyd,571510,L,Randy Vásquez,681190,R
+823961,2026-04-28T02:10:00Z,Scheduled,146,Miami Marlins,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Chris Paddack,663978,R,Yoshinobu Yamamoto,808967,R
