@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824447,2026-04-28T22:10:00Z,Scheduled,139,Tampa Bay Rays,114,Cleveland Guardians,Progressive Field,Nick Martinez,607259.0,R,Tanner Bibee,676440.0,R
+824849,2026-04-28T22:35:00Z,Scheduled,117,Houston Astros,110,Baltimore Orioles,Oriole Park at Camden Yards,Kai-Wei Teng,678906.0,R,Shane Baz,669358.0,R
+824526,2026-04-28T22:40:00Z,Scheduled,115,Colorado Rockies,113,Cincinnati Reds,Great American Ball Park,,,,Chase Burns,695505.0,R
+823390,2026-04-28T22:40:00Z,Scheduled,138,St. Louis Cardinals,134,Pittsburgh Pirates,PNC Park,Kyle Leahy,681517.0,R,,,
+823473,2026-04-28T22:40:00Z,Scheduled,137,San Francisco Giants,143,Philadelphia Phillies,Citizens Bank Park,Tyler Mahle,641816.0,R,Jesús Luzardo,666200.0,L
+822823,2026-04-28T23:07:00Z,Scheduled,111,Boston Red Sox,141,Toronto Blue Jays,Rogers Centre,Payton Tolle,801139.0,L,Trey Yesavage,,
+823636,2026-04-28T23:10:00Z,Scheduled,120,Washington Nationals,121,New York Mets,Citi Field,Zack Littell,641793.0,R,Clay Holmes,605280.0,R
+824931,2026-04-28T23:15:00Z,Scheduled,116,Detroit Tigers,144,Atlanta Braves,Truist Park,Casey Mize,663554.0,R,Martín Pérez,527048.0,L
+823716,2026-04-28T23:40:00Z,Scheduled,136,Seattle Mariners,142,Minnesota Twins,Target Field,Logan Gilbert,669302.0,R,Joe Ryan,657746.0,R
+824610,2026-04-28T23:40:00Z,Scheduled,108,Los Angeles Angels,145,Chicago White Sox,Rate Field,José Soriano,667755.0,R,Davis Martin,663436.0,R
+823798,2026-04-28T23:40:00Z,Scheduled,109,Arizona Diamondbacks,158,Milwaukee Brewers,American Family Field,,,,Chad Patrick,694477.0,R
+822908,2026-04-29T00:05:00Z,Scheduled,147,New York Yankees,140,Texas Rangers,Globe Life Field,Cam Schlittler,693645.0,R,Jacob deGrom,594798.0,R
+825017,2026-04-29T01:40:00Z,Scheduled,118,Kansas City Royals,133,Athletics,Sutter Health Park,Kris Bubic,663460.0,L,,,
+823310,2026-04-29T01:40:00Z,Scheduled,112,Chicago Cubs,135,San Diego Padres,Petco Park,Edward Cabrera,665795.0,R,Walker Buehler,621111.0,R
+823956,2026-04-29T02:10:00Z,Scheduled,146,Miami Marlins,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Janson Junk,676083.0,R,Shohei Ohtani,660271.0,R
