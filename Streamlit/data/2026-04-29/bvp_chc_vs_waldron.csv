@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,totalbases,year
+1,3,.333,.333,Michael Conforto,624424,1,1,,1,1.00,1,1,7,.333,1.000,Waldron,663362,3,.667,2,2023
+2,2,.000,.000,Michael Conforto,624424,,1,,,0.00,,2,9,.000,.000,Waldron,663362,2,.000,,2024
+1,2,.000,.000,Alex Bregman,608324,,1,1,1,1.00,,2,5,.000,.000,Waldron,663362,2,.000,,2023

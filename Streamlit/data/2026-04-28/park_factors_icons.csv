@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+825017,Sutter Health Park9:40KC  @ ATH,"OutRightMiddle.svg,OutLeftCenter.svg,OutCenter.svg","OutRightMiddle.svg,OutLeftCenter.svg,OutCenter.svg"
+824526,Great American BP6:40COL @ CIN,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze"
+823390,PNC Park6:40STL @ PIT,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,HighH.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,High Humidity"
+824447,Progressive Field6:10TB  @ CLE,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,HighH.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,High Humidity"
+824849,Oriole Park6:35HOU @ BAL,"OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,LightWind.png,Under55.png","OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,Light Breeze,Under55.png"
+823473,Citizens Bank Park6:40SF  @ PHI,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,HighP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,High Pressure"
+823798,American Family Fld7:40ARI @ MIL,RoofClosed.png,Roof Closed
+822823,Rogers Centre7:07BOS @ TOR,RoofClosed.png,Roof Closed
+824610,Rate Field7:40LAA @ CHW,"OutRightCenter.svg,OutLeftMiddle.svg,InRightMiddle.svg","OutRightCenter.svg,OutLeftMiddle.svg,InRightMiddle.svg"
+822908,Globe Life Field8:05NYY @ TEX,RoofClosed.png,Roof Closed
+823956,Dodger Stadium10:10MIA @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze"
+823716,Target Field7:40SEA @ MIN,"OutRight.svg,OutRight.svg,OutRight.svg,ModerateWind.png,Under55.png","OutRight.svg,OutRight.svg,OutRight.svg,Moderate Wind,Under55.png"
+824931,Truist Park7:15DET @ ATL,"InRightCenter.svg,InLeft.svg,InLeft.svg","InRightCenter.svg,InLeft.svg,InLeft.svg"
+823310,Petco Park9:40CHC @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+823636,Citi Field7:10WAS @ NYM,"OutLeft.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,HighP.png","OutLeft.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,High Pressure"

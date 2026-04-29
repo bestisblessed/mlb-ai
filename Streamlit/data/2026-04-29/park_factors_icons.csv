@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+825015,Sutter Health Park9:40KC  @ ATH,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+824525,Great American BP6:40COL @ CIN,"OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,LowP.png","OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,Low Pressure"
+823392,PNC Park6:40STL @ PIT,"OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,LightWind.png,HighH.png,LowP.png","OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,Light Breeze,High Humidity,Low Pressure"
+824850,Oriole Park6:35HOU @ BAL,"OutLeft.svg,OutLeftMiddle.svg,OutLeft.svg,ModerateWind.png,LowP.png","OutLeft.svg,OutLeftMiddle.svg,OutLeft.svg,Moderate Wind,Low Pressure"
+823958,Dodger Stadium3:10MIA @ LAD,"OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F"
+824930,Truist Park7:15DET @ ATL,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,Low Pressure"
+823471,Citizens Bank Park6:40SF  @ PHI,"OutLeft.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png,LowP.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Moderate Wind,Low Pressure"
+822821,Rogers Centre3:07BOS @ TOR,RoofClosed.png,Roof Closed
+824608,Rate Field1:10LAA @ CHW,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,Under55.png,HighH.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,Under55.png,High Humidity"
+823796,American Family Fld7:40ARI @ MIL,RoofClosed.png,Roof Closed
+822907,Globe Life Field2:35NYY @ TEX,RoofClosed.png,Roof Closed
+823312,Petco Park4:10CHC @ SD,"OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,ModerateWind.png","OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,Moderate Wind"
+823717,Target Field1:40SEA @ MIN,"OutRight.svg,OutRight.svg,OutRightCenter.svg,LightWind.png,Under55.png","OutRight.svg,OutRight.svg,OutRightCenter.svg,Light Breeze,Under55.png"
+824445,Progressive Field1:10TB  @ CLE,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,Under55.png,HighH.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,Under55.png,High Humidity"
+823633,Citi Field7:10WAS @ NYM,"OutLeft.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png,Under55.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Moderate Wind,Under55.png"
