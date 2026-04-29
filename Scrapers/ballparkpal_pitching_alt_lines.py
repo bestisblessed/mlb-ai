@@ -55,14 +55,19 @@ asyncio.run(main())
 today = datetime.now().strftime('%Y-%m-%d')
 output_dir = f"data/{today}"
 df_list = pd.read_html(f"{output_dir}/Pitchers.html")
-df = next((t for t in df_list if {"Pitcher","0","10+"}.issubset(t.columns)), None)
+df = next((t for t in df_list if {"Pitcher","0","12+"}.issubset(t.columns)), None)
+if df is None:
+    df = next((t for t in df_list if {"Pitcher","0","10+"}.issubset(t.columns)), None)
 if df is None:
     print([list(t.columns) for t in df_list])
     raise RuntimeError("No matching table found")
 df = df.copy()
     
 # Get Ladder Probs
-prob_cols = [str(i) for i in range(10)] + ["10+"]
+if "12+" in df.columns:
+    prob_cols = [str(i) for i in range(12)] + ["12+"]
+else:
+    prob_cols = [str(i) for i in range(10)] + ["10+"]
 for k in range(2, 11):
     df[f"{k}plus"] = df[[c for c in prob_cols if int(c.rstrip('+')) >= k]].sum(axis=1)
     
