@@ -153,7 +153,7 @@ async def main():
             for row in csv.DictReader(f):
                 gid = row["game_id"]
                 url = f"https://www.ballparkpal.com/Game-Projected-Box-Score.php?GamePk={gid}"
-                await page.goto(url)
+                await page.goto(url, wait_until="domcontentloaded", timeout=60000)
                 await page.wait_for_timeout(1000)
                 html = await page.content()
                 assert_authenticated_html(page.url, html, f"Projected Box Score {gid}")
