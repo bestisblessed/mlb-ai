@@ -21,23 +21,23 @@ log "=== Generating BvP Edges for Dashboard ==="
 run "$PYTHON" "$SCRIPT_DIR/scripts/scrape_bvp_today.py" --workers 4 $DATE_STR
 run "$PYTHON" "$SCRIPT_DIR/scripts/rank_bvp_edges.py" $DATE_STR
 
+log ""
+log "=== Generating BvP Home Run Reports ==="
+run "$PYTHON" "$SCRIPT_DIR/scripts/bvp_hr_reports.py" $DATE_STR
+
 if [ -t 0 ]; then
     read -p "Commit & push to GitHub? (y/n) " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        git add -f "data/${DATE_STR}/bvp/"
+        git add -f "data/${DATE_STR}/bvp/" "reports/"
         git commit -m "BvP edge data update ${DATE_STR}" >> /dev/null 2>&1
         git push >> /dev/null 2>&1
     fi
 else
-    git add -f "data/${DATE_STR}/bvp/"
+    git add -f "data/${DATE_STR}/bvp/" "reports/"
     git commit -m "BvP edge data update ${DATE_STR}" >> /dev/null 2>&1
     git push >> /dev/null 2>&1
 fi
-
-log ""
-log "=== Generating BvP Home Run Reports ==="
-run "$PYTHON" "$SCRIPT_DIR/scripts/bvp_hr_reports.py" $DATE_STR
 
 if [ "$(uname)" = "Darwin" ]; then
     open "$SCRIPT_DIR/reports/report_top20_career_hr_${DATE_STR}.png"
