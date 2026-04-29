@@ -252,7 +252,10 @@ if date:
                     "baseonballs": "BB", "strikeouts": "K", "ops": "OPS", "hit_rate": "H/PA", "hr_rate": "HR/PA",
                     "k_rate": "K/PA", "sample_confidence": "Confidence", "bvp_edge_score": "Edge Score"
                 })
-                st.dataframe(top30[["Batter", "Team", "Pitcher", "PA", "H", "HR", "BB", "K", "OPS", "H/PA", "HR/PA", "K/PA", "Confidence", "Edge Score"]], hide_index=True, width="stretch", height=BVP_TABLE_HEIGHT)
+                bvp_view = top30[["Batter", "Team", "Pitcher", "PA", "H", "HR", "BB", "K", "OPS", "H/PA", "HR/PA", "K/PA", "Confidence", "Edge Score"]].copy()
+                bvp_view["Confidence"] = bvp_view["Confidence"].round(2)
+                bvp_view["Edge Score"] = bvp_view["Edge Score"].round(1)
+                st.dataframe(bvp_view, hide_index=True, width="stretch", height=BVP_TABLE_HEIGHT)
                 render_bvp_methodology()
     else:
         st.error(f"Simulation data not found for {date}")

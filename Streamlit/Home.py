@@ -432,7 +432,6 @@ if date:
             </div>
             <div style='height:28px;'></div>
             <br>
-            <hr style='border: none; border-top: 1.5px solid #e0e0e0; margin: 0 0 18px 0;'>
             """, unsafe_allow_html=True)
             st.write("")
 
@@ -454,6 +453,7 @@ if date:
     daily_bvp_board, daily_bvp_diag = build_daily_bvp_board(date)
     overview_tab, bvp_tab = st.tabs(["Game Overview", "BvP Matchups"])
     with bvp_tab:
+        st.markdown("<div style='height:10px;'></div>", unsafe_allow_html=True)
         if daily_bvp_diag.get("error"):
             st.warning(f"BvP board unavailable: {daily_bvp_diag['error']}")
         else:
@@ -470,11 +470,12 @@ if date:
                 board_view = scoped.rename(columns={"sample_pa":"PA","hits":"H","homeruns":"HR","baseonballs":"BB","strikeouts":"K","batting_avg":"AVG","obp":"OBP","slg":"SLG","ops":"OPS","hit_rate":"H/PA","hr_rate":"HR/PA","k_rate":"K/PA","bb_rate":"BB/PA","sample_confidence":"Confidence","bvp_edge_score":"Edge Score"})[
                     ["Batter","Team","Pitcher","PA","H","HR","BB","K","AVG","OBP","SLG","OPS","H/PA","HR/PA","K/PA","BB/PA","Confidence","Edge Score"]
                 ]
+                board_view["Confidence"] = board_view["Confidence"].round(2)
+                board_view["Edge Score"] = board_view["Edge Score"].round(1)
                 st.dataframe(board_view, hide_index=True, width="stretch")
             _render_bvp_methodology()
     with overview_tab:
-        st.markdown("<hr style='border: none; border-top: 1px solid #e0e0e0; margin: 12px 0 18px 0;'>", unsafe_allow_html=True)
-
+        st.markdown("<div style='height:10px;'></div>", unsafe_allow_html=True)
         # -- Main columns: Away vs Home projections --
         away_col, spacer, home_col = st.columns([1, 0.05, 1])  # 0.08 is a small spacer, adjust as needed
 
