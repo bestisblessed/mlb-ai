@@ -1,16 +1,16 @@
 game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
-824445,2026-04-29T17:10:00Z,Scheduled,139,Tampa Bay Rays,114,Cleveland Guardians,Progressive Field,Drew Rasmussen,656876.0,R,Gavin Williams,668909,R
-824608,2026-04-29T17:10:00Z,Scheduled,108,Los Angeles Angels,145,Chicago White Sox,Rate Field,Yusei Kikuchi,579328.0,L,Erick Fedde,607200,R
-823717,2026-04-29T17:40:00Z,Scheduled,136,Seattle Mariners,142,Minnesota Twins,Target Field,George Kirby,669923.0,R,Taj Bradley,671737,R
-822907,2026-04-29T18:35:00Z,Scheduled,147,New York Yankees,140,Texas Rangers,Globe Life Field,Elmer Rodríguez,,,Nathan Eovaldi,543135,R
-822821,2026-04-29T19:07:00Z,Scheduled,111,Boston Red Sox,141,Toronto Blue Jays,Rogers Centre,Brayan Bello,678394.0,R,Eric Lauer,641778,L
-823958,2026-04-29T19:10:00Z,Scheduled,146,Miami Marlins,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Sandy Alcantara,645261.0,R,Tyler Glasnow,607192,R
-823312,2026-04-29T20:10:00Z,Scheduled,112,Chicago Cubs,135,San Diego Padres,Petco Park,Jameson Taillon,592791.0,R,Matt Waldron,663362,R
-824850,2026-04-29T22:35:00Z,Scheduled,117,Houston Astros,110,Baltimore Orioles,Oriole Park at Camden Yards,Peter Lambert,663567.0,R,Chris Bassitt,605135,R
-824525,2026-04-29T22:40:00Z,Scheduled,115,Colorado Rockies,113,Cincinnati Reds,Great American Ball Park,Tomoyuki Sugano,608372.0,R,Brandon Williamson,682227,L
-823392,2026-04-29T22:40:00Z,Scheduled,138,St. Louis Cardinals,134,Pittsburgh Pirates,PNC Park,Andre Pallante,669467.0,R,Bubba Chandler,696149,R
-823471,2026-04-29T22:40:00Z,Scheduled,137,San Francisco Giants,143,Philadelphia Phillies,Citizens Bank Park,Logan Webb,657277.0,R,Cristopher Sánchez,650911,L
-823633,2026-04-29T23:10:00Z,Scheduled,120,Washington Nationals,121,New York Mets,Citi Field,Cade Cavalli,676917.0,R,David Peterson,656849,L
-824930,2026-04-29T23:15:00Z,Scheduled,116,Detroit Tigers,144,Atlanta Braves,Truist Park,Tarik Skubal,669373.0,L,JR Ritchie,702275,R
-823796,2026-04-29T23:40:00Z,Scheduled,109,Arizona Diamondbacks,158,Milwaukee Brewers,American Family Field,Eduardo Rodriguez,699134.0,R,Brandon Sproat,687075,R
-825015,2026-04-30T01:40:00Z,Scheduled,118,Kansas City Royals,133,Athletics,Sutter Health Park,Michael Wacha,608379.0,R,Luis Severino,622663,R
+824445,2026-04-29T17:10:00Z,Delayed Start,139,Tampa Bay Rays,114,Cleveland Guardians,Progressive Field,Drew Rasmussen,656876,R,Gavin Williams,668909,R
+824608,2026-04-29T17:10:00Z,In Progress,108,Los Angeles Angels,145,Chicago White Sox,Rate Field,Yusei Kikuchi,579328,L,Erick Fedde,607200,R
+823717,2026-04-29T17:40:00Z,Warmup,136,Seattle Mariners,142,Minnesota Twins,Target Field,George Kirby,669923,R,Taj Bradley,671737,R
+822907,2026-04-29T18:35:00Z,Pre-Game,147,New York Yankees,140,Texas Rangers,Globe Life Field,Elmer Rodríguez,695684,R,Nathan Eovaldi,543135,R
+822821,2026-04-29T19:07:00Z,Pre-Game,111,Boston Red Sox,141,Toronto Blue Jays,Rogers Centre,Brayan Bello,678394,R,Eric Lauer,641778,L
+823958,2026-04-29T19:10:00Z,Pre-Game,146,Miami Marlins,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Sandy Alcantara,645261,R,Tyler Glasnow,607192,R
+823312,2026-04-29T20:10:00Z,Pre-Game,112,Chicago Cubs,135,San Diego Padres,Petco Park,Jameson Taillon,592791,R,Matt Waldron,663362,R
+824850,2026-04-29T22:35:00Z,Scheduled,117,Houston Astros,110,Baltimore Orioles,Oriole Park at Camden Yards,Peter Lambert,663567,R,Chris Bassitt,605135,R
+824525,2026-04-29T22:40:00Z,Pre-Game,115,Colorado Rockies,113,Cincinnati Reds,Great American Ball Park,Tomoyuki Sugano,608372,R,Brandon Williamson,682227,L
+823392,2026-04-29T22:40:00Z,Scheduled,138,St. Louis Cardinals,134,Pittsburgh Pirates,PNC Park,Andre Pallante,669467,R,Bubba Chandler,696149,R
+823471,2026-04-29T22:40:00Z,Scheduled,137,San Francisco Giants,143,Philadelphia Phillies,Citizens Bank Park,Logan Webb,657277,R,Cristopher Sánchez,650911,L
+823633,2026-04-29T23:10:00Z,Scheduled,120,Washington Nationals,121,New York Mets,Citi Field,Cade Cavalli,676917,R,David Peterson,656849,L
+824930,2026-04-29T23:15:00Z,Scheduled,116,Detroit Tigers,144,Atlanta Braves,Truist Park,Tarik Skubal,669373,L,JR Ritchie,702275,R
+823796,2026-04-29T23:40:00Z,Scheduled,109,Arizona Diamondbacks,158,Milwaukee Brewers,American Family Field,Eduardo Rodriguez,699134,R,Brandon Sproat,687075,R
+825015,2026-04-30T01:40:00Z,Scheduled,118,Kansas City Royals,133,Athletics,Sutter Health Park,Michael Wacha,608379,R,Luis Severino,622663,R
