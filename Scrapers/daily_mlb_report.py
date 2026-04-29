@@ -17,6 +17,7 @@ DATA_DIR = SCRIPT_DIR / "data"
 REPORTS_DIR = SCRIPT_DIR.parent / "Reports"
 ET = ZoneInfo("America/New_York")
 SEASON = 2026
+PICK_LIMIT = 50
 
 MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
 BOVADA_URL = (
@@ -1029,6 +1030,15 @@ def curate_top_picks(picks: list[dict], limit: int = 20) -> list[dict]:
         game_counts[pick["game"]] = game_counts.get(pick["game"], 0) + 1
         if len(curated) == limit:
             break
+    if len(curated) < limit:
+        for pick in picks:
+            exact = f"{pick['market']}:{pick['selection']}:{pick['game']}"
+            if exact in seen_exact:
+                continue
+            curated.append(pick)
+            seen_exact.add(exact)
+            if len(curated) == limit:
+                break
     return curated
 
 
@@ -1570,8 +1580,17 @@ def score_home_run_batters(
         curated.append(pick)
         seen_players.add(key)
         game_counts[pick["game"]] = game_counts.get(pick["game"], 0) + 1
-        if len(curated) == 20:
+        if len(curated) == PICK_LIMIT:
             break
+    if len(curated) < PICK_LIMIT:
+        for pick in picks:
+            key = clean_name(pick["selection"])
+            if key in seen_players:
+                continue
+            curated.append(pick)
+            seen_players.add(key)
+            if len(curated) == PICK_LIMIT:
+                break
     return curated
 
 
@@ -1589,9 +1608,9 @@ def write_report(
     hr_output_csv: Path,
 ) -> None:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-    top = picks[:20]
+    top = picks[:PICK_LIMIT]
     pd.DataFrame(top).to_csv(output_csv, index=False)
-    pd.DataFrame(hr_picks[:20]).to_csv(hr_output_csv, index=False)
+    pd.DataFrame(hr_picks[:PICK_LIMIT]).to_csv(hr_output_csv, index=False)
 
     lines = [
         f"# Daily MLB Betting Edge Report - {report_date:%B %-d, %Y}",
@@ -1611,7 +1630,7 @@ def write_report(
         "- Core inputs: current-season team form, probable starters, pitcher K/BF, opponent K/PA, hitter game-log hit/TB/H+R+RBI rates, and live Bovada prices.",
         "- Practical note: verify lineups, scratches, pitcher changes, weather, and price movement before betting.",
         "",
-        "## Top 20 Bets And Props",
+        f"## Top {PICK_LIMIT} Bets And Props",
         "",
         "| # | Confidence | Market | Pick | Odds | Model | Implied | Edge | EV/$ | Fair | Why |",
         "|---:|:---:|---|---|---:|---:|---:|---:|---:|---:|---|",
@@ -1629,7 +1648,7 @@ def write_report(
     lines.extend(
         [
             "",
-            "## Top 20 Home Run Batter Bets",
+            f"## Top {PICK_LIMIT} Home Run Batter Bets",
             "",
             "This is a separate HR-only card from the custom handicapper model. It uses live HR prices plus hitter power form, opposing starter damage profile, projected team runs, ballpark HR tendency, and forecast-hour weather.",
             "",
@@ -1637,7 +1656,7 @@ def write_report(
             "|---:|:---:|---|---:|---:|---:|---:|---:|---:|---|",
         ]
     )
-    for i, pick in enumerate(hr_picks[:20], 1):
+    for i, pick in enumerate(hr_picks[:PICK_LIMIT], 1):
         why = pick["rationale"].replace("|", "/")
         lines.append(
             f"| {i} | {pick['confidence']} | {pick['selection']} "
@@ -1744,10 +1763,10 @@ def main() -> None:
 
     all_picks = game_picks + pitcher_picks + player_picks
     all_picks = sorted(all_picks, key=lambda p: p["score"], reverse=True)
-    top_picks = curate_top_picks(all_picks, limit=20)
+    top_picks = curate_top_picks(all_picks, limit=PICK_LIMIT)
     output_md = REPORTS_DIR / f"daily_mlb_report_{report_date.isoformat()}.md"
-    output_csv = REPORTS_DIR / f"daily_mlb_report_{report_date.isoformat()}_top20.csv"
-    hr_output_csv = REPORTS_DIR / f"daily_mlb_report_{report_date.isoformat()}_hr_top20.csv"
+    output_csv = REPORTS_DIR / f"daily_mlb_report_{report_date.isoformat()}_top50.csv"
+    hr_output_csv = REPORTS_DIR / f"daily_mlb_report_{report_date.isoformat()}_hr_top50.csv"
     write_report(
         report_date,
         run_time,
@@ -1763,12 +1782,12 @@ def main() -> None:
     )
 
     print(f"Report written: {output_md}")
-    print(f"Top-20 CSV written: {output_csv}")
-    print(f"HR top-20 CSV written: {hr_output_csv}")
+    print(f"Top-{PICK_LIMIT} CSV written: {output_csv}")
+    print(f"HR top-{PICK_LIMIT} CSV written: {hr_output_csv}")
     print(f"MLB games: {len(games)}")
     print(f"Bovada events: {len(bovada_events)}")
     print(f"Candidates scored: {len(all_picks)}")
-    print(f"HR top-20 picks: {len(hr_picks)}")
+    print(f"HR top-{PICK_LIMIT} picks: {len(hr_picks)}")
     print("Top 5:")
     for i, pick in enumerate(top_picks[:5], 1):
         print(
