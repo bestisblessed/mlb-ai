@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 import os
 import re
+import glob
 
 # ---------------------------------------------------------------------------
 # Helpers to load season game logs
@@ -94,6 +95,129 @@ def resolve_starting_pitchers(detailed_row, date_str: str, game_id: str):
         _starter_last_name(starter_away),
         _starter_last_name(starter_home),
     )
+
+
+def _safe_rate(num: pd.Series, den: pd.Series) -> pd.Series:
+    den = den.replace(0, np.nan)
+    return (num / den).fillna(0.0)
+
+
+@st.cache_data(show_spinner=False)
+def build_daily_bvp_board(date_str: str):
+    date_dir = os.path.join(DATA_DIR, date_str)
+    matchups_path = os.path.join(date_dir, "matchups.csv")
+    if not os.path.exists(matchups_path):
+        return pd.DataFrame(), {"error": "matchups.csv not found"}
+
+    matchup_cols = ["Team", "Batter", "BatterID", "Pitcher", "PitcherID"]
+    matchups = pd.read_csv(matchups_path, low_memory=False)
+    missing_matchup_cols = [c for c in matchup_cols if c not in matchups.columns]
+    if missing_matchup_cols:
+        return pd.DataFrame(), {"error": f"matchups.csv missing columns: {', '.join(missing_matchup_cols)}"}
+
+    matchup_keys = matchups[matchup_cols].copy()
+    matchup_keys["BatterID"] = pd.to_numeric(matchup_keys["BatterID"], errors="coerce").astype("Int64")
+    matchup_keys["PitcherID"] = pd.to_numeric(matchup_keys["PitcherID"], errors="coerce").astype("Int64")
+
+    bvp_files = sorted(glob.glob(os.path.join(date_dir, "bvp_*.csv")))
+    if not bvp_files:
+        return pd.DataFrame(), {"error": "No bvp_*.csv files found"}
+
+    frames = []
+    for path in bvp_files:
+        try:
+            bvp = pd.read_csv(path, low_memory=False)
+        except Exception:
+            continue
+        required = {"batter_id", "pitcher_id", "batter", "pitcher"}
+        if not required.issubset(bvp.columns):
+            continue
+        for col in ["atbats", "hits", "homeruns", "baseonballs", "strikeouts", "totalbases", "plateappearances", "gamesplayed"]:
+            if col not in bvp.columns:
+                bvp[col] = 0
+            bvp[col] = pd.to_numeric(bvp[col], errors="coerce").fillna(0.0)
+        bvp["batter_id"] = pd.to_numeric(bvp["batter_id"], errors="coerce").astype("Int64")
+        bvp["pitcher_id"] = pd.to_numeric(bvp["pitcher_id"], errors="coerce").astype("Int64")
+        bvp["source_file"] = os.path.basename(path)
+        frames.append(bvp)
+
+    if not frames:
+        return pd.DataFrame(), {"error": "Unable to parse any bvp_*.csv files"}
+
+    all_bvp = pd.concat(frames, ignore_index=True)
+    grouped = (
+        all_bvp.groupby(["batter_id", "pitcher_id", "batter", "pitcher"], as_index=False)[
+            ["atbats", "hits", "homeruns", "baseonballs", "strikeouts", "totalbases", "plateappearances", "gamesplayed"]
+        ]
+        .sum()
+    )
+
+    board = matchup_keys.merge(
+        grouped,
+        left_on=["BatterID", "PitcherID"],
+        right_on=["batter_id", "pitcher_id"],
+        how="left",
+    )
+    board[["atbats", "hits", "homeruns", "baseonballs", "strikeouts", "totalbases", "plateappearances", "gamesplayed"]] = (
+        board[["atbats", "hits", "homeruns", "baseonballs", "strikeouts", "totalbases", "plateappearances", "gamesplayed"]]
+        .fillna(0.0)
+    )
+
+    board["batting_avg"] = _safe_rate(board["hits"], board["atbats"])
+    board["obp"] = _safe_rate(board["hits"] + board["baseonballs"], board["atbats"] + board["baseonballs"])
+    board["slg"] = _safe_rate(board["totalbases"], board["atbats"])
+    board["ops"] = board["obp"] + board["slg"]
+    board["sample_pa"] = board["plateappearances"].where(board["plateappearances"] > 0, board["atbats"])
+    board["hit_rate"] = _safe_rate(board["hits"], board["sample_pa"])
+    board["hr_rate"] = _safe_rate(board["homeruns"], board["sample_pa"])
+    board["k_rate"] = _safe_rate(board["strikeouts"], board["sample_pa"])
+    board["bb_rate"] = _safe_rate(board["baseonballs"], board["sample_pa"])
+    board["sample_confidence"] = np.clip(np.log1p(board["sample_pa"]) / np.log(16), 0, 1)
+    board["bvp_edge_score"] = (
+        (board["ops"] * 45) +
+        (board["hit_rate"] * 35) +
+        (board["hr_rate"] * 120) -
+        (board["k_rate"] * 8)
+    ) * board["sample_confidence"]
+
+    coverage = float((board["atbats"] > 0).mean()) if len(board) else 0.0
+    expected_matchups = matchup_keys[["Team", "Pitcher", "PitcherID"]].drop_duplicates().shape[0]
+    parsed_pitchers = all_bvp[["pitcher", "pitcher_id"]].drop_duplicates().shape[0]
+    diagnostics = {
+        "bvp_files": len(bvp_files),
+        "expected_pitcher_matchups": expected_matchups,
+        "parsed_pitchers": parsed_pitchers,
+        "lineup_rows": int(len(board)),
+        "rows_with_bvp_history": int((board["atbats"] > 0).sum()),
+        "coverage": coverage,
+    }
+    return board, diagnostics
+
+
+def _render_bvp_methodology():
+    with st.expander("ⓘ Methodology", expanded=False):
+        st.markdown(
+            """
+            **Column definitions**
+            - **Batter**: Hitter in the matchup.
+            - **Team**: Batter's team.
+            - **Pitcher**: Opposing probable starter.
+            - **PA**: Plate appearances vs this pitcher; every completed trip to the plate.
+            - **H/HR/BB/K**: Hits, home runs, walks, and strikeouts vs this pitcher.
+            - **AVG**: Batting average; how often the batter gets a hit in official at-bats.
+            - **OBP**: On-base percentage; how often the batter reaches base by hit or walk.
+            - **SLG**: Slugging percentage; total-base power per at-bat.
+            - **OPS**: OBP plus SLG; quick blend of on-base skill and power.
+            - **H/PA**: Hits per plate appearance.
+            - **HR/PA**: Home runs per plate appearance.
+            - **K/PA**: Strikeouts per plate appearance.
+            - **BB/PA**: Walks per plate appearance.
+            - **Confidence**: Sample-size score based on `log(1 + PA)` capped to `[0, 1]`.
+            - **Edge Score**: Composite rating from OPS, H/PA, HR/PA, K/PA, and Confidence.
+
+            **Note:** PA and AB are not the same. PA includes walks and other plate outcomes; AB excludes walks.
+            """
+        )
     
 st.set_page_config(page_title="MLB AI",
                    page_icon="⚾", layout="wide")
@@ -156,6 +280,16 @@ TEAM_ABBR = {
     'toronto blue jays': 'tor',
     'washington nationals': 'was',
 }
+
+TEAM_NAME_BY_ABBR = {
+    abbr.upper(): name.title()
+    for name, abbr in TEAM_ABBR.items()
+}
+TEAM_NAME_BY_ABBR.update({
+    "ATH": "Oakland Athletics",
+    "OAK": "Oakland Athletics",
+    "STL": "St. Louis Cardinals",
+})
 
 if date:
     sim_path = os.path.join(DATA_DIR, date, "game_simulations.csv")
@@ -317,308 +451,332 @@ if date:
         st.error(f"Simulation data not found for {date}")
         st.stop()
 
-    # -- Main columns: Away vs Home projections --
-    away_col, spacer, home_col = st.columns([1, 0.05, 1])  # 0.08 is a small spacer, adjust as needed
-
-    # -- AWAY PROJECTIONS --
-    with away_col:
-        #st.subheader(away_team)
-
-        # Starting Pitcher
-        p1 = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_1.csv")
-        if os.path.exists(p1):
-            pdf = pd.read_csv(p1)
-            if not pdf.empty:
-                st.markdown("<h5 style='text-align:center;'>Starting Pitcher Projections</h5>", unsafe_allow_html=True)
-
-                pdf_display = pdf.copy()
-                pdf_display["Player_Link"] = pdf_display["Player URL"]
-                cols = [
-                    "Pitcher", "Inn", "K", "BB", "H", "R", "W", "QS", "Player_Link"
+    daily_bvp_board, daily_bvp_diag = build_daily_bvp_board(date)
+    overview_tab, bvp_tab = st.tabs(["Game Overview", "BvP Matchups"])
+    with bvp_tab:
+        if daily_bvp_diag.get("error"):
+            st.warning(f"BvP board unavailable: {daily_bvp_diag['error']}")
+        else:
+            min_pa = st.slider("Min career PA vs starter", min_value=1, max_value=25, value=1, step=1, key="home_bvp_min_pa")
+            scoped = daily_bvp_board[
+                (daily_bvp_board["sample_pa"] >= min_pa) &
+                (daily_bvp_board["Team"].str.lower().isin([TEAM_ABBR.get(away_team.lower(), away_team.lower()), TEAM_ABBR.get(home_team.lower(), home_team.lower())]))
+            ].copy()
+            scoped = scoped.sort_values(["bvp_edge_score", "ops", "sample_pa"], ascending=[False, False, False])
+            if scoped.empty:
+                st.info(f"No batter-vs-starter history with at least {min_pa} PA for this matchup.")
+            else:
+                scoped["Team"] = scoped["Team"].str.upper().map(TEAM_NAME_BY_ABBR).fillna(scoped["Team"])
+                board_view = scoped.rename(columns={"sample_pa":"PA","hits":"H","homeruns":"HR","baseonballs":"BB","strikeouts":"K","batting_avg":"AVG","obp":"OBP","slg":"SLG","ops":"OPS","hit_rate":"H/PA","hr_rate":"HR/PA","k_rate":"K/PA","bb_rate":"BB/PA","sample_confidence":"Confidence","bvp_edge_score":"Edge Score"})[
+                    ["Batter","Team","Pitcher","PA","H","HR","BB","K","AVG","OBP","SLG","OPS","H/PA","HR/PA","K/PA","BB/PA","Confidence","Edge Score"]
                 ]
-                pdf_display = pdf_display[cols]
+                st.dataframe(board_view, hide_index=True, width="stretch")
+            _render_bvp_methodology()
+    with overview_tab:
+        st.markdown("<hr style='border: none; border-top: 1px solid #e0e0e0; margin: 12px 0 18px 0;'>", unsafe_allow_html=True)
 
-                st.dataframe(
-                    pdf_display,
-                    hide_index=True,
-                    column_config={
-                        "Player_Link": st.column_config.LinkColumn(
-                            label="",
-                            display_text="🔗",
-                            width=9  # Make the link column very small,
-                        )
-                    },
-                    width='stretch'
-                )
+        # -- Main columns: Away vs Home projections --
+        away_col, spacer, home_col = st.columns([1, 0.05, 1])  # 0.08 is a small spacer, adjust as needed
 
-                for _, prow in pdf.iterrows():
-                    pid = int(prow.get("Player ID", 0))
-                    with st.expander("Last 10 Games"):
-                        logs = pit_logs[pit_logs['player_id'] == pid]
-                        if not logs.empty:
-                            disp_cols = [
-                                "date", "opponent", "inningsPitched",
-                                "strikeOuts", "runs", "hits"
-                            ]
-                            disp_cols = [c for c in disp_cols if c in logs.columns]
-                            st.dataframe(
-                                logs.sort_values('date', ascending=False)
-                                    .head(10)[disp_cols],
-                                hide_index=True,
-                                width='stretch'
+        # -- AWAY PROJECTIONS --
+        with away_col:
+            #st.subheader(away_team)
+
+            # Starting Pitcher
+            p1 = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_1.csv")
+            if os.path.exists(p1):
+                pdf = pd.read_csv(p1)
+                if not pdf.empty:
+                    st.markdown("<h5 style='text-align:center;'>Starting Pitcher Projections</h5>", unsafe_allow_html=True)
+
+                    pdf_display = pdf.copy()
+                    pdf_display["Player_Link"] = pdf_display["Player URL"]
+                    cols = [
+                        "Pitcher", "Inn", "K", "BB", "H", "R", "W", "QS", "Player_Link"
+                    ]
+                    pdf_display = pdf_display[cols]
+
+                    st.dataframe(
+                        pdf_display,
+                        hide_index=True,
+                        column_config={
+                            "Player_Link": st.column_config.LinkColumn(
+                                label="",
+                                display_text="🔗",
+                                width=9  # Make the link column very small,
                             )
-                        else:
-                            st.write("No game logs found.")
-                    st.markdown("<br>", unsafe_allow_html=True)  # Ensure this is only after the dropdown
+                        },
+                        width='stretch'
+                    )
 
-        # Batting Order
-        b1 = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_1.csv")
-        if os.path.exists(b1):
-            bdf = pd.read_csv(b1)
-            if not bdf.empty:
-                st.markdown("<h5 style='text-align:center;'>Batting Projections</h5>", unsafe_allow_html=True)
-
-                bdf_display = bdf.copy()
-                bdf_display["Player_Link"] = bdf_display["Player URL"]
-                cols = [
-                    "Batter", "PA", "H", "RBI", "BB", "K", "1B", "2B",
-                    "3B", "HR", "SB", "Player_Link"
-                ]
-                bdf_display = bdf_display[cols]
-                nums = bdf_display.select_dtypes(include=[np.number]).columns
-                bdf_display[nums] = bdf_display[nums].round(2)
-
-                st.dataframe(
-                    bdf_display,
-                    hide_index=True,
-                    column_config={
-                        "Player_Link": st.column_config.LinkColumn(
-                            label="",
-                            display_text="🔗",
-                            width=9  # Make the link column very small,
-                        )
-                    },
-                    width='stretch'
-                )
-                st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
-
-        # -------------------- Matchups vs Home Starter --------------------
-        if matchups_df is not None and starter_home_last:
-            vs_df = matchups_df[matchups_df["Pitcher"] == starter_home_last]
-            if not vs_df.empty:
-                st.markdown("<h5 style='text-align:center;'>Batter Matchup Projections vs Starting Pitcher</h5>", unsafe_allow_html=True)
-                # Display all relevant columns from matchups.csv
-                disp_cols = ["Batter", "Team", "vs", "RC", "HR", "XB", "1B", "BB", "K"]
-                vs_disp = vs_df[disp_cols].copy()
-                num_cols = vs_disp.select_dtypes(include=["object", "string"]).columns.difference(["Batter", "Team", "Pitcher"])
-                vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
-                vs_disp[num_cols] = vs_disp[num_cols].round(2)
-                vs_disp = vs_disp.rename(columns={"Team": "L/R"})
-                st.dataframe(
-                    vs_disp,
-                    hide_index=True,
-                    width='stretch'
-                )
-                #st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
-
-        # -------------------- Career BvP vs Home Starter (moved here) --------------------
-        away_abbr = TEAM_ABBR.get(away_team.lower(), away_team.lower())
-        bvp_file = os.path.join(DATA_DIR, date, f"bvp_{away_abbr}_vs_{starter_home_last.lower()}.csv")
-        bvp_df = pd.read_csv(bvp_file) if os.path.exists(bvp_file) else None
-        if os.path.exists(b1):
-            bdf = pd.read_csv(b1)
-            if not bdf.empty:
-                for _, brow in bdf.iterrows():
-                    batter = brow["Batter"]
-                    batter_id = int(brow["Player ID"])
-                    with st.expander(f"**{batter}** - Career BvP vs {starter_home} & Last 10 Games"):
-                        # Career BvP first
-                        st.markdown(f"**Career BvP vs {starter_home}**")
-                        if bvp_df is not None:
-                            batter_bvp = bvp_df[bvp_df["batter_id"] == batter_id]
-                            if not batter_bvp.empty:
-                                display_cols = [
-                                    'atbats', 'avg', 'hits', 'homeruns', 'doubles', 'baseonballs', 'strikeouts', 'year'
+                    for _, prow in pdf.iterrows():
+                        pid = int(prow.get("Player ID", 0))
+                        with st.expander("Last 10 Games"):
+                            logs = pit_logs[pit_logs['player_id'] == pid]
+                            if not logs.empty:
+                                disp_cols = [
+                                    "date", "opponent", "inningsPitched",
+                                    "strikeOuts", "runs", "hits"
                                 ]
-                                display_cols = [c for c in display_cols if c in batter_bvp.columns]
-                                bvp_display = batter_bvp[display_cols].copy()
-                                bvp_display = bvp_display.fillna(0).replace({None: 0})
-                                if 'year' in bvp_display.columns:
-                                    bvp_display['year'] = pd.to_numeric(bvp_display['year'], errors='coerce')
-                                    bvp_display = bvp_display.sort_values(by='year', ascending=False)
-                                    bvp_display['year'] = bvp_display['year'].astype('Int64').astype(str)
+                                disp_cols = [c for c in disp_cols if c in logs.columns]
                                 st.dataframe(
-                                    bvp_display,
+                                    logs.sort_values('date', ascending=False)
+                                        .head(10)[disp_cols],
                                     hide_index=True,
                                     width='stretch'
                                 )
-                                st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
                             else:
-                                st.write("No career BvP data for this batter vs pitcher.")
-                        else:
-                            st.write("No career BvP data for this matchup.")
+                                st.write("No game logs found.")
+                        st.markdown("<br>", unsafe_allow_html=True)  # Ensure this is only after the dropdown
 
-                        # Last 10 Games second
-                        st.markdown("**Last 10 Games**")
-                        logs = bat_logs[bat_logs['player_id'] == batter_id]
-                        if not logs.empty:
-                            disp_cols = [
-                                "date", "opponent", "atBats", "hits",
-                                "doubles", "triples", "homeRuns", "rbi", "runs",
-                                "strikeOuts", "stolenBases", "caughtStealing",
-                            ]
-                            disp_cols = [c for c in disp_cols if c in logs.columns]
-                            st.dataframe(
-                                logs.sort_values('date', ascending=False).head(10)[disp_cols],
-                                hide_index=True
+            # Batting Order
+            b1 = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_1.csv")
+            if os.path.exists(b1):
+                bdf = pd.read_csv(b1)
+                if not bdf.empty:
+                    st.markdown("<h5 style='text-align:center;'>Batting Projections</h5>", unsafe_allow_html=True)
+
+                    bdf_display = bdf.copy()
+                    bdf_display["Player_Link"] = bdf_display["Player URL"]
+                    cols = [
+                        "Batter", "PA", "H", "RBI", "BB", "K", "1B", "2B",
+                        "3B", "HR", "SB", "Player_Link"
+                    ]
+                    bdf_display = bdf_display[cols]
+                    nums = bdf_display.select_dtypes(include=[np.number]).columns
+                    bdf_display[nums] = bdf_display[nums].round(2)
+
+                    st.dataframe(
+                        bdf_display,
+                        hide_index=True,
+                        column_config={
+                            "Player_Link": st.column_config.LinkColumn(
+                                label="",
+                                display_text="🔗",
+                                width=9  # Make the link column very small,
                             )
-                        else:
-                            st.write("No game logs found.")
+                        },
+                        width='stretch'
+                    )
+                    st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
 
-    # -- HOME PROJECTIONS --
-    with home_col:
-        #st.subheader(home_team)
+            # -------------------- Matchups vs Home Starter --------------------
+            if matchups_df is not None and starter_home_last:
+                vs_df = matchups_df[matchups_df["Pitcher"] == starter_home_last]
+                if not vs_df.empty:
+                    st.markdown("<h5 style='text-align:center;'>Batter Matchup Projections vs Starting Pitcher</h5>", unsafe_allow_html=True)
+                    # Display all relevant columns from matchups.csv
+                    disp_cols = ["Batter", "Team", "vs", "RC", "HR", "XB", "1B", "BB", "K"]
+                    vs_disp = vs_df[disp_cols].copy()
+                    num_cols = vs_disp.select_dtypes(include=["object", "string"]).columns.difference(["Batter", "Team", "Pitcher"])
+                    vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
+                    vs_disp[num_cols] = vs_disp[num_cols].round(2)
+                    vs_disp = vs_disp.rename(columns={"Team": "L/R"})
+                    st.dataframe(
+                        vs_disp,
+                        hide_index=True,
+                        width='stretch'
+                    )
+                    #st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
 
-        # Starting Pitcher
-        p2 = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_2.csv")
-        if os.path.exists(p2):
-            pdf = pd.read_csv(p2)
-            if not pdf.empty:
-                st.markdown("<h5 style='text-align:center;'>Starting Pitcher Projections</h5>", unsafe_allow_html=True)
+            # -------------------- Career BvP vs Home Starter (moved here) --------------------
+            away_abbr = TEAM_ABBR.get(away_team.lower(), away_team.lower())
+            bvp_file = os.path.join(DATA_DIR, date, f"bvp_{away_abbr}_vs_{starter_home_last.lower()}.csv")
+            bvp_df = pd.read_csv(bvp_file) if os.path.exists(bvp_file) else None
+            if os.path.exists(b1):
+                bdf = pd.read_csv(b1)
+                if not bdf.empty:
+                    for _, brow in bdf.iterrows():
+                        batter = brow["Batter"]
+                        batter_id = int(brow["Player ID"])
+                        with st.expander(f"**{batter}** - Career BvP vs {starter_home} & Last 10 Games"):
+                            # Career BvP first
+                            st.markdown(f"**Career BvP vs {starter_home}**")
+                            if bvp_df is not None:
+                                batter_bvp = bvp_df[bvp_df["batter_id"] == batter_id]
+                                if not batter_bvp.empty:
+                                    display_cols = [
+                                        'atbats', 'avg', 'hits', 'homeruns', 'doubles', 'baseonballs', 'strikeouts', 'year'
+                                    ]
+                                    display_cols = [c for c in display_cols if c in batter_bvp.columns]
+                                    bvp_display = batter_bvp[display_cols].copy()
+                                    bvp_display = bvp_display.fillna(0).replace({None: 0})
+                                    if 'year' in bvp_display.columns:
+                                        bvp_display['year'] = pd.to_numeric(bvp_display['year'], errors='coerce')
+                                        bvp_display = bvp_display.sort_values(by='year', ascending=False)
+                                        bvp_display['year'] = bvp_display['year'].astype('Int64').astype(str)
+                                    st.dataframe(
+                                        bvp_display,
+                                        hide_index=True,
+                                        width='stretch'
+                                    )
+                                    st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
+                                else:
+                                    st.write("No career BvP data for this batter vs pitcher.")
+                            else:
+                                st.write("No career BvP data for this matchup.")
 
-                pdf_display = pdf.copy()
-                pdf_display["Player_Link"] = pdf_display["Player URL"]
-                cols = [
-                    "Pitcher", "Inn", "K", "BB", "H", "R", "W", "QS", "Player_Link"
-                ]
-                pdf_display = pdf_display[cols]
-
-                st.dataframe(
-                    pdf_display,
-                    hide_index=True,
-                    column_config={
-                        "Player_Link": st.column_config.LinkColumn(
-                            label="",
-                            display_text="🔗",
-                            width=9  # Make the link column very small,
-                        )
-                    },
-                    width='stretch'
-                )
-
-                for _, prow in pdf.iterrows():
-                    pid = int(prow.get("Player ID", 0))
-                    with st.expander("Last 10 Games"):
-                        logs = pit_logs[pit_logs['player_id'] == pid]
-                        if not logs.empty:
-                            disp_cols = [
-                                "date", "opponent", "inningsPitched",
-                                "strikeOuts", "runs", "hits"
-                            ]
-                            disp_cols = [c for c in disp_cols if c in logs.columns]
-                            st.dataframe(
-                                logs.sort_values('date', ascending=False)
-                                    .head(10)[disp_cols],
-                                hide_index=True,
-                                width='stretch'
-                            )
-                        else:
-                            st.write("No game logs found.")
-                    st.markdown("<br>", unsafe_allow_html=True)  # Ensure this is only after the dropdown
-
-        # Batting Order
-        b2 = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_2.csv")
-        if os.path.exists(b2):
-            bdf = pd.read_csv(b2)
-            if not bdf.empty:
-                st.markdown("<h5 style='text-align:center;'>Batting Projections</h5>", unsafe_allow_html=True)
-
-                bdf_display = bdf.copy()
-                bdf_display["Player_Link"] = bdf_display["Player URL"]
-                cols = [
-                    "Batter", "PA", "H", "RBI", "BB", "K", "1B", "2B",
-                    "3B", "HR", "SB", "Player_Link"
-                ]
-                bdf_display = bdf_display[cols]
-                nums = bdf_display.select_dtypes(include=[np.number]).columns
-                bdf_display[nums] = bdf_display[nums].round(2)
-
-                st.dataframe(
-                    bdf_display,
-                    hide_index=True,
-                    column_config={
-                        "Player_Link": st.column_config.LinkColumn(
-                            label="",
-                            display_text="🔗",
-                            width=9  # Make the link column very small,
-                        )
-                    },
-                    width='stretch'
-                )
-                st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
-
-        # -------------------- Matchups vs Away Starter --------------------
-        if matchups_df is not None and starter_away_last:
-            vs_df = matchups_df[matchups_df["Pitcher"] == starter_away_last]
-            if not vs_df.empty:
-                st.markdown("<h5 style='text-align:center;'>Batter Matchup Projections vs Starting Pitcher</h5>", unsafe_allow_html=True)
-                # Display all relevant columns from matchups.csv
-                disp_cols = ["Batter", "Team", "vs", "RC", "HR", "XB", "1B", "BB", "K"]
-                vs_disp = vs_df[disp_cols].copy()
-                num_cols = vs_disp.select_dtypes(include=["object", "string"]).columns.difference(["Batter", "Team", "Pitcher"])
-                vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
-                vs_disp[num_cols] = vs_disp[num_cols].round(2)
-                vs_disp = vs_disp.rename(columns={"Team": "L/R"})
-                st.dataframe(vs_disp, hide_index=True, width='stretch')
-
-        # -------------------- Career BvP vs Away Starter (moved here) --------------------
-        home_abbr = TEAM_ABBR.get(home_team.lower(), home_team.lower())
-        bvp_file = os.path.join(DATA_DIR, date, f"bvp_{home_abbr}_vs_{starter_away_last.lower()}.csv")
-        bvp_df = pd.read_csv(bvp_file) if os.path.exists(bvp_file) else None
-        if os.path.exists(b2):
-            bdf = pd.read_csv(b2)
-            if not bdf.empty:
-                for _, brow in bdf.iterrows():
-                    batter = brow["Batter"]
-                    batter_id = int(brow["Player ID"])
-                    with st.expander(f"**{batter}** - Career BvP vs {starter_away} & Last 10 Games"):
-                        # Career BvP first
-                        st.markdown(f"**Career BvP vs {starter_away}**")
-                        if bvp_df is not None:
-                            batter_bvp = bvp_df[bvp_df["batter_id"] == batter_id]
-                            if not batter_bvp.empty:
-                                display_cols = [
-                                    'atbats', 'avg', 'hits', 'homeruns', 'doubles', 'baseonballs', 'strikeouts', 'year'
+                            # Last 10 Games second
+                            st.markdown("**Last 10 Games**")
+                            logs = bat_logs[bat_logs['player_id'] == batter_id]
+                            if not logs.empty:
+                                disp_cols = [
+                                    "date", "opponent", "atBats", "hits",
+                                    "doubles", "triples", "homeRuns", "rbi", "runs",
+                                    "strikeOuts", "stolenBases", "caughtStealing",
                                 ]
-                                display_cols = [c for c in display_cols if c in batter_bvp.columns]
-                                bvp_display = batter_bvp[display_cols].copy()
-                                bvp_display = bvp_display.fillna(0).replace({None: 0})
-                                if 'year' in bvp_display.columns:
-                                    bvp_display['year'] = pd.to_numeric(bvp_display['year'], errors='coerce')
-                                    bvp_display = bvp_display.sort_values(by='year', ascending=False)
-                                    bvp_display['year'] = bvp_display['year'].astype('Int64').astype(str)
-                                st.dataframe(bvp_display, hide_index=True, width='stretch')
+                                disp_cols = [c for c in disp_cols if c in logs.columns]
+                                st.dataframe(
+                                    logs.sort_values('date', ascending=False).head(10)[disp_cols],
+                                    hide_index=True
+                                )
                             else:
-                                st.write("No career BvP data for this batter vs pitcher.")
-                        else:
-                            st.write("No career BvP data for this matchup.")
+                                st.write("No game logs found.")
 
-                        # Last 10 Games second
-                        st.markdown("**Last 10 Games**")
-                        logs = bat_logs[bat_logs['player_id'] == batter_id]
-                        if not logs.empty:
-                            disp_cols = [
-                                "date", "opponent", "atBats", "hits",
-                                "doubles", "triples", "homeRuns", "rbi", "runs",
-                                "strikeOuts", "stolenBases", "caughtStealing",
-                            ]
-                            disp_cols = [c for c in disp_cols if c in logs.columns]
-                            st.dataframe(
-                                logs.sort_values('date', ascending=False).head(10)[disp_cols],
-                                hide_index=True
+        # -- HOME PROJECTIONS --
+        with home_col:
+            #st.subheader(home_team)
+
+            # Starting Pitcher
+            p2 = os.path.join(DATA_DIR, date, game_id, "proj_box_pitchers_2.csv")
+            if os.path.exists(p2):
+                pdf = pd.read_csv(p2)
+                if not pdf.empty:
+                    st.markdown("<h5 style='text-align:center;'>Starting Pitcher Projections</h5>", unsafe_allow_html=True)
+
+                    pdf_display = pdf.copy()
+                    pdf_display["Player_Link"] = pdf_display["Player URL"]
+                    cols = [
+                        "Pitcher", "Inn", "K", "BB", "H", "R", "W", "QS", "Player_Link"
+                    ]
+                    pdf_display = pdf_display[cols]
+
+                    st.dataframe(
+                        pdf_display,
+                        hide_index=True,
+                        column_config={
+                            "Player_Link": st.column_config.LinkColumn(
+                                label="",
+                                display_text="🔗",
+                                width=9  # Make the link column very small,
                             )
-                        else:
-                            st.write("No game logs found.")
+                        },
+                        width='stretch'
+                    )
+
+                    for _, prow in pdf.iterrows():
+                        pid = int(prow.get("Player ID", 0))
+                        with st.expander("Last 10 Games"):
+                            logs = pit_logs[pit_logs['player_id'] == pid]
+                            if not logs.empty:
+                                disp_cols = [
+                                    "date", "opponent", "inningsPitched",
+                                    "strikeOuts", "runs", "hits"
+                                ]
+                                disp_cols = [c for c in disp_cols if c in logs.columns]
+                                st.dataframe(
+                                    logs.sort_values('date', ascending=False)
+                                        .head(10)[disp_cols],
+                                    hide_index=True,
+                                    width='stretch'
+                                )
+                            else:
+                                st.write("No game logs found.")
+                        st.markdown("<br>", unsafe_allow_html=True)  # Ensure this is only after the dropdown
+
+            # Batting Order
+            b2 = os.path.join(DATA_DIR, date, game_id, "proj_box_batters_2.csv")
+            if os.path.exists(b2):
+                bdf = pd.read_csv(b2)
+                if not bdf.empty:
+                    st.markdown("<h5 style='text-align:center;'>Batting Projections</h5>", unsafe_allow_html=True)
+
+                    bdf_display = bdf.copy()
+                    bdf_display["Player_Link"] = bdf_display["Player URL"]
+                    cols = [
+                        "Batter", "PA", "H", "RBI", "BB", "K", "1B", "2B",
+                        "3B", "HR", "SB", "Player_Link"
+                    ]
+                    bdf_display = bdf_display[cols]
+                    nums = bdf_display.select_dtypes(include=[np.number]).columns
+                    bdf_display[nums] = bdf_display[nums].round(2)
+
+                    st.dataframe(
+                        bdf_display,
+                        hide_index=True,
+                        column_config={
+                            "Player_Link": st.column_config.LinkColumn(
+                                label="",
+                                display_text="🔗",
+                                width=9  # Make the link column very small,
+                            )
+                        },
+                        width='stretch'
+                    )
+                    st.markdown("<br>", unsafe_allow_html=True)  # Add empty line after the table
+
+            # -------------------- Matchups vs Away Starter --------------------
+            if matchups_df is not None and starter_away_last:
+                vs_df = matchups_df[matchups_df["Pitcher"] == starter_away_last]
+                if not vs_df.empty:
+                    st.markdown("<h5 style='text-align:center;'>Batter Matchup Projections vs Starting Pitcher</h5>", unsafe_allow_html=True)
+                    # Display all relevant columns from matchups.csv
+                    disp_cols = ["Batter", "Team", "vs", "RC", "HR", "XB", "1B", "BB", "K"]
+                    vs_disp = vs_df[disp_cols].copy()
+                    num_cols = vs_disp.select_dtypes(include=["object", "string"]).columns.difference(["Batter", "Team", "Pitcher"])
+                    vs_disp[num_cols] = vs_disp[num_cols].apply(pd.to_numeric, errors="coerce")
+                    vs_disp[num_cols] = vs_disp[num_cols].round(2)
+                    vs_disp = vs_disp.rename(columns={"Team": "L/R"})
+                    st.dataframe(vs_disp, hide_index=True, width='stretch')
+
+            # -------------------- Career BvP vs Away Starter (moved here) --------------------
+            home_abbr = TEAM_ABBR.get(home_team.lower(), home_team.lower())
+            bvp_file = os.path.join(DATA_DIR, date, f"bvp_{home_abbr}_vs_{starter_away_last.lower()}.csv")
+            bvp_df = pd.read_csv(bvp_file) if os.path.exists(bvp_file) else None
+            if os.path.exists(b2):
+                bdf = pd.read_csv(b2)
+                if not bdf.empty:
+                    for _, brow in bdf.iterrows():
+                        batter = brow["Batter"]
+                        batter_id = int(brow["Player ID"])
+                        with st.expander(f"**{batter}** - Career BvP vs {starter_away} & Last 10 Games"):
+                            # Career BvP first
+                            st.markdown(f"**Career BvP vs {starter_away}**")
+                            if bvp_df is not None:
+                                batter_bvp = bvp_df[bvp_df["batter_id"] == batter_id]
+                                if not batter_bvp.empty:
+                                    display_cols = [
+                                        'atbats', 'avg', 'hits', 'homeruns', 'doubles', 'baseonballs', 'strikeouts', 'year'
+                                    ]
+                                    display_cols = [c for c in display_cols if c in batter_bvp.columns]
+                                    bvp_display = batter_bvp[display_cols].copy()
+                                    bvp_display = bvp_display.fillna(0).replace({None: 0})
+                                    if 'year' in bvp_display.columns:
+                                        bvp_display['year'] = pd.to_numeric(bvp_display['year'], errors='coerce')
+                                        bvp_display = bvp_display.sort_values(by='year', ascending=False)
+                                        bvp_display['year'] = bvp_display['year'].astype('Int64').astype(str)
+                                    st.dataframe(bvp_display, hide_index=True, width='stretch')
+                                else:
+                                    st.write("No career BvP data for this batter vs pitcher.")
+                            else:
+                                st.write("No career BvP data for this matchup.")
+
+                            # Last 10 Games second
+                            st.markdown("**Last 10 Games**")
+                            logs = bat_logs[bat_logs['player_id'] == batter_id]
+                            if not logs.empty:
+                                disp_cols = [
+                                    "date", "opponent", "atBats", "hits",
+                                    "doubles", "triples", "homeRuns", "rbi", "runs",
+                                    "strikeOuts", "stolenBases", "caughtStealing",
+                                ]
+                                disp_cols = [c for c in disp_cols if c in logs.columns]
+                                st.dataframe(
+                                    logs.sort_values('date', ascending=False).head(10)[disp_cols],
+                                    hide_index=True
+                                )
+                            else:
+                                st.write("No game logs found.")
 
 else:
     st.info("Please select a date and game from the sidebar to view projections.")
