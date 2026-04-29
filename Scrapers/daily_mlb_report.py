@@ -1572,6 +1572,15 @@ def score_home_run_batters(
         game_counts[pick["game"]] = game_counts.get(pick["game"], 0) + 1
         if len(curated) == 20:
             break
+    if len(curated) < 20:
+        for pick in picks:
+            key = clean_name(pick["selection"])
+            if key in seen_players:
+                continue
+            curated.append(pick)
+            seen_players.add(key)
+            if len(curated) == 20:
+                break
     return curated
 
 
