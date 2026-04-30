@@ -57,6 +57,16 @@ def _safe_rate(num: pd.Series, den: pd.Series) -> pd.Series:
     return (num / den).fillna(0.0)
 
 
+def _clean_batter_name(name):
+    if not isinstance(name, str):
+        return name
+    cleaned = " ".join(name.split())
+    match = re.match(r"^(.+)\s+[A-Z]\.\s+(.+)$", cleaned)
+    if match and match.group(1).endswith(match.group(2)):
+        return match.group(1)
+    return cleaned
+
+
 def build_daily_bvp_board(date_str: str):
     date_dir = os.path.join(DATA_DIR, date_str)
     matchups_path = os.path.join(date_dir, "matchups.csv")
@@ -67,6 +77,8 @@ def build_daily_bvp_board(date_str: str):
     if not set(needed).issubset(matchups.columns):
         return pd.DataFrame(), {"error": "matchups.csv missing required columns"}
     matchup_keys = matchups[needed].copy()
+    matchup_keys["Batter"] = matchup_keys["Batter"].apply(_clean_batter_name)
+    matchup_keys = matchup_keys.drop_duplicates()
     matchup_keys["BatterID"] = pd.to_numeric(matchup_keys["BatterID"], errors="coerce").astype("Int64")
     matchup_keys["PitcherID"] = pd.to_numeric(matchup_keys["PitcherID"], errors="coerce").astype("Int64")
     frames = []
@@ -89,7 +101,7 @@ def build_daily_bvp_board(date_str: str):
         return pd.DataFrame(), {"error": "No parseable bvp files"}
     all_bvp = pd.concat(frames, ignore_index=True)
     board = matchup_keys.merge(
-        all_bvp.groupby(["batter_id", "pitcher_id", "batter", "pitcher"], as_index=False)[["atbats", "hits", "homeruns", "baseonballs", "strikeouts", "totalbases", "plateappearances"]].sum(),
+        all_bvp.groupby(["batter_id", "pitcher_id"], as_index=False)[["atbats", "hits", "homeruns", "baseonballs", "strikeouts", "totalbases", "plateappearances"]].sum(),
         left_on=["BatterID", "PitcherID"], right_on=["batter_id", "pitcher_id"], how="left"
     )
     for col in ["atbats", "hits", "homeruns", "baseonballs", "strikeouts", "totalbases", "plateappearances"]:
@@ -254,10 +266,11 @@ if date:
                     "baseonballs": "BB", "strikeouts": "K", "ops": "OPS", "hit_rate": "H/PA", "hr_rate": "HR/PA",
                     "k_rate": "K/PA", "sample_confidence": "Confidence", "hr_edge_score": "HR Edge", "bvp_edge_score": "Overall Edge"
                 })
-                bvp_view = top30[["Batter", "Team", "Pitcher", "PA", "H", "HR", "BB", "K", "OPS", "H/PA", "HR/PA", "K/PA", "Confidence", "HR Edge", "Overall Edge"]].copy()
+                bvp_view = top30[["Batter", "Team", "Pitcher", "PA", "H", "HR", "BB", "K", "OPS", "H/PA", "HR/PA", "K/PA", "Confidence", "HR Edge", "Overall Edge"]].copy().reset_index(drop=True)
                 bvp_view["Confidence"] = bvp_view["Confidence"].round(2)
                 bvp_view[["HR Edge", "Overall Edge"]] = bvp_view[["HR Edge", "Overall Edge"]].round(1)
-                st.dataframe(bvp_view, hide_index=True, width="stretch", height=BVP_TABLE_HEIGHT)
+                bvp_view.index += 1
+                st.dataframe(bvp_view, width="stretch", height=BVP_TABLE_HEIGHT)
                 render_bvp_methodology()
     else:
         st.error(f"Simulation data not found for {date}")

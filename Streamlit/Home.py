@@ -102,6 +102,20 @@ def _safe_rate(num: pd.Series, den: pd.Series) -> pd.Series:
     return (num / den).fillna(0.0)
 
 
+def _table_height(row_count: int) -> int:
+    return 38 + (row_count * 35)
+
+
+def _clean_batter_name(name):
+    if not isinstance(name, str):
+        return name
+    cleaned = " ".join(name.split())
+    match = re.match(r"^(.+)\s+[A-Z]\.\s+(.+)$", cleaned)
+    if match and match.group(1).endswith(match.group(2)):
+        return match.group(1)
+    return cleaned
+
+
 @st.cache_data(show_spinner=False)
 def build_daily_bvp_board(date_str: str):
     date_dir = os.path.join(DATA_DIR, date_str)
@@ -116,6 +130,8 @@ def build_daily_bvp_board(date_str: str):
         return pd.DataFrame(), {"error": f"matchups.csv missing columns: {', '.join(missing_matchup_cols)}"}
 
     matchup_keys = matchups[matchup_cols].copy()
+    matchup_keys["Batter"] = matchup_keys["Batter"].apply(_clean_batter_name)
+    matchup_keys = matchup_keys.drop_duplicates()
     matchup_keys["BatterID"] = pd.to_numeric(matchup_keys["BatterID"], errors="coerce").astype("Int64")
     matchup_keys["PitcherID"] = pd.to_numeric(matchup_keys["PitcherID"], errors="coerce").astype("Int64")
 
@@ -146,7 +162,7 @@ def build_daily_bvp_board(date_str: str):
 
     all_bvp = pd.concat(frames, ignore_index=True)
     grouped = (
-        all_bvp.groupby(["batter_id", "pitcher_id", "batter", "pitcher"], as_index=False)[
+        all_bvp.groupby(["batter_id", "pitcher_id"], as_index=False)[
             ["atbats", "hits", "homeruns", "baseonballs", "strikeouts", "totalbases", "plateappearances", "gamesplayed"]
         ]
         .sum()
@@ -460,9 +476,15 @@ if date:
             st.warning(f"BvP board unavailable: {daily_bvp_diag['error']}")
         else:
             min_pa = st.slider("Min career PA vs starter", min_value=1, max_value=25, value=1, step=1, key="home_bvp_min_pa")
+            selected_starters = [p.lower() for p in [starter_away_last, starter_home_last] if p]
+            starter_mask = (
+                daily_bvp_board["Pitcher"].str.lower().isin(selected_starters)
+                if selected_starters else pd.Series(True, index=daily_bvp_board.index)
+            )
             scoped = daily_bvp_board[
                 (daily_bvp_board["sample_pa"] >= min_pa) &
-                (daily_bvp_board["Team"].str.lower().isin([TEAM_ABBR.get(away_team.lower(), away_team.lower()), TEAM_ABBR.get(home_team.lower(), home_team.lower())]))
+                (daily_bvp_board["Team"].str.lower().isin([TEAM_ABBR.get(away_team.lower(), away_team.lower()), TEAM_ABBR.get(home_team.lower(), home_team.lower())])) &
+                starter_mask
             ].copy()
             scoped = scoped.sort_values(["bvp_edge_score", "ops", "sample_pa"], ascending=[False, False, False])
             if scoped.empty:
@@ -474,7 +496,7 @@ if date:
                 ]
                 board_view["Confidence"] = board_view["Confidence"].round(2)
                 board_view[["HR Edge", "Overall Edge"]] = board_view[["HR Edge", "Overall Edge"]].round(1)
-                st.dataframe(board_view, hide_index=True, width="stretch")
+                st.dataframe(board_view, hide_index=True, width="stretch", height=_table_height(len(board_view)))
             _render_bvp_methodology()
     with overview_tab:
         st.markdown("<div style='height:10px;'></div>", unsafe_allow_html=True)
