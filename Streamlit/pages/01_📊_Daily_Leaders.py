@@ -102,6 +102,7 @@ def build_daily_bvp_board(date_str: str):
     board["hr_rate"] = _safe_rate(board["homeruns"], board["sample_pa"])
     board["k_rate"] = _safe_rate(board["strikeouts"], board["sample_pa"])
     board["sample_confidence"] = np.clip(np.log1p(board["sample_pa"]) / np.log(16), 0, 1)
+    board["hr_edge_score"] = (board["hr_rate"] * 120) * board["sample_confidence"]
     board["bvp_edge_score"] = ((board["ops"] * 45) + (board["hit_rate"] * 35) + (board["hr_rate"] * 120) - (board["k_rate"] * 8)) * board["sample_confidence"]
     return board, {}
 
@@ -121,7 +122,8 @@ def render_bvp_methodology():
             - **HR/PA**: Home runs per plate appearance.
             - **K/PA**: Strikeouts per plate appearance.
             - **Confidence**: Sample-size score based on `log(1 + PA)` capped to `[0, 1]`.
-            - **Edge Score**: Composite rating from OPS, H/PA, HR/PA, K/PA, and Confidence.
+            - **HR Edge**: HR-specific rating from `HR/PA * 120 * Confidence`.
+            - **Overall Edge**: Composite rating from OPS, H/PA, HR/PA, K/PA, and Confidence.
 
             **Note:** PA and AB are not the same. PA includes walks and other plate outcomes; AB excludes walks.
             """
@@ -250,11 +252,11 @@ if date:
                 top30 = top30.rename(columns={
                     "sample_pa": "PA", "hits": "H", "homeruns": "HR",
                     "baseonballs": "BB", "strikeouts": "K", "ops": "OPS", "hit_rate": "H/PA", "hr_rate": "HR/PA",
-                    "k_rate": "K/PA", "sample_confidence": "Confidence", "bvp_edge_score": "Edge Score"
+                    "k_rate": "K/PA", "sample_confidence": "Confidence", "hr_edge_score": "HR Edge", "bvp_edge_score": "Overall Edge"
                 })
-                bvp_view = top30[["Batter", "Team", "Pitcher", "PA", "H", "HR", "BB", "K", "OPS", "H/PA", "HR/PA", "K/PA", "Confidence", "Edge Score"]].copy()
+                bvp_view = top30[["Batter", "Team", "Pitcher", "PA", "H", "HR", "BB", "K", "OPS", "H/PA", "HR/PA", "K/PA", "Confidence", "HR Edge", "Overall Edge"]].copy()
                 bvp_view["Confidence"] = bvp_view["Confidence"].round(2)
-                bvp_view["Edge Score"] = bvp_view["Edge Score"].round(1)
+                bvp_view[["HR Edge", "Overall Edge"]] = bvp_view[["HR Edge", "Overall Edge"]].round(1)
                 st.dataframe(bvp_view, hide_index=True, width="stretch", height=BVP_TABLE_HEIGHT)
                 render_bvp_methodology()
     else:

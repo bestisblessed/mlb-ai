@@ -173,6 +173,7 @@ def build_daily_bvp_board(date_str: str):
     board["k_rate"] = _safe_rate(board["strikeouts"], board["sample_pa"])
     board["bb_rate"] = _safe_rate(board["baseonballs"], board["sample_pa"])
     board["sample_confidence"] = np.clip(np.log1p(board["sample_pa"]) / np.log(16), 0, 1)
+    board["hr_edge_score"] = (board["hr_rate"] * 120) * board["sample_confidence"]
     board["bvp_edge_score"] = (
         (board["ops"] * 45) +
         (board["hit_rate"] * 35) +
@@ -213,7 +214,8 @@ def _render_bvp_methodology():
             - **K/PA**: Strikeouts per plate appearance.
             - **BB/PA**: Walks per plate appearance.
             - **Confidence**: Sample-size score based on `log(1 + PA)` capped to `[0, 1]`.
-            - **Edge Score**: Composite rating from OPS, H/PA, HR/PA, K/PA, and Confidence.
+            - **HR Edge**: HR-specific rating from `HR/PA * 120 * Confidence`.
+            - **Overall Edge**: Composite rating from OPS, H/PA, HR/PA, K/PA, and Confidence.
 
             **Note:** PA and AB are not the same. PA includes walks and other plate outcomes; AB excludes walks.
             """
@@ -467,11 +469,11 @@ if date:
                 st.info(f"No batter-vs-starter history with at least {min_pa} PA for this matchup.")
             else:
                 scoped["Team"] = scoped["Team"].str.upper().map(TEAM_NAME_BY_ABBR).fillna(scoped["Team"])
-                board_view = scoped.rename(columns={"sample_pa":"PA","hits":"H","homeruns":"HR","baseonballs":"BB","strikeouts":"K","batting_avg":"AVG","obp":"OBP","slg":"SLG","ops":"OPS","hit_rate":"H/PA","hr_rate":"HR/PA","k_rate":"K/PA","bb_rate":"BB/PA","sample_confidence":"Confidence","bvp_edge_score":"Edge Score"})[
-                    ["Batter","Team","Pitcher","PA","H","HR","BB","K","AVG","OBP","SLG","OPS","H/PA","HR/PA","K/PA","BB/PA","Confidence","Edge Score"]
+                board_view = scoped.rename(columns={"sample_pa":"PA","hits":"H","homeruns":"HR","baseonballs":"BB","strikeouts":"K","batting_avg":"AVG","obp":"OBP","slg":"SLG","ops":"OPS","hit_rate":"H/PA","hr_rate":"HR/PA","k_rate":"K/PA","bb_rate":"BB/PA","sample_confidence":"Confidence","hr_edge_score":"HR Edge","bvp_edge_score":"Overall Edge"})[
+                    ["Batter","Team","Pitcher","PA","H","HR","BB","K","AVG","OBP","SLG","OPS","H/PA","HR/PA","K/PA","BB/PA","Confidence","HR Edge","Overall Edge"]
                 ]
                 board_view["Confidence"] = board_view["Confidence"].round(2)
-                board_view["Edge Score"] = board_view["Edge Score"].round(1)
+                board_view[["HR Edge", "Overall Edge"]] = board_view[["HR Edge", "Overall Edge"]].round(1)
                 st.dataframe(board_view, hide_index=True, width="stretch")
             _render_bvp_methodology()
     with overview_tab:
