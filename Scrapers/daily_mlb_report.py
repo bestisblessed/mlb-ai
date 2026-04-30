@@ -590,8 +590,11 @@ def fetch_pitcher_gamelog(player_id: int, report_date: date) -> pd.DataFrame:
         )
     except Exception:
         return pd.DataFrame()
+    stats = data.get("stats") or []
+    if not stats:
+        return pd.DataFrame()
     rows = []
-    for split in data.get("stats", [{}])[0].get("splits", []):
+    for split in stats[0].get("splits", []):
         if pd.to_datetime(split.get("date")).date() >= report_date:
             continue
         rows.append(
