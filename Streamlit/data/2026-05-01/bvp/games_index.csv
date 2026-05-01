@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824686,2026-05-01T18:20:00Z,Scheduled,109,Arizona Diamondbacks,112,Chicago Cubs,Wrigley Field,Zac Gallen,668678.0,R,Colin Rea,607067.0,R
+824287,2026-05-01T22:40:00Z,Scheduled,140,Texas Rangers,116,Detroit Tigers,Comerica Park,MacKenzie Gore,669022.0,L,Jack Flaherty,656427.0,R
+823389,2026-05-01T22:45:00Z,Scheduled,113,Cincinnati Reds,134,Pittsburgh Pirates,PNC Park,Brady Singer,663903.0,R,Mitch Keller,656605.0,R
+822744,2026-05-01T22:45:00Z,Scheduled,158,Milwaukee Brewers,120,Washington Nationals,Nationals Park,Jacob Misiorowski,694819.0,R,Jake Irvin,663623.0,R
+823557,2026-05-01T23:05:00Z,Scheduled,110,Baltimore Orioles,147,New York Yankees,Yankee Stadium,,,,Will Warren,701542.0,R
+824772,2026-05-01T23:10:00Z,Scheduled,117,Houston Astros,111,Boston Red Sox,Fenway Park,Mike Burrows,681347.0,R,,,
+822990,2026-05-01T23:10:00Z,Scheduled,137,San Francisco Giants,139,Tampa Bay Rays,Tropicana Field,Robbie Ray,592662.0,L,Shane McClanahan,663556.0,L
+823877,2026-05-01T23:10:00Z,Scheduled,143,Philadelphia Phillies,146,Miami Marlins,loanDepot park,Zack Wheeler,554430.0,R,Eury Pérez,691587.0,R
+823713,2026-05-02T00:10:00Z,Scheduled,141,Toronto Blue Jays,142,Minnesota Twins,Target Field,Patrick Corbin,571578.0,L,Simeon Woods Richardson,680573.0,R
+823066,2026-05-02T00:15:00Z,Scheduled,119,Los Angeles Dodgers,138,St. Louis Cardinals,Busch Stadium,Emmet Sheehan,686218.0,R,Matthew Liberatore,669461.0,L
+824366,2026-05-02T00:40:00Z,Scheduled,144,Atlanta Braves,115,Colorado Rockies,Coors Field,Grant Holmes,656550.0,R,Jose Quintana,500779.0,L
+824041,2026-05-02T01:38:00Z,Scheduled,121,New York Mets,108,Los Angeles Angels,Angel Stadium,Christian Scott,681035.0,R,Walbert Urena,700712.0,R
+825012,2026-05-02T01:40:00Z,Scheduled,114,Cleveland Guardians,133,Athletics,Sutter Health Park,Joey Cantillo,676282.0,L,J.T. Ginn,669372.0,R
+823309,2026-05-02T01:40:00Z,Scheduled,145,Chicago White Sox,135,San Diego Padres,Petco Park,Noah Schultz,702273.0,L,Germán Márquez,608566.0,R
+823146,2026-05-02T01:45:00Z,Scheduled,118,Kansas City Royals,136,Seattle Mariners,T-Mobile Park,Cole Ragans,666142.0,L,Bryan Woo,693433.0,R
