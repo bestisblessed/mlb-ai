@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824366,Coors Field8:40ATL @ COL,"InRightMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,LightWind.png,LowH.png","InRightMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,Light Breeze,Low Humidity"
+825012,Sutter Health Park9:40CLE @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,Low Pressure"
+824772,Fenway Park7:10HOU @ BOS,"FromLeft.svg,InLeftMiddle.svg,InLeft.svg,Under55.png,LowP.png","FromLeft.svg,InLeftMiddle.svg,InLeft.svg,Under55.png,Low Pressure"
+824041,Angel Stadium9:38NYM @ LAA,"OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,LightWind.png","OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,Light Breeze"
+822744,Nationals Park6:45MIL @ WAS,"OutLeftCenter.svg,OutLeft.svg,FromRight.svg","OutLeftCenter.svg,OutLeft.svg,FromRight.svg"
+823877,LoanDepot Park7:10PHI @ MIA,RoofClosed.png,Roof Closed
+822990,Tropicana Field7:10SF  @ TB,RoofClosed.png,Roof Closed
+823557,Yankee Stadium7:05BAL @ NYY,"OutLeftCenter.svg,OutLeftCenter.svg,OutRightCenter.svg,LightWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutRightCenter.svg,Light Breeze"
+823389,PNC Park6:45CIN @ PIT,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,Under55.png,HighH.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,Under55.png,High Humidity"
+823713,Target Field8:10TOR @ MIN,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,Under55.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,Under55.png"
+823309,Petco Park9:40CHW @ SD,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze"
+824287,Comerica Park6:40TEX @ DET,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,Under55.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,Under55.png"
+823066,Busch Stadium8:15LAD @ STL,"InLeftMiddle.svg,InLeft.svg,InLeft.svg,Under55.png","InLeftMiddle.svg,InLeft.svg,InLeft.svg,Under55.png"
+823146,T-Mobile Park9:45KC  @ SEA,"InLeft.svg,InLeft.svg,InLeft.svg,LightWind.png","InLeft.svg,InLeft.svg,InLeft.svg,Light Breeze"
+824686,Wrigley Field2:20ARI @ CHC,"InCenter.svg,InCenter.svg,InCenter.svg,ModerateWind.png,Under55.png,HighH.png","InCenter.svg,InCenter.svg,InCenter.svg,Moderate Wind,Under55.png,High Humidity"
