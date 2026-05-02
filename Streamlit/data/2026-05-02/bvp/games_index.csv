@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823554,2026-05-02T17:35:00Z,Scheduled,110,Baltimore Orioles,147,New York Yankees,Yankee Stadium,Kyle Bradish,680694,R,Ryan Weathers,677960.0,L
+823715,2026-05-02T18:10:00Z,Scheduled,141,Toronto Blue Jays,142,Minnesota Twins,Target Field,Dylan Cease,656302,R,Connor Prielipp,687570.0,L
+824685,2026-05-02T18:20:00Z,Scheduled,109,Arizona Diamondbacks,112,Chicago Cubs,Wrigley Field,Ryne Nelson,669194,R,Shota Imanaga,684007.0,L
+825014,2026-05-02T20:05:00Z,Scheduled,114,Cleveland Guardians,133,Athletics,Sutter Health Park,Slade Cecconi,677944,R,Jacob Lopez,682052.0,L
+823388,2026-05-02T20:05:00Z,Scheduled,113,Cincinnati Reds,134,Pittsburgh Pirates,PNC Park,Rhett Lowder,695076,R,Carmen Mlodzinski,669387.0,R
+822746,2026-05-02T20:05:00Z,Scheduled,158,Milwaukee Brewers,120,Washington Nationals,Nationals Park,Kyle Harrison,690986,L,Foster Griffin,656492.0,L
+824771,2026-05-02T20:10:00Z,Scheduled,117,Houston Astros,111,Boston Red Sox,Fenway Park,Spencer Arrighetti,681293,R,Connelly Early,813349.0,L
+823876,2026-05-02T20:10:00Z,Scheduled,143,Philadelphia Phillies,146,Miami Marlins,loanDepot park,Andrew Painter,691725,R,Max Meyer,676974.0,R
+822988,2026-05-02T22:10:00Z,Scheduled,137,San Francisco Giants,139,Tampa Bay Rays,Tropicana Field,Landen Roupp,694738,R,Griffin Jax,643377.0,R
+823067,2026-05-02T23:15:00Z,Scheduled,119,Los Angeles Dodgers,138,St. Louis Cardinals,Busch Stadium,Roki Sasaki,808963,R,Michael McGreevy,700241.0,R
+824284,2026-05-02T23:15:00Z,Scheduled,140,Texas Rangers,116,Detroit Tigers,Comerica Park,Kumar Rocker,677958,R,Keider Montero,672456.0,R
+824365,2026-05-03T00:10:00Z,Scheduled,144,Atlanta Braves,115,Colorado Rockies,Coors Field,Chris Sale,519242,L,,,
+823308,2026-05-03T00:40:00Z,Scheduled,145,Chicago White Sox,135,San Diego Padres,Petco Park,Sean Burke,680732,R,Michael King,650633.0,R
+824042,2026-05-03T01:38:00Z,Scheduled,121,New York Mets,108,Los Angeles Angels,Angel Stadium,Nolan McLean,690997,R,Reid Detmers,672282.0,L
+823144,2026-05-03T01:40:00Z,Scheduled,118,Kansas City Royals,136,Seattle Mariners,T-Mobile Park,Seth Lugo,607625,R,Emerson Hancock,676106.0,R
