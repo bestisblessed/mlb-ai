@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823711,2026-05-03T16:45:00Z,Scheduled,141,Toronto Blue Jays,142,Minnesota Twins,Target Field,Trey Yesavage,702056.0,R,Joe Ryan,657746.0,R
+824769,2026-05-03T17:35:00Z,Scheduled,117,Houston Astros,111,Boston Red Sox,Fenway Park,Cody Bolton,675989.0,R,Ranger Suarez,624133.0,L
+823387,2026-05-03T17:35:00Z,Scheduled,113,Cincinnati Reds,134,Pittsburgh Pirates,PNC Park,Chase Burns,695505.0,R,Braxton Ashcraft,677952.0,R
+823555,2026-05-03T17:35:00Z,Scheduled,110,Baltimore Orioles,147,New York Yankees,Yankee Stadium,Trey Gibson,,,Max Fried,608331.0,L
+822742,2026-05-03T17:35:00Z,Scheduled,158,Milwaukee Brewers,120,Washington Nationals,Nationals Park,,,,Zack Littell,641793.0,R
+822987,2026-05-03T17:40:00Z,Scheduled,137,San Francisco Giants,139,Tampa Bay Rays,Tropicana Field,Tyler Mahle,641816.0,R,Steven Matz,571927.0,L
+823875,2026-05-03T17:40:00Z,Scheduled,143,Philadelphia Phillies,146,Miami Marlins,loanDepot park,Jesús Luzardo,666200.0,L,Chris Paddack,663978.0,R
+823065,2026-05-03T18:15:00Z,Scheduled,119,Los Angeles Dodgers,138,St. Louis Cardinals,Busch Stadium,Justin Wrobleski,680736.0,L,Dustin May,669160.0,R
+824687,2026-05-03T18:20:00Z,Scheduled,109,Arizona Diamondbacks,112,Chicago Cubs,Wrigley Field,Merrill Kelly,518876.0,R,Matthew Boyd,571510.0,L
+824364,2026-05-03T19:10:00Z,Scheduled,144,Atlanta Braves,115,Colorado Rockies,Coors Field,Spencer Strider,,,Kyle Freeland,607536.0,L
+825013,2026-05-03T20:05:00Z,Scheduled,114,Cleveland Guardians,133,Athletics,Sutter Health Park,Parker Messick,800048.0,L,Aaron Civale,650644.0,R
+824043,2026-05-03T20:07:00Z,Scheduled,121,New York Mets,108,Los Angeles Angels,Angel Stadium,Clay Holmes,605280.0,R,Jack Kochanowicz,686799.0,R
+823145,2026-05-03T20:10:00Z,Scheduled,118,Kansas City Royals,136,Seattle Mariners,T-Mobile Park,Kris Bubic,663460.0,L,Luis Castillo,622491.0,R
+823307,2026-05-03T20:10:00Z,Scheduled,145,Chicago White Sox,135,San Diego Padres,Petco Park,Anthony Kay,641743.0,L,Griffin Canning,,
+824285,2026-05-03T23:20:00Z,Scheduled,140,Texas Rangers,116,Detroit Tigers,Comerica Park,Jack Leiter,683004.0,R,Tyler Holton,663947.0,L
