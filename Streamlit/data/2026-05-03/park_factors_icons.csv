@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824364,Coors Field3:10ATL @ COL,"InLeft.svg,InCenter.svg,InLeftMiddle.svg,LightWind.png,LowH.png,LowP.png","InLeft.svg,InCenter.svg,InLeftMiddle.svg,Light Breeze,Low Humidity,Low Pressure"
+825013,Sutter Health Park4:05CLE @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,Low Pressure"
+824687,Wrigley Field2:20ARI @ CHC,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,HeavyWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,Heavy Wind"
+824769,Fenway Park1:35HOU @ BOS,"FromLeft.svg,FromLeft.svg,FromLeft.svg,ModerateWind.png,Under55.png,LowP.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Moderate Wind,Under55.png,Low Pressure"
+824043,Angel Stadium4:07NYM @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind"
+823711,Target Field12:45TOR @ MIN,"OutRightMiddle.svg,OutRight.svg,OutRight.svg,LightWind.png,LowP.png","OutRightMiddle.svg,OutRight.svg,OutRight.svg,Light Breeze,Low Pressure"
+823065,Busch Stadium2:15LAD @ STL,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,HeavyWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,Heavy Wind"
+824285,Comerica Park7:20TEX @ DET,"FromRight.svg,InRightMiddle.svg,InRightMiddle.svg,HeavyWind.png,Under55.png,LowP.png","FromRight.svg,InRightMiddle.svg,InRightMiddle.svg,Heavy Wind,Under55.png,Low Pressure"
+823875,LoanDepot Park1:40PHI @ MIA,RoofClosed.png,Roof Closed
+822987,Tropicana Field1:40SF  @ TB,RoofClosed.png,Roof Closed
+823307,Petco Park4:10CHW @ SD,"OutRight.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png","OutRight.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind"
+823387,PNC Park1:35CIN @ PIT,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze"
+823145,T-Mobile Park4:10KC  @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,From76to82.png,LowP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,76–82°F,Low Pressure"
+823555,Yankee Stadium1:35BAL @ NYY,"OutRight.svg,OutRight.svg,OutRight.svg,HeavyWind.png,Under55.png","OutRight.svg,OutRight.svg,OutRight.svg,Heavy Wind,Under55.png"
+822742,Nationals Park1:35MIL @ WAS,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,LowH.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,Low Humidity"
