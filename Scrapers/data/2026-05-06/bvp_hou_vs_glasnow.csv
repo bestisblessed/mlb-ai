@@ -1,0 +1,6 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,5,.200,.500,,Christian Vazquez,543877,3,,,0.00,1,1,24,.200,.400,Glasnow,607192,5,.200,3,1,2019
+,2,.000,.000,1,Christian Vazquez,543877,1,,1,1.00,,2,11,.333,.333,Glasnow,607192,3,.000,1,,2021
+1,2,.000,.000,1,Jose Altuve,514888,1,1,1,1.00,,2,8,.333,.333,Glasnow,607192,3,.000,,,2019
+2,2,.000,.000,,Christian Walker,572233,1,,,0.00,,1,12,.000,.000,Glasnow,607192,2,.000,,,2024
+,1,.000,.000,,Christian Walker,572233,1,,1,1.00,,,4,.000,.000,Glasnow,607192,1,.000,,,2026
