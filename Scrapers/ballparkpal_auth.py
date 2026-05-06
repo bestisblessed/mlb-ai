@@ -77,8 +77,11 @@ def _fetch_latest_verification_code(min_received_ts=None):
 
     try:
         search_patterns = [
+            '(FROM "login@ballpark-pal.com" SUBJECT "Ballpark Pal login code")',
+            '(FROM "login@ballpark-pal.com")',
             '(FROM "login@mail.ballparkpal.com" SUBJECT "Ballpark Pal login code")',
             '(FROM "login@mail.ballparkpal.com")',
+            '(SUBJECT "Ballpark Pal login code")',
             '(FROM "info@dubclub.win" SUBJECT "DubClub Email Verification")',
             '(FROM "info@dubclub.win")',
             '(SUBJECT "verification")',

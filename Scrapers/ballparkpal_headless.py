@@ -27,7 +27,11 @@ async def main():
             user_agent=USER_AGENT
         )
         page = await context.new_page()
-        await page.goto('https://www.ballparkpal.com/Game-Simulations.php')
+        await page.goto(
+            'https://www.ballparkpal.com/Game-Simulations.php',
+            wait_until="domcontentloaded",
+            timeout=60000,
+        )
         await page.wait_for_timeout(1000)
         content = await page.content()
         assert_authenticated_html(page.url, content, "Game Simulations")
@@ -282,7 +286,11 @@ async def main():
             user_agent=USER_AGENT
         )
         page = await context.new_page()
-        await page.goto('https://www.ballparkpal.com/Matchups.php')
+        await page.goto(
+            'https://www.ballparkpal.com/Matchups.php',
+            wait_until="domcontentloaded",
+            timeout=60000,
+        )
         # The table can render asynchronously; wait a bit longer and try to
         # detect table rows before saving HTML.
         try:

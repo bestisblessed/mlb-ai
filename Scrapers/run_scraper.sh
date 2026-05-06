@@ -17,22 +17,22 @@ cd "$SCRIPT_DIR"
 git pull >> scraper.log 2>&1
 
 # Match local behavior: refresh BallparkPal session first.
-/usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_signin_auto.py >> scraper.log 2>&1
+BALLPARKPAL_HEADLESS=1 /usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_signin_auto.py >> scraper.log 2>&1
 
 # ===========================
 # Run the main BallparkPal scraper
 # ===========================
-/usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_headless.py >> scraper.log 2>&1
+BALLPARKPAL_HEADLESS=1 /usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_headless.py >> scraper.log 2>&1
 
 # ===========================
 # Run the BallparkPal park factors icons scraper
 # ===========================
-/usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_park_factors.py >> scraper.log 2>&1
+BALLPARKPAL_HEADLESS=1 /usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_park_factors.py >> scraper.log 2>&1
 
 # ===========================
 # Run the pitching alt lines scraper
 # ===========================
-/usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_pitching_alt_lines.py >> scraper.log 2>&1
+BALLPARKPAL_HEADLESS=1 /usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_pitching_alt_lines.py >> scraper.log 2>&1
 
 
 # ===========================
@@ -101,5 +101,4 @@ echo "---------------------------------------" >> scraper.log 2>&1
 #
 
 trap 'echo "$DD_METRIC_FAILURE" | nc -u -w0 127.0.0.1 8125' ERR
-
 

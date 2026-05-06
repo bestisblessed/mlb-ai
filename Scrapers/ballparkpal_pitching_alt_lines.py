@@ -1,5 +1,5 @@
 import pandas as pd
-from playwright.async_api import async_playwright
+from playwright.async_api import TimeoutError as PlaywrightTimeoutError, async_playwright
 import asyncio
 import os
 from datetime import datetime
@@ -25,9 +25,14 @@ async def download_html(url, filepath):
         await page.wait_for_selector("table", timeout=5000)
         
         # Click on the Strikeouts tab
-        strikeouts_button = await page.query_selector("button.dt-button:has(span:text-is('Strikeouts'))")
+        strikeouts_selector = "button.dt-button:has(span:text-is('Strikeouts'))"
+        strikeouts_button = await page.query_selector(strikeouts_selector)
         if strikeouts_button:
-            await strikeouts_button.click()
+            try:
+                await strikeouts_button.click(timeout=5000)
+            except PlaywrightTimeoutError:
+                print("Strikeouts button hidden; dispatching click event")
+                await page.dispatch_event(strikeouts_selector, "click")
             await page.wait_for_timeout(1000)
         else:
             print("Strikeouts button not found")

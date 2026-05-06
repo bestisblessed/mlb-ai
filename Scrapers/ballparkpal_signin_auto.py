@@ -6,5 +6,6 @@ from ballparkpal_auth import ensure_logged_in
 
 if __name__ == "__main__":
     keep_open = "--inspect" in sys.argv or os.getenv("BALLPARKPAL_AUTH_INSPECT") == "1"
-    success = asyncio.run(ensure_logged_in(keep_open=keep_open))
+    headless = os.getenv("BALLPARKPAL_HEADLESS", "0") == "1" and not keep_open
+    success = asyncio.run(ensure_logged_in(headless=headless, keep_open=keep_open))
     raise SystemExit(0 if success else 1)
