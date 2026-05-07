@@ -1,0 +1,11 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823551,2026-05-07T16:35:00Z,Scheduled,140,Texas Rangers,147,New York Yankees,Yankee Stadium,MacKenzie Gore,669022,L,Paul Blackburn,621112,R
+822741,2026-05-07T17:05:00Z,Scheduled,142,Minnesota Twins,120,Washington Nationals,Nationals Park,Simeon Woods Richardson,680573,R,Jake Irvin,663623,R
+824117,2026-05-07T18:10:00Z,Scheduled,114,Cleveland Guardians,118,Kansas City Royals,Kauffman Stadium,Slade Cecconi,677944,R,Seth Lugo,607625,R
+824681,2026-05-07T18:20:00Z,Scheduled,113,Cincinnati Reds,112,Chicago Cubs,Wrigley Field,Rhett Lowder,695076,R,Shota Imanaga,684007,L
+824362,2026-05-07T19:10:00Z,Scheduled,121,New York Mets,115,Colorado Rockies,Coors Field,Christian Scott,681035,R,Jose Quintana,500779,L
+825090,2026-05-07T19:40:00Z,Scheduled,134,Pittsburgh Pirates,109,Arizona Diamondbacks,Chase Field,Mitch Keller,656605,R,Zac Gallen,668678,R
+823467,2026-05-07T22:40:00Z,Scheduled,133,Athletics,143,Philadelphia Phillies,Citizens Bank Park,J.T. Ginn,669372,R,Andrew Painter,691725,R
+823870,2026-05-07T22:40:00Z,Scheduled,110,Baltimore Orioles,146,Miami Marlins,loanDepot park,Cade Povich,700249,L,Max Meyer,676974,R
+824767,2026-05-07T23:10:00Z,Scheduled,139,Tampa Bay Rays,111,Boston Red Sox,Fenway Park,Griffin Jax,643377,R,Jake Bennett,687562,L
+823306,2026-05-08T02:10:00Z,Scheduled,138,St. Louis Cardinals,135,San Diego Padres,Petco Park,Matthew Liberatore,669461,L,Michael King,650633,R
