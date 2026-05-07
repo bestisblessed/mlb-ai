@@ -1,0 +1,12 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,2,,.500,.500,1,Spencer Steer,668715,1,,0.00,1,,,13,.667,1.167,Imanaga,684007,3,,.500,,1,2024
+2,4,4.00,.500,.333,,Spencer Steer,668715,2,,0.00,2,1,,20,.500,1.750,Imanaga,684007,4,2,1.250,,5,2025
+2,4,,.000,.000,,Jose Trevino,624431,2,2,1.00,,,2,11,.000,.000,Imanaga,684007,4,,.000,,,2025
+1,2,,.000,.000,,Blake Dunn,694362,1,1,1.00,,,,8,.000,.000,Imanaga,684007,2,,.000,,,2024
+3,3,,.000,.000,,Elly De La Cruz E. De La Cruz,682829,1,,0.00,,,,11,.000,.000,Imanaga,684007,3,,.000,,,2024
+1,4,,.000,.000,1,Elly De La Cruz E. De La Cruz,682829,2,,0.00,,,,28,.200,.200,Imanaga,684007,5,,.000,3,,2025
+2,5,5.00,.200,.000,,Matt McLain,680574,2,,0.00,1,1,1,22,.200,1.000,Imanaga,684007,5,1,.800,2,4,2025
+3,3,,.000,.000,1,Ke'Bryan Hayes,663647,2,,0.00,,,3,13,.250,.250,Imanaga,684007,4,,.000,,,2025
+1,3,,.000,.000,,TJ Friedl,670770,1,,0.00,,,2,14,.000,.000,Imanaga,684007,3,,.000,2,,2024
+2,6,,.333,.500,,TJ Friedl,670770,2,,0.00,2,,,21,.333,.666,Imanaga,684007,6,1,.333,2,2,2025
+,2,,.000,.---,1,JJ Bleday,668709,1,,,,,1,13,.333,.333,Imanaga,684007,3,,.000,2,,2024
