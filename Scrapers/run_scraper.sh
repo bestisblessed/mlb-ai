@@ -16,23 +16,45 @@ cd "$SCRIPT_DIR"
 # Ensure server uses latest scraper code BEFORE running.
 git pull >> scraper.log 2>&1
 
-# Match local behavior: refresh BallparkPal session first.
-BALLPARKPAL_HEADLESS=1 /usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_signin_auto.py >> scraper.log 2>&1
+# Run BallparkPal against the active VNC display so Chromium opens in a window.
+export PATH="$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH"
+export DISPLAY="${DISPLAY:-:2}"
+export BALLPARKPAL_HEADLESS=0
+
+for pid in $(pgrep -u "$USER" lxsession || true); do
+    env_file="/proc/$pid/environ"
+    if tr '\0' '\n' < "$env_file" 2>/dev/null | grep -qx "DISPLAY=$DISPLAY"; then
+        while IFS= read -r item; do
+            case "$item" in
+                DBUS_SESSION_BUS_ADDRESS=*|XDG_RUNTIME_DIR=*|XDG_SESSION_TYPE=*|DESKTOP_SESSION=*|XDG_CURRENT_DESKTOP=*|XAUTHORITY=*)
+                    export "$item"
+                    ;;
+            esac
+        done <<EOF
+$(tr '\0' '\n' < "$env_file" 2>/dev/null)
+EOF
+        break
+    fi
+done
+
+echo "BallparkPal env: DISPLAY=$DISPLAY DBUS_SESSION_BUS_ADDRESS=${DBUS_SESSION_BUS_ADDRESS:-unset} python=$(command -v python)" >> scraper.log 2>&1
+
+python ballparkpal_signin_auto.py >> scraper.log 2>&1
 
 # ===========================
 # Run the main BallparkPal scraper
 # ===========================
-BALLPARKPAL_HEADLESS=1 /usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_headless.py >> scraper.log 2>&1
+python ballparkpal_headless.py >> scraper.log 2>&1
 
 # ===========================
 # Run the BallparkPal park factors icons scraper
 # ===========================
-BALLPARKPAL_HEADLESS=1 /usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_park_factors.py >> scraper.log 2>&1
+python ballparkpal_park_factors.py >> scraper.log 2>&1
 
 # ===========================
 # Run the pitching alt lines scraper
 # ===========================
-BALLPARKPAL_HEADLESS=1 /usr/bin/xvfb-run -a "$HOME/.pyenv/shims/python" ballparkpal_pitching_alt_lines.py >> scraper.log 2>&1
+python ballparkpal_pitching_alt_lines.py >> scraper.log 2>&1
 
 
 # ===========================
@@ -101,4 +123,3 @@ echo "---------------------------------------" >> scraper.log 2>&1
 #
 
 trap 'echo "$DD_METRIC_FAILURE" | nc -u -w0 127.0.0.1 8125' ERR
-
