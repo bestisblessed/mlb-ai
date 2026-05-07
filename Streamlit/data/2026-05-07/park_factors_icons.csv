@@ -1,11 +1,11 @@
 game_id,game,icons,icon_labels
-824362,Coors Field3:10NYM @ COL,"OutRight.svg,FromLeft.svg,InLeftMiddle.svg,LowP.png","OutRight.svg,FromLeft.svg,InLeftMiddle.svg,Low Pressure"
-824767,Fenway Park7:10TB  @ BOS,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,Low Pressure"
+824362,Coors Field3:10NYM @ COL,"OutRightMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LowP.png","OutRightMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Low Pressure"
+824767,Fenway Park7:10TB  @ BOS,"OutRightMiddle.svg,OutRight.svg,OutRightMiddle.svg,LightWind.png,LowP.png","OutRightMiddle.svg,OutRight.svg,OutRightMiddle.svg,Light Breeze,Low Pressure"
 824117,Kauffman Stadium2:10CLE @ KC,"OutCenter.svg,OutCenter.svg,OutCenter.svg,HeavyWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Heavy Wind"
+823467,Citizens Bank Park6:40ATH @ PHI,"FromLeft.svg,FromLeft.svg,OutRightMiddle.svg,LightWind.png,LowP.png","FromLeft.svg,FromLeft.svg,OutRightMiddle.svg,Light Breeze,Low Pressure"
 825090,Chase Field3:40PIT @ ARI,RoofClosed.png,Roof Closed
-823467,Citizens Bank Park6:40ATH @ PHI,"FromLeft.svg,FromLeft.svg,OutRight.svg,LightWind.png,LowP.png","FromLeft.svg,FromLeft.svg,OutRight.svg,Light Breeze,Low Pressure"
+822741,Nationals Park1:05MIN @ WAS,"InLeftMiddle.svg,OutLeftCenter.svg,OutCenter.svg","InLeftMiddle.svg,OutLeftCenter.svg,OutCenter.svg"
 823870,LoanDepot Park6:40BAL @ MIA,RoofClosed.png,Roof Closed
-822741,Nationals Park1:05MIN @ WAS,"InLeftMiddle.svg,InLeftMiddle.svg,OutRightMiddle.svg","InLeftMiddle.svg,InLeftMiddle.svg,OutRightMiddle.svg"
-823551,Yankee Stadium12:35TEX @ NYY,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,Low Pressure"
-824681,Wrigley Field2:20CIN @ CHC,"OutRight.svg,OutRight.svg,OutRightCenter.svg,Under55.png","OutRight.svg,OutRight.svg,OutRightCenter.svg,Under55.png"
-823306,Petco Park10:10STL @ SD,"OutRightMiddle.svg,OutRightMiddle.svg,OutRight.svg,LightWind.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRight.svg,Light Breeze"
+823551,Yankee Stadium12:35TEX @ NYY,"OutRight.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,LowP.png","OutRight.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,Low Pressure"
+824681,Wrigley Field2:20CIN @ CHC,"OutRightCenter.svg,OutRight.svg,OutRightMiddle.svg,LightWind.png","OutRightCenter.svg,OutRight.svg,OutRightMiddle.svg,Light Breeze"
+823306,Petco Park10:10STL @ SD,"FromLeft.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png","FromLeft.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze"
