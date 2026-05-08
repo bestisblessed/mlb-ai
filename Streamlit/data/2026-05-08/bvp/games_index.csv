@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824522,2026-05-08T22:10:00Z,Scheduled,117,Houston Astros,113,Cincinnati Reds,Great American Ball Park,Mike Burrows,681347,R,Nick Lodolo,,
+823466,2026-05-08T22:40:00Z,Scheduled,115,Colorado Rockies,143,Philadelphia Phillies,Citizens Bank Park,Chase Dollander,801403,R,Jesús Luzardo,666200.0,L
+824846,2026-05-08T23:05:00Z,Scheduled,133,Athletics,110,Baltimore Orioles,Oriole Park at Camden Yards,Jacob Lopez,682052,L,Kyle Bradish,680694.0,R
+822822,2026-05-08T23:07:00Z,Scheduled,108,Los Angeles Angels,141,Toronto Blue Jays,Rogers Centre,Reid Detmers,672282,L,Dylan Cease,656302.0,R
+824768,2026-05-08T23:10:00Z,Scheduled,139,Tampa Bay Rays,111,Boston Red Sox,Fenway Park,Jesse Scholtens,669947,R,Connelly Early,813349.0,L
+823871,2026-05-08T23:10:00Z,Scheduled,120,Washington Nationals,146,Miami Marlins,loanDepot park,Foster Griffin,656492,L,Robby Snelling,,
+824443,2026-05-08T23:15:00Z,Scheduled,142,Minnesota Twins,114,Cleveland Guardians,Progressive Field,Connor Prielipp,687570,L,Parker Messick,800048.0,L
+824116,2026-05-08T23:40:00Z,Scheduled,116,Detroit Tigers,118,Kansas City Royals,Kauffman Stadium,Keider Montero,672456,R,Kris Bubic,663460.0,L
+824607,2026-05-08T23:40:00Z,Scheduled,136,Seattle Mariners,145,Chicago White Sox,Rate Field,Emerson Hancock,676106,R,Sean Burke,680732.0,R
+823794,2026-05-08T23:40:00Z,Scheduled,147,New York Yankees,158,Milwaukee Brewers,American Family Field,Max Fried,608331,L,Jacob Misiorowski,694819.0,R
+822904,2026-05-09T00:05:00Z,Scheduled,112,Chicago Cubs,140,Texas Rangers,Globe Life Field,Ben Brown,676962,R,Kumar Rocker,677958.0,R
+825088,2026-05-09T01:40:00Z,Scheduled,121,New York Mets,109,Arizona Diamondbacks,Chase Field,Nolan McLean,690997,R,Ryne Nelson,669194.0,R
+823303,2026-05-09T01:45:00Z,Scheduled,138,St. Louis Cardinals,135,San Diego Padres,Petco Park,Michael McGreevy,700241,R,Griffin Canning,656288.0,R
+823957,2026-05-09T02:10:00Z,Scheduled,144,Atlanta Braves,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Chris Sale,519242,L,Emmet Sheehan,686218.0,R
+823225,2026-05-09T02:15:00Z,Scheduled,134,Pittsburgh Pirates,137,San Francisco Giants,Oracle Park,Carmen Mlodzinski,669387,R,,,
