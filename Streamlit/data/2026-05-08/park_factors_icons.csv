@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824768,Fenway Park7:10TB  @ BOS,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,Under55.png,LowP.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,Under55.png,Low Pressure"
+824522,Great American BP6:10HOU @ CIN,"FromRight.svg,FromRight.svg,FromRight.svg,LightWind.png","FromRight.svg,FromRight.svg,FromRight.svg,Light Breeze"
+825088,Chase Field9:40NYM @ ARI,RoofClosed.png,Roof Closed
+824607,Rate Field7:40SEA @ CHW,"InRightMiddle.svg,FromRight.svg,InRightMiddle.svg,LightWind.png,LowP.png","InRightMiddle.svg,FromRight.svg,InRightMiddle.svg,Light Breeze,Low Pressure"
+823957,Dodger Stadium10:10ATL @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutLeftCenter.svg","OutRightCenter.svg,OutRightCenter.svg,OutLeftCenter.svg"
+824116,Kauffman Stadium7:40DET @ KC,"FromLeft.svg,InLeftMiddle.svg,FromLeft.svg,LightWind.png,LowP.png","FromLeft.svg,InLeftMiddle.svg,FromLeft.svg,Light Breeze,Low Pressure"
+823794,American Family Fld7:40NYY @ MIL,RoofClosed.png,Roof Closed
+823871,LoanDepot Park7:10WAS @ MIA,RoofClosed.png,Roof Closed
+823466,Citizens Bank Park6:40COL @ PHI,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze"
+822822,Rogers Centre7:07LAA @ TOR,RoofClosed.png,Roof Closed
+824443,Progressive Field7:15MIN @ CLE,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,Under55.png,HighH.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,Under55.png,High Humidity"
+822904,Globe Life Field8:05CHC @ TEX,RoofClosed.png,Roof Closed
+823225,Oracle Park10:15PIT @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,HighH.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,High Humidity"
+824846,Oriole Park7:05ATH @ BAL,"FromLeft.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png","FromLeft.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze"
+823303,Petco Park9:45STL @ SD,"FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
