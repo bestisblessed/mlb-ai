@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822820,2026-05-09T19:07:00Z,Pre-Game,108,Los Angeles Angels,141,Toronto Blue Jays,Rogers Centre,Jack Kochanowicz,686799,R,Trey Yesavage,702056.0,R
+824847,2026-05-09T20:05:00Z,Pre-Game,133,Athletics,110,Baltimore Orioles,Oriole Park at Camden Yards,Aaron Civale,650644,R,Shane Baz,669358.0,R
+824523,2026-05-09T20:10:00Z,Pre-Game,117,Houston Astros,113,Cincinnati Reds,Great American Ball Park,Spencer Arrighetti,681293,R,Chase Burns,695505.0,R
+824766,2026-05-09T20:10:00Z,Pre-Game,139,Tampa Bay Rays,111,Boston Red Sox,Fenway Park,Nick Martinez,607259,R,Payton Tolle,801139.0,L
+823869,2026-05-09T20:10:00Z,Pre-Game,120,Washington Nationals,146,Miami Marlins,loanDepot park,Zack Littell,641793,R,Janson Junk,676083.0,R
+823468,2026-05-09T22:05:00Z,Pre-Game,115,Colorado Rockies,143,Philadelphia Phillies,Citizens Bank Park,Kyle Freeland,607536,L,Aaron Nola,605400.0,R
+824444,2026-05-09T22:10:00Z,Pre-Game,142,Minnesota Twins,114,Cleveland Guardians,Progressive Field,Joe Ryan,657746,R,Tanner Bibee,676440.0,R
+822905,2026-05-09T23:05:00Z,Scheduled,112,Chicago Cubs,140,Texas Rangers,Globe Life Field,Edward Cabrera,665795,R,Jack Leiter,683004.0,R
+824115,2026-05-09T23:10:00Z,Scheduled,116,Detroit Tigers,118,Kansas City Royals,Kauffman Stadium,Burch Smith,572143,R,Michael Wacha,608379.0,R
+824606,2026-05-09T23:10:00Z,Scheduled,136,Seattle Mariners,145,Chicago White Sox,Rate Field,Luis Castillo,622491,R,Anthony Kay,641743.0,L
+823792,2026-05-09T23:10:00Z,Scheduled,147,New York Yankees,158,Milwaukee Brewers,American Family Field,Cam Schlittler,693645,R,Kyle Harrison,690986.0,L
+825089,2026-05-09T23:15:00Z,Scheduled,121,New York Mets,109,Arizona Diamondbacks,Chase Field,Clay Holmes,605280,R,Merrill Kelly,518876.0,R
+823304,2026-05-09T23:15:00Z,Scheduled,138,St. Louis Cardinals,135,San Diego Padres,Petco Park,Dustin May,669160,R,Randy Vásquez,681190.0,R
+823224,2026-05-10T01:05:00Z,Scheduled,134,Pittsburgh Pirates,137,San Francisco Giants,Oracle Park,Braxton Ashcraft,677952,R,Landen Roupp,694738.0,R
+823955,2026-05-10T01:10:00Z,Scheduled,144,Atlanta Braves,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Spencer Strider,675911,R,Blake Snell,,
