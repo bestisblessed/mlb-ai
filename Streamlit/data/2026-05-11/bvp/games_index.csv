@@ -1,0 +1,7 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824441,2026-05-11T22:10:00Z,Scheduled,108,Los Angeles Angels,114,Cleveland Guardians,Progressive Field,,,,Joey Cantillo,676282,L
+824844,2026-05-11T22:35:00Z,Scheduled,147,New York Yankees,110,Baltimore Orioles,Oriole Park at Camden Yards,Ryan Weathers,677960.0,L,Brandon Young,687064,R
+822818,2026-05-11T23:07:00Z,Scheduled,139,Tampa Bay Rays,141,Toronto Blue Jays,Rogers Centre,Drew Rasmussen,656876.0,R,Kevin Gausman,592332,R
+822901,2026-05-12T00:05:00Z,Scheduled,109,Arizona Diamondbacks,140,Texas Rangers,Globe Life Field,Michael Soroka,647336.0,R,Nathan Eovaldi,543135,R
+824199,2026-05-12T00:10:00Z,Scheduled,136,Seattle Mariners,117,Houston Astros,Daikin Park,George Kirby,669923.0,R,Peter Lambert,663567,R
+823953,2026-05-12T02:10:00Z,Scheduled,137,San Francisco Giants,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Trevor McDonald,686790.0,R,Roki Sasaki,808963,R
