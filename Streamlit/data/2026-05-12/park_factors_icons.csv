@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+825011,Sutter Health Park9:40STL @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F,Low Pressure"
+824604,Rate Field7:40KC  @ CHW,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,HeavyWind.png,LowP.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Heavy Wind,Low Pressure"
+824521,Great American BP6:40WAS @ CIN,"OutLeftMiddle.svg,FromRight.svg,FromRight.svg,LightWind.png","OutLeftMiddle.svg,FromRight.svg,FromRight.svg,Light Breeze"
+823712,Target Field7:40MIA @ MIN,"OutRight.svg,OutRight.svg,OutRightMiddle.svg,HeavyWind.png","OutRight.svg,OutRight.svg,OutRightMiddle.svg,Heavy Wind"
+824764,Fenway Park6:45PHI @ BOS,"InCenter.svg,InRight.svg,InRightMiddle.svg","InCenter.svg,InRight.svg,InRightMiddle.svg"
+823385,PNC Park6:40COL @ PIT,"OutLeft.svg,OutLeftCenter.svg,InRightMiddle.svg","OutLeft.svg,OutLeftCenter.svg,InRightMiddle.svg"
+824197,Daikin Park8:10SEA @ HOU,RoofClosed.png,Roof Closed
+823790,American Family Fld7:40SD  @ MIL,RoofClosed.png,Roof Closed
+824843,Oriole Park6:35NYY @ BAL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,HighP.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,High Pressure"
+824442,Progressive Field6:10LAA @ CLE,"FromRight.svg,OutLeftMiddle.svg,InLeft.svg,Under55.png","FromRight.svg,OutLeftMiddle.svg,InLeft.svg,Under55.png"
+823951,Dodger Stadium10:10SF  @ LAD,"OutCenter.svg,OutCenter.svg,OutRightCenter.svg,LightWind.png","OutCenter.svg,OutCenter.svg,OutRightCenter.svg,Light Breeze"
+822817,Rogers Centre7:07TB  @ TOR,RoofClosed.png,Roof Closed
+822903,Globe Life Field8:05ARI @ TEX,RoofClosed.png,Roof Closed
+824927,Truist Park7:15CHC @ ATL,"InLeft.svg,InLeftCenter.svg,InCenter.svg,LightWind.png","InLeft.svg,InLeftCenter.svg,InCenter.svg,Light Breeze"
+823632,Citi Field7:10DET @ NYM,"OutCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png,HighP.png","OutCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze,High Pressure"

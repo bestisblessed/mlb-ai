@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824442,2026-05-12T22:10:00Z,Scheduled,108,Los Angeles Angels,114,Cleveland Guardians,Progressive Field,Walbert Ureña,700712,R,Slade Cecconi,677944.0,R
+824843,2026-05-12T22:35:00Z,Scheduled,147,New York Yankees,110,Baltimore Orioles,Oriole Park at Camden Yards,Will Warren,701542,R,,,
+824521,2026-05-12T22:40:00Z,Scheduled,120,Washington Nationals,113,Cincinnati Reds,Great American Ball Park,Miles Mikolas,571945,R,Brady Singer,663903.0,R
+823385,2026-05-12T22:40:00Z,Scheduled,115,Colorado Rockies,134,Pittsburgh Pirates,PNC Park,Michael Lorenzen,547179,R,Paul Skenes,694973.0,R
+824764,2026-05-12T22:45:00Z,Scheduled,143,Philadelphia Phillies,111,Boston Red Sox,Fenway Park,Zack Wheeler,554430,R,,,
+822817,2026-05-12T23:07:00Z,Scheduled,139,Tampa Bay Rays,141,Toronto Blue Jays,Rogers Centre,Shane McClanahan,663556,L,Patrick Corbin,571578.0,L
+823632,2026-05-12T23:10:00Z,Scheduled,116,Detroit Tigers,121,New York Mets,Citi Field,Jack Flaherty,656427,R,Freddy Peralta,642547.0,R
+824927,2026-05-12T23:15:00Z,Scheduled,112,Chicago Cubs,144,Atlanta Braves,Truist Park,Colin Rea,607067,R,Grant Holmes,656550.0,R
+824604,2026-05-12T23:40:00Z,Scheduled,118,Kansas City Royals,145,Chicago White Sox,Rate Field,Stephen Kolek,663568,R,Erick Fedde,607200.0,R
+823712,2026-05-12T23:40:00Z,Scheduled,146,Miami Marlins,142,Minnesota Twins,Target Field,Eury Pérez,691587,R,Bailey Ober,641927.0,R
+823790,2026-05-12T23:40:00Z,Scheduled,135,San Diego Padres,158,Milwaukee Brewers,American Family Field,Matt Waldron,663362,R,Brandon Sproat,687075.0,R
+822903,2026-05-13T00:05:00Z,Scheduled,109,Arizona Diamondbacks,140,Texas Rangers,Globe Life Field,Zac Gallen,668678,R,MacKenzie Gore,669022.0,L
+824197,2026-05-13T00:10:00Z,Scheduled,136,Seattle Mariners,117,Houston Astros,Daikin Park,Bryan Woo,693433,R,Tatsuya Imai,837227.0,R
+825011,2026-05-13T01:40:00Z,Scheduled,138,St. Louis Cardinals,133,Athletics,Sutter Health Park,Andre Pallante,669467,R,Jeffrey Springs,605488.0,L
+823951,2026-05-13T02:10:00Z,Scheduled,137,San Francisco Giants,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Adrian Houser,605288,R,Yoshinobu Yamamoto,808967.0,R
