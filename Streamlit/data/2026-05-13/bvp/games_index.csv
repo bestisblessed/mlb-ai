@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824841,2026-05-13T17:05:00Z,Scheduled,147,New York Yankees,110,Baltimore Orioles,Oriole Park at Camden Yards,Max Fried,608331.0,L,Kyle Bradish,680694,R
+824438,2026-05-13T17:10:00Z,Scheduled,108,Los Angeles Angels,114,Cleveland Guardians,Progressive Field,Reid Detmers,672282.0,L,Parker Messick,800048,L
+824519,2026-05-13T22:40:00Z,Scheduled,120,Washington Nationals,113,Cincinnati Reds,Great American Ball Park,Jake Irvin,663623.0,R,Nick Lodolo,666157,L
+823386,2026-05-13T22:40:00Z,Scheduled,115,Colorado Rockies,134,Pittsburgh Pirates,PNC Park,Jose Quintana,500779.0,L,Mitch Keller,656605,R
+824763,2026-05-13T22:45:00Z,Scheduled,143,Philadelphia Phillies,111,Boston Red Sox,Fenway Park,Andrew Painter,691725.0,R,Sonny Gray,543243,R
+822815,2026-05-13T23:07:00Z,Scheduled,139,Tampa Bay Rays,141,Toronto Blue Jays,Rogers Centre,Griffin Jax,643377.0,R,Dylan Cease,656302,R
+823631,2026-05-13T23:10:00Z,Scheduled,116,Detroit Tigers,121,New York Mets,Citi Field,Framber Valdez,664285.0,L,Christian Scott,681035,R
+824928,2026-05-13T23:15:00Z,Scheduled,112,Chicago Cubs,144,Atlanta Braves,Truist Park,Shota Imanaga,684007.0,L,JR Ritchie,702275,R
+824603,2026-05-13T23:40:00Z,Scheduled,118,Kansas City Royals,145,Chicago White Sox,Rate Field,Seth Lugo,607625.0,R,Noah Schultz,702273,L
+823710,2026-05-13T23:40:00Z,Scheduled,146,Miami Marlins,142,Minnesota Twins,Target Field,Max Meyer,676974.0,R,Simeon Woods Richardson,680573,R
+823791,2026-05-13T23:40:00Z,Scheduled,135,San Diego Padres,158,Milwaukee Brewers,American Family Field,Michael King,650633.0,R,Jacob Misiorowski,694819,R
+822900,2026-05-14T00:05:00Z,Scheduled,109,Arizona Diamondbacks,140,Texas Rangers,Globe Life Field,Ryne Nelson,669194.0,R,Kumar Rocker,677958,R
+824195,2026-05-14T00:10:00Z,Scheduled,136,Seattle Mariners,117,Houston Astros,Daikin Park,Bryce Miller,,,Lance McCullers Jr.,621121,R
+825010,2026-05-14T01:40:00Z,Scheduled,138,St. Louis Cardinals,133,Athletics,Sutter Health Park,Matthew Liberatore,669461.0,L,J.T. Ginn,669372,R
+823952,2026-05-14T02:10:00Z,Scheduled,137,San Francisco Giants,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Robbie Ray,592662.0,L,Shohei Ohtani,660271,R
