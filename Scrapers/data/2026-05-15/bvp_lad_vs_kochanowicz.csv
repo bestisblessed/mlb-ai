@@ -1,0 +1,9 @@
+atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+2,1.000,1.000,,Hyeseong Kim,808975,,1,,,,2,,7,1.000,2.000,Kochanowicz,686799,2,,1.000,,2,2025
+1,1.000,1.000,2,Max Muncy,571970,1,1,,,,1,,12,1.000,3.000,Kochanowicz,686799,3,1,2.000,,2,2025
+2,.500,.500,1,Shohei Ohtani,660271,,1,1,1,1.00,1,1,17,.667,1.167,Kochanowicz,686799,3,,.500,,1,2025
+3,.000,.000,,Andy Pages,681624,,1,2,3,3.00,,3,14,.000,.000,Kochanowicz,686799,3,,.000,,,2025
+3,.333,.333,,Will Smith,669257,,1,,2,2.00,1,,12,.333,.666,Kochanowicz,686799,3,,.333,,1,2025
+3,.000,.000,,Mookie Betts,605141,,1,,2,2.00,,3,7,.000,.000,Kochanowicz,686799,3,,.000,1,,2025
+3,.000,.000,,Freddie Freeman,518692,,1,1,1,1.00,,1,14,.000,.000,Kochanowicz,686799,3,,.000,2,,2025
+4,.250,.333,,Alex Call,669743,1,1,,2,2.00,1,2,11,.250,.750,Kochanowicz,686799,4,,.500,1,2,2024
