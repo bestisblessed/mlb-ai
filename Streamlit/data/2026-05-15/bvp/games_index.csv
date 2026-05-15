@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823384,2026-05-15T22:40:00Z,Scheduled,143,Philadelphia Phillies,134,Pittsburgh Pirates,PNC Park,Aaron Nola,605400.0,R,Braxton Ashcraft,677952,R
+822739,2026-05-15T22:45:00Z,Scheduled,110,Baltimore Orioles,120,Washington Nationals,Nationals Park,Shane Baz,669358.0,R,Zack Littell,641793,R
+824280,2026-05-15T22:45:00Z,Scheduled,141,Toronto Blue Jays,116,Detroit Tigers,Comerica Park,Trey Yesavage,702056.0,R,Ty Madden,680744,R
+824439,2026-05-15T23:10:00Z,Scheduled,113,Cincinnati Reds,114,Cleveland Guardians,Progressive Field,Andrew Abbott,671096.0,L,Tanner Bibee,676440,R
+822983,2026-05-15T23:10:00Z,Scheduled,146,Miami Marlins,139,Tampa Bay Rays,Tropicana Field,Janson Junk,676083.0,R,Jesse Scholtens,669947,R
+823707,2026-05-15T23:10:00Z,Scheduled,158,Milwaukee Brewers,142,Minnesota Twins,Target Field,,,,Joe Ryan,657746,R
+824925,2026-05-15T23:15:00Z,Scheduled,111,Boston Red Sox,144,Atlanta Braves,Truist Park,Connelly Early,813349.0,L,Spencer Strider,675911,R
+823629,2026-05-15T23:15:00Z,Scheduled,147,New York Yankees,121,New York Mets,Citi Field,Cam Schlittler,693645.0,R,Clay Holmes,605280,R
+824601,2026-05-15T23:40:00Z,Scheduled,112,Chicago Cubs,145,Chicago White Sox,Rate Field,Edward Cabrera,665795.0,R,Sean Burke,680732,R
+824194,2026-05-16T00:10:00Z,Scheduled,140,Texas Rangers,117,Houston Astros,Daikin Park,Jack Leiter,683004.0,R,Spencer Arrighetti,681293,R
+823061,2026-05-16T00:15:00Z,Scheduled,118,Kansas City Royals,138,St. Louis Cardinals,Busch Stadium,Michael Wacha,608379.0,R,Dustin May,669160,R
+824360,2026-05-16T00:40:00Z,Scheduled,109,Arizona Diamondbacks,115,Colorado Rockies,Coors Field,Merrill Kelly,518876.0,R,Kyle Freeland,607536,L
+824037,2026-05-16T01:38:00Z,Scheduled,119,Los Angeles Dodgers,108,Los Angeles Angels,Angel Stadium,Blake Snell,605483.0,L,Jack Kochanowicz,686799,R
+823140,2026-05-16T01:40:00Z,Scheduled,135,San Diego Padres,136,Seattle Mariners,T-Mobile Park,Randy Vásquez,681190.0,R,Emerson Hancock,676106,R
+825009,2026-05-16T01:40:00Z,Scheduled,137,San Francisco Giants,133,Athletics,Sutter Health Park,Tyler Mahle,641816.0,R,Aaron Civale,650644,R
