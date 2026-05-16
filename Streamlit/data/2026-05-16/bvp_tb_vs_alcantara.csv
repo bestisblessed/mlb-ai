@@ -1,0 +1,14 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,3,,.333,.500,,Jonathan Aranda,666018,1,,,0.00,,1,,2,14,.333,.666,Alcantara,645261,3,1,.333,1,1,2025
+2,3,3.00,.333,.000,,Cedric Mullins,656775,1,,,0.00,,1,1,,13,.333,1.666,Alcantara,645261,3,1,1.333,,4,2021
+,3,3.00,1.000,1.000,,Cedric Mullins,656775,1,,,,,3,1,,6,1.000,3.000,Alcantara,645261,3,1,2.000,,6,2023
+1,5,,.000,.000,1,Cedric Mullins,656775,2,,2,2.00,,,,2,23,.167,.167,Alcantara,645261,6,1,.000,2,,2025
+2,4,,.250,.250,,Jake Fraley,641584,1,,1,0.50,,1,,1,12,.250,.500,Alcantara,645261,4,,.250,,1,2022
+,4,4.00,.500,.500,,Jake Fraley,641584,1,1,1,1.00,,2,1,2,13,.500,1.750,Alcantara,645261,4,4,1.250,1,5,2023
+1,2,,.000,.000,1,Jake Fraley,641584,1,,1,1.00,,,,,14,.333,.333,Alcantara,645261,3,,.000,,,2025
+,2,,.500,.500,,Chandler Simpson,802415,1,,1,1.00,,1,,,9,.500,1.000,Alcantara,645261,2,1,.500,,1,2025
+1,2,,.000,.000,,Taylor Walls,670764,1,,1,1.00,,,,1,3,.000,.000,Alcantara,645261,2,,.000,,,2025
+,2,,.000,.000,,Yandy Diaz,650490,1,1,2,2.00,1,,,2,8,.333,.333,Alcantara,645261,3,,.000,,,2020
+2,5,,.200,.200,,Yandy Diaz,650490,2,,2,1.00,1,1,,2,20,.333,.533,Alcantara,645261,6,1,.200,,1,2021
+,3,,.333,.333,,Yandy Diaz,650490,1,1,2,2.00,,1,,2,6,.333,.666,Alcantara,645261,3,,.333,,1,2023
+1,3,,.333,.333,,Yandy Diaz,650490,1,,1,1.00,,1,,2,13,.333,.666,Alcantara,645261,3,2,.333,,1,2025
