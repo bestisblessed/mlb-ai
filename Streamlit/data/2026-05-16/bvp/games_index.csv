@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824278,2026-05-16T17:10:00Z,Scheduled,141,Toronto Blue Jays,116,Detroit Tigers,Comerica Park,Mason Fluharty,689254,L,Casey Mize,663554,R
+823060,2026-05-16T18:15:00Z,Scheduled,118,Kansas City Royals,138,St. Louis Cardinals,Busch Stadium,Noah Cameron,702070,L,Kyle Leahy,681517,R
+824359,2026-05-16T19:10:00Z,Scheduled,109,Arizona Diamondbacks,115,Colorado Rockies,Coors Field,Eduardo Rodriguez,699134,R,Tomoyuki Sugano,608372,R
+822737,2026-05-16T20:05:00Z,Scheduled,110,Baltimore Orioles,120,Washington Nationals,Nationals Park,Chris Bassitt,605135,R,Cade Cavalli,676917,R
+823382,2026-05-16T20:05:00Z,Scheduled,143,Philadelphia Phillies,134,Pittsburgh Pirates,PNC Park,Cristopher Sánchez,650911,L,Bubba Chandler,696149,R
+822981,2026-05-16T20:10:00Z,Scheduled,146,Miami Marlins,139,Tampa Bay Rays,Tropicana Field,Sandy Alcantara,645261,R,Nick Martinez,607259,R
+824435,2026-05-16T22:10:00Z,Scheduled,113,Cincinnati Reds,114,Cleveland Guardians,Progressive Field,Chris Paddack,663978,R,Joey Cantillo,676282,L
+824193,2026-05-16T23:10:00Z,Scheduled,140,Texas Rangers,117,Houston Astros,Daikin Park,Jacob deGrom,594798,R,Kai-Wei Teng,678906,R
+824600,2026-05-16T23:10:00Z,Scheduled,112,Chicago Cubs,145,Chicago White Sox,Rate Field,Jameson Taillon,592791,R,Davis Martin,663436,R
+823706,2026-05-16T23:10:00Z,Scheduled,158,Milwaukee Brewers,142,Minnesota Twins,Target Field,Logan Henderson,701656,R,Connor Prielipp,687570,L
+823139,2026-05-16T23:15:00Z,Scheduled,135,San Diego Padres,136,Seattle Mariners,T-Mobile Park,Walker Buehler,621111,R,Logan Gilbert,669302,R
+824924,2026-05-16T23:15:00Z,Scheduled,111,Boston Red Sox,144,Atlanta Braves,Truist Park,Payton Tolle,801139,L,Bryce Elder,693821,R
+823627,2026-05-16T23:15:00Z,Scheduled,147,New York Yankees,121,New York Mets,Citi Field,Carlos Rodón,607074,L,Huascar Brazobán,623211,R
+824038,2026-05-17T01:38:00Z,Scheduled,119,Los Angeles Dodgers,108,Los Angeles Angels,Angel Stadium,Justin Wrobleski,680736,L,José Soriano,667755,R
+825007,2026-05-17T01:40:00Z,Scheduled,137,San Francisco Giants,133,Athletics,Sutter Health Park,Trevor McDonald,686790,R,Luis Severino,622663,R
