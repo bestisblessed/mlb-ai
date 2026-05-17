@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822982,2026-05-17T16:15:00Z,Scheduled,146,Miami Marlins,139,Tampa Bay Rays,Tropicana Field,Eury Pérez,691587.0,R,Drew Rasmussen,656876.0,R
+822738,2026-05-17T17:35:00Z,Scheduled,110,Baltimore Orioles,120,Washington Nationals,Nationals Park,Brandon Young,687064.0,R,Miles Mikolas,571945.0,R
+823381,2026-05-17T17:35:00Z,Scheduled,143,Philadelphia Phillies,134,Pittsburgh Pirates,PNC Park,Zack Wheeler,554430.0,R,Paul Skenes,694973.0,R
+824923,2026-05-17T17:35:00Z,Scheduled,111,Boston Red Sox,144,Atlanta Braves,Truist Park,Brayan Bello,678394.0,R,Grant Holmes,656550.0,R
+824436,2026-05-17T17:40:00Z,Scheduled,113,Cincinnati Reds,114,Cleveland Guardians,Progressive Field,Brady Singer,663903.0,R,Gavin Williams,668909.0,R
+824279,2026-05-17T17:40:00Z,Scheduled,141,Toronto Blue Jays,116,Detroit Tigers,Comerica Park,Kevin Gausman,592332.0,R,Jack Flaherty,656427.0,R
+823628,2026-05-17T17:40:00Z,Scheduled,147,New York Yankees,121,New York Mets,Citi Field,Elmer Rodríguez,695684.0,R,Freddy Peralta,642547.0,R
+824192,2026-05-17T18:10:00Z,Scheduled,140,Texas Rangers,117,Houston Astros,Daikin Park,Nathan Eovaldi,543135.0,R,Peter Lambert,663567.0,R
+824599,2026-05-17T18:10:00Z,Scheduled,112,Chicago Cubs,145,Chicago White Sox,Rate Field,Colin Rea,607067.0,R,Erick Fedde,607200.0,R
+823708,2026-05-17T18:10:00Z,Scheduled,158,Milwaukee Brewers,142,Minnesota Twins,Target Field,Robert Gasser,,,Bailey Ober,641927.0,R
+823058,2026-05-17T18:15:00Z,Scheduled,118,Kansas City Royals,138,St. Louis Cardinals,Busch Stadium,Stephen Kolek,663568.0,R,Andre Pallante,669467.0,R
+824358,2026-05-17T19:10:00Z,Scheduled,109,Arizona Diamondbacks,115,Colorado Rockies,Coors Field,Michael Soroka,647336.0,R,Michael Lorenzen,547179.0,R
+825006,2026-05-17T20:05:00Z,Scheduled,137,San Francisco Giants,133,Athletics,Sutter Health Park,Adrian Houser,605288.0,R,Jeffrey Springs,605488.0,L
+824034,2026-05-17T20:07:00Z,Scheduled,119,Los Angeles Dodgers,108,Los Angeles Angels,Angel Stadium,Roki Sasaki,808963.0,R,Grayson Rodriguez,,
+823138,2026-05-17T23:20:00Z,Scheduled,135,San Diego Padres,136,Seattle Mariners,T-Mobile Park,Lucas Giolito,,,George Kirby,669923.0,R
