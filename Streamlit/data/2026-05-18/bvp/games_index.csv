@@ -1,0 +1,15 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824277,2026-05-18T22:40:00Z,Scheduled,114,Cleveland Guardians,116,Detroit Tigers,Comerica Park,Slade Cecconi,677944,R,Framber Valdez,664285,L
+822980,2026-05-18T22:40:00Z,Scheduled,110,Baltimore Orioles,139,Tampa Bay Rays,Tropicana Field,Trevor Rogers,669432,L,Shane McClanahan,663556,L
+823465,2026-05-18T22:40:00Z,Scheduled,113,Cincinnati Reds,143,Philadelphia Phillies,Citizens Bank Park,Nick Lodolo,666157,L,Andrew Painter,691725,R
+823867,2026-05-18T22:40:00Z,Scheduled,144,Atlanta Braves,146,Miami Marlins,loanDepot park,JR Ritchie,702275,R,Max Meyer,676974,R
+822734,2026-05-18T22:45:00Z,Scheduled,121,New York Mets,120,Washington Nationals,Nationals Park,Christian Scott,681035,R,Jake Irvin,663623,R
+823549,2026-05-18T23:05:00Z,Scheduled,141,Toronto Blue Jays,147,New York Yankees,Yankee Stadium,Patrick Corbin,571578,L,Ryan Weathers,677960,L
+824114,2026-05-18T23:40:00Z,Scheduled,111,Boston Red Sox,118,Kansas City Royals,Kauffman Stadium,Sonny Gray,543243,R,Seth Lugo,607625,R
+823705,2026-05-18T23:40:00Z,Scheduled,117,Houston Astros,142,Minnesota Twins,Target Field,Tatsuya Imai,837227,R,Kendry Rojas,696070,L
+824680,2026-05-18T23:40:00Z,Scheduled,158,Milwaukee Brewers,112,Chicago Cubs,Wrigley Field,Brandon Sproat,687075,R,Shota Imanaga,684007,L
+824357,2026-05-19T00:40:00Z,Scheduled,140,Texas Rangers,115,Colorado Rockies,Coors Field,MacKenzie Gore,669022,L,Jose Quintana,500779,L
+824035,2026-05-19T01:38:00Z,Scheduled,133,Athletics,108,Los Angeles Angels,Angel Stadium,J.T. Ginn,669372,R,Walbert Ureña,700712,R
+823301,2026-05-19T01:40:00Z,Scheduled,119,Los Angeles Dodgers,135,San Diego Padres,Petco Park,Yoshinobu Yamamoto,808967,R,Michael King,650633,R
+825087,2026-05-19T01:40:00Z,Scheduled,137,San Francisco Giants,109,Arizona Diamondbacks,Chase Field,Robbie Ray,592662,L,Zac Gallen,668678,R
+823137,2026-05-19T01:40:00Z,Scheduled,145,Chicago White Sox,136,Seattle Mariners,T-Mobile Park,Noah Schultz,702273,L,Bryan Woo,693433,R
