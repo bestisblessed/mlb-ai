@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,2,.000,.000,Leo Jimenez,677870,1,,0.00,1,,1,19,.333,.333,Sale,519242,3,,.000,1,,2024
+,2,.000,.000,Christopher Morel,666624,1,2,2.00,1,,,11,.333,.333,Sale,519242,3,,.000,,,2024
+1,3,.333,.500,Christopher Morel,666624,1,,0.00,,1,1,11,.333,.666,Sale,519242,3,1,.333,1,1,2025
