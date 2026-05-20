@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823462,2026-05-20T17:05:00Z,Scheduled,113,Cincinnati Reds,143,Philadelphia Phillies,Citizens Bank Park,Andrew Abbott,671096.0,L,Aaron Nola,605400.0,R
+822977,2026-05-20T17:10:00Z,Scheduled,110,Baltimore Orioles,139,Tampa Bay Rays,Tropicana Field,Shane Baz,669358.0,R,,,
+823703,2026-05-20T17:40:00Z,Scheduled,117,Houston Astros,142,Minnesota Twins,Target Field,Mike Burrows,681347.0,R,Joe Ryan,657746.0,R
+824355,2026-05-20T19:10:00Z,Scheduled,140,Texas Rangers,115,Colorado Rockies,Coors Field,Jack Leiter,683004.0,R,Kyle Freeland,607536.0,L
+825084,2026-05-20T19:40:00Z,Scheduled,137,San Francisco Giants,109,Arizona Diamondbacks,Chase Field,Tyler Mahle,641816.0,R,Merrill Kelly,518876.0,R
+823134,2026-05-20T20:10:00Z,Scheduled,145,Chicago White Sox,136,Seattle Mariners,T-Mobile Park,Sean Burke,680732.0,R,Emerson Hancock,676106.0,R
+824273,2026-05-20T22:40:00Z,Scheduled,114,Cleveland Guardians,116,Detroit Tigers,Comerica Park,Tanner Bibee,676440.0,R,,,
+823866,2026-05-20T22:40:00Z,Scheduled,144,Atlanta Braves,146,Miami Marlins,loanDepot park,Chris Sale,519242.0,L,Janson Junk,676083.0,R
+822735,2026-05-20T22:45:00Z,Scheduled,121,New York Mets,120,Washington Nationals,Nationals Park,Zach Thornton,,,Zack Littell,641793.0,R
+823547,2026-05-20T23:05:00Z,Scheduled,141,Toronto Blue Jays,147,New York Yankees,Yankee Stadium,Trey Yesavage,702056.0,R,Cam Schlittler,693645.0,R
+824111,2026-05-20T23:40:00Z,Scheduled,111,Boston Red Sox,118,Kansas City Royals,Kauffman Stadium,Connelly Early,813349.0,L,Michael Wacha,608379.0,R
+824678,2026-05-20T23:40:00Z,Scheduled,158,Milwaukee Brewers,112,Chicago Cubs,Wrigley Field,Kyle Harrison,690986.0,L,Edward Cabrera,665795.0,R
+823057,2026-05-20T23:45:00Z,Scheduled,134,Pittsburgh Pirates,138,St. Louis Cardinals,Busch Stadium,Carmen Mlodzinski,669387.0,R,Michael McGreevy,700241.0,R
+823299,2026-05-21T00:40:00Z,Scheduled,119,Los Angeles Dodgers,135,San Diego Padres,Petco Park,Shohei Ohtani,660271.0,R,Randy Vásquez,681190.0,R
+824032,2026-05-21T01:38:00Z,Scheduled,133,Athletics,108,Los Angeles Angels,Angel Stadium,Aaron Civale,650644.0,R,Jack Kochanowicz,686799.0,R
