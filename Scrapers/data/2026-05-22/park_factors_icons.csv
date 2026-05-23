@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824518,Great American BP6:40STL @ CIN,"InLeft.svg,InLeft.svg,InLeft.svg,LightWind.png,HighH.png","InLeft.svg,InLeft.svg,InLeft.svg,Light Breeze,High Humidity"
+825082,Chase Field9:40COL @ ARI,"InCenter.svg,InLeftMiddle.svg,FromLeft.svg,Over90.png,LowH.png,LowP.png","InCenter.svg,InLeftMiddle.svg,FromLeft.svg,≥90°F,Low Humidity,Low Pressure"
+824761,Fenway Park7:10MIN @ BOS,"FromRight.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,Under55.png,HighP.png","FromRight.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,Under55.png,High Pressure"
+824029,Angel Stadium9:38TEX @ LAA,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,LowP.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,Low Pressure"
+824110,Kauffman Stadium7:40SEA @ KC,"FromRight.svg,FromRight.svg,InRightMiddle.svg,LightWind.png,HighH.png","FromRight.svg,FromRight.svg,InRightMiddle.svg,Light Breeze,High Humidity"
+823863,LoanDepot Park7:10NYM @ MIA,RoofClosed.png,Roof Closed
+822816,Rogers Centre7:07PIT @ TOR,RoofClosed.png,Roof Closed
+823788,American Family Fld7:40LAD @ MIL,RoofClosed.png,Roof Closed
+824842,Oriole Park7:05DET @ BAL,"InRight.svg,InRight.svg,InRight.svg,ModerateWind.png,Under55.png,HighH.png,HighP.png","InRight.svg,InRight.svg,InRight.svg,Moderate Wind,Under55.png,High Humidity,High Pressure"
+823461,Citizens Bank Park6:40CLE @ PHI,"FromRight.svg,InRightMiddle.svg,InRightMiddle.svg,LightWind.png,HighH.png,HighP.png","FromRight.svg,InRightMiddle.svg,InRightMiddle.svg,Light Breeze,High Humidity,High Pressure"
+823298,Petco Park9:40ATH @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,LowP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,Low Pressure"
+823223,Oracle Park10:15CHW @ SF,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,HighH.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,High Humidity,Low Pressure"
+824922,Truist Park7:15WAS @ ATL,"InLeftMiddle.svg,FromLeft.svg,InLeftMiddle.svg,LightWind.png,HighH.png","InLeftMiddle.svg,FromLeft.svg,InLeftMiddle.svg,Light Breeze,High Humidity"
+824679,Wrigley Field2:20HOU @ CHC,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,ModerateWind.png,HighP.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Moderate Wind,High Pressure"
+823546,Yankee Stadium7:05TB  @ NYY,"InRight.svg,InRight.svg,InRight.svg,ModerateWind.png,HighP.png","InRight.svg,InRight.svg,InRight.svg,Moderate Wind,High Pressure"
