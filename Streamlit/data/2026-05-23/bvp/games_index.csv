@@ -1,0 +1,17 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824518,2026-05-23T17:10:00Z,Scheduled,138,St. Louis Cardinals,113,Cincinnati Reds,Great American Ball Park,Andre Pallante,669467,R,Chris Paddack,663978,R
+824516,2026-05-23T23:15:00Z,Scheduled,138,St. Louis Cardinals,113,Cincinnati Reds,Great American Ball Park,Kyle Leahy,681517,R,Chase Petty,695534,R
+823543,2026-05-23T17:35:00Z,Scheduled,139,Tampa Bay Rays,147,New York Yankees,Yankee Stadium,Drew Rasmussen,656876,R,Ryan Weathers,677960,L
+824674,2026-05-23T18:20:00Z,Scheduled,117,Houston Astros,112,Chicago Cubs,Wrigley Field,Kai-Wei Teng,678906,R,Colin Rea,607067,R
+822814,2026-05-23T19:07:00Z,Scheduled,134,Pittsburgh Pirates,141,Toronto Blue Jays,Rogers Centre,Paul Skenes,694973,R,Patrick Corbin,571578,L
+824840,2026-05-23T20:05:00Z,Scheduled,116,Detroit Tigers,110,Baltimore Orioles,Oriole Park at Camden Yards,Framber Valdez,664285,L,Brandon Young,687064,R
+823458,2026-05-23T20:05:00Z,Scheduled,114,Cleveland Guardians,143,Philadelphia Phillies,Citizens Bank Park,Slade Cecconi,677944,R,Zack Wheeler,554430,R
+823222,2026-05-23T20:05:00Z,Scheduled,145,Chicago White Sox,137,San Francisco Giants,Oracle Park,Bryan Hudson,663542,L,Adrian Houser,605288,R
+824109,2026-05-23T20:10:00Z,Scheduled,136,Seattle Mariners,118,Kansas City Royals,Kauffman Stadium,George Kirby,669923,R,Stephen Kolek,663568,R
+824760,2026-05-23T20:10:00Z,Scheduled,142,Minnesota Twins,111,Boston Red Sox,Fenway Park,Taj Bradley,671737,R,Jovani Morán,663558,L
+824920,2026-05-23T20:10:00Z,Scheduled,120,Washington Nationals,144,Atlanta Braves,Truist Park,Jake Irvin,663623,R,Grant Holmes,656550,R
+823862,2026-05-23T20:10:00Z,Scheduled,121,New York Mets,146,Miami Marlins,loanDepot park,Freddy Peralta,642547,R,Max Meyer,676974,R
+823787,2026-05-23T23:15:00Z,Scheduled,119,Los Angeles Dodgers,158,Milwaukee Brewers,American Family Field,Roki Sasaki,808963,R,Robert Gasser,688107,L
+823300,2026-05-24T01:40:00Z,Scheduled,133,Athletics,135,San Diego Padres,Petco Park,J.T. Ginn,669372,R,Lucas Giolito,608337,R
+824030,2026-05-24T02:05:00Z,Scheduled,140,Texas Rangers,108,Los Angeles Angels,Angel Stadium,Nathan Eovaldi,543135,R,Walbert Ureña,700712,R
+825080,2026-05-24T02:10:00Z,Scheduled,115,Colorado Rockies,109,Arizona Diamondbacks,Chase Field,Michael Lorenzen,547179,R,Zac Gallen,668678,R
