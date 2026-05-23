@@ -1,0 +1,8 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824274,2026-05-21T17:10:00Z,Scheduled,114,Cleveland Guardians,116,Detroit Tigers,Comerica Park,Joey Cantillo,676282,L,Casey Mize,663554,R
+823056,2026-05-21T17:15:00Z,Scheduled,134,Pittsburgh Pirates,138,St. Louis Cardinals,Busch Stadium,Braxton Ashcraft,677952,R,Dustin May,669160,R
+822733,2026-05-21T20:05:00Z,Scheduled,121,New York Mets,120,Washington Nationals,Nationals Park,David Peterson,656849,L,Cade Cavalli,676917,R
+823864,2026-05-21T22:40:00Z,Scheduled,144,Atlanta Braves,146,Miami Marlins,loanDepot park,Spencer Strider,675911,R,Sandy Alcantara,645261,R
+823545,2026-05-21T23:05:00Z,Scheduled,141,Toronto Blue Jays,147,New York Yankees,Yankee Stadium,Braydon Fisher,680755,R,Carlos Rodón,607074,L
+824031,2026-05-22T01:38:00Z,Scheduled,133,Athletics,108,Los Angeles Angels,Angel Stadium,Luis Severino,622663,R,José Soriano,667755,R
+825083,2026-05-22T01:40:00Z,Scheduled,115,Colorado Rockies,109,Arizona Diamondbacks,Chase Field,Zach Agnos,688642,R,Eduardo Rodriguez,699134,R

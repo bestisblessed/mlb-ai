@@ -1,0 +1,13 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,3,,.333,.500,,Jose Ramirez,608070,,1,,0.00,1,,,13,.333,.666,Wheeler,554430,3,1,.333,1,1,2023
+1,3,,.333,.333,,Jose Ramirez,608070,,1,1,1.00,1,,2,6,.333,.666,Wheeler,554430,3,,.333,,1,2025
+3,3,,.000,.000,,Steven Kwan,680757,,1,,0.00,,,,10,.000,.000,Wheeler,554430,3,,.000,,,2023
+,3,,.667,.667,,Steven Kwan,680757,1,1,1,1.00,2,,,13,.667,1.667,Wheeler,554430,3,,1.000,,3,2025
+1,2,,.000,.000,1,Daniel Schneemann,682177,,1,,0.00,,,1,14,.333,.333,Wheeler,554430,3,,.000,1,,2025
+1,2,,.000,.000,,Angel Martinez,682657,,1,1,1.00,,,,6,.000,.000,Wheeler,554430,2,,.000,,,2025
+1,3,,.000,.000,,Kyle Manzardo,700932,,1,1,1.00,,,1,8,.000,.000,Wheeler,554430,3,,.000,1,,2025
+,2,,.500,.500,,Austin Hedges,595978,,1,1,1.00,1,,,11,.500,1.000,Wheeler,554430,2,,.500,,1,2018
+1,1,,.000,.000,1,Patrick Bailey,672275,,1,,0.00,,,2,12,.500,.500,Wheeler,554430,2,,.000,,,2024
+,7,,.143,.200,,Rhys Hoskins,656555,,2,4,4.00,1,,3,27,.143,.286,Wheeler,554430,7,1,.143,2,1,2018
+2,13,,.231,.429,2,Rhys Hoskins,656555,1,5,2,1.00,3,,4,75,.333,.641,Wheeler,554430,15,1,.308,6,4,2019
+1,4,4.00,.250,.000,1,Rhys Hoskins,656555,,2,1,1.00,1,1,1,21,.400,1.400,Wheeler,554430,5,1,1.000,1,4,2024
