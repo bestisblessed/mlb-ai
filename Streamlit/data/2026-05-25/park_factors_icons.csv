@@ -1,0 +1,14 @@
+game_id,game,icons,icon_labels
+825005,Sutter Health Park9:40SEA @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,HeavyWind.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Heavy Wind,Low Pressure"
+824598,Rate Field2:10MIN @ CHW,"InRightCenter.svg,InRightCenter.svg,InRight.svg,LightWind.png,From83to89.png,HighP.png","InRightCenter.svg,InRightCenter.svg,InRight.svg,Light Breeze,83–89°F,High Pressure"
+824107,Kauffman Stadium3:40NYY @ KC,"OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png,From83to89.png","OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,Moderate Wind,83–89°F"
+823380,PNC Park1:35CHC @ PIT,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,HighH.png,HighP.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,High Humidity,High Pressure"
+824838,Oriole Park1:35TB  @ BAL,"InLeft.svg,InLeft.svg,InLeftMiddle.svg,HighH.png,HighP.png","InLeft.svg,InLeft.svg,InLeftMiddle.svg,High Humidity,High Pressure"
+823948,Dodger Stadium9:10COL @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze"
+823625,Citi Field4:10CIN @ NYM,"OutRightMiddle.svg,OutRight.svg,OutRightCenter.svg,HighH.png,HighP.png","OutRightMiddle.svg,OutRight.svg,OutRightCenter.svg,High Humidity,High Pressure"
+823219,Oracle Park5:05ARI @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,HighH.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,High Humidity"
+823784,American Family Fld2:10STL @ MIL,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,From83to89.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,83–89°F"
+822899,Globe Life Field7:05HOU @ TEX,RoofClosed.png,Roof Closed
+822812,Rogers Centre7:07MIA @ TOR,"OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,LightWind.png,HighP.png","OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,Light Breeze,High Pressure"
+823296,Petco Park6:40PHI @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,ModerateWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Moderate Wind"
+824437,Progressive Field6:10WAS @ CLE,"InRightCenter.svg,InRight.svg,InRight.svg,HighP.png","InRightCenter.svg,InRight.svg,InRight.svg,High Pressure"
