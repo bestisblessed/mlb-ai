@@ -1,0 +1,14 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823380,2026-05-25T17:35:00Z,Scheduled,112,Chicago Cubs,134,Pittsburgh Pirates,PNC Park,Ben Brown,676962,R,Carmen Mlodzinski,669387,R
+824838,2026-05-25T17:35:00Z,Scheduled,139,Tampa Bay Rays,110,Baltimore Orioles,Oriole Park at Camden Yards,Shane McClanahan,663556,L,Kyle Bradish,680694,R
+824598,2026-05-25T18:10:00Z,Scheduled,142,Minnesota Twins,145,Chicago White Sox,Rate Field,Zebby Matthews,805673,R,Anthony Kay,641743,L
+823784,2026-05-25T18:10:00Z,Scheduled,138,St. Louis Cardinals,158,Milwaukee Brewers,American Family Field,Matthew Liberatore,669461,L,Jacob Misiorowski,694819,R
+824107,2026-05-25T19:40:00Z,Scheduled,147,New York Yankees,118,Kansas City Royals,Kauffman Stadium,Will Warren,701542,R,Michael Wacha,608379,R
+823625,2026-05-25T20:10:00Z,Scheduled,113,Cincinnati Reds,121,New York Mets,Citi Field,Nick Lodolo,666157,L,Nolan McLean,690997,R
+823219,2026-05-25T21:05:00Z,Scheduled,109,Arizona Diamondbacks,137,San Francisco Giants,Oracle Park,Merrill Kelly,518876,R,Landen Roupp,694738,R
+824437,2026-05-25T22:10:00Z,Scheduled,120,Washington Nationals,114,Cleveland Guardians,Progressive Field,Zack Littell,641793,R,Tanner Bibee,676440,R
+823296,2026-05-25T22:40:00Z,Scheduled,143,Philadelphia Phillies,135,San Diego Padres,Petco Park,Jesús Luzardo,666200,L,Randy Vásquez,681190,R
+822899,2026-05-25T23:05:00Z,Scheduled,117,Houston Astros,140,Texas Rangers,Globe Life Field,Tatsuya Imai,837227,R,Kumar Rocker,677958,R
+822812,2026-05-25T23:07:00Z,Scheduled,146,Miami Marlins,141,Toronto Blue Jays,Rogers Centre,Janson Junk,676083,R,Trey Yesavage,702056,R
+823948,2026-05-26T01:10:00Z,Scheduled,115,Colorado Rockies,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Tanner Gordon,685299,R,Emmet Sheehan,686218,R
+825005,2026-05-26T01:40:00Z,Scheduled,136,Seattle Mariners,133,Athletics,Sutter Health Park,Luis Castillo,622491,R,Aaron Civale,650644,R
