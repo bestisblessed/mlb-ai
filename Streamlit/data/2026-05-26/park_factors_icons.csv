@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+825004,Sutter Health Park9:40SEA @ ATH,"OutRightCenter.svg,OutLeftCenter.svg,OutLeft.svg,LowP.png","OutRightCenter.svg,OutLeftCenter.svg,OutLeft.svg,Low Pressure"
+824758,Fenway Park6:45ATL @ BOS,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,ModerateWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,Moderate Wind"
+824837,Oriole Park6:35TB  @ BAL,"OutLeft.svg,OutLeft.svg,OutLeft.svg,HighH.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,High Humidity"
+822811,Rogers Centre7:07MIA @ TOR,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze"
+823379,PNC Park6:40CHC @ PIT,"OutRight.svg,OutRight.svg,OutRight.svg,From76to82.png","OutRight.svg,OutRight.svg,OutRight.svg,76–82°F"
+823785,American Family Fld7:40STL @ MIL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,From76to82.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,76–82°F"
+824106,Kauffman Stadium7:40NYY @ KC,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg"
+824597,Rate Field7:40MIN @ CHW,"InRightCenter.svg,InRightCenter.svg,InRight.svg,LightWind.png","InRightCenter.svg,InRightCenter.svg,InRight.svg,Light Breeze"
+824275,Comerica Park6:40LAA @ DET,"InRight.svg,InRightMiddle.svg,InRightMiddle.svg,LightWind.png,From76to82.png","InRight.svg,InRightMiddle.svg,InRightMiddle.svg,Light Breeze,76–82°F"
+823216,Oracle Park9:45ARI @ SF,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,HeavyWind.png,LowP.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Heavy Wind,Low Pressure"
+823949,Dodger Stadium10:10COL @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,LowP.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,Low Pressure"
+822898,Globe Life Field8:05HOU @ TEX,RoofClosed.png,Roof Closed
+824434,Progressive Field6:10WAS @ CLE,"InLeft.svg,InLeftCenter.svg,OutRightMiddle.svg","InLeft.svg,InLeftCenter.svg,OutRightMiddle.svg"
+823294,Petco Park9:40PHI @ SD,"FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,ModerateWind.png,LowP.png","FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,Moderate Wind,Low Pressure"
+823624,Citi Field7:10CIN @ NYM,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze"
