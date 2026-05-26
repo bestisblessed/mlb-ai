@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824434,2026-05-26T22:10:00Z,Scheduled,120,Washington Nationals,114,Cleveland Guardians,Progressive Field,Cade Cavalli,676917,R,Joey Cantillo,676282.0,L
+824837,2026-05-26T22:35:00Z,Scheduled,139,Tampa Bay Rays,110,Baltimore Orioles,Oriole Park at Camden Yards,Griffin Jax,643377,R,Shane Baz,669358.0,R
+824275,2026-05-26T22:40:00Z,Scheduled,108,Los Angeles Angels,116,Detroit Tigers,Comerica Park,Jack Kochanowicz,686799,R,Keider Montero,672456.0,R
+823379,2026-05-26T22:40:00Z,Scheduled,112,Chicago Cubs,134,Pittsburgh Pirates,PNC Park,Jordan Wicks,696136,L,Braxton Ashcraft,677952.0,R
+824758,2026-05-26T22:45:00Z,Scheduled,144,Atlanta Braves,111,Boston Red Sox,Fenway Park,Spencer Strider,675911,R,Ranger Suarez,624133.0,L
+822811,2026-05-26T23:07:00Z,Scheduled,146,Miami Marlins,141,Toronto Blue Jays,Rogers Centre,Sandy Alcantara,645261,R,Braydon Fisher,680755.0,R
+823624,2026-05-26T23:10:00Z,Scheduled,113,Cincinnati Reds,121,New York Mets,Citi Field,Chase Burns,695505,R,,,
+824597,2026-05-26T23:40:00Z,Scheduled,142,Minnesota Twins,145,Chicago White Sox,Rate Field,Joe Ryan,657746,R,Sean Burke,680732.0,R
+824106,2026-05-26T23:40:00Z,Scheduled,147,New York Yankees,118,Kansas City Royals,Kauffman Stadium,Cam Schlittler,693645,R,Bailey Falter,663559.0,L
+823785,2026-05-26T23:40:00Z,Scheduled,138,St. Louis Cardinals,158,Milwaukee Brewers,American Family Field,Michael McGreevy,700241,R,Kyle Harrison,690986.0,L
+822898,2026-05-27T00:05:00Z,Scheduled,117,Houston Astros,140,Texas Rangers,Globe Life Field,Jason Alexander,669920,R,Jack Leiter,683004.0,R
+825004,2026-05-27T01:40:00Z,Scheduled,136,Seattle Mariners,133,Athletics,Sutter Health Park,Emerson Hancock,676106,R,Luis Severino,622663.0,R
+823294,2026-05-27T01:40:00Z,Scheduled,143,Philadelphia Phillies,135,San Diego Padres,Petco Park,Aaron Nola,605400,R,Randy Vásquez,681190.0,R
+823216,2026-05-27T01:45:00Z,Scheduled,109,Arizona Diamondbacks,137,San Francisco Giants,Oracle Park,Eduardo Rodriguez,699134,R,Tyler Mahle,641816.0,R
+823949,2026-05-27T02:10:00Z,Scheduled,115,Colorado Rockies,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Kyle Freeland,607536,L,Eric Lauer,641778.0,L
