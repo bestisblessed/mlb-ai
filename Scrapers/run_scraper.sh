@@ -21,7 +21,8 @@ export PATH="$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH"
 export DISPLAY="${DISPLAY:-:2}"
 export BALLPARKPAL_HEADLESS=0
 
-for pid in $(pgrep -u "$USER" lxsession || true); do
+RUN_USER="${USER:-$(id -un)}"
+for pid in $(pgrep -u "$RUN_USER" lxsession || true); do
     env_file="/proc/$pid/environ"
     if tr '\0' '\n' < "$env_file" 2>/dev/null | grep -qx "DISPLAY=$DISPLAY"; then
         while IFS= read -r item; do
