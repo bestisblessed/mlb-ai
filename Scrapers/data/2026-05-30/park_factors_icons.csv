@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824352,Coors Field9:10SF  @ COL,"InRight.svg,InRightCenter.svg,InCenter.svg,LowP.png","InRight.svg,InRightCenter.svg,InCenter.svg,Low Pressure"
+825000,Sutter Health Park10:05NYY @ ATH,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+824513,Great American BP7:15ATL @ CIN,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+824593,Rate Field2:10DET @ CHW,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,ModerateWind.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Moderate Wind,High Pressure"
+824190,Daikin Park4:10MIL @ HOU,RoofClosed.png,Roof Closed
+823054,Busch Stadium7:15CHC @ STL,"InRight.svg,InRight.svg,InRightCenter.svg,LightWind.png,From83to89.png","InRight.svg,InRight.svg,InRightCenter.svg,Light Breeze,83–89°F"
+824833,Oriole Park4:05TOR @ BAL,"InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,ModerateWind.png","InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,Moderate Wind"
+822975,Tropicana Field4:10LAA @ TB,RoofClosed.png,Roof Closed
+823945,Dodger Stadium10:10PHI @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze"
+822731,Nationals Park4:05SD  @ WAS,"InLeft.svg,InLeft.svg,InLeft.svg,ModerateWind.png,From76to82.png","InLeft.svg,InLeft.svg,InLeft.svg,Moderate Wind,76–82°F"
+823375,PNC Park4:05MIN @ PIT,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+822893,Globe Life Field4:05KC  @ TEX,RoofClosed.png,Roof Closed
+824431,Progressive Field4:10BOS @ CLE,"InRight.svg,InRight.svg,InRight.svg,HeavyWind.png,HighP.png","InRight.svg,InRight.svg,InRight.svg,Heavy Wind,High Pressure"
+823622,Citi Field4:10MIA @ NYM,"InCenter.svg,InRightCenter.svg,InCenter.svg,ModerateWind.png","InCenter.svg,InRightCenter.svg,InCenter.svg,Moderate Wind"
+823132,T-Mobile Park10:10ARI @ SEA,"InLeft.svg,InLeft.svg,InCenter.svg,LightWind.png,HighP.png","InLeft.svg,InLeft.svg,InCenter.svg,Light Breeze,High Pressure"
