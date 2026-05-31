@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824832,2026-05-31T16:15:00Z,Scheduled,141,Toronto Blue Jays,110,Baltimore Orioles,Oriole Park at Camden Yards,Spencer Miles,693686,R,Kyle Bradish,680694,R
+822729,2026-05-31T17:35:00Z,Scheduled,135,San Diego Padres,120,Washington Nationals,Nationals Park,Griffin Canning,656288,R,Zack Littell,641793,R
+823373,2026-05-31T17:35:00Z,Scheduled,142,Minnesota Twins,134,Pittsburgh Pirates,PNC Park,Zebby Matthews,805673,R,Braxton Ashcraft,677952,R
+824430,2026-05-31T17:40:00Z,Scheduled,111,Boston Red Sox,114,Cleveland Guardians,Progressive Field,Ranger Suarez,624133,L,Tanner Bibee,676440,R
+822976,2026-05-31T17:40:00Z,Scheduled,108,Los Angeles Angels,139,Tampa Bay Rays,Tropicana Field,Jack Kochanowicz,686799,R,Shane McClanahan,663556,L
+824512,2026-05-31T17:40:00Z,Scheduled,144,Atlanta Braves,113,Cincinnati Reds,Great American Ball Park,Spencer Strider,675911,R,Nick Lodolo,666157,L
+823621,2026-05-31T17:40:00Z,Scheduled,146,Miami Marlins,121,New York Mets,Citi Field,Janson Junk,676083,R,Nolan McLean,690997,R
+824592,2026-05-31T18:10:00Z,Scheduled,116,Detroit Tigers,145,Chicago White Sox,Rate Field,Keider Montero,672456,R,Sean Burke,680732,R
+824187,2026-05-31T18:10:00Z,Scheduled,158,Milwaukee Brewers,117,Houston Astros,Daikin Park,Jacob Misiorowski,694819,R,Tatsuya Imai,837227,R
+822895,2026-05-31T18:35:00Z,Scheduled,118,Kansas City Royals,140,Texas Rangers,Globe Life Field,Michael Wacha,608379,R,Jack Leiter,683004,R
+824354,2026-05-31T19:10:00Z,Scheduled,137,San Francisco Giants,115,Colorado Rockies,Coors Field,Robbie Ray,592662,L,Tanner Gordon,685299,R
+825001,2026-05-31T20:05:00Z,Scheduled,147,New York Yankees,133,Athletics,Sutter Health Park,Will Warren,701542,R,Jacob Lopez,682052,L
+823133,2026-05-31T20:10:00Z,Scheduled,109,Arizona Diamondbacks,136,Seattle Mariners,T-Mobile Park,Merrill Kelly,518876,R,Bryce Miller,682243,R
+823944,2026-05-31T20:10:00Z,Scheduled,143,Philadelphia Phillies,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Andrew Painter,691725,R,Yoshinobu Yamamoto,808967,R
+823053,2026-05-31T23:20:00Z,Scheduled,112,Chicago Cubs,138,St. Louis Cardinals,Busch Stadium,Jordan Wicks,696136,L,Matthew Liberatore,669461,L
