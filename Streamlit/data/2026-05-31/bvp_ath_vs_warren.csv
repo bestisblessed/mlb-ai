@@ -1,0 +1,14 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,4,.500,.667,1,Nick Kurtz,701762,1,2,1,1.00,2,1,19,.600,1.350,Warren,701542,5,,.750,1,3,2025
+,3,.333,1.000,,Nick Kurtz,701762,,1,,,1,2,14,.333,.666,Warren,701542,3,,.333,2,1,2026
+,6,.333,.500,,Brent Rooker,667670,,2,2,2.00,2,4,20,.333,.666,Warren,701542,6,,.333,2,2,2025
+1,2,.000,.000,1,Brent Rooker,667670,,1,1,1.00,,1,8,.333,.333,Warren,701542,3,,.000,,,2026
+,1,.000,.000,1,Carlos Cortes,666126,,1,1,1.00,,,10,.500,.500,Warren,701542,2,,.000,,,2026
+1,3,.000,.000,,Shea Langeliers,669127,,1,,0.00,,2,12,.000,.000,Warren,701542,3,,.000,2,,2025
+2,3,.333,.333,,Shea Langeliers,669127,,1,,0.00,1,1,7,.333,.666,Warren,701542,3,,.333,,1,2026
+,2,.500,.500,,Jeff McNeil,643446,,1,1,1.00,1,1,5,.500,1.000,Warren,701542,2,1,.500,,1,2026
+1,3,.000,.000,2,Tyler Soderstrom,691016,,2,1,1.00,,1,26,.400,.400,Warren,701542,5,,.000,1,,2025
+,3,.000,.000,,Tyler Soderstrom,691016,,1,2,2.00,,2,11,.000,.000,Warren,701542,3,,.000,1,,2026
+,4,.250,.500,,Jonah Heim,641680,1,2,1,1.00,1,3,15,.250,.750,Warren,701542,4,,.500,2,2,2025
+3,5,.000,.000,1,Lawrence Butler,671732,,2,1,0.33,,2,26,.167,.167,Warren,701542,6,,.000,1,,2025
+,1,1.000,1.000,1,Lawrence Butler,671732,,1,,,1,,14,1.000,2.000,Warren,701542,2,,1.000,,1,2026
