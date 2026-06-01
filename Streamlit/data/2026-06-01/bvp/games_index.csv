@@ -1,0 +1,10 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822974,2026-06-01T22:40:00Z,Scheduled,116,Detroit Tigers,139,Tampa Bay Rays,Tropicana Field,Ty Madden,680744.0,R,Griffin Jax,643377,R
+822730,2026-06-01T22:45:00Z,Scheduled,146,Miami Marlins,120,Washington Nationals,Nationals Park,Sandy Alcantara,645261.0,R,Cade Cavalli,676917,R
+824510,2026-06-01T23:10:00Z,Scheduled,118,Kansas City Royals,113,Cincinnati Reds,Great American Ball Park,Luinder Avila,679883.0,R,Chase Burns,695505,R
+823702,2026-06-01T23:40:00Z,Scheduled,145,Chicago White Sox,142,Minnesota Twins,Target Field,,,,Joe Ryan,657746,R
+823781,2026-06-01T23:40:00Z,Scheduled,137,San Francisco Giants,158,Milwaukee Brewers,American Family Field,Landen Roupp,694738.0,R,Shane Drohan,675660,L
+823050,2026-06-01T23:45:00Z,Scheduled,140,Texas Rangers,138,St. Louis Cardinals,Busch Stadium,Jacob deGrom,594798.0,R,Michael McGreevy,700241,R
+824027,2026-06-02T01:38:00Z,Scheduled,115,Colorado Rockies,108,Los Angeles Angels,Angel Stadium,Kyle Freeland,607536.0,L,José Soriano,667755,R
+825078,2026-06-02T01:40:00Z,Scheduled,119,Los Angeles Dodgers,109,Arizona Diamondbacks,Chase Field,Emmet Sheehan,686218.0,R,Eduardo Rodriguez,699134,R
+823131,2026-06-02T01:40:00Z,Scheduled,121,New York Mets,136,Seattle Mariners,T-Mobile Park,Austin Warren,681810.0,R,Emerson Hancock,676106,R
