@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822727,2026-06-03T17:05:00Z,Warmup,146,Miami Marlins,120,Washington Nationals,Nationals Park,Max Meyer,676974,R,Andrew Alvarez,674841.0,L
+822973,2026-06-03T17:10:00Z,Warmup,116,Detroit Tigers,139,Tampa Bay Rays,Tropicana Field,Troy Melton,675512,R,Nick Martinez,607259.0,R
+823701,2026-06-03T17:40:00Z,Pre-Game,145,Chicago White Sox,142,Minnesota Twins,Target Field,Erick Fedde,607200,R,Taj Bradley,671737.0,R
+823130,2026-06-03T19:40:00Z,Pre-Game,121,New York Mets,136,Seattle Mariners,T-Mobile Park,Freddy Peralta,642547,R,George Kirby,669923.0,R
+823456,2026-06-03T22:40:00Z,Scheduled,135,San Diego Padres,143,Philadelphia Phillies,Citizens Bank Park,Walker Buehler,621111,R,Cristopher Sánchez,650911.0,L
+824755,2026-06-03T22:45:00Z,Scheduled,110,Baltimore Orioles,111,Boston Red Sox,Fenway Park,Chris Bassitt,605135,R,Payton Tolle,801139.0,L
+823540,2026-06-03T23:05:00Z,Scheduled,114,Cleveland Guardians,147,New York Yankees,Yankee Stadium,Gavin Williams,668909,R,Gerrit Cole,543037.0,R
+824509,2026-06-03T23:10:00Z,Scheduled,118,Kansas City Royals,113,Cincinnati Reds,Great American Ball Park,Stephen Kolek,663568,R,Chase Burns,695505.0,R
+824917,2026-06-03T23:15:00Z,Scheduled,141,Toronto Blue Jays,144,Atlanta Braves,Truist Park,Patrick Corbin,571578,L,Grant Holmes,656550.0,R
+823780,2026-06-03T23:40:00Z,Scheduled,137,San Francisco Giants,158,Milwaukee Brewers,American Family Field,Logan Webb,657277,R,,,
+823051,2026-06-03T23:45:00Z,Scheduled,140,Texas Rangers,138,St. Louis Cardinals,Busch Stadium,MacKenzie Gore,669022,L,Andre Pallante,669467.0,R
+824671,2026-06-04T00:05:00Z,Scheduled,133,Athletics,112,Chicago Cubs,Wrigley Field,Jeffrey Springs,605488,L,Colin Rea,607067.0,R
+824188,2026-06-04T00:10:00Z,Scheduled,134,Pittsburgh Pirates,117,Houston Astros,Daikin Park,Paul Skenes,694973,R,Spencer Arrighetti,681293.0,R
+824024,2026-06-04T01:38:00Z,Scheduled,115,Colorado Rockies,108,Los Angeles Angels,Angel Stadium,Michael Lorenzen,547179,R,Walbert Ureña,700712.0,R
+825077,2026-06-04T01:40:00Z,Scheduled,119,Los Angeles Dodgers,109,Arizona Diamondbacks,Chase Field,Shohei Ohtani,660271,R,Zac Gallen,668678.0,R
