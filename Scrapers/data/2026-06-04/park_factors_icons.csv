@@ -1,10 +1,10 @@
 game_id,game,icons,icon_labels
 824753,Fenway Park1:35BAL @ BOS,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From83to89.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,83–89°F"
-824672,Wrigley Field8:05ATH @ CHC,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind"
-823457,Citizens Bank Park1:05SD  @ PHI,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,From83to89.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,83–89°F,High Pressure"
-823698,Target Field7:40KC  @ MIN,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,ModerateWind.png,LowP.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Moderate Wind,Low Pressure"
+824672,Wrigley Field8:05ATH @ CHC,"OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png","OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F"
+823457,Citizens Bank Park1:05SD  @ PHI,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,Over90.png,LowH.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,≥90°F,Low Humidity,High Pressure"
+823698,Target Field7:40KC  @ MIN,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,LightWind.png,LowP.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,Light Breeze,Low Pressure"
 825076,Chase Field9:40LAD @ ARI,RoofClosed.png,Roof Closed
 824185,Daikin Park8:10PIT @ HOU,RoofClosed.png,Roof Closed
 823779,American Family Fld2:10SF  @ MIL,"FromRight.svg,FromRight.svg,FromRight.svg,ModerateWind.png,From76to82.png","FromRight.svg,FromRight.svg,FromRight.svg,Moderate Wind,76–82°F"
+823542,Yankee Stadium1:35CLE @ NYY,"OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,From83to89.png,HighP.png","OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,83–89°F,High Pressure"
 824919,Truist Park7:15TOR @ ATL,"InLeft.svg,InLeft.svg,InLeftCenter.svg,LightWind.png,From76to82.png,HighP.png","InLeft.svg,InLeft.svg,InLeftCenter.svg,Light Breeze,76–82°F,High Pressure"
-823542,Yankee Stadium1:35CLE @ NYY,"OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,LightWind.png,From83to89.png,HighP.png","OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,Light Breeze,83–89°F,High Pressure"
