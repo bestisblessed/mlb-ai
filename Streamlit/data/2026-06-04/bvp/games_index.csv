@@ -1,0 +1,10 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823457,2026-06-04T17:05:00Z,Scheduled,135,San Diego Padres,143,Philadelphia Phillies,Citizens Bank Park,Lucas Giolito,608337.0,R,Zack Wheeler,554430,R
+824753,2026-06-04T17:35:00Z,Scheduled,110,Baltimore Orioles,111,Boston Red Sox,Fenway Park,Trevor Rogers,669432.0,L,Brayan Bello,678394,R
+823542,2026-06-04T17:35:00Z,Scheduled,114,Cleveland Guardians,147,New York Yankees,Yankee Stadium,Slade Cecconi,677944.0,R,Carlos Rodón,607074,L
+823779,2026-06-04T18:10:00Z,Scheduled,137,San Francisco Giants,158,Milwaukee Brewers,American Family Field,Adrian Houser,605288.0,R,Coleman Crow,689441,R
+824919,2026-06-04T23:15:00Z,Scheduled,141,Toronto Blue Jays,144,Atlanta Braves,Truist Park,,,,Chris Sale,519242,L
+823698,2026-06-04T23:40:00Z,Scheduled,118,Kansas City Royals,142,Minnesota Twins,Target Field,Seth Lugo,607625.0,R,Andrew Morris,702193,R
+824672,2026-06-05T00:05:00Z,Scheduled,133,Athletics,112,Chicago Cubs,Wrigley Field,J.T. Ginn,669372.0,R,Shota Imanaga,684007,L
+824185,2026-06-05T00:10:00Z,Scheduled,134,Pittsburgh Pirates,117,Houston Astros,Daikin Park,Jared Jones,683003.0,R,Kai-Wei Teng,678906,R
+825076,2026-06-05T01:40:00Z,Scheduled,119,Los Angeles Dodgers,109,Arizona Diamondbacks,Chase Field,Justin Wrobleski,680736.0,L,Ryne Nelson,669194,R
