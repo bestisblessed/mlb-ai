@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824350,Coors Field8:40MIL @ COL,"OutLeftCenter.svg,OutCenter.svg,OutRightCenter.svg,ModerateWind.png,From76to82.png,LowH.png,LowP.png","OutLeftCenter.svg,OutCenter.svg,OutRightCenter.svg,Moderate Wind,76–82°F,Low Humidity,Low Pressure"
+824673,Wrigley Field2:20SF  @ CHC,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,ModerateWind.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Moderate Wind"
+823455,Citizens Bank Park6:40CHW @ PHI,"FromLeft.svg,FromLeft.svg,OutRightMiddle.svg,LightWind.png,From83to89.png","FromLeft.svg,FromLeft.svg,OutRightMiddle.svg,Light Breeze,83–89°F"
+823699,Target Field8:15KC  @ MIN,"OutRight.svg,FromLeft.svg,InLeftMiddle.svg,LightWind.png,From76to82.png,LowP.png","OutRight.svg,FromLeft.svg,InLeftMiddle.svg,Light Breeze,76–82°F,Low Pressure"
+824271,Comerica Park6:40SEA @ DET,"InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,ModerateWind.png,From76to82.png","InRightMiddle.svg,InRightMiddle.svg,FromRight.svg,Moderate Wind,76–82°F"
+825073,Chase Field9:40WAS @ ARI,RoofClosed.png,Roof Closed
+823049,Busch Stadium8:15CIN @ STL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,ModerateWind.png,From76to82.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,Moderate Wind,76–82°F"
+823943,Dodger Stadium10:10LAA @ LAD,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeft.svg,LightWind.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeft.svg,Light Breeze,Low Pressure"
+824914,Truist Park7:15PIT @ ATL,"InRight.svg,InRight.svg,InRight.svg,LightWind.png,From83to89.png","InRight.svg,InRight.svg,InRight.svg,Light Breeze,83–89°F"
+822810,Rogers Centre7:07BAL @ TOR,"FromLeft.svg,OutRightMiddle.svg,OutRightMiddle.svg","FromLeft.svg,OutRightMiddle.svg,OutRightMiddle.svg"
+823538,Yankee Stadium7:05BOS @ NYY,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+823860,LoanDepot Park7:10TB  @ MIA,RoofClosed.png,Roof Closed
+824186,Daikin Park8:10ATH @ HOU,RoofClosed.png,Roof Closed
+822892,Globe Life Field8:15CLE @ TEX,RoofClosed.png,Roof Closed
+823293,Petco Park9:40NYM @ SD,"OutRight.svg,OutRight.svg,OutRightCenter.svg,LightWind.png,LowP.png","OutRight.svg,OutRight.svg,OutRightCenter.svg,Light Breeze,Low Pressure"
