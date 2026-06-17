@@ -1,5 +1,6 @@
 bak*
 playwright_user_data/
+ballparkpal_storage_state.json
 data/baseball-ref/raw-players-game-logs/
 data/baseball-ref/raw*
 *DS_*
