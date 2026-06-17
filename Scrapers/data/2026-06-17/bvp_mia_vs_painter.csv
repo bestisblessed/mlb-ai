@@ -1,8 +1,8 @@
 airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
-,3,,.333,1.000,,Kyle Stowers,669065,1,,,1,,,18,.333,.666,Painter,691725,3,,.333,2,1,
+,3,,.333,1.000,,Kyle Stowers,669065,1,,,1,,,18,.333,.666,Painter,691725,3,,.333,2,1,2026
 ,2,,.500,1.000,1,Connor Norby,681393,1,,,1,,1,13,.667,1.167,Painter,691725,3,1,.500,1,1,2026
 ,2,,.000,.---,,Esteury Ruiz,665923,1,,,,,3,9,.000,.000,Painter,691725,2,,.000,2,,2026
-3,3,,.000,.000,,Jakob Marsee,805300,1,,0.00,,,,7,.000,.000,Painter,691725,3,,.000,,,
-1,3,,.333,.500,,Otto Lopez,672640,1,,0.00,1,,,12,.333,.666,Painter,691725,3,,.333,1,1,2026
+3,3,,.000,.000,,Jakob Marsee,805300,1,,0.00,,,,7,.000,.000,Painter,691725,3,,.000,,,2026
+1,3,,.333,.500,,Otto Lopez,672640,1,,0.00,1,,,12,.333,.666,Painter,691725,3,,.333,1,1,
 ,3,,.333,.500,,Liam Hicks,689414,1,1,1.00,1,,3,10,.333,.666,Painter,691725,3,,.333,1,1,2026
-1,3,3.00,.667,.500,,Xavier Edwards,669364,1,,0.00,2,1,,7,.667,2.334,Painter,691725,3,1,1.667,,5,2026
+1,3,3.00,.667,.500,,Xavier Edwards,669364,1,,0.00,2,1,,7,.667,2.334,Painter,691725,3,1,1.667,,5,
