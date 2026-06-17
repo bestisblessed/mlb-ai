@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824503,2026-06-17T16:40:00Z,Scheduled,121,New York Mets,113,Cincinnati Reds,Great American Ball Park,Nolan McLean,690997.0,R,Nick Lodolo,666157,L
+822721,2026-06-17T17:05:00Z,Scheduled,118,Kansas City Royals,120,Washington Nationals,Nationals Park,Luinder Avila,679883.0,R,Zack Littell,641793,R
+823450,2026-06-17T17:05:00Z,Scheduled,146,Miami Marlins,143,Philadelphia Phillies,Citizens Bank Park,Sandy Alcantara,645261.0,R,Andrew Painter,691725,R
+824912,2026-06-17T18:00:00Z,Suspended,137,San Francisco Giants,144,Atlanta Braves,Truist Park,Adrian Houser,605288.0,R,Grant Holmes,656550,R
+824178,2026-06-17T18:10:00Z,Scheduled,116,Detroit Tigers,117,Houston Astros,Daikin Park,Casey Mize,663554.0,R,Peter Lambert,663567,R
+823044,2026-06-17T18:15:00Z,Scheduled,135,San Diego Padres,138,St. Louis Cardinals,Busch Stadium,,,,Kyle Leahy,681517,R
+823940,2026-06-17T19:10:00Z,Scheduled,139,Tampa Bay Rays,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Shane McClanahan,663556.0,L,Shohei Ohtani,660271,R
+825072,2026-06-17T19:40:00Z,Scheduled,108,Los Angeles Angels,109,Arizona Diamondbacks,Chase Field,Sam Aldegheri,691951.0,L,Eduardo Rodriguez,699134,R
+824746,2026-06-17T22:45:00Z,Scheduled,141,Toronto Blue Jays,111,Boston Red Sox,Fenway Park,Max Scherzer,453286.0,R,Jake Bennett,687562,L
+823536,2026-06-17T23:05:00Z,Scheduled,145,Chicago White Sox,147,New York Yankees,Yankee Stadium,Anthony Kay,641743.0,L,Carlos Rodón,607074,L
+824913,2026-06-17T23:15:00Z,Scheduled,137,San Francisco Giants,144,Atlanta Braves,Truist Park,,,,JR Ritchie,702275,R
+823774,2026-06-17T23:40:00Z,Scheduled,114,Cleveland Guardians,158,Milwaukee Brewers,American Family Field,Gavin Williams,668909.0,R,Brandon Sproat,687075,R
+824668,2026-06-18T00:05:00Z,Scheduled,115,Colorado Rockies,112,Chicago Cubs,Wrigley Field,Sean Sullivan,807743.0,L,Javier Assad,665871,R
+824992,2026-06-18T01:40:00Z,Scheduled,134,Pittsburgh Pirates,133,Athletics,Sutter Health Park,Braxton Ashcraft,677952.0,R,Aaron Civale,650644,R
+823127,2026-06-18T01:40:00Z,Scheduled,110,Baltimore Orioles,136,Seattle Mariners,T-Mobile Park,Kyle Bradish,680694.0,R,George Kirby,669923,R
