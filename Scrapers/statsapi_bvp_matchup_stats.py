@@ -1,4 +1,5 @@
 import mlbstatsapi
+import statsapi
 import csv
 import os
 import re
@@ -21,28 +22,27 @@ MAX_DELAY = 60
 def safe_filename(s):
     return re.sub(r'[^A-Za-z0-9_]', '', s.replace(' ', '_'))
 
-def get_player_stats_with_retry(batter_id, pitcher_id):
-    """Get player stats with exponential backoff retry logic."""
+def get_player_splits_with_retry(batter_id, pitcher_id):
+    """Get yearly Batter-vs-Pitcher splits with exponential backoff retry logic."""
+    hydrate = (
+        "stats(group=[hitting],"
+        f"type=[vsPlayer],opposingPlayerId={int(pitcher_id)},sportId=1)"
+    )
     for attempt in range(MAX_RETRIES):
         try:
-            stats = mlb.get_player_stats(
-                int(batter_id),
-                stats=['vsPlayer'],
-                groups=['hitting'],
-                opposingPlayerId=int(pitcher_id)
-            )
-            return stats
+            data = statsapi.get("person", {"personId": int(batter_id), "hydrate": hydrate})
+            people = data.get("people") or []
+            stats = people[0].get("stats") if people else []
+            return (stats[0].get("splits") if stats else []) or []
         except Exception as e:
             if attempt < MAX_RETRIES - 1:
-                # Exponential backoff with jitter
                 delay = min(BASE_DELAY * (2 ** attempt) + random.uniform(0, 1), MAX_DELAY)
                 print(f"Attempt {attempt + 1} failed for batter {batter_id} vs pitcher {pitcher_id}: {e}")
                 print(f"Retrying in {delay:.1f} seconds...")
                 time.sleep(delay)
                 continue
-            else:
-                print(f"Failed to fetch stats for batter {batter_id} vs pitcher {pitcher_id} after {MAX_RETRIES} attempts: {e}")
-                return None
+            print(f"Failed to fetch stats for batter {batter_id} vs pitcher {pitcher_id} after {MAX_RETRIES} attempts: {e}")
+            return []
 
 games = defaultdict(list)
 with open(matchups_file, newline='') as f:
@@ -58,28 +58,24 @@ for (team, pitcher, pitcher_id), matchups in games.items():
         results = list(executor.map(
             lambda row: (
                 row,
-                get_player_stats_with_retry(row['BatterID'], row['PitcherID']) 
-                if row['BatterID'].isdigit() and row['PitcherID'].isdigit() else None
+                get_player_splits_with_retry(row['BatterID'], row['PitcherID'])
+                if row['BatterID'].isdigit() and row['PitcherID'].isdigit() else []
             ),
             matchups
         ))
-        for row, stats in results:
-            if not stats or 'hitting' not in stats or 'vsplayer' not in stats['hitting']:
-                print(f"No stats found for batter {row['Batter']} vs pitcher {pitcher}")
-                continue
-            vs = stats['hitting']['vsplayer']
-            if vs and vs.splits:
-                for split in vs.splits:
-                    rowdata = {k: v for k, v in split.stat.__dict__.items() if v not in (None, '', 0, '-.--')}
-                    year = getattr(split, 'season', '') or getattr(split, 'seasonyear', '')
-                    rowdata['year'] = year
-                    rowdata['batter'] = row['Batter']
-                    rowdata['batter_id'] = int(row['BatterID'])
-                    rowdata['pitcher'] = pitcher
-                    rowdata['pitcher_id'] = int(pitcher_id)
-                    all_rows.append(rowdata)
-            else:
+        for row, splits in results:
+            if not splits:
                 print(f"No splits found for batter {row['Batter']} vs pitcher {pitcher}")
+                continue
+            for split in splits:
+                stat = split.get('stat') or {}
+                rowdata = {k.lower(): v for k, v in stat.items() if v not in (None, '', 0, '-.--')}
+                rowdata['year'] = split.get('season') or ''
+                rowdata['batter'] = row['Batter']
+                rowdata['batter_id'] = int(row['BatterID'])
+                rowdata['pitcher'] = pitcher
+                rowdata['pitcher_id'] = int(pitcher_id)
+                all_rows.append(rowdata)
     if all_rows:
         all_keys = set()
         for r in all_rows:
