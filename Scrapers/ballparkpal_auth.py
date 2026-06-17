@@ -4,6 +4,7 @@ import imaplib
 import os
 import re
 import time
+from contextlib import asynccontextmanager
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
@@ -13,7 +14,9 @@ from playwright.async_api import async_playwright
 
 load_dotenv(Path(__file__).with_name(".env"))
 
-USER_DATA_DIR = "playwright_user_data"
+SCRIPT_DIR = Path(__file__).resolve().parent
+USER_DATA_DIR = SCRIPT_DIR / "playwright_user_data"
+STORAGE_STATE_PATH = SCRIPT_DIR / "ballparkpal_storage_state.json"
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -21,10 +24,36 @@ USER_AGENT = (
 )
 DEFAULT_TARGET_URL = "https://www.ballparkpal.com/Game-Simulations.php"
 LOGIN_URL = "https://www.ballparkpal.com/LoginWithCode.php"
-DEBUG_HTML_PATH = Path("data") / "ballparkpal_login_debug.html"
+DEBUG_HTML_PATH = SCRIPT_DIR / "data" / "ballparkpal_login_debug.html"
 
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+
+
+@asynccontextmanager
+async def ballparkpal_browser_context(playwright, headless=False):
+    browser = await playwright.chromium.launch(headless=headless)
+    context_options = {"user_agent": USER_AGENT}
+    if STORAGE_STATE_PATH.exists():
+        context_options["storage_state"] = STORAGE_STATE_PATH
+
+    context = await browser.new_context(**context_options)
+    try:
+        yield context
+    finally:
+        await context.close()
+        await browser.close()
+
+
+async def save_ballparkpal_storage_state(context):
+    STORAGE_STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    state = await context.storage_state(path=STORAGE_STATE_PATH)
+    cookie_count = len(state.get("cookies", []))
+    origin_count = len(state.get("origins", []))
+    print(
+        "Saved BallparkPal storage state "
+        f"({cookie_count} cookies, {origin_count} origins) to {STORAGE_STATE_PATH}"
+    )
 
 
 def is_logged_in_html(html):
@@ -199,166 +228,163 @@ async def _code_inputs(page):
 
 async def ensure_logged_in(target_url=DEFAULT_TARGET_URL, headless=False, keep_open=False):
     async with async_playwright() as p:
-        context = await p.chromium.launch_persistent_context(
-            user_data_dir=USER_DATA_DIR,
-            headless=headless,
-            user_agent=USER_AGENT,
-        )
-        page = context.pages[0] if context.pages else await context.new_page()
+        async with ballparkpal_browser_context(p, headless=headless) as context:
+            page = context.pages[0] if context.pages else await context.new_page()
 
-        try:
-            print(f"Checking BallparkPal session at {target_url}...")
-            await page.goto(target_url, wait_until="domcontentloaded")
-            await page.wait_for_timeout(1500)
-            html = await page.content()
+            try:
+                print(f"Checking BallparkPal session at {target_url}...")
+                await page.goto(target_url, wait_until="domcontentloaded")
+                await page.wait_for_timeout(1500)
+                html = await page.content()
 
-            if not is_auth_gate(page.url, html) or is_logged_in_html(html):
-                print("BallparkPal session already authenticated.")
-                return True
+                if not is_auth_gate(page.url, html) or is_logged_in_html(html):
+                    print("BallparkPal session already authenticated.")
+                    await save_ballparkpal_storage_state(context)
+                    return True
 
-            if not EMAIL_ADDRESS:
-                raise RuntimeError("EMAIL_ADDRESS is missing from Scrapers/.env")
+                if not EMAIL_ADDRESS:
+                    raise RuntimeError("EMAIL_ADDRESS is missing from Scrapers/.env")
 
-            print("Session expired. Refreshing BallparkPal login...")
-            await page.goto(LOGIN_URL, wait_until="domcontentloaded")
-            await page.wait_for_timeout(1500)
+                print("Session expired. Refreshing BallparkPal login...")
+                await page.goto(LOGIN_URL, wait_until="domcontentloaded")
+                await page.wait_for_timeout(1500)
 
-            login_with_code_selectors = [
-                "text=Log in with a code",
-                "a:has-text('Log in with a code')",
-                "a:has-text('Login with code')",
-                "text=Log In with Code",
-            ]
-            link, matched_selector = await _find_first_visible(
-                page, login_with_code_selectors, timeout=1500
-            )
-            if link:
-                await link.click()
-                print(f"Switched to code-login flow using selector: {matched_selector}")
-                await page.wait_for_timeout(1200)
-
-            code_inputs = await _code_inputs(page)
-            if code_inputs:
-                print("Verification code page is already open.")
-                resend_selectors = [
-                    "#resendBtn",
-                    'button[name="send_code"]',
-                    'button:has-text("Resend code")',
+                login_with_code_selectors = [
+                    "text=Log in with a code",
+                    "a:has-text('Log in with a code')",
+                    "a:has-text('Login with code')",
+                    "text=Log In with Code",
                 ]
-                resend_button, matched_selector = await _find_first_visible(
-                    page, resend_selectors, timeout=1500
+                link, matched_selector = await _find_first_visible(
+                    page, login_with_code_selectors, timeout=1500
                 )
-                if resend_button:
-                    await resend_button.click()
-                    print(f"Requested a fresh login code with selector: {matched_selector}")
-                    await page.wait_for_timeout(1500)
-            else:
-                email_selectors = [
-                    'input[placeholder="Your email..."]',
-                    'input[placeholder*="email" i]',
-                    'input[type="email"]',
-                    'input[name="email"]',
-                    'input[id*="email" i]',
-                    'input[placeholder="Enter your email address"]',
-                ]
-                email_input, matched_selector = await _find_first_visible(page, email_selectors)
-                if not email_input:
-                    labeled = page.get_by_label(re.compile("email", re.IGNORECASE)).first
-                    try:
-                        await labeled.wait_for(state="visible", timeout=5000)
-                        email_input = labeled
-                        matched_selector = "label=/email/i"
-                    except Exception:
-                        email_input = None
+                if link:
+                    await link.click()
+                    print(f"Switched to code-login flow using selector: {matched_selector}")
+                    await page.wait_for_timeout(1200)
 
-                if not email_input:
-                    DEBUG_HTML_PATH.parent.mkdir(parents=True, exist_ok=True)
-                    DEBUG_HTML_PATH.write_text(await page.content(), encoding="utf-8")
-                    raise RuntimeError("Could not find the BallparkPal email input.")
+                code_inputs = await _code_inputs(page)
+                if code_inputs:
+                    print("Verification code page is already open.")
+                    resend_selectors = [
+                        "#resendBtn",
+                        'button[name="send_code"]',
+                        'button:has-text("Resend code")',
+                    ]
+                    resend_button, matched_selector = await _find_first_visible(
+                        page, resend_selectors, timeout=1500
+                    )
+                    if resend_button:
+                        await resend_button.click()
+                        print(f"Requested a fresh login code with selector: {matched_selector}")
+                        await page.wait_for_timeout(1500)
+                else:
+                    email_selectors = [
+                        'input[placeholder="Your email..."]',
+                        'input[placeholder*="email" i]',
+                        'input[type="email"]',
+                        'input[name="email"]',
+                        'input[id*="email" i]',
+                        'input[placeholder="Enter your email address"]',
+                    ]
+                    email_input, matched_selector = await _find_first_visible(page, email_selectors)
+                    if not email_input:
+                        labeled = page.get_by_label(re.compile("email", re.IGNORECASE)).first
+                        try:
+                            await labeled.wait_for(state="visible", timeout=5000)
+                            email_input = labeled
+                            matched_selector = "label=/email/i"
+                        except Exception:
+                            email_input = None
 
-                await email_input.fill(EMAIL_ADDRESS)
-                print(f"Filled login email using selector: {matched_selector}")
+                    if not email_input:
+                        DEBUG_HTML_PATH.parent.mkdir(parents=True, exist_ok=True)
+                        DEBUG_HTML_PATH.write_text(await page.content(), encoding="utf-8")
+                        raise RuntimeError("Could not find the BallparkPal email input.")
 
-                submit_selectors = [
-                    'button:has-text("Continue with Email")',
-                    'button:has-text("Send Login Code")',
-                    'button:has-text("Send Code")',
-                    'button:has-text("Continue")',
+                    await email_input.fill(EMAIL_ADDRESS)
+                    print(f"Filled login email using selector: {matched_selector}")
+
+                    submit_selectors = [
+                        'button:has-text("Continue with Email")',
+                        'button:has-text("Send Login Code")',
+                        'button:has-text("Send Code")',
+                        'button:has-text("Continue")',
+                        '[type="submit"]',
+                    ]
+                    submit_button, matched_selector = await _find_first_visible(
+                        page, submit_selectors, timeout=3000
+                    )
+                    if submit_button:
+                        await submit_button.click()
+                        print(f"Submitted login email with selector: {matched_selector}")
+                    else:
+                        print("Login submit button not found; submitting with Enter.")
+                        await email_input.press("Enter")
+
+                    await page.wait_for_load_state("domcontentloaded")
+                    await page.wait_for_timeout(3000)
+
+                print("Waiting for email verification code...")
+                verification_code = await wait_for_verification_code()
+                if not verification_code:
+                    raise RuntimeError("Timed out waiting for the BallparkPal verification code.")
+
+                code_inputs = await _code_inputs(page)
+                if code_inputs:
+                    for index, digit in enumerate(verification_code[:6]):
+                        await code_inputs.nth(index).fill(digit)
+                        await page.wait_for_timeout(50)
+                    matched_selector = ".code-input"
+                else:
+                    otp_selectors = [
+                        "input.invisible-input",
+                        "input[autocomplete='one-time-code']",
+                        "input[inputmode='numeric']",
+                        "input[placeholder*='code' i]",
+                        "[data-testid='otp-input']",
+                        "input[type='text']",
+                    ]
+                    otp_input, matched_selector = await _find_first_visible(
+                        page, otp_selectors, timeout=8000
+                    )
+                    if not otp_input:
+                        DEBUG_HTML_PATH.parent.mkdir(parents=True, exist_ok=True)
+                        DEBUG_HTML_PATH.write_text(await page.content(), encoding="utf-8")
+                        raise RuntimeError("Could not find the BallparkPal verification code input.")
+
+                    await otp_input.fill("")
+                    await otp_input.type(verification_code, delay=75)
+
+                print(f"Entered verification code using selector: {matched_selector}")
+                await page.wait_for_timeout(1500)
+
+                verify_selectors = [
+                    'button:has-text("Verify Email")',
+                    'button:has-text("Verify")',
+                    'button:has-text("Submit")',
                     '[type="submit"]',
                 ]
-                submit_button, matched_selector = await _find_first_visible(
-                    page, submit_selectors, timeout=3000
+                verify_button, matched_selector = await _find_first_visible(
+                    page, verify_selectors, timeout=3000
                 )
-                if submit_button:
-                    await submit_button.click()
-                    print(f"Submitted login email with selector: {matched_selector}")
-                else:
-                    print("Login submit button not found; submitting with Enter.")
-                    await email_input.press("Enter")
+                if verify_button:
+                    await verify_button.click()
+                    print(f"Clicked verification button with selector: {matched_selector}")
+                elif not code_inputs:
+                    print("Verification button not found; submitting with Enter.")
+                    await otp_input.press("Enter")
 
                 await page.wait_for_load_state("domcontentloaded")
-                await page.wait_for_timeout(3000)
-
-            print("Waiting for email verification code...")
-            verification_code = await wait_for_verification_code()
-            if not verification_code:
-                raise RuntimeError("Timed out waiting for the BallparkPal verification code.")
-
-            code_inputs = await _code_inputs(page)
-            if code_inputs:
-                for index, digit in enumerate(verification_code[:6]):
-                    await code_inputs.nth(index).fill(digit)
-                    await page.wait_for_timeout(50)
-                matched_selector = ".code-input"
-            else:
-                otp_selectors = [
-                    "input.invisible-input",
-                    "input[autocomplete='one-time-code']",
-                    "input[inputmode='numeric']",
-                    "input[placeholder*='code' i]",
-                    "[data-testid='otp-input']",
-                    "input[type='text']",
-                ]
-                otp_input, matched_selector = await _find_first_visible(
-                    page, otp_selectors, timeout=8000
-                )
-                if not otp_input:
-                    DEBUG_HTML_PATH.parent.mkdir(parents=True, exist_ok=True)
-                    DEBUG_HTML_PATH.write_text(await page.content(), encoding="utf-8")
-                    raise RuntimeError("Could not find the BallparkPal verification code input.")
-
-                await otp_input.fill("")
-                await otp_input.type(verification_code, delay=75)
-
-            print(f"Entered verification code using selector: {matched_selector}")
-            await page.wait_for_timeout(1500)
-
-            verify_selectors = [
-                'button:has-text("Verify Email")',
-                'button:has-text("Verify")',
-                'button:has-text("Submit")',
-                '[type="submit"]',
-            ]
-            verify_button, matched_selector = await _find_first_visible(
-                page, verify_selectors, timeout=3000
-            )
-            if verify_button:
-                await verify_button.click()
-                print(f"Clicked verification button with selector: {matched_selector}")
-            elif not code_inputs:
-                print("Verification button not found; submitting with Enter.")
-                await otp_input.press("Enter")
-
-            await page.wait_for_load_state("domcontentloaded")
-            await page.wait_for_timeout(2500)
-            await page.goto(target_url, wait_until="domcontentloaded")
-            await page.wait_for_timeout(1500)
-            html = await page.content()
-            assert_authenticated_html(page.url, html, "BallparkPal auth preflight")
-            print("BallparkPal login refreshed successfully.")
-            return True
-        finally:
-            if keep_open:
-                print("Press Enter to close the browser...")
-                await asyncio.to_thread(input)
-            await context.close()
+                await page.wait_for_timeout(2500)
+                await page.goto(target_url, wait_until="domcontentloaded")
+                await page.wait_for_timeout(1500)
+                html = await page.content()
+                assert_authenticated_html(page.url, html, "BallparkPal auth preflight")
+                await save_ballparkpal_storage_state(context)
+                print("BallparkPal login refreshed successfully.")
+                return True
+            finally:
+                if keep_open:
+                    print("Press Enter to close the browser...")
+                    await asyncio.to_thread(input)

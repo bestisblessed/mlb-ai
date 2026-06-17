@@ -3,7 +3,7 @@ from playwright.async_api import TimeoutError as PlaywrightTimeoutError, async_p
 import asyncio
 import os
 from datetime import datetime
-from ballparkpal_auth import USER_AGENT, assert_authenticated_html
+from ballparkpal_auth import ballparkpal_browser_context, assert_authenticated_html
 
 HEADLESS = os.getenv("BALLPARKPAL_HEADLESS", "0") == "1"
 
@@ -12,35 +12,30 @@ HEADLESS = os.getenv("BALLPARKPAL_HEADLESS", "0") == "1"
 #####################
 async def download_html(url, filepath):
     async with async_playwright() as p:
-        ctx = await p.chromium.launch_persistent_context(
-            user_data_dir="playwright_user_data",
-            headless=HEADLESS,
-            user_agent=USER_AGENT
-        )
-        page = await ctx.new_page()
-        await page.goto(url, wait_until="domcontentloaded")
-        await page.wait_for_timeout(1000)
-        initial_content = await page.content()
-        assert_authenticated_html(page.url, initial_content, "Starting Pitchers")
-        await page.wait_for_selector("table", timeout=5000)
-        
-        # Click on the Strikeouts tab
-        strikeouts_selector = "button.dt-button:has(span:text-is('Strikeouts'))"
-        strikeouts_button = await page.query_selector(strikeouts_selector)
-        if strikeouts_button:
-            try:
-                await strikeouts_button.click(timeout=5000)
-            except PlaywrightTimeoutError:
-                print("Strikeouts button hidden; dispatching click event")
-                await page.dispatch_event(strikeouts_selector, "click")
+        async with ballparkpal_browser_context(p, headless=HEADLESS) as ctx:
+            page = await ctx.new_page()
+            await page.goto(url, wait_until="domcontentloaded")
             await page.wait_for_timeout(1000)
-        else:
-            print("Strikeouts button not found")
-        
-        content = await page.content()
-        with open(filepath, "w", encoding="utf-8") as f:
-            f.write(content)
-        await ctx.close()         
+            initial_content = await page.content()
+            assert_authenticated_html(page.url, initial_content, "Starting Pitchers")
+            await page.wait_for_selector("table", timeout=5000)
+
+            # Click on the Strikeouts tab
+            strikeouts_selector = "button.dt-button:has(span:text-is('Strikeouts'))"
+            strikeouts_button = await page.query_selector(strikeouts_selector)
+            if strikeouts_button:
+                try:
+                    await strikeouts_button.click(timeout=5000)
+                except PlaywrightTimeoutError:
+                    print("Strikeouts button hidden; dispatching click event")
+                    await page.dispatch_event(strikeouts_selector, "click")
+                await page.wait_for_timeout(1000)
+            else:
+                print("Strikeouts button not found")
+
+            content = await page.content()
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write(content)
 
 today = datetime.now().strftime('%Y-%m-%d')
 output_dir = f"data/{today}"
