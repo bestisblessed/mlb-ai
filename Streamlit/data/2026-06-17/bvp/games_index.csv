@@ -1,6 +1,6 @@
 game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
-824503,2026-06-17T16:40:00Z,Scheduled,121,New York Mets,113,Cincinnati Reds,Great American Ball Park,Nolan McLean,690997.0,R,Nick Lodolo,666157,L
-822721,2026-06-17T17:05:00Z,Scheduled,118,Kansas City Royals,120,Washington Nationals,Nationals Park,Luinder Avila,679883.0,R,Zack Littell,641793,R
+824503,2026-06-17T16:40:00Z,Pre-Game,121,New York Mets,113,Cincinnati Reds,Great American Ball Park,Nolan McLean,690997.0,R,Nick Lodolo,666157,L
+822721,2026-06-17T17:05:00Z,Pre-Game,118,Kansas City Royals,120,Washington Nationals,Nationals Park,Luinder Avila,679883.0,R,Zack Littell,641793,R
 823450,2026-06-17T17:05:00Z,Scheduled,146,Miami Marlins,143,Philadelphia Phillies,Citizens Bank Park,Sandy Alcantara,645261.0,R,Andrew Painter,691725,R
 824912,2026-06-17T18:00:00Z,Suspended,137,San Francisco Giants,144,Atlanta Braves,Truist Park,Adrian Houser,605288.0,R,Grant Holmes,656550,R
 824178,2026-06-17T18:10:00Z,Scheduled,116,Detroit Tigers,117,Houston Astros,Daikin Park,Casey Mize,663554.0,R,Peter Lambert,663567,R
