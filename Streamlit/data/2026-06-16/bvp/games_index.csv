@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823451,2026-06-16T22:40:00Z,In Progress,146,Miami Marlins,143,Philadelphia Phillies,Citizens Bank Park,Tyler Phillips,663969,R,Jesús Luzardo,666200,L
+822723,2026-06-16T22:45:00Z,In Progress,118,Kansas City Royals,120,Washington Nationals,Nationals Park,Michael Wacha,608379,R,Foster Griffin,656492,L
+824750,2026-06-16T22:45:00Z,In Progress,141,Toronto Blue Jays,111,Boston Red Sox,Fenway Park,Dylan Cease,656302,R,Payton Tolle,801139,L
+823535,2026-06-16T23:05:00Z,In Progress,145,Chicago White Sox,147,New York Yankees,Yankee Stadium,Davis Martin,663436,R,Gerrit Cole,543037,R
+824504,2026-06-16T23:10:00Z,In Progress,121,New York Mets,113,Cincinnati Reds,Great American Ball Park,Kodai Senga,673540,R,Brady Singer,663903,R
+824912,2026-06-16T23:15:00Z,In Progress,137,San Francisco Giants,144,Atlanta Braves,Truist Park,Adrian Houser,605288,R,Grant Holmes,656550,R
+823775,2026-06-16T23:40:00Z,In Progress,114,Cleveland Guardians,158,Milwaukee Brewers,American Family Field,Slade Cecconi,677944,R,Robert Gasser,688107,L
+823045,2026-06-16T23:45:00Z,In Progress,135,San Diego Padres,138,St. Louis Cardinals,Busch Stadium,Michael King,650633,R,Andre Pallante,669467,R
+824667,2026-06-17T00:05:00Z,In Progress,115,Colorado Rockies,112,Chicago Cubs,Wrigley Field,Ryan Feltner,663372,R,Edward Cabrera,665795,R
+822888,2026-06-17T00:05:00Z,In Progress,142,Minnesota Twins,140,Texas Rangers,Globe Life Field,Zebby Matthews,805673,R,Kumar Rocker,677958,R
+824182,2026-06-17T00:10:00Z,In Progress,116,Detroit Tigers,117,Houston Astros,Daikin Park,Framber Valdez,664285,L,Hunter Brown,686613,R
+825070,2026-06-17T01:40:00Z,Pre-Game,108,Los Angeles Angels,109,Arizona Diamondbacks,Chase Field,Reid Detmers,672282,L,Merrill Kelly,518876,R
+824991,2026-06-17T01:40:00Z,Pre-Game,134,Pittsburgh Pirates,133,Athletics,Sutter Health Park,Mitch Keller,656605,R,Jack Perkins,678022,R
+823128,2026-06-17T01:40:00Z,Pre-Game,110,Baltimore Orioles,136,Seattle Mariners,T-Mobile Park,Brandon Young,687064,R,Logan Gilbert,669302,R
+823939,2026-06-17T02:10:00Z,Pre-Game,139,Tampa Bay Rays,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Drew Rasmussen,656876,R,Justin Wrobleski,680736,L
