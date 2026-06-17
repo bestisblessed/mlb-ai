@@ -1,0 +1,13 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,1,,.000,.000,,Tristan Peters,671976,1,,,0.00,,,,2,.000,.000,Cole,543037,1,,.000,,,2026
+1,3,3.00,.333,.000,,Andrew Benintendi,643217,1,,,0.00,1,1,,18,.333,1.666,Cole,543037,3,3,1.333,1,4,2017
+2,5,,.200,.250,1,Andrew Benintendi,643217,2,,1,0.50,1,,4,19,.333,.533,Cole,543037,6,,.200,1,1,2018
+,3,,.333,.500,,Andrew Benintendi,643217,1,,1,1.00,1,,,15,.333,.666,Cole,543037,3,,.333,1,1,2019
+,2,,.000,.000,1,Andrew Benintendi,643217,1,,1,1.00,,,1,13,.333,.333,Cole,543037,3,,.000,1,,2022
+1,3,,.000,.000,,Andrew Benintendi,643217,1,1,1,1.00,,,1,17,.000,.000,Cole,543037,3,,.000,1,,2023
+1,1,,.000,.000,,Miguel Vargas,678246,1,,,0.00,,,,1,.000,.000,Cole,543037,1,,.000,,,2026
+2,6,,.167,.250,,Randal Grichuk,545341,2,,1,0.50,1,,4,20,.167,.334,Cole,543037,6,,.167,2,1,2015
+,3,,.000,.---,,Randal Grichuk,545341,1,,,,,,3,17,.000,.000,Cole,543037,3,,.000,3,,2019
+1,6,,.333,.500,,Randal Grichuk,545341,2,1,1,1.00,2,,1,23,.333,.666,Cole,543037,6,,.333,2,2,2020
+3,8,,.000,.000,,Randal Grichuk,545341,3,,1,0.33,,,5,37,.000,.000,Cole,543037,8,1,.000,4,,2021
+1,1,,.000,.000,,Colson Montgomery,695657,1,,,0.00,,,,2,.000,.000,Cole,543037,1,,.000,,,2026
