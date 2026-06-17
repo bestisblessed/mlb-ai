@@ -1,0 +1,8 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,,1.000,1.000,2,Alex Call,669743,,1,,,1,,,18,1.000,2.000,McClanahan,663556,3,,1.000,,1,2022
+,2,,.000,.000,1,Alex Call,669743,,1,1,1.00,,,2,14,.333,.333,McClanahan,663556,3,,.000,1,,2023
+3,4,,.250,.250,,Kyle Tucker,663656,1,2,,0.00,1,,,13,.250,.750,McClanahan,663556,4,1,.500,,2,2022
+2,3,,.333,.333,,Kyle Tucker,663656,,1,,0.00,1,,,15,.333,.666,McClanahan,663556,3,,.333,,1,2023
+1,4,,.000,.000,,Tommy Edman,669242,,1,1,1.00,,,,12,.000,.000,McClanahan,663556,4,,.000,2,,2022
+,3,3.00,.333,.000,,Miguel Rojas,500743,,1,2,2.00,1,1,,9,.333,1.666,McClanahan,663556,3,1,1.333,,4,2021
+3,10,,.200,.250,1,Shohei Ohtani,660271,1,4,3,1.00,2,,1,40,.273,.573,McClanahan,663556,11,1,.300,2,3,
