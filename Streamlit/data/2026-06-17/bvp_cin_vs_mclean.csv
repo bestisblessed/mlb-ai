@@ -1,10 +1,9 @@
 atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
 2,2.00,.500,.---,,JJ Bleday,668709,,1,,,,1,1,,8,.500,2.500,McLean,690997,2,1,2.000,1,4,2026
-1,,.000,.---,,Sal Stewart,701398,,1,,,1,,,,10,.500,.500,McLean,690997,2,,.000,1,,
+1,,.000,.---,,Sal Stewart,701398,,1,,,1,,,,10,.500,.500,McLean,690997,2,,.000,1,,2026
 2,,.000,.000,,Blake Dunn,694362,,1,1,1.00,1,,,,14,.333,.333,McLean,690997,3,,.000,1,,2026
 2,,.500,.500,,Spencer Steer,668715,,1,1,1.00,,1,,2,6,.500,1.000,McLean,690997,2,3,.500,,1,2026
-2,2.00,.500,.---,,Tyler Stephenson,663886,,1,,,,1,1,1,8,.500,2.500,McLean,690997,2,2,2.000,1,4,
+2,2.00,.500,.---,,Tyler Stephenson,663886,,1,,,,1,1,1,8,.500,2.500,McLean,690997,2,2,2.000,1,4,2026
 1,,1.000,1.000,1,Nathaniel Lowe,663993,1,1,,,,1,,,10,1.000,3.000,McLean,690997,2,,2.000,,2,2026
-2,,.000,.000,,Eugenio Suarez,553993,,1,1,1.00,,,,,11,.000,.000,McLean,690997,2,,.000,1,,2025
-1,,1.000,1.000,1,Eugenio Suarez,553993,,1,,,,1,,,6,1.000,2.000,McLean,690997,2,,1.000,,1,2026
-2,,.000,.000,,Matt McLain,680574,,1,2,2.00,,,,1,9,.000,.000,McLean,690997,2,,.000,,,
+3,,.333,.500,1,Eugenio Suarez,553993,,2,1,1.00,,1,,,17,.500,.833,McLean,690997,4,,.333,1,1,
+2,,.000,.000,,Matt McLain,680574,,1,2,2.00,,,,1,9,.000,.000,McLean,690997,2,,.000,,,2026
