@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+1,3,.333,.250,1,Isaac Paredes,670623,2,2,2.00,1,1,19,.400,.733,Valdez,664285,5,1,1,.333,,1,
+1,2,.000,.000,3,Christian Walker,572233,2,1,1.00,,1,25,.600,.600,Valdez,664285,5,,,.000,,,
+2,8,.125,.143,,Christian Vazquez,543877,4,4,2.00,1,,26,.125,.250,Valdez,664285,8,,,.125,1,1,
