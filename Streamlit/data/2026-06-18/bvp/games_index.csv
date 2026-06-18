@@ -1,0 +1,10 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824748,2026-06-18T17:35:00Z,Pre-Game,141,Toronto Blue Jays,111,Boston Red Sox,Fenway Park,Trey Yesavage,702056.0,R,Sonny Gray,543243,R
+823772,2026-06-18T18:10:00Z,Scheduled,114,Cleveland Guardians,158,Milwaukee Brewers,American Family Field,Parker Messick,800048.0,L,Shane Drohan,675660,L
+822889,2026-06-18T18:35:00Z,Scheduled,142,Minnesota Twins,140,Texas Rangers,Globe Life Field,Joe Ryan,657746.0,R,Jack Leiter,683004,R
+823125,2026-06-18T20:10:00Z,Scheduled,110,Baltimore Orioles,136,Seattle Mariners,T-Mobile Park,Shane Baz,669358.0,R,Bryan Woo,693433,R
+823448,2026-06-18T22:40:00Z,Scheduled,121,New York Mets,143,Philadelphia Phillies,Citizens Bank Park,Sean Manaea,640455.0,L,Aaron Nola,605400,R
+823533,2026-06-18T23:05:00Z,Scheduled,145,Chicago White Sox,147,New York Yankees,Yankee Stadium,Sean Burke,680732.0,R,Ryan Weathers,677960,L
+824911,2026-06-18T23:15:00Z,Scheduled,137,San Francisco Giants,144,Atlanta Braves,Truist Park,Landen Roupp,694738.0,R,Martín Pérez,527048,L
+824098,2026-06-18T23:40:00Z,Scheduled,138,St. Louis Cardinals,118,Kansas City Royals,Kauffman Stadium,Matthew Liberatore,669461.0,L,Noah Cameron,702070,L
+824989,2026-06-19T01:40:00Z,Scheduled,108,Los Angeles Angels,133,Athletics,Sutter Health Park,,,,Gage Jump,695611,L
