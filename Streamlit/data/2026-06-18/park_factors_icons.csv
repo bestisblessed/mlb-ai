@@ -1,0 +1,10 @@
+game_id,game,icons,icon_labels
+824989,Sutter Health Park9:40LAA @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,HeavyWind.png,From76to82.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,Heavy Wind,76–82°F,Low Pressure"
+824748,Fenway Park1:35TOR @ BOS,"OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,HeavyWind.png,HighH.png,LowP.png","OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,Heavy Wind,High Humidity,Low Pressure"
+823448,Citizens Bank Park6:40NYM @ PHI,"OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,ModerateWind.png,Over90.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,Moderate Wind,≥90°F,Low Pressure"
+823533,Yankee Stadium7:05CHW @ NYY,"OutCenter.svg,OutCenter.svg,OutRightCenter.svg,HeavyWind.png,From83to89.png,LowP.png","OutCenter.svg,OutCenter.svg,OutRightCenter.svg,Heavy Wind,83–89°F,Low Pressure"
+824098,Kauffman Stadium7:40STL @ KC,"OutRight.svg,OutRight.svg,OutRightCenter.svg","OutRight.svg,OutRight.svg,OutRightCenter.svg"
+823772,American Family Fld2:10CLE @ MIL,"OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,ModerateWind.png,LowP.png","OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,Moderate Wind,Low Pressure"
+822889,Globe Life Field2:35MIN @ TEX,RoofClosed.png,Roof Closed
+824911,Truist Park7:15SF  @ ATL,"InLeftCenter.svg,InLeft.svg,InLeftMiddle.svg,HighH.png","InLeftCenter.svg,InLeft.svg,InLeftMiddle.svg,High Humidity"
+823125,T-Mobile Park4:10BAL @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
