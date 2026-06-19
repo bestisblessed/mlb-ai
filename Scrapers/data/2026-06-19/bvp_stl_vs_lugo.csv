@@ -1,0 +1,5 @@
+airouts,atbats,atbatsperhomerun,avg,babip,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+1,1,,1.000,.500,Jordan Walker,691023,,1,,0.00,1,,,9,.500,1.500,Lugo,607625,2,1,1,1.000,,1,
+,2,2.00,.500,.000,Nelson Velazquez,676369,,1,1,1.00,1,1,,5,.500,2.500,Lugo,607625,2,1,,2.000,,4,2023
+1,3,,.333,.500,Alec Burleson,676475,1,1,,0.00,1,,,15,.333,1.000,Lugo,607625,3,,,.667,1,2,2023
+,2,,.500,.500,Masyn Winn,691026,,1,1,1.00,1,,1,6,.500,1.000,Lugo,607625,2,,,.500,,1,2023

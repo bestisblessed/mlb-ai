@@ -1,0 +1,7 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,2,,.500,.500,1,Christian Moore,695681,,1,,0.00,,1,,,13,.667,1.167,Springs,605488,3,2,.500,,1,2025
+1,3,,.000,.000,,Logan O'Hoppe,681351,,1,1,1.00,,,,4,11,.000,.000,Springs,605488,3,,.000,1,,
+1,9,4.50,.333,.500,,Jo Adell,666176,1,3,,0.00,,3,2,3,31,.333,1.444,Springs,605488,9,4,1.111,5,10,
+1,3,,.333,.333,,Oswald Peraza,672724,,1,1,1.00,,1,,1,14,.333,.666,Springs,605488,3,,.333,,1,2025
+2,4,,.250,.333,,Zach Neto,687263,,2,,0.00,1,1,,1,16,.400,.650,Springs,605488,5,1,.250,1,1,
+2,5,,.600,.600,,Nolan Schanuel,694384,1,2,,0.00,,3,,2,9,.600,1.400,Springs,605488,5,1,.800,,4,
