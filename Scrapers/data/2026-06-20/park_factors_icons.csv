@@ -1,0 +1,15 @@
+game_id,game,icons,icon_labels
+824342,Coors Field9:10PIT @ COL,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,ModerateWind.png,Over90.png,LowH.png,LowP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Moderate Wind,≥90°F,Low Humidity,Low Pressure"
+824988,Sutter Health Park10:05LAA @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F,Low Pressure"
+823447,Citizens Bank Park7:15NYM @ PHI,"FromLeft.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,LowP.png","FromLeft.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,Low Pressure"
+824263,Comerica Park1:10CHW @ DET,"OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png","OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,Moderate Wind"
+825068,Chase Field10:10MIN @ ARI,RoofClosed.png,Roof Closed
+824665,Wrigley Field2:20TOR @ CHC,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,From76to82.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,76–82°F"
+823532,Yankee Stadium1:35CIN @ NYY,"OutRight.svg,OutRight.svg,OutRightMiddle.svg,ModerateWind.png,From83to89.png,LowP.png","OutRight.svg,OutRight.svg,OutRightMiddle.svg,Moderate Wind,83–89°F,Low Pressure"
+823937,Dodger Stadium10:10BAL @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze"
+824180,Daikin Park7:15CLE @ HOU,RoofClosed.png,Roof Closed
+824909,Truist Park4:10MIL @ ATL,"OutLeft.svg,OutLeftMiddle.svg,OutLeft.svg,LightWind.png,Over90.png","OutLeft.svg,OutLeftMiddle.svg,OutLeft.svg,Light Breeze,≥90°F"
+823854,LoanDepot Park4:10SF  @ MIA,RoofClosed.png,Roof Closed
+822967,Tropicana Field4:10WAS @ TB,RoofClosed.png,Roof Closed
+823126,T-Mobile Park10:10BOS @ SEA,"OutCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png","OutCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze"
+822885,Globe Life Field4:05SD  @ TEX,RoofClosed.png,Roof Closed
