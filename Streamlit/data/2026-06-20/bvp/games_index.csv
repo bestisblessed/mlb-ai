@@ -1,0 +1,15 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824263,2026-06-20T17:10:00Z,Pre-Game,145,Chicago White Sox,116,Detroit Tigers,Comerica Park,,,,Troy Melton,675512,R
+823532,2026-06-20T17:35:00Z,Scheduled,113,Cincinnati Reds,147,New York Yankees,Yankee Stadium,Andrew Abbott,671096.0,L,Will Warren,701542,R
+824665,2026-06-20T18:20:00Z,Scheduled,141,Toronto Blue Jays,112,Chicago Cubs,Wrigley Field,Patrick Corbin,571578.0,L,Colin Rea,607067,R
+822885,2026-06-20T20:05:00Z,Scheduled,135,San Diego Padres,140,Texas Rangers,Globe Life Field,Walker Buehler,621111.0,R,Nathan Eovaldi,543135,R
+822967,2026-06-20T20:10:00Z,Scheduled,120,Washington Nationals,139,Tampa Bay Rays,Tropicana Field,Cade Cavalli,676917.0,R,Ian Seymour,693855,L
+823854,2026-06-20T20:10:00Z,Scheduled,137,San Francisco Giants,146,Miami Marlins,loanDepot park,Trevor McDonald,686790.0,R,Max Meyer,676974,R
+824909,2026-06-20T20:10:00Z,Scheduled,158,Milwaukee Brewers,144,Atlanta Braves,Truist Park,Kyle Harrison,690986.0,L,Chris Sale,519242,L
+824180,2026-06-20T23:15:00Z,Scheduled,114,Cleveland Guardians,117,Houston Astros,Daikin Park,Joey Cantillo,676282.0,L,Spencer Arrighetti,681293,R
+823447,2026-06-20T23:15:00Z,Scheduled,121,New York Mets,143,Philadelphia Phillies,Citizens Bank Park,Freddy Peralta,642547.0,R,Cristopher Sánchez,650911,L
+824342,2026-06-21T01:10:00Z,Scheduled,134,Pittsburgh Pirates,115,Colorado Rockies,Coors Field,Paul Skenes,694973.0,R,Tomoyuki Sugano,608372,R
+824988,2026-06-21T02:05:00Z,Scheduled,108,Los Angeles Angels,133,Athletics,Sutter Health Park,Walbert Ureña,700712.0,R,J.T. Ginn,669372,R
+823937,2026-06-21T02:10:00Z,Scheduled,110,Baltimore Orioles,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Trevor Rogers,669432.0,L,Yoshinobu Yamamoto,808967,R
+823126,2026-06-21T02:10:00Z,Scheduled,111,Boston Red Sox,136,Seattle Mariners,T-Mobile Park,Connelly Early,813349.0,L,Emerson Hancock,676106,R
+825068,2026-06-21T02:10:00Z,Scheduled,142,Minnesota Twins,109,Arizona Diamondbacks,Chase Field,Taj Bradley,671737.0,R,Zac Gallen,668678,R
