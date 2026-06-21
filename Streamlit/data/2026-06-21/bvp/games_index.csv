@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823531,2026-06-21T17:35:00Z,Scheduled,113,Cincinnati Reds,147,New York Yankees,Yankee Stadium,Chase Burns,695505.0,R,Elmer Rodríguez,695684.0,R
+824908,2026-06-21T17:35:00Z,Scheduled,158,Milwaukee Brewers,144,Atlanta Braves,Truist Park,Robert Gasser,688107.0,L,Bryce Elder,693821.0,R
+822968,2026-06-21T17:40:00Z,Scheduled,120,Washington Nationals,139,Tampa Bay Rays,Tropicana Field,Andrew Alvarez,674841.0,L,Nick Martinez,607259.0,R
+824260,2026-06-21T17:40:00Z,Scheduled,145,Chicago White Sox,116,Detroit Tigers,Comerica Park,Davis Martin,663436.0,R,Keider Montero,672456.0,R
+823852,2026-06-21T17:40:00Z,Scheduled,137,San Francisco Giants,146,Miami Marlins,loanDepot park,Logan Webb,657277.0,R,Ryan Gusto,687473.0,R
+824177,2026-06-21T18:10:00Z,Scheduled,114,Cleveland Guardians,117,Houston Astros,Daikin Park,Slade Cecconi,677944.0,R,Kai-Wei Teng,678906.0,R
+824095,2026-06-21T18:10:00Z,Scheduled,138,St. Louis Cardinals,118,Kansas City Royals,Kauffman Stadium,Dustin May,669160.0,R,Stephen Kolek,663568.0,R
+824664,2026-06-21T18:20:00Z,Scheduled,141,Toronto Blue Jays,112,Chicago Cubs,Wrigley Field,Dylan Cease,656302.0,R,Shota Imanaga,684007.0,L
+822883,2026-06-21T18:35:00Z,Scheduled,135,San Diego Padres,140,Texas Rangers,Globe Life Field,,,,Nathan Eovaldi,543135.0,R
+824343,2026-06-21T19:10:00Z,Scheduled,134,Pittsburgh Pirates,115,Colorado Rockies,Coors Field,Jared Jones,683003.0,R,Michael Lorenzen,547179.0,R
+825067,2026-06-21T19:15:00Z,Scheduled,142,Minnesota Twins,109,Arizona Diamondbacks,Chase Field,Mike Paredes,702474.0,R,Jose Cabrera,,
+824987,2026-06-21T20:05:00Z,Scheduled,108,Los Angeles Angels,133,Athletics,Sutter Health Park,Reid Detmers,672282.0,L,Jack Perkins,678022.0,R
+823934,2026-06-21T20:10:00Z,Scheduled,110,Baltimore Orioles,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Brandon Young,687064.0,R,Emmet Sheehan,686218.0,R
+823123,2026-06-21T20:10:00Z,Scheduled,111,Boston Red Sox,136,Seattle Mariners,T-Mobile Park,Payton Tolle,801139.0,L,Logan Gilbert,669302.0,R
+823449,2026-06-21T23:20:00Z,Scheduled,121,New York Mets,143,Philadelphia Phillies,Citizens Bank Park,David Peterson,656849.0,L,Zack Wheeler,554430.0,R
