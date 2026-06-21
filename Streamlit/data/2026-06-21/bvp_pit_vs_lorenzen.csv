@@ -1,0 +1,12 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,triples,year
+1,3,,.333,.333,,Jake Mangum,663968,,1,,1,1.00,1,,,7,.333,1.333,Lorenzen,547179,3,1,1.000,,3,1,2025
+2,10,10.00,.300,.400,2,Brandon Lowe,664040,1,4,,1,0.50,3,1,7,49,.417,1.117,Lorenzen,547179,12,2,.700,4,7,,
+,,,.000,.---,1,Nick Gonzales,693304,,1,,,,,,,6,1.000,1.000,Lorenzen,547179,1,,.000,,,,2023
+,2,,.500,1.000,,Nick Gonzales,693304,,1,,,,1,,,7,.500,1.000,Lorenzen,547179,2,1,.500,1,1,,2026
+5,14,,.143,.200,4,Bryan Reynolds,668804,,13,,3,0.60,2,,8,83,.333,.476,Lorenzen,547179,18,2,.143,4,2,,
+,7,7.00,.143,.000,1,Ryan O'Hearn,656811,,3,,3,3.00,1,1,6,29,.250,.821,Lorenzen,547179,8,1,.571,3,4,,
+,2,,.000,.000,,Henry Davis,680779,,1,,1,1.00,,,,12,.000,.000,Lorenzen,547179,2,,.000,1,,,
+,1,,.000,.---,,Jared Triolo,669707,,1,,,,,,,3,.000,.000,Lorenzen,547179,1,,.000,1,,,
+2,2,,.000,.000,,Spencer Horwitz,687462,,2,,,0.00,,,1,4,.000,.000,Lorenzen,547179,2,,.000,,,,2024
+1,2,,.500,.500,,Spencer Horwitz,687462,,1,,,0.00,1,,,4,.500,1.000,Lorenzen,547179,2,,.500,,1,,2026
+7,28,28.00,.143,.167,1,Marcell Ozuna,542303,1,22,2,8,1.14,4,1,18,104,.172,.529,Lorenzen,547179,29,6,.357,9,10,1,

@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824343,Coors Field3:10PIT @ COL,"InLeft.svg,InLeft.svg,InLeft.svg,ModerateWind.png,Over90.png,LowH.png,LowP.png","InLeft.svg,InLeft.svg,InLeft.svg,Moderate Wind,≥90°F,Low Humidity,Low Pressure"
+824987,Sutter Health Park4:05LAA @ ATH,"InRightCenter.svg,OutLeftMiddle.svg,OutLeftCenter.svg,Over90.png,LowP.png","InRightCenter.svg,OutLeftMiddle.svg,OutLeftCenter.svg,≥90°F,Low Pressure"
+824095,Kauffman Stadium2:10STL @ KC,"OutRight.svg,OutRight.svg,OutRightMiddle.svg,LightWind.png,From76to82.png,HighH.png,LowP.png","OutRight.svg,OutRight.svg,OutRightMiddle.svg,Light Breeze,76–82°F,High Humidity,Low Pressure"
+823449,Citizens Bank Park7:20NYM @ PHI,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,From76to82.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,76–82°F"
+823934,Dodger Stadium4:10BAL @ LAD,"OutCenter.svg,OutCenter.svg,OutRightCenter.svg,ModerateWind.png","OutCenter.svg,OutCenter.svg,OutRightCenter.svg,Moderate Wind"
+825067,Chase Field3:15MIN @ ARI,RoofClosed.png,Roof Closed
+824908,Truist Park1:35MIL @ ATL,"FromRight.svg,FromRight.svg,OutLeftMiddle.svg,LightWind.png,From76to82.png","FromRight.svg,FromRight.svg,OutLeftMiddle.svg,Light Breeze,76–82°F"
+824664,Wrigley Field2:20TOR @ CHC,"OutLeftMiddle.svg,OutLeftMiddle.svg,FromRight.svg,LightWind.png","OutLeftMiddle.svg,OutLeftMiddle.svg,FromRight.svg,Light Breeze"
+824260,Comerica Park1:40CHW @ DET,"InLeftMiddle.svg,InCenter.svg,InRightCenter.svg,From76to82.png","InLeftMiddle.svg,InCenter.svg,InRightCenter.svg,76–82°F"
+823531,Yankee Stadium1:35CIN @ NYY,"OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,Light Breeze,76–82°F"
+824177,Daikin Park2:10CLE @ HOU,RoofClosed.png,Roof Closed
+823852,LoanDepot Park1:40SF  @ MIA,RoofClosed.png,Roof Closed
+822968,Tropicana Field1:40WAS @ TB,RoofClosed.png,Roof Closed
+823123,T-Mobile Park4:10BOS @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+822883,Globe Life Field2:35SD  @ TEX,RoofClosed.png,Roof Closed
