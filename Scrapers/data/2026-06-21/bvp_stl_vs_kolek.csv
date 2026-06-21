@@ -1,0 +1,11 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,1.00,1.000,.---,,Nelson Velazquez,676369,1,,,,,1,1,,2,1.000,5.000,Kolek,663568,1,1,4.000,,4,
+1,2,,.000,.000,,Pedro Pages,686780,1,,1,1.00,,,,3,7,.000,.000,Kolek,663568,2,,.000,,,
+1,2,,.000,.000,,Nathan Church,701675,1,,,0.00,,,,2,9,.000,.000,Kolek,663568,2,,.000,1,,
+,5,,.200,.250,1,Jordan Walker,691023,3,,3,3.00,,1,,4,21,.333,.533,Kolek,663568,6,,.200,1,1,
+1,3,3.00,.333,.000,,Alec Burleson,676475,1,1,1,1.00,,1,1,2,7,.333,1.666,Kolek,663568,3,2,1.333,,4,2025
+1,3,,.333,.333,,Alec Burleson,676475,1,,1,1.00,,1,,1,12,.333,.666,Kolek,663568,3,,.333,,1,2026
+,2,,.000,.000,1,JJ Wetherholt,802139,1,,1,1.00,,,,,15,.333,.333,Kolek,663568,3,,.000,1,,
+,2,,.500,1.000,1,Ivan Herrera,671056,1,,,,,1,,1,21,.667,1.167,Kolek,663568,3,,.500,1,1,2025
+,3,,.000,.000,,Ivan Herrera,671056,1,,3,3.00,,,,1,9,.000,.000,Kolek,663568,3,,.000,,,2026
+1,6,,.500,.500,,Masyn Winn,691026,3,,2,2.00,1,3,,1,24,.571,1.071,Kolek,663568,7,,.500,,3,
