@@ -1,0 +1,14 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824261,2026-06-22T22:10:00Z,Scheduled,147,New York Yankees,116,Detroit Tigers,Comerica Park,Gerrit Cole,543037.0,R,Framber Valdez,664285,L
+822964,2026-06-22T22:40:00Z,Scheduled,118,Kansas City Royals,139,Tampa Bay Rays,Tropicana Field,Michael Wacha,608379.0,R,Drew Rasmussen,656876,R
+823851,2026-06-22T22:40:00Z,Scheduled,140,Texas Rangers,146,Miami Marlins,loanDepot park,Kumar Rocker,677958.0,R,Tyler Phillips,663969,R
+822720,2026-06-22T22:45:00Z,Scheduled,143,Philadelphia Phillies,120,Washington Nationals,Nationals Park,,,,Foster Griffin,656492,L
+822800,2026-06-22T23:07:00Z,Scheduled,117,Houston Astros,141,Toronto Blue Jays,Rogers Centre,Hunter Brown,686613.0,R,Dylan Cease,656302,R
+823613,2026-06-22T23:10:00Z,Scheduled,112,Chicago Cubs,121,New York Mets,Citi Field,Shota Imanaga,684007.0,L,Kodai Senga,673540,R
+824502,2026-06-22T23:10:00Z,Scheduled,158,Milwaukee Brewers,113,Cincinnati Reds,Great American Ball Park,,,,Brady Singer,663903,R
+823692,2026-06-22T23:40:00Z,Scheduled,119,Los Angeles Dodgers,142,Minnesota Twins,Target Field,Eric Lauer,641778.0,L,Zebby Matthews,805673,R
+824585,2026-06-22T23:40:00Z,Scheduled,114,Cleveland Guardians,145,Chicago White Sox,Rate Field,Gavin Williams,668909.0,R,Anthony Kay,641743,L
+823040,2026-06-22T23:45:00Z,Scheduled,109,Arizona Diamondbacks,138,St. Louis Cardinals,Busch Stadium,Merrill Kelly,518876.0,R,Andre Pallante,669467,R
+824344,2026-06-23T00:40:00Z,Scheduled,111,Boston Red Sox,115,Colorado Rockies,Coors Field,Jake Bennett,687562.0,L,Ryan Feltner,663372,R
+824016,2026-06-23T01:38:00Z,Scheduled,110,Baltimore Orioles,108,Los Angeles Angels,Angel Stadium,Kyle Bradish,680694.0,R,Sam Aldegheri,691951,L
+823288,2026-06-23T02:10:00Z,Scheduled,144,Atlanta Braves,135,San Diego Padres,Petco Park,Grant Holmes,656550.0,R,Michael King,650633,R
