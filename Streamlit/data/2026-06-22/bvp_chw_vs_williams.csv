@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+2,3,.333,.333,1,Miguel Vargas,678246,,2,0.00,1,1,22,.400,.733,Williams,668909,5,1,1,.333,1,1,
+1,1,.000,.000,1,Colson Montgomery,695657,,1,0.00,,,10,.500,.500,Williams,668909,2,,,.000,,,2025
+2,3,.333,.333,,Andrew Benintendi,643217,1,1,0.00,1,,9,.333,1.000,Williams,668909,3,2,,.667,,2,2024
+2,2,.000,.000,1,Andrew Benintendi,643217,,1,0.00,,,12,.333,.333,Williams,668909,3,,,.000,,,2025
