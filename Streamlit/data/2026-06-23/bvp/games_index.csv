@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822799,2026-06-23T20:07:00Z,Scheduled,117,Houston Astros,141,Toronto Blue Jays,Rogers Centre,Peter Lambert,663567,R,Shane Bieber,,
+823365,2026-06-23T22:40:00Z,Scheduled,136,Seattle Mariners,134,Pittsburgh Pirates,PNC Park,George Kirby,669923,R,Mitch Keller,656605.0,R
+822963,2026-06-23T22:40:00Z,Scheduled,118,Kansas City Royals,139,Tampa Bay Rays,Tropicana Field,Luinder Avila,679883,R,Shane McClanahan,663556.0,L
+823849,2026-06-23T22:40:00Z,Scheduled,140,Texas Rangers,146,Miami Marlins,loanDepot park,Cal Quantrill,615698,R,Sandy Alcantara,645261.0,R
+824262,2026-06-23T22:40:00Z,Scheduled,147,New York Yankees,116,Detroit Tigers,Comerica Park,Carlos Rodón,607074,L,Casey Mize,663554.0,R
+822718,2026-06-23T22:45:00Z,Scheduled,143,Philadelphia Phillies,120,Washington Nationals,Nationals Park,Jesús Luzardo,666200,L,Zack Littell,641793.0,R
+823614,2026-06-23T23:10:00Z,Scheduled,112,Chicago Cubs,121,New York Mets,Citi Field,Edward Cabrera,665795,R,Kodai Senga,673540.0,R
+824501,2026-06-23T23:10:00Z,Scheduled,158,Milwaukee Brewers,113,Cincinnati Reds,Great American Ball Park,Brandon Sproat,687075,R,Nick Lodolo,666157.0,L
+823690,2026-06-23T23:40:00Z,Scheduled,119,Los Angeles Dodgers,142,Minnesota Twins,Target Field,Justin Wrobleski,680736,L,Kendry Rojas,696070.0,L
+824584,2026-06-23T23:40:00Z,Scheduled,114,Cleveland Guardians,145,Chicago White Sox,Rate Field,Parker Messick,800048,L,Sean Burke,680732.0,R
+823043,2026-06-23T23:45:00Z,Scheduled,109,Arizona Diamondbacks,138,St. Louis Cardinals,Busch Stadium,Eduardo Rodriguez,699134,R,Kyle Leahy,681517.0,R
+824340,2026-06-24T00:40:00Z,Scheduled,111,Boston Red Sox,115,Colorado Rockies,Coors Field,Sonny Gray,543243,R,Sean Sullivan,807743.0,L
+824017,2026-06-24T01:38:00Z,Scheduled,110,Baltimore Orioles,108,Los Angeles Angels,Angel Stadium,Shane Baz,669358,R,Ryan Johnson,696270.0,R
+823286,2026-06-24T01:40:00Z,Scheduled,144,Atlanta Braves,135,San Diego Padres,Petco Park,JR Ritchie,702275,R,,,
+823210,2026-06-24T01:45:00Z,Scheduled,133,Athletics,137,San Francisco Giants,Oracle Park,Aaron Civale,650644,R,Robbie Ray,592662.0,L
