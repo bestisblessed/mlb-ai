@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824340,Coors Field8:40BOS @ COL,"InRight.svg,OutLeftMiddle.svg,OutLeft.svg,ModerateWind.png","InRight.svg,OutLeftMiddle.svg,OutLeft.svg,Moderate Wind"
+824017,Angel Stadium9:38BAL @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+824501,Great American BP7:10MIL @ CIN,"OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,LightWind.png,HighP.png","OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,Light Breeze,High Pressure"
+822799,Rogers Centre4:07HOU @ TOR,"InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,ModerateWind.png,From76to82.png","InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,Moderate Wind,76–82°F"
+822718,Nationals Park6:45PHI @ WAS,"InLeft.svg,InLeft.svg,InLeft.svg,LightWind.png","InLeft.svg,InLeft.svg,InLeft.svg,Light Breeze"
+824584,Rate Field7:40CLE @ CHW,"InLeftMiddle.svg,InLeft.svg,InLeftCenter.svg,LightWind.png,HighP.png","InLeftMiddle.svg,InLeft.svg,InLeftCenter.svg,Light Breeze,High Pressure"
+823365,PNC Park6:40SEA @ PIT,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze"
+823849,LoanDepot Park6:40TEX @ MIA,RoofClosed.png,Roof Closed
+823286,Petco Park9:40ATL @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+822963,Tropicana Field6:40KC  @ TB,RoofClosed.png,Roof Closed
+824262,Comerica Park6:40NYY @ DET,"OutRightMiddle.svg,OutRight.svg,OutRight.svg,LightWind.png,HighP.png","OutRightMiddle.svg,OutRight.svg,OutRight.svg,Light Breeze,High Pressure"
+823210,Oracle Park9:45ATH @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind"
+823690,Target Field7:40LAD @ MIN,"FromRight.svg,FromRight.svg,FromRight.svg,HighH.png","FromRight.svg,FromRight.svg,FromRight.svg,High Humidity"
+823614,Citi Field7:10CHC @ NYM,"InLeftMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,HighH.png","InLeftMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,High Humidity"
+823043,Busch Stadium7:45ARI @ STL,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,From76to82.png,HighP.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,76–82°F,High Pressure"

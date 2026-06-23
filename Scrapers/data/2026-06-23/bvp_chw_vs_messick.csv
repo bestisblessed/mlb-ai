@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,3,.000,.000,Miguel Vargas,678246,1,2,2.00,,,9,.000,.000,Messick,800048,3,.000,,,
+,3,.333,.500,Chase Meidroth,805367,1,1,1.00,1,2,10,.333,.666,Messick,800048,3,.333,1,1,
+,2,.000,.000,Andrew Benintendi,643217,1,1,1.00,,,8,.000,.000,Messick,800048,2,.000,1,,
