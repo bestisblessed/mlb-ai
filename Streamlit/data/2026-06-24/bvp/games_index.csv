@@ -1,0 +1,17 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823850,2026-06-24T16:10:00Z,Scheduled,140,Texas Rangers,146,Miami Marlins,loanDepot park,Jacob deGrom,594798.0,R,Eury Pérez,691587,R
+823613,2026-06-24T17:10:00Z,Scheduled,112,Chicago Cubs,121,New York Mets,Citi Field,,,,Nolan McLean,690997,R
+823611,2026-06-24T23:10:00Z,Scheduled,112,Chicago Cubs,121,New York Mets,Citi Field,,,,Sean Manaea,640455,L
+824583,2026-06-24T18:10:00Z,Scheduled,114,Cleveland Guardians,145,Chicago White Sox,Rate Field,Tanner Bibee,676440.0,R,Erick Fedde,607200,R
+824341,2026-06-24T19:10:00Z,Scheduled,111,Boston Red Sox,115,Colorado Rockies,Coors Field,Ranger Suarez,624133.0,L,Kyle Freeland,607536,L
+824018,2026-06-24T20:07:00Z,Scheduled,110,Baltimore Orioles,108,Los Angeles Angels,Angel Stadium,Trey Gibson,694346.0,R,José Soriano,667755,R
+823367,2026-06-24T22:40:00Z,Scheduled,136,Seattle Mariners,134,Pittsburgh Pirates,PNC Park,Bryan Woo,693433.0,R,Braxton Ashcraft,677952,R
+822965,2026-06-24T22:40:00Z,Scheduled,118,Kansas City Royals,139,Tampa Bay Rays,Tropicana Field,Noah Cameron,702070.0,L,Griffin Jax,643377,R
+824259,2026-06-24T22:40:00Z,Scheduled,147,New York Yankees,116,Detroit Tigers,Comerica Park,Ryan Weathers,677960.0,L,Tarik Skubal,669373,L
+822719,2026-06-24T22:45:00Z,Scheduled,143,Philadelphia Phillies,120,Washington Nationals,Nationals Park,Aaron Nola,605400.0,R,Miles Mikolas,571945,R
+822798,2026-06-24T23:07:00Z,Scheduled,117,Houston Astros,141,Toronto Blue Jays,Rogers Centre,Mike Burrows,681347.0,R,Trey Yesavage,702056,R
+824500,2026-06-24T23:10:00Z,Scheduled,158,Milwaukee Brewers,113,Cincinnati Reds,Great American Ball Park,Shane Drohan,675660.0,L,Rhett Lowder,695076,R
+823691,2026-06-24T23:40:00Z,Scheduled,119,Los Angeles Dodgers,142,Minnesota Twins,Target Field,Shohei Ohtani,660271.0,R,Joe Ryan,657746,R
+823041,2026-06-24T23:45:00Z,Scheduled,109,Arizona Diamondbacks,138,St. Louis Cardinals,Busch Stadium,Mitch Bratt,,,Matthew Liberatore,669461,L
+823284,2026-06-25T00:40:00Z,Scheduled,144,Atlanta Braves,135,San Diego Padres,Petco Park,Martín Pérez,527048.0,L,JP Sears,676664,L
+823208,2026-06-25T01:45:00Z,Scheduled,133,Athletics,137,San Francisco Giants,Oracle Park,Gage Jump,695611.0,L,Tyler Mahle,641816,R
