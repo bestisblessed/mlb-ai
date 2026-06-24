@@ -1,10 +1,10 @@
 game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
-823850,2026-06-24T16:10:00Z,Scheduled,140,Texas Rangers,146,Miami Marlins,loanDepot park,Jacob deGrom,594798.0,R,Eury Pérez,691587,R
-823613,2026-06-24T17:10:00Z,Scheduled,112,Chicago Cubs,121,New York Mets,Citi Field,,,,Nolan McLean,690997,R
-823611,2026-06-24T23:10:00Z,Scheduled,112,Chicago Cubs,121,New York Mets,Citi Field,,,,Sean Manaea,640455,L
-824583,2026-06-24T18:10:00Z,Scheduled,114,Cleveland Guardians,145,Chicago White Sox,Rate Field,Tanner Bibee,676440.0,R,Erick Fedde,607200,R
-824341,2026-06-24T19:10:00Z,Scheduled,111,Boston Red Sox,115,Colorado Rockies,Coors Field,Ranger Suarez,624133.0,L,Kyle Freeland,607536,L
-824018,2026-06-24T20:07:00Z,Scheduled,110,Baltimore Orioles,108,Los Angeles Angels,Angel Stadium,Trey Gibson,694346.0,R,José Soriano,667755,R
+823850,2026-06-24T16:10:00Z,Player challenge,140,Texas Rangers,146,Miami Marlins,loanDepot park,Jacob deGrom,594798.0,R,Eury Pérez,691587,R
+823613,2026-06-24T17:10:00Z,In Progress,112,Chicago Cubs,121,New York Mets,Citi Field,Javier Assad,665871.0,R,Nolan McLean,690997,R
+823611,2026-06-24T23:10:00Z,Scheduled,112,Chicago Cubs,121,New York Mets,Citi Field,Shota Imanaga,684007.0,L,Sean Manaea,640455,L
+824583,2026-06-24T18:10:00Z,Delayed Start,114,Cleveland Guardians,145,Chicago White Sox,Rate Field,Tanner Bibee,676440.0,R,Erick Fedde,607200,R
+824341,2026-06-24T19:10:00Z,Pre-Game,111,Boston Red Sox,115,Colorado Rockies,Coors Field,Ranger Suarez,624133.0,L,Kyle Freeland,607536,L
+824018,2026-06-24T20:07:00Z,Pre-Game,110,Baltimore Orioles,108,Los Angeles Angels,Angel Stadium,Trey Gibson,694346.0,R,José Soriano,667755,R
 823367,2026-06-24T22:40:00Z,Scheduled,136,Seattle Mariners,134,Pittsburgh Pirates,PNC Park,Bryan Woo,693433.0,R,Braxton Ashcraft,677952,R
 822965,2026-06-24T22:40:00Z,Scheduled,118,Kansas City Royals,139,Tampa Bay Rays,Tropicana Field,Noah Cameron,702070.0,L,Griffin Jax,643377,R
 824259,2026-06-24T22:40:00Z,Scheduled,147,New York Yankees,116,Detroit Tigers,Comerica Park,Ryan Weathers,677960.0,L,Tarik Skubal,669373,L

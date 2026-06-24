@@ -1,9 +1,9 @@
 {
   "target_date": "2026-06-24",
   "season_prior": 2026,
-  "scraped_at": "2026-06-24T14:01:46.659989+00:00",
+  "scraped_at": "2026-06-24T18:17:34.602481+00:00",
   "games": 16,
-  "batters": 678,
-  "bvp_rows": 678,
-  "bvp_with_pa": 151
+  "batters": 729,
+  "bvp_rows": 783,
+  "bvp_with_pa": 193
 }
