@@ -4,7 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 cd "$SCRIPT_DIR"
 
-LOG_FILE="${MLB_SCRAPER_LOG:-scraper.log}"
+LOG_FILE="${MLB_SCRAPER_LOG:-cron.log}"
 PYTHON="${MLB_AI_PYTHON:-$HOME/.pyenv/shims/python}"
 
 export PATH="$HOME/.pyenv/shims:$HOME/.pyenv/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
