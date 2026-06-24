@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd -P)"
-SCRAPER_LOG="$SCRIPT_DIR/../Scrapers/scraper.log"
+SCRAPER_LOG="$SCRIPT_DIR/../Scrapers/cron.log"
 cd "$SCRIPT_DIR"
 
 DATE_STR="${1:-$(date +%Y-%m-%d)}"
