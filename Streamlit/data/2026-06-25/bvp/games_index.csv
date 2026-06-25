@@ -1,0 +1,10 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822961,2026-06-25T16:10:00Z,Pre-Game,118,Kansas City Royals,139,Tampa Bay Rays,Tropicana Field,Seth Lugo,607625,R,Casey Legumina,668984,R
+823366,2026-06-25T16:35:00Z,Pre-Game,136,Seattle Mariners,134,Pittsburgh Pirates,PNC Park,Bryce Miller,682243,R,Bubba Chandler,696149,R
+823209,2026-06-25T19:45:00Z,Scheduled,133,Athletics,137,San Francisco Giants,Oracle Park,Jeffrey Springs,605488,L,Landen Roupp,694738,R
+824258,2026-06-25T22:40:00Z,Scheduled,117,Houston Astros,116,Detroit Tigers,Comerica Park,Tatsuya Imai,837227,R,Troy Melton,675512,R
+822717,2026-06-25T22:45:00Z,Scheduled,143,Philadelphia Phillies,120,Washington Nationals,Nationals Park,Cristopher Sánchez,650911,L,Cade Cavalli,676917,R
+822797,2026-06-25T23:07:00Z,Scheduled,140,Texas Rangers,141,Toronto Blue Jays,Rogers Centre,MacKenzie Gore,669022,L,Kevin Gausman,592332,R
+823612,2026-06-25T23:10:00Z,Scheduled,112,Chicago Cubs,121,New York Mets,Citi Field,Matthew Boyd,571510,L,Freddy Peralta,642547,R
+824747,2026-06-25T23:10:00Z,Scheduled,147,New York Yankees,111,Boston Red Sox,Fenway Park,Cam Schlittler,693645,R,Connelly Early,813349,L
+823042,2026-06-25T23:45:00Z,Scheduled,109,Arizona Diamondbacks,138,St. Louis Cardinals,Busch Stadium,Zac Gallen,668678,R,Michael McGreevy,700241,R
