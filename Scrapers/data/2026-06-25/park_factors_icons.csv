@@ -1,0 +1,10 @@
+game_id,game,icons,icon_labels
+824747,Fenway Park7:10NYY @ BOS,"OutRightMiddle.svg,InLeftMiddle.svg,FromLeft.svg","OutRightMiddle.svg,InLeftMiddle.svg,FromLeft.svg"
+822717,Nationals Park6:45PHI @ WAS,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftMiddle.svg,LightWind.png,From83to89.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftMiddle.svg,Light Breeze,83–89°F"
+824258,Comerica Park6:40HOU @ DET,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,LightWind.png,From76to82.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,Light Breeze,76–82°F"
+823366,PNC Park12:35SEA @ PIT,"OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,LightWind.png,From76to82.png","OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,Light Breeze,76–82°F"
+823612,Citi Field7:10CHC @ NYM,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind"
+823209,Oracle Park3:45ATH @ SF,"OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,HighH.png","OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,High Humidity"
+823042,Busch Stadium7:45ARI @ STL,"OutLeftMiddle.svg,InRight.svg,InRightMiddle.svg,From76to82.png,HighH.png","OutLeftMiddle.svg,InRight.svg,InRightMiddle.svg,76–82°F,High Humidity"
+822797,Rogers Centre7:07TEX @ TOR,RoofClosed.png,Roof Closed
+822961,Tropicana Field12:10KC  @ TB,RoofClosed.png,Roof Closed
