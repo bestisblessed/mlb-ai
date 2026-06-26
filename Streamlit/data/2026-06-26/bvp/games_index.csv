@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824255,2026-06-26T22:40:00Z,Scheduled,117,Houston Astros,116,Detroit Tigers,Comerica Park,Spencer Arrighetti,681293.0,R,Keider Montero,672456.0,R
+823363,2026-06-26T22:40:00Z,Scheduled,113,Cincinnati Reds,134,Pittsburgh Pirates,PNC Park,Andrew Abbott,671096.0,L,Paul Skenes,694973.0,R
+824824,2026-06-26T23:05:00Z,Scheduled,120,Washington Nationals,110,Baltimore Orioles,Oriole Park at Camden Yards,Andrew Alvarez,674841.0,L,Trevor Rogers,669432.0,L
+822796,2026-06-26T23:07:00Z,Scheduled,140,Texas Rangers,141,Toronto Blue Jays,Rogers Centre,Nathan Eovaldi,543135.0,R,Patrick Corbin,571578.0,L
+824423,2026-06-26T23:10:00Z,Scheduled,136,Seattle Mariners,114,Cleveland Guardians,Progressive Field,Luis Castillo,622491.0,R,Joey Cantillo,676282.0,L
+822962,2026-06-26T23:10:00Z,Scheduled,109,Arizona Diamondbacks,139,Tampa Bay Rays,Tropicana Field,Zac Gallen,668678.0,R,Nick Martinez,607259.0,R
+823610,2026-06-26T23:10:00Z,Scheduled,143,Philadelphia Phillies,121,New York Mets,Citi Field,Zack Wheeler,554430.0,R,,,
+824743,2026-06-26T23:10:00Z,Scheduled,147,New York Yankees,111,Boston Red Sox,Fenway Park,Will Warren,701542.0,R,Payton Tolle,801139.0,L
+824582,2026-06-26T23:40:00Z,Scheduled,118,Kansas City Royals,145,Chicago White Sox,Rate Field,,,,,,
+823773,2026-06-26T23:45:00Z,Scheduled,112,Chicago Cubs,158,Milwaukee Brewers,American Family Field,Colin Rea,607067.0,R,Jacob Misiorowski,694819.0,R
+823688,2026-06-27T00:10:00Z,Scheduled,115,Colorado Rockies,142,Minnesota Twins,Target Field,Tomoyuki Sugano,608372.0,R,Taj Bradley,671737.0,R
+823039,2026-06-27T00:15:00Z,Scheduled,146,Miami Marlins,138,St. Louis Cardinals,Busch Stadium,Max Meyer,676974.0,R,Michael McGreevy,700241.0,R
+824014,2026-06-27T01:38:00Z,Scheduled,133,Athletics,108,Los Angeles Angels,Angel Stadium,J.T. Ginn,669372.0,R,Walbert Ureña,700712.0,R
+823285,2026-06-27T01:45:00Z,Scheduled,119,Los Angeles Dodgers,135,San Diego Padres,Petco Park,Roki Sasaki,808963.0,R,Walker Buehler,621111.0,R
+823206,2026-06-27T02:15:00Z,Scheduled,144,Atlanta Braves,137,San Francisco Giants,Oracle Park,Reynaldo López,625643.0,R,,,
