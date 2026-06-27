@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824825,Oriole Park7:05WAS @ BAL,"OutLeftCenter.svg,OutLeftMiddle.svg,OutLeft.svg,HighH.png","OutLeftCenter.svg,OutLeftMiddle.svg,OutLeft.svg,High Humidity"
+823364,PNC Park4:05CIN @ PIT,"InLeftMiddle.svg,FromLeft.svg,FromLeft.svg,From76to82.png,HighH.png","InLeftMiddle.svg,FromLeft.svg,FromLeft.svg,76–82°F,High Humidity"
+824745,Fenway Park1:10NYY @ BOS,"InRightCenter.svg,InRight.svg,InRight.svg,LightWind.png,HighH.png","InRightCenter.svg,InRight.svg,InRight.svg,Light Breeze,High Humidity"
+823689,Target Field7:10COL @ MIN,"InRight.svg,InRightMiddle.svg,InRight.svg,ModerateWind.png,From76to82.png","InRight.svg,InRightMiddle.svg,InRight.svg,Moderate Wind,76–82°F"
+824257,Comerica Park1:10HOU @ DET,"FromLeft.svg,FromLeft.svg,InLeftMiddle.svg,LightWind.png,From76to82.png","FromLeft.svg,FromLeft.svg,InLeftMiddle.svg,Light Breeze,76–82°F"
+823207,Oracle Park9:05ATL @ SF,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,HeavyWind.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Heavy Wind"
+824581,Rate Field4:10KC  @ CHW,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+824015,Angel Stadium9:38ATH @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind"
+822794,Rogers Centre3:07TEX @ TOR,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,76–82°F"
+823609,Citi Field4:10PHI @ NYM,"OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,Light Breeze,76–82°F"
+823038,Busch Stadium7:15MIA @ STL,"InRightMiddle.svg,InRight.svg,InRight.svg,From83to89.png","InRightMiddle.svg,InRight.svg,InRight.svg,83–89°F"
+824421,Progressive Field7:10SEA @ CLE,"InRight.svg,InRight.svg,InRightCenter.svg","InRight.svg,InRight.svg,InRightCenter.svg"
+822960,Tropicana Field6:10ARI @ TB,RoofClosed.png,Roof Closed
+823283,Petco Park8:40LAD @ SD,"FromLeft.svg,FromLeft.svg,InLeftMiddle.svg,ModerateWind.png","FromLeft.svg,FromLeft.svg,InLeftMiddle.svg,Moderate Wind"
+823770,American Family Fld7:10CHC @ MIL,"InLeft.svg,InLeft.svg,InLeft.svg,LightWind.png","InLeft.svg,InLeft.svg,InLeft.svg,Light Breeze"

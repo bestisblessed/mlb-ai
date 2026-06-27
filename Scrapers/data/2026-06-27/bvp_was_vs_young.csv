@@ -1,0 +1,9 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+1,1,,.000,.000,1,Jose Tena,677588,,1,,0.00,,,,8,.500,.500,Young,687064,2,,,.000,,,
+1,2,,.500,.500,,Luis Garcia,671277,,1,,0.00,1,,1,7,.500,1.000,Young,687064,2,,,.500,,1,2026
+2,2,,.000,.000,,C.J. Abrams,682928,,1,,0.00,,,2,4,.000,.000,Young,687064,2,,,.000,,,2026
+,1,1.00,1.000,.---,1,Jacob Young,696285,,1,,,1,1,,11,1.000,5.000,Young,687064,2,1,,4.000,,4,2026
+,2,,.500,.500,,Daylen Lile,695734,,1,1,1.00,1,,,5,.500,1.000,Young,687064,2,,,.500,,1,2026
+1,1,,1.000,.500,,Keibert Ruiz,660688,1,1,,0.00,1,,,8,.500,2.500,Young,687064,2,1,1,2.000,,2,
+,2,,.000,.000,,Nasim Nunez,683083,,1,1,1.00,,,3,7,.000,.000,Young,687064,2,,,.000,1,,2026
+,2,,.500,1.000,1,James Wood,695578,,1,,,1,,,13,.667,1.167,Young,687064,3,,,.500,1,1,2026
