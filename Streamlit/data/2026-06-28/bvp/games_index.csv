@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824821,2026-06-28T17:35:00Z,Scheduled,120,Washington Nationals,110,Baltimore Orioles,Oriole Park at Camden Yards,Zack Littell,641793,R,Kyle Bradish,680694,R
+823362,2026-06-28T17:35:00Z,Scheduled,113,Cincinnati Reds,134,Pittsburgh Pirates,PNC Park,Brady Singer,663903,R,Mitch Keller,656605,R
+822795,2026-06-28T17:37:00Z,Scheduled,140,Texas Rangers,141,Toronto Blue Jays,Rogers Centre,Kumar Rocker,677958,R,Shane Bieber,669456,R
+824256,2026-06-28T17:40:00Z,Scheduled,117,Houston Astros,116,Detroit Tigers,Comerica Park,Hunter Brown,686613,R,Jack Flaherty,656427,R
+824422,2026-06-28T17:40:00Z,Scheduled,136,Seattle Mariners,114,Cleveland Guardians,Progressive Field,Emerson Hancock,676106,R,Gavin Williams,668909,R
+822959,2026-06-28T17:40:00Z,Scheduled,109,Arizona Diamondbacks,139,Tampa Bay Rays,Tropicana Field,Merrill Kelly,518876,R,Drew Rasmussen,656876,R
+823608,2026-06-28T17:40:00Z,Scheduled,143,Philadelphia Phillies,121,New York Mets,Citi Field,Jesús Luzardo,666200,L,Cionel Pérez,672335,L
+823686,2026-06-28T18:10:00Z,Scheduled,115,Colorado Rockies,142,Minnesota Twins,Target Field,Ryan Feltner,663372,R,Connor Prielipp,687570,L
+824580,2026-06-28T18:10:00Z,Scheduled,118,Kansas City Royals,145,Chicago White Sox,Rate Field,Luinder Avila,679883,R,Anthony Kay,641743,L
+823769,2026-06-28T18:10:00Z,Scheduled,112,Chicago Cubs,158,Milwaukee Brewers,American Family Field,Ryan Rolison,669020,L,Brandon Woodruff,605540,R
+823037,2026-06-28T18:15:00Z,Scheduled,146,Miami Marlins,138,St. Louis Cardinals,Busch Stadium,Tyler Phillips,663969,R,Kyle Leahy,681517,R
+824011,2026-06-28T19:15:00Z,Scheduled,133,Athletics,108,Los Angeles Angels,Angel Stadium,Aaron Civale,650644,R,Sam Aldegheri,691951,L
+823204,2026-06-28T20:05:00Z,Scheduled,144,Atlanta Braves,137,San Francisco Giants,Oracle Park,Chris Sale,519242,L,Robbie Ray,592662,L
+823281,2026-06-28T20:10:00Z,Scheduled,119,Los Angeles Dodgers,135,San Diego Padres,Petco Park,Emmet Sheehan,686218,R,Michael King,650633,R
+824744,2026-06-28T23:20:00Z,Scheduled,147,New York Yankees,111,Boston Red Sox,Fenway Park,Carlos Rodón,607074,L,Sonny Gray,543243,R
