@@ -1,0 +1,10 @@
+airouts,atbats,avg,babip,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+,1,1.000,1.000,Nathan Church,701675,1,,,1,,4,1.000,2.000,Phillips,663969,1,1.000,,1,2026
+,1,.000,.000,Pedro Pages,686780,1,1,1.00,,1,2,.000,.000,Phillips,663969,1,.000,,,
+,1,.000,.---,Jordan Walker,691023,1,,,,,5,.000,.000,Phillips,663969,1,.000,1,,2025
+1,1,.000,.000,Jordan Walker,691023,1,,0.00,,,2,.000,.000,Phillips,663969,1,.000,,,2026
+,3,.333,1.000,Ivan Herrera,671056,2,,,1,1,15,.333,.666,Phillips,663969,3,.333,2,1,
+1,1,.000,.000,JJ Wetherholt,802139,1,,0.00,,,4,.000,.000,Phillips,663969,1,.000,,,2026
+,1,1.000,1.000,Alec Burleson,676475,1,,,1,,5,1.000,2.000,Phillips,663969,1,1.000,,1,2025
+,1,.000,.---,Alec Burleson,676475,1,,,,,5,.000,.000,Phillips,663969,1,.000,1,,2026
+1,1,.000,.000,Masyn Winn,691026,1,,0.00,,,2,.000,.000,Phillips,663969,1,.000,,,2026

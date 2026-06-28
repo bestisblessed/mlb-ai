@@ -1,0 +1,12 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacbunts,slg,strikeouts,totalbases,year
+2,5,,.200,.250,,Jarred Kelenic,672284,,2,1,0.50,1,,1,25,.200,.400,Bieber,669456,5,,,.200,1,1,
+1,5,5.00,.400,.333,,Jake Burger,669394,,2,1,1.00,2,1,1,15,.400,1.400,Bieber,669456,5,2,,1.000,1,5,
+1,4,,.250,.250,,Brandon Nimmo,607043,,1,2,2.00,1,,1,19,.250,.500,Bieber,669456,4,,,.250,,1,2023
+1,1,,.000,.000,,Ezequiel Duran,677649,,1,,0.00,,,,7,.000,.000,Bieber,669456,1,,,.000,,,2022
+1,1,,.000,.000,,Elias Diaz,553869,,1,,0.00,,,,2,.000,.000,Bieber,669456,1,,,.000,,,
+,2,,.000,.000,,Corey Seager,608369,,1,1,1.00,,,,7,.000,.000,Bieber,669456,2,,,.000,1,,
+1,3,,.000,.000,,Kyle Higashioka,543309,,1,1,1.00,,,1,8,.000,.000,Bieber,669456,3,,,.000,1,,2018
+1,3,,.000,.000,,Kyle Higashioka,543309,,1,1,1.00,,,1,12,.000,.000,Bieber,669456,3,,,.000,1,,2021
+2,3,,.000,.000,,Kyle Higashioka,543309,,1,1,0.50,,,1,7,.000,.000,Bieber,669456,3,,,.000,,,2023
+4,24,,.208,.294,2,Nicky Lopez,670032,1,11,9,2.25,5,,6,111,.269,.519,Bieber,669456,27,2,1,.250,7,6,
+1,4,,.250,.333,,Joc Pederson,592626,,1,1,1.00,1,,,12,.250,.500,Bieber,669456,4,,,.250,1,1,2021
