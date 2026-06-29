@@ -1,0 +1,14 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824822,2026-06-29T22:35:00Z,Scheduled,145,Chicago White Sox,110,Baltimore Orioles,Oriole Park at Camden Yards,Sean Burke,680732.0,R,Shane Baz,669358.0,R
+823444,2026-06-29T22:40:00Z,Scheduled,134,Pittsburgh Pirates,143,Philadelphia Phillies,Citizens Bank Park,Braxton Ashcraft,677952.0,R,Aaron Nola,605400.0,R
+823529,2026-06-29T23:05:00Z,Scheduled,116,Detroit Tigers,147,New York Yankees,Yankee Stadium,Casey Mize,663554.0,R,Ryan Weathers,677960.0,L
+822792,2026-06-29T23:07:00Z,Scheduled,121,New York Mets,141,Toronto Blue Jays,Rogers Centre,Sean Manaea,640455.0,L,Trey Yesavage,702056.0,R
+824741,2026-06-29T23:10:00Z,Scheduled,120,Washington Nationals,111,Boston Red Sox,Fenway Park,Miles Mikolas,571945.0,R,Ranger Suarez,624133.0,L
+824420,2026-06-29T23:10:00Z,Scheduled,140,Texas Rangers,114,Cleveland Guardians,Progressive Field,Tyler Alexander,641302.0,L,Parker Messick,800048.0,L
+823771,2026-06-29T23:40:00Z,Scheduled,113,Cincinnati Reds,158,Milwaukee Brewers,American Family Field,Nick Lodolo,666157.0,L,Robert Gasser,688107.0,L
+824662,2026-06-30T00:05:00Z,Scheduled,135,San Diego Padres,112,Chicago Cubs,Wrigley Field,,,,Shota Imanaga,684007.0,L
+824176,2026-06-30T00:10:00Z,Scheduled,142,Minnesota Twins,117,Houston Astros,Daikin Park,Zebby Matthews,805673.0,R,Peter Lambert,663567.0,R
+824339,2026-06-30T00:40:00Z,Scheduled,146,Miami Marlins,115,Colorado Rockies,Coors Field,Sandy Alcantara,645261.0,R,,,
+824986,2026-06-30T01:40:00Z,Scheduled,119,Los Angeles Dodgers,133,Athletics,Sutter Health Park,Eric Lauer,641778.0,L,Gage Jump,695611.0,L
+823121,2026-06-30T01:40:00Z,Scheduled,108,Los Angeles Angels,136,Seattle Mariners,T-Mobile Park,Ryan Johnson,696270.0,R,George Kirby,669923.0,R
+825065,2026-06-30T01:40:00Z,Scheduled,137,San Francisco Giants,109,Arizona Diamondbacks,Chase Field,Tyler Mahle,641816.0,R,Eduardo Rodriguez,699134.0,R
