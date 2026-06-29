@@ -1,0 +1,14 @@
+game_id,game,icons,icon_labels
+824339,Coors Field8:40MIA @ COL,"OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,ModerateWind.png,From83to89.png,LowH.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,Moderate Wind,83–89°F,Low Humidity,Low Pressure"
+824986,Sutter Health Park9:40LAD @ ATH,"OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,ModerateWind.png,Over90.png,LowH.png,LowP.png","OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,Moderate Wind,≥90°F,Low Humidity,Low Pressure"
+824662,Wrigley Field8:05SD  @ CHC,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From83to89.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,83–89°F"
+824420,Progressive Field7:10TEX @ CLE,"OutRightCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,From76to82.png","OutRightCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,76–82°F"
+823444,Citizens Bank Park6:40PIT @ PHI,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,76–82°F"
+824822,Oriole Park6:35CHW @ BAL,"FromRight.svg,FromRight.svg,FromRight.svg,From83to89.png","FromRight.svg,FromRight.svg,FromRight.svg,83–89°F"
+824741,Fenway Park7:10WAS @ BOS,"InRightMiddle.svg,FromRight.svg,OutLeftMiddle.svg,LightWind.png","InRightMiddle.svg,FromRight.svg,OutLeftMiddle.svg,Light Breeze"
+823771,American Family Fld7:40CIN @ MIL,"FromRight.svg,FromRight.svg,FromRight.svg,ModerateWind.png,From76to82.png,HighH.png,LowP.png","FromRight.svg,FromRight.svg,FromRight.svg,Moderate Wind,76–82°F,High Humidity,Low Pressure"
+825065,Chase Field9:40SF  @ ARI,RoofClosed.png,Roof Closed
+823529,Yankee Stadium7:05DET @ NYY,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,From76to82.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,76–82°F"
+822792,Rogers Centre7:07NYM @ TOR,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg"
+824176,Daikin Park8:10MIN @ HOU,RoofClosed.png,Roof Closed
+823121,T-Mobile Park9:40LAA @ SEA,"OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,LightWind.png","OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,Light Breeze"
