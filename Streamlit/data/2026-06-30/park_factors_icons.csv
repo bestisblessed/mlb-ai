@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824338,Coors Field8:40MIA @ COL,"InRight.svg,InRight.svg,InRightMiddle.svg,LightWind.png,From83to89.png,LowH.png,LowP.png","InRight.svg,InRight.svg,InRightMiddle.svg,Light Breeze,83–89°F,Low Humidity,Low Pressure"
+824984,Sutter Health Park9:40LAD @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From83to89.png,LowH.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,83–89°F,Low Humidity,Low Pressure"
+824661,Wrigley Field8:05SD  @ CHC,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,From83to89.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,83–89°F"
+824742,Fenway Park7:10WAS @ BOS,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F"
+824096,Kauffman Stadium7:40TB  @ KC,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeft.svg,ModerateWind.png,From83to89.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeft.svg,Moderate Wind,83–89°F"
+824418,Progressive Field6:40TEX @ CLE,"OutRightMiddle.svg,OutRightMiddle.svg,OutRight.svg,ModerateWind.png,From83to89.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRight.svg,Moderate Wind,83–89°F"
+824819,Oriole Park6:35CHW @ BAL,"OutLeft.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png,From83to89.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Moderate Wind,83–89°F"
+823445,Citizens Bank Park6:40PIT @ PHI,"OutRightCenter.svg,OutCenter.svg,OutLeftCenter.svg,LightWind.png,From83to89.png","OutRightCenter.svg,OutCenter.svg,OutLeftCenter.svg,Light Breeze,83–89°F"
+823768,American Family Fld7:40CIN @ MIL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,HeavyWind.png,From83to89.png,LowP.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Heavy Wind,83–89°F,Low Pressure"
+823528,Yankee Stadium7:05DET @ NYY,"OutLeft.svg,OutLeft.svg,OutLeft.svg,LightWind.png,From83to89.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Light Breeze,83–89°F"
+824907,Truist Park7:15STL @ ATL,"OutRightMiddle.svg,OutRight.svg,OutRight.svg,Over90.png","OutRightMiddle.svg,OutRight.svg,OutRight.svg,≥90°F"
+825066,Chase Field9:40SF  @ ARI,RoofClosed.png,Roof Closed
+824175,Daikin Park8:10MIN @ HOU,RoofClosed.png,Roof Closed
+822793,Rogers Centre7:07NYM @ TOR,RoofClosed.png,Roof Closed
+823122,T-Mobile Park9:40LAA @ SEA,"OutLeftMiddle.svg,OutLeftMiddle.svg,InRightMiddle.svg","OutLeftMiddle.svg,OutLeftMiddle.svg,InRightMiddle.svg"
