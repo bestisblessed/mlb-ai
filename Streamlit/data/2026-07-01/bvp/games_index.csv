@@ -1,0 +1,15 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824818,2026-07-01T16:35:00Z,Pre-Game,145,Chicago White Sox,110,Baltimore Orioles,Oriole Park at Camden Yards,Noah Schultz,702273.0,L,Dean Kremer,665152,R
+824419,2026-07-01T17:10:00Z,Pre-Game,140,Texas Rangers,114,Cleveland Guardians,Progressive Field,MacKenzie Gore,669022.0,L,Joey Cantillo,676282,L
+824740,2026-07-01T17:35:00Z,Scheduled,120,Washington Nationals,111,Boston Red Sox,Fenway Park,Andrew Alvarez,674841.0,L,Payton Tolle,801139,L
+823530,2026-07-01T17:35:00Z,Scheduled,116,Detroit Tigers,147,New York Yankees,Yankee Stadium,Troy Melton,675512.0,R,Will Warren,701542,R
+824660,2026-07-01T18:20:00Z,Scheduled,135,San Diego Padres,112,Chicago Cubs,Wrigley Field,Walker Buehler,621111.0,R,Colin Rea,607067,R
+822791,2026-07-01T19:07:00Z,Scheduled,121,New York Mets,141,Toronto Blue Jays,Rogers Centre,Freddy Peralta,642547.0,R,Braydon Fisher,680755,R
+823446,2026-07-01T22:40:00Z,Scheduled,134,Pittsburgh Pirates,143,Philadelphia Phillies,Citizens Bank Park,Paul Skenes,694973.0,R,Zack Wheeler,554430,R
+824905,2026-07-01T23:15:00Z,Scheduled,138,St. Louis Cardinals,144,Atlanta Braves,Truist Park,Michael McGreevy,700241.0,R,Reynaldo López,625643,R
+824094,2026-07-01T23:40:00Z,Scheduled,139,Tampa Bay Rays,118,Kansas City Royals,Kauffman Stadium,Shane McClanahan,663556.0,L,Seth Lugo,607625,R
+824174,2026-07-02T00:10:00Z,Scheduled,142,Minnesota Twins,117,Houston Astros,Daikin Park,Taj Bradley,671737.0,R,Tatsuya Imai,837227,R
+823767,2026-07-02T00:10:00Z,Scheduled,113,Cincinnati Reds,158,Milwaukee Brewers,American Family Field,Andrew Abbott,671096.0,L,Shane Drohan,675660,L
+824337,2026-07-02T00:40:00Z,Scheduled,146,Miami Marlins,115,Colorado Rockies,Coors Field,Max Meyer,676974.0,R,Kyle Freeland,607536,L
+824985,2026-07-02T01:40:00Z,Scheduled,119,Los Angeles Dodgers,133,Athletics,Sutter Health Park,,,,J.T. Ginn,669372,R
+825064,2026-07-02T01:40:00Z,Scheduled,137,San Francisco Giants,109,Arizona Diamondbacks,Chase Field,Trevor McDonald,686790.0,R,Zac Gallen,668678,R

@@ -1,0 +1,10 @@
+game_id,game,icons,icon_labels
+824335,Coors Field3:10MIA @ COL,"FromRight.svg,FromRight.svg,InRightMiddle.svg,LightWind.png,Over90.png,LowH.png,LowP.png","FromRight.svg,FromRight.svg,InRightMiddle.svg,Light Breeze,≥90°F,Low Humidity,Low Pressure"
+824093,Kauffman Stadium7:40TB  @ KC,"OutLeft.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png,From83to89.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Moderate Wind,83–89°F"
+823442,Citizens Bank Park12:35PIT @ PHI,"InLeftMiddle.svg,InLeftMiddle.svg,FromLeft.svg,LightWind.png,Over90.png","InLeftMiddle.svg,InLeftMiddle.svg,FromLeft.svg,Light Breeze,≥90°F"
+824416,Progressive Field6:40CHW @ CLE,"OutRightMiddle.svg,OutRightMiddle.svg,OutRight.svg,LightWind.png,Over90.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRight.svg,Light Breeze,≥90°F"
+823765,American Family Fld2:10CIN @ MIL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,ModerateWind.png,Over90.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Moderate Wind,≥90°F"
+824906,Truist Park7:15STL @ ATL,"InLeftMiddle.svg,OutCenter.svg,OutCenter.svg,LightWind.png,Over90.png","InLeftMiddle.svg,OutCenter.svg,OutCenter.svg,Light Breeze,≥90°F"
+823935,Dodger Stadium10:10SD  @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze"
+822884,Globe Life Field8:05DET @ TEX,RoofClosed.png,Roof Closed
+823119,T-Mobile Park9:40LAA @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg"
