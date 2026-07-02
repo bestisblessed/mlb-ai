@@ -1,0 +1,10 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823442,2026-07-02T16:35:00Z,Pre-Game,134,Pittsburgh Pirates,143,Philadelphia Phillies,Citizens Bank Park,Jared Jones,683003,R,Alan Rangel,660604,R
+823765,2026-07-02T18:10:00Z,Scheduled,113,Cincinnati Reds,158,Milwaukee Brewers,American Family Field,Chase Burns,695505,R,Jacob Misiorowski,694819,R
+824335,2026-07-02T19:10:00Z,Scheduled,146,Miami Marlins,115,Colorado Rockies,Coors Field,Ryan Gusto,687473,R,Michael Lorenzen,547179,R
+824416,2026-07-02T22:40:00Z,Scheduled,145,Chicago White Sox,114,Cleveland Guardians,Progressive Field,Davis Martin,663436,R,Slade Cecconi,677944,R
+824906,2026-07-02T23:15:00Z,Scheduled,138,St. Louis Cardinals,144,Atlanta Braves,Truist Park,Dustin May,669160,R,Hurston Waldrep,694462,R
+824093,2026-07-02T23:40:00Z,Scheduled,139,Tampa Bay Rays,118,Kansas City Royals,Kauffman Stadium,Ian Seymour,693855,L,Stephen Kolek,663568,R
+822884,2026-07-03T00:05:00Z,Scheduled,116,Detroit Tigers,140,Texas Rangers,Globe Life Field,Framber Valdez,664285,L,Nathan Eovaldi,543135,R
+823119,2026-07-03T01:40:00Z,Scheduled,108,Los Angeles Angels,136,Seattle Mariners,T-Mobile Park,Walbert Ureña,700712,R,Bryce Miller,682243,R
+823935,2026-07-03T02:10:00Z,Scheduled,135,San Diego Padres,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Randy Vásquez,681190,R,Roki Sasaki,808963,R
