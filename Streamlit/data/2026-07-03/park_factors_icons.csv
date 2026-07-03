@@ -1,0 +1,14 @@
+game_id,game,icons,icon_labels
+824336,Coors Field8:10SF  @ COL,"InRight.svg,InRightMiddle.svg,InCenter.svg,ModerateWind.png,Over90.png,LowH.png,LowP.png","InRight.svg,InRightMiddle.svg,InCenter.svg,Moderate Wind,≥90°F,Low Humidity,Low Pressure"
+824982,Sutter Health Park9:40MIA @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,Over90.png,LowH.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,≥90°F,Low Humidity,Low Pressure"
+824498,Great American BP7:10BAL @ CIN,"OutRightCenter.svg,OutRight.svg,OutRight.svg,LightWind.png,Over90.png","OutRightCenter.svg,OutRight.svg,OutRight.svg,Light Breeze,≥90°F"
+824417,Progressive Field7:10CHW @ CLE,"OutRightMiddle.svg,OutRightMiddle.svg,OutRight.svg,LightWind.png,From83to89.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRight.svg,Light Breeze,83–89°F"
+824659,Wrigley Field4:05STL @ CHC,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From83to89.png,HighH.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,83–89°F,High Humidity"
+822714,Nationals Park6:45PIT @ WAS,"InLeftCenter.svg,InCenter.svg,InRightMiddle.svg,Over90.png","InLeftCenter.svg,InCenter.svg,InRightMiddle.svg,≥90°F"
+823527,Yankee Stadium7:05MIN @ NYY,"OutRightCenter.svg,OutCenter.svg,OutRightCenter.svg,LightWind.png,Over90.png","OutRightCenter.svg,OutCenter.svg,OutRightCenter.svg,Light Breeze,≥90°F"
+824013,Angel Stadium9:38BOS @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze"
+825062,Chase Field9:45MIL @ ARI,RoofClosed.png,Roof Closed
+823933,Dodger Stadium10:10SD  @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze"
+824904,Truist Park7:15NYM @ ATL,"InRight.svg,FromRight.svg,FromRight.svg,Over90.png","InRight.svg,FromRight.svg,FromRight.svg,≥90°F"
+824173,Daikin Park8:15TB  @ HOU,RoofClosed.png,Roof Closed
+823120,T-Mobile Park10:10TOR @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze"
