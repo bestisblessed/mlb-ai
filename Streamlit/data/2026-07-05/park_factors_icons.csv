@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824333,Coors Field4:00SF  @ COL,"InLeftMiddle.svg,OutLeftCenter.svg,OutCenter.svg,ModerateWind.png,Over90.png,LowH.png,LowP.png","InLeftMiddle.svg,OutLeftCenter.svg,OutCenter.svg,Moderate Wind,≥90°F,Low Humidity,Low Pressure"
+824980,Sutter Health Park4:30MIA @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,Over90.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,≥90°F"
+822715,Nationals Park1:00PIT @ WAS,"OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,LightWind.png,Over90.png","OutLeftCenter.svg,OutLeft.svg,OutLeft.svg,Light Breeze,≥90°F"
+824497,Great American BP1:05BAL @ CIN,"OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,LightWind.png,From83to89.png","OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,Light Breeze,83–89°F"
+824413,Progressive Field2:00CHW @ CLE,"InRight.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,From76to82.png,HighH.png","InRight.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,76–82°F,High Humidity"
+823931,Dodger Stadium7:20SD  @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F"
+824010,Angel Stadium9:30BOS @ LAA,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+824902,Truist Park12:30NYM @ ATL,"OutLeft.svg,OutLeft.svg,OutLeft.svg,LightWind.png,Over90.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Light Breeze,≥90°F"
+824091,Kauffman Stadium3:00PHI @ KC,"InCenter.svg,InLeftCenter.svg,InLeftCenter.svg,Over90.png","InCenter.svg,InLeftCenter.svg,InLeftCenter.svg,≥90°F"
+825061,Chase Field4:00MIL @ ARI,RoofClosed.png,Roof Closed
+823525,Yankee Stadium1:35MIN @ NYY,"InCenter.svg,InRightCenter.svg,InRightCenter.svg,From83to89.png","InCenter.svg,InRightCenter.svg,InRightCenter.svg,83–89°F"
+824172,Daikin Park3:30TB  @ HOU,RoofClosed.png,Roof Closed
+822879,Globe Life Field3:30DET @ TEX,RoofClosed.png,Roof Closed
+823117,T-Mobile Park5:00TOR @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+824656,Wrigley Field2:30STL @ CHC,"InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,ModerateWind.png,HighH.png","InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,Moderate Wind,High Humidity"
