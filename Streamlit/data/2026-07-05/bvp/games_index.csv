@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824902,2026-07-05T16:30:00Z,Pre-Game,121,New York Mets,144,Atlanta Braves,Truist Park,Nolan McLean,690997.0,R,Martín Pérez,527048,L
+822715,2026-07-05T17:00:00Z,Scheduled,134,Pittsburgh Pirates,120,Washington Nationals,Nationals Park,Bubba Chandler,696149.0,R,Cade Cavalli,676917,R
+824497,2026-07-05T17:05:00Z,Scheduled,110,Baltimore Orioles,113,Cincinnati Reds,Great American Ball Park,Kyle Bradish,680694.0,R,Nick Lodolo,666157,L
+823525,2026-07-05T17:35:00Z,Scheduled,142,Minnesota Twins,147,New York Yankees,Yankee Stadium,Joe Ryan,657746.0,R,Ryan Weathers,677960,L
+824413,2026-07-05T18:00:00Z,Scheduled,145,Chicago White Sox,114,Cleveland Guardians,Progressive Field,Chris Murphy,669684.0,L,Tanner Bibee,676440,R
+824656,2026-07-05T18:30:00Z,Scheduled,138,St. Louis Cardinals,112,Chicago Cubs,Wrigley Field,Matthew Liberatore,669461.0,L,Javier Assad,665871,R
+824091,2026-07-05T19:00:00Z,Scheduled,143,Philadelphia Phillies,118,Kansas City Royals,Kauffman Stadium,Aaron Nola,605400.0,R,Luinder Avila,679883,R
+824172,2026-07-05T19:30:00Z,Scheduled,139,Tampa Bay Rays,117,Houston Astros,Daikin Park,,,,Peter Lambert,663567,R
+822879,2026-07-05T19:30:00Z,Scheduled,116,Detroit Tigers,140,Texas Rangers,Globe Life Field,Casey Mize,663554.0,R,Kumar Rocker,677958,R
+824333,2026-07-05T20:00:00Z,Scheduled,137,San Francisco Giants,115,Colorado Rockies,Coors Field,Tyler Mahle,641816.0,R,Tanner Gordon,685299,R
+825061,2026-07-05T20:00:00Z,Scheduled,158,Milwaukee Brewers,109,Arizona Diamondbacks,Chase Field,Brandon Sproat,687075.0,R,Eduardo Rodriguez,699134,R
+824980,2026-07-05T20:30:00Z,Scheduled,146,Miami Marlins,133,Athletics,Sutter Health Park,Eury Pérez,691587.0,R,Gage Jump,695611,L
+823117,2026-07-05T21:00:00Z,Scheduled,141,Toronto Blue Jays,136,Seattle Mariners,T-Mobile Park,Trey Yesavage,702056.0,R,Emerson Hancock,676106,R
+823931,2026-07-05T23:20:00Z,Scheduled,135,San Diego Padres,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,JP Sears,676664.0,L,Emmet Sheehan,686218,R
+824010,2026-07-06T01:30:00Z,Scheduled,111,Boston Red Sox,108,Los Angeles Angels,Angel Stadium,Ranger Suarez,624133.0,L,Ryan Johnson,696270,R
