@@ -1,0 +1,11 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+3,3,,.000,.000,1,Braxton Fulford,690924,,2,,0.00,,,1,16,.250,.250,Lauer,641778,4,,.000,,,
+2,8,,.375,.600,,Ezequiel Tovar,678662,,3,,0.00,3,,2,27,.375,.750,Lauer,641778,8,1,.375,3,3,
+1,3,,.333,.500,,Hunter Goodman,696100,,1,,0.00,1,,1,12,.333,.666,Lauer,641778,3,,.333,1,1,2025
+,3,3.00,.333,.000,,Hunter Goodman,696100,,1,1,1.00,1,1,1,11,.333,1.666,Lauer,641778,3,1,1.333,1,4,2026
+1,4,,.750,.750,,Willi Castro,650489,,2,,0.00,3,,,13,.750,1.500,Lauer,641778,4,,.750,,3,
+1,2,,.000,.000,,Troy Johnston,687859,,1,,0.00,,,,10,.000,.000,Lauer,641778,2,,.000,1,,
+,2,,.500,1.000,,Edouard Julien,666397,1,1,,,1,,1,7,.500,1.500,Lauer,641778,2,1,1.000,1,2,
+2,8,,.250,.250,,Jake McCarthy,664983,,3,4,2.00,2,,3,21,.250,.500,Lauer,641778,8,1,.250,,2,
+,2,,.000,.000,,Kyle Karros,691720,,1,2,2.00,,,,14,.000,.000,Lauer,641778,2,,.000,,,
+3,6,,.167,.200,,Tyler Freeman,671289,1,2,1,0.33,1,,3,26,.167,.500,Lauer,641778,6,,.333,1,2,

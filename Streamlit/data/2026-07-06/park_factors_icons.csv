@@ -1,0 +1,9 @@
+game_id,game,icons,icon_labels
+822712,Nationals Park6:45HOU @ WAS,"InCenter.svg,InCenter.svg,InCenter.svg,Over90.png,LowP.png","InCenter.svg,InCenter.svg,InCenter.svg,≥90°F,Low Pressure"
+824089,Kauffman Stadium2:10PHI @ KC,"InRightCenter.svg,InRight.svg,InRight.svg,LightWind.png,Over90.png","InRightCenter.svg,InRight.svg,InRight.svg,Light Breeze,≥90°F"
+823930,Dodger Stadium10:10COL @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F"
+824900,Truist Park7:15NYM @ ATL,"OutLeftMiddle.svg,FromRight.svg,OutLeftMiddle.svg,LightWind.png,From83to89.png","OutLeftMiddle.svg,FromRight.svg,OutLeftMiddle.svg,Light Breeze,83–89°F"
+823036,Busch Stadium7:45MIL @ STL,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,From76to82.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,76–82°F"
+823282,Petco Park9:40ARI @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+822958,Tropicana Field6:40NYY @ TB,RoofClosed.png,Roof Closed
+823205,Oracle Park9:45TOR @ SF,"OutCenter.svg,OutCenter.svg,OutRightCenter.svg,ModerateWind.png,HighH.png","OutCenter.svg,OutCenter.svg,OutRightCenter.svg,Moderate Wind,High Humidity"
