@@ -1,0 +1,17 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823062,2026-07-07T18:15:00Z,Scheduled,158,Milwaukee Brewers,138,St. Louis Cardinals,Busch Stadium,Jacob Misiorowski,694819.0,R,,,
+823035,2026-07-07T23:45:00Z,Scheduled,158,Milwaukee Brewers,138,St. Louis Cardinals,Busch Stadium,,,,,,
+824820,2026-07-07T22:35:00Z,Scheduled,112,Chicago Cubs,110,Baltimore Orioles,Oriole Park at Camden Yards,Matthew Boyd,571510.0,L,Shane Baz,669358.0,R
+824254,2026-07-07T22:40:00Z,Scheduled,133,Athletics,116,Detroit Tigers,Comerica Park,J.T. Ginn,669372.0,R,Tarik Skubal,669373.0,L
+823361,2026-07-07T22:40:00Z,Scheduled,144,Atlanta Braves,134,Pittsburgh Pirates,PNC Park,Hurston Waldrep,694462.0,R,Paul Skenes,694973.0,R
+823847,2026-07-07T22:40:00Z,Scheduled,136,Seattle Mariners,146,Miami Marlins,loanDepot park,,,,Max Meyer,676974.0,R
+822956,2026-07-07T22:40:00Z,Scheduled,147,New York Yankees,139,Tampa Bay Rays,Tropicana Field,Will Warren,701542.0,R,Ian Seymour,693855.0,L
+822713,2026-07-07T22:45:00Z,Scheduled,117,Houston Astros,120,Washington Nationals,Nationals Park,Tatsuya Imai,837227.0,R,Andrew Alvarez,674841.0,L
+823607,2026-07-07T23:10:00Z,Scheduled,118,Kansas City Royals,121,New York Mets,Citi Field,Seth Lugo,607625.0,R,,,
+824495,2026-07-07T23:10:00Z,Scheduled,143,Philadelphia Phillies,113,Cincinnati Reds,Great American Ball Park,,,,Andrew Abbott,671096.0,L
+823687,2026-07-07T23:40:00Z,Scheduled,114,Cleveland Guardians,142,Minnesota Twins,Target Field,Joey Cantillo,676282.0,L,Taj Bradley,671737.0,R
+824579,2026-07-07T23:40:00Z,Scheduled,111,Boston Red Sox,145,Chicago White Sox,Rate Field,Payton Tolle,801139.0,L,Noah Schultz,702273.0,L
+822881,2026-07-08T00:05:00Z,Scheduled,108,Los Angeles Angels,140,Texas Rangers,Globe Life Field,José Soriano,667755.0,R,Jacob deGrom,594798.0,R
+823280,2026-07-08T01:40:00Z,Scheduled,109,Arizona Diamondbacks,135,San Diego Padres,Petco Park,Zac Gallen,668678.0,R,Germán Márquez,608566.0,R
+823203,2026-07-08T01:45:00Z,Scheduled,141,Toronto Blue Jays,137,San Francisco Giants,Oracle Park,,,,Trevor McDonald,686790.0,R
+823929,2026-07-08T02:10:00Z,Scheduled,115,Colorado Rockies,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Michael Lorenzen,547179.0,R,Justin Wrobleski,680736.0,L
