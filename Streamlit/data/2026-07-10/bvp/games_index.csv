@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824252,2026-07-10T22:40:00Z,Scheduled,143,Philadelphia Phillies,116,Detroit Tigers,Comerica Park,Aaron Nola,605400,R,Jack Flaherty,656427,R
+823357,2026-07-10T22:40:00Z,Scheduled,158,Milwaukee Brewers,134,Pittsburgh Pirates,PNC Park,Brandon Sproat,687075,R,Braxton Ashcraft,677952,R
+822709,2026-07-10T22:45:00Z,Scheduled,147,New York Yankees,120,Washington Nationals,Nationals Park,Ryan Weathers,677960,L,Carson Palmquist,687223,L
+824817,2026-07-10T23:05:00Z,Scheduled,118,Kansas City Royals,110,Baltimore Orioles,Oriole Park at Camden Yards,Luinder Avila,679883,R,Brandon Young,687064,R
+824493,2026-07-10T23:10:00Z,Scheduled,112,Chicago Cubs,113,Cincinnati Reds,Great American Ball Park,Shota Imanaga,684007,L,Hunter Greene,668881,R
+822955,2026-07-10T23:10:00Z,Scheduled,136,Seattle Mariners,139,Tampa Bay Rays,Tropicana Field,Luis Castillo,622491,R,Nick Martinez,607259,R
+823845,2026-07-10T23:10:00Z,Scheduled,114,Cleveland Guardians,146,Miami Marlins,loanDepot park,Parker Messick,800048,L,Sandy Alcantara,645261,R
+823604,2026-07-10T23:15:00Z,Scheduled,111,Boston Red Sox,121,New York Mets,Citi Field,Sonny Gray,543243,R,Nolan McLean,690997,R
+824575,2026-07-10T23:40:00Z,Scheduled,133,Athletics,145,Chicago White Sox,Rate Field,Jacob Lopez,682052,L,Sean Burke,680732,R
+822878,2026-07-11T00:05:00Z,Scheduled,117,Houston Astros,140,Texas Rangers,Globe Life Field,Hunter Brown,686613,R,Cal Quantrill,615698,R
+823685,2026-07-11T00:10:00Z,Scheduled,108,Los Angeles Angels,142,Minnesota Twins,Target Field,Grayson Rodriguez,680570,R,Zebby Matthews,805673,R
+823033,2026-07-11T00:15:00Z,Scheduled,144,Atlanta Braves,138,St. Louis Cardinals,Busch Stadium,Chris Sale,519242,L,Kyle Leahy,681517,R
+823278,2026-07-11T01:40:00Z,Scheduled,141,Toronto Blue Jays,135,San Diego Padres,Petco Park,Shane Bieber,669456,R,JP Sears,676664,L
+823927,2026-07-11T02:10:00Z,Scheduled,109,Arizona Diamondbacks,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Eduardo Rodriguez,699134,R,Shohei Ohtani,660271,R
+823200,2026-07-11T02:15:00Z,Scheduled,115,Colorado Rockies,137,San Francisco Giants,Oracle Park,Tanner Gordon,685299,R,Robbie Ray,592662,L
