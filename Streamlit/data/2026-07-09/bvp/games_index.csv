@@ -1,0 +1,14 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823359,2026-07-09T16:35:00Z,Pre-Game,144,Atlanta Braves,134,Pittsburgh Pirates,PNC Park,Bryce Elder,693821.0,R,Mitch Keller,656605.0,R
+823606,2026-07-09T17:10:00Z,Pre-Game,118,Kansas City Royals,121,New York Mets,Citi Field,Michael Wacha,608379.0,R,Sean Manaea,640455.0,L
+822954,2026-07-09T17:10:00Z,Pre-Game,147,New York Yankees,139,Tampa Bay Rays,Tropicana Field,,,,Drew Rasmussen,656876.0,R
+824816,2026-07-09T17:35:00Z,Scheduled,112,Chicago Cubs,110,Baltimore Orioles,Oriole Park at Camden Yards,David Peterson,656849.0,L,Trevor Rogers,669432.0,L
+823683,2026-07-09T17:40:00Z,Scheduled,114,Cleveland Guardians,142,Minnesota Twins,Target Field,Gavin Williams,668909.0,R,Bailey Ober,641927.0,R
+824577,2026-07-09T18:10:00Z,Scheduled,111,Boston Red Sox,145,Chicago White Sox,Rate Field,Patrick Sandoval,663776.0,L,Anthony Kay,641743.0,L
+824251,2026-07-09T22:40:00Z,Scheduled,133,Athletics,116,Detroit Tigers,Comerica Park,Jack Perkins,678022.0,R,Framber Valdez,664285.0,L
+823846,2026-07-09T22:40:00Z,Scheduled,136,Seattle Mariners,146,Miami Marlins,loanDepot park,Bryce Miller,682243.0,R,Janson Junk,676083.0,R
+824494,2026-07-09T23:10:00Z,Scheduled,143,Philadelphia Phillies,113,Cincinnati Reds,Great American Ball Park,Jesús Luzardo,666200.0,L,Brady Singer,663903.0,R
+823034,2026-07-09T23:45:00Z,Scheduled,158,Milwaukee Brewers,138,St. Louis Cardinals,Busch Stadium,Logan Henderson,701656.0,R,Andre Pallante,669467.0,R
+822877,2026-07-10T00:05:00Z,Scheduled,108,Los Angeles Angels,140,Texas Rangers,Globe Life Field,Reid Detmers,672282.0,L,Nathan Eovaldi,543135.0,R
+823277,2026-07-10T01:40:00Z,Scheduled,109,Arizona Diamondbacks,135,San Diego Padres,Petco Park,Merrill Kelly,518876.0,R,Griffin Canning,656288.0,R
+823201,2026-07-10T01:45:00Z,Scheduled,115,Colorado Rockies,137,San Francisco Giants,Oracle Park,Ryan Feltner,663372.0,R,,,
