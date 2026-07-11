@@ -1,0 +1,17 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823357,2026-07-11T16:05:00Z,Pre-Game,158,Milwaukee Brewers,134,Pittsburgh Pirates,PNC Park,Brandon Sproat,687075.0,R,Braxton Ashcraft,677952,R
+823356,2026-07-11T20:05:00Z,Scheduled,158,Milwaukee Brewers,134,Pittsburgh Pirates,PNC Park,Shane Drohan,675660.0,L,Bubba Chandler,696149,R
+823682,2026-07-11T18:10:00Z,Scheduled,108,Los Angeles Angels,142,Minnesota Twins,Target Field,Ryan Johnson,696270.0,R,Joe Ryan,657746,R
+824576,2026-07-11T18:10:00Z,Scheduled,133,Athletics,145,Chicago White Sox,Rate Field,Gage Jump,695611.0,L,Bryan Hudson,663542,L
+823198,2026-07-11T20:05:00Z,Scheduled,115,Colorado Rockies,137,San Francisco Giants,Oracle Park,Kyle Freeland,607536.0,L,Tyler Mahle,641816,R
+822711,2026-07-11T20:05:00Z,Scheduled,147,New York Yankees,120,Washington Nationals,Nationals Park,Cam Schlittler,693645.0,R,Miles Mikolas,571945,R
+823603,2026-07-11T20:10:00Z,Scheduled,111,Boston Red Sox,121,New York Mets,Citi Field,,,,Freddy Peralta,642547,R
+822953,2026-07-11T20:10:00Z,Scheduled,136,Seattle Mariners,139,Tampa Bay Rays,Tropicana Field,Logan Gilbert,669302.0,R,Griffin Jax,643377,R
+823844,2026-07-11T20:10:00Z,Scheduled,114,Cleveland Guardians,146,Miami Marlins,loanDepot park,Tanner Bibee,676440.0,R,Eury Pérez,691587,R
+824249,2026-07-11T22:10:00Z,Scheduled,143,Philadelphia Phillies,116,Detroit Tigers,Comerica Park,Cristopher Sánchez,650911.0,L,Casey Mize,663554,R
+824813,2026-07-11T23:05:00Z,Scheduled,118,Kansas City Royals,110,Baltimore Orioles,Oriole Park at Camden Yards,Noah Cameron,702070.0,L,Kyle Bradish,680694,R
+822875,2026-07-11T23:05:00Z,Scheduled,117,Houston Astros,140,Texas Rangers,Globe Life Field,Peter Lambert,663567.0,R,Kumar Rocker,677958,R
+824492,2026-07-11T23:10:00Z,Scheduled,112,Chicago Cubs,113,Cincinnati Reds,Great American Ball Park,Javier Assad,665871.0,R,Nick Lodolo,666157,L
+823030,2026-07-11T23:15:00Z,Scheduled,144,Atlanta Braves,138,St. Louis Cardinals,Busch Stadium,Reynaldo López,625643.0,R,Matthew Liberatore,669461,L
+823276,2026-07-12T00:40:00Z,Scheduled,141,Toronto Blue Jays,135,San Diego Padres,Petco Park,Trey Yesavage,702056.0,R,Walker Buehler,621111,R
+823926,2026-07-12T01:10:00Z,Scheduled,109,Arizona Diamondbacks,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Brandon Pfaadt,694297.0,R,Yoshinobu Yamamoto,808967,R
