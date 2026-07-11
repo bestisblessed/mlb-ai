@@ -1,0 +1,6 @@
+atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,1.000,1.000,1,Jake Bauers,641343,1,1,,,1,,10,1.000,3.000,Chandler,696149,2,2,2.000,,2,
+3,.667,1.000,,Brice Turang,668930,,1,,,2,2,10,.667,1.334,Chandler,696149,3,2,.667,1,2,2025
+2,.500,.500,,Joey Ortiz,687401,,1,1,1.00,1,2,4,.500,1.000,Chandler,696149,2,1,.500,,1,
+2,1.000,1.000,,Andrew Vaughn,683734,,1,,,2,,4,1.000,2.000,Chandler,696149,2,1,1.000,,2,
+1,.000,.---,1,William Contreras,661388,,1,,,,1,10,.500,.500,Chandler,696149,2,,.000,1,,
