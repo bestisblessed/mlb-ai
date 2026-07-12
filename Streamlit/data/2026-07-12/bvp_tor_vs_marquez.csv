@@ -1,0 +1,8 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,2,,.500,.500,1,Myles Straw,664702,,1,1,1.00,1,,,8,.667,1.167,Marquez,608566,3,,.500,,1,2019
+,2,,.500,.500,1,Vladimir Guerrero Jr. V. Guerrero Jr.,665489,,1,1,1.00,1,,1,10,.667,1.167,Marquez,608566,3,,.500,,1,2019
+,6,,.500,.750,,George Springer,543807,,2,1,1.00,3,,1,25,.500,1.000,Marquez,608566,6,,.500,2,3,2019
+2,3,,.333,.333,,George Springer,543807,,1,,0.00,1,,,10,.333,.666,Marquez,608566,3,1,.333,,1,2020
+,2,,1.000,1.000,,Andres Gimenez,665926,1,1,,,2,,,5,1.000,2.500,Marquez,608566,2,,1.500,,3,2023
+2,13,13.00,.231,.286,2,Daulton Varsho,662139,1,5,3,1.50,3,1,4,66,.333,.871,Marquez,608566,15,1,.538,5,7,
+1,8,,.125,.143,,Luis Urias,649966,,3,5,5.00,1,,1,31,.125,.250,Marquez,608566,8,,.125,1,1,

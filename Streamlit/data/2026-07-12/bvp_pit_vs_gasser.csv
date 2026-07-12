@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,totalbases,year
+1,2,.500,.500,,Nick Gonzales,693304,1,,0.00,1,,4,.500,1.000,Gasser,688107,2,.500,1,2024
+1,1,.000,.000,1,Jared Triolo,669707,1,,0.00,,1,10,.500,.500,Gasser,688107,2,.000,,2024
+,3,.333,.333,,Bryan Reynolds,668804,1,2,2.00,1,1,14,.333,.666,Gasser,688107,3,.333,1,2024
