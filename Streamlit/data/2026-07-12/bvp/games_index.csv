@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823358,2026-07-12T16:15:00Z,Scheduled,158,Milwaukee Brewers,134,Pittsburgh Pirates,PNC Park,Robert Gasser,688107,L,Paul Skenes,694973,R
+824814,2026-07-12T17:35:00Z,Scheduled,118,Kansas City Royals,110,Baltimore Orioles,Oriole Park at Camden Yards,Seth Lugo,607625,R,Shane Baz,669358,R
+822708,2026-07-12T17:35:00Z,Scheduled,147,New York Yankees,120,Washington Nationals,Nationals Park,Will Warren,701542,R,Cade Cavalli,676917,R
+824491,2026-07-12T17:40:00Z,Scheduled,112,Chicago Cubs,113,Cincinnati Reds,Great American Ball Park,Matthew Boyd,571510,L,Andrew Abbott,671096,L
+823602,2026-07-12T17:40:00Z,Scheduled,111,Boston Red Sox,121,New York Mets,Citi Field,Payton Tolle,801139,L,Zach Thornton,804267,L
+822951,2026-07-12T17:40:00Z,Pre-Game,136,Seattle Mariners,139,Tampa Bay Rays,Tropicana Field,Emerson Hancock,676106,R,Ian Seymour,693855,L
+824250,2026-07-12T17:40:00Z,Scheduled,143,Philadelphia Phillies,116,Detroit Tigers,Comerica Park,Zack Wheeler,554430,R,Tarik Skubal,669373,L
+823842,2026-07-12T17:40:00Z,Scheduled,114,Cleveland Guardians,146,Miami Marlins,loanDepot park,Joey Cantillo,676282,L,Tyler Phillips,663969,R
+823681,2026-07-12T18:10:00Z,Scheduled,108,Los Angeles Angels,142,Minnesota Twins,Target Field,José Soriano,667755,R,Taj Bradley,671737,R
+824574,2026-07-12T18:10:00Z,Scheduled,133,Athletics,145,Chicago White Sox,Rate Field,J.T. Ginn,669372,R,Noah Schultz,702273,L
+823029,2026-07-12T18:15:00Z,Scheduled,144,Atlanta Braves,138,St. Louis Cardinals,Busch Stadium,JR Ritchie,702275,R,Dustin May,669160,R
+822876,2026-07-12T18:35:00Z,Scheduled,117,Houston Astros,140,Texas Rangers,Globe Life Field,Cristian Javier,664299,R,MacKenzie Gore,669022,L
+823199,2026-07-12T20:05:00Z,Scheduled,115,Colorado Rockies,137,San Francisco Giants,Oracle Park,Michael Lorenzen,547179,R,Trevor McDonald,686790,R
+823925,2026-07-12T20:10:00Z,Scheduled,109,Arizona Diamondbacks,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Mitch Bratt,683352,L,Emmet Sheehan,686218,R
+823274,2026-07-12T20:10:00Z,Scheduled,141,Toronto Blue Jays,135,San Diego Padres,Petco Park,Kevin Gausman,592332,R,Germán Márquez,608566,R
