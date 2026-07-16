@@ -1,0 +1,27 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+PHI,Justin Crawford,702222,3,Scott,681035,37,23,157,15,10,27
+PHI,Gabriel Rincones Jr. G. Rincones Jr.,687282,-5,Scott,681035,36,24,82,-3,-2,33
+PHI,Rafael Marchan,665561,7,Scott,681035,29,23,82,-5,2,38
+PHI,Brandon Marsh,669016,1,Scott,681035,26,10,106,-17,-12,11
+PHI,Edmundo Sosa,624641,4,Scott,681035,24,15,96,-9,-2,25
+PHI,Bryson Stott,681082,7,Scott,681035,23,13,92,-2,0,17
+PHI,Derek Hill,656537,-6,Scott,681035,22,8,86,-17,-2,2
+PHI,Trea Turner,607208,3,Scott,681035,20,13,97,3,-7,13
+PHI,Alec Bohm,664761,9,Scott,681035,18,11,71,-12,-5,48
+PHI,Garrett Stubbs,596117,-7,Scott,681035,17,7,73,-8,-6,21
+PHI,Bryce Harper,547180,8,Scott,681035,16,8,47,-11,-15,24
+NYM,Jorge Polanco,593871,5,Nola,605400,15,3,61,9,-14,-22
+PHI,J.T. Realmuto,592663,2,Scott,681035,14,9,43,-6,-7,21
+NYM,Francisco Lindor,596019,6,Nola,605400,12,4,51,14,-17,-11
+NYM,Juan Soto,665742,10,Nola,605400,10,4,47,7,-11,-12
+PHI,Kyle Schwarber,656941,-4,Scott,681035,9,3,22,-12,-8,3
+NYM,A.J. Ewing,805999,-5,Nola,605400,8,-2,53,12,-15,-21
+NYM,Jared Young,676724,-3,Nola,605400,8,0,43,7,-13,-22
+NYM,Bo Bichette,666182,4,Nola,605400,5,-2,66,9,-23,-20
+NYM,Luis Torrens,620443,-2,Nola,605400,5,1,50,14,-14,-18
+NYM,Brett Baty,683146,-4,Nola,605400,4,-4,50,1,-7,-30
+NYM,Tyrone Taylor,621438,-3,Nola,605400,3,-2,24,20,-24,-17
+NYM,Zack Short,670097,-8,Nola,605400,3,-2,33,4,-3,-25
+NYM,Eric Wagaman,676572,-4,Nola,605400,1,-5,31,9,-17,-20
+NYM,Francisco Alvarez,682626,-5,Nola,605400,1,-5,34,-9,-17,-17
+NYM,Carson Benge,701807,-3,Nola,605400,0,-5,37,7,-14,-23

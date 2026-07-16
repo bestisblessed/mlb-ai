@@ -1,0 +1,2 @@
+game_id,time,away_team,home_team,starter_away,starter_home,runs_away,runs_home,win_away,win_home,ml_away,ml_home,f5_runs_away,f5_runs_home,f5_lead_away,f5_lead_home,total_5_5,total_6_5,total_7_5,total_8_5,total_9_5,total_10_5,total_11_5,total_12_5,under,over,YRFI,lineups_final
+823440,7:10,New York Mets,Philadelphia Phillies,Christian Scott,Aaron Nola,5.64,5.76,(+120) 45.4%,54.6% (-120),(),(),3.06,3.43,(+155) 39.2%,48.4% (+107),-852,-558,-329,-244,-154,-114,+129,+170,"Under 10.5, -125 (Fanatics)","Over 10.5, 105 (Fanatics)",YRFI: 57.4% (-135),No
