@@ -1,0 +1,17 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824414,2026-07-18T17:10:00Z,Scheduled,134,Pittsburgh Pirates,114,Cleveland Guardians,Progressive Field,Jared Jones,683003.0,R,Gavin Williams,668909,R
+824412,2026-07-18T23:10:00Z,Scheduled,134,Pittsburgh Pirates,114,Cleveland Guardians,Progressive Field,,,,Logan Allen,671106,L
+824657,2026-07-18T18:20:00Z,Scheduled,142,Minnesota Twins,112,Chicago Cubs,Wrigley Field,Taj Bradley,671737.0,R,Matthew Boyd,571510,L
+822790,2026-07-18T19:07:00Z,Scheduled,145,Chicago White Sox,141,Toronto Blue Jays,Rogers Centre,Davis Martin,663436.0,R,Shane Bieber,669456,R
+824331,2026-07-18T19:10:00Z,Scheduled,113,Cincinnati Reds,115,Colorado Rockies,Coors Field,Rhett Lowder,695076.0,R,Tomoyuki Sugano,608372,R
+823441,2026-07-18T20:05:00Z,Scheduled,121,New York Mets,143,Philadelphia Phillies,Citizens Bank Park,Sean Manaea,640455.0,L,Jesús Luzardo,666200,L
+824169,2026-07-18T20:10:00Z,Scheduled,110,Baltimore Orioles,117,Houston Astros,Daikin Park,Trevor Rogers,669432.0,L,Spencer Arrighetti,681293,R
+824088,2026-07-18T20:10:00Z,Scheduled,135,San Diego Padres,118,Kansas City Royals,Kauffman Stadium,Griffin Canning,656288.0,R,Randy Dobnak,677976,R
+825059,2026-07-18T20:10:00Z,Scheduled,138,St. Louis Cardinals,109,Arizona Diamondbacks,Chase Field,Dustin May,669160.0,R,Brandon Pfaadt,694297,R
+824738,2026-07-18T20:10:00Z,Scheduled,139,Tampa Bay Rays,111,Boston Red Sox,Fenway Park,Ian Seymour,693855.0,L,Patrick Sandoval,663776,L
+824899,2026-07-18T20:10:00Z,Scheduled,140,Texas Rangers,144,Atlanta Braves,Truist Park,MacKenzie Gore,669022.0,L,Owen Murphy,702566,R
+823763,2026-07-18T20:10:00Z,Scheduled,146,Miami Marlins,158,Milwaukee Brewers,American Family Field,Max Meyer,676974.0,R,Shane Drohan,675660,L
+823116,2026-07-19T00:08:00Z,Scheduled,137,San Francisco Giants,136,Seattle Mariners,T-Mobile Park,Logan Webb,657277.0,R,Bryan Woo,693433,R
+823523,2026-07-19T00:08:00Z,Scheduled,119,Los Angeles Dodgers,147,New York Yankees,Yankee Stadium,Emmet Sheehan,686218.0,R,Ryan Weathers,677960,L
+824979,2026-07-19T02:05:00Z,Scheduled,120,Washington Nationals,133,Athletics,Sutter Health Park,Zack Littell,641793.0,R,J.T. Ginn,669372,R
+824008,2026-07-19T02:07:00Z,Scheduled,116,Detroit Tigers,108,Los Angeles Angels,Angel Stadium,Tarik Skubal,669373.0,L,Grayson Rodriguez,680570,R
