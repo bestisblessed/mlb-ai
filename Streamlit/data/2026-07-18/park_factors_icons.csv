@@ -1,0 +1,17 @@
+game_id,game,icons,icon_labels
+824331,Coors Field3:10CIN @ COL,"InRightMiddle.svg,FromRight.svg,OutLeft.svg,Over90.png,LowH.png","InRightMiddle.svg,FromRight.svg,OutLeft.svg,≥90°F,Low Humidity"
+824979,Sutter Health Park10:05WAS @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From83to89.png,LowH.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,83–89°F,Low Humidity,Low Pressure"
+823441,Citizens Bank Park4:05NYM @ PHI,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,76–82°F"
+824088,Kauffman Stadium4:10SD  @ KC,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,Over90.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,≥90°F"
+824738,Fenway Park4:10TB  @ BOS,"OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,HeavyWind.png,HighH.png,LowP.png","OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Heavy Wind,High Humidity,Low Pressure"
+824899,Truist Park4:10TEX @ ATL,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,Over90.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,≥90°F"
+824008,Angel Stadium10:07DET @ LAA,"OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+824412,Progressive Field7:10PIT @ CLE,"OutRight.svg,InRightCenter.svg,InRight.svg,ModerateWind.png,From76to82.png,HighH.png,LowP.png","OutRight.svg,InRightCenter.svg,InRight.svg,Moderate Wind,76–82°F,High Humidity,Low Pressure"
+823523,Yankee Stadium8:08LAD @ NYY,"OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,ModerateWind.png,HighH.png,LowP.png","OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,Moderate Wind,High Humidity,Low Pressure"
+825059,Chase Field4:10STL @ ARI,RoofClosed.png,Roof Closed
+823763,American Family Fld4:10MIA @ MIL,"FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,ModerateWind.png,Over90.png,LowP.png","FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,Moderate Wind,≥90°F,Low Pressure"
+824414,Progressive Field1:10PIT @ CLE,"OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,ModerateWind.png,Over90.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,Moderate Wind,≥90°F,Low Pressure"
+824657,Wrigley Field2:20MIN @ CHC,"FromLeft.svg,InLeftMiddle.svg,InLeft.svg,ModerateWind.png,From83to89.png,LowP.png","FromLeft.svg,InLeftMiddle.svg,InLeft.svg,Moderate Wind,83–89°F,Low Pressure"
+824169,Daikin Park4:10BAL @ HOU,RoofClosed.png,Roof Closed
+822790,Rogers Centre3:07CHW @ TOR,RoofClosed.png,Roof Closed
+823116,T-Mobile Park8:08SF  @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png,From76to82.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze,76–82°F"
