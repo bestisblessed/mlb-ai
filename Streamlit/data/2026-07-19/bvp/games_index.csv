@@ -1,0 +1,17 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822786,2026-07-19T16:15:00Z,Pre-Game,145,Chicago White Sox,141,Toronto Blue Jays,Rogers Centre,Sean Burke,680732.0,R,Trey Yesavage,702056.0,R
+823523,2026-07-19T16:35:00Z,Pre-Game,119,Los Angeles Dodgers,147,New York Yankees,Yankee Stadium,Yoshinobu Yamamoto,808967.0,R,Cam Schlittler,693645.0,R
+823521,2026-07-19T23:20:00Z,Scheduled,119,Los Angeles Dodgers,147,New York Yankees,Yankee Stadium,,,,,,
+824739,2026-07-19T17:35:00Z,Pre-Game,139,Tampa Bay Rays,111,Boston Red Sox,Fenway Park,Shane McClanahan,663556.0,L,Sonny Gray,543243.0,R
+823439,2026-07-19T17:35:00Z,Scheduled,121,New York Mets,143,Philadelphia Phillies,Citizens Bank Park,Nolan McLean,690997.0,R,Alan Rangel,660604.0,R
+824897,2026-07-19T17:35:00Z,Scheduled,140,Texas Rangers,144,Atlanta Braves,Truist Park,Nathan Eovaldi,543135.0,R,Grant Holmes,656550.0,R
+824411,2026-07-19T17:40:00Z,Scheduled,134,Pittsburgh Pirates,114,Cleveland Guardians,Progressive Field,Paul Skenes,694973.0,R,Joey Cantillo,676282.0,L
+824168,2026-07-19T18:10:00Z,Scheduled,110,Baltimore Orioles,117,Houston Astros,Daikin Park,Brandon Young,687064.0,R,Hunter Brown,686613.0,R
+824086,2026-07-19T18:10:00Z,Scheduled,135,San Diego Padres,118,Kansas City Royals,Kauffman Stadium,Germán Márquez,608566.0,R,Noah Cameron,702070.0,L
+823764,2026-07-19T18:10:00Z,Scheduled,146,Miami Marlins,158,Milwaukee Brewers,American Family Field,Eury Pérez,691587.0,R,Robert Gasser,688107.0,L
+824653,2026-07-19T18:20:00Z,Scheduled,142,Minnesota Twins,112,Chicago Cubs,Wrigley Field,Zebby Matthews,805673.0,R,Shota Imanaga,684007.0,L
+824330,2026-07-19T19:10:00Z,Scheduled,113,Cincinnati Reds,115,Colorado Rockies,Coors Field,Hunter Greene,668881.0,R,Ryan Feltner,663372.0,R
+824978,2026-07-19T20:05:00Z,Scheduled,120,Washington Nationals,133,Athletics,Sutter Health Park,Foster Griffin,656492.0,L,Jacob Lopez,682052.0,L
+824007,2026-07-19T20:07:00Z,Scheduled,116,Detroit Tigers,108,Los Angeles Angels,Angel Stadium,Casey Mize,663554.0,R,Ryan Johnson,696270.0,R
+823113,2026-07-19T20:10:00Z,Scheduled,137,San Francisco Giants,136,Seattle Mariners,T-Mobile Park,Robbie Ray,592662.0,L,Logan Gilbert,669302.0,R
+825057,2026-07-19T20:10:00Z,Scheduled,138,St. Louis Cardinals,109,Arizona Diamondbacks,Chase Field,Andre Pallante,669467.0,R,Eduardo Rodriguez,699134.0,R
