@@ -1,0 +1,11 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacbunts,slg,strikeouts,totalbases,year
+,4,.750,1.000,1,Bryan Reynolds,668804,2,2,,,,3,,22,.800,2.050,Weathers,677960,5,1,,1.250,1,5,
+1,1,.000,.000,,Jake Mangum,663968,,1,1,1.00,,,1,3,.000,.000,Weathers,677960,2,,1,.000,,,2025
+1,3,.000,.000,,Jared Triolo,669707,,1,,0.00,,,3,16,.000,.000,Weathers,677960,3,,,.000,2,,2023
+1,2,.000,.000,,Jared Triolo,669707,,1,,0.00,,,1,6,.000,.000,Weathers,677960,2,,,.000,1,,2024
+,2,.000,.000,,Nick Gonzales,693304,,1,2,2.00,,,1,8,.000,.000,Weathers,677960,2,,,.000,,,2023
+1,2,.000,.000,,Brandon Lowe,664040,,1,1,1.00,,,,9,.000,.000,Weathers,677960,2,,,.000,,,2025
+,1,.000,.000,1,Henry Davis,680779,,1,1,1.00,,,,12,.500,.500,Weathers,677960,2,,,.000,,,2023
+,1,.000,.000,,Henry Davis,680779,,1,1,1.00,1,,,5,.500,.500,Weathers,677960,2,,,.000,,,2024
+1,2,.500,.500,,Marcell Ozuna,542303,1,1,,0.00,,1,1,8,.500,1.500,Weathers,677960,2,,,1.000,,2,2023
+1,2,.000,.000,1,Marcell Ozuna,542303,,1,1,1.00,,,2,18,.333,.333,Weathers,677960,3,,,.000,,,2024
