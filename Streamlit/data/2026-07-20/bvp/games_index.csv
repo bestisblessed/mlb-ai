@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824410,2026-07-20T22:40:00Z,Scheduled,142,Minnesota Twins,114,Cleveland Guardians,Progressive Field,Joe Ryan,657746,R,Tanner Bibee,676440.0,R
+823522,2026-07-20T23:05:00Z,Scheduled,134,Pittsburgh Pirates,147,New York Yankees,Yankee Stadium,Braxton Ashcraft,677952,R,Ryan Weathers,677960.0,L
+822788,2026-07-20T23:07:00Z,Scheduled,139,Tampa Bay Rays,141,Toronto Blue Jays,Rogers Centre,Nick Martinez,607259,R,Dylan Cease,656302.0,R
+824736,2026-07-20T23:10:00Z,Scheduled,110,Baltimore Orioles,111,Boston Red Sox,Fenway Park,Shane Baz,669358,R,Payton Tolle,801139.0,L
+823436,2026-07-20T23:10:00Z,Scheduled,119,Los Angeles Dodgers,143,Philadelphia Phillies,Citizens Bank Park,Emmet Sheehan,686218,R,Cristopher Sánchez,650911.0,L
+824898,2026-07-20T23:15:00Z,Scheduled,135,San Diego Padres,144,Atlanta Braves,Truist Park,JP Sears,676664,L,Bryce Elder,693821.0,R
+824087,2026-07-20T23:40:00Z,Scheduled,137,San Francisco Giants,118,Kansas City Royals,Kauffman Stadium,Trevor McDonald,686790,R,Michael Wacha,608379.0,R
+823762,2026-07-20T23:40:00Z,Scheduled,121,New York Mets,158,Milwaukee Brewers,American Family Field,Freddy Peralta,642547,R,Jacob Misiorowski,694819.0,R
+824654,2026-07-21T00:05:00Z,Scheduled,116,Detroit Tigers,112,Chicago Cubs,Wrigley Field,Jack Flaherty,656427,R,Jameson Taillon,592791.0,R
+822874,2026-07-21T00:05:00Z,Scheduled,145,Chicago White Sox,140,Texas Rangers,Globe Life Field,Erick Fedde,607200,R,Jacob deGrom,594798.0,R
+824167,2026-07-21T00:10:00Z,Scheduled,146,Miami Marlins,117,Houston Astros,Daikin Park,Janson Junk,676083,R,Ronel Blanco,,
+824328,2026-07-21T00:40:00Z,Scheduled,120,Washington Nationals,115,Colorado Rockies,Coors Field,Andrew Alvarez,674841,L,Kyle Freeland,607536.0,L
+825058,2026-07-21T01:40:00Z,Scheduled,133,Athletics,109,Arizona Diamondbacks,Chase Field,Jeffrey Springs,605488,L,Mitch Bratt,683352.0,L
+823112,2026-07-21T01:40:00Z,Scheduled,113,Cincinnati Reds,136,Seattle Mariners,T-Mobile Park,Andrew Abbott,671096,L,George Kirby,669923.0,R
+824006,2026-07-21T02:10:00Z,Scheduled,138,St. Louis Cardinals,108,Los Angeles Angels,Angel Stadium,Kyle Leahy,681517,R,José Soriano,667755.0,R
