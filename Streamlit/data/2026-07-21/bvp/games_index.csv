@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824409,2026-07-21T22:40:00Z,Scheduled,142,Minnesota Twins,114,Cleveland Guardians,Progressive Field,Kendry Rojas,696070,L,Parker Messick,800048.0,L
+823437,2026-07-21T22:40:00Z,Scheduled,119,Los Angeles Dodgers,143,Philadelphia Phillies,Citizens Bank Park,Justin Wrobleski,680736,L,Zack Wheeler,554430.0,R
+823519,2026-07-21T23:05:00Z,Scheduled,134,Pittsburgh Pirates,147,New York Yankees,Yankee Stadium,Bubba Chandler,696149,R,Will Warren,701542.0,R
+822787,2026-07-21T23:07:00Z,Scheduled,139,Tampa Bay Rays,141,Toronto Blue Jays,Rogers Centre,Drew Rasmussen,656876,R,Kevin Gausman,592332.0,R
+824735,2026-07-21T23:10:00Z,Scheduled,110,Baltimore Orioles,111,Boston Red Sox,Fenway Park,Kyle Bradish,680694,R,Ranger Suarez,624133.0,L
+824895,2026-07-21T23:15:00Z,Scheduled,135,San Diego Padres,144,Atlanta Braves,Truist Park,Walker Buehler,621111,R,Reynaldo López,625643.0,R
+824085,2026-07-21T23:40:00Z,Scheduled,137,San Francisco Giants,118,Kansas City Royals,Kauffman Stadium,Tyler Mahle,641816,R,Luinder Avila,679883.0,R
+823760,2026-07-21T23:40:00Z,Scheduled,121,New York Mets,158,Milwaukee Brewers,American Family Field,Zac Thornton,804267,L,Brandon Sproat,687075.0,R
+824652,2026-07-22T00:05:00Z,Scheduled,116,Detroit Tigers,112,Chicago Cubs,Wrigley Field,Framber Valdez,664285,L,David Peterson,656849.0,L
+822871,2026-07-22T00:05:00Z,Scheduled,145,Chicago White Sox,140,Texas Rangers,Globe Life Field,Noah Schultz,702273,L,Kumar Rocker,677958.0,R
+824165,2026-07-22T00:10:00Z,Scheduled,146,Miami Marlins,117,Houston Astros,Daikin Park,Tyler Phillips,663969,R,Tatsuya Imai,837227.0,R
+824329,2026-07-22T00:40:00Z,Scheduled,120,Washington Nationals,115,Colorado Rockies,Coors Field,Miles Mikolas,571945,R,Michael Lorenzen,547179.0,R
+824005,2026-07-22T01:38:00Z,Scheduled,138,St. Louis Cardinals,108,Los Angeles Angels,Angel Stadium,Matthew Liberatore,669461,L,Walbert Ureña,700712.0,R
+825056,2026-07-22T01:40:00Z,Scheduled,133,Athletics,109,Arizona Diamondbacks,Chase Field,Jack Perkins,678022,R,Kohl Drake,,
+823114,2026-07-22T01:40:00Z,Scheduled,113,Cincinnati Reds,136,Seattle Mariners,T-Mobile Park,Chase Burns,695505,R,Luis Castillo,622491.0,R
