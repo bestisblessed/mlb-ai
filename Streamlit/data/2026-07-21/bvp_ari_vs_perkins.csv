@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,1.000,1.000,1,Tyler Locklear,682988,,1,,1,,7,1.000,2.000,Perkins,678022,2,,1.000,,1,
+1,2,.500,.500,,Geraldo Perdomo,672695,1,1,0.00,1,2,7,.500,1.500,Perkins,678022,2,,1.000,,2,
+,2,.500,1.000,,Corbin Carroll,682998,,1,,1,,8,.500,1.000,Perkins,678022,2,1,.500,1,1,
