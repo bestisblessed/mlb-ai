@@ -1,0 +1,6 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824893,2026-07-23T16:15:00Z,Scheduled,135,San Diego Padres,144,Atlanta Braves,Truist Park,Kyle Hart,606996,L,Chris Sale,519242,L
+824406,2026-07-23T17:10:00Z,Scheduled,142,Minnesota Twins,114,Cleveland Guardians,Progressive Field,Taj Bradley,671737,R,Gavin Williams,668909,R
+822785,2026-07-23T19:07:00Z,Scheduled,139,Tampa Bay Rays,141,Toronto Blue Jays,Rogers Centre,Ian Seymour,693855,L,Shane Bieber,669456,R
+823042,2026-07-23T21:15:00Z,Scheduled,109,Arizona Diamondbacks,138,St. Louis Cardinals,Busch Stadium,Brandon Pfaadt,694297,R,Michael McGreevy,700241,R
+824247,2026-07-23T22:40:00Z,Scheduled,118,Kansas City Royals,116,Detroit Tigers,Comerica Park,Randy Dobnak,677976,R,Troy Melton,675512,R
