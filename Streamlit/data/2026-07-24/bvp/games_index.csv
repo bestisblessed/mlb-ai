@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823759,2026-07-24T20:10:00Z,Scheduled,115,Colorado Rockies,158,Milwaukee Brewers,American Family Field,Tomoyuki Sugano,608372.0,R,Shane Drohan,675660.0,L
+824248,2026-07-24T22:40:00Z,Scheduled,118,Kansas City Royals,116,Detroit Tigers,Comerica Park,Beck Way,694360.0,R,Tarik Skubal,669373.0,L
+823352,2026-07-24T22:40:00Z,Scheduled,112,Chicago Cubs,134,Pittsburgh Pirates,PNC Park,Matthew Boyd,571510.0,L,Jared Jones,683003.0,R
+822707,2026-07-24T22:45:00Z,Scheduled,109,Arizona Diamondbacks,120,Washington Nationals,Nationals Park,Eduardo Rodriguez,699134.0,R,Carson Palmquist,687223.0,L
+823434,2026-07-24T22:45:00Z,Scheduled,147,New York Yankees,143,Philadelphia Phillies,Citizens Bank Park,Cam Schlittler,693645.0,R,Jesús Luzardo,666200.0,L
+824812,2026-07-24T23:05:00Z,Scheduled,144,Atlanta Braves,110,Baltimore Orioles,Oriole Park at Camden Yards,Grant Holmes,656550.0,R,,,
+823601,2026-07-24T23:10:00Z,Scheduled,119,Los Angeles Dodgers,121,New York Mets,Citi Field,Roki Sasaki,808963.0,R,Sean Manaea,640455.0,L
+822952,2026-07-24T23:10:00Z,Scheduled,114,Cleveland Guardians,139,Tampa Bay Rays,Tropicana Field,Joey Cantillo,676282.0,,Shane McClanahan,663556.0,
+823843,2026-07-24T23:10:00Z,Scheduled,135,San Diego Padres,146,Miami Marlins,loanDepot park,Germán Márquez,,,,,
+824733,2026-07-24T23:15:00Z,Scheduled,141,Toronto Blue Jays,111,Boston Red Sox,Fenway Park,Trey Yesavage,,,Patrick Sandoval,,
+824573,2026-07-24T23:40:00Z,Scheduled,117,Houston Astros,145,Chicago White Sox,Rate Field,Spencer Arrighetti,,,Davis Martin,,
+822872,2026-07-25T00:05:00Z,Scheduled,136,Seattle Mariners,140,Texas Rangers,Globe Life Field,Bryce Miller,,,MacKenzie Gore,,
+823680,2026-07-25T00:10:00Z,Scheduled,133,Athletics,142,Minnesota Twins,Target Field,Jacob Lopez,682052.0,L,Zebby Matthews,805673.0,R
+823031,2026-07-25T00:15:00Z,Scheduled,113,Cincinnati Reds,138,St. Louis Cardinals,Busch Stadium,Rhett Lowder,695076.0,R,Dustin May,669160.0,R
+823196,2026-07-25T02:15:00Z,Scheduled,108,Los Angeles Angels,137,San Francisco Giants,Oracle Park,Grayson Rodriguez,680570.0,R,Logan Webb,657277.0,R
