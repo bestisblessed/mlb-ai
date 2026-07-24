@@ -1,0 +1,14 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,triples,year
+,2,,1.000,1.000,,Trent Grisham,663757,1,1,,,,,2,,,10,1.000,2.500,Luzardo,666200,2,1,1.500,,3,,2020
+,2,,.000,.000,,Trent Grisham,663757,,1,,1,1.00,,,,1,6,.000,.000,Luzardo,666200,2,,.000,1,,,2022
+,2,,.000,.000,,Trent Grisham,663757,,1,,1,1.00,,,,,7,.000,.000,Luzardo,666200,2,,.000,1,,,2023
+,1,,1.000,1.000,1,Cody Bellinger,641355,1,1,,,,,1,,,6,1.000,3.000,Luzardo,666200,2,,2.000,,2,,2020
+1,3,,.333,.333,,Cody Bellinger,641355,,1,1,1,1.00,,1,,1,13,.333,1.333,Luzardo,666200,3,,1.000,,3,1,2023
+3,9,,.444,.571,,Paul Goldschmidt,502671,1,3,,,0.00,,4,,2,37,.444,1.000,Luzardo,666200,9,,.556,2,5,,
+4,10,,.400,.444,,Amed Rosario,642708,1,4,,1,0.25,,4,,3,31,.400,1.100,Luzardo,666200,10,,.700,1,7,1,
+,4,2.00,.500,.---,1,Anthony Volpe,683011,,2,,,,,2,2,1,24,.600,2.600,Luzardo,666200,5,6,2.000,2,8,,
+,2,,.000,.000,,Ryan McMahon,641857,,1,,1,1.00,,,,3,8,.000,.000,Luzardo,666200,2,,.000,1,,,2020
+,1,,.000,.---,,Ryan McMahon,641857,,1,,,,,,,1,5,.000,.000,Luzardo,666200,1,,.000,1,,,2021
+1,3,,.000,.000,,Ryan McMahon,641857,,1,,,0.00,,,,3,16,.000,.000,Luzardo,666200,3,,.000,2,,,2023
+1,1,,.000,.000,,Jose Caballero,676609,,1,,,0.00,1,,,,8,.500,.500,Luzardo,666200,2,,.000,,,,2023
+1,2,,.000,.000,,Jose Caballero,676609,,1,,,0.00,,,,2,11,.000,.000,Luzardo,666200,2,,.000,1,,,2025
