@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824244,2026-07-25T17:10:00Z,Pre-Game,118,Kansas City Royals,116,Detroit Tigers,Comerica Park,Michael Wacha,608379,R,Casey Mize,663554.0,R
+822704,2026-07-25T20:05:00Z,Scheduled,109,Arizona Diamondbacks,120,Washington Nationals,Nationals Park,Mitch Bratt,683352,L,Foster Griffin,656492.0,L
+823197,2026-07-25T20:05:00Z,Scheduled,108,Los Angeles Angels,137,San Francisco Giants,Oracle Park,Ryan Johnson,696270,R,Robbie Ray,592662.0,L
+824734,2026-07-25T20:10:00Z,Scheduled,141,Toronto Blue Jays,111,Boston Red Sox,Fenway Park,Dylan Cease,656302,R,Sonny Gray,543243.0,R
+823841,2026-07-25T20:10:00Z,Scheduled,135,San Diego Padres,146,Miami Marlins,loanDepot park,JP Sears,676664,L,Eury Pérez,691587.0,R
+823435,2026-07-25T22:05:00Z,Scheduled,147,New York Yankees,143,Philadelphia Phillies,Citizens Bank Park,Ryan Weathers,677960,L,,,
+822948,2026-07-25T22:10:00Z,Scheduled,114,Cleveland Guardians,139,Tampa Bay Rays,Tropicana Field,Tanner Bibee,676440,R,Nick Martinez,607259.0,R
+823355,2026-07-25T22:40:00Z,Scheduled,112,Chicago Cubs,134,Pittsburgh Pirates,PNC Park,Shota Imanaga,684007,L,Paul Skenes,694973.0,R
+824811,2026-07-25T23:05:00Z,Scheduled,144,Atlanta Braves,110,Baltimore Orioles,Oriole Park at Camden Yards,Bryce Elder,693821,R,Brandon Young,687064.0,R
+823679,2026-07-25T23:10:00Z,Scheduled,133,Athletics,142,Minnesota Twins,Target Field,Mason Barnett,686930,R,,,
+824571,2026-07-25T23:10:00Z,Scheduled,117,Houston Astros,145,Chicago White Sox,Rate Field,Hunter Brown,686613,R,Sean Burke,680732.0,R
+823758,2026-07-25T23:10:00Z,Scheduled,115,Colorado Rockies,158,Milwaukee Brewers,American Family Field,Ryan Feltner,663372,R,Robert Gasser,688107.0,L
+823600,2026-07-25T23:15:00Z,Scheduled,119,Los Angeles Dodgers,121,New York Mets,Citi Field,Yoshinobu Yamamoto,808967,R,Nolan McLean,690997.0,R
+823027,2026-07-25T23:15:00Z,Scheduled,113,Cincinnati Reds,138,St. Louis Cardinals,Busch Stadium,Hunter Greene,668881,R,Andre Pallante,669467.0,R
+822869,2026-07-25T23:15:00Z,Scheduled,136,Seattle Mariners,140,Texas Rangers,Globe Life Field,Bryan Woo,693433,R,Nathan Eovaldi,543135.0,R
