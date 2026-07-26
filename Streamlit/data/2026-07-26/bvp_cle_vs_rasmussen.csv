@@ -1,0 +1,15 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hitbypitch,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacbunts,sacflies,slg,strikeouts,totalbases,year
+4,8,.375,.375,1,Steven Kwan,680757,1,3,,1,0.25,,3,1,39,.444,.944,Rasmussen,656876,9,1,,,.500,,4,
+2,6,.167,.167,1,Brayan Rocchio,677587,,3,,3,1.50,,1,2,32,.286,.453,Rasmussen,656876,7,,,,.167,,1,
+,2,.000,.000,2,Gabriel Arias,672356,,2,,1,1.00,,,1,16,.500,.500,Rasmussen,656876,4,,,,.000,1,,
+,2,1.000,1.000,1,Chase DeLauter,800050,,1,,,,,2,,12,1.000,2.000,Rasmussen,656876,3,2,,,1.000,,2,2026
+2,8,.125,.167,,Jose Ramirez,608070,,5,1,3,1.50,,1,6,28,.125,.250,Rasmussen,656876,8,1,,,.125,2,1,
+1,1,.000,.000,,Angel Martinez,682657,,1,,,0.00,,,,4,.000,.000,Rasmussen,656876,1,,,,.000,,,2024
+1,1,.000,.000,,Angel Martinez,682657,,1,,1,1.00,,,1,2,.000,.000,Rasmussen,656876,2,,1,,.000,,,2025
+1,3,.000,.000,,Angel Martinez,682657,,1,,1,1.00,,,3,13,.000,.000,Rasmussen,656876,3,,,,.000,1,,2026
+1,5,.000,.000,,Austin Hedges,595978,,3,1,1,1.00,,,4,25,.000,.000,Rasmussen,656876,5,,,,.000,3,,
+3,6,.167,.250,,Kyle Manzardo,700932,,3,,,0.00,1,1,2,34,.250,.417,Rasmussen,656876,8,1,,1,.167,3,1,
+,2,.000,.000,,Travis Bazzana,683953,,1,,2,2.00,,,1,4,.000,.000,Rasmussen,656876,2,,,,.000,,,
+,1,1.000,1.000,,David Fry,681807,,1,,,,,1,,4,1.000,2.000,Rasmussen,656876,1,,,,1.000,,1,2024
+,1,.000,.---,,Rhys Hoskins,656555,,1,,,,,,,5,.000,.000,Rasmussen,656876,1,,,,.000,1,,2021
+,2,.000,.---,,Rhys Hoskins,656555,,1,,,,,,,8,.000,.000,Rasmussen,656876,2,,,,.000,2,,2025
