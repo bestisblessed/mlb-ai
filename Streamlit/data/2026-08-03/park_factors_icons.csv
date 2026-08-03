@@ -1,0 +1,9 @@
+game_id,game,icons,icon_labels
+824324,Coors Field8:40TB  @ COL,"OutRightCenter.svg,InRightMiddle.svg,InRightMiddle.svg,HeavyWind.png,Over90.png,LowH.png,LowP.png","OutRightCenter.svg,InRightMiddle.svg,InRightMiddle.svg,Heavy Wind,≥90°F,Low Humidity,Low Pressure"
+823431,Citizens Bank Park6:40WAS @ PHI,"FromLeft.svg,OutRight.svg,OutRight.svg,From76to82.png,LowP.png","FromLeft.svg,OutRight.svg,OutRight.svg,76–82°F,Low Pressure"
+823520,Yankee Stadium7:05STL @ NYY,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,From76to82.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,76–82°F"
+825095,Chase Field9:40SD  @ ARI,RoofClosed.png,Roof Closed
+824160,Daikin Park8:10TOR @ HOU,RoofClosed.png,Roof Closed
+823757,American Family Fld7:40PIT @ MIL,"InLeftCenter.svg,InCenter.svg,InRightCenter.svg,LightWind.png","InLeftCenter.svg,InCenter.svg,InRightCenter.svg,Light Breeze"
+822867,Globe Life Field8:05SF  @ TEX,RoofClosed.png,Roof Closed
+824647,Wrigley Field8:05LAD @ CHC,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg"
