@@ -1,0 +1,9 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823431,2026-08-03T22:40:00Z,Scheduled,120,Washington Nationals,143,Philadelphia Phillies,Citizens Bank Park,,,,Aaron Nola,605400.0,R
+823520,2026-08-03T23:05:00Z,Scheduled,138,St. Louis Cardinals,147,New York Yankees,Yankee Stadium,Michael McGreevy,700241.0,R,Cam Schlittler,693645.0,R
+823757,2026-08-03T23:40:00Z,Scheduled,134,Pittsburgh Pirates,158,Milwaukee Brewers,American Family Field,Bubba Chandler,696149.0,R,Brandon Sproat,687075.0,R
+824647,2026-08-04T00:05:00Z,Scheduled,119,Los Angeles Dodgers,112,Chicago Cubs,Wrigley Field,,,,Matthew Boyd,571510.0,L
+822867,2026-08-04T00:05:00Z,Scheduled,137,San Francisco Giants,140,Texas Rangers,Globe Life Field,Logan Webb,657277.0,R,,,
+824160,2026-08-04T00:10:00Z,Scheduled,141,Toronto Blue Jays,117,Houston Astros,Daikin Park,Shane Bieber,669456.0,R,Cristian Javier,664299.0,R
+824324,2026-08-04T00:40:00Z,Scheduled,139,Tampa Bay Rays,115,Colorado Rockies,Coors Field,Ian Seymour,693855.0,L,Michael Lorenzen,547179.0,R
+825095,2026-08-04T01:40:00Z,Scheduled,135,San Diego Padres,109,Arizona Diamondbacks,Chase Field,Michael King,650633.0,R,Brandon Pfaadt,694297.0,R
