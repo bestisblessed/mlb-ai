@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824158,2026-08-05T18:10:00Z,Scheduled,141,Toronto Blue Jays,117,Houston Astros,Daikin Park,Jameson Taillon,592791,R,Hunter Brown,686613.0,R
+824646,2026-08-05T18:20:00Z,Scheduled,119,Los Angeles Dodgers,112,Chicago Cubs,Wrigley Field,Eric Lauer,641778,L,Shota Imanaga,684007.0,L
+822866,2026-08-05T18:35:00Z,Scheduled,137,San Francisco Giants,140,Texas Rangers,Globe Life Field,Carson Whisenhunt,687931,L,Cody Bradford,,
+824322,2026-08-05T19:10:00Z,Scheduled,139,Tampa Bay Rays,115,Colorado Rockies,Coors Field,Nick Martinez,607259,R,Tomoyuki Sugano,608372.0,R
+824806,2026-08-05T22:35:00Z,Scheduled,108,Los Angeles Angels,110,Baltimore Orioles,Oriole Park at Camden Yards,Reid Detmers,672282,L,Trevor Rogers,669432.0,L
+824402,2026-08-05T22:40:00Z,Scheduled,121,New York Mets,114,Cleveland Guardians,Progressive Field,Christian Scott,681035,R,Tanner Bibee,676440.0,R
+824482,2026-08-05T22:40:00Z,Scheduled,133,Athletics,113,Cincinnati Reds,Great American Ball Park,Jacob Lopez,682052,L,Rhett Lowder,695076.0,R
+823429,2026-08-05T22:40:00Z,Scheduled,120,Washington Nationals,143,Philadelphia Phillies,Citizens Bank Park,Jake Irvin,663623,R,Andrew Painter,691725.0,R
+823516,2026-08-05T23:05:00Z,Scheduled,138,St. Louis Cardinals,147,New York Yankees,Yankee Stadium,Andre Pallante,669467,R,Will Warren,701542.0,R
+824728,2026-08-05T23:10:00Z,Scheduled,145,Chicago White Sox,111,Boston Red Sox,Fenway Park,Sean Burke,680732,R,Sonny Gray,543243.0,R
+824889,2026-08-05T23:15:00Z,Scheduled,146,Miami Marlins,144,Atlanta Braves,Truist Park,Eury Pérez,691587,R,Bryce Elder,693821.0,R
+824082,2026-08-05T23:40:00Z,Scheduled,142,Minnesota Twins,118,Kansas City Royals,Kauffman Stadium,Dean Kremer,665152,R,Noah Cameron,702070.0,L
+823753,2026-08-05T23:40:00Z,Scheduled,134,Pittsburgh Pirates,158,Milwaukee Brewers,American Family Field,Paul Skenes,694973,R,Kyle Harrison,690986.0,L
+825052,2026-08-06T01:40:00Z,Scheduled,135,San Diego Padres,109,Arizona Diamondbacks,Chase Field,Casey Mize,663554,R,Mitch Bratt,683352.0,L
+823106,2026-08-06T01:40:00Z,Scheduled,116,Detroit Tigers,136,Seattle Mariners,T-Mobile Park,Drew Anderson,623454,R,Bryan Woo,693433.0,R

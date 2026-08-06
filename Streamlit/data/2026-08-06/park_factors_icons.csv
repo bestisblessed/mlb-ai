@@ -1,0 +1,12 @@
+game_id,game,icons,icon_labels
+824729,Fenway Park7:10CHW @ BOS,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png,From83to89.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze,83–89°F"
+824804,Oriole Park12:35LAA @ BAL,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,Over90.png,HighH.png,HighP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,≥90°F,High Humidity,High Pressure"
+823430,Citizens Bank Park6:05WAS @ PHI,"OutRightCenter.svg,OutRightCenter.svg,OutLeftCenter.svg,LightWind.png,Over90.png","OutRightCenter.svg,OutRightCenter.svg,OutLeftCenter.svg,Light Breeze,≥90°F"
+824481,Great American BP12:40ATH @ CIN,"OutLeft.svg,OutLeftCenter.svg,OutLeft.svg,LightWind.png,Over90.png,HighP.png","OutLeft.svg,OutLeftCenter.svg,OutLeft.svg,Light Breeze,≥90°F,High Pressure"
+824080,Kauffman Stadium7:40MIN @ KC,"InLeftMiddle.svg,InLeft.svg,InLeftCenter.svg,Over90.png","InLeftMiddle.svg,InLeft.svg,InLeftCenter.svg,≥90°F"
+825053,Chase Field9:40SD  @ ARI,RoofClosed.png,Roof Closed
+823105,T-Mobile Park4:10DET @ SEA,"OutRight.svg,OutRightMiddle.svg,OutRightMiddle.svg,From76to82.png","OutRight.svg,OutRightMiddle.svg,OutRightMiddle.svg,76–82°F"
+823754,American Family Fld2:10PIT @ MIL,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,From76to82.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,76–82°F"
+824885,Truist Park7:15MIA @ ATL,"OutLeftMiddle.svg,OutLeftCenter.svg,OutRight.svg,From76to82.png,HighP.png","OutLeftMiddle.svg,OutLeftCenter.svg,OutRight.svg,76–82°F,High Pressure"
+824401,Progressive Field1:10NYM @ CLE,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png,From83to89.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze,83–89°F,High Pressure"
+824664,Wrigley Field2:20TOR @ CHC,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,HighH.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,High Humidity"
