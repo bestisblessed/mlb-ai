@@ -1,0 +1,12 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824804,2026-08-06T16:35:00Z,Pre-Game,108,Los Angeles Angels,110,Baltimore Orioles,Oriole Park at Camden Yards,Ryan Johnson,696270,R,Brandon Young,687064,R
+824481,2026-08-06T16:40:00Z,Pre-Game,133,Athletics,113,Cincinnati Reds,Great American Ball Park,Mason Barnett,686930,R,Andrew Abbott,671096,L
+824401,2026-08-06T17:10:00Z,Scheduled,121,New York Mets,114,Cleveland Guardians,Progressive Field,Nolan McLean,690997,R,Foster Griffin,656492,L
+823754,2026-08-06T18:10:00Z,Scheduled,134,Pittsburgh Pirates,158,Milwaukee Brewers,American Family Field,Braxton Ashcraft,677952,R,Dustin May,669160,R
+824664,2026-08-06T18:20:00Z,Scheduled,141,Toronto Blue Jays,112,Chicago Cubs,Wrigley Field,Dylan Cease,656302,R,David Peterson,656849,L
+823105,2026-08-06T20:10:00Z,Scheduled,116,Detroit Tigers,136,Seattle Mariners,T-Mobile Park,Framber Valdez,664285,L,Bryce Miller,682243,R
+823430,2026-08-06T22:05:00Z,Scheduled,120,Washington Nationals,143,Philadelphia Phillies,Citizens Bank Park,Miles Mikolas,571945,R,Cristopher Sánchez,650911,L
+824729,2026-08-06T23:10:00Z,Scheduled,145,Chicago White Sox,111,Boston Red Sox,Fenway Park,Luis Castillo,622491,R,Ranger Suarez,624133,L
+824885,2026-08-06T23:15:00Z,Scheduled,146,Miami Marlins,144,Atlanta Braves,Truist Park,Janson Junk,676083,R,Martín Pérez,527048,L
+824080,2026-08-06T23:40:00Z,Scheduled,142,Minnesota Twins,118,Kansas City Royals,Kauffman Stadium,Bailey Ober,641927,R,Michael Wacha,608379,R
+825053,2026-08-07T01:40:00Z,Scheduled,135,San Diego Padres,109,Arizona Diamondbacks,Chase Field,Walker Buehler,621111,R,Kohl Drake,684442,L
