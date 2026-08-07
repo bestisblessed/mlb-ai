@@ -1,0 +1,4 @@
+airouts,atbats,avg,babip,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,2,.000,.000,Willy Adames,642715,1,,0.00,,2,8,.000,.000,Montero,672456,2,.000,1,,
+1,2,.000,.000,Rafael Devers,646240,1,1,1.00,,1,4,.000,.000,Montero,672456,2,.000,,,2025
+,2,.500,.500,Jung Hoo Lee J. Hoo Lee,808982,1,1,1.00,1,,8,.500,1.000,Montero,672456,2,.500,,1,
