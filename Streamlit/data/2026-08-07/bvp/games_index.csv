@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823349,2026-08-07T22:40:00Z,Scheduled,121,New York Mets,134,Pittsburgh Pirates,PNC Park,Zac Thornton,804267.0,L,Carmen Mlodzinski,669387.0,R
+823428,2026-08-07T22:40:00Z,Scheduled,141,Toronto Blue Jays,143,Philadelphia Phillies,Citizens Bank Park,José Soriano,667755.0,R,Zack Wheeler,554430.0,R
+822699,2026-08-07T22:45:00Z,Scheduled,113,Cincinnati Reds,120,Washington Nationals,Nationals Park,,,,Cade Cavalli,676917.0,R
+823515,2026-08-07T23:05:00Z,Scheduled,144,Atlanta Braves,147,New York Yankees,Yankee Stadium,Tyler Mahle,641816.0,R,Max Fried,608331.0,L
+824727,2026-08-07T23:10:00Z,Scheduled,133,Athletics,111,Boston Red Sox,Fenway Park,Jack Perkins,678022.0,R,Payton Tolle,801139.0,L
+823836,2026-08-07T23:10:00Z,Scheduled,108,Los Angeles Angels,146,Miami Marlins,loanDepot park,George Klassen,691946.0,R,Tyler Phillips,663969.0,R
+824566,2026-08-07T23:40:00Z,Scheduled,114,Cleveland Guardians,145,Chicago White Sox,Rate Field,Parker Messick,800048.0,L,Noah Schultz,702273.0,L
+823750,2026-08-07T23:40:00Z,Scheduled,142,Minnesota Twins,158,Milwaukee Brewers,American Family Field,Zebby Matthews,805673.0,R,Shane Drohan,675660.0,L
+824081,2026-08-08T00:10:00Z,Scheduled,112,Chicago Cubs,118,Kansas City Royals,Kauffman Stadium,,,,Daniel Lynch IV,663738.0,L
+823024,2026-08-08T00:15:00Z,Scheduled,115,Colorado Rockies,138,St. Louis Cardinals,Busch Stadium,Ryan Feltner,663372.0,R,Kyle Leahy,681517.0,R
+822863,2026-08-08T00:15:00Z,Scheduled,110,Baltimore Orioles,140,Texas Rangers,Globe Life Field,Shane Baz,669358.0,R,Nathan Eovaldi,543135.0,R
+825051,2026-08-08T01:40:00Z,Scheduled,119,Los Angeles Dodgers,109,Arizona Diamondbacks,Chase Field,Roki Sasaki,808963.0,R,Merrill Kelly,518876.0,R
+823266,2026-08-08T01:40:00Z,Scheduled,117,Houston Astros,135,San Diego Padres,Petco Park,Ronel Blanco,669854.0,R,Robbie Ray,592662.0,L
+823103,2026-08-08T01:45:00Z,Scheduled,139,Tampa Bay Rays,136,Seattle Mariners,T-Mobile Park,Drew Rasmussen,656876.0,R,Logan Gilbert,669302.0,R
+823191,2026-08-08T02:15:00Z,Scheduled,116,Detroit Tigers,137,San Francisco Giants,Oracle Park,Keider Montero,672456.0,R,,,
