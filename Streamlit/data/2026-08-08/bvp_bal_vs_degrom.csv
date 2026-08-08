@@ -1,0 +1,12 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+2,2,,.000,.000,,Pete Alonso,624413,,1,1,0.50,,,,11,.000,.000,deGrom,594798,3,1,1,.000,,,2025
+,2,2.00,1.000,1.000,,Pete Alonso,624413,,1,,,2,1,,5,1.000,3.500,deGrom,594798,2,1,,2.500,,5,2026
+1,2,,.000,.000,,Carlos Narvaez,665966,,1,,0.00,,,2,13,.000,.000,deGrom,594798,2,,,.000,1,,
+1,5,,.200,.333,,Colton Cowser,681297,,2,1,1.00,1,,1,18,.200,.400,deGrom,594798,5,,,.200,2,1,2025
+2,2,,.000,.000,,Colton Cowser,681297,,1,,0.00,,,,7,.000,.000,deGrom,594798,2,,,.000,,,2026
+,2,,.000,.---,,Jeremiah Jackson,669236,,1,,,,,,9,.000,.000,deGrom,594798,2,,,.000,2,,2026
+,2,,.000,.---,,Tyler O'Neill,641933,,1,,,,,,7,.000,.000,deGrom,594798,2,,,.000,2,,
+,2,,.000,.000,,Gunnar Henderson,683002,,1,1,1.00,,,1,6,.000,.000,deGrom,594798,2,,,.000,1,,2023
+2,6,,.167,.200,,Gunnar Henderson,683002,,2,2,1.00,1,,1,17,.167,.334,deGrom,594798,6,,,.167,1,1,2025
+,3,,.333,.500,,Gunnar Henderson,683002,1,1,1,1.00,1,,1,10,.333,1.000,deGrom,594798,3,2,,.667,1,2,2026
+1,5,,.000,.000,1,Jackson Holliday,702616,,2,1,1.00,,,1,36,.167,.167,deGrom,594798,6,,,.000,3,,

@@ -1,0 +1,12 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,1,.000,.000,,Amed Rosario,642708,,1,,,0.00,,,1,.000,.000,Sale,519242,1,,.000,,,2018
+1,3,.333,.500,,Amed Rosario,642708,,1,,,0.00,1,,13,.333,.666,Sale,519242,3,1,.333,1,1,2023
+1,5,.200,.333,,Amed Rosario,642708,1,2,1,1,1.00,1,2,15,.200,.600,Sale,519242,5,1,.400,2,2,2024
+1,5,.000,.000,1,Heliot Ramos,671218,,2,,1,1.00,,3,31,.167,.167,Sale,519242,6,,.000,3,,2024
+,3,.333,.500,,Heliot Ramos,671218,,1,,1,1.00,1,2,10,.333,.666,Sale,519242,3,,.333,1,1,2026
+1,3,.000,.000,,Paul Goldschmidt,502671,,1,,2,2.00,,1,12,.000,.000,Sale,519242,3,,.000,,,2023
+,,.000,.---,1,Jose Caballero,676609,,1,,,,,,6,1.000,1.000,Sale,519242,1,,.000,,,2024
+,1,1.000,1.000,1,Jose Caballero,676609,,1,,,,1,,7,1.000,2.000,Sale,519242,2,1,1.000,,1,2025
+1,2,.000,.000,,Ben Rice,700250,,1,,,0.00,,2,11,.000,.000,Sale,519242,2,,.000,1,,2024
+,3,.000,.---,,Ryan McMahon,641857,,1,,,,,1,13,.000,.000,Sale,519242,3,,.000,3,,2025
+1,3,.000,.000,,Jazz Chisholm,665862,,1,,,0.00,,2,18,.000,.000,Sale,519242,3,,.000,2,,
