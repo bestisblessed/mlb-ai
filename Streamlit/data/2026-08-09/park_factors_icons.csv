@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824078,Kauffman Stadium2:10CHC @ KC,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,HeavyWind.png,Over90.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Heavy Wind,≥90°F,Low Pressure"
+824724,Fenway Park1:35ATH @ BOS,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,Over90.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,≥90°F"
+823425,Citizens Bank Park1:35TOR @ PHI,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,Over90.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,≥90°F"
+823190,Oracle Park4:05DET @ SF,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png,LowP.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F,Low Pressure"
+822700,Nationals Park12:15CIN @ WAS,"FromLeft.svg,FromLeft.svg,FromLeft.svg,LightWind.png,Over90.png","FromLeft.svg,FromLeft.svg,FromLeft.svg,Light Breeze,≥90°F"
+823513,Yankee Stadium1:35ATL @ NYY,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,Over90.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,≥90°F"
+823751,American Family Fld2:10MIN @ MIL,"OutLeftMiddle.svg,InRightMiddle.svg,OutLeftMiddle.svg,LightWind.png,From83to89.png","OutLeftMiddle.svg,InRightMiddle.svg,OutLeftMiddle.svg,Light Breeze,83–89°F"
+824564,Rate Field2:10CLE @ CHW,"OutLeftMiddle.svg,OutCenter.svg,FromLeft.svg,LightWind.png,From76to82.png,HighH.png","OutLeftMiddle.svg,OutCenter.svg,FromLeft.svg,Light Breeze,76–82°F,High Humidity"
+825050,Chase Field4:10LAD @ ARI,RoofClosed.png,Roof Closed
+823345,PNC Park1:35NYM @ PIT,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,LightWind.png,From83to89.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeft.svg,Light Breeze,83–89°F"
+823835,LoanDepot Park1:40LAA @ MIA,RoofClosed.png,Roof Closed
+823268,Petco Park8:20HOU @ SD,"OutRightMiddle.svg,OutRight.svg,FromLeft.svg,LightWind.png,From76to82.png,LowP.png","OutRightMiddle.svg,OutRight.svg,FromLeft.svg,Light Breeze,76–82°F,Low Pressure"
+823104,T-Mobile Park4:10TB  @ SEA,"OutCenter.svg,OutRight.svg,OutRightMiddle.svg","OutCenter.svg,OutRight.svg,OutRightMiddle.svg"
+823020,Busch Stadium2:15COL @ STL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,ModerateWind.png,Over90.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Moderate Wind,≥90°F"
+822862,Globe Life Field2:35BAL @ TEX,RoofClosed.png,Roof Closed
