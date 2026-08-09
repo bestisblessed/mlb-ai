@@ -1,0 +1,5 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,1,,.000,.---,1,Josh Lowe,666139,1,,,,,,1,13,.500,.500,Gusto,687473,2,,.000,1,,2025
+1,5,,.200,.500,,Mike Trout,545361,2,,,0.00,1,,,21,.200,.400,Gusto,687473,5,2,.200,3,1,2025
+2,5,2.50,.400,.000,,Nolan Schanuel,694384,2,,1,0.50,2,2,1,13,.400,2.000,Gusto,687473,5,4,1.600,,8,2025
+,2,,.000,.000,,Adam Frazier,624428,1,1,2,2.00,,,4,6,.000,.000,Gusto,687473,2,,.000,,,2025
