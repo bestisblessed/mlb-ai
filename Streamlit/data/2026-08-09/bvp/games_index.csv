@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822700,2026-08-09T16:15:00Z,Pre-Game,113,Cincinnati Reds,120,Washington Nationals,Nationals Park,Brady Singer,663903.0,R,Brad Lord,695418.0,R
+824724,2026-08-09T17:35:00Z,Pre-Game,133,Athletics,111,Boston Red Sox,Fenway Park,J.T. Ginn,669372.0,R,,,
+823345,2026-08-09T17:35:00Z,Scheduled,121,New York Mets,134,Pittsburgh Pirates,PNC Park,Sean Manaea,640455.0,L,Jared Jones,683003.0,R
+823425,2026-08-09T17:35:00Z,Scheduled,141,Toronto Blue Jays,143,Philadelphia Phillies,Citizens Bank Park,Shane Bieber,669456.0,R,Jesús Luzardo,666200.0,L
+823513,2026-08-09T17:35:00Z,Scheduled,144,Atlanta Braves,147,New York Yankees,Yankee Stadium,Grant Holmes,656550.0,R,Cam Schlittler,693645.0,R
+823835,2026-08-09T17:40:00Z,Scheduled,108,Los Angeles Angels,146,Miami Marlins,loanDepot park,Grayson Rodriguez,680570.0,R,Ryan Gusto,687473.0,R
+824078,2026-08-09T18:10:00Z,Scheduled,112,Chicago Cubs,118,Kansas City Royals,Kauffman Stadium,Matthew Boyd,571510.0,L,Randy Dobnak,677976.0,R
+824564,2026-08-09T18:10:00Z,Scheduled,114,Cleveland Guardians,145,Chicago White Sox,Rate Field,Joey Cantillo,676282.0,L,Davis Martin,663436.0,R
+823751,2026-08-09T18:10:00Z,Scheduled,142,Minnesota Twins,158,Milwaukee Brewers,American Family Field,Connor Prielipp,687570.0,L,Jacob Misiorowski,694819.0,R
+823020,2026-08-09T18:15:00Z,Scheduled,115,Colorado Rockies,138,St. Louis Cardinals,Busch Stadium,Michael Lorenzen,547179.0,R,Michael McGreevy,700241.0,R
+822862,2026-08-09T18:35:00Z,Scheduled,110,Baltimore Orioles,140,Texas Rangers,Globe Life Field,Cade Povich,700249.0,L,Kumar Rocker,677958.0,R
+823190,2026-08-09T20:05:00Z,Scheduled,116,Detroit Tigers,137,San Francisco Giants,Oracle Park,Troy Melton,675512.0,R,Logan Webb,657277.0,R
+825050,2026-08-09T20:10:00Z,Scheduled,119,Los Angeles Dodgers,109,Arizona Diamondbacks,Chase Field,Justin Wrobleski,680736.0,L,Eduardo Rodriguez,699134.0,R
+823104,2026-08-09T20:10:00Z,Scheduled,139,Tampa Bay Rays,136,Seattle Mariners,T-Mobile Park,,,,Emerson Hancock,676106.0,R
+823268,2026-08-10T00:20:00Z,Scheduled,117,Houston Astros,135,San Diego Padres,Petco Park,Cristian Javier,664299.0,R,,,
