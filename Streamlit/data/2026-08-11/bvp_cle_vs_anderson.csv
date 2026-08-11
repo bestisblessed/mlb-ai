@@ -1,0 +1,12 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,4,.000,.000,,Jose Ramirez,608070,,3,1,1.00,,1,18,.000,.000,Anderson,623454,4,,.000,2,,
+,2,.000,.---,1,Brayan Rocchio,677587,,2,,,,2,17,.333,.333,Anderson,623454,3,,.000,2,,2026
+1,3,.667,.667,,Steven Kwan,680757,,2,,0.00,2,1,8,.667,1.334,Anderson,623454,3,1,.667,,2,2026
+,2,.500,1.000,,Chase DeLauter,800050,,1,,,1,,7,.500,1.000,Anderson,623454,2,,.500,1,1,
+1,3,.000,.000,,Rhys Hoskins,656555,,2,1,1.00,,1,8,.000,.000,Anderson,623454,3,,.000,1,,2026
+,1,.000,.---,,Nathaniel Lowe,663993,,1,,,,1,5,.000,.000,Anderson,623454,1,,.000,1,,2026
+1,1,.000,.000,,Jo Adell,666176,,1,,0.00,,1,2,.000,.000,Anderson,623454,1,,.000,,,2021
+,1,.000,.000,,Jo Adell,666176,,1,1,1.00,,,2,.000,.000,Anderson,623454,1,,.000,,,2026
+1,3,.333,.333,,Angel Martinez,682657,1,2,1,1.00,1,,11,.333,1.000,Anderson,623454,3,,.667,,2,2026
+1,3,.333,.500,,Patrick Bailey,672275,,2,,0.00,1,2,8,.333,.666,Anderson,623454,3,,.333,1,1,
+1,1,.000,.000,,Travis Bazzana,683953,,1,,0.00,,2,1,.000,.000,Anderson,623454,1,,.000,,,

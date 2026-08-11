@@ -1,0 +1,11 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822780,2026-08-10T23:07:00Z,Scheduled,111,Boston Red Sox,141,Toronto Blue Jays,Rogers Centre,Sonny Gray,543243,R,Jameson Taillon,592791,R
+824887,2026-08-10T23:15:00Z,Scheduled,121,New York Mets,144,Atlanta Braves,Truist Park,Christian Scott,681035,R,Bryce Elder,693821,R
+823675,2026-08-10T23:40:00Z,Scheduled,110,Baltimore Orioles,142,Minnesota Twins,Target Field,Trevor Rogers,669432,L,Dean Kremer,665152,R
+823018,2026-08-10T23:45:00Z,Scheduled,143,Philadelphia Phillies,138,St. Louis Cardinals,Busch Stadium,Andrew Painter,691725,R,Hunter Dobbins,690928,R
+823998,2026-08-11T01:38:00Z,Scheduled,140,Texas Rangers,108,Los Angeles Angels,Angel Stadium,MacKenzie Gore,669022,L,Reid Detmers,672282,L
+825048,2026-08-11T01:40:00Z,Scheduled,115,Colorado Rockies,109,Arizona Diamondbacks,Chase Field,Gabriel Hughes,687312,R,Michael Soroka,647336,R
+824969,2026-08-11T01:40:00Z,Scheduled,139,Tampa Bay Rays,133,Athletics,Sutter Health Park,Freddy Peralta,642547,R,Jacob Lopez,682052,L
+823265,2026-08-11T01:40:00Z,Scheduled,158,Milwaukee Brewers,135,San Diego Padres,Petco Park,Logan Henderson,701656,R,Casey Mize,663554,R
+823189,2026-08-11T01:45:00Z,Scheduled,117,Houston Astros,137,San Francisco Giants,Oracle Park,Hayden Wesneski,669713,R,Blade Tidwell,694918,R
+823918,2026-08-11T02:10:00Z,Scheduled,118,Kansas City Royals,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Noah Cameron,702070,L,Tarik Skubal,669373,L

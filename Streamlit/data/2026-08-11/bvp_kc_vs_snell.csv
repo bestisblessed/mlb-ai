@@ -1,0 +1,12 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,3,,.333,.333,,Bobby Witt Jr. B. Witt Jr.,677951,,1,1,1.00,1,,1,9,.333,.666,Snell,605483,3,,.333,,1,
+,1,,.000,.---,,Isaac Collins,686555,,1,,,,,,4,.000,.000,Snell,605483,1,,.000,1,,
+2,19,19.00,.263,.364,1,Starling Marte,516782,1,7,5,2.50,5,1,7,78,.300,.774,Snell,605483,20,1,.474,7,9,
+,2,,.000,.---,,Kyle Isbel,664728,,1,,,,,,8,.000,.000,Snell,605483,2,,.000,2,,2024
+2,6,,.333,.400,1,Josh Rojas,668942,,3,1,0.50,2,,5,32,.429,.762,Snell,605483,7,,.333,1,2,
+2,9,,.333,.429,,Salvador Perez,521692,,3,2,1.00,3,,3,28,.333,.666,Snell,605483,9,1,.333,2,3,
+1,1,,.000,.000,1,Luke Maile,571912,,1,,0.00,,,1,6,.500,.500,Snell,605483,2,,.000,,,2017
+,1,,.000,.---,,Luke Maile,571912,,1,,,,,,5,.000,.000,Snell,605483,1,,.000,1,,2018
+,3,,.333,1.000,,Luke Maile,571912,,2,,,1,,1,13,.333,.666,Snell,605483,3,,.333,2,1,2019
+,2,,1.000,1.000,,Luke Maile,571912,,1,,,2,,,3,1.000,2.000,Snell,605483,2,1,1.000,,2,2022
+,2,,1.000,1.000,,Luke Maile,571912,,1,,,2,,,7,1.000,2.000,Snell,605483,2,,1.000,,2,2023
