@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824240,2026-08-11T22:40:00Z,Scheduled,114,Cleveland Guardians,116,Detroit Tigers,Comerica Park,Tanner Bibee,676440,R,Drew Anderson,623454.0,R
+823832,2026-08-11T22:40:00Z,Scheduled,134,Pittsburgh Pirates,146,Miami Marlins,loanDepot park,Paul Skenes,694973,R,Eury Pérez,691587.0,R
+822697,2026-08-11T22:45:00Z,Scheduled,112,Chicago Cubs,120,Washington Nationals,Nationals Park,Shota Imanaga,684007,L,,,
+823512,2026-08-11T23:05:00Z,Scheduled,136,Seattle Mariners,147,New York Yankees,Yankee Stadium,Bryan Woo,693433,R,Ryan Weathers,677960.0,L
+822778,2026-08-11T23:07:00Z,Scheduled,111,Boston Red Sox,141,Toronto Blue Jays,Rogers Centre,Patrick Sandoval,663776,L,Dylan Cease,656302.0,R
+824886,2026-08-11T23:15:00Z,Scheduled,121,New York Mets,144,Atlanta Braves,Truist Park,Nolan McLean,690997,R,Martín Pérez,527048.0,L
+823673,2026-08-11T23:40:00Z,Scheduled,110,Baltimore Orioles,142,Minnesota Twins,Target Field,Brandon Young,687064,R,Bailey Ober,641927.0,R
+824563,2026-08-11T23:40:00Z,Scheduled,113,Cincinnati Reds,145,Chicago White Sox,Rate Field,Nick Lodolo,666157,L,Sean Burke,680732.0,R
+823019,2026-08-11T23:45:00Z,Scheduled,143,Philadelphia Phillies,138,St. Louis Cardinals,Busch Stadium,Cristopher Sánchez,650911,L,Andre Pallante,669467.0,R
+823997,2026-08-12T01:38:00Z,Scheduled,140,Texas Rangers,108,Los Angeles Angels,Angel Stadium,Cody Bradford,674003,L,Ryan Johnson,696270.0,R
+825046,2026-08-12T01:40:00Z,Scheduled,115,Colorado Rockies,109,Arizona Diamondbacks,Chase Field,Tomoyuki Sugano,608372,R,Mitch Bratt,683352.0,L
+824970,2026-08-12T01:40:00Z,Scheduled,139,Tampa Bay Rays,133,Athletics,Sutter Health Park,Nick Martinez,607259,R,Mason Barnett,686930.0,R
+823264,2026-08-12T01:40:00Z,Scheduled,158,Milwaukee Brewers,135,San Diego Padres,Petco Park,Kyle Harrison,690986,L,Walker Buehler,621111.0,R
+823186,2026-08-12T01:45:00Z,Scheduled,117,Houston Astros,137,San Francisco Giants,Oracle Park,Hunter Brown,686613,R,,,
+823917,2026-08-12T02:10:00Z,Scheduled,118,Kansas City Royals,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Michael Wacha,608379,R,Blake Snell,605483.0,L
