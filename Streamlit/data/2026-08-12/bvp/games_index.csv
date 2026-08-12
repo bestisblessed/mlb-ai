@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823672,2026-08-12T17:40:00Z,Scheduled,110,Baltimore Orioles,142,Minnesota Twins,Target Field,Shane Baz,669358.0,R,Zebby Matthews,805673.0,R
+823017,2026-08-12T18:15:00Z,Scheduled,143,Philadelphia Phillies,138,St. Louis Cardinals,Busch Stadium,Zack Wheeler,554430.0,R,Kyle Leahy,681517.0,R
+824967,2026-08-12T19:05:00Z,Scheduled,139,Tampa Bay Rays,133,Athletics,Sutter Health Park,Drew Rasmussen,656876.0,R,Jack Perkins,678022.0,R
+825047,2026-08-12T19:40:00Z,Scheduled,115,Colorado Rockies,109,Arizona Diamondbacks,Chase Field,Ryan Feltner,663372.0,R,Merrill Kelly,518876.0,R
+823187,2026-08-12T19:45:00Z,Scheduled,117,Houston Astros,137,San Francisco Giants,Oracle Park,Bryan King,687911.0,L,,,
+823263,2026-08-12T20:10:00Z,Scheduled,158,Milwaukee Brewers,135,San Diego Padres,Petco Park,Dustin May,669160.0,R,Robbie Ray,592662.0,L
+824241,2026-08-12T22:40:00Z,Scheduled,114,Cleveland Guardians,116,Detroit Tigers,Comerica Park,Foster Griffin,656492.0,L,Framber Valdez,664285.0,L
+823833,2026-08-12T22:40:00Z,Scheduled,134,Pittsburgh Pirates,146,Miami Marlins,loanDepot park,Carmen Mlodzinski,669387.0,R,Janson Junk,676083.0,R
+822698,2026-08-12T22:45:00Z,Scheduled,112,Chicago Cubs,120,Washington Nationals,Nationals Park,David Peterson,656849.0,L,Jackson Kent,,
+823511,2026-08-12T23:05:00Z,Scheduled,136,Seattle Mariners,147,New York Yankees,Yankee Stadium,Bryce Miller,682243.0,R,Will Warren,701542.0,R
+822779,2026-08-12T23:07:00Z,Scheduled,111,Boston Red Sox,141,Toronto Blue Jays,Rogers Centre,Ranger Suarez,624133.0,L,José Soriano,667755.0,R
+824883,2026-08-12T23:15:00Z,Scheduled,121,New York Mets,144,Atlanta Braves,Truist Park,Zac Thornton,804267.0,L,Tyler Mahle,641816.0,R
+824562,2026-08-12T23:40:00Z,Scheduled,113,Cincinnati Reds,145,Chicago White Sox,Rate Field,Rhett Lowder,695076.0,R,Luis Castillo,622491.0,R
+823916,2026-08-13T02:10:00Z,Scheduled,118,Kansas City Royals,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Daniel Lynch IV,,,Eric Lauer,641778.0,L
+823994,2026-08-13T02:10:00Z,Scheduled,140,Texas Rangers,108,Los Angeles Angels,Angel Stadium,Cal Quantrill,615698.0,R,George Klassen,691946.0,R
