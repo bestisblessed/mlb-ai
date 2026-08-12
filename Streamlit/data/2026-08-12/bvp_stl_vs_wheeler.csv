@@ -1,0 +1,8 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+2,3,.000,.000,,Alec Burleson,676475,,1,1,0.50,,1,8,.000,.000,Wheeler,554430,3,.000,,,2023
+,2,1.000,1.000,1,Alec Burleson,676475,,1,,,2,,7,1.000,2.000,Wheeler,554430,3,1.000,,2,2024
+,3,.000,.000,,Alec Burleson,676475,,1,2,2.00,,2,8,.000,.000,Wheeler,554430,3,.000,1,,2025
+,3,.333,.333,,Ivan Herrera,671056,,1,2,2.00,1,1,13,.333,.666,Wheeler,554430,3,.333,,1,
+1,2,.000,.000,,Masyn Winn,691026,,1,1,1.00,,,6,.000,.000,Wheeler,554430,2,.000,,,2023
+1,3,.333,.500,,Masyn Winn,691026,1,1,,0.00,1,4,17,.333,1.000,Wheeler,554430,3,.667,1,2,2024
+1,3,.333,.500,,Jordan Walker,691023,,1,,0.00,1,2,10,.333,.666,Wheeler,554430,3,.333,1,1,
