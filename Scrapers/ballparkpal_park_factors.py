@@ -81,17 +81,58 @@ if table is None:
     exit(1)
 rows = table.find("tbody").find_all("tr")
 
+
+def load_game_ids_by_matchup(date):
+    """Map Ballpark Pal's abbreviated matchup labels to GamePk values."""
+    game_simulations_path = os.path.join(
+        "data", "raw", date, "game_simulations.html"
+    )
+    if not os.path.exists(game_simulations_path):
+        return {}
+
+    with open(game_simulations_path, encoding="utf-8") as f:
+        simulations_soup = BeautifulSoup(f, "lxml")
+
+    game_ids_by_matchup = {}
+    for game in simulations_soup.select("a.game-summary-item"):
+        game_id_match = re.search(r"(?:#game_|GamePk=)(\d+)", game.get("href", ""))
+        team_codes = [
+            re.sub(r"-logo\.(?:svg|png)$", "", os.path.basename(img.get("src", "")), flags=re.I)
+            for img in game.find_all("img")
+        ]
+        if game_id_match and len(team_codes) == 2 and all(team_codes):
+            matchup = f"{team_codes[0].upper()} @ {team_codes[1].upper()}"
+            game_ids_by_matchup[matchup] = int(game_id_match.group(1))
+    return game_ids_by_matchup
+
+
+game_ids_by_matchup = load_game_ids_by_matchup(date_str)
 rows_data = []
 for tr in rows:
     game_cell = tr.find("td", {"data-column": "Game"})
+    if game_cell is None:
+        print("Warning: skipping park factors row with no Game cell")
+        continue
+
     link = game_cell.find("a", class_="gameLink")
-    href = link["href"]
-    game_id = re.search(r"GamePk=(\d+)", href).group(1)
+    href = link.get("href", "") if link else ""
+    game_id_match = re.search(r"GamePk=(\d+)", href)
+    matchup = game_cell.select_one(".matchupText")
+    matchup_text = matchup.get_text(" ", strip=True).upper() if matchup else ""
+    game_id = (
+        int(game_id_match.group(1))
+        if game_id_match
+        else game_ids_by_matchup.get(matchup_text)
+    )
+    if game_id is None:
+        print(f"Warning: skipping park factors row with no GamePk: {matchup_text or game_cell.get_text(' ', strip=True)}")
+        continue
+
     game_text = game_cell.get_text(strip=True)
     icons = [img["src"].split("/")[-1] for img in game_cell.find_all("img") if img["src"].endswith((".png", ".svg"))]
     labels = [legend.get(name, name) for name in icons]
     rows_data.append({
-        "game_id": int(game_id),
+        "game_id": game_id,
         "game": game_text,
         "icons": ",".join(icons),
         "icon_labels": ",".join(labels)
