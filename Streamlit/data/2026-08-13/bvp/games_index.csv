@@ -1,0 +1,10 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824238,2026-08-13T17:10:00Z,Scheduled,114,Cleveland Guardians,116,Detroit Tigers,Comerica Park,Parker Messick,800048,L,Keider Montero,672456,R
+823829,2026-08-13T17:10:00Z,Scheduled,134,Pittsburgh Pirates,146,Miami Marlins,loanDepot park,Braxton Ashcraft,677952,R,Tyler Phillips,663969,R
+823508,2026-08-13T17:35:00Z,Scheduled,136,Seattle Mariners,147,New York Yankees,Yankee Stadium,Logan Gilbert,669302,R,Max Fried,608331,L
+824561,2026-08-13T18:10:00Z,Scheduled,113,Cincinnati Reds,145,Chicago White Sox,Rate Field,Andrew Abbott,671096,L,Davis Martin,663436,R
+822776,2026-08-13T19:07:00Z,Scheduled,111,Boston Red Sox,141,Toronto Blue Jays,Rogers Centre,Payton Tolle,801139,L,Max Scherzer,453286,R
+822696,2026-08-13T20:05:00Z,Scheduled,112,Chicago Cubs,120,Washington Nationals,Nationals Park,Kevin Gausman,592332,R,Cade Cavalli,676917,R
+823669,2026-08-13T23:30:00Z,Scheduled,143,Philadelphia Phillies,142,Minnesota Twins,Field of Dreams,Aaron Nola,605400,R,Taj Bradley,671737,R
+823995,2026-08-14T02:07:00Z,Scheduled,140,Texas Rangers,108,Los Angeles Angels,Angel Stadium,Jacob deGrom,594798,R,Walbert Ureña,700712,R
+823915,2026-08-14T02:10:00Z,Scheduled,158,Milwaukee Brewers,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Shane Drohan,675660,L,Roki Sasaki,808963,R

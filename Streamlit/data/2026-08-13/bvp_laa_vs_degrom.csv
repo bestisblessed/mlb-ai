@@ -1,0 +1,13 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,intentionalwalks,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+1,10,,.100,.200,1,Nolan Schanuel,694384,,4,,3,3.00,1,,,7,43,.182,.282,deGrom,594798,11,,,.100,5,1,
+,3,,.000,.---,,Moises Ballesteros,694208,,1,,,,,,,2,13,.000,.000,deGrom,594798,3,,,.000,3,,
+1,3,3.00,.333,.000,1,Wade Meckler,685133,,2,,,0.00,1,1,,,13,.500,1.833,deGrom,594798,4,3,,1.333,1,4,
+,12,6.00,.417,.750,2,Zach Neto,687263,2,5,,1,1.00,5,2,,1,59,.500,1.583,deGrom,594798,14,3,,1.083,6,13,
+,3,,.333,.500,,Denzer Guzman,694203,,1,,1,1.00,1,,,2,11,.333,.666,deGrom,594798,3,,,.333,1,1,
+3,12,6.00,.333,.286,,Travis d'Arnaud,518595,,5,,2,0.67,4,2,,1,42,.333,1.166,deGrom,594798,12,4,,.833,3,10,
+,2,,.500,.500,,Josh Lowe,666139,,1,,1,1.00,1,,,2,8,.500,1.000,deGrom,594798,2,1,,.500,,1,
+2,6,,.333,.500,4,Mike Trout,545361,,4,,,0.00,2,,1,,57,.545,.878,deGrom,594798,11,1,1,.333,3,2,
+3,12,,.417,.500,,Adam Frazier,624428,1,4,,2,0.67,5,,,,33,.417,.917,deGrom,594798,12,3,,.500,2,6,
+,1,,1.000,1.000,,Tyler Heineman,623168,1,1,,,,1,,,,3,1.000,3.000,deGrom,594798,1,,,2.000,,2,2019
+1,5,,.200,.250,,Oswald Peraza,672724,,3,1,2,2.00,1,,,4,13,.200,.400,deGrom,594798,5,,,.200,1,1,
+,3,,.333,.500,,Vaughn Grissom,687093,,1,,1,1.00,1,,,,16,.333,.666,deGrom,594798,3,,,.333,1,1,

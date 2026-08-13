@@ -1,0 +1,17 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,triples,year
+3,9,,.222,.333,1,Trent Grisham,663757,1,4,,1,0.33,2,,5,42,.300,.633,Gilbert,669302,10,,.333,3,3,,
+,3,,.333,.333,,Luis Garcia,671277,,1,,2,2.00,1,,1,7,.333,.666,Gilbert,669302,3,,.333,,1,,2023
+,2,,.500,.500,,Luis Garcia,671277,,1,,1,1.00,1,,,12,.500,1.000,Gilbert,669302,2,,.500,,1,,2024
+,3,,.667,1.000,,Luis Garcia,671277,1,1,,,,2,,1,13,.667,1.667,Gilbert,669302,3,,1.000,1,3,,2026
+,1,,1.000,1.000,2,Ben Rice,700250,1,1,,,,1,,,17,1.000,3.000,Gilbert,669302,3,1,2.000,,2,,
+1,5,,.400,.500,,Amed Rosario,642708,,2,,1,1.00,2,,,19,.400,.800,Gilbert,669302,5,1,.400,1,2,,2021
+,3,,.667,.667,,Amed Rosario,642708,1,1,,1,1.00,2,,,9,.667,1.667,Gilbert,669302,3,,1.000,,3,,2022
+,6,,.500,.500,1,Amed Rosario,642708,1,3,,3,3.00,3,,1,18,.571,1.571,Gilbert,669302,7,,1.000,,6,1,2023
+,2,,.000,.---,,Ryan McMahon,641857,,1,,,,,,,7,.000,.000,Gilbert,669302,2,,.000,2,,,
+,2,,.000,.---,,Jose Caballero,676609,,1,,,,,,,14,.000,.000,Gilbert,669302,2,,.000,2,,,2024
+2,2,,.000,.000,,Jose Caballero,676609,,1,,,0.00,,,,5,.000,.000,Gilbert,669302,2,,.000,,,,2026
+,3,,.333,.500,,Heliot Ramos,671218,,1,,1,1.00,1,,,13,.333,.666,Gilbert,669302,3,1,.333,1,1,,
+2,2,,.000,.000,,George Lombard Jr. G. Lombard Jr.,806146,,1,,,0.00,,,2,10,.000,.000,Gilbert,669302,2,,.000,,,,2026
+,1,,.000,.000,1,Austin Wells,669224,,1,,1,1.00,,,,9,.500,.500,Gilbert,669302,2,,.000,,,,
+,6,,.333,.400,,Paul Goldschmidt,502671,1,2,1,3,3.00,2,,1,20,.333,.833,Gilbert,669302,6,,.500,1,3,,
+3,9,9.00,.222,.250,1,Jazz Chisholm,665862,,4,,,0.00,2,1,3,36,.300,.856,Gilbert,669302,10,2,.556,4,5,,

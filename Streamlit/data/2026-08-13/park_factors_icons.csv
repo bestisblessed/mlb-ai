@@ -1,0 +1,10 @@
+game_id,game,icons,icon_labels
+822696,Nationals Park4:05CHC @ WAS,"OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,Over90.png","OutRightMiddle.svg,OutRightMiddle.svg,FromLeft.svg,≥90°F"
+822776,Rogers Centre3:07BOS @ TOR,"InLeftMiddle.svg,InLeftMiddle.svg,InCenter.svg,LightWind.png,From83to89.png","InLeftMiddle.svg,InLeftMiddle.svg,InCenter.svg,Light Breeze,83–89°F"
+824238,Comerica Park1:10CLE @ DET,"FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,From83to89.png","FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,83–89°F"
+823508,Yankee Stadium1:35SEA @ NYY,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,From83to89.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,83–89°F,Low Pressure"
+823995,Angel Stadium10:07TEX @ LAA,"OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,76–82°F"
+824561,Rate Field1:10CIN @ CHW,"InLeft.svg,InCenter.svg,InLeft.svg,LightWind.png,From76to82.png,HighH.png","InLeft.svg,InCenter.svg,InLeft.svg,Light Breeze,76–82°F,High Humidity"
+823669,Field of Dreams7:30PHI @ MIN,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,HighH.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,High Humidity"
+823829,LoanDepot Park1:10PIT @ MIA,RoofClosed.png,Roof Closed
+823915,Dodger Stadium10:10MIL @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png,HighH.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze,High Humidity"
