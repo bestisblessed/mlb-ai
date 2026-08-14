@@ -1,0 +1,15 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824643,2026-08-14T18:20:00Z,Scheduled,138,St. Louis Cardinals,112,Chicago Cubs,Wrigley Field,Matthew Liberatore,669461.0,L,Clay Holmes,605280.0,R
+824479,2026-08-14T22:10:00Z,Scheduled,146,Miami Marlins,113,Cincinnati Reds,Great American Ball Park,Sandy Alcantara,645261.0,R,Chase Burns,695505.0,R
+823346,2026-08-14T22:40:00Z,Scheduled,111,Boston Red Sox,134,Pittsburgh Pirates,PNC Park,Jake Bennett,687562.0,L,Bubba Chandler,696149.0,R
+824237,2026-08-14T22:40:00Z,Scheduled,145,Chicago White Sox,116,Detroit Tigers,Comerica Park,Sean Newcomb,656794.0,L,Jackson Jobe,695549.0,R
+823591,2026-08-14T23:10:00Z,Scheduled,120,Washington Nationals,121,New York Mets,Citi Field,Andrew Alvarez,674841.0,L,Robert Stock,476594.0,R
+824399,2026-08-14T23:10:00Z,Scheduled,135,San Diego Padres,114,Cleveland Guardians,Progressive Field,Michael King,650633.0,R,Gavin Williams,668909.0,R
+822942,2026-08-14T23:10:00Z,Scheduled,110,Baltimore Orioles,139,Tampa Bay Rays,Tropicana Field,,,,Steven Matz,571927.0,L
+824882,2026-08-14T23:15:00Z,Scheduled,109,Arizona Diamondbacks,144,Atlanta Braves,Truist Park,Brandon Pfaadt,694297.0,R,,,
+822777,2026-08-14T23:15:00Z,Scheduled,147,New York Yankees,141,Toronto Blue Jays,Rogers Centre,Gerrit Cole,543037.0,R,Shane Bieber,669456.0,R
+824159,2026-08-15T00:10:00Z,Scheduled,136,Seattle Mariners,117,Houston Astros,Daikin Park,George Kirby,669923.0,R,Peter Lambert,663567.0,R
+823993,2026-08-15T01:38:00Z,Scheduled,118,Kansas City Royals,108,Los Angeles Angels,Angel Stadium,Seth Lugo,607625.0,R,Grayson Rodriguez,680570.0,R
+824968,2026-08-15T01:40:00Z,Scheduled,140,Texas Rangers,133,Athletics,Sutter Health Park,Kumar Rocker,677958.0,R,,,
+823913,2026-08-15T02:10:00Z,Scheduled,158,Milwaukee Brewers,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Robert Gasser,688107.0,L,Yoshinobu Yamamoto,808967.0,R
+823185,2026-08-15T02:15:00Z,Scheduled,115,Colorado Rockies,137,San Francisco Giants,Oracle Park,Kyle Freeland,607536.0,L,Landen Roupp,694738.0,R
