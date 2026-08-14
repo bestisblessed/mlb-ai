@@ -1,0 +1,15 @@
+game_id,game,icons,icon_labels
+824968,Sutter Health Park9:40TEX @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F"
+824479,Great American BP6:10MIA @ CIN,"InLeft.svg,InLeft.svg,OutRightMiddle.svg,From83to89.png,HighH.png","InLeft.svg,InLeft.svg,OutRightMiddle.svg,83–89°F,High Humidity"
+824882,Truist Park7:15ARI @ ATL,"OutLeft.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,Over90.png","OutLeft.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,≥90°F"
+823346,PNC Park6:40BOS @ PIT,"FromLeft.svg,FromLeft.svg,OutRightMiddle.svg,From76to82.png","FromLeft.svg,FromLeft.svg,OutRightMiddle.svg,76–82°F"
+824399,Progressive Field7:10SD  @ CLE,"InRight.svg,InRight.svg,InRight.svg,LightWind.png,From76to82.png,HighP.png","InRight.svg,InRight.svg,InRight.svg,Light Breeze,76–82°F,High Pressure"
+824237,Comerica Park6:40CHW @ DET,"FromLeft.svg,OutRightMiddle.svg,OutRightMiddle.svg,ModerateWind.png,From83to89.png","FromLeft.svg,OutRightMiddle.svg,OutRightMiddle.svg,Moderate Wind,83–89°F"
+823913,Dodger Stadium10:10MIL @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze"
+823993,Angel Stadium9:38KC  @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+822777,Rogers Centre7:15NYY @ TOR,"InRight.svg,InRight.svg,FromRight.svg,LightWind.png,HighP.png","InRight.svg,InRight.svg,FromRight.svg,Light Breeze,High Pressure"
+824159,Daikin Park8:10SEA @ HOU,RoofClosed.png,Roof Closed
+823185,Oracle Park10:15COL @ SF,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,ModerateWind.png,HighH.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Moderate Wind,High Humidity"
+822942,Tropicana Field7:10BAL @ TB,RoofClosed.png,Roof Closed
+823591,Citi Field7:10WAS @ NYM,"InLeftMiddle.svg,InCenter.svg,InRightCenter.svg,LightWind.png,From83to89.png","InLeftMiddle.svg,InCenter.svg,InRightCenter.svg,Light Breeze,83–89°F"
+824643,Wrigley Field2:20STL @ CHC,"InRight.svg,InRight.svg,InRight.svg,LightWind.png,HighH.png","InRight.svg,InRight.svg,InRight.svg,Light Breeze,High Humidity"
