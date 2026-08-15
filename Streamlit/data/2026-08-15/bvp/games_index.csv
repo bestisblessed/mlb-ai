@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824239,2026-08-15T17:10:00Z,Pre-Game,145,Chicago White Sox,116,Detroit Tigers,Comerica Park,Anthony Kay,641743.0,L,Troy Melton,675512,R
+824644,2026-08-15T18:20:00Z,Scheduled,138,St. Louis Cardinals,112,Chicago Cubs,Wrigley Field,Michael McGreevy,700241.0,R,Matthew Boyd,571510,L
+822775,2026-08-15T19:07:00Z,Scheduled,147,New York Yankees,141,Toronto Blue Jays,Rogers Centre,Cam Schlittler,693645.0,R,Braydon Fisher,680755,R
+823184,2026-08-15T20:05:00Z,Scheduled,115,Colorado Rockies,137,San Francisco Giants,Oracle Park,Michael Lorenzen,547179.0,R,Logan Webb,657277,R
+823588,2026-08-15T20:10:00Z,Scheduled,120,Washington Nationals,121,New York Mets,Citi Field,Brad Lord,695418.0,R,Sean Manaea,640455,L
+822941,2026-08-15T22:10:00Z,Scheduled,110,Baltimore Orioles,139,Tampa Bay Rays,Tropicana Field,Kyle Bradish,680694.0,R,Ian Seymour,693855,L
+824480,2026-08-15T22:40:00Z,Scheduled,146,Miami Marlins,113,Cincinnati Reds,Great American Ball Park,Ryan Gusto,687473.0,R,Brady Singer,663903,R
+824400,2026-08-15T23:10:00Z,Scheduled,135,San Diego Padres,114,Cleveland Guardians,Progressive Field,,,,Joey Cantillo,676282,L
+824157,2026-08-15T23:10:00Z,Scheduled,136,Seattle Mariners,117,Houston Astros,Daikin Park,Emerson Hancock,676106.0,R,Hayden Wesneski,669713,R
+823671,2026-08-15T23:10:00Z,Scheduled,143,Philadelphia Phillies,142,Minnesota Twins,Target Field,Jesús Luzardo,666200.0,L,Connor Prielipp,687570,L
+823347,2026-08-15T23:15:00Z,Scheduled,111,Boston Red Sox,134,Pittsburgh Pirates,PNC Park,Sonny Gray,543243.0,R,Jared Jones,683003,R
+824884,2026-08-15T23:15:00Z,Scheduled,109,Arizona Diamondbacks,144,Atlanta Braves,Truist Park,Eduardo Rodriguez,699134.0,R,Grant Holmes,656550,R
+823914,2026-08-15T23:15:00Z,Scheduled,158,Milwaukee Brewers,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Jacob Misiorowski,694819.0,R,Justin Wrobleski,680736,L
+823990,2026-08-16T01:38:00Z,Scheduled,118,Kansas City Royals,108,Los Angeles Angels,Angel Stadium,Randy Dobnak,677976.0,R,Reid Detmers,672282,L
+824966,2026-08-16T01:40:00Z,Scheduled,140,Texas Rangers,133,Athletics,Sutter Health Park,MacKenzie Gore,669022.0,L,J.T. Ginn,669372,R
