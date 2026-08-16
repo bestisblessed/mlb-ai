@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822940,2026-08-16T16:15:00Z,Pre-Game,110,Baltimore Orioles,139,Tampa Bay Rays,Tropicana Field,Trevor Rogers,669432,L,Freddy Peralta,642547,R
+823344,2026-08-16T17:35:00Z,Scheduled,111,Boston Red Sox,134,Pittsburgh Pirates,PNC Park,Patrick Sandoval,663776,L,Lake Bachar,669199,R
+824880,2026-08-16T17:35:00Z,Scheduled,109,Arizona Diamondbacks,144,Atlanta Braves,Truist Park,Michael Soroka,647336,R,Bryce Elder,693821,R
+822774,2026-08-16T17:37:00Z,Scheduled,147,New York Yankees,141,Toronto Blue Jays,Rogers Centre,Ryan Weathers,677960,L,Dylan Cease,656302,R
+823590,2026-08-16T17:40:00Z,Scheduled,120,Washington Nationals,121,New York Mets,Citi Field,Jake Irvin,663623,R,Christian Scott,681035,R
+824397,2026-08-16T17:40:00Z,Scheduled,135,San Diego Padres,114,Cleveland Guardians,Progressive Field,Casey Mize,663554,R,Tanner Bibee,676440,R
+824236,2026-08-16T17:40:00Z,Scheduled,145,Chicago White Sox,116,Detroit Tigers,Comerica Park,Sean Burke,680732,R,Drew Anderson,623454,R
+824477,2026-08-16T17:40:00Z,Scheduled,146,Miami Marlins,113,Cincinnati Reds,Great American Ball Park,Eury Pérez,691587,R,Nick Lodolo,666157,L
+823670,2026-08-16T18:10:00Z,Scheduled,143,Philadelphia Phillies,142,Minnesota Twins,Target Field,Andrew Painter,691725,R,Dean Kremer,665152,R
+824642,2026-08-16T19:15:00Z,Scheduled,138,St. Louis Cardinals,112,Chicago Cubs,Wrigley Field,Hunter Dobbins,690928,R,Edward Cabrera,665795,R
+823182,2026-08-16T20:05:00Z,Scheduled,115,Colorado Rockies,137,San Francisco Giants,Oracle Park,Gabriel Hughes,687312,R,Blade Tidwell,694918,R
+824965,2026-08-16T20:05:00Z,Scheduled,140,Texas Rangers,133,Athletics,Sutter Health Park,Cody Bradford,674003,L,Jacob Lopez,682052,L
+823991,2026-08-16T20:07:00Z,Scheduled,118,Kansas City Royals,108,Los Angeles Angels,Angel Stadium,Noah Cameron,702070,L,Ryan Johnson,696270,R
+823912,2026-08-16T20:10:00Z,Scheduled,158,Milwaukee Brewers,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Logan Henderson,701656,R,Tarik Skubal,669373,L
+824156,2026-08-16T23:20:00Z,Scheduled,136,Seattle Mariners,117,Houston Astros,Daikin Park,Bryan Woo,693433,R,Hunter Brown,686613,R
