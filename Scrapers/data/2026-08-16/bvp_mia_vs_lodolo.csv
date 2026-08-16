@@ -1,0 +1,9 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+2,5,.200,.250,1,Agustin Ramirez,682663,,2,1,0.50,,1,2,32,.333,.533,Lodolo,666157,6,.200,1,1,
+1,2,.500,.500,,Heriberto Hernandez,681715,,1,,0.00,,1,1,5,.500,1.000,Lodolo,666157,2,.500,,1,2025
+2,3,.333,.333,,Javier Sanoja,691594,,1,,0.00,,1,4,11,.333,.666,Lodolo,666157,3,.333,,1,
+1,2,.000,.000,,Esteury Ruiz,665923,,1,1,1.00,1,,,8,.333,.333,Lodolo,666157,3,.000,,,2023
+,2,.000,.000,,Esteury Ruiz,665923,,1,1,1.00,,,1,4,.000,.000,Lodolo,666157,2,.000,1,,2025
+2,9,.222,.333,2,Xavier Edwards,669364,1,4,2,1.00,,2,,46,.364,.697,Lodolo,666157,11,.333,3,3,
+1,3,.000,.000,,Otto Lopez,672640,,1,1,1.00,,,3,10,.000,.000,Lodolo,666157,3,.000,1,,2024
+3,6,.167,.167,,Otto Lopez,672640,,2,2,0.67,,1,1,23,.167,.334,Lodolo,666157,6,.167,,1,2025

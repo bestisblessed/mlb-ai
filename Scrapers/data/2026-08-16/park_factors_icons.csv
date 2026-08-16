@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824965,Sutter Health Park4:05TEX @ ATH,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,Over90.png,LowH.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,≥90°F,Low Humidity"
+824477,Great American BP1:40MIA @ CIN,"OutLeft.svg,OutLeftMiddle.svg,OutLeft.svg,LightWind.png,Over90.png","OutLeft.svg,OutLeftMiddle.svg,OutLeft.svg,Light Breeze,≥90°F"
+824397,Progressive Field1:40SD  @ CLE,"FromLeft.svg,FromLeft.svg,InLeftMiddle.svg,LightWind.png,From76to82.png,HighH.png","FromLeft.svg,FromLeft.svg,InLeftMiddle.svg,Light Breeze,76–82°F,High Humidity"
+824642,Wrigley Field3:15STL @ CHC,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,From83to89.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,83–89°F"
+824236,Comerica Park1:40CHW @ DET,"OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,LightWind.png,HighH.png","OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,Light Breeze,High Humidity"
+823344,PNC Park1:35BOS @ PIT,"OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,LightWind.png,From76to82.png,HighH.png","OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,Light Breeze,76–82°F,High Humidity"
+824880,Truist Park1:35ARI @ ATL,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,Over90.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,≥90°F"
+823912,Dodger Stadium4:10MIL @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,LightWind.png,From83to89.png","OutRightCenter.svg,OutRightCenter.svg,OutRight.svg,Light Breeze,83–89°F"
+823670,Target Field2:10PHI @ MIN,"OutRightMiddle.svg,OutRight.svg,OutRight.svg,LightWind.png,From76to82.png","OutRightMiddle.svg,OutRight.svg,OutRight.svg,Light Breeze,76–82°F"
+823991,Angel Stadium4:07KC  @ LAA,"OutCenter.svg,OutCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F"
+822774,Rogers Centre1:37NYY @ TOR,"FromRight.svg,OutLeftMiddle.svg,InRightMiddle.svg,LightWind.png,HighH.png","FromRight.svg,OutLeftMiddle.svg,InRightMiddle.svg,Light Breeze,High Humidity"
+824156,Daikin Park7:20SEA @ HOU,RoofClosed.png,Roof Closed
+823182,Oracle Park4:05COL @ SF,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,HighP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,High Pressure"
+822940,Tropicana Field12:15BAL @ TB,RoofClosed.png,Roof Closed
+823590,Citi Field1:40WAS @ NYM,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F"
