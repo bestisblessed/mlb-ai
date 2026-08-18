@@ -1,0 +1,12 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824514,2026-08-17T17:40:00Z,Scheduled,138,St. Louis Cardinals,113,Cincinnati Reds,Great American Ball Park,Quinn Mathews,687273,L,,,
+824478,2026-08-17T22:40:00Z,Scheduled,138,St. Louis Cardinals,113,Cincinnati Reds,Great American Ball Park,Andre Pallante,669467,R,Rhett Lowder,695076.0,R
+822939,2026-08-17T22:05:00Z,Scheduled,110,Baltimore Orioles,139,Tampa Bay Rays,Tropicana Field,Brandon Young,687064,R,Shane McClanahan,663556.0,L
+823427,2026-08-17T22:40:00Z,Scheduled,146,Miami Marlins,143,Philadelphia Phillies,Citizens Bank Park,Janson Junk,676083,R,Cristopher Sánchez,650911.0,L
+823343,2026-08-17T23:05:00Z,Scheduled,116,Detroit Tigers,134,Pittsburgh Pirates,PNC Park,Framber Valdez,664285,L,Carmen Mlodzinski,669387.0,R
+824725,2026-08-17T23:10:00Z,Scheduled,109,Arizona Diamondbacks,111,Boston Red Sox,Fenway Park,Mitch Bratt,683352,L,,,
+823589,2026-08-17T23:10:00Z,Scheduled,135,San Diego Padres,121,New York Mets,Citi Field,Walker Buehler,621111,R,Nolan McLean,690997.0,R
+824077,2026-08-17T23:40:00Z,Scheduled,133,Athletics,118,Kansas City Royals,Kauffman Stadium,Mason Barnett,686930,R,Michael Wacha,608379.0,R
+823668,2026-08-17T23:40:00Z,Scheduled,144,Atlanta Braves,142,Minnesota Twins,Target Field,Martín Pérez,527048,L,Bailey Ober,641927.0,R
+824641,2026-08-18T00:05:00Z,Scheduled,145,Chicago White Sox,112,Chicago Cubs,Wrigley Field,Luis Castillo,622491,R,Shota Imanaga,684007.0,L
+824320,2026-08-18T00:40:00Z,Scheduled,119,Los Angeles Dodgers,115,Colorado Rockies,Coors Field,Blake Snell,605483,L,Tomoyuki Sugano,608372.0,R
