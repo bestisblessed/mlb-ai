@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824319,Coors Field8:40LAD @ COL,"InRightMiddle.svg,FromRight.svg,OutLeftCenter.svg,ModerateWind.png,Over90.png,LowH.png","InRightMiddle.svg,FromRight.svg,OutLeftCenter.svg,Moderate Wind,≥90°F,Low Humidity"
+824475,Great American BP6:40STL @ CIN,"OutRightCenter.svg,OutRightCenter.svg,OutRightMiddle.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutRightMiddle.svg,Light Breeze,76–82°F"
+824075,Kauffman Stadium7:40ATH @ KC,"InRight.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,Over90.png,LowP.png","InRight.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,≥90°F,Low Pressure"
+823423,Citizens Bank Park6:40MIA @ PHI,"InLeftMiddle.svg,InLeftMiddle.svg,FromLeft.svg,From83to89.png","InLeftMiddle.svg,InLeftMiddle.svg,FromLeft.svg,83–89°F"
+824639,Wrigley Field8:05CHW @ CHC,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,HighH.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,High Humidity"
+824803,Oriole Park6:35NYY @ BAL,"InLeftCenter.svg,InRightCenter.svg,InRight.svg,From83to89.png","InLeftCenter.svg,InRightCenter.svg,InRight.svg,83–89°F"
+824398,Progressive Field6:40SF  @ CLE,"FromLeft.svg,OutRightMiddle.svg,OutRight.svg,LightWind.png","FromLeft.svg,OutRightMiddle.svg,OutRight.svg,Light Breeze"
+823341,PNC Park6:40DET @ PIT,"OutRight.svg,InLeftMiddle.svg,OutRightMiddle.svg,From76to82.png","OutRight.svg,InLeftMiddle.svg,OutRightMiddle.svg,76–82°F"
+823749,American Family Fld7:40SEA @ MIL,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze"
+823667,Target Field7:40ATL @ MIN,"OutLeft.svg,FromLeft.svg,InLeft.svg,From76to82.png","OutLeft.svg,FromLeft.svg,InLeft.svg,76–82°F"
+824723,Fenway Park7:10ARI @ BOS,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,HighH.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,High Humidity"
+824154,Daikin Park8:10LAA @ HOU,RoofClosed.png,Roof Closed
+822938,Tropicana Field6:40TOR @ TB,RoofClosed.png,Roof Closed
+822859,Globe Life Field8:05WAS @ TEX,RoofClosed.png,Roof Closed
+823586,Citi Field7:10SD  @ NYM,"InLeftMiddle.svg,InLeft.svg,InLeft.svg,LightWind.png,From83to89.png","InLeftMiddle.svg,InLeft.svg,InLeft.svg,Light Breeze,83–89°F"
