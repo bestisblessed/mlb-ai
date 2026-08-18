@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824803,2026-08-18T22:35:00Z,Scheduled,147,New York Yankees,110,Baltimore Orioles,Oriole Park at Camden Yards,Carlos Rodón,607074.0,L,Shane Baz,669358.0,R
+823341,2026-08-18T22:40:00Z,Scheduled,116,Detroit Tigers,134,Pittsburgh Pirates,PNC Park,Keider Montero,672456.0,R,Braxton Ashcraft,677952.0,R
+824398,2026-08-18T22:40:00Z,Scheduled,137,San Francisco Giants,114,Cleveland Guardians,Progressive Field,Carson Whisenhunt,687931.0,L,Foster Griffin,656492.0,L
+824475,2026-08-18T22:40:00Z,Scheduled,138,St. Louis Cardinals,113,Cincinnati Reds,Great American Ball Park,Kyle Leahy,681517.0,R,Andrew Abbott,671096.0,L
+822938,2026-08-18T22:40:00Z,Scheduled,141,Toronto Blue Jays,139,Tampa Bay Rays,Tropicana Field,José Soriano,667755.0,R,Nick Martinez,607259.0,R
+823423,2026-08-18T22:40:00Z,Scheduled,146,Miami Marlins,143,Philadelphia Phillies,Citizens Bank Park,Cade Gibson,806188.0,L,Zack Wheeler,554430.0,R
+824723,2026-08-18T23:10:00Z,Scheduled,109,Arizona Diamondbacks,111,Boston Red Sox,Fenway Park,Merrill Kelly,518876.0,R,Ranger Suarez,624133.0,L
+823586,2026-08-18T23:10:00Z,Scheduled,135,San Diego Padres,121,New York Mets,Citi Field,Robbie Ray,592662.0,L,Zac Thornton,804267.0,L
+824075,2026-08-18T23:40:00Z,Scheduled,133,Athletics,118,Kansas City Royals,Kauffman Stadium,Jack Perkins,678022.0,R,,,
+823667,2026-08-18T23:40:00Z,Scheduled,144,Atlanta Braves,142,Minnesota Twins,Target Field,Tyler Mahle,641816.0,R,Zebby Matthews,805673.0,R
+823749,2026-08-18T23:40:00Z,Scheduled,136,Seattle Mariners,158,Milwaukee Brewers,American Family Field,Bryce Miller,682243.0,R,Kyle Harrison,690986.0,L
+822859,2026-08-19T00:05:00Z,Scheduled,120,Washington Nationals,140,Texas Rangers,Globe Life Field,Jackson Kent,800600.0,L,Cal Quantrill,615698.0,R
+824639,2026-08-19T00:05:00Z,Scheduled,145,Chicago White Sox,112,Chicago Cubs,Wrigley Field,,,,Kevin Gausman,592332.0,R
+824154,2026-08-19T00:10:00Z,Scheduled,108,Los Angeles Angels,117,Houston Astros,Daikin Park,George Klassen,691946.0,R,Cristian Javier,664299.0,R
+824319,2026-08-19T00:40:00Z,Scheduled,119,Los Angeles Dodgers,115,Colorado Rockies,Coors Field,Eric Lauer,641778.0,L,Ryan Feltner,663372.0,R
