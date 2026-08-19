@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824318,Coors Field8:40LAD @ COL,"OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From83to89.png","OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,83–89°F"
+824722,Fenway Park4:10ARI @ BOS,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png,From83to89.png,LowP.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze,83–89°F,Low Pressure"
+824801,Oriole Park6:35NYY @ BAL,"OutRight.svg,OutRightCenter.svg,OutRightCenter.svg,From83to89.png,LowP.png","OutRight.svg,OutRightCenter.svg,OutRightCenter.svg,83–89°F,Low Pressure"
+824476,Great American BP6:40STL @ CIN,"OutLeft.svg,OutLeft.svg,OutLeft.svg,From76to82.png,HighH.png,LowP.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,76–82°F,High Humidity,Low Pressure"
+823424,Citizens Bank Park6:05MIA @ PHI,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,From83to89.png,LowP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,83–89°F,Low Pressure"
+823342,PNC Park12:35DET @ PIT,"OutLeftMiddle.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From76to82.png","OutLeftMiddle.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,76–82°F"
+823664,Target Field1:40ATL @ MIN,"OutRight.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png","OutRight.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze"
+824076,Kauffman Stadium7:40ATH @ KC,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,From76to82.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,76–82°F"
+824394,Progressive Field6:40SF  @ CLE,"InLeft.svg,InCenter.svg,InCenter.svg,HighH.png","InLeft.svg,InCenter.svg,InCenter.svg,High Humidity"
+824155,Daikin Park8:10LAA @ HOU,RoofClosed.png,Roof Closed
+822937,Tropicana Field6:40TOR @ TB,RoofClosed.png,Roof Closed
+822860,Globe Life Field8:05WAS @ TEX,RoofClosed.png,Roof Closed
+823587,Citi Field1:10SD  @ NYM,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From83to89.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,83–89°F"
+823748,American Family Fld7:40SEA @ MIL,"InLeft.svg,InLeft.svg,FromRight.svg","InLeft.svg,InLeft.svg,FromRight.svg"
+824640,Wrigley Field2:20CHW @ CHC,"InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,LightWind.png,HighH.png","InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,Light Breeze,High Humidity"
