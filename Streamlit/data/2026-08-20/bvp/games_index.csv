@@ -1,0 +1,10 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824474,2026-08-20T16:40:00Z,Pre-Game,138,St. Louis Cardinals,113,Cincinnati Reds,Great American Ball Park,Michael McGreevy,700241,R,Brady Singer,663903,R
+824395,2026-08-20T17:10:00Z,Scheduled,137,San Francisco Giants,114,Cleveland Guardians,Progressive Field,Landen Roupp,694738,R,Gavin Williams,668909,R
+822934,2026-08-20T17:10:00Z,Pre-Game,141,Toronto Blue Jays,139,Tampa Bay Rays,Tropicana Field,Shane Bieber,669456,R,Ian Seymour,693855,L
+824074,2026-08-20T18:10:00Z,Scheduled,133,Athletics,118,Kansas City Royals,Kauffman Stadium,Gage Jump,695611,L,Randy Dobnak,677976,R
+824589,2026-08-20T18:10:00Z,Scheduled,144,Atlanta Braves,145,Chicago White Sox,Rate Field,Grant Holmes,656550,R,Anthony Kay,641743,L
+823747,2026-08-20T18:10:00Z,Scheduled,136,Seattle Mariners,158,Milwaukee Brewers,American Family Field,George Kirby,669923,R,Robert Gasser,688107,L
+824802,2026-08-20T22:35:00Z,Scheduled,147,New York Yankees,110,Baltimore Orioles,Oriole Park at Camden Yards,Gerrit Cole,543037,R,Kyle Bradish,680694,R
+822861,2026-08-21T00:05:00Z,Scheduled,120,Washington Nationals,140,Texas Rangers,Globe Life Field,Andrew Alvarez,674841,L,Jacob deGrom,594798,R
+824153,2026-08-21T00:10:00Z,Scheduled,108,Los Angeles Angels,117,Houston Astros,Daikin Park,Grayson Rodriguez,680570,R,Peter Lambert,663567,R
