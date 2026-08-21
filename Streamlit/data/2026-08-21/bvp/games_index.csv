@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823746,2026-08-21T20:10:00Z,Scheduled,144,Atlanta Braves,158,Milwaukee Brewers,American Family Field,Chris Sale,519242.0,L,Jacob Misiorowski,694819.0,R
+823420,2026-08-21T22:40:00Z,Scheduled,138,St. Louis Cardinals,143,Philadelphia Phillies,Citizens Bank Park,,,,Jesús Luzardo,666200.0,L
+823510,2026-08-21T23:05:00Z,Scheduled,141,Toronto Blue Jays,147,New York Yankees,Yankee Stadium,Mason Fluharty,689254.0,L,Cam Schlittler,693645.0,R
+824721,2026-08-21T23:10:00Z,Scheduled,137,San Francisco Giants,111,Boston Red Sox,Fenway Park,Logan Webb,657277.0,R,Sonny Gray,543243.0,R
+823830,2026-08-21T23:10:00Z,Scheduled,120,Washington Nationals,146,Miami Marlins,loanDepot park,Brad Lord,695418.0,R,Ryan Gusto,687473.0,R
+824800,2026-08-21T23:15:00Z,Scheduled,139,Tampa Bay Rays,110,Baltimore Orioles,Oriole Park at Camden Yards,Freddy Peralta,642547.0,R,Trevor Rogers,669432.0,L
+824559,2026-08-21T23:40:00Z,Scheduled,121,New York Mets,145,Chicago White Sox,Rate Field,Sean Manaea,640455.0,L,Sean Burke,680732.0,R
+824072,2026-08-22T00:10:00Z,Scheduled,116,Detroit Tigers,118,Kansas City Royals,Kauffman Stadium,Troy Melton,675512.0,R,Noah Cameron,702070.0,L
+824152,2026-08-22T00:10:00Z,Scheduled,133,Athletics,117,Houston Astros,Daikin Park,J.T. Ginn,669372.0,R,Hayden Wesneski,669713.0,R
+822857,2026-08-22T00:15:00Z,Scheduled,108,Los Angeles Angels,140,Texas Rangers,Globe Life Field,Reid Detmers,672282.0,L,MacKenzie Gore,669022.0,L
+824317,2026-08-22T00:40:00Z,Scheduled,114,Cleveland Guardians,115,Colorado Rockies,Coors Field,Joey Cantillo,676282.0,L,Tanner Gordon,685299.0,R
+825045,2026-08-22T01:40:00Z,Scheduled,113,Cincinnati Reds,109,Arizona Diamondbacks,Chase Field,Nick Lodolo,666157.0,L,Eduardo Rodriguez,699134.0,R
+823262,2026-08-22T01:40:00Z,Scheduled,142,Minnesota Twins,135,San Diego Padres,Petco Park,Connor Prielipp,687570.0,L,,,
+823911,2026-08-22T02:10:00Z,Scheduled,134,Pittsburgh Pirates,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Bubba Chandler,696149.0,R,Yoshinobu Yamamoto,808967.0,R
+823101,2026-08-22T02:10:00Z,Scheduled,112,Chicago Cubs,136,Seattle Mariners,T-Mobile Park,Matthew Boyd,571510.0,L,Emerson Hancock,676106.0,R
