@@ -1,5 +1,5 @@
 game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
-823746,2026-08-21T20:10:00Z,Scheduled,144,Atlanta Braves,158,Milwaukee Brewers,American Family Field,Chris Sale,519242.0,L,Jacob Misiorowski,694819.0,R
+823746,2026-08-21T20:10:00Z,Pre-Game,144,Atlanta Braves,158,Milwaukee Brewers,American Family Field,Chris Sale,519242.0,L,Jacob Misiorowski,694819.0,R
 823420,2026-08-21T22:40:00Z,Scheduled,138,St. Louis Cardinals,143,Philadelphia Phillies,Citizens Bank Park,,,,Jesús Luzardo,666200.0,L
 823510,2026-08-21T23:05:00Z,Scheduled,141,Toronto Blue Jays,147,New York Yankees,Yankee Stadium,Mason Fluharty,689254.0,L,Cam Schlittler,693645.0,R
 824721,2026-08-21T23:10:00Z,Scheduled,137,San Francisco Giants,111,Boston Red Sox,Fenway Park,Logan Webb,657277.0,R,Sonny Gray,543243.0,R
