@@ -1,0 +1,8 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,3,.333,.333,,Mauricio Dubon,643289,1,1,1.00,1,1,12,.333,.666,Misiorowski,694819,3,2,.333,,1,
+2,3,.333,.333,,Ozzie Albies,645277,1,,0.00,1,,6,.333,.666,Misiorowski,694819,3,,.333,,1,
+,3,.333,1.000,,Dominic Smith,642086,1,,,1,3,11,.333,.666,Misiorowski,694819,3,,.333,2,1,
+1,3,.000,.000,,Drake Baldwin,686948,1,,0.00,,1,10,.000,.000,Misiorowski,694819,3,,.000,2,,
+1,2,.000,.000,,Mike Yastrzemski,573262,1,1,1.00,,2,8,.000,.000,Misiorowski,694819,2,,.000,,,2026
+1,2,.000,.000,1,Matt Olson,621566,1,1,1.00,,,19,.333,.333,Misiorowski,694819,3,,.000,,,
+1,3,.333,.500,,Austin Riley,663586,1,,0.00,1,2,8,.333,.666,Misiorowski,694819,3,,.333,1,1,2026
