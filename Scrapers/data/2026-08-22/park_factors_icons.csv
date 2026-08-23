@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824316,Coors Field8:10CLE @ COL,"InRightCenter.svg,OutCenter.svg,OutRightCenter.svg,LightWind.png","InRightCenter.svg,OutCenter.svg,OutRightCenter.svg,Light Breeze"
+824560,Rate Field7:10NYM @ CHW,"OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutCenter.svg,OutLeftCenter.svg,Light Breeze,76–82°F"
+823910,Dodger Stadium7:15PIT @ LAD,"OutRight.svg,OutRight.svg,OutRightCenter.svg,ModerateWind.png,From83to89.png","OutRight.svg,OutRight.svg,OutRightCenter.svg,Moderate Wind,83–89°F"
+824073,Kauffman Stadium7:15DET @ KC,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,Over90.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,≥90°F"
+824798,Oriole Park7:05TB  @ BAL,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,HighH.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,High Humidity"
+825044,Chase Field8:10CIN @ ARI,RoofClosed.png,Roof Closed
+823422,Citizens Bank Park6:05STL @ PHI,"InRight.svg,InRight.svg,InRight.svg,LightWind.png,HighH.png","InRight.svg,InRight.svg,InRight.svg,Light Breeze,High Humidity"
+823261,Petco Park8:40MIN @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,From76to82.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,76–82°F"
+823509,Yankee Stadium1:35TOR @ NYY,"InRightCenter.svg,InRight.svg,InRight.svg,LightWind.png,HighH.png","InRightCenter.svg,InRight.svg,InRight.svg,Light Breeze,High Humidity"
+823743,American Family Fld2:10ATL @ MIL,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind"
+824151,Daikin Park7:10ATH @ HOU,RoofClosed.png,Roof Closed
+823831,LoanDepot Park4:10WAS @ MIA,RoofClosed.png,Roof Closed
+822858,Globe Life Field7:05LAA @ TEX,RoofClosed.png,Roof Closed
+823100,T-Mobile Park7:15CHC @ SEA,"OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,HighH.png","OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,High Humidity"
+824718,Fenway Park7:15SF  @ BOS,"InLeftCenter.svg,InLeft.svg,InCenter.svg,LightWind.png,HighH.png","InLeftCenter.svg,InLeft.svg,InCenter.svg,Light Breeze,High Humidity"
