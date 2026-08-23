@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824799,2026-08-23T17:35:00Z,Scheduled,139,Tampa Bay Rays,110,Baltimore Orioles,Oriole Park at Camden Yards,Nick Martinez,607259.0,R,Shane Baz,669358,R
+823421,2026-08-23T17:35:00Z,Scheduled,138,St. Louis Cardinals,143,Philadelphia Phillies,Citizens Bank Park,Kyle Leahy,681517.0,R,Cristopher Sánchez,650911,L
+823507,2026-08-23T17:35:00Z,Scheduled,141,Toronto Blue Jays,147,New York Yankees,Yankee Stadium,José Soriano,667755.0,R,Carlos Rodón,607074,L
+823827,2026-08-23T17:40:00Z,Scheduled,120,Washington Nationals,146,Miami Marlins,loanDepot park,Jackson Kent,800600.0,L,Janson Junk,676083,R
+824071,2026-08-23T18:10:00Z,Scheduled,116,Detroit Tigers,118,Kansas City Royals,Kauffman Stadium,,,,Daniel Lynch IV,663738,L
+824150,2026-08-23T18:10:00Z,Scheduled,133,Athletics,117,Houston Astros,Daikin Park,Brady Basso,669620.0,L,Cristian Javier,664299,R
+824558,2026-08-23T18:10:00Z,Scheduled,121,New York Mets,145,Chicago White Sox,Rate Field,Nolan McLean,690997.0,R,Sean Newcomb,656794,L
+822856,2026-08-23T18:35:00Z,Scheduled,108,Los Angeles Angels,140,Texas Rangers,Globe Life Field,Yusei Kikuchi,579328.0,L,Cal Quantrill,615698,R
+824315,2026-08-23T19:10:00Z,Scheduled,114,Cleveland Guardians,115,Colorado Rockies,Coors Field,Foster Griffin,656492.0,L,Tomoyuki Sugano,608372,R
+824720,2026-08-23T19:15:00Z,Scheduled,137,San Francisco Giants,111,Boston Red Sox,Fenway Park,Matt Wilkinson,683363.0,L,Jake Bennett,687562,L
+823909,2026-08-23T20:10:00Z,Scheduled,134,Pittsburgh Pirates,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Lake Bachar,669199.0,R,Blake Snell,605483,L
+823099,2026-08-23T20:10:00Z,Scheduled,112,Chicago Cubs,136,Seattle Mariners,T-Mobile Park,Shota Imanaga,684007.0,L,Bryce Miller,682243,R
+823258,2026-08-23T20:10:00Z,Scheduled,142,Minnesota Twins,135,San Diego Padres,Petco Park,Bailey Ober,641927.0,R,Walker Buehler,621111,R
+825043,2026-08-23T20:15:00Z,Scheduled,113,Cincinnati Reds,109,Arizona Diamondbacks,Chase Field,Andrew Abbott,671096.0,L,Mitch Bratt,683352,L
+823745,2026-08-23T23:10:00Z,Scheduled,144,Atlanta Braves,158,Milwaukee Brewers,Journey Bank Ballpark,Tyler Mahle,641816.0,R,Shane Drohan,675660,L
