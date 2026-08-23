@@ -1,0 +1,9 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,2,.500,.500,1,Zack Gelof,680869,,1,,0.00,1,,9,.667,1.167,Javier,664299,3,,.500,,1,2023
+,2,.000,.000,,Zack Gelof,680869,,1,1,1.00,,,7,.000,.000,Javier,664299,2,,.000,1,,2024
+1,2,.000,.000,,Carlos Cortes,666126,,1,,0.00,,1,11,.000,.000,Javier,664299,2,,.000,1,,2025
+2,4,.250,.333,,Jeff McNeil,643446,,2,,0.00,1,5,15,.250,.500,Javier,664299,4,,.250,1,1,
+1,2,.500,.500,,Darell Hernaiz,687231,,1,,0.00,1,,5,.500,1.000,Javier,664299,2,1,.500,,1,2025
+8,14,.071,.083,3,Jonah Heim,641680,,8,3,0.38,1,7,58,.235,.306,Javier,664299,17,,.071,2,1,
+1,4,.250,.500,,Lawrence Butler,671732,,2,,0.00,1,3,12,.250,.500,Javier,664299,4,1,.250,2,1,
+,2,1.000,1.000,,Max Muncy,691777,1,1,,,2,,6,1.000,2.500,Javier,664299,2,2,1.500,,3,2026

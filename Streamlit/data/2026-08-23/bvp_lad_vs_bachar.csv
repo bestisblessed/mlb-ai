@@ -1,0 +1,15 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,intentionalwalks,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,triples,year
+1,2,.500,.500,1,Max Muncy,571970,3,,0.00,1,,1,14,.667,2.167,Bachar,669199,3,,1.500,,3,1,
+1,2,.500,.500,,Kyle Tucker,663656,2,,0.00,1,,3,7,.500,1.000,Bachar,669199,2,,.500,,1,,
+,2,1.000,1.000,,Enrique Hernandez,571771,2,,,2,,,7,1.000,2.000,Bachar,669199,2,1,1.000,,2,,2025
+,1,.000,.---,,Enrique Hernandez,571771,1,,,,,1,3,.000,.000,Bachar,669199,1,,.000,1,,,2026
+1,1,.000,.000,,Miguel Rojas,500743,1,,0.00,,,1,1,.000,.000,Bachar,669199,1,,.000,,,,2024
+,2,.500,.500,,Miguel Rojas,500743,2,1,1.00,1,,2,4,.500,1.000,Bachar,669199,2,,.500,,1,,2025
+,1,.000,.---,2,Shohei Ohtani,660271,3,,,,1,2,8,.667,.667,Bachar,669199,3,,.000,1,,,
+,,.000,.---,2,Mookie Betts,605141,2,,,,,,10,1.000,1.000,Bachar,669199,2,1,.000,,,,
+,1,1.000,1.000,,Freddie Freeman,518692,1,,,1,,,6,1.000,4.000,Bachar,669199,1,3,3.000,,3,1,2025
+1,1,.000,.000,,Freddie Freeman,518692,1,,0.00,,,1,9,.000,.000,Bachar,669199,1,,.000,,,,2026
+,1,1.000,1.000,,Hunter Feduccia,676439,1,,,1,,,4,1.000,2.000,Bachar,669199,1,,1.000,,1,,2024
+1,2,.000,.000,,Alek Thomas,677950,2,,0.00,,,,9,.000,.000,Bachar,669199,2,,.000,1,,,
+1,1,.000,.000,,Tommy Edman,669242,1,,0.00,,,,2,.000,.000,Bachar,669199,1,,.000,,,,
+,1,.000,.000,,Ben Rortvedt,666163,1,1,1.00,,,1,1,.000,.000,Bachar,669199,1,,.000,,,,

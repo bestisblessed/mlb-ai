@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823509,2026-08-22T17:35:00Z,Scheduled,141,Toronto Blue Jays,147,New York Yankees,Yankee Stadium,Dylan Cease,656302.0,R,Ryan Weathers,677960.0,L
+823743,2026-08-22T18:10:00Z,Scheduled,144,Atlanta Braves,158,Milwaukee Brewers,American Family Field,Martín Pérez,527048.0,L,Logan Henderson,701656.0,R
+823831,2026-08-22T20:10:00Z,Scheduled,120,Washington Nationals,146,Miami Marlins,loanDepot park,Jake Irvin,663623.0,R,Eury Pérez,691587.0,R
+823422,2026-08-22T22:05:00Z,Scheduled,138,St. Louis Cardinals,143,Philadelphia Phillies,Citizens Bank Park,,,,Andrew Painter,691725.0,R
+824798,2026-08-22T23:05:00Z,Scheduled,139,Tampa Bay Rays,110,Baltimore Orioles,Oriole Park at Camden Yards,Shane McClanahan,663556.0,L,Brandon Young,687064.0,R
+822858,2026-08-22T23:05:00Z,Scheduled,108,Los Angeles Angels,140,Texas Rangers,Globe Life Field,Ryan Johnson,696270.0,R,Cody Bradford,674003.0,L
+824151,2026-08-22T23:10:00Z,Scheduled,133,Athletics,117,Houston Astros,Daikin Park,Jacob Lopez,682052.0,L,Hunter Brown,686613.0,R
+824560,2026-08-22T23:10:00Z,Scheduled,121,New York Mets,145,Chicago White Sox,Rate Field,Christian Scott,681035.0,R,Luis Castillo,622491.0,R
+824073,2026-08-22T23:15:00Z,Scheduled,116,Detroit Tigers,118,Kansas City Royals,Kauffman Stadium,Drew Anderson,623454.0,R,Michael Wacha,608379.0,R
+823910,2026-08-22T23:15:00Z,Scheduled,134,Pittsburgh Pirates,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Jared Jones,683003.0,R,Tarik Skubal,669373.0,L
+823100,2026-08-22T23:15:00Z,Scheduled,112,Chicago Cubs,136,Seattle Mariners,T-Mobile Park,David Peterson,656849.0,L,Kade Anderson,,
+824718,2026-08-22T23:15:00Z,Scheduled,137,San Francisco Giants,111,Boston Red Sox,Fenway Park,Blade Tidwell,694918.0,R,Patrick Sandoval,663776.0,L
+825044,2026-08-23T00:10:00Z,Scheduled,113,Cincinnati Reds,109,Arizona Diamondbacks,Chase Field,Rhett Lowder,695076.0,R,Michael Soroka,647336.0,R
+824316,2026-08-23T00:10:00Z,Scheduled,114,Cleveland Guardians,115,Colorado Rockies,Coors Field,Tanner Bibee,676440.0,R,Gabriel Hughes,687312.0,R
+823261,2026-08-23T00:40:00Z,Scheduled,142,Minnesota Twins,135,San Diego Padres,Petco Park,Dean Kremer,665152.0,R,Casey Mize,663554.0,R
