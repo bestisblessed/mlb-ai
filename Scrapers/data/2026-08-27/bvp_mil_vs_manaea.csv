@@ -1,0 +1,10 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+,8,8.00,.375,.500,2,William Contreras,661388,1,4,1,2,2.00,3,1,7,38,.500,1.375,Manaea,640455,10,1,.875,3,7,
+,3,,1.000,1.000,,Brice Turang,668930,1,1,,,,3,,,15,1.000,2.333,Manaea,640455,3,1,1.333,,4,
+,4,,.250,.250,,Joey Ortiz,687401,,2,,3,3.00,1,,1,19,.250,.500,Manaea,640455,4,2,.250,,1,
+3,8,,.250,.333,1,Andrew Vaughn,683734,1,4,,1,0.33,2,,3,31,.333,.708,Manaea,640455,9,1,.375,2,3,
+3,8,,.375,.429,1,Gary Sanchez,596142,2,4,,1,0.33,3,,1,37,.444,1.069,Manaea,640455,9,2,.625,1,5,
+2,3,,.333,.333,,Jackson Chourio,694192,,1,,,0.00,1,,2,10,.333,.666,Manaea,640455,3,1,.333,,1,
+,6,,.000,.000,,Christian Yelich,592885,,2,1,3,3.00,,,3,27,.000,.000,Manaea,640455,6,,.000,3,,
+1,2,,.000,.000,,Sal Frelick,686217,,1,,,0.00,,,2,8,.000,.000,Manaea,640455,2,,.000,1,,
+,1,,1.000,1.000,,Garrett Mitchell,669003,1,1,,,,1,,,2,1.000,3.000,Manaea,640455,1,,2.000,,2,
