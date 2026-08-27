@@ -1,0 +1,8 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822694,2026-08-27T17:05:00Z,Scheduled,115,Colorado Rockies,120,Washington Nationals,Nationals Park,Gabriel Hughes,687312,R,Jake Irvin,663623.0,R
+823014,2026-08-27T18:15:00Z,Scheduled,110,Baltimore Orioles,138,St. Louis Cardinals,Busch Stadium,Trevor Rogers,669432,L,,,
+823503,2026-08-27T23:05:00Z,Scheduled,117,Houston Astros,147,New York Yankees,Yankee Stadium,Hayden Wesneski,669713,R,Gerrit Cole,543037.0,R
+822771,2026-08-27T23:07:00Z,Scheduled,118,Kansas City Royals,141,Toronto Blue Jays,Rogers Centre,Noah Cameron,702070,L,Spencer Arrighetti,681293.0,R
+823581,2026-08-27T23:10:00Z,Scheduled,158,Milwaukee Brewers,121,New York Mets,Citi Field,Jacob Misiorowski,694819,R,Sean Manaea,640455.0,L
+824879,2026-08-27T23:15:00Z,Scheduled,119,Los Angeles Dodgers,144,Atlanta Braves,Truist Park,Yoshinobu Yamamoto,808967,R,Chris Sale,519242.0,L
+823179,2026-08-28T01:45:00Z,Scheduled,109,Arizona Diamondbacks,137,San Francisco Giants,Oracle Park,Jose Cabrera,703615,R,Landen Roupp,694738.0,R
