@@ -1,0 +1,18 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823539,2026-08-29T17:05:00Z,Pre-Game,111,Boston Red Sox,147,New York Yankees,Yankee Stadium,Jake Bennett,687562.0,L,Carlos Rodón,607074.0,L
+823501,2026-08-29T23:15:00Z,Scheduled,111,Boston Red Sox,147,New York Yankees,Yankee Stadium,,,,Max Fried,608331.0,L
+824230,2026-08-29T17:10:00Z,Scheduled,119,Los Angeles Dodgers,116,Detroit Tigers,Comerica Park,Blake Snell,605483.0,L,Keider Montero,672456.0,R
+823665,2026-08-29T18:10:00Z,Scheduled,145,Chicago White Sox,142,Minnesota Twins,Target Field,Erick Fedde,607200.0,R,Bailey Ober,641927.0,R
+823011,2026-08-29T18:15:00Z,Scheduled,134,Pittsburgh Pirates,138,St. Louis Cardinals,Busch Stadium,Lake Bachar,669199.0,R,Kyle Leahy,681517.0,R
+824637,2026-08-29T18:20:00Z,Scheduled,113,Cincinnati Reds,112,Chicago Cubs,Wrigley Field,Andrew Abbott,671096.0,L,Kevin Gausman,592332.0,R
+822770,2026-08-29T19:07:00Z,Scheduled,136,Seattle Mariners,141,Toronto Blue Jays,Rogers Centre,Kade Anderson,807739.0,L,José Soriano,667755.0,R
+823177,2026-08-29T20:05:00Z,Scheduled,109,Arizona Diamondbacks,137,San Francisco Giants,Oracle Park,Merrill Kelly,518876.0,R,,,
+823176,2026-08-30T02:05:00Z,Scheduled,109,Arizona Diamondbacks,137,San Francisco Giants,Oracle Park,Mitch Bratt,683352.0,L,,,
+822690,2026-08-29T20:05:00Z,Scheduled,146,Miami Marlins,120,Washington Nationals,Nationals Park,Sandy Alcantara,645261.0,R,Cade Cavalli,676917.0,R
+824392,2026-08-29T20:10:00Z,Scheduled,118,Kansas City Royals,114,Cleveland Guardians,Progressive Field,Daniel Lynch IV,663738.0,L,Foster Griffin,656492.0,L
+823582,2026-08-29T20:10:00Z,Scheduled,117,Houston Astros,121,New York Mets,Citi Field,Bennett Sousa,656986.0,L,Nolan McLean,690997.0,R
+822936,2026-08-29T20:10:00Z,Scheduled,135,San Diego Padres,139,Tampa Bay Rays,Tropicana Field,Walker Buehler,621111.0,R,Nick Martinez,607259.0,R
+824874,2026-08-29T20:10:00Z,Scheduled,115,Colorado Rockies,144,Atlanta Braves,Truist Park,Ryan Feltner,663372.0,R,Martín Pérez,527048.0,L
+823741,2026-08-29T23:15:00Z,Scheduled,140,Texas Rangers,158,Milwaukee Brewers,American Family Field,Cal Quantrill,615698.0,R,Shane Drohan,675660.0,L
+824961,2026-08-30T02:05:00Z,Scheduled,110,Baltimore Orioles,133,Athletics,Sutter Health Park,Shane Baz,669358.0,R,Jack Perkins,678022.0,R
+823986,2026-08-30T02:07:00Z,Scheduled,143,Philadelphia Phillies,108,Los Angeles Angels,Angel Stadium,Cristopher Sánchez,650911.0,L,Ryan Johnson,696270.0,R
