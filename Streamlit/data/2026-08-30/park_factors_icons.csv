@@ -1,0 +1,15 @@
+game_id,game,icons,icon_labels
+824959,Sutter Health Park4:05BAL @ ATH,"OutCenter.svg,OutCenter.svg,OutCenter.svg,From83to89.png,LowH.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,83–89°F,Low Humidity"
+824636,Wrigley Field7:20CIN @ CHC,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From83to89.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,83–89°F"
+822688,Nationals Park12:15MIA @ WAS,"OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,LightWind.png,From83to89.png,HighP.png","OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Light Breeze,83–89°F,High Pressure"
+823662,Target Field2:10CHW @ MIN,"InRightCenter.svg,InRightCenter.svg,InLeftCenter.svg,LightWind.png,From83to89.png,LowP.png","InRightCenter.svg,InRightCenter.svg,InLeftCenter.svg,Light Breeze,83–89°F,Low Pressure"
+822766,Rogers Centre1:37SEA @ TOR,"InLeftMiddle.svg,OutRightMiddle.svg,FromLeft.svg,HighP.png","InLeftMiddle.svg,OutRightMiddle.svg,FromLeft.svg,High Pressure"
+823580,Citi Field3:10HOU @ NYM,"OutRightCenter.svg,OutRight.svg,OutRightMiddle.svg,ModerateWind.png,From83to89.png","OutRightCenter.svg,OutRight.svg,OutRightMiddle.svg,Moderate Wind,83–89°F"
+823740,American Family Fld2:10TEX @ MIL,"FromRight.svg,FromRight.svg,FromRight.svg,ModerateWind.png,From76to82.png","FromRight.svg,FromRight.svg,FromRight.svg,Moderate Wind,76–82°F"
+823987,Angel Stadium4:07PHI @ LAA,"OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,From76to82.png","OutLeftCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,76–82°F"
+824232,Comerica Park1:40LAD @ DET,"InRight.svg,InRight.svg,InRight.svg","InRight.svg,InRight.svg,InRight.svg"
+824393,Progressive Field1:40KC  @ CLE,"FromLeft.svg,InLeftMiddle.svg,InLeftCenter.svg,LightWind.png,From76to82.png","FromLeft.svg,InLeftMiddle.svg,InLeftCenter.svg,Light Breeze,76–82°F"
+823502,Yankee Stadium1:35BOS @ NYY,"OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,ModerateWind.png,From76to82.png,HighP.png","OutLeft.svg,OutLeft.svg,OutLeftMiddle.svg,Moderate Wind,76–82°F,High Pressure"
+822933,Tropicana Field1:40SD  @ TB,RoofClosed.png,Roof Closed
+824876,Truist Park1:35COL @ ATL,"InLeftCenter.svg,InLeftCenter.svg,InLeft.svg,From76to82.png,HighP.png","InLeftCenter.svg,InLeftCenter.svg,InLeft.svg,76–82°F,High Pressure"
+823010,Busch Stadium2:15PIT @ STL,"OutLeft.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png,Over90.png,LowH.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Moderate Wind,≥90°F,Low Humidity"
