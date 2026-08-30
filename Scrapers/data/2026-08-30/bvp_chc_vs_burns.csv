@@ -1,0 +1,6 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,1,.000,.000,,Michael Busch,683737,1,,0.00,,1,5,.000,.000,Burns,695505,1,.000,,,
+1,1,.000,.000,,Matt Shaw,807713,1,,0.00,,,5,.000,.000,Burns,695505,1,.000,,,
+,1,1.000,1.000,,Nico Hoerner,663538,1,,,1,,7,1.000,2.000,Burns,695505,1,1.000,,1,
+1,2,.000,.000,1,Michael Conforto,624424,1,,0.00,,1,13,.333,.333,Burns,695505,3,.000,1,,
+,1,.000,.000,,Pete Crow-Armstrong,691718,1,1,1.00,,,2,.000,.000,Burns,695505,1,.000,,,
