@@ -1,0 +1,13 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824911,2026-08-31T22:05:00Z,Scheduled,137,San Francisco Giants,144,Atlanta Braves,Truist Park,Anthony Molina,683627.0,R,Bryce Elder,693821.0,R
+824473,2026-08-31T22:40:00Z,Scheduled,135,San Diego Padres,113,Cincinnati Reds,Great American Ball Park,Michael King,650633.0,R,Brady Singer,663903.0,R
+822932,2026-08-31T22:40:00Z,Scheduled,121,New York Mets,139,Tampa Bay Rays,Tropicana Field,Robert Stock,476594.0,R,Ian Seymour,693855.0,L
+824719,2026-08-31T22:45:00Z,Scheduled,136,Seattle Mariners,111,Boston Red Sox,Fenway Park,George Kirby,669923.0,R,Payton Tolle,801139.0,L
+822689,2026-08-31T22:45:00Z,Scheduled,146,Miami Marlins,120,Washington Nationals,Nationals Park,Ryan Gusto,687473.0,R,Will Dion,702021.0,L
+823663,2026-08-31T23:40:00Z,Scheduled,116,Detroit Tigers,142,Minnesota Twins,Target Field,Jackson Jobe,695549.0,R,Taj Bradley,671737.0,R
+824635,2026-08-31T23:40:00Z,Scheduled,158,Milwaukee Brewers,112,Chicago Cubs,Wrigley Field,Kyle Harrison,690986.0,L,Clay Holmes,605280.0,R
+822855,2026-09-01T00:05:00Z,Scheduled,133,Athletics,140,Texas Rangers,Globe Life Field,Gage Jump,695611.0,L,Jacob deGrom,594798.0,R
+824149,2026-09-01T00:10:00Z,Scheduled,145,Chicago White Sox,117,Houston Astros,Daikin Park,Anthony Kay,641743.0,L,Peter Lambert,663567.0,R
+824314,2026-09-01T00:40:00Z,Scheduled,110,Baltimore Orioles,115,Colorado Rockies,Coors Field,,,,Tanner Gordon,685299.0,R
+823982,2026-09-01T01:38:00Z,Scheduled,147,New York Yankees,108,Los Angeles Angels,Angel Stadium,Elmer Rodríguez,695684.0,R,Walbert Ureña,700712.0,R
+825040,2026-09-01T01:40:00Z,Scheduled,143,Philadelphia Phillies,109,Arizona Diamondbacks,Chase Field,Aaron Nola,605400.0,R,,,
