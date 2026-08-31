@@ -1,0 +1,13 @@
+game_id,game,icons,icon_labels
+824635,Wrigley Field7:40MIL @ CHC,"OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From83to89.png","OutCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,83–89°F"
+824314,Coors Field8:40BAL @ COL,"InCenter.svg,InRightCenter.svg,InRightCenter.svg,ModerateWind.png","InCenter.svg,InRightCenter.svg,InRightCenter.svg,Moderate Wind"
+824719,Fenway Park6:45SEA @ BOS,"FromRight.svg,OutLeftMiddle.svg,OutLeft.svg,LightWind.png","FromRight.svg,OutLeftMiddle.svg,OutLeft.svg,Light Breeze"
+824473,Great American BP6:40SD  @ CIN,"OutLeftMiddle.svg,FromRight.svg,FromRight.svg,Over90.png","OutLeftMiddle.svg,FromRight.svg,FromRight.svg,≥90°F"
+822689,Nationals Park6:45MIA @ WAS,"InRightCenter.svg,InRightMiddle.svg,FromRight.svg,LightWind.png,From83to89.png","InRightCenter.svg,InRightMiddle.svg,FromRight.svg,Light Breeze,83–89°F"
+824911,Truist Park6:05SF  @ ATL,"OutRight.svg,OutRight.svg,OutRightCenter.svg,From83to89.png","OutRight.svg,OutRight.svg,OutRightCenter.svg,83–89°F"
+825040,Chase Field9:40PHI @ ARI,RoofClosed.png,Roof Closed
+823982,Angel Stadium9:38NYY @ LAA,"OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png","OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze"
+823663,Target Field7:40DET @ MIN,"FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,Over90.png,LowP.png","FromLeft.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,≥90°F,Low Pressure"
+824149,Daikin Park8:10CHW @ HOU,RoofClosed.png,Roof Closed
+822932,Tropicana Field6:40NYM @ TB,RoofClosed.png,Roof Closed
+822855,Globe Life Field8:05ATH @ TEX,RoofClosed.png,Roof Closed
