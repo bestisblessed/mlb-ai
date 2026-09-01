@@ -1,0 +1,6 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,4,,.250,.333,,Ramon Urias,602104,2,1,1.00,1,,1,18,.250,.500,Lauer,641778,4,1,.250,1,1,
+,2,2.00,.500,.---,,Jordan Walker,691023,1,,,1,1,1,7,.500,2.500,Lauer,641778,2,2,2.000,1,4,2023
+2,4,,.000,.000,,Nolan Gorman,669357,2,,0.00,,,1,17,.000,.000,Lauer,641778,4,,.000,2,,
+1,2,,.000,.000,,Alec Burleson,676475,1,,0.00,,,3,9,.000,.000,Lauer,641778,2,,.000,1,,
+,1,,.000,.000,1,Ivan Herrera,671056,1,1,1.00,,,1,8,.500,.500,Lauer,641778,2,,.000,,,
