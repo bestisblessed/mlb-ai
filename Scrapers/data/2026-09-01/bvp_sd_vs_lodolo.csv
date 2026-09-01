@@ -1,0 +1,14 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hitbypitch,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacbunts,slg,strikeouts,totalbases,year
+1,4,,.000,.000,,Jackson Merrill,701538,,2,1,1.00,1,,,4,19,.200,.200,Lodolo,666157,5,,,.000,2,,
+,3,3.00,.667,.500,,Manny Machado,592518,,1,1,1.00,,2,1,1,12,.667,2.334,Lodolo,666157,3,2,,1.667,,5,2022
+1,3,,.000,.000,,Manny Machado,592518,,1,1,1.00,,,,,13,.000,.000,Lodolo,666157,3,,,.000,1,,2024
+1,4,,.000,.000,1,Manny Machado,592518,,2,2,2.00,,,,1,19,.200,.200,Lodolo,666157,5,,,.000,1,,2025
+1,3,,.333,.333,1,Freddy Fermin,666023,1,2,1,1.00,,1,,1,21,.500,1.167,Lodolo,666157,4,1,,.667,,2,
+,2,,.500,1.000,1,Austin Hays,669720,,1,,,,1,,,11,.667,1.167,Lodolo,666157,3,,,.500,1,1,
+1,3,,.000,.000,,Fernando Tatis Jr. F. Tatis Jr.,665487,,1,1,1.00,,,,,7,.000,.000,Lodolo,666157,3,,,.000,1,,2024
+1,5,,.200,.250,,Fernando Tatis Jr. F. Tatis Jr.,665487,,2,2,2.00,,1,,3,24,.200,.400,Lodolo,666157,5,,,.200,1,1,2025
+2,10,,.100,.125,,Jake Cronenworth,630105,,4,6,3.00,,1,,4,39,.100,.200,Lodolo,666157,11,,1,.100,2,1,
+,3,,.000,.000,,Ty France,664034,,1,2,2.00,,,,,15,.000,.000,Lodolo,666157,3,,,.000,1,,2025
+,1,,.000,.000,2,Xander Bogaerts,593428,,1,1,1.00,,,,,17,.667,.667,Lodolo,666157,3,,,.000,,,2022
+,2,,.000,.000,1,Xander Bogaerts,593428,,1,1,1.00,,,,,11,.333,.333,Lodolo,666157,3,,,.000,1,,2024
+,3,3.00,.667,.500,,Xander Bogaerts,593428,1,1,1,1.00,,2,1,2,11,.667,2.667,Lodolo,666157,3,1,,2.000,,6,2025
