@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824472,2026-09-01T22:40:00Z,Scheduled,135,San Diego Padres,113,Cincinnati Reds,Great American Ball Park,Randy Vásquez,681190,R,Nick Lodolo,666157.0,L
+823340,2026-09-01T22:40:00Z,Scheduled,137,San Francisco Giants,134,Pittsburgh Pirates,PNC Park,Logan Webb,657277,R,Paul Skenes,694973.0,R
+822929,2026-09-01T22:40:00Z,Scheduled,121,New York Mets,139,Tampa Bay Rays,Tropicana Field,Sean Manaea,640455,L,Freddy Peralta,642547.0,R
+824391,2026-09-01T22:40:00Z,Scheduled,141,Toronto Blue Jays,114,Cleveland Guardians,Progressive Field,Spencer Miles,693686,R,Gavin Williams,668909.0,R
+824716,2026-09-01T22:45:00Z,Scheduled,136,Seattle Mariners,111,Boston Red Sox,Fenway Park,Bryan Woo,693433,R,,,
+822687,2026-09-01T22:45:00Z,Scheduled,144,Atlanta Braves,120,Washington Nationals,Nationals Park,AJ Smith-Shawver,700363,R,Jake Irvin,663623.0,R
+823661,2026-09-01T23:40:00Z,Scheduled,116,Detroit Tigers,142,Minnesota Twins,Target Field,Troy Melton,675512,R,Andrew Morris,702193.0,R
+824070,2026-09-01T23:40:00Z,Scheduled,146,Miami Marlins,118,Kansas City Royals,Kauffman Stadium,Tyler Phillips,663969,R,Randy Dobnak,677976.0,R
+824633,2026-09-01T23:40:00Z,Scheduled,158,Milwaukee Brewers,112,Chicago Cubs,Wrigley Field,Robert Gasser,688107,L,Matthew Boyd,571510.0,L
+822854,2026-09-02T00:05:00Z,Scheduled,133,Athletics,140,Texas Rangers,Globe Life Field,Brady Basso,669620,L,MacKenzie Gore,669022.0,L
+824148,2026-09-02T00:10:00Z,Scheduled,145,Chicago White Sox,117,Houston Astros,Daikin Park,Sean Burke,680732,R,Ronel Blanco,669854.0,R
+824313,2026-09-02T00:40:00Z,Scheduled,110,Baltimore Orioles,115,Colorado Rockies,Coors Field,Kyle Bradish,680694,R,Gabriel Hughes,687312.0,R
+823984,2026-09-02T01:38:00Z,Scheduled,147,New York Yankees,108,Los Angeles Angels,Angel Stadium,Gerrit Cole,543037,R,Grayson Rodriguez,680570.0,R
+825038,2026-09-02T01:40:00Z,Scheduled,143,Philadelphia Phillies,109,Arizona Diamondbacks,Chase Field,Jesús Luzardo,666200,L,Eduardo Rodriguez,699134.0,R
+823908,2026-09-02T02:10:00Z,Scheduled,138,St. Louis Cardinals,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Michael McGreevy,700241,R,Eric Lauer,641778.0,L
