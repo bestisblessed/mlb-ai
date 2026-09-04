@@ -1,0 +1,17 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824424,2026-09-04T18:10:00Z,Scheduled,116,Detroit Tigers,114,Cleveland Guardians,Progressive Field,Keider Montero,672456,R,Logan Allen,671106,L
+824387,2026-09-04T23:15:00Z,Scheduled,116,Detroit Tigers,114,Cleveland Guardians,Progressive Field,Andrew Sears,808825,L,Foster Griffin,656492,L
+824471,2026-09-04T22:10:00Z,Scheduled,158,Milwaukee Brewers,113,Cincinnati Reds,Great American Ball Park,Shane Drohan,675660,L,Rhett Lowder,695076,R
+823418,2026-09-04T22:40:00Z,Scheduled,144,Atlanta Braves,143,Philadelphia Phillies,Citizens Bank Park,Chris Sale,519242,L,Cristopher Sánchez,650911,L
+823338,2026-09-04T22:45:00Z,Scheduled,108,Los Angeles Angels,134,Pittsburgh Pirates,PNC Park,Ryan Johnson,696270,R,Jared Jones,683003,R
+824797,2026-09-04T23:05:00Z,Scheduled,111,Boston Red Sox,110,Baltimore Orioles,Oriole Park at Camden Yards,Ranger Suarez,624133,L,Shane Baz,669358,R
+823579,2026-09-04T23:10:00Z,Scheduled,137,San Francisco Giants,121,New York Mets,Citi Field,Matt Wilkinson,683363,L,Nolan McLean,690997,R
+823824,2026-09-04T23:10:00Z,Scheduled,112,Chicago Cubs,146,Miami Marlins,loanDepot park,Shota Imanaga,684007,L,Janson Junk,676083,R
+824554,2026-09-04T23:40:00Z,Scheduled,142,Minnesota Twins,145,Chicago White Sox,Rate Field,Zebby Matthews,805673,R,Erick Fedde,607200,R
+822852,2026-09-05T00:05:00Z,Scheduled,139,Tampa Bay Rays,140,Texas Rangers,Globe Life Field,Nick Martinez,607259,R,Trevor Williams,592866,R
+824146,2026-09-05T00:10:00Z,Scheduled,109,Arizona Diamondbacks,117,Houston Astros,Daikin Park,Merrill Kelly,518876,R,Cristian Javier,664299,R
+824067,2026-09-05T00:10:00Z,Scheduled,141,Toronto Blue Jays,118,Kansas City Royals,Kauffman Stadium,Jameson Taillon,592791,R,Daniel Lynch IV,663738,L
+824311,2026-09-05T00:40:00Z,Scheduled,138,St. Louis Cardinals,115,Colorado Rockies,Coors Field,Andre Pallante,669467,R,Ryan Feltner,663372,R
+823256,2026-09-05T01:40:00Z,Scheduled,147,New York Yankees,135,San Diego Padres,Petco Park,Max Fried,608331,L,Walker Buehler,621111,R
+823905,2026-09-05T02:10:00Z,Scheduled,120,Washington Nationals,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Jackson Kent,800600,L,Blake Snell,605483,L
+823093,2026-09-05T02:10:00Z,Scheduled,133,Athletics,136,Seattle Mariners,T-Mobile Park,Kade Morris,695034,R,Logan Gilbert,669302,R
