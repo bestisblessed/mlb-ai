@@ -1,0 +1,9 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,4,.250,.333,1,Tyler Stephenson,663886,,2,1,1.00,1,3,21,.400,.650,Drohan,675660,5,.250,1,1,
+,2,.500,1.000,,Edwin Arroyo,695490,,1,,,1,,5,.500,1.000,Drohan,675660,2,.500,1,1,2026
+2,2,.000,.000,,Ivan Johnson,671155,,1,,0.00,,,5,.000,.000,Drohan,675660,2,.000,,,2026
+,1,.000,.---,1,Dane Myers,667472,,1,,,,1,10,.500,.500,Drohan,675660,2,.000,1,,
+,6,.333,.500,,Elly De La Cruz E. De La Cruz,682829,,2,2,2.00,2,1,30,.333,.666,Drohan,675660,6,.333,2,2,2026
+3,4,.000,.000,,Matt McLain,680574,,2,,0.00,,4,13,.000,.000,Drohan,675660,4,.000,1,,
+,5,.400,.500,,Sal Stewart,701398,,2,2,2.00,2,3,24,.400,.800,Drohan,675660,5,.400,1,2,
+,4,.500,.667,1,Eugenio Suarez,553993,2,2,1,1.00,2,1,21,.600,1.600,Drohan,675660,5,1.000,1,4,

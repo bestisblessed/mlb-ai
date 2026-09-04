@@ -1,0 +1,10 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823337,2026-09-03T16:35:00Z,Pre-Game,137,San Francisco Giants,134,Pittsburgh Pirates,PNC Park,Blade Tidwell,694918,R,Lake Bachar,669199,R
+824388,2026-09-03T17:10:00Z,Scheduled,141,Toronto Blue Jays,114,Cleveland Guardians,Progressive Field,José Soriano,667755,R,Tanner Bibee,676440,R
+824144,2026-09-03T18:10:00Z,Scheduled,145,Chicago White Sox,117,Houston Astros,Daikin Park,Luis Castillo,622491,R,Hunter Brown,686613,R
+824796,2026-09-03T23:15:00Z,Scheduled,111,Boston Red Sox,110,Baltimore Orioles,Oriole Park at Camden Yards,Jake Bennett,687562,L,Brandon Young,687064,R
+824632,2026-09-03T23:15:00Z,Scheduled,158,Milwaukee Brewers,112,Chicago Cubs,Wrigley Field,Logan Henderson,701656,R,Kevin Gausman,592332,R
+824069,2026-09-03T23:40:00Z,Scheduled,146,Miami Marlins,118,Kansas City Royals,Kauffman Stadium,Sandy Alcantara,645261,R,Michael Wacha,608379,R
+822853,2026-09-04T00:05:00Z,Scheduled,139,Tampa Bay Rays,140,Texas Rangers,Globe Life Field,Shane McClanahan,663556,L,Cal Quantrill,615698,R
+823095,2026-09-04T01:40:00Z,Scheduled,133,Athletics,136,Seattle Mariners,T-Mobile Park,Jack Perkins,678022,R,Kade Anderson,807739,L
+823907,2026-09-04T02:10:00Z,Scheduled,138,St. Louis Cardinals,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Quinn Mathews,687273,L,Tarik Skubal,669373,L

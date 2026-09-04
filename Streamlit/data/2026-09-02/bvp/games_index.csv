@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824470,2026-09-02T16:40:00Z,Pre-Game,135,San Diego Padres,113,Cincinnati Reds,Great American Ball Park,Casey Mize,663554.0,R,Brandon Williamson,682227,L
+822686,2026-09-02T17:05:00Z,Scheduled,144,Atlanta Braves,120,Washington Nationals,Nationals Park,Grant Holmes,656550.0,R,Brad Lord,695418,R
+822851,2026-09-02T18:35:00Z,Scheduled,133,Athletics,140,Texas Rangers,Globe Life Field,Jacob Lopez,682052.0,L,Cody Bradford,674003,L
+824312,2026-09-02T19:10:00Z,Scheduled,110,Baltimore Orioles,115,Colorado Rockies,Coors Field,Trevor Rogers,669432.0,L,Tomoyuki Sugano,608372,R
+825037,2026-09-02T19:40:00Z,Scheduled,143,Philadelphia Phillies,109,Arizona Diamondbacks,Chase Field,Andrew Painter,691725.0,R,Taylor Clarke,664199,R
+824717,2026-09-02T20:10:00Z,Scheduled,136,Seattle Mariners,111,Boston Red Sox,Fenway Park,Bryce Miller,682243.0,R,Patrick Sandoval,663776,L
+823339,2026-09-02T22:40:00Z,Scheduled,137,San Francisco Giants,134,Pittsburgh Pirates,PNC Park,Landen Roupp,694738.0,R,Bubba Chandler,696149,R
+822931,2026-09-02T22:40:00Z,Scheduled,121,New York Mets,139,Tampa Bay Rays,Tropicana Field,Justin Hagenman,,,Griffin Jax,643377,R
+824390,2026-09-02T22:40:00Z,Scheduled,141,Toronto Blue Jays,114,Cleveland Guardians,Progressive Field,Dylan Cease,656302.0,R,Joey Cantillo,676282,L
+823660,2026-09-02T23:40:00Z,Scheduled,116,Detroit Tigers,142,Minnesota Twins,Target Field,Drew Anderson,623454.0,R,Dean Kremer,665152,R
+824068,2026-09-02T23:40:00Z,Scheduled,146,Miami Marlins,118,Kansas City Royals,Kauffman Stadium,Eury Pérez,691587.0,R,Noah Cameron,702070,L
+824634,2026-09-02T23:40:00Z,Scheduled,158,Milwaukee Brewers,112,Chicago Cubs,Wrigley Field,Jacob Misiorowski,694819.0,R,David Peterson,656849,L
+824147,2026-09-03T00:10:00Z,Scheduled,145,Chicago White Sox,117,Houston Astros,Daikin Park,Davis Martin,663436.0,R,Hayden Wesneski,669713,R
+823983,2026-09-03T01:38:00Z,Scheduled,147,New York Yankees,108,Los Angeles Angels,Angel Stadium,Cam Schlittler,693645.0,R,Reid Detmers,672282,L
+823906,2026-09-03T02:10:00Z,Scheduled,138,St. Louis Cardinals,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,,,,Yoshinobu Yamamoto,808967,R
