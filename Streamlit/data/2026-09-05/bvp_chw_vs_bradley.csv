@@ -1,0 +1,12 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,sacflies,slg,strikeouts,totalbases,year
+3,8,4.00,.250,.000,1,Colson Montgomery,695657,,4,,1,0.33,2,2,10,32,.300,1.300,Bradley,671737,10,6,1,1.000,3,8,
+2,7,,.714,.714,,Kyle Teel,691019,1,3,,,0.00,5,,,33,.714,1.571,Bradley,671737,7,3,,.857,,6,
+1,4,,.500,.500,3,Miguel Vargas,678246,,3,,1,1.00,2,,1,31,.714,1.214,Bradley,671737,7,,,.500,,2,
+1,2,,.000,.000,,Tommy Pham,502054,,1,,,0.00,,,2,9,.000,.000,Bradley,671737,2,,,.000,1,,
+,3,,.333,.500,,Tristan Peters,671976,1,1,,1,1.00,1,,3,13,.333,1.000,Bradley,671737,3,1,,.667,1,2,2026
+,2,,1.000,1.000,1,Sam Antonacci,803011,,1,,,,2,,,12,1.000,2.000,Bradley,671737,3,,,1.000,,2,2026
+2,6,,.333,.333,,Chase Meidroth,805367,1,3,1,2,1.00,2,,5,14,.333,.833,Bradley,671737,6,,,.500,,3,2025
+,2,,.500,1.000,1,Chase Meidroth,805367,1,1,,,,1,,,20,.667,1.667,Bradley,671737,3,1,,1.000,1,2,2026
+2,7,,.429,.500,2,Andrew Benintendi,643217,,4,,1,0.50,3,,4,38,.556,.985,Bradley,671737,9,,,.429,1,3,
+,2,,.000,.000,,Randal Grichuk,545341,,1,,1,1.00,,,1,12,.000,.000,Bradley,671737,2,,,.000,1,,
+1,3,,.333,.333,,Brenton Doyle,686668,,1,,1,1.00,1,,,8,.333,.666,Bradley,671737,3,,,.333,,1,2025
