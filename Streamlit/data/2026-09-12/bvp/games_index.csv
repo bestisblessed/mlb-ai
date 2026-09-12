@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824224,2026-09-12T17:10:00Z,Scheduled,115,Colorado Rockies,116,Detroit Tigers,Comerica Park,Tanner Gordon,685299.0,R,Andrew Sears,808825.0,L
+823496,2026-09-12T17:35:00Z,Scheduled,121,New York Mets,147,New York Yankees,Yankee Stadium,Zac Thornton,804267.0,L,Gerrit Cole,543037.0,R
+824630,2026-09-12T18:20:00Z,Scheduled,134,Pittsburgh Pirates,112,Chicago Cubs,Wrigley Field,Paul Skenes,694973.0,R,Clay Holmes,605280.0,R
+822768,2026-09-12T19:07:00Z,Scheduled,110,Baltimore Orioles,141,Toronto Blue Jays,Rogers Centre,Kyle Bradish,680694.0,R,Spencer Miles,693686.0,R
+822685,2026-09-12T20:05:00Z,Scheduled,108,Los Angeles Angels,120,Washington Nationals,Nationals Park,Walbert Ureña,700712.0,R,Andrew Alvarez,674841.0,L
+823170,2026-09-12T20:05:00Z,Scheduled,135,San Diego Padres,137,San Francisco Giants,Oracle Park,Michael King,650633.0,R,Cesar Perdomo,702885.0,L
+824712,2026-09-12T20:10:00Z,Scheduled,118,Kansas City Royals,111,Boston Red Sox,Fenway Park,Randy Dobnak,677976.0,R,Ranger Suarez,624133.0,L
+823657,2026-09-12T20:10:00Z,Scheduled,114,Cleveland Guardians,142,Minnesota Twins,Target Field,Daniel Espino,682982.0,R,Connor Prielipp,687570.0,L
+823819,2026-09-12T20:10:00Z,Scheduled,119,Los Angeles Dodgers,146,Miami Marlins,loanDepot park,Tyler Glasnow,607192.0,R,Tyler Phillips,663969.0,R
+822927,2026-09-12T22:10:00Z,Scheduled,117,Houston Astros,139,Tampa Bay Rays,Tropicana Field,Peter Lambert,663567.0,R,Ian Seymour,693855.0,L
+823737,2026-09-12T23:10:00Z,Scheduled,113,Cincinnati Reds,158,Milwaukee Brewers,American Family Field,Brady Singer,663903.0,R,,,
+824870,2026-09-12T23:15:00Z,Scheduled,143,Philadelphia Phillies,144,Atlanta Braves,Truist Park,,,,Tyler Mahle,641816.0,R
+823009,2026-09-12T23:15:00Z,Scheduled,145,Chicago White Sox,138,St. Louis Cardinals,Busch Stadium,Sean Newcomb,656794.0,L,Kyle Leahy,681517.0,R
+825035,2026-09-13T00:10:00Z,Scheduled,140,Texas Rangers,109,Arizona Diamondbacks,Chase Field,Kumar Rocker,677958.0,R,Brandon Pfaadt,694297.0,R
+824955,2026-09-13T01:40:00Z,Scheduled,136,Seattle Mariners,133,Athletics,Sutter Health Park,Bryan Woo,693433.0,R,Gage Jump,695611.0,L
