@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824955,Sutter Health Park9:40SEA @ ATH,"OutCenter.svg,OutCenter.svg,OutCenter.svg,HeavyWind.png,From76to82.png,LowP.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Heavy Wind,76–82°F,Low Pressure"
+822685,Nationals Park4:05LAA @ WAS,"OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,From76to82.png,HighH.png","OutLeft.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,76–82°F,High Humidity"
+822768,Rogers Centre3:07BAL @ TOR,"OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutCenter.svg,Light Breeze,76–82°F"
+823170,Oracle Park4:05SD  @ SF,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,HeavyWind.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Heavy Wind"
+824630,Wrigley Field2:20PIT @ CHC,"OutRightCenter.svg,OutRight.svg,OutRight.svg,ModerateWind.png,From83to89.png","OutRightCenter.svg,OutRight.svg,OutRight.svg,Moderate Wind,83–89°F"
+825035,Chase Field8:10TEX @ ARI,RoofClosed.png,Roof Closed
+824712,Fenway Park4:10KC  @ BOS,"InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,LightWind.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,InRightMiddle.svg,Light Breeze,High Pressure"
+823657,Target Field4:10CLE @ MIN,"OutRight.svg,OutRight.svg,OutRight.svg,ModerateWind.png","OutRight.svg,OutRight.svg,OutRight.svg,Moderate Wind"
+823009,Busch Stadium7:15CHW @ STL,"FromRight.svg,OutLeftMiddle.svg,FromRight.svg,Over90.png","FromRight.svg,OutLeftMiddle.svg,FromRight.svg,≥90°F"
+824870,Truist Park7:15PHI @ ATL,"InRightMiddle.svg,InRight.svg,InRightMiddle.svg,From76to82.png","InRightMiddle.svg,InRight.svg,InRightMiddle.svg,76–82°F"
+824224,Comerica Park1:10COL @ DET,"InRight.svg,InRight.svg,InRight.svg,LightWind.png,From76to82.png","InRight.svg,InRight.svg,InRight.svg,Light Breeze,76–82°F"
+823737,American Family Fld7:10CIN @ MIL,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F"
+823819,LoanDepot Park4:10LAD @ MIA,RoofClosed.png,Roof Closed
+822927,Tropicana Field6:10HOU @ TB,RoofClosed.png,Roof Closed
+823496,Yankee Stadium1:35NYM @ NYY,"InRightMiddle.svg,FromRight.svg,FromRight.svg,ModerateWind.png,From76to82.png,HighP.png","InRightMiddle.svg,FromRight.svg,FromRight.svg,Moderate Wind,76–82°F,High Pressure"

@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824631,2026-09-11T18:20:00Z,Scheduled,134,Pittsburgh Pirates,112,Chicago Cubs,Wrigley Field,Wilber Dotel,696062.0,R,Shota Imanaga,684007.0,L
+824227,2026-09-11T22:40:00Z,Scheduled,115,Colorado Rockies,116,Detroit Tigers,Comerica Park,Mason Adams,690279.0,R,Framber Valdez,664285.0,L
+822684,2026-09-11T22:45:00Z,Scheduled,108,Los Angeles Angels,120,Washington Nationals,Nationals Park,Yusei Kikuchi,579328.0,L,Cade Cavalli,676917.0,R
+823498,2026-09-11T23:05:00Z,Scheduled,121,New York Mets,147,New York Yankees,Yankee Stadium,Nolan McLean,690997.0,R,Carlos Rodón,607074.0,L
+822767,2026-09-11T23:07:00Z,Scheduled,110,Baltimore Orioles,141,Toronto Blue Jays,Rogers Centre,Chris Bassitt,605135.0,R,Max Scherzer,453286.0,R
+824711,2026-09-11T23:10:00Z,Scheduled,118,Kansas City Royals,111,Boston Red Sox,Fenway Park,Seth Lugo,607625.0,R,Sonny Gray,543243.0,R
+822930,2026-09-11T23:10:00Z,Scheduled,117,Houston Astros,139,Tampa Bay Rays,Tropicana Field,Miguel Ullola,699044.0,R,Drew Rasmussen,656876.0,R
+823817,2026-09-11T23:10:00Z,Scheduled,119,Los Angeles Dodgers,146,Miami Marlins,loanDepot park,,,,Ryan Gusto,687473.0,R
+824873,2026-09-11T23:15:00Z,Scheduled,143,Philadelphia Phillies,144,Atlanta Braves,Truist Park,Aaron Nola,605400.0,R,Chris Sale,519242.0,L
+823736,2026-09-11T23:45:00Z,Scheduled,113,Cincinnati Reds,158,Milwaukee Brewers,American Family Field,Andrew Abbott,671096.0,L,Dustin May,669160.0,R
+823659,2026-09-12T00:10:00Z,Scheduled,114,Cleveland Guardians,142,Minnesota Twins,Target Field,Parker Messick,800048.0,L,Taj Bradley,671737.0,R
+823012,2026-09-12T00:15:00Z,Scheduled,145,Chicago White Sox,138,St. Louis Cardinals,Busch Stadium,Anthony Kay,641743.0,L,Matthew Liberatore,669461.0,L
+824954,2026-09-12T01:40:00Z,Scheduled,136,Seattle Mariners,133,Athletics,Sutter Health Park,George Kirby,669923.0,R,Jeffrey Springs,605488.0,L
+825036,2026-09-12T01:40:00Z,Scheduled,140,Texas Rangers,109,Arizona Diamondbacks,Chase Field,,,,,,
+823173,2026-09-12T02:15:00Z,Scheduled,135,San Diego Padres,137,San Francisco Giants,Oracle Park,Robbie Ray,592662.0,L,Anthony Molina,683627.0,R
