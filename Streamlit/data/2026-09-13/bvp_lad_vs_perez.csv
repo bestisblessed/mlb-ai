@@ -1,0 +1,9 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+,2,.500,1.000,,Will Smith,669257,,1,,,1,,8,.500,1.000,Perez,691587,2,.500,1,1,2023
+2,3,.000,.000,,Freddie Freeman,518692,,1,,0.00,,,8,.000,.000,Perez,691587,3,.000,1,,
+,4,.000,.000,,Alex Call,669743,,2,2,2.00,,1,13,.000,.000,Perez,691587,4,.000,2,,2023
+,2,.500,.500,1,Alex Call,669743,,1,1,1.00,1,2,13,.667,1.167,Perez,691587,3,.500,,1,2025
+,2,.000,.---,,Max Muncy,571970,,1,,,,1,11,.000,.000,Perez,691587,2,.000,2,,2023
+3,3,.000,.000,,Mookie Betts,605141,,1,,0.00,,,20,.000,.000,Perez,691587,3,.000,,,
+1,2,.500,.500,,Teoscar Hernandez,606192,1,1,,0.00,1,1,7,.500,1.500,Perez,691587,2,1.000,,2,2023
+1,2,.000,.000,,Enrique Hernandez,571771,,1,1,1.00,,,6,.000,.000,Perez,691587,2,.000,,,

@@ -1,0 +1,13 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+1,4,4.00,.250,.000,,Elias Diaz,553869,,2,,,0.00,1,1,5,10,.250,1.250,Rodriguez,593958,4,2,1.000,2,4,
+,8,,.125,.200,1,Brandon Nimmo,607043,,3,,4,4.00,1,,3,34,.222,.347,Rodriguez,593958,9,,.125,3,1,
+1,2,,.500,.500,,Jake Burger,669394,1,1,,,0.00,1,,,8,.500,1.500,Rodriguez,593958,2,,1.000,,2,2022
+,3,,.333,.500,,Jake Burger,669394,,1,1,1,1.00,1,,2,7,.333,.666,Rodriguez,593958,3,,.333,1,1,2023
+,3,,.333,.500,,Jake Burger,669394,1,1,,1,1.00,1,,1,15,.333,1.000,Rodriguez,593958,3,,.667,1,2,2024
+1,6,,.167,.200,,Nicky Lopez,670032,,2,,3,3.00,1,,5,26,.167,.334,Rodriguez,593958,6,,.167,1,1,2019
+,3,,.000,.000,,Nicky Lopez,670032,,1,1,3,3.00,,,3,9,.000,.000,Rodriguez,593958,3,,.000,,,2022
+1,2,,.000,.000,,Ezequiel Duran,677649,,1,,1,1.00,,,3,8,.000,.000,Rodriguez,593958,2,,.000,,,2022
+,3,,.333,.500,,Corey Seager,608369,1,1,,1,1.00,1,,,11,.333,1.000,Rodriguez,593958,3,1,.667,1,2,2016
+1,4,,.000,.000,,Corey Seager,608369,,1,,2,2.00,,,3,11,.000,.000,Rodriguez,593958,4,,.000,1,,2019
+,2,,.500,.500,1,Corey Seager,608369,,1,,1,1.00,1,,,9,.667,1.167,Rodriguez,593958,3,,.500,,1,2022
+5,9,,.222,.250,2,Danny Jansen,643376,1,5,,1,0.20,2,,1,41,.364,.697,Rodriguez,593958,11,1,.333,1,3,
