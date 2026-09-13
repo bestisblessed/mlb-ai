@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824225,2026-09-13T16:10:00Z,Pre-Game,115,Colorado Rockies,116,Detroit Tigers,Comerica Park,Gabriel Hughes,687312.0,R,Jackson Jobe,695549.0,R
+822682,2026-09-13T17:35:00Z,Scheduled,108,Los Angeles Angels,120,Washington Nationals,Nationals Park,Grayson Rodriguez,680570.0,R,Jake Irvin,663623.0,R
+824869,2026-09-13T17:35:00Z,Scheduled,143,Philadelphia Phillies,144,Atlanta Braves,Truist Park,Andrew Painter,691725.0,R,Grant Holmes,656550.0,R
+823495,2026-09-13T17:35:00Z,Scheduled,121,New York Mets,147,New York Yankees,Yankee Stadium,Christian Scott,681035.0,R,Cam Schlittler,693645.0,R
+822764,2026-09-13T17:37:00Z,Scheduled,110,Baltimore Orioles,141,Toronto Blue Jays,Rogers Centre,Trevor Rogers,669432.0,L,Dylan Cease,656302.0,R
+822928,2026-09-13T17:40:00Z,Scheduled,117,Houston Astros,139,Tampa Bay Rays,Tropicana Field,Hayden Wesneski,669713.0,R,Freddy Peralta,642547.0,R
+823815,2026-09-13T17:40:00Z,Scheduled,119,Los Angeles Dodgers,146,Miami Marlins,loanDepot park,Emmet Sheehan,686218.0,R,Eury Pérez,691587.0,R
+823658,2026-09-13T18:10:00Z,Scheduled,114,Cleveland Guardians,142,Minnesota Twins,Target Field,Tanner Bibee,676440.0,R,,,
+823734,2026-09-13T18:10:00Z,Scheduled,113,Cincinnati Reds,158,Milwaukee Brewers,American Family Field,Chase Burns,695505.0,R,Robert Gasser,688107.0,L
+823008,2026-09-13T18:15:00Z,Scheduled,145,Chicago White Sox,138,St. Louis Cardinals,Busch Stadium,,,,Michael McGreevy,700241.0,R
+824628,2026-09-13T18:20:00Z,Scheduled,134,Pittsburgh Pirates,112,Chicago Cubs,Wrigley Field,Bubba Chandler,696149.0,R,Matthew Boyd,571510.0,L
+824708,2026-09-13T19:05:00Z,Scheduled,118,Kansas City Royals,111,Boston Red Sox,Fenway Park,Noah Cameron,702070.0,L,Payton Tolle,801139.0,L
+824952,2026-09-13T20:05:00Z,Scheduled,136,Seattle Mariners,133,Athletics,Sutter Health Park,Bryce Miller,682243.0,R,Jacob Lopez,682052.0,L
+825033,2026-09-13T20:10:00Z,Scheduled,140,Texas Rangers,109,Arizona Diamondbacks,Chase Field,Cal Quantrill,615698.0,R,Eduardo Rodriguez,699134.0,R
+823171,2026-09-13T23:20:00Z,Scheduled,135,San Diego Padres,137,San Francisco Giants,Oracle Park,Nick Pivetta,601713.0,R,Logan Webb,657277.0,R
