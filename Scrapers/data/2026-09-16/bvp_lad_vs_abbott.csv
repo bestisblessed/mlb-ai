@@ -1,0 +1,5 @@
+airouts,atbats,avg,babip,baseonballs,batter,batter_id,gamesplayed,groundouts,groundoutstoairouts,hits,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,slg,strikeouts,totalbases,year
+1,6,.167,.333,,Tommy Edman,669242,2,1,1.00,1,,24,.167,.334,Abbott,671096,6,.167,3,1,2023
+,1,1.000,1.000,2,Alex Call,669743,1,,,1,,16,1.000,2.000,Abbott,671096,3,1.000,,1,2023
+,3,.667,.667,,Kyle Tucker,663656,1,1,1.00,2,,8,.667,1.334,Abbott,671096,3,.667,,2,2023
+3,5,.400,.400,1,Kyle Tucker,663656,2,,0.00,2,2,21,.500,.900,Abbott,671096,6,.400,,2,2025
