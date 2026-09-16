@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824382,2026-09-16T17:10:00Z,Scheduled,145,Chicago White Sox,114,Cleveland Guardians,Progressive Field,Anthony Kay,641743,L,Parker Messick,800048,L
+823004,2026-09-16T17:15:00Z,Scheduled,137,San Francisco Giants,138,St. Louis Cardinals,Busch Stadium,Anthony Molina,683627,R,Matthew Liberatore,669461,L
+823655,2026-09-16T17:40:00Z,Scheduled,147,New York Yankees,142,Minnesota Twins,Target Field,Carlos Rodón,607074,L,Zebby Matthews,805673,R
+822763,2026-09-16T19:07:00Z,Scheduled,116,Detroit Tigers,141,Toronto Blue Jays,Rogers Centre,Keider Montero,672456,R,Max Scherzer,453286,R
+824467,2026-09-16T22:40:00Z,Scheduled,119,Los Angeles Dodgers,113,Cincinnati Reds,Great American Ball Park,Blake Snell,605483,L,Andrew Abbott,671096,L
+822926,2026-09-16T22:40:00Z,Scheduled,133,Athletics,139,Tampa Bay Rays,Tropicana Field,Brady Basso,669620,L,Nick Martinez,607259,R
+823332,2026-09-16T22:40:00Z,Scheduled,158,Milwaukee Brewers,134,Pittsburgh Pirates,PNC Park,Logan Henderson,701656,R,Jared Jones,683003,R
+822680,2026-09-16T22:45:00Z,Scheduled,143,Philadelphia Phillies,120,Washington Nationals,Nationals Park,Zack Wheeler,554430,R,Jared Simpson,688692,L
+823576,2026-09-16T23:10:00Z,Scheduled,110,Baltimore Orioles,121,New York Mets,Citi Field,Chris Bassitt,605135,R,Robert Stock,476594,R
+824626,2026-09-16T23:40:00Z,Scheduled,144,Atlanta Braves,112,Chicago Cubs,Wrigley Field,JR Ritchie,702275,R,Shota Imanaga,684007,L
+822846,2026-09-17T00:05:00Z,Scheduled,111,Boston Red Sox,140,Texas Rangers,Globe Life Field,Jake Bennett,687562,L,MacKenzie Gore,669022,L
+824140,2026-09-17T00:10:00Z,Scheduled,118,Kansas City Royals,117,Houston Astros,Daikin Park,Daniel Lynch IV,663738,L,Cristian Javier,664299,R
+824306,2026-09-17T00:40:00Z,Scheduled,135,San Diego Padres,115,Colorado Rockies,Coors Field,Robbie Ray,592662,L,Mason Adams,690279,R
+823979,2026-09-17T01:38:00Z,Scheduled,136,Seattle Mariners,108,Los Angeles Angels,Angel Stadium,George Kirby,669923,R,Yusei Kikuchi,579328,L
+825031,2026-09-17T01:40:00Z,Scheduled,146,Miami Marlins,109,Arizona Diamondbacks,Chase Field,Ryan Gusto,687473,R,Merrill Kelly,518876,R
