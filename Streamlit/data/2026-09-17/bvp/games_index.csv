@@ -1,0 +1,10 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823334,2026-09-17T16:35:00Z,Scheduled,158,Milwaukee Brewers,134,Pittsburgh Pirates,PNC Park,Kyle Harrison,690986,L,Wilber Dotel,696062.0,R
+824464,2026-09-17T16:40:00Z,Pre-Game,119,Los Angeles Dodgers,113,Cincinnati Reds,Great American Ball Park,Justin Wrobleski,680736,L,Brady Singer,663903.0,R
+822924,2026-09-17T17:10:00Z,Scheduled,133,Athletics,139,Tampa Bay Rays,Tropicana Field,Jeffrey Springs,605488,L,Drew Rasmussen,656876.0,R
+824305,2026-09-17T19:10:00Z,Scheduled,135,San Diego Padres,115,Colorado Rockies,Coors Field,Michael King,650633,R,Tanner Gordon,685299.0,R
+824141,2026-09-17T23:15:00Z,Scheduled,118,Kansas City Royals,117,Houston Astros,Daikin Park,Seth Lugo,607625,R,,,
+823573,2026-09-17T23:15:00Z,Scheduled,143,Philadelphia Phillies,121,New York Mets,Citi Field,Aaron Nola,605400,R,Nolan McLean,690997.0,R
+824548,2026-09-17T23:40:00Z,Scheduled,116,Detroit Tigers,145,Chicago White Sox,Rate Field,Framber Valdez,664285,L,Erick Fedde,607200.0,R
+822845,2026-09-18T00:05:00Z,Scheduled,111,Boston Red Sox,140,Texas Rangers,Globe Life Field,Sonny Gray,543243,R,Tyler Alexander,641302.0,L
+823978,2026-09-18T01:38:00Z,Scheduled,142,Minnesota Twins,108,Los Angeles Angels,Angel Stadium,Taj Bradley,671737,R,Walbert Ureña,700712.0,R
