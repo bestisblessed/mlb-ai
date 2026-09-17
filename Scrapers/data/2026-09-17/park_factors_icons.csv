@@ -1,0 +1,10 @@
+game_id,game,icons,icon_labels
+824305,Coors Field3:10SD  @ COL,"InLeft.svg,OutRight.svg,OutCenter.svg,LightWind.png,From76to82.png","InLeft.svg,OutRight.svg,OutCenter.svg,Light Breeze,76–82°F"
+824464,Great American BP12:40LAD @ CIN,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,LightWind.png,From83to89.png,HighP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,Light Breeze,83–89°F,High Pressure"
+823334,PNC Park12:35MIL @ PIT,"OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,LightWind.png,HighH.png,HighP.png","OutLeftMiddle.svg,OutLeft.svg,OutLeft.svg,Light Breeze,High Humidity,High Pressure"
+823978,Angel Stadium9:38MIN @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze"
+824141,Daikin Park7:15KC  @ HOU,RoofClosed.png,Roof Closed
+823573,Citi Field7:15PHI @ NYM,"OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,LightWind.png,From76to82.png,HighP.png","OutLeft.svg,OutLeft.svg,OutLeftCenter.svg,Light Breeze,76–82°F,High Pressure"
+822924,Tropicana Field1:10ATH @ TB,RoofClosed.png,Roof Closed
+822845,Globe Life Field8:05BOS @ TEX,RoofClosed.png,Roof Closed
+824548,Rate Field7:40DET @ CHW,"OutRightMiddle.svg,FromLeft.svg,OutRightMiddle.svg,LightWind.png,HighH.png,HighP.png","OutRightMiddle.svg,FromLeft.svg,OutRightMiddle.svg,Light Breeze,High Humidity,High Pressure"
