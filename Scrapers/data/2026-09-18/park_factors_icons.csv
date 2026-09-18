@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824303,Coors Field8:10SEA @ COL,"InCenter.svg,InRight.svg,InRight.svg,LightWind.png","InCenter.svg,InRight.svg,InRight.svg,Light Breeze"
+824463,Great American BP6:40CHC @ CIN,"InLeftMiddle.svg,FromLeft.svg,InLeftMiddle.svg,LightWind.png,From76to82.png,HighP.png","InLeftMiddle.svg,FromLeft.svg,InLeftMiddle.svg,Light Breeze,76–82°F,High Pressure"
+823331,PNC Park6:40KC  @ PIT,"OutRightMiddle.svg,OutRight.svg,OutRightMiddle.svg,LightWind.png,HighP.png","OutRightMiddle.svg,OutRight.svg,OutRightMiddle.svg,Light Breeze,High Pressure"
+823898,Dodger Stadium10:15SF  @ LAD,"OutRight.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png","OutRight.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze"
+825032,Chase Field9:40NYY @ ARI,RoofClosed.png,Roof Closed
+823005,Busch Stadium8:15WAS @ STL,"OutCenter.svg,OutLeft.svg,InRightMiddle.svg,Over90.png","OutCenter.svg,OutLeft.svg,InRightMiddle.svg,≥90°F"
+823977,Angel Stadium9:38MIN @ LAA,"OutRightCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png","OutRightCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze"
+824790,Oriole Park7:05MIL @ BAL,"InLeft.svg,InLeft.svg,InLeftCenter.svg,LightWind.png,From76to82.png,HighP.png","InLeft.svg,InLeft.svg,InLeftCenter.svg,Light Breeze,76–82°F,High Pressure"
+824138,Daikin Park8:10ATL @ HOU,RoofClosed.png,Roof Closed
+823252,Petco Park9:40MIA @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze"
+824383,Progressive Field7:10ATH @ CLE,"InRight.svg,InRight.svg,InRight.svg,LightWind.png,HighP.png","InRight.svg,InRight.svg,InRight.svg,Light Breeze,High Pressure"
+822923,Tropicana Field7:10BOS @ TB,RoofClosed.png,Roof Closed
+822847,Globe Life Field8:05TOR @ TEX,RoofClosed.png,Roof Closed
+824547,Rate Field7:40DET @ CHW,"InLeftCenter.svg,InLeft.svg,InLeftCenter.svg,LightWind.png,HighP.png","InLeftCenter.svg,InLeft.svg,InLeftCenter.svg,Light Breeze,High Pressure"
+823572,Citi Field7:15PHI @ NYM,"InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,ModerateWind.png,From76to82.png,HighP.png","InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,Moderate Wind,76–82°F,High Pressure"
