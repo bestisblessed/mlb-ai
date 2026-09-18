@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824463,2026-09-18T22:40:00Z,Scheduled,112,Chicago Cubs,113,Cincinnati Reds,Great American Ball Park,Clay Holmes,605280,R,Chase Burns,695505.0,R
+823331,2026-09-18T22:40:00Z,Scheduled,118,Kansas City Royals,134,Pittsburgh Pirates,PNC Park,Randy Dobnak,677976,R,Paul Skenes,694973.0,R
+824790,2026-09-18T23:05:00Z,Scheduled,158,Milwaukee Brewers,110,Baltimore Orioles,Oriole Park at Camden Yards,Dustin May,669160,R,,,
+824383,2026-09-18T23:10:00Z,Scheduled,133,Athletics,114,Cleveland Guardians,Progressive Field,Mason Barnett,686930,R,Daniel Espino,682982.0,R
+822923,2026-09-18T23:10:00Z,Scheduled,111,Boston Red Sox,139,Tampa Bay Rays,Tropicana Field,Ranger Suarez,624133,L,Ian Seymour,693855.0,L
+823572,2026-09-18T23:15:00Z,Scheduled,143,Philadelphia Phillies,121,New York Mets,Citi Field,Andrew Painter,691725,R,Zac Thornton,804267.0,L
+824547,2026-09-18T23:40:00Z,Scheduled,116,Detroit Tigers,145,Chicago White Sox,Rate Field,Andrew Sears,808825,L,David Sandlin,689818.0,R
+822847,2026-09-19T00:05:00Z,Scheduled,141,Toronto Blue Jays,140,Texas Rangers,Globe Life Field,Dylan Cease,656302,R,Kumar Rocker,677958.0,R
+824303,2026-09-19T00:10:00Z,Scheduled,136,Seattle Mariners,115,Colorado Rockies,Coors Field,Bryan Woo,693433,R,,,
+824138,2026-09-19T00:10:00Z,Scheduled,144,Atlanta Braves,117,Houston Astros,Daikin Park,Tyler Mahle,641816,R,Peter Lambert,663567.0,R
+823005,2026-09-19T00:15:00Z,Scheduled,120,Washington Nationals,138,St. Louis Cardinals,Busch Stadium,Cade Cavalli,676917,R,Kyle Leahy,681517.0,R
+823977,2026-09-19T01:38:00Z,Scheduled,142,Minnesota Twins,108,Los Angeles Angels,Angel Stadium,Connor Prielipp,687570,L,Grayson Rodriguez,680570.0,R
+823252,2026-09-19T01:40:00Z,Scheduled,146,Miami Marlins,135,San Diego Padres,Petco Park,Tyler Phillips,663969,R,Nick Pivetta,601713.0,R
+825032,2026-09-19T01:40:00Z,Scheduled,147,New York Yankees,109,Arizona Diamondbacks,Chase Field,Gerrit Cole,543037,R,Eduardo Rodriguez,699134.0,R
+823898,2026-09-19T02:15:00Z,Scheduled,137,San Francisco Giants,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Cesar Perdomo,702885,L,Tyler Glasnow,607192.0,R
