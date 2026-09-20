@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823570,2026-09-20T17:10:00Z,Scheduled,143,Philadelphia Phillies,121,New York Mets,Citi Field,Cristopher Sánchez,650911.0,L,Jonah Tong,804636.0,R
+823329,2026-09-20T17:35:00Z,Scheduled,118,Kansas City Royals,134,Pittsburgh Pirates,PNC Park,Michael Wacha,608379.0,R,Lake Bachar,669199.0,R
+824462,2026-09-20T17:40:00Z,Scheduled,112,Chicago Cubs,113,Cincinnati Reds,Great American Ball Park,,,,Rhett Lowder,695076.0,R
+824381,2026-09-20T17:40:00Z,Scheduled,133,Athletics,114,Cleveland Guardians,Progressive Field,Jack Perkins,678022.0,R,Gavin Williams,668909.0,R
+822922,2026-09-20T17:40:00Z,Scheduled,111,Boston Red Sox,139,Tampa Bay Rays,Tropicana Field,Patrick Sandoval,663776.0,L,Griffin Jax,643377.0,R
+824139,2026-09-20T18:10:00Z,Scheduled,144,Atlanta Braves,117,Houston Astros,Daikin Park,Martín Pérez,527048.0,L,Hunter Brown,686613.0,R
+824546,2026-09-20T18:10:00Z,Scheduled,116,Detroit Tigers,145,Chicago White Sox,Rate Field,Troy Melton,675512.0,R,Davis Martin,663436.0,R
+823001,2026-09-20T18:15:00Z,Scheduled,120,Washington Nationals,138,St. Louis Cardinals,Busch Stadium,Jake Irvin,663623.0,R,Quinn Mathews,687273.0,L
+822844,2026-09-20T18:35:00Z,Scheduled,141,Toronto Blue Jays,140,Texas Rangers,Globe Life Field,Spencer Miles,693686.0,R,Jacob deGrom,594798.0,R
+824300,2026-09-20T19:10:00Z,Scheduled,136,Seattle Mariners,115,Colorado Rockies,Coors Field,Kade Anderson,807739.0,L,Tomoyuki Sugano,608372.0,R
+823975,2026-09-20T20:07:00Z,Scheduled,142,Minnesota Twins,108,Los Angeles Angels,Angel Stadium,Dean Kremer,665152.0,R,Ryan Johnson,696270.0,R
+823896,2026-09-20T20:10:00Z,Scheduled,137,San Francisco Giants,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Matt Wilkinson,683363.0,L,,,
+823247,2026-09-20T20:10:00Z,Scheduled,146,Miami Marlins,135,San Diego Padres,Petco Park,Sandy Alcantara,645261.0,R,Walker Buehler,621111.0,R
+825028,2026-09-20T20:10:00Z,Scheduled,147,New York Yankees,109,Arizona Diamondbacks,Chase Field,Will Warren,701542.0,R,Corbin Burnes,669203.0,R
+824789,2026-09-20T23:20:00Z,Scheduled,158,Milwaukee Brewers,110,Baltimore Orioles,Oriole Park at Camden Yards,Jacob Misiorowski,694819.0,R,Brandon Young,687064.0,R
