@@ -1,0 +1,16 @@
+game_id,game,icons,icon_labels
+824300,Coors Field3:10SEA @ COL,"InRightCenter.svg,InRight.svg,InRight.svg,LightWind.png","InRightCenter.svg,InRight.svg,InRight.svg,Light Breeze"
+824462,Great American BP1:40CHC @ CIN,"OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,LightWind.png,From83to89.png","OutLeftMiddle.svg,OutLeftMiddle.svg,OutLeftMiddle.svg,Light Breeze,83–89°F"
+823896,Dodger Stadium4:10SF  @ LAD,"OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png","OutCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F"
+824789,Oriole Park7:20MIL @ BAL,"OutRight.svg,InLeftMiddle.svg,OutLeftMiddle.svg,From76to82.png,HighH.png","OutRight.svg,InLeftMiddle.svg,OutLeftMiddle.svg,76–82°F,High Humidity"
+823329,PNC Park1:35KC  @ PIT,"OutLeft.svg,OutLeft.svg,OutLeft.svg,LightWind.png,HighH.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Light Breeze,High Humidity"
+823975,Angel Stadium4:07MIN @ LAA,"OutCenter.svg,OutCenter.svg,OutCenter.svg,LightWind.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Light Breeze"
+825028,Chase Field4:10NYY @ ARI,RoofClosed.png,Roof Closed
+823001,Busch Stadium2:15WAS @ STL,"OutRightMiddle.svg,OutRight.svg,OutRight.svg,LightWind.png,Over90.png,LowP.png","OutRightMiddle.svg,OutRight.svg,OutRight.svg,Light Breeze,≥90°F,Low Pressure"
+823570,Citi Field1:10PHI @ NYM,"OutLeft.svg,OutLeft.svg,OutLeft.svg,ModerateWind.png,HighH.png","OutLeft.svg,OutLeft.svg,OutLeft.svg,Moderate Wind,High Humidity"
+824139,Daikin Park2:10ATL @ HOU,RoofClosed.png,Roof Closed
+823247,Petco Park4:10MIA @ SD,"OutRightMiddle.svg,FromLeft.svg,FromLeft.svg,LightWind.png","OutRightMiddle.svg,FromLeft.svg,FromLeft.svg,Light Breeze"
+822922,Tropicana Field1:40BOS @ TB,RoofClosed.png,Roof Closed
+824381,Progressive Field1:40ATH @ CLE,"InLeftMiddle.svg,InRightCenter.svg,InRight.svg,LightWind.png,HighH.png","InLeftMiddle.svg,InRightCenter.svg,InRight.svg,Light Breeze,High Humidity"
+824546,Rate Field2:10DET @ CHW,"OutRightMiddle.svg,FromLeft.svg,FromLeft.svg,ModerateWind.png,HighH.png","OutRightMiddle.svg,FromLeft.svg,FromLeft.svg,Moderate Wind,High Humidity"
+822844,Globe Life Field2:35TOR @ TEX,RoofClosed.png,Roof Closed

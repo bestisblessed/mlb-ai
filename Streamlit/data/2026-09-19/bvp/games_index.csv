@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824545,2026-09-19T18:10:00Z,Scheduled,116,Detroit Tigers,145,Chicago White Sox,Rate Field,Jackson Jobe,695549.0,R,Sean Burke,680732,R
+824788,2026-09-19T20:05:00Z,Scheduled,158,Milwaukee Brewers,110,Baltimore Orioles,Oriole Park at Camden Yards,Robert Gasser,688107.0,L,Trevor Rogers,669432,L
+822921,2026-09-19T20:10:00Z,Scheduled,111,Boston Red Sox,139,Tampa Bay Rays,Tropicana Field,,,,Freddy Peralta,642547,R
+823571,2026-09-19T20:10:00Z,Scheduled,143,Philadelphia Phillies,121,New York Mets,Citi Field,Andrew Painter,691725.0,R,Christian Scott,681035,R
+824380,2026-09-19T22:10:00Z,Scheduled,133,Athletics,114,Cleveland Guardians,Progressive Field,Jacob Lopez,682052.0,L,Tanner Bibee,676440,R
+824461,2026-09-19T22:40:00Z,Scheduled,112,Chicago Cubs,113,Cincinnati Reds,Great American Ball Park,Matthew Boyd,571510.0,L,Nick Lodolo,666157,L
+823330,2026-09-19T22:40:00Z,Scheduled,118,Kansas City Royals,134,Pittsburgh Pirates,PNC Park,Noah Cameron,702070.0,L,Bubba Chandler,696149,R
+822843,2026-09-19T23:05:00Z,Scheduled,141,Toronto Blue Jays,140,Texas Rangers,Globe Life Field,José Soriano,667755.0,R,Cal Quantrill,615698,R
+824137,2026-09-19T23:10:00Z,Scheduled,144,Atlanta Braves,117,Houston Astros,Daikin Park,Grant Holmes,656550.0,R,Hayden Wesneski,669713,R
+823003,2026-09-19T23:15:00Z,Scheduled,120,Washington Nationals,138,St. Louis Cardinals,Busch Stadium,Andrew Alvarez,674841.0,L,Michael McGreevy,700241,R
+824304,2026-09-20T00:10:00Z,Scheduled,136,Seattle Mariners,115,Colorado Rockies,Coors Field,Bryce Miller,682243.0,R,Jose Quintana,500779,L
+825029,2026-09-20T00:10:00Z,Scheduled,147,New York Yankees,109,Arizona Diamondbacks,Chase Field,Cam Schlittler,693645.0,R,Brandon Pfaadt,694297,R
+823249,2026-09-20T00:40:00Z,Scheduled,146,Miami Marlins,135,San Diego Padres,Petco Park,Eury Pérez,691587.0,R,Casey Mize,663554,R
+823899,2026-09-20T01:10:00Z,Scheduled,137,San Francisco Giants,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,,,,Tarik Skubal,669373,L
+823976,2026-09-20T01:38:00Z,Scheduled,142,Minnesota Twins,108,Los Angeles Angels,Angel Stadium,Joe Ryan,657746.0,R,Reid Detmers,672282,L
