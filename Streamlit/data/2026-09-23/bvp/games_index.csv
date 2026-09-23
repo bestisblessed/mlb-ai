@@ -1,0 +1,17 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824223,2026-09-23T17:10:00Z,Scheduled,120,Washington Nationals,116,Detroit Tigers,Comerica Park,Richard Lovelady,663992.0,L,Framber Valdez,664285.0,L
+824785,2026-09-23T17:35:00Z,Scheduled,141,Toronto Blue Jays,110,Baltimore Orioles,Oriole Park at Camden Yards,Max Scherzer,453286.0,R,,,
+824784,2026-09-23T22:35:00Z,Scheduled,141,Toronto Blue Jays,110,Baltimore Orioles,Oriole Park at Camden Yards,,,,,,
+823168,2026-09-23T19:45:00Z,Scheduled,142,Minnesota Twins,137,San Francisco Giants,Oracle Park,Connor Prielipp,687570.0,L,Cesar Perdomo,702885.0,L
+823327,2026-09-23T22:40:00Z,Scheduled,138,St. Louis Cardinals,134,Pittsburgh Pirates,PNC Park,Matthew Liberatore,669461.0,L,Lake Bachar,669199.0,R
+823410,2026-09-23T22:40:00Z,Scheduled,158,Milwaukee Brewers,143,Philadelphia Phillies,Citizens Bank Park,Logan Henderson,701656.0,R,Aaron Nola,605400.0,R
+823492,2026-09-23T23:05:00Z,Scheduled,139,Tampa Bay Rays,147,New York Yankees,Yankee Stadium,Ian Seymour,693855.0,L,Gerrit Cole,543037.0,R
+824710,2026-09-23T23:10:00Z,Scheduled,114,Cleveland Guardians,111,Boston Red Sox,Fenway Park,Foster Griffin,656492.0,L,Sonny Gray,543243.0,R
+824868,2026-09-23T23:15:00Z,Scheduled,113,Cincinnati Reds,144,Atlanta Braves,Truist Park,Andrew Abbott,671096.0,L,Chris Sale,519242.0,L
+824060,2026-09-23T23:40:00Z,Scheduled,145,Chicago White Sox,118,Kansas City Royals,Kauffman Stadium,Bryan Hudson,663542.0,L,Seth Lugo,607625.0,R
+824625,2026-09-23T23:40:00Z,Scheduled,146,Miami Marlins,112,Chicago Cubs,Wrigley Field,Ryan Gusto,687473.0,R,Kevin Gausman,592332.0,R
+822841,2026-09-24T00:05:00Z,Scheduled,121,New York Mets,140,Texas Rangers,Globe Life Field,Nolan McLean,690997.0,R,,,
+824301,2026-09-24T00:40:00Z,Scheduled,109,Arizona Diamondbacks,115,Colorado Rockies,Coors Field,Merrill Kelly,518876.0,R,Mason Adams,690279.0,R
+824951,2026-09-24T01:40:00Z,Scheduled,108,Los Angeles Angels,133,Athletics,Sutter Health Park,Walbert Ureña,700712.0,R,Jeffrey Springs,605488.0,L
+823894,2026-09-24T02:10:00Z,Scheduled,135,San Diego Padres,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Robbie Ray,592662.0,L,Yoshinobu Yamamoto,808967.0,R
+823086,2026-09-24T02:10:00Z,Scheduled,117,Houston Astros,136,Seattle Mariners,T-Mobile Park,Ethan Pecko,814490.0,R,George Kirby,669923.0,R
