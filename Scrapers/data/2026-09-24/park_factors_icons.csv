@@ -1,0 +1,13 @@
+game_id,game,icons,icon_labels
+824298,Coors Field3:10ARI @ COL,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze"
+824950,Sutter Health Park9:40HOU @ ATH,"OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,ModerateWind.png,From83to89.png,LowH.png,LowP.png","OutLeftCenter.svg,OutLeftCenter.svg,OutLeftCenter.svg,Moderate Wind,83–89°F,Low Humidity,Low Pressure"
+823895,Dodger Stadium10:10SD  @ LAD,"OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,LightWind.png,From76to82.png,LowP.png","OutRightCenter.svg,OutRightCenter.svg,OutRightCenter.svg,Light Breeze,76–82°F,Low Pressure"
+824059,Kauffman Stadium2:10CHW @ KC,"InRightMiddle.svg,InRightMiddle.svg,InRight.svg,LightWind.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,InRight.svg,Light Breeze,High Pressure"
+822842,Globe Life Field2:35NYM @ TEX,RoofClosed.png,Roof Closed
+823411,Citizens Bank Park6:05MIL @ PHI,"InRight.svg,InRightCenter.svg,InRightCenter.svg,LightWind.png,HighP.png","InRight.svg,InRightCenter.svg,InRightCenter.svg,Light Breeze,High Pressure"
+824707,Fenway Park6:45CLE @ BOS,"InCenter.svg,InCenter.svg,InCenter.svg,ModerateWind.png,HighP.png","InCenter.svg,InCenter.svg,InCenter.svg,Moderate Wind,High Pressure"
+823087,T-Mobile Park9:40LAA @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InRight.svg,Under55.png,HighH.png,LowP.png","InLeftMiddle.svg,InLeftMiddle.svg,InRight.svg,Under55.png,High Humidity,Low Pressure"
+824866,Truist Park7:15CIN @ ATL,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,High Pressure"
+823493,Yankee Stadium7:05TB  @ NYY,"InLeftCenter.svg,InLeft.svg,InLeftCenter.svg,HeavyWind.png,HighP.png","InLeftCenter.svg,InLeft.svg,InLeftCenter.svg,Heavy Wind,High Pressure"
+823326,PNC Park12:35STL @ PIT,"InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,LightWind.png,HighP.png","InLeftCenter.svg,InLeftCenter.svg,InLeftCenter.svg,Light Breeze,High Pressure"
+824623,Wrigley Field2:20MIA @ CHC,"InRightCenter.svg,InCenter.svg,InCenter.svg,LightWind.png,HighP.png","InRightCenter.svg,InCenter.svg,InCenter.svg,Light Breeze,High Pressure"
