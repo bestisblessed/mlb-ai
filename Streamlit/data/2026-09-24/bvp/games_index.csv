@@ -1,0 +1,13 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+823326,2026-09-24T16:35:00Z,Pre-Game,138,St. Louis Cardinals,134,Pittsburgh Pirates,PNC Park,Kyle Leahy,681517,R,Paul Skenes,694973,R
+824059,2026-09-24T18:10:00Z,Scheduled,145,Chicago White Sox,118,Kansas City Royals,Kauffman Stadium,David Sandlin,689818,R,Randy Dobnak,677976,R
+824623,2026-09-24T18:20:00Z,Scheduled,146,Miami Marlins,112,Chicago Cubs,Wrigley Field,Tyler Phillips,663969,R,Matthew Boyd,571510,L
+822842,2026-09-24T18:35:00Z,Scheduled,121,New York Mets,140,Texas Rangers,Globe Life Field,Zac Thornton,804267,L,Kumar Rocker,677958,R
+824298,2026-09-24T19:10:00Z,Scheduled,109,Arizona Diamondbacks,115,Colorado Rockies,Coors Field,Eduardo Rodriguez,699134,R,Tanner Gordon,685299,R
+823411,2026-09-24T22:05:00Z,Scheduled,158,Milwaukee Brewers,143,Philadelphia Phillies,Citizens Bank Park,Bryse Wilson,669060,R,Andrew Painter,691725,R
+824707,2026-09-24T22:45:00Z,Scheduled,114,Cleveland Guardians,111,Boston Red Sox,Fenway Park,Daniel Espino,682982,R,Ranger Suarez,624133,L
+823493,2026-09-24T23:05:00Z,Scheduled,139,Tampa Bay Rays,147,New York Yankees,Yankee Stadium,Ian Seymour,693855,L,Cam Schlittler,693645,R
+824866,2026-09-24T23:15:00Z,Scheduled,113,Cincinnati Reds,144,Atlanta Braves,Truist Park,Brady Singer,663903,R,Tyler Mahle,641816,R
+824950,2026-09-25T01:40:00Z,Scheduled,117,Houston Astros,133,Athletics,Sutter Health Park,Peter Lambert,663567,R,Mason Barnett,686930,R
+823087,2026-09-25T01:40:00Z,Scheduled,108,Los Angeles Angels,136,Seattle Mariners,T-Mobile Park,Grayson Rodriguez,680570,R,Bryan Woo,693433,R
+823895,2026-09-25T02:10:00Z,Scheduled,135,San Diego Padres,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Nick Pivetta,601713,R,Tyler Glasnow,607192,R
