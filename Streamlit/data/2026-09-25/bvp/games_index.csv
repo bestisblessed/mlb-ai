@@ -1,0 +1,18 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+824703,2026-09-25T17:05:00Z,Scheduled,112,Chicago Cubs,111,Boston Red Sox,Fenway Park,Clay Holmes,605280.0,R,Alec Gamboa,687941.0,L
+824706,2026-09-25T22:05:00Z,Scheduled,112,Chicago Cubs,111,Boston Red Sox,Fenway Park,David Peterson,656849.0,L,Brayan Bello,678394.0,R
+823491,2026-09-25T20:05:00Z,Scheduled,110,Baltimore Orioles,147,New York Yankees,Yankee Stadium,Brandon Young,687064.0,R,,,
+823489,2026-09-25T20:10:00Z,Scheduled,110,Baltimore Orioles,147,New York Yankees,Yankee Stadium,Trevor Rogers,669432.0,L,Brendan Beck,694341.0,R
+824220,2026-09-25T22:40:00Z,Scheduled,134,Pittsburgh Pirates,116,Detroit Tigers,Comerica Park,Bubba Chandler,696149.0,R,Jackson Jobe,695549.0,R
+823409,2026-09-25T22:40:00Z,Scheduled,139,Tampa Bay Rays,143,Philadelphia Phillies,Citizens Bank Park,Freddy Peralta,642547.0,R,Cristopher Sánchez,650911.0,L
+822681,2026-09-25T22:45:00Z,Scheduled,121,New York Mets,120,Washington Nationals,Nationals Park,,,,Andrew Alvarez,674841.0,L
+822760,2026-09-25T23:07:00Z,Scheduled,113,Cincinnati Reds,141,Toronto Blue Jays,Rogers Centre,Nick Lodolo,666157.0,L,,,
+823816,2026-09-25T23:10:00Z,Scheduled,144,Atlanta Braves,146,Miami Marlins,loanDepot park,,,,Eury Pérez,691587.0,R
+824058,2026-09-25T23:40:00Z,Scheduled,114,Cleveland Guardians,118,Kansas City Royals,Kauffman Stadium,Gavin Williams,668909.0,R,Noah Cameron,702070.0,L
+824544,2026-09-25T23:40:00Z,Scheduled,115,Colorado Rockies,145,Chicago White Sox,Rate Field,Tomoyuki Sugano,608372.0,R,Sean Burke,680732.0,R
+823735,2026-09-25T23:40:00Z,Scheduled,138,St. Louis Cardinals,158,Milwaukee Brewers,American Family Field,Michael McGreevy,700241.0,R,Robert Gasser,688107.0,L
+823652,2026-09-26T00:10:00Z,Scheduled,140,Texas Rangers,142,Minnesota Twins,Target Field,Jacob deGrom,594798.0,R,Joe Ryan,657746.0,R
+824947,2026-09-26T01:40:00Z,Scheduled,117,Houston Astros,133,Athletics,Sutter Health Park,Hunter Brown,686613.0,R,Jacob Lopez,682052.0,L
+823248,2026-09-26T01:40:00Z,Scheduled,109,Arizona Diamondbacks,135,San Diego Padres,Petco Park,Brandon Pfaadt,694297.0,R,,,
+823085,2026-09-26T02:10:00Z,Scheduled,108,Los Angeles Angels,136,Seattle Mariners,T-Mobile Park,Reid Detmers,672282.0,L,Bryce Miller,682243.0,R
+823167,2026-09-26T02:15:00Z,Scheduled,119,Los Angeles Dodgers,137,San Francisco Giants,Oracle Park,Tarik Skubal,669373.0,L,Yunior Marte,805074.0,R
