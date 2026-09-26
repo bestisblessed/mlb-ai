@@ -1,0 +1,15 @@
+airouts,atbats,atbatsperhomerun,avg,babip,baseonballs,batter,batter_id,doubles,gamesplayed,groundintodoubleplay,groundouts,groundoutstoairouts,hits,homeruns,leftonbase,numberofpitches,obp,ops,pitcher,pitcher_id,plateappearances,rbi,slg,strikeouts,totalbases,year
+3,15,15.00,.400,.385,,Jackson Merrill,701538,1,7,,5,1.67,6,1,4,55,.400,1.067,Nelson,669194,15,2,.667,1,10,
+,3,,.000,.000,,Austin Hays,669720,,1,,1,1.00,,,1,12,.000,.000,Nelson,669194,3,1,.000,2,,2025
+1,1,,.000,.000,,Austin Hays,669720,,1,,,0.00,,,2,6,.000,.000,Nelson,669194,1,,.000,,,2026
+,5,,.400,.667,,Freddy Fermin,666023,,2,,1,1.00,2,,1,22,.400,.800,Nelson,669194,5,,.400,2,2,
+8,25,25.00,.240,.238,2,Jake Cronenworth,630105,1,12,,8,1.00,6,1,8,116,.296,.696,Nelson,669194,27,3,.400,3,10,
+5,18,,.333,.429,3,Fernando Tatis Jr. F. Tatis Jr.,665487,3,8,,3,0.60,6,,3,85,.429,.929,Nelson,669194,21,,.500,4,9,
+,1,,1.000,1.000,,Sung-Mun Song,823550,,1,,,,1,,,6,1.000,2.000,Nelson,669194,1,1,1.000,,1,
+7,17,5.67,.353,.300,,Xander Bogaerts,593428,1,7,,,0.00,6,3,6,66,.353,1.294,Nelson,669194,17,5,.941,4,16,
+3,6,,.167,.167,,Luis Campusano,669134,1,3,1,2,0.67,1,,5,18,.167,.500,Nelson,669194,6,1,.333,,2,
+,5,5.00,.200,.000,1,Manny Machado,592518,,2,,2,2.00,1,1,1,22,.333,1.133,Nelson,669194,6,2,.800,2,4,2022
+3,7,,.286,.333,1,Manny Machado,592518,,3,,1,0.33,2,,1,35,.375,.661,Nelson,669194,8,2,.286,1,2,2023
+3,6,,.167,.167,,Manny Machado,592518,,2,1,2,0.67,1,,2,25,.167,.334,Nelson,669194,6,,.167,,1,2024
+1,5,,.400,.500,1,Manny Machado,592518,,2,,1,1.00,2,,1,32,.500,.900,Nelson,669194,6,,.400,1,2,2025
+,3,1.50,.667,.---,,Manny Machado,592518,,1,,,,2,2,,9,.667,3.334,Nelson,669194,3,5,2.667,1,8,2026
