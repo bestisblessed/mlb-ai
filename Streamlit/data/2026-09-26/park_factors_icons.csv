@@ -1,0 +1,14 @@
+game_id,game,icons,icon_labels
+824949,Sutter Health Park9:40HOU @ ATH,"OutCenter.svg,OutCenter.svg,OutCenter.svg,ModerateWind.png,LowH.png,LowP.png","OutCenter.svg,OutCenter.svg,OutCenter.svg,Moderate Wind,Low Humidity,Low Pressure"
+823653,Target Field4:10TEX @ MIN,"InRight.svg,InRight.svg,InRightMiddle.svg,ModerateWind.png,Under55.png,HighH.png","InRight.svg,InRight.svg,InRightMiddle.svg,Moderate Wind,Under55.png,High Humidity"
+823407,Citizens Bank Park7:15TB  @ PHI,"InLeftCenter.svg,InCenter.svg,InCenter.svg,ModerateWind.png,Under55.png,HighH.png,LowP.png","InLeftCenter.svg,InCenter.svg,InCenter.svg,Moderate Wind,Under55.png,High Humidity,Low Pressure"
+822678,Nationals Park12:35NYM @ WAS,"InLeft.svg,InLeft.svg,InLeft.svg,ModerateWind.png","InLeft.svg,InLeft.svg,InLeft.svg,Moderate Wind"
+824057,Kauffman Stadium7:10CLE @ KC,"FromRight.svg,InRightMiddle.svg,InRightMiddle.svg,ModerateWind.png,From76to82.png","FromRight.svg,InRightMiddle.svg,InRightMiddle.svg,Moderate Wind,76–82°F"
+823813,LoanDepot Park4:10ATL @ MIA,RoofClosed.png,Roof Closed
+824219,Comerica Park1:10PIT @ DET,"OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,LightWind.png,HighP.png","OutRightMiddle.svg,OutRightMiddle.svg,OutRightMiddle.svg,Light Breeze,High Pressure"
+822759,Rogers Centre3:07CIN @ TOR,"InRightMiddle.svg,InRightMiddle.svg,InRight.svg,LightWind.png,HighP.png","InRightMiddle.svg,InRightMiddle.svg,InRight.svg,Light Breeze,High Pressure"
+823165,Oracle Park4:05LAD @ SF,"OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,ModerateWind.png,HighH.png","OutLeftCenter.svg,OutLeftCenter.svg,OutCenter.svg,Moderate Wind,High Humidity"
+823245,Petco Park8:40ARI @ SD,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,LightWind.png,From76to82.png,LowP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg,Light Breeze,76–82°F,Low Pressure"
+824543,Rate Field7:10COL @ CHW,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png,HighP.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze,High Pressure"
+823083,T-Mobile Park9:40LAA @ SEA,"InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,LightWind.png","InLeftMiddle.svg,InLeftMiddle.svg,InLeft.svg,Light Breeze"
+823733,American Family Fld7:10STL @ MIL,"InLeft.svg,InLeftCenter.svg,InLeftCenter.svg,HighP.png","InLeft.svg,InLeftCenter.svg,InLeftCenter.svg,High Pressure"
