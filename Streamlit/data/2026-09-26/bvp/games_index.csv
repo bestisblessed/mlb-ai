@@ -1,0 +1,14 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822678,2026-09-26T16:35:00Z,Scheduled,121,New York Mets,120,Washington Nationals,Nationals Park,Jonah Tong,804636.0,R,Connelly Early,813349.0,L
+824219,2026-09-26T17:10:00Z,Scheduled,134,Pittsburgh Pirates,116,Detroit Tigers,Comerica Park,Kirby Yates,489446.0,R,Justin Verlander,434378.0,R
+822759,2026-09-26T19:07:00Z,Scheduled,113,Cincinnati Reds,141,Toronto Blue Jays,Rogers Centre,Rhett Lowder,695076.0,R,Trey Yesavage,702056.0,R
+823165,2026-09-26T20:05:00Z,Scheduled,119,Los Angeles Dodgers,137,San Francisco Giants,Oracle Park,Blake Snell,605483.0,L,Matt Wilkinson,683363.0,L
+823653,2026-09-26T20:10:00Z,Scheduled,140,Texas Rangers,142,Minnesota Twins,Target Field,Nathan Eovaldi,543135.0,R,Bailey Ober,641927.0,R
+823813,2026-09-26T20:10:00Z,Scheduled,144,Atlanta Braves,146,Miami Marlins,loanDepot park,Brent Suter,608718.0,L,Jack Ralston,667652.0,R
+824057,2026-09-26T23:10:00Z,Scheduled,114,Cleveland Guardians,118,Kansas City Royals,Kauffman Stadium,Tanner Bibee,676440.0,R,Michael Wacha,608379.0,R
+824543,2026-09-26T23:10:00Z,Scheduled,115,Colorado Rockies,145,Chicago White Sox,Rate Field,Jose Quintana,500779.0,L,Davis Martin,663436.0,R
+823733,2026-09-26T23:10:00Z,Scheduled,138,St. Louis Cardinals,158,Milwaukee Brewers,American Family Field,Quinn Mathews,687273.0,L,Dustin May,669160.0,R
+823407,2026-09-26T23:15:00Z,Scheduled,139,Tampa Bay Rays,143,Philadelphia Phillies,Citizens Bank Park,Griffin Jax,643377.0,R,,,
+823245,2026-09-27T00:40:00Z,Scheduled,109,Arizona Diamondbacks,135,San Diego Padres,Petco Park,,,,Walker Buehler,621111.0,R
+824949,2026-09-27T01:40:00Z,Scheduled,117,Houston Astros,133,Athletics,Sutter Health Park,Hayden Wesneski,669713.0,R,Jack Perkins,678022.0,R
+823083,2026-09-27T01:40:00Z,Scheduled,108,Los Angeles Angels,136,Seattle Mariners,T-Mobile Park,Ryan Johnson,696270.0,R,Kade Anderson,807739.0,L
