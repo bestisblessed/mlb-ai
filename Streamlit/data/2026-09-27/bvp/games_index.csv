@@ -1,0 +1,16 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+822679,2026-09-27T17:05:00Z,Scheduled,121,New York Mets,120,Washington Nationals,Nationals Park,Sean Manaea,640455.0,L,DJ Herz,687792.0,L
+823490,2026-09-27T17:05:00Z,Scheduled,110,Baltimore Orioles,147,New York Yankees,Yankee Stadium,Shane Baz,669358.0,R,Elmer Rodríguez,695684.0,R
+824705,2026-09-27T19:05:00Z,Scheduled,112,Chicago Cubs,111,Boston Red Sox,Tropicana Field,Shota Imanaga,684007.0,L,,,
+824948,2026-09-27T19:05:00Z,Scheduled,117,Houston Astros,133,Athletics,Sutter Health Park,Peter Lambert,663567.0,R,Seth Johnson,686751.0,R
+823164,2026-09-27T19:05:00Z,Scheduled,119,Los Angeles Dodgers,137,San Francisco Giants,Oracle Park,,,,Carson Seymour,693313.0,R
+823408,2026-09-27T19:05:00Z,Scheduled,139,Tampa Bay Rays,143,Philadelphia Phillies,Citizens Bank Park,Nick Martinez,607259.0,R,Zack Wheeler,554430.0,R
+822761,2026-09-27T19:07:00Z,Scheduled,113,Cincinnati Reds,141,Toronto Blue Jays,Rogers Centre,Brandon Williamson,682227.0,L,Max Scherzer,453286.0,R
+824055,2026-09-27T19:10:00Z,Scheduled,114,Cleveland Guardians,118,Kansas City Royals,Kauffman Stadium,Parker Messick,800048.0,L,Daniel Lynch IV,663738.0,L
+824217,2026-09-27T19:10:00Z,Scheduled,134,Pittsburgh Pirates,116,Detroit Tigers,Comerica Park,Jared Jones,683003.0,R,River Ryan,689981.0,R
+823246,2026-09-27T19:10:00Z,Scheduled,109,Arizona Diamondbacks,135,San Diego Padres,Petco Park,Michael Soroka,647336.0,R,Randy Vásquez,681190.0,R
+823084,2026-09-27T19:10:00Z,Scheduled,108,Los Angeles Angels,136,Seattle Mariners,T-Mobile Park,Yusei Kikuchi,579328.0,L,Logan Gilbert,669302.0,R
+823650,2026-09-27T19:10:00Z,Scheduled,140,Texas Rangers,142,Minnesota Twins,Target Field,MacKenzie Gore,669022.0,L,Dean Kremer,665152.0,R
+824542,2026-09-27T19:10:00Z,Scheduled,115,Colorado Rockies,145,Chicago White Sox,Rate Field,Kyle Freeland,607536.0,L,Anthony Kay,641743.0,L
+823814,2026-09-27T19:10:00Z,Scheduled,144,Atlanta Braves,146,Miami Marlins,loanDepot park,JR Ritchie,702275.0,R,Janson Junk,676083.0,R
+823731,2026-09-27T19:10:00Z,Scheduled,138,St. Louis Cardinals,158,Milwaukee Brewers,American Family Field,Andre Pallante,669467.0,R,Jacob Misiorowski,694819.0,R
