@@ -1,0 +1,5 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+849845,2026-09-29T18:00:00Z,Scheduled,143,Philadelphia Phillies,144,Atlanta Braves,Truist Park,Jesús Luzardo,666200,L,Chris Sale,519242,L
+849849,2026-09-29T21:00:00Z,Scheduled,145,Chicago White Sox,117,Houston Astros,Daikin Park,Hagen Smith,696146,L,AJ Blubaugh,805123,R
+849851,2026-09-30T00:00:00Z,Scheduled,111,Boston Red Sox,147,New York Yankees,Yankee Stadium,Payton Tolle,801139,L,Cam Schlittler,693645,R
+849843,2026-09-30T02:00:00Z,Scheduled,112,Chicago Cubs,135,San Diego Padres,Petco Park,Matthew Boyd,571510,L,Michael King,650633,R
