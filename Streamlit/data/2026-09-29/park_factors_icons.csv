@@ -1,5 +1,5 @@
 game_id,game,icons,icon_labels
 849849,Daikin Park5:00CHW @ HOU,RoofClosed.png,Roof Closed
 849845,Truist Park2:00PHI @ ATL,"InLeft.svg,InLeft.svg,InLeft.svg,From76to82.png,LowH.png","InLeft.svg,InLeft.svg,InLeft.svg,76–82°F,Low Humidity"
-849843,Petco Park10:00CHC @ SD,"OutRight.svg,OutRight.svg,OutRightCenter.svg,LowP.png","OutRight.svg,OutRight.svg,OutRightCenter.svg,Low Pressure"
-849851,Yankee Stadium8:00BOS @ NYY,"InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg","InLeftMiddle.svg,InLeftMiddle.svg,InLeftMiddle.svg"
+849843,Petco Park10:00CHC @ SD,"OutRight.svg,OutRightMiddle.svg,OutRight.svg,LowP.png","OutRight.svg,OutRightMiddle.svg,OutRight.svg,Low Pressure"
+849851,Yankee Stadium8:00BOS @ NYY,"InLeftMiddle.svg,InLeftMiddle.svg,FromLeft.svg","InLeftMiddle.svg,InLeftMiddle.svg,FromLeft.svg"
