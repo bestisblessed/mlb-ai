@@ -1,0 +1,5 @@
+game_id,game,icons,icon_labels
+849828,Dodger Stadium4:00ATL @ LAD,"OutRight.svg,OutRight.svg,OutRight.svg,LightWind.png,Over90.png,LowH.png,LowP.png","OutRight.svg,OutRight.svg,OutRight.svg,Light Breeze,≥90°F,Low Humidity,Low Pressure"
+849835,Tropicana Field6:30NYY @ TB,RoofClosed.png,Roof Closed
+849830,American Family Fld8:30SD  @ MIL,RoofClosed.png,Roof Closed
+849829,Progressive Field1:00CHW @ CLE,"InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,ModerateWind.png,HighP.png","InRightCenter.svg,InRightCenter.svg,InRightCenter.svg,Moderate Wind,High Pressure"
