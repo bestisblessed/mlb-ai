@@ -1,0 +1,5 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+849829,2026-10-03T17:00:00Z,Pre-Game,145,Chicago White Sox,114,Cleveland Guardians,Progressive Field,Hagen Smith,696146.0,L,Parker Messick,800048,L
+849828,2026-10-03T20:00:00Z,Scheduled,144,Atlanta Braves,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,,,,Tarik Skubal,669373,L
+849835,2026-10-03T22:30:00Z,Scheduled,147,New York Yankees,139,Tampa Bay Rays,Tropicana Field,Gerrit Cole,543037.0,R,Drew Rasmussen,656876,R
+849830,2026-10-04T00:30:00Z,Scheduled,135,San Diego Padres,158,Milwaukee Brewers,American Family Field,Robbie Ray,592662.0,L,Jacob Misiorowski,694819,R
