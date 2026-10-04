@@ -1,0 +1,56 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+MIL,Gary Sanchez,596142,5,King,650633,-2,-2,9,-15,-4,6
+MIL,Andrew Vaughn,683734,5,King,650633,-3,-3,9,-10,-8,13
+MIL,Christian Yelich,592885,3,King,650633,-3,-2,3,-22,-11,27
+MIL,Jackson Chourio,694192,3,King,650633,-3,-3,6,-7,-4,5
+MIL,Brice Turang,668930,3,King,650633,-5,-5,9,-27,-3,10
+MIL,Sal Frelick,686217,2,King,650633,-6,-4,-2,-7,-8,1
+MIL,William Contreras,661388,5,King,650633,-6,-7,-2,-8,-9,1
+MIL,Joey Ortiz,687401,-2,King,650633,-7,-7,-9,-15,-2,2
+MIL,Luis Lara,800325,-5,King,650633,-7,-6,-9,-17,-6,17
+MIL,Cooper Pratt,806198,-3,King,650633,-8,-7,8,-22,-10,13
+MIL,Garrett Mitchell,669003,-5,King,650633,-9,-8,-9,-22,-6,17
+MIL,Jake Bauers,641343,-1,King,650633,-10,-10,8,-20,-10,4
+MIL,David Hamilton,666152,-4,King,650633,-12,-11,2,-28,-13,15
+SD,Dustin Harris,687957,-6,Henderson,701656,-16,-15,48,-8,-15,-37
+SD,Fernando Tatis Jr. F. Tatis Jr.,665487,2,Henderson,701656,-17,-16,23,-10,-14,-31
+SD,Miguel Andujar,609280,-4,Henderson,701656,-17,-15,23,1,-20,-35
+ATL,Ozzie Albies,645277,-1,Snell,605483,-19,-18,-7,-1,-9,-2
+SD,Ethan Salas,806956,-8,Henderson,701656,-20,-17,39,-7,-21,-32
+SD,Jake Cronenworth,630105,-5,Henderson,701656,-20,-17,27,-5,-15,-33
+ATL,Mauricio Dubon,643289,-1,Snell,605483,-20,-19,-5,-26,-4,11
+SD,Jackson Merrill,701538,-5,Henderson,701656,-21,-21,23,-12,-23,-38
+SD,Freddy Fermin,666023,-6,Henderson,701656,-22,-19,4,9,-23,-36
+LAD,Mookie Betts,605141,2,Sale,519242,-22,-22,11,2,-18,-24
+SD,Austin Hays,669720,-7,Henderson,701656,-23,-21,7,6,-17,-38
+SD,Gavin Sheets,657757,-5,Henderson,701656,-23,-21,19,6,-15,-46
+SD,Samad Taylor,669392,-8,Henderson,701656,-23,-21,30,-3,-15,-37
+SD,Luis Campusano,669134,-6,Henderson,701656,-25,-23,18,-2,-25,-40
+SD,Ty France,664034,-7,Henderson,701656,-25,-24,16,2,-27,-36
+SD,Xander Bogaerts,593428,-6,Henderson,701656,-25,-24,33,-5,-20,-40
+SD,Manny Machado,592518,-5,Henderson,701656,-26,-25,27,4,-25,-53
+ATL,Ha-seong Kim,673490,-6,Snell,605483,-27,-24,-7,-12,-11,-2
+LAD,Miguel Rojas,500743,-4,Sale,519242,-28,-27,-1,-11,-16,-24
+ATL,Drake Baldwin,686948,-5,Snell,605483,-29,-28,-8,-30,-13,11
+ATL,Michael Harris II M. Harris II,671739,-5,Snell,605483,-29,-29,0,-30,-13,16
+ATL,Matt Olson,621566,-2,Snell,605483,-30,-29,5,-15,-20,-11
+LAD,Andy Pages,681624,-5,Sale,519242,-33,-33,4,2,-22,-33
+LAD,Kyle Tucker,663656,-5,Sale,519242,-34,-34,1,5,-25,-38
+ATL,Mike Yastrzemski,573262,-6,Snell,605483,-34,-33,-16,-26,-16,-5
+ATL,Sean Murphy,669221,-8,Snell,605483,-34,-34,-6,-24,-25,8
+LAD,Will Smith,669257,-4,Sale,519242,-34,-34,-3,-10,-17,-28
+ATL,Ronald Acuna Jr. R. Acuna Jr.,660670,-4,Snell,605483,-35,-34,-15,-30,-26,6
+ATL,Austin Riley,663586,-8,Snell,605483,-36,-35,-15,-23,-25,12
+LAD,Freddie Freeman,518692,-7,Sale,519242,-37,-36,5,-1,-23,-35
+ATL,Lane Thomas,657041,-8,Snell,605483,-38,-38,5,-22,-16,-17
+LAD,Hunter Feduccia,676439,-9,Sale,519242,-43,-44,23,-7,-24,-37
+ATL,Rowdy Tellez,642133,-9,Snell,605483,-43,-44,-2,-25,-27,-2
+LAD,Enrique Hernandez,571771,-9,Sale,519242,-45,-45,2,-14,-29,-24
+LAD,Tommy Edman,669242,-9,Sale,519242,-45,-44,20,-14,-25,-42
+SD,Jase Bowen,687749,-10,Henderson,701656,-47,-42,13,-21,-28,-36
+LAD,Max Muncy,571970,-9,Sale,519242,-48,-48,-4,-10,-28,-38
+LAD,Teoscar Hernandez,606192,-10,Sale,519242,-50,-52,15,-18,-32,-44
+LAD,Josue De Paula J. De Paula,800543,-10,Sale,519242,-51,-49,-18,-7,-28,-27
+LAD,Shohei Ohtani,660271,-9,Sale,519242,-52,-51,-4,-16,-29,-45
+LAD,Hyeseong Kim,808975,-10,Sale,519242,-54,-52,10,-12,-28,-28
+ATL,Brewer Hicklen,676551,-10,Snell,605483,-69,-67,-22,-25,-27,-21
