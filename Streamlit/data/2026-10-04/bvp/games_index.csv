@@ -1,0 +1,3 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+849825,2026-10-04T20:00:00Z,Scheduled,135,San Diego Padres,158,Milwaukee Brewers,American Family Field,Michael King,650633.0,R,Logan Henderson,701656,R
+849823,2026-10-05T00:00:00Z,Scheduled,144,Atlanta Braves,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,,,,Blake Snell,605483,L

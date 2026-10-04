@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BvP Edge Report — 2026-10-04</title>
+<style>
+  :root {
+    --bg: #0f1216; --panel: #161b22; --border: #2a313a;
+    --text: #e6edf3; --muted: #8b949e; --good: #3fb950; --bad: #f85149;
+    --accent: #58a6ff; --warn: #d29922;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 24px; }
+  h1 { margin: 0 0 4px 0; font-size: 22px; }
+  h2 { margin: 28px 0 8px 0; font-size: 16px; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+  .sub { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+  .controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 14px 0 18px; }
+  .controls input, .controls select { background: var(--panel); border: 1px solid var(--border); color: var(--text); padding: 6px 10px; border-radius: 6px; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; background: var(--panel); border-radius: 6px; overflow: hidden; }
+  th { text-align: left; background: #1c2129; color: var(--muted); font-weight: 600; padding: 8px 10px; cursor: pointer; user-select: none; position: sticky; top: 0; }
+  th:hover { color: var(--text); }
+  td { padding: 7px 10px; border-top: 1px solid var(--border); }
+  tr:hover td { background: #1b2027; }
+  .pos { color: var(--good); } .neg { color: var(--bad); }
+  .pa-badge { display: inline-block; padding: 1px 6px; border-radius: 4px; background: #1c2530; color: var(--accent); font-size: 11px; font-weight: 600; }
+  .meta { color: var(--muted); font-size: 12px; }
+  .legend { background: var(--panel); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; margin-top: 24px; font-size: 12.5px; line-height: 1.55; color: var(--muted); }
+  .legend code { color: var(--text); background: #1c2530; padding: 1px 5px; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>BvP Edge Report — 2026-10-04</h1>
+<div class="sub">2 qualified matchups (≥10 PA) across 2 games · prior k=60 PA · generated 2026-10-04 14:00 UTC</div>
+
+<h2>🔝 Top Composite Edges (hits + HR + OBP + K-avoidance)</h2>
+<table><thead><tr><th>Batter</th><th>vs Pitcher</th><th>Hand</th><th>PA</th><th>H</th><th>HR</th><th>BB</th><th>K</th><th>BvP H/PA</th><th>Season H/PA</th><th>p̂(H)</th><th>Hit Δ</th><th>HR Δ</th><th>OBP Δ</th><th>K-Avoid Δ</th><th>EDGE</th><th>Away</th><th>Home</th></tr></thead><tbody><tr><td class="">Sal Frelick</td><td class="">Michael King</td><td class="">R</td><td data-v="11"><span class="pa-badge">11</span></td><td data-v="5">5</td><td data-v="0">0</td><td data-v="1">1</td><td data-v="2">2</td><td data-v="0.454545">.455</td><td data-v="0.229915">.230</td><td data-v="0.264717">.265</td><td class="pos" data-v="0.034802">+3.5%</td><td class="neg" data-v="-0.002384">-0.2%</td><td class="pos" data-v="0.035181">+3.5%</td><td class="neg" data-v="-0.010028">-1.0%</td><td class="pos" data-v="0.8000"><strong>+0.80</strong></td><td class="">San Diego Padres</td><td class="">Milwaukee Brewers</td></tr><tr><td class="">Brice Turang</td><td class="">Michael King</td><td class="">R</td><td data-v="11"><span class="pa-badge">11</span></td><td data-v="3">3</td><td data-v="0">0</td><td data-v="0">0</td><td data-v="1">1</td><td data-v="0.272727">.273</td><td data-v="0.239428">.239</td><td data-v="0.244587">.245</td><td class="pos" data-v="0.005159">+0.5%</td><td class="neg" data-v="-0.004568">-0.5%</td><td class="neg" data-v="-0.013711">-1.4%</td><td class="pos" data-v="0.023425">+2.3%</td><td class="neg" data-v="-0.8000"><strong>-0.80</strong></td><td class="">San Diego Padres</td><td class="">Milwaukee Brewers</td></tr></tbody></table>
+
+<h2>⚾ Top Hit Plays (1+/2+ hit props)</h2>
+<table><thead><tr><th>Batter</th><th>vs Pitcher</th><th>PA</th><th>H</th><th>BvP H/PA</th><th>Season H/PA</th><th>p̂(H/PA)</th><th>P(1+H)</th><th>1+H Δ</th><th>HitScore</th><th>Away</th><th>Home</th></tr></thead><tbody><tr><td class="">Sal Frelick</td><td class="">Michael King</td><td data-v="11"><span class="pa-badge">11</span></td><td data-v="5">5</td><td data-v="0.454545">.455</td><td data-v="0.229915">.230</td><td data-v="0.264717">.265</td><td data-v="0.707706">.708</td><td class="pos" data-v="0.059393">+5.9%</td><td class="pos" data-v="1.0000"><strong>+1.00</strong></td><td class="">San Diego Padres</td><td class="">Milwaukee Brewers</td></tr><tr><td class="">Brice Turang</td><td class="">Michael King</td><td data-v="11"><span class="pa-badge">11</span></td><td data-v="3">3</td><td data-v="0.272727">.273</td><td data-v="0.239428">.239</td><td data-v="0.244587">.245</td><td data-v="0.674360">.674</td><td class="pos" data-v="0.008987">+0.9%</td><td class="neg" data-v="-1.0000"><strong>-1.00</strong></td><td class="">San Diego Padres</td><td class="">Milwaukee Brewers</td></tr></tbody></table>
+
+<h2>💣 Top HR Plays</h2>
+<table><thead><tr><th>Batter</th><th>vs Pitcher</th><th>PA</th><th>HR</th><th>BvP HR/PA</th><th>Season HR/PA</th><th>p̂(HR/PA)</th><th>P(1+HR)</th><th>HR Δ</th><th>HR Score</th><th>Away</th><th>Home</th></tr></thead><tbody><tr><td class="">Sal Frelick</td><td class="">Michael King</td><td data-v="11"><span class="pa-badge">11</span></td><td data-v="0">0</td><td data-v="0.000000">.000</td><td data-v="0.015385">.015</td><td data-v="0.013001">.013</td><td data-v="0.050999">.051</td><td class="neg" data-v="-0.009134">-0.9%</td><td class="pos" data-v="1.0000"><strong>+1.00</strong></td><td class="">San Diego Padres</td><td class="">Milwaukee Brewers</td></tr><tr><td class="">Brice Turang</td><td class="">Michael King</td><td data-v="11"><span class="pa-badge">11</span></td><td data-v="0">0</td><td data-v="0.000000">.000</td><td data-v="0.029482">.029</td><td data-v="0.024914">.025</td><td data-v="0.095994">.096</td><td class="neg" data-v="-0.016820">-1.7%</td><td class="neg" data-v="-1.0000"><strong>-1.00</strong></td><td class="">San Diego Padres</td><td class="">Milwaukee Brewers</td></tr></tbody></table>
+
+<h2>🎯 Top OBP / Walk-or-Hit Plays</h2>
+<table><thead><tr><th>Batter</th><th>vs Pitcher</th><th>PA</th><th>H</th><th>BB</th><th>p̂(OBP)</th><th>Season OBP</th><th>OBP Δ</th><th>OBP Score</th><th>Away</th><th>Home</th></tr></thead><tbody><tr><td class="">Sal Frelick</td><td class="">Michael King</td><td data-v="11"><span class="pa-badge">11</span></td><td data-v="5">5</td><td data-v="1">1</td><td data-v="0.353557">.354</td><td data-v="0.318376">.318</td><td class="pos" data-v="0.035181">+3.5%</td><td class="pos" data-v="1.0000"><strong>+1.00</strong></td><td class="">San Diego Padres</td><td class="">Milwaukee Brewers</td></tr><tr><td class="">Brice Turang</td><td class="">Michael King</td><td data-v="11"><span class="pa-badge">11</span></td><td data-v="3">3</td><td data-v="0">0</td><td data-v="0.347516">.348</td><td data-v="0.361227">.361</td><td class="neg" data-v="-0.013711">-1.4%</td><td class="neg" data-v="-1.0000"><strong>-1.00</strong></td><td class="">San Diego Padres</td><td class="">Milwaukee Brewers</td></tr></tbody></table>
+
+<h2>🛡️ Top K-Avoidance Plays (under-Ks / contact)</h2>
+<table><thead><tr><th>Batter</th><th>vs Pitcher</th><th>PA</th><th>K</th><th>p̂(K/PA)</th><th>Season K/PA</th><th>K-Avoid Δ</th><th>K-Avoid Score</th><th>Away</th><th>Home</th></tr></thead><tbody><tr><td class="">Brice Turang</td><td class="">Michael King</td><td data-v="11"><span class="pa-badge">11</span></td><td data-v="1">1</td><td data-v="0.218683">.219</td><td data-v="0.242108">.242</td><td class="pos" data-v="0.023425">+2.3%</td><td class="pos" data-v="1.0000"><strong>+1.00</strong></td><td class="">San Diego Padres</td><td class="">Milwaukee Brewers</td></tr><tr><td class="">Sal Frelick</td><td class="">Michael King</td><td data-v="11"><span class="pa-badge">11</span></td><td data-v="2">2</td><td data-v="0.127122">.127</td><td data-v="0.117094">.117</td><td class="neg" data-v="-0.010028">-1.0%</td><td class="neg" data-v="-1.0000"><strong>-1.00</strong></td><td class="">San Diego Padres</td><td class="">Milwaukee Brewers</td></tr></tbody></table>
+
+<div class="legend">
+  <strong>Methodology.</strong> For every batter on each team's active roster vs the opposing probable starter, we pull career head-to-head splits from the official MLB Stats API (<code>vsPlayerTotal</code> hydrate). Rates are shrunk toward each batter's <code>2026+2025</code> season rates using a Beta-Binomial empirical-Bayes posterior with prior strength <code>k=60 PA</code>:
+  <code>p_post = (α + x) / (α + β + n)</code> where <code>α = season_rate · k</code>, <code>β = (1−season_rate) · k</code>, and <code>(x, n)</code> are observed BvP successes/trials. Edges are <code>p_post − season_rate</code>; <code>edge_1+ hit</code> uses <code>1 − (1−p_h)<sup>4</sup></code> for a typical 4-PA game. <code>EDGE_SCORE</code> is a z-weighted blend (40% hits / 30% HR / 20% OBP / 10% K-avoid) over today's qualified pool. Min-PA filter excludes BvP samples below 10 PA. Sources: MLB Stats API · scripts/scrape_bvp_today.py · scripts/rank_bvp_edges.py.
+</div>
+
+<script>
+  // simple click-to-sort
+  document.querySelectorAll('table').forEach(table => {
+    table.querySelectorAll('th').forEach((th, idx) => {
+      th.addEventListener('click', () => {
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.rows);
+        const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+        th.dataset.dir = dir;
+        rows.sort((a, b) => {
+          const av = a.cells[idx].dataset.v ?? a.cells[idx].textContent;
+          const bv = b.cells[idx].dataset.v ?? b.cells[idx].textContent;
+          const an = parseFloat(av); const bn = parseFloat(bv);
+          if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+          return dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  });
+</script>
+</body>
+</html>
