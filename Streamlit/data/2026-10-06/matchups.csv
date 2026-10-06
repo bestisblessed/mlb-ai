@@ -1,0 +1,56 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+SD,Freddy Fermin,666023,3,May,669160,-6,-4,2,-10,6,13
+SD,Ty France,664034,4,May,669160,-6,-4,-7,-9,7,19
+SD,Ethan Salas,806956,-4,May,669160,-8,-3,-18,10,-3,17
+SD,Jackson Merrill,701538,6,May,669160,-9,-4,-1,6,-7,12
+ATL,Matt Olson,621566,-4,Yamamoto,808967,-10,-6,-1,-29,-4,-23
+SD,Dustin Harris,687957,-3,May,669160,-12,-7,-26,-3,0,10
+SD,Fernando Tatis Jr. F. Tatis Jr.,665487,7,May,669160,-13,-11,5,-6,-4,-9
+SD,Miguel Andujar,609280,1,May,669160,-13,-11,-14,-23,1,9
+ATL,Ha-seong Kim,673490,-8,Yamamoto,808967,-14,-7,-34,-30,-8,-14
+MIL,Joey Ortiz,687401,-2,Pivetta,601713,-14,-13,25,8,-13,-13
+LAD,Mookie Betts,605141,1,Sale,519242,-15,-8,-37,-9,-11,-19
+SD,Manny Machado,592518,4,May,669160,-16,-14,-12,-8,-3,5
+ATL,Ozzie Albies,645277,-6,Yamamoto,808967,-16,-12,-28,-17,-15,-17
+ATL,Ronald Acuna Jr. R. Acuna Jr.,660670,-4,Yamamoto,808967,-16,-13,-25,-20,-15,-16
+SD,Austin Hays,669720,-3,May,669160,-17,-14,-3,-16,-8,18
+ATL,Drake Baldwin,686948,-6,Yamamoto,808967,-17,-11,-27,-32,-15,-5
+SD,Luis Campusano,669134,-1,May,669160,-17,-15,-11,-17,-2,8
+ATL,Mike Yastrzemski,573262,-7,Yamamoto,808967,-17,-13,-17,-21,-12,-26
+MIL,Sal Frelick,686217,2,Pivetta,601713,-17,-13,7,-8,-12,-6
+SD,Gavin Sheets,657757,3,May,669160,-18,-14,-13,-13,-1,-7
+ATL,Mauricio Dubon,643289,-4,Yamamoto,808967,-18,-12,-44,-26,-15,-6
+SD,Samad Taylor,669392,-6,May,669160,-18,-16,-10,-9,-3,-3
+MIL,Andrew Vaughn,683734,1,Pivetta,601713,-19,-16,22,-1,-11,-22
+LAD,Kyle Tucker,663656,-4,Sale,519242,-19,-15,-20,-3,-18,-35
+ATL,Michael Harris II M. Harris II,671739,-6,Yamamoto,808967,-19,-14,-12,-29,-17,-21
+LAD,Miguel Rojas,500743,-4,Sale,519242,-19,-11,-40,-28,-9,-18
+ATL,Sean Murphy,669221,-9,Yamamoto,808967,-19,-15,-33,-28,-16,-15
+MIL,William Contreras,661388,4,Pivetta,601713,-19,-17,11,-4,-16,-12
+LAD,Andy Pages,681624,-5,Sale,519242,-20,-15,-30,-9,-16,-31
+LAD,Freddie Freeman,518692,-6,Sale,519242,-20,-15,-18,-18,-15,-31
+SD,Xander Bogaerts,593428,1,May,669160,-20,-18,-8,-20,0,-12
+ATL,Austin Riley,663586,-9,Yamamoto,808967,-21,-17,-26,-31,-20,-15
+LAD,Will Smith,669257,-4,Sale,519242,-21,-15,-43,-9,-16,-20
+MIL,Brice Turang,668930,-1,Pivetta,601713,-23,-18,14,3,-18,-14
+LAD,Josue De Paula J. De Paula,800543,-9,Sale,519242,-23,-20,-38,-14,-22,-21
+ATL,Lane Thomas,657041,-9,Yamamoto,808967,-23,-17,-26,-29,-19,-21
+ATL,Rowdy Tellez,642133,-9,Yamamoto,808967,-23,-19,-25,-33,-19,-18
+MIL,Luis Lara,800325,-6,Pivetta,601713,-24,-20,27,1,-19,-9
+SD,Jake Cronenworth,630105,-4,May,669160,-25,-22,-29,-16,-6,-3
+LAD,Hyeseong Kim,808975,-10,Sale,519242,-26,-22,-11,-25,-25,-25
+LAD,Max Muncy,571970,-8,Sale,519242,-26,-22,-25,-23,-20,-29
+MIL,Cooper Pratt,806198,-6,Pivetta,601713,-27,-24,17,-7,-16,-15
+LAD,Enrique Hernandez,571771,-9,Sale,519242,-27,-19,-34,-23,-23,-21
+LAD,Hunter Feduccia,676439,-9,Sale,519242,-27,-21,-31,-18,-20,-34
+LAD,Tommy Edman,669242,-9,Sale,519242,-27,-22,-22,-23,-20,-39
+MIL,Jackson Chourio,694192,-4,Pivetta,601713,-28,-25,10,-11,-20,-17
+SD,Jase Bowen,687749,-10,May,669160,-28,-23,-23,2,-15,14
+LAD,Shohei Ohtani,660271,-9,Sale,519242,-28,-24,-22,-27,-22,-35
+MIL,Christian Yelich,592885,-5,Pivetta,601713,-30,-27,8,-6,-23,-12
+ATL,Brewer Hicklen,676551,-10,Yamamoto,808967,-31,-26,-43,-28,-24,-24
+MIL,Jake Bauers,641343,-4,Pivetta,601713,-31,-27,-6,-8,-20,-7
+LAD,Teoscar Hernandez,606192,-10,Sale,519242,-32,-28,-22,-23,-31,-37
+MIL,Gary Sanchez,596142,-5,Pivetta,601713,-34,-32,3,-6,-21,-28
+MIL,Garrett Mitchell,669003,-8,Pivetta,601713,-35,-32,4,-19,-18,-13
+MIL,David Hamilton,666152,-8,Pivetta,601713,-37,-32,-4,-17,-23,-16
