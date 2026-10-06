@@ -1,0 +1,3 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+849819,2026-10-06T22:00:00Z,Scheduled,119,Los Angeles Dodgers,144,Atlanta Braves,Truist Park,Yoshinobu Yamamoto,808967,R,Chris Sale,519242,L
+849826,2026-10-07T01:30:00Z,Scheduled,158,Milwaukee Brewers,135,San Diego Padres,Petco Park,Dustin May,669160,R,Nick Pivetta,601713,R
