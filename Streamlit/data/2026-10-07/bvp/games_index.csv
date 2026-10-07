@@ -1,0 +1,5 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+849833,2026-10-07T20:00:00Z,Scheduled,114,Cleveland Guardians,145,Chicago White Sox,Rate Field,Daniel Espino,682982.0,R,Sean Newcomb,656794,L
+849822,2026-10-07T22:00:00Z,Scheduled,119,Los Angeles Dodgers,144,Atlanta Braves,Truist Park,Tyler Glasnow,607192.0,R,Tyler Mahle,641816,R
+849838,2026-10-08T00:00:00Z,Scheduled,139,Tampa Bay Rays,147,New York Yankees,Yankee Stadium,Nick Martinez,607259.0,R,Max Fried,608331,L
+849827,2026-10-08T02:00:00Z,Scheduled,158,Milwaukee Brewers,135,San Diego Padres,Petco Park,,,,Walker Buehler,621111,R
