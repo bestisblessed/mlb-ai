@@ -1,0 +1,2 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+849832,2026-10-09T00:00:00Z,Scheduled,114,Cleveland Guardians,145,Chicago White Sox,Rate Field,Parker Messick,800048,L,Hagen Smith,696146,L
