@@ -1,0 +1,2 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+849831,2026-10-11T00:00:00Z,Scheduled,145,Chicago White Sox,114,Cleveland Guardians,Progressive Field,Sean Burke,680732,R,Gavin Williams,668909,R
