@@ -1,0 +1,27 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+LAD,Andy Pages,681624,9,Gasser,688107,-2,-1,19,18,5,-12
+LAD,Miguel Rojas,500743,8,Gasser,688107,-2,-1,13,18,9,-25
+LAD,Enrique Hernandez,571771,-1,Gasser,688107,-3,-4,20,30,2,-25
+LAD,Shohei Ohtani,660271,6,Gasser,688107,-4,-3,52,5,-2,-22
+LAD,Kyle Tucker,663656,9,Gasser,688107,-7,-5,25,18,4,-31
+LAD,Teoscar Hernandez,606192,-2,Gasser,688107,-7,-7,19,8,5,-21
+LAD,Josue De Paula J. De Paula,800543,-1,Gasser,688107,-9,-6,23,1,6,-18
+LAD,Mookie Betts,605141,8,Gasser,688107,-9,-9,15,3,0,-21
+LAD,Hunter Feduccia,676439,1,Gasser,688107,-10,-9,27,-6,10,-20
+LAD,Freddie Freeman,518692,4,Gasser,688107,-11,-10,23,-1,4,-26
+LAD,Tommy Edman,669242,1,Gasser,688107,-11,-9,11,4,-1,-14
+LAD,Will Smith,669257,6,Gasser,688107,-15,-15,20,-6,1,-27
+LAD,Max Muncy,571970,4,Gasser,688107,-17,-15,19,-6,3,-30
+MIL,Sal Frelick,686217,1,Snell,605483,-18,-16,-18,-22,-6,7
+MIL,Andrew Vaughn,683734,-1,Snell,605483,-22,-20,-9,-26,-9,6
+MIL,William Contreras,661388,-1,Snell,605483,-24,-24,-6,-29,-7,0
+MIL,Joey Ortiz,687401,-6,Snell,605483,-25,-25,6,-28,-4,-3
+MIL,Luis Lara,800325,-6,Snell,605483,-26,-23,-18,-29,-4,12
+MIL,Brice Turang,668930,-2,Snell,605483,-27,-24,-20,-36,0,5
+MIL,Gary Sanchez,596142,-2,Snell,605483,-27,-26,-19,-29,-6,5
+MIL,Jackson Chourio,694192,-4,Snell,605483,-27,-27,-11,-36,-5,11
+MIL,Christian Yelich,592885,-5,Snell,605483,-32,-30,-6,-36,-7,-6
+MIL,Jake Bauers,641343,-4,Snell,605483,-34,-30,-19,-36,-8,-4
+MIL,Garrett Mitchell,669003,-8,Snell,605483,-36,-34,-13,-30,-12,3
+MIL,Cooper Pratt,806198,-8,Snell,605483,-38,-35,-30,-32,-10,-4
+MIL,David Hamilton,666152,-8,Snell,605483,-38,-34,-20,-33,-12,-6
