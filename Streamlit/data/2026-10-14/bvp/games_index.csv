@@ -1,0 +1,2 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+849811,2026-10-15T00:00:00Z,Scheduled,158,Milwaukee Brewers,119,Los Angeles Dodgers,UNIQLO Field at Dodger Stadium,Robert Gasser,688107,L,Blake Snell,605483,L
