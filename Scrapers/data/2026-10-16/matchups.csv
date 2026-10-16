@@ -1,0 +1,28 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+TB,Jonathan Aranda,666018,9,Bibee,676440,12,17,7,54,-2,-10
+TB,Jonny DeLuca,676356,5,Bibee,676440,11,14,-22,49,-3,20
+TB,Junior Caminero,691406,10,Bibee,676440,11,12,-10,63,1,-8
+TB,Ben Williamson,810938,6,Bibee,676440,10,14,-24,42,5,-3
+TB,Jorge Mateo,622761,-2,Bibee,676440,7,9,-32,47,-8,26
+TB,Ryan Vilade,668723,2,Bibee,676440,6,6,-17,52,-11,12
+TB,Taylor Walls,670764,5,Bibee,676440,6,9,-9,43,-8,1
+TB,Victor Mesa Jr. V. Mesa Jr.,683748,5,Bibee,676440,6,11,-7,25,3,9
+TB,Nick Fortes,663743,8,Bibee,676440,5,7,-27,54,-9,2
+TB,Liam Hicks,689414,9,Bibee,676440,4,6,-12,27,-3,1
+CLE,Petey Halpin,690984,4,Martinez,607259,3,7,-4,36,6,-56
+TB,Richie Palacios,680700,7,Bibee,676440,2,4,-5,22,-10,7
+TB,Chandler Simpson,802415,5,Bibee,676440,1,1,-10,25,-7,-11
+TB,Yandy Diaz,650490,9,Bibee,676440,0,4,-21,24,-7,5
+TB,Cedric Mullins,656775,6,Bibee,676440,-3,1,3,27,-13,-11
+CLE,Jo Adell,666176,3,Martinez,607259,-4,-1,-11,32,12,-44
+CLE,Angel Martinez,682657,-2,Martinez,607259,-5,0,-9,9,7,-50
+CLE,Angel Genao,694197,-4,Martinez,607259,-7,-7,-28,26,9,-48
+CLE,Patrick Bailey,672275,1,Martinez,607259,-9,-3,-27,27,13,-51
+CLE,Chase DeLauter,800050,2,Martinez,607259,-10,-9,-6,10,4,-46
+CLE,Nathaniel Lowe,663993,4,Martinez,607259,-11,-7,-25,12,18,-52
+CLE,Brayan Rocchio,677587,2,Martinez,607259,-12,-8,-12,13,-3,-50
+CLE,David Fry,681807,-2,Martinez,607259,-13,-7,-35,31,17,-48
+CLE,Austin Hedges,595978,-3,Martinez,607259,-15,-11,-36,39,1,-52
+CLE,Jose Ramirez,608070,3,Martinez,607259,-16,-14,-21,11,0,-54
+CLE,Travis Bazzana,683953,-2,Martinez,607259,-16,-11,-26,5,15,-50
+CLE,Steven Kwan,680757,-1,Martinez,607259,-21,-20,-27,1,-4,-57
