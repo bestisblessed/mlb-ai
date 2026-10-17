@@ -1,0 +1,28 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+CLE,Petey Halpin,690984,4,Martinez,607259,-5,7,-11,22,1,-56
+TB,Liam Hicks,689414,8,Armstrong,542888,-6,1,-14,3,-20,22
+CLE,Jo Adell,666176,3,Martinez,607259,-9,-1,-13,19,7,-44
+CLE,Angel Martinez,682657,-2,Martinez,607259,-11,0,-15,0,4,-50
+TB,Cedric Mullins,656775,5,Armstrong,542888,-11,-1,-7,4,-16,3
+TB,Chandler Simpson,802415,3,Armstrong,542888,-12,-4,-48,0,-15,20
+TB,Yandy Diaz,650490,7,Armstrong,542888,-12,-3,-21,9,-9,-12
+CLE,Angel Genao,694197,-4,Martinez,607259,-13,-7,-33,14,5,-48
+TB,Taylor Walls,670764,1,Armstrong,542888,-13,-4,-21,17,-19,3
+TB,Junior Caminero,691406,4,Armstrong,542888,-14,-8,-21,34,-16,-9
+CLE,Chase DeLauter,800050,2,Martinez,607259,-15,-9,-8,-3,0,-46
+CLE,Patrick Bailey,672275,1,Martinez,607259,-15,-3,-30,13,10,-51
+TB,Jonathan Aranda,666018,2,Armstrong,542888,-16,-7,-18,10,-17,0
+CLE,Nathaniel Lowe,663993,4,Martinez,607259,-16,-7,-29,2,14,-52
+TB,Nick Fortes,663743,3,Armstrong,542888,-16,-6,-38,14,-20,7
+TB,Richie Palacios,680700,2,Armstrong,542888,-16,-9,-2,-16,-15,1
+TB,Jonny DeLuca,676356,-3,Armstrong,542888,-17,-7,-24,11,-21,4
+CLE,Brayan Rocchio,677587,2,Martinez,607259,-18,-8,-20,0,-7,-49
+TB,Ben Williamson,810938,-4,Armstrong,542888,-19,-11,-46,0,-17,4
+CLE,David Fry,681807,-2,Martinez,607259,-19,-7,-41,18,13,-48
+CLE,Jose Ramirez,608070,3,Martinez,607259,-20,-14,-26,0,-3,-54
+TB,Ryan Vilade,668723,-5,Armstrong,542888,-20,-13,-27,19,-20,-2
+CLE,Austin Hedges,595978,-3,Martinez,607259,-22,-11,-41,23,-4,-52
+CLE,Travis Bazzana,683953,-2,Martinez,607259,-22,-11,-34,-4,11,-50
+CLE,Steven Kwan,680757,-1,Martinez,607259,-25,-20,-33,-8,-8,-57
+TB,Victor Mesa Jr. V. Mesa Jr.,683748,-5,Armstrong,542888,-26,-16,-19,-8,-17,-1
+TB,Jorge Mateo,622761,-7,Armstrong,542888,-29,-18,-39,15,-21,5
