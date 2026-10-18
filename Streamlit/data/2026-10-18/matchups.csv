@@ -1,0 +1,28 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+TB,Liam Hicks,689414,9,Messick,800048,-1,5,-39,-27,18,26
+TB,Chandler Simpson,802415,8,Messick,800048,-4,6,-55,-22,12,-2
+TB,Richie Palacios,680700,5,Messick,800048,-9,-2,-19,-25,9,19
+TB,Ben Williamson,810938,-1,Messick,800048,-12,-4,-35,-27,9,5
+TB,Jonny DeLuca,676356,-1,Messick,800048,-12,-3,-38,-15,12,14
+TB,Yandy Diaz,650490,7,Messick,800048,-12,-3,-26,-15,13,-14
+CLE,Steven Kwan,680757,7,Rasmussen,656876,-13,-7,-31,-14,7,-30
+TB,Jonathan Aranda,666018,2,Messick,800048,-14,-8,-30,-20,3,17
+TB,Jorge Mateo,622761,-5,Messick,800048,-15,-4,-36,-9,16,6
+TB,Junior Caminero,691406,2,Messick,800048,-17,-12,-29,-13,8,-3
+TB,Taylor Walls,670764,-3,Messick,800048,-17,-8,-31,-20,6,-2
+TB,Victor Mesa Jr. V. Mesa Jr.,683748,-2,Messick,800048,-17,-7,-23,-21,8,8
+TB,Nick Fortes,663743,3,Messick,800048,-18,-9,-40,-18,2,6
+TB,Cedric Mullins,656775,1,Messick,800048,-19,-11,-29,-23,4,-2
+TB,Ryan Vilade,668723,-4,Messick,800048,-19,-12,-18,-7,-6,7
+CLE,Jose Ramirez,608070,3,Rasmussen,656876,-20,-14,-32,-5,0,-36
+CLE,Brayan Rocchio,677587,-2,Rasmussen,656876,-22,-13,-40,-2,-1,-35
+CLE,Chase DeLauter,800050,-1,Rasmussen,656876,-22,-15,-40,4,-3,-34
+CLE,Petey Halpin,690984,-5,Rasmussen,656876,-27,-19,-38,-7,-5,-36
+CLE,Angel Genao,694197,-8,Rasmussen,656876,-30,-25,-45,-15,-6,-35
+CLE,Jo Adell,666176,-5,Rasmussen,656876,-30,-24,-37,-4,0,-37
+CLE,Nathaniel Lowe,663993,-3,Rasmussen,656876,-30,-23,-36,-5,-4,-33
+CLE,Angel Martinez,682657,-7,Rasmussen,656876,-31,-23,-38,-13,-1,-38
+CLE,Austin Hedges,595978,-7,Rasmussen,656876,-35,-27,-49,2,-7,-39
+CLE,Travis Bazzana,683953,-7,Rasmussen,656876,-35,-27,-46,-24,-3,-30
+CLE,David Fry,681807,-8,Rasmussen,656876,-43,-35,-46,-6,-9,-35
+CLE,Patrick Bailey,672275,-8,Rasmussen,656876,-46,-37,-50,-12,-7,-38
