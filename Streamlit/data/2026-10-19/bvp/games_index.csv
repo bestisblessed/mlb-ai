@@ -1,0 +1,2 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+849815,2026-10-20T00:08:00Z,Scheduled,114,Cleveland Guardians,139,Tampa Bay Rays,Tropicana Field,,,,Freddy Peralta,642547,R
