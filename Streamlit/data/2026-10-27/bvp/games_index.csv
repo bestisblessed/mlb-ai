@@ -1,0 +1,2 @@
+game_id,game_datetime,status,away_id,away_name,home_id,home_name,venue_name,away_pitcher,away_pitcher_id,away_pitcher_hand,home_pitcher,home_pitcher_id,home_pitcher_hand
+849803,2026-10-28T00:00:00Z,Scheduled,158,Milwaukee Brewers,139,Tampa Bay Rays,Tropicana Field,,,,Griffin Jax,643377,R
