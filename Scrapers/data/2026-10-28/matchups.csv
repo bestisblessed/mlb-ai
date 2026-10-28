@@ -1,0 +1,28 @@
+Team,Batter,BatterID,vs,Pitcher,PitcherID,RC,HR,XB,1B,BB,K
+MIL,Christian Yelich,592885,7,Matz,571927,-4,-3,32,13,25,-35
+MIL,Gary Sanchez,596142,9,Matz,571927,-4,-2,28,16,24,-31
+MIL,Jackson Chourio,694192,9,Matz,571927,-4,-2,17,16,9,-30
+MIL,Joey Ortiz,687401,4,Matz,571927,-5,-4,21,1,18,-34
+MIL,Jake Bauers,641343,8,Matz,571927,-6,-4,22,28,19,-25
+MIL,Brice Turang,668930,9,Matz,571927,-9,-7,10,11,7,-14
+MIL,David Hamilton,666152,3,Matz,571927,-11,-8,11,10,17,-38
+MIL,Luis Lara,800325,0,Matz,571927,-11,-8,-19,16,10,-25
+MIL,William Contreras,661388,9,Matz,571927,-11,-9,-4,17,17,-36
+MIL,Garrett Mitchell,669003,-2,Matz,571927,-12,-11,9,20,7,-32
+MIL,Sal Frelick,686217,7,Matz,571927,-13,-13,14,11,13,-42
+MIL,Andrew Vaughn,683734,7,Matz,571927,-14,-12,-6,12,19,-41
+MIL,Cooper Pratt,806198,-1,Matz,571927,-15,-13,13,0,9,-37
+TB,Nick Fortes,663743,-4,Misiorowski,694819,-29,-28,-19,-23,-6,5
+TB,Chandler Simpson,802415,-5,Misiorowski,694819,-32,-31,-52,-17,-12,-22
+TB,Liam Hicks,689414,-3,Misiorowski,694819,-32,-31,-22,-31,-11,-5
+TB,Ben Williamson,810938,-7,Misiorowski,694819,-34,-32,-35,-25,-11,0
+TB,Yandy Diaz,650490,-5,Misiorowski,694819,-35,-33,-32,-34,-11,4
+TB,Richie Palacios,680700,-6,Misiorowski,694819,-36,-34,-31,-22,-2,-25
+TB,Cedric Mullins,656775,-7,Misiorowski,694819,-39,-36,-35,-25,-9,-9
+TB,Jonny DeLuca,676356,-9,Misiorowski,694819,-39,-37,-23,-31,-12,1
+TB,Jonathan Aranda,666018,-7,Misiorowski,694819,-41,-37,-33,-31,-7,-7
+TB,Junior Caminero,691406,-8,Misiorowski,694819,-44,-41,-32,-29,-14,-16
+TB,Taylor Walls,670764,-9,Misiorowski,694819,-44,-40,-31,-34,-12,-7
+TB,Ryan Vilade,668723,-9,Misiorowski,694819,-46,-44,-34,-27,-20,-8
+TB,Victor Mesa Jr. V. Mesa Jr.,683748,-10,Misiorowski,694819,-52,-47,-42,-22,-17,-20
+TB,Jorge Mateo,622761,-10,Misiorowski,694819,-54,-50,-26,-32,-22,-18
